@@ -57,12 +57,12 @@ export default function Home() {
             >
               MVP configurator →
             </Link>
-            <a
-              href="https://github.com/opdevlugt-tech/OFFERTE-WIJS/blob/main/INSPIRATIE.md"
+            <Link
+              href="/ideeen"
               className="rounded-full border border-white/20 px-8 py-3 font-semibold text-white/90 hover:bg-white/5"
             >
-              Alle ideeën
-            </a>
+              Alle ideeën →
+            </Link>
           </div>
         </section>
 
