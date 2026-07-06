@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { diensten, webklaar } from "@/data/diensten-online";
 
 export function BestelForm({ preselect }: { preselect?: string }) {
@@ -11,8 +11,16 @@ export function BestelForm({ preselect }: { preselect?: string }) {
   const [email, setEmail] = useState("");
   const [opmerking, setOpmerking] = useState("");
   const [verzonden, setVerzonden] = useState(false);
+  const [waUrl, setWaUrl] = useState("");
+  const [mailUrl, setMailUrl] = useState("");
 
   const gekozen = diensten.find((d) => d.slug === dienst)!;
+
+  useEffect(() => {
+    if (preselect && diensten.some((d) => d.slug === preselect)) {
+      setDienst(preselect);
+    }
+  }, [preselect]);
 
   function orderTekst() {
     return `Bestelling WebKlaar
@@ -29,25 +37,43 @@ Ik ga akkoord met betaling bij oplevering.`;
 
   function plaatsBestelling() {
     const body = orderTekst();
-    const waNummer = webklaar.whatsapp;
-    const waUrl = waNummer
-      ? `https://wa.me/${waNummer}?text=${encodeURIComponent(body)}`
-      : `https://wa.me/?text=${encodeURIComponent(body)}`;
-    const mailUrl = `mailto:${webklaar.email}?subject=${encodeURIComponent(`Bestelling ${gekozen.naam}`)}&body=${encodeURIComponent(body)}`;
-
-    window.open(waUrl, "_blank", "noopener,noreferrer");
-    window.location.href = mailUrl;
+    const wa = `https://wa.me/${webklaar.whatsapp}?text=${encodeURIComponent(body)}`;
+    const mail = `mailto:${webklaar.email}?subject=${encodeURIComponent(`Bestelling ${gekozen.naam}`)}&body=${encodeURIComponent(body)}`;
+    setWaUrl(wa);
+    setMailUrl(mail);
     setVerzonden(true);
+    window.open(wa, "_blank", "noopener,noreferrer");
   }
 
   if (verzonden) {
     return (
-      <div className="rounded-2xl border border-teal-200 bg-teal-50 p-8 text-center">
-        <p className="text-2xl font-bold text-teal-800">Bestelling verstuurd</p>
+      <div className="rounded-2xl border border-teal-200 bg-teal-50 p-8">
+        <p className="text-2xl font-bold text-teal-800">Bestelling klaar</p>
         <p className="mt-3 text-slate-600">
-          WhatsApp en e-mail zijn geopend. Wij nemen binnen 24 uur contact op.
+          WhatsApp zou moeten openen. Werkt dat niet? Gebruik de knoppen hieronder.
         </p>
-        <p className="mt-6 font-mono text-sm text-slate-500">{gekozen.prijs} · {gekozen.levertijd}</p>
+        <p className="mt-4 font-mono text-sm text-slate-500">
+          {gekozen.prijs} · {gekozen.levertijd}
+        </p>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={waUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-teal-600 px-6 py-3 text-center text-sm font-bold text-white hover:bg-teal-500"
+          >
+            Verstuur via WhatsApp →
+          </a>
+          <a
+            href={mailUrl}
+            className="rounded-full border border-teal-300 px-6 py-3 text-center text-sm font-bold text-teal-800 hover:bg-teal-100"
+          >
+            Verstuur via e-mail →
+          </a>
+        </div>
+        <p className="mt-6 text-xs text-slate-500">
+          Gaat naar {webklaar.telefoonDisplay} en {webklaar.email}
+        </p>
       </div>
     );
   }
@@ -144,7 +170,7 @@ Ik ga akkoord met betaling bij oplevering.`;
         type="submit"
         className="w-full rounded-full bg-teal-600 py-4 text-base font-bold text-white hover:bg-teal-500"
       >
-        Plaats bestelling → WhatsApp + e-mail
+        Plaats bestelling →
       </button>
     </form>
   );
