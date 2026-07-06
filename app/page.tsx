@@ -1,7 +1,25 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { SeoJsonLd } from "@/components/seo-json-ld";
+import { FaqSchema } from "@/components/faq-schema";
 import { diensten, webklaar } from "@/data/diensten-online";
+import { seoLandingen } from "@/data/seo-landingen";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: "WebKlaar — Websites voor vakmannen | Online bestellen",
+  description:
+    "Website vakman €899, Google Start €299. Live in 3 dagen, vaste prijs. Voor installateurs, zonwering en zzp. Direct online bestellen.",
+  path: "/",
+  keywords: [
+    "website vakman",
+    "website installateur",
+    "website zonwering",
+    "goedkope website zzp",
+    "website laten maken snel",
+  ],
+});
 
 export default function StoreHomePage() {
   return (
@@ -87,6 +105,22 @@ export default function StoreHomePage() {
           ))}
         </div>
       </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <h2 className="text-xl font-bold text-slate-900">Populair in uw regio</h2>
+        <p className="mt-2 text-sm text-slate-500">Vakman websites — lokaal en landelijk</p>
+        <ul className="mt-6 columns-1 gap-x-8 text-sm sm:columns-2 lg:columns-3">
+          {seoLandingen.slice(0, 9).map((l) => (
+            <li key={l.slug} className="mb-2">
+              <Link href={`/land/${l.slug}/`} className="text-teal-600 hover:underline">
+                {l.h1}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <FaqSchema />
 
       <section className="bg-slate-900 px-6 py-16 text-white">
         <div className="mx-auto max-w-5xl text-center">

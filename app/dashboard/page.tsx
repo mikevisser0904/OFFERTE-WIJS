@@ -9,6 +9,8 @@ import {
   categoryMeta,
   spoorOrder,
 } from "@/lib/dashboard";
+import { hostingOpties, hostingAdvies } from "@/data/hosting";
+import { seoLandingen } from "@/data/seo-landingen";
 
 const stats = getDashboardStats();
 
@@ -102,6 +104,33 @@ export default function DashboardPage() {
             accent="sky"
           />
           <StatCard label="Sporen" value="5" sub="Verkopen · uren · netwerk" accent="rose" />
+        </section>
+
+        <section>
+          <h2 className="mb-4 text-lg font-bold">Hosting — goedkoopste optie</h2>
+          <p className="mb-4 text-sm text-emerald-400">{hostingAdvies}</p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {hostingOpties.map((h) => (
+              <div
+                key={h.naam}
+                className={`rounded-xl border p-4 ${h.aanbevolen ? "border-emerald-400/30 bg-emerald-400/5" : "border-white/8 bg-white/[0.02]"}`}
+              >
+                <p className="font-bold">{h.naam}</p>
+                <p className="font-mono text-sm text-emerald-400">{h.prijs}</p>
+                <p className="mt-2 text-xs text-white/55">{h.waarom}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="mb-4 text-lg font-bold">SEO — {seoLandingen.length} landingspagina&apos;s live</h2>
+          <p className="text-sm text-white/55">
+            Sitemap: /sitemap.xml · robots.txt · FAQ schema · JSON-LD · llms.txt
+          </p>
+          <p className="mt-2 text-xs text-white/40">
+            Volgende stap: Google Search Console → sitemap indienen → eventueel domein webklaar.nl (~€10/jaar)
+          </p>
         </section>
 
         <section className="flex flex-wrap gap-3 rounded-2xl border border-white/8 bg-white/[0.02] p-5">

@@ -1,0 +1,184 @@
+export type SeoLanding = {
+  slug: string;
+  title: string;
+  h1: string;
+  metaDescription: string;
+  keywords: string[];
+  intro: string;
+  paragraphs: string[];
+  dienst: "vakman-site" | "google-start";
+  stad?: string;
+};
+
+export const seoLandingen: SeoLanding[] = [
+  {
+    slug: "website-vakman-utrecht",
+    title: "Website voor vakman in Utrecht — €899 | WebKlaar",
+    h1: "Website voor vakmannen in Utrecht",
+    metaDescription:
+      "Professionele website voor installateurs en vakbedrijven in Utrecht. Live in 3 dagen, vaste prijs €899. Inclusief hosting. Bestel online.",
+    keywords: ["website vakman utrecht", "website installateur utrecht", "goedkope website utrecht"],
+    intro: "Utrechtse vakbedrijven verliezen klanten aan concurrenten met een moderne site en sterke Google-reviews.",
+    paragraphs: [
+      "WebKlaar bouwt websites speciaal voor vakmannen: zonwering, kozijnen, installateurs en zzp'ers in Utrecht en omgeving.",
+      "Geen bureau van €5.000 — wel een strakke site voor €899, live binnen 3 werkdagen. U levert logo en teksten, wij doen de rest.",
+      "Inclusief mobiele weergave, WhatsApp-knop, contactformulier en 1 jaar hosting.",
+    ],
+    dienst: "vakman-site",
+    stad: "Utrecht",
+  },
+  {
+    slug: "website-zonwering-nederland",
+    title: "Website zonwering bedrijf — vanaf €899 | WebKlaar",
+    h1: "Website voor zonweringbedrijven",
+    metaDescription:
+      "Moderne website voor zonwering en screens. Template bewezen, uw branding, live in 3 dagen. €899 vast. Demo bekijken en bestellen.",
+    keywords: ["website zonwering", "website screens bedrijf", "zonwering website laten maken"],
+    intro: "Klanten zoeken zonwering op Google — niet in de Gouden Gids. Zonder goede site verliest u aanvragen.",
+    paragraphs: [
+      "Wij hebben een bewezen template voor zonweringbedrijven: diensten, projecten, reviews en offerte-knop.",
+      "Prijstransparant: €899 eenmalig. Optioneel: Google Start pakket €299 of offerte-configurator.",
+      "Bekijk onze demo en bestel direct online.",
+    ],
+    dienst: "vakman-site",
+  },
+  {
+    slug: "website-installateur",
+    title: "Website installateur laten maken — 3 dagen live | WebKlaar",
+    h1: "Website laten maken voor installateurs",
+    metaDescription:
+      "Installateur website €899. Snel, professioneel, mobiel. Geen maandelijkse bureaukosten. Betaling bij oplevering.",
+    keywords: ["website installateur", "installateur website kosten", "website laten maken installateur"],
+    intro: "Installateurs hebben geen tijd voor websites — maar wel behoefte aan meer klussen.",
+    paragraphs: [
+      "WebKlaar is gebouwd door developers die met vakbedrijven werken. Vaste scope, vaste prijs, snelle levering.",
+      "5 pagina's, WhatsApp-integratie, Google-vriendelijk. Hosting 1 jaar inbegrepen.",
+    ],
+    dienst: "vakman-site",
+  },
+  {
+    slug: "goedkope-website-zzp",
+    title: "Goedkope website zzp — €299 t/m €899 | WebKlaar",
+    h1: "Goedkope website voor zzp'ers",
+    metaDescription:
+      "Goedkope professionele website voor zzp en mkb. Google Start €299 of volledige site €899. Online bestellen.",
+    keywords: ["goedkope website zzp", "website zzp", "goedkope website laten maken"],
+    intro: "Als zzp'er wilt u online gevonden worden zonder duizenden euro's aan een bureau.",
+    paragraphs: [
+      "Google Start (€299): profiel + one-pager. Vakman Site (€899): complete website in 3 dagen.",
+      "Geen verborgen kosten. Betaling pas als u tevreden bent met de oplevering.",
+    ],
+    dienst: "google-start",
+  },
+  {
+    slug: "google-business-vakman",
+    title: "Google Business profiel vakman — €299 | WebKlaar",
+    h1: "Google Business voor vakmannen",
+    metaDescription:
+      "Google Business profiel laten inrichten voor vakmannen. Inclusief one-pager en review-template. €299, 2 dagen.",
+    keywords: ["google business vakman", "google mijn bedrijf zzp", "google profiel laten maken"],
+    intro: "80% van de klanten zoekt lokaal op Google. Zonder profiel bent u onzichtbaar.",
+    paragraphs: [
+      "Wij richten uw Google Business volledig in, maken een landingspagina en geven een review-template.",
+      "Ideaal als eerste stap — of als aanvulling op een bestaande verouderde site.",
+    ],
+    dienst: "google-start",
+  },
+  {
+    slug: "website-vakman-amsterdam",
+    title: "Website vakman Amsterdam — €899 | WebKlaar",
+    h1: "Website voor vakmannen in Amsterdam",
+    metaDescription: "Website voor Amsterdamse vakbedrijven. Live in 3 dagen. €899 vast. Bestel online bij WebKlaar.",
+    keywords: ["website vakman amsterdam", "website laten maken amsterdam zzp"],
+    intro: "Amsterdamse vakbedrijven concurreren online — een verouderde site kost u klanten.",
+    paragraphs: [
+      "WebKlaar levert een moderne, mobiele website met WhatsApp en contactformulier.",
+      "Vaste prijs, snelle oplevering, geen langdurig traject.",
+    ],
+    dienst: "vakman-site",
+    stad: "Amsterdam",
+  },
+  {
+    slug: "website-vakman-rotterdam",
+    title: "Website vakman Rotterdam — €899 | WebKlaar",
+    h1: "Website voor vakmannen in Rotterdam",
+    metaDescription: "Professionele website voor vakbedrijven in Rotterdam. €899, 3 dagen live. Demo + bestellen.",
+    keywords: ["website vakman rotterdam", "website rotterdam zzp"],
+    intro: "Rotterdamse installateurs en vakmannen: uw site is uw eerste indruk.",
+    paragraphs: [
+      "Wij bouwen op bewezen templates — sneller en goedkoper dan een traditioneel bureau.",
+      "Inclusief hosting. Optioneel onderhoud €49/maand.",
+    ],
+    dienst: "vakman-site",
+    stad: "Rotterdam",
+  },
+  {
+    slug: "website-kozijnen",
+    title: "Website kozijnenbedrijf — €899 | WebKlaar",
+    h1: "Website voor kozijnenbedrijven",
+    metaDescription: "Website laten maken voor kozijnen en ramen bedrijven. Modern, mobiel, €899. WebKlaar.",
+    keywords: ["website kozijnenbedrijf", "website kozijnen", "kozijnen website"],
+    intro: "Kozijnenbedrijven met een sterke online presentatie krijgen meer offerte-aanvragen.",
+    paragraphs: [
+      "Portfolio-pagina, diensten, contact en WhatsApp — alles wat een kozijnenbedrijf nodig heeft.",
+      "Live in 3 werkdagen na aanlevering van uw gegevens.",
+    ],
+    dienst: "vakman-site",
+  },
+  {
+    slug: "website-laten-maken-snel",
+    title: "Website laten maken snel — live in 3 dagen | WebKlaar",
+    h1: "Snel een website laten maken",
+    metaDescription: "Website binnen 3 werkdagen live. Vaste prijs vanaf €299. Voor vakmannen en zzp. Direct bestellen.",
+    keywords: ["website laten maken snel", "website binnen 3 dagen", "snelle website laten maken"],
+    intro: "Geen weken wachten op een bureau. Geen eindeloos overleg.",
+    paragraphs: [
+      "WebKlaar werkt met vaste pakketten en bewezen templates — daarom zijn wij snel én betaalbaar.",
+      "Google Start in 2 dagen, volledige site in 3 dagen.",
+    ],
+    dienst: "vakman-site",
+  },
+  {
+    slug: "website-vakman-den-haag",
+    title: "Website vakman Den Haag — €899 | WebKlaar",
+    h1: "Website voor vakmannen in Den Haag",
+    metaDescription: "Website voor Haagse vakbedrijven. €899, mobiel, WhatsApp. WebKlaar — online bestellen.",
+    keywords: ["website vakman den haag", "website den haag zzp"],
+    intro: "Vakbedrijven in Den Haag en omgeving: word beter gevonden op Google.",
+    paragraphs: [
+      "Professionele site met lokale focus. Wij regelen techniek — u focust op klussen.",
+    ],
+    dienst: "vakman-site",
+    stad: "Den Haag",
+  },
+  {
+    slug: "website-vakman-haarlem",
+    title: "Website vakman Haarlem — €899 | WebKlaar",
+    h1: "Website voor vakmannen in Haarlem",
+    metaDescription: "Website laten maken in Haarlem voor installateurs en vakbedrijven. €899 vast. WebKlaar.",
+    keywords: ["website vakman haarlem", "website haarlem"],
+    intro: "Haarlem en regio: moderne site nodig? Wij leveren in dagen.",
+    paragraphs: [
+      "Demo beschikbaar. Bestel online — wij nemen binnen 24 uur contact op.",
+    ],
+    dienst: "vakman-site",
+    stad: "Haarlem",
+  },
+  {
+    slug: "website-vakman-amersfoort",
+    title: "Website vakman Amersfoort — €899 | WebKlaar",
+    h1: "Website voor vakmannen in Amersfoort",
+    metaDescription: "Vakman website Amersfoort. €899, 3 dagen, hosting inbegrepen. WebKlaar.",
+    keywords: ["website vakman amersfoort", "website amersfoort zzp"],
+    intro: "Amersfoortse vakmannen: uw concurrent heeft al een betere site.",
+    paragraphs: [
+      "Inhalen zonder groot budget. WebKlaar: vaste prijs, snelle levering.",
+    ],
+    dienst: "vakman-site",
+    stad: "Amersfoort",
+  },
+];
+
+export function getSeoLanding(slug: string) {
+  return seoLandingen.find((l) => l.slug === slug);
+}

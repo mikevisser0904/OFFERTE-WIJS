@@ -1,5 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { demo } from "@/data/demo-site";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Demo website vakman — voorbeeld Zonwering site",
+  description:
+    "Bekijk een demo van een professionele vakman-website. Zo ziet uw site eruit. Bestel vanaf €899 bij WebKlaar.",
+  path: "/demo",
+  keywords: ["demo website vakman", "voorbeeld website zonwering"],
+});
 
 export default function DemoSitePage() {
   const wa = `https://wa.me/${demo.whatsapp}?text=${encodeURIComponent("Hoi, ik wil graag een offerte voor zonwering.")}`;

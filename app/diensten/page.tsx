@@ -2,12 +2,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { diensten, webklaar } from "@/data/diensten-online";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Diensten — WebKlaar",
+export const metadata: Metadata = pageMetadata({
+  title: "Diensten & prijzen — websites voor vakmannen",
   description:
-    "Website vakman €899, Google Start €299, digitale opruiming, Excel automatisering, AI snelstart. Online bestellen.",
-};
+    "Website vakman €899, Google Start €299, digitale opruiming €249, Excel €499, AI €199. Online bestellen bij WebKlaar.",
+  path: "/diensten",
+  keywords: ["webklaar diensten", "website vakman prijs", "google start pakket"],
+});
 
 export default function DienstenPage() {
   return (

@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { BestelPageClient } from "@/components/bestel-page-client";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Bestellen — WebKlaar",
-  description: "Bestel uw website of digitaal pakket. Vaste prijs, betaling bij oplevering.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Bestellen — website of digitaal pakket",
+  description:
+    "Bestel Vakman Website €899, Google Start €299 of andere diensten. Vaste prijs, betaling bij oplevering.",
+  path: "/bestellen",
+  keywords: ["webklaar bestellen", "website bestellen", "website offerte"],
+});
 
 export default function BestellenPage() {
   return (

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { diensten, getDienst } from "@/data/diensten-online";
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return diensten.map((d) => ({ slug: d.slug }));
@@ -16,14 +17,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const d = getDienst(slug);
   if (!d) return { title: "Dienst niet gevonden" };
-  return {
-    title: `${d.naam} ${d.prijs} — WebKlaar`,
-    description: d.beschrijving,
-    openGraph: {
-      title: `${d.naam} — WebKlaar`,
-      description: d.korteOms,
-    },
-  };
+  return pageMetadata({
+    title: `${d.naam} ${d.prijs} — online bestellen`,
+    description: `${d.beschrijving} Bestel online. ${d.levertijd}.`,
+    path: `/diensten/${slug}`,
+    keywords: [d.naam, d.korteOms, "webklaar"],
+  });
 }
 
 export default async function DienstDetailPage({

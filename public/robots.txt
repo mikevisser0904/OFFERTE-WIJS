@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://mikevisser0904.github.io/OFFERTE-WIJS/sitemap.xml
+Host: mikevisser0904.github.io
