@@ -41,7 +41,7 @@ export default async function SeoLandingPage({
 
       <article className="mx-auto max-w-3xl px-6 py-16">
         <nav className="text-sm text-slate-500" aria-label="Breadcrumb">
-          <Link href="/" className="hover:text-teal-600">
+          <Link href="/" className="hover:text-emerald-600">
             Home
           </Link>
           {" / "}
@@ -57,7 +57,7 @@ export default async function SeoLandingPage({
           </p>
         ))}
 
-        <section className="mt-10 rounded-2xl border border-teal-100 bg-teal-50 p-8">
+        <section className="mt-10 rounded-2xl border border-emerald-100 bg-emerald-50 p-8">
           <h2 className="text-xl font-bold text-slate-900">Direct bestellen</h2>
           <p className="mt-2 text-slate-600">
             Vaste prijs, geen verrassingen. Live in 2–3 werkdagen.
@@ -65,13 +65,13 @@ export default async function SeoLandingPage({
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
               href={`/bestellen/?dienst=${land.dienst}`}
-              className="rounded-full bg-teal-600 px-8 py-3 font-bold text-white hover:bg-teal-500"
+              className="rounded-full bg-emerald-600 px-8 py-3 font-bold text-white hover:bg-emerald-500"
             >
               Bestel nu →
             </Link>
             <Link
               href="/demo/"
-              className="rounded-full border border-teal-200 px-8 py-3 font-semibold text-teal-800 hover:bg-teal-100"
+              className="rounded-full border border-emerald-200 px-8 py-3 font-semibold text-emerald-800 hover:bg-emerald-100"
             >
               Bekijk demo
             </Link>
@@ -82,17 +82,17 @@ export default async function SeoLandingPage({
           <h2 className="text-lg font-bold">Gerelateerd</h2>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <Link href="/diensten/" className="text-teal-600 hover:underline">
+              <Link href="/diensten/" className="text-emerald-600 hover:underline">
                 Alle diensten & prijzen
               </Link>
             </li>
             <li>
-              <Link href="/diensten/vakman-site/" className="text-teal-600 hover:underline">
+              <Link href="/diensten/vakman-site/" className="text-emerald-600 hover:underline">
                 Vakman Website €899
               </Link>
             </li>
             <li>
-              <Link href="/diensten/google-start/" className="text-teal-600 hover:underline">
+              <Link href="/diensten/google-start/" className="text-emerald-600 hover:underline">
                 Google Start €299
               </Link>
             </li>

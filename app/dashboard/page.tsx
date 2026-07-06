@@ -67,9 +67,9 @@ export default function DashboardPage() {
           </Link>
         </section>
 
-        <section className="rounded-2xl border border-teal-400/30 bg-teal-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between">
+        <section className="rounded-2xl border border-emerald-400/30 bg-emerald-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-teal-400">
+            <p className="text-xs font-semibold uppercase tracking-widest text-emerald-400">
               Webwinkel live
             </p>
             <h2 className="mt-2 text-xl font-bold">WebKlaar verkoopt online</h2>
@@ -79,7 +79,7 @@ export default function DashboardPage() {
           </div>
           <Link
             href="/"
-            className="mt-4 inline-flex shrink-0 rounded-full bg-teal-400 px-6 py-3 font-bold text-slate-900 hover:bg-teal-300 sm:mt-0"
+            className="mt-4 inline-flex shrink-0 rounded-full bg-emerald-400 px-6 py-3 font-bold text-slate-900 hover:bg-emerald-300 sm:mt-0"
           >
             Naar webshop →
           </Link>

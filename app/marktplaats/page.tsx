@@ -51,11 +51,11 @@ export default function MarktplaatsPage() {
       subtitle="Plak op Fiverr, Malt, LinkedIn — webshop staat al live"
     >
       <div className="mx-auto max-w-3xl space-y-8">
-        <section className="rounded-2xl border border-teal-400/25 bg-teal-400/5 p-6">
-          <p className="font-bold text-teal-300">Webshop live</p>
+        <section className="rounded-2xl border border-emerald-400/25 bg-emerald-400/5 p-6">
+          <p className="font-bold text-emerald-300">Webshop live</p>
           <p className="mt-2 text-sm text-white/60">
             Klanten kunnen al bestellen op{" "}
-            <Link href="/" className="text-teal-400 underline">
+            <Link href="/" className="text-emerald-400 underline">
               homepage
             </Link>
             . Deze listings zijn extra kanalen.

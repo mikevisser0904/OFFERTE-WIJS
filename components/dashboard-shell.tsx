@@ -27,14 +27,14 @@ export function DashboardShell({
   subtitle?: string;
 }) {
   return (
-    <div className="min-h-screen bg-[#070b14] text-white">
-      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(16,185,129,0.08),_transparent_50%),radial-gradient(ellipse_at_bottom_right,_rgba(245,158,11,0.06),_transparent_40%)]" />
+    <div className="min-h-screen bg-[var(--site-bg)] text-white">
+      <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(16,185,129,0.14),_transparent_55%),radial-gradient(ellipse_at_bottom_right,_rgba(52,211,153,0.08),_transparent_45%)]" />
 
       <div className="relative flex min-h-screen">
-        <aside className="hidden w-56 shrink-0 flex-col border-r border-white/5 bg-[#0a0f1a]/80 backdrop-blur-xl lg:flex">
-          <div className="border-b border-white/5 px-5 py-6">
+        <aside className="hidden w-56 shrink-0 flex-col border-r border-emerald-400/10 bg-[var(--site-surface)]/90 backdrop-blur-xl lg:flex">
+          <div className="border-b border-emerald-400/10 px-5 py-6">
             <p className="text-lg font-bold tracking-tight">
-              Offerte<span className="text-amber-400">Wijs</span>
+              Offerte<span className="text-emerald-400">Wijs</span>
             </p>
             <p className="mt-1 text-xs text-white/40">Mike + Maarten</p>
           </div>
@@ -68,7 +68,7 @@ export function DashboardShell({
         </aside>
 
         <div className="flex min-w-0 flex-1 flex-col">
-          <header className="sticky top-0 z-10 border-b border-white/5 bg-[#070b14]/90 backdrop-blur-xl">
+          <header className="sticky top-0 z-10 border-b border-emerald-400/10 bg-[var(--site-header)]/92 backdrop-blur-xl">
             <div className="flex items-center justify-between gap-4 px-4 py-4 sm:px-6">
               <div>
                 <h1 className="text-xl font-bold sm:text-2xl">{title}</h1>

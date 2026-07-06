@@ -1,7 +1,19 @@
 {
   "versie": 1,
   "repo": "OFFERTE-WIJS",
-  "lastSync": "2026-07-06T23:35:28.455Z",
-  "lastNtfyId": null,
-  "ideeen": []
+  "lastSync": "2026-07-07T12:00:00.000Z",
+  "lastNtfyId": "OJNW8sEtGLZC",
+  "ideeen": [
+    {
+      "id": "OJNW8sEtGLZC",
+      "tekst": "maak de site groen",
+      "tijd": 1751926805000,
+      "van": "Maarten",
+      "status": "klaar",
+      "agentOpdracht": "## Maarten-idee — uitvoeren in OFFERTE-WIJS\n\n**ID:** OJNW8sEtGLZC\n**Van:** Maarten\n**Datum:** 2026-07-07T12:00:05.000Z\n**Idee:** maak de site groen\n\n### Jouw opdracht (Grok/Cursor agent)\n1. Lees data/maarten-wachtrij.json — dit item heeft status pending\n2. Implementeer in OFFERTE-WIJS (Next.js static export)\n3. GITHUB_PAGES=true npm run build\n4. Commit + push\n5. Zet status op klaar + notitie in data/maarten-wachtrij.json en public/maarten-wachtrij.json",
+      "aangemaakt": "2026-07-07T12:00:05.000Z",
+      "uitgevoerdOp": "2026-07-07T12:00:00.000Z",
+      "notitie": "Groen thema: donkergroene dashboard-achtergrond, emerald accenten, storefront teal→emerald"
+    }
+  ]
 }

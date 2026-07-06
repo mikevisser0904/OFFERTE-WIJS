@@ -26,21 +26,21 @@ export default function StoreHomePage() {
     <StorefrontShell>
       <SeoJsonLd />
 
-      <section className="bg-gradient-to-b from-teal-50 to-white px-6 py-20 sm:py-28">
+      <section className="bg-gradient-to-b from-emerald-50 to-white px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-5xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-teal-600">
+          <p className="text-sm font-semibold uppercase tracking-widest text-emerald-600">
             Online te bestellen · vaste prijs
           </p>
           <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
             Websites & digitaal
             <br />
-            <span className="text-teal-600">voor vakmannen.</span>
+            <span className="text-emerald-600">voor vakmannen.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-slate-600">{webklaar.sub}</p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/bestellen/"
-              className="rounded-full bg-teal-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-teal-600/20 hover:bg-teal-500"
+              className="rounded-full bg-emerald-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-emerald-600/20 hover:bg-emerald-500"
             >
               Bestel direct →
             </Link>
@@ -52,7 +52,7 @@ export default function StoreHomePage() {
             </Link>
             <a
               href={`https://wa.me/${webklaar.whatsapp}?text=${encodeURIComponent("Hoi Mike, ik wil graag meer weten over WebKlaar.")}`}
-              className="rounded-full border border-teal-200 px-8 py-4 text-base font-semibold text-teal-700 hover:bg-teal-50"
+              className="rounded-full border border-emerald-200 px-8 py-4 text-base font-semibold text-emerald-700 hover:bg-emerald-50"
             >
               WhatsApp Mike
             </a>
@@ -75,28 +75,28 @@ export default function StoreHomePage() {
             <article
               key={d.slug}
               className={`relative rounded-2xl border p-6 transition hover:shadow-md ${
-                d.populair ? "border-teal-300 bg-teal-50/50" : "border-slate-100"
+                d.populair ? "border-emerald-300 bg-emerald-50/50" : "border-slate-100"
               }`}
             >
               {d.populair && (
-                <span className="absolute -top-2 right-4 rounded-full bg-teal-600 px-3 py-0.5 text-xs font-bold text-white">
+                <span className="absolute -top-2 right-4 rounded-full bg-emerald-600 px-3 py-0.5 text-xs font-bold text-white">
                   Populair
                 </span>
               )}
-              <p className="text-2xl font-bold text-teal-600">{d.prijs}</p>
+              <p className="text-2xl font-bold text-emerald-600">{d.prijs}</p>
               <h3 className="mt-2 text-lg font-bold">{d.naam}</h3>
               <p className="mt-2 text-sm text-slate-500">{d.korteOms}</p>
               <p className="mt-3 text-xs text-slate-400">{d.levertijd}</p>
               <div className="mt-5 flex gap-3">
                 <Link
                   href={`/diensten/${d.slug}/`}
-                  className="text-sm font-medium text-teal-600 hover:underline"
+                  className="text-sm font-medium text-emerald-600 hover:underline"
                 >
                   Meer info
                 </Link>
                 <Link
                   href={`/bestellen/?dienst=${d.slug}`}
-                  className="text-sm font-bold text-slate-900 hover:text-teal-600"
+                  className="text-sm font-bold text-slate-900 hover:text-emerald-600"
                 >
                   Bestel →
                 </Link>
@@ -112,7 +112,7 @@ export default function StoreHomePage() {
         <ul className="mt-6 columns-1 gap-x-8 text-sm sm:columns-2 lg:columns-3">
           {seoLandingen.slice(0, 9).map((l) => (
             <li key={l.slug} className="mb-2">
-              <Link href={`/land/${l.slug}/`} className="text-teal-600 hover:underline">
+              <Link href={`/land/${l.slug}/`} className="text-emerald-600 hover:underline">
                 {l.h1}
               </Link>
             </li>
@@ -132,14 +132,14 @@ export default function StoreHomePage() {
               { stap: "3", tekst: "U levert logo + teksten — wij bouwen" },
             ].map((s) => (
               <li key={s.stap}>
-                <span className="text-3xl font-bold text-teal-400">{s.stap}</span>
+                <span className="text-3xl font-bold text-emerald-400">{s.stap}</span>
                 <p className="mt-2 text-sm text-slate-300">{s.tekst}</p>
               </li>
             ))}
           </ol>
           <Link
             href="/bestellen/"
-            className="mt-10 inline-flex rounded-full bg-teal-500 px-8 py-3 font-bold text-white hover:bg-teal-400"
+            className="mt-10 inline-flex rounded-full bg-emerald-500 px-8 py-3 font-bold text-white hover:bg-emerald-400"
           >
             Naar bestelformulier
           </Link>

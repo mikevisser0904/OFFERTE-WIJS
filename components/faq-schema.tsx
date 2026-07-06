@@ -52,7 +52,7 @@ export function FaqSchema() {
             ))}
           </div>
           <p className="mt-8 text-sm text-slate-500">
-            <a href={absoluteUrl("/bestellen/")} className="text-teal-600 hover:underline">
+            <a href={absoluteUrl("/bestellen/")} className="text-emerald-600 hover:underline">
               Bestelformulier →
             </a>
           </p>

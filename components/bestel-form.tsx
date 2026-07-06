@@ -47,8 +47,8 @@ Ik ga akkoord met betaling bij oplevering.`;
 
   if (verzonden) {
     return (
-      <div className="rounded-2xl border border-teal-200 bg-teal-50 p-8">
-        <p className="text-2xl font-bold text-teal-800">Bestelling klaar</p>
+      <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-8">
+        <p className="text-2xl font-bold text-emerald-800">Bestelling klaar</p>
         <p className="mt-3 text-slate-600">
           WhatsApp zou moeten openen. Werkt dat niet? Gebruik de knoppen hieronder.
         </p>
@@ -60,13 +60,13 @@ Ik ga akkoord met betaling bij oplevering.`;
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-teal-600 px-6 py-3 text-center text-sm font-bold text-white hover:bg-teal-500"
+            className="rounded-full bg-emerald-600 px-6 py-3 text-center text-sm font-bold text-white hover:bg-emerald-500"
           >
             Verstuur via WhatsApp →
           </a>
           <a
             href={mailUrl}
-            className="rounded-full border border-teal-300 px-6 py-3 text-center text-sm font-bold text-teal-800 hover:bg-teal-100"
+            className="rounded-full border border-emerald-300 px-6 py-3 text-center text-sm font-bold text-emerald-800 hover:bg-emerald-100"
           >
             Verstuur via e-mail →
           </a>
@@ -168,7 +168,7 @@ Ik ga akkoord met betaling bij oplevering.`;
 
       <button
         type="submit"
-        className="w-full rounded-full bg-teal-600 py-4 text-base font-bold text-white hover:bg-teal-500"
+        className="w-full rounded-full bg-emerald-600 py-4 text-base font-bold text-white hover:bg-emerald-500"
       >
         Plaats bestelling →
       </button>

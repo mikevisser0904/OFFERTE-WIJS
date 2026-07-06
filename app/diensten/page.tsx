@@ -23,14 +23,14 @@ export default function DienstenPage() {
           {diensten.map((d) => (
             <article
               key={d.slug}
-              className="rounded-2xl border border-slate-100 p-8 hover:border-teal-200"
+              className="rounded-2xl border border-slate-100 p-8 hover:border-emerald-200"
             >
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
                   <h2 className="text-xl font-bold">{d.naam}</h2>
                   <p className="mt-1 text-sm text-slate-500">{d.voorWie}</p>
                 </div>
-                <p className="text-2xl font-bold text-teal-600">{d.prijs}</p>
+                <p className="text-2xl font-bold text-emerald-600">{d.prijs}</p>
               </div>
               <p className="mt-4 text-slate-600">{d.beschrijving}</p>
               <ul className="mt-4 grid gap-1 sm:grid-cols-2">
@@ -43,13 +43,13 @@ export default function DienstenPage() {
               <div className="mt-6 flex gap-4">
                 <Link
                   href={`/diensten/${d.slug}/`}
-                  className="text-sm font-medium text-teal-600"
+                  className="text-sm font-medium text-emerald-600"
                 >
                   Details →
                 </Link>
                 <Link
                   href={`/bestellen/?dienst=${d.slug}`}
-                  className="rounded-full bg-teal-600 px-5 py-2 text-sm font-bold text-white"
+                  className="rounded-full bg-emerald-600 px-5 py-2 text-sm font-bold text-white"
                 >
                   Bestellen
                 </Link>

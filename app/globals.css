@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --site-bg: #051610;
+  --site-surface: #081f14;
+  --site-header: #051610;
+  --site-accent: #34d399;
+  --site-accent-strong: #10b981;
 }
 
 @theme inline {
@@ -14,13 +19,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #051610;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: #070b14;
+  background: var(--site-bg);
   color: #ededed;
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
