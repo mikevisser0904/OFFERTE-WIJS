@@ -1,7 +1,10 @@
+import type { MaartenWachtrij } from "@/lib/maarten-wachtrij";
+
 export const MAARTEN_IDEE_TOPIC = "webklaar-maarten-ideeen";
 export const MAARTEN_IDEE_STORAGE = "webklaar-maarten-ideeen";
 export const MAARTEN_IDEE_SINCE_KEY = "webklaar-maarten-ideeen-since";
 export const MAARTEN_IDEE_EVENT = "maarten-idee-nieuw";
+export const MAARTEN_WACHTRIJ_EVENT = "maarten-wachtrij-ververst";
 
 export type MaartenIdee = {
   id: string;
@@ -164,4 +167,32 @@ export function nieuwsteIdee(ideeen: MaartenIdee[]): MaartenIdee | null {
 export function mompelVanIdee(idee: MaartenIdee): string {
   const prefix = idee.van === "Maarten" ? "Maarten zegt" : idee.van;
   return idee.euro ? `${prefix}: ${idee.tekst} (${idee.euro})` : `${prefix}: ${idee.tekst}`;
+}
+
+function wachtrijJsonUrl(): string {
+  if (typeof window === "undefined") return "/maarten-wachtrij.json";
+  const base = window.location.pathname.startsWith("/OFFERTE-WIJS") ? "/OFFERTE-WIJS" : "";
+  return `${window.location.origin}${base}/maarten-wachtrij.json`;
+}
+
+const legeWachtrij = (): MaartenWachtrij => ({
+  versie: 1,
+  repo: "OFFERTE-WIJS",
+  lastSync: null,
+  lastNtfyId: null,
+  ideeen: [],
+});
+
+export async function haalWachtrijOp(): Promise<MaartenWachtrij> {
+  try {
+    const res = await fetch(wachtrijJsonUrl(), { cache: "no-store" });
+    if (!res.ok) return legeWachtrij();
+    const data = (await res.json()) as MaartenWachtrij;
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent(MAARTEN_WACHTRIJ_EVENT));
+    }
+    return data;
+  } catch {
+    return legeWachtrij();
+  }
 }

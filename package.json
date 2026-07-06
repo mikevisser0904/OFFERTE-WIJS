@@ -8,6 +8,7 @@
     "build:pages": "GITHUB_PAGES=true npm run build",
     "setup:uptimerobot": "node scripts/setup-uptimerobot-agent.mjs",
     "setup:gsc": "bash scripts/open-gsc-setup.sh",
+    "sync:maarten": "node scripts/sync-maarten-wachtrij.mjs",
     "start": "next start",
     "lint": "eslint"
   },

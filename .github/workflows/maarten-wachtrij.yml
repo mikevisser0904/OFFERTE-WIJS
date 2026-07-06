@@ -1,0 +1,41 @@
+name: Maarten wachtrij sync
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/sync-maarten-wachtrij.mjs"
+      - ".github/workflows/maarten-wachtrij.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Sync ntfy → maarten-wachtrij.json
+        run: node scripts/sync-maarten-wachtrij.mjs
+
+      - name: Commit wachtrij
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/maarten-wachtrij.json public/maarten-wachtrij.json
+          git diff --staged --quiet || git commit -m "sync: maarten-wachtrij $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main || true
+          git push || true
+
+      - name: Summary
+        run: |
+          echo "## Maarten wachtrij" >> $GITHUB_STEP_SUMMARY
+          node -e "const w=require('./data/maarten-wachtrij.json'); const p=w.ideeen.filter(i=>i.status==='pending').length; console.log(p+' pending van '+w.ideeen.length)" >> $GITHUB_STEP_SUMMARY

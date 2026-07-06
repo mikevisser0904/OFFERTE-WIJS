@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MaartenIdeeDeel } from "@/components/maarten-idee-deel";
+import { MaartenWachtrijPanel } from "@/components/maarten-wachtrij-panel";
 import { DashboardShell } from "@/components/dashboard-shell";
 import { integrations } from "@/data/integrations";
 import {
@@ -52,6 +53,8 @@ export default function IdeeenPage() {
             <MaartenIdeeDeel />
           </div>
         </section>
+
+        <MaartenWachtrijPanel />
 
         <section className="rounded-2xl border border-white/8 bg-white/[0.02] p-6 sm:p-8">
           <p className="text-sm text-white/55">

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { publiceerMaartenIdee } from "@/lib/maarten-ideeen";
+import { publiceerMaartenIdee, type MaartenIdee } from "@/lib/maarten-ideeen";
+import { genereerAgentOpdracht, githubIssueUrl } from "@/lib/maarten-wachtrij";
 
 type Props = {
   compact?: boolean;
@@ -16,6 +17,8 @@ const snelVoorbeelden = [
 export function MaartenIdeeDeel({ compact = false }: Props) {
   const [tekst, setTekst] = useState("");
   const [status, setStatus] = useState<"idle" | "bezig" | "klaar" | "fout">("idle");
+  const [laatste, setLaatste] = useState<MaartenIdee | null>(null);
+  const [kopieFeedback, setKopieFeedback] = useState(false);
 
   async function deel(e?: FormEvent) {
     e?.preventDefault();
@@ -23,14 +26,22 @@ export function MaartenIdeeDeel({ compact = false }: Props) {
     if (!trimmed) return;
     setStatus("bezig");
     try {
-      await publiceerMaartenIdee(trimmed);
+      const idee = await publiceerMaartenIdee(trimmed);
       setTekst("");
+      setLaatste(idee);
       setStatus("klaar");
       setTimeout(() => setStatus("idle"), 2500);
     } catch {
       setStatus("fout");
       setTimeout(() => setStatus("idle"), 2500);
     }
+  }
+
+  async function kopieerOpdracht() {
+    if (!laatste) return;
+    await navigator.clipboard.writeText(genereerAgentOpdracht(laatste));
+    setKopieFeedback(true);
+    setTimeout(() => setKopieFeedback(false), 2000);
   }
 
   return (
@@ -46,7 +57,7 @@ export function MaartenIdeeDeel({ compact = false }: Props) {
         </p>
         {!compact && (
           <span className="rounded-full bg-sky-400/15 px-2 py-0.5 text-[9px] font-medium text-sky-200/80">
-            sync via ntfy
+            sync via ntfy → agent-wachtrij
           </span>
         )}
       </div>
@@ -87,6 +98,31 @@ export function MaartenIdeeDeel({ compact = false }: Props) {
       >
         {status === "bezig" ? "Versturen…" : status === "klaar" ? "✓ Goudzoeker heeft het!" : "Deel in goudzoeker →"}
       </button>
+
+      {laatste && status !== "bezig" && (
+        <div className="mt-3 rounded-lg border border-amber-400/20 bg-amber-400/5 p-3">
+          <p className="text-[10px] font-medium text-amber-200/80">
+            Agent kan dit doorvoeren (sync ~5 min of lokaal: npm run sync:maarten)
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={kopieerOpdracht}
+              className="rounded-lg bg-amber-400/15 px-3 py-1.5 text-xs font-semibold text-amber-200 hover:bg-amber-400/25"
+            >
+              {kopieFeedback ? "✓ Gekopieerd" : "Kopieer Grok-opdracht"}
+            </button>
+            <a
+              href={githubIssueUrl(laatste)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-white/10 px-3 py-1.5 text-xs text-white/55 hover:border-white/20 hover:text-white/75"
+            >
+              GitHub issue →
+            </a>
+          </div>
+        </div>
+      )}
     </form>
   );
 }

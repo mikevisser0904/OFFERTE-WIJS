@@ -44,7 +44,9 @@ export const integrations = {
     topic: "webklaar-maarten-ideeen",
     publish: "https://ntfy.sh/webklaar-maarten-ideeen",
     subscribe: "https://ntfy.sh/webklaar-maarten-ideeen",
-    note: "Maarten deelt idee → goudzoeker mompelt het bij Mike (poll elke 8s)",
+    note: "Maarten deelt idee → goudzoeker mompelt + agent-wachtrij (sync elke 5 min)",
     voorbeeld: '€899 — site voor installateur X',
+    wachtrij: "data/maarten-wachtrij.json",
+    agentTrigger: "voer maarten wachtrij uit",
   },
 };
