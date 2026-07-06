@@ -9,6 +9,7 @@
     "setup:uptimerobot": "node scripts/setup-uptimerobot-agent.mjs",
     "setup:gsc": "bash scripts/open-gsc-setup.sh",
     "sync:maarten": "node scripts/sync-maarten-wachtrij.mjs",
+    "maarten": "git pull --rebase && npm run sync:maarten",
     "start": "next start",
     "lint": "eslint"
   },
