@@ -118,7 +118,7 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
             <div>
               <p className="text-sm font-bold text-amber-300">Goudzoeker-agent</p>
               <p className="text-[10px] text-white/40">
-                Slagingskans {ctx.slagings.totaal}% · week {ctx.slagings.week}
+                Associaal · brutaal · behulpzaam · week {ctx.slagings.week}
               </p>
             </div>
           </div>
@@ -209,7 +209,7 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
               ref={inputRef}
               value={invoer}
               onChange={(e) => setInvoer(e.target.value)}
-              placeholder="Vraag de agent..."
+              placeholder="Geen gezwam — stel je vraag"
               className="min-w-0 flex-1 rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm placeholder:text-white/25 focus:border-amber-400/40 focus:outline-none"
             />
             <button
