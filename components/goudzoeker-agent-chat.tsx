@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { laadKpi, STORAGE_KEY } from "@/lib/goudzoeker";
+import { MaartenIdeeDeel } from "@/components/maarten-idee-deel";
 import { GoudzoekerAvatarMini } from "@/components/goudzoeker-art";
 import {
   beantwoord,
@@ -184,7 +185,8 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
         </div>
 
         <div className="border-t border-amber-400/15 px-3 py-2">
-          <div className="mb-2 flex flex-wrap gap-1">
+          <MaartenIdeeDeel compact />
+          <div className="mb-2 mt-2 flex flex-wrap gap-1">
             {snelleVragen.map((v) => (
               <button
                 key={v}

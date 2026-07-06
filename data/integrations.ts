@@ -40,4 +40,11 @@ export const integrations = {
     subscribe: "https://ntfy.sh/webklaar-mike",
     note: "Push bij site-down (GitHub Action)",
   },
+  maartenIdeeen: {
+    topic: "webklaar-maarten-ideeen",
+    publish: "https://ntfy.sh/webklaar-maarten-ideeen",
+    subscribe: "https://ntfy.sh/webklaar-maarten-ideeen",
+    note: "Maarten deelt idee → goudzoeker mompelt het bij Mike (poll elke 8s)",
+    voorbeeld: '€899 — site voor installateur X',
+  },
 };

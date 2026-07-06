@@ -74,6 +74,19 @@ export function IntegrationsPanel() {
             Abonneer: {integrations.ntfy.subscribe}
           </a>
         </div>
+        <div className="rounded-xl border border-sky-400/20 bg-sky-400/5 p-4 sm:col-span-2">
+          <p className="font-bold text-sky-300">Maarten ideeën → goudzoeker</p>
+          <p className="mt-1 text-xs text-white/50">{integrations.maartenIdeeen.note}</p>
+          <p className="mt-2 font-mono text-[10px] text-white/40">
+            Voorbeeld: {integrations.maartenIdeeen.voorbeeld}
+          </p>
+          <a
+            href="/ideeen/"
+            className="mt-2 inline-block text-xs font-semibold text-sky-300 hover:underline"
+          >
+            Deel op /ideeen/ →
+          </a>
+        </div>
       </div>
     </section>
   );

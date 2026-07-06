@@ -7,7 +7,10 @@ import { GoudzoekerCharacter } from "@/components/goudzoeker-character";
 import { GoudzoekerOpdringer } from "@/components/goudzoeker-opdringer";
 import { GoudzoekerPijl } from "@/components/goudzoeker-pijl";
 import { useGoudzoekerWandel } from "@/hooks/use-goudzoeker-wandel";
+import { useMaartenIdeeen } from "@/hooks/use-maarten-ideeen";
+import { tipVoorTarget } from "@/lib/goudzoeker-doelen";
 import { kiesActiefGoudDoel } from "@/lib/goudzoeker-doelen";
+import { mompelVanIdee } from "@/lib/maarten-ideeen";
 import { laadKpi, type GoudTip } from "@/lib/goudzoeker";
 import {
   koppelGoudzoekerGeluid,
@@ -42,6 +45,9 @@ export function Goudzoeker() {
   const [wegTeller, setWegTeller] = useState(0);
   const terugTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wasBijGoudRef = useRef(false);
+  const wasMaartenIdeeRef = useRef<string | null>(null);
+
+  const { nieuwste: maartenIdee, versBinnen: maartenVers } = useMaartenIdeeen(zichtbaar);
 
   const { pos, richting, wandelt, bijGoud, visueel } = useGoudzoekerWandel({
     actief: zichtbaar && !agentOpen,
@@ -129,14 +135,19 @@ export function Goudzoeker() {
       teller += 1;
       const schreeuw = teller % 2 === 0 || Math.random() < 0.4;
       setIsSchreeuw(schreeuw);
-      const zin =
-        Math.random() < 0.35 && tip
-          ? randomMompelBijDoel(tip.titel, tip.euro)
-          : randomMompel(vorige, schreeuw);
+      let zin: string;
+      if (maartenIdee && Math.random() < 0.45) {
+        zin = mompelVanIdee(maartenIdee);
+        setIsSchreeuw(true);
+      } else if (Math.random() < 0.35 && tip) {
+        zin = randomMompelBijDoel(tip.titel, tip.euro);
+      } else {
+        zin = randomMompel(vorige, schreeuw);
+      }
       vorige = zin;
       setMompel(zin);
       setMompelKey((k) => k + 1);
-      speelMompelGeluid(schreeuw);
+      speelMompelGeluid(schreeuw || !!maartenIdee);
     };
 
     toon();
@@ -145,7 +156,41 @@ export function Goudzoeker() {
       MOMPEL_INTERVAL_MS.min + Math.random() * (MOMPEL_INTERVAL_MS.max - MOMPEL_INTERVAL_MS.min)
     );
     return () => clearInterval(id);
-  }, [zichtbaar, agentOpen, tip?.titel, tip?.euro, wegTeller]);
+  }, [zichtbaar, agentOpen, tip?.titel, tip?.euro, wegTeller, maartenIdee?.id]);
+
+  useEffect(() => {
+    if (!maartenVers || maartenVers.id === wasMaartenIdeeRef.current) return;
+    wasMaartenIdeeRef.current = maartenVers.id;
+
+    const ideeTip = tipVoorTarget("ideeen");
+    setTip({
+      ...ideeTip,
+      titel: `Maarten: ${maartenVers.tekst.slice(0, 40)}${maartenVers.tekst.length > 40 ? "…" : ""}`,
+      euro: maartenVers.euro ?? "€???",
+      tekst: maartenVers.tekst,
+    });
+
+    const target = document.querySelector('[data-goud-target="ideeen"]');
+    if (target) {
+      const tg = target.getBoundingClientRect();
+      setTo({ x: tg.left + tg.width / 2, y: tg.top + tg.height / 2 });
+      setGoudDoel({
+        x: tg.left + tg.width / 2,
+        y: tg.top + tg.height / 2,
+        z: 0.8,
+        actief: true,
+      });
+      document.querySelectorAll("[data-goud-highlight]").forEach((el) => {
+        el.classList.remove("goud-pulse", "goud-pulse-heftig");
+      });
+      target.classList.add("goud-pulse", "goud-pulse-heftig");
+    }
+
+    setMompel(mompelVanIdee(maartenVers));
+    setIsSchreeuw(true);
+    setMompelKey((k) => k + 1);
+    speelMompelGeluid(true);
+  }, [maartenVers]);
 
   useEffect(() => {
     if (bijGoud && !wasBijGoudRef.current) {
@@ -199,12 +244,25 @@ export function Goudzoeker() {
           perspective: "900px",
         }}
       >
+        {maartenVers && !agentOpen && (
+          <div className="goud-maarten-idee-bubble pointer-events-auto mb-1 max-w-[15rem] self-center rounded-xl border border-sky-400/50 bg-sky-950/90 px-3 py-2">
+            <p className="text-[9px] font-black uppercase tracking-wider text-sky-300">Nieuw van Maarten</p>
+            <p className="mt-0.5 text-xs font-semibold text-white/90">{maartenVers.tekst}</p>
+            {maartenVers.euro && (
+              <p className="mt-0.5 font-mono text-sm font-bold text-sky-200">{maartenVers.euro}</p>
+            )}
+            <Link href="/ideeen/" className="mt-1 inline-block text-[10px] font-bold text-sky-300 hover:text-sky-200">
+              Naar ideeën →
+            </Link>
+          </div>
+        )}
+
         {mompel && !agentOpen && (
           <div
             key={mompelKey}
             className={`pointer-events-none mb-1 max-w-[14rem] self-center px-3 py-2 ${
               isSchreeuw ? "goud-mompel-schreeuw" : "goud-mompel-bubble"
-            }`}
+            } ${mompel.startsWith("Maarten") ? "border-sky-400/40" : ""}`}
             style={{
               transform: `translateZ(${visueel.translateZ + 50}px) scale(${1 + pos.z * 0.2})`,
             }}

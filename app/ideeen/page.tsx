@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { MaartenIdeeDeel } from "@/components/maarten-idee-deel";
 import { DashboardShell } from "@/components/dashboard-shell";
+import { integrations } from "@/data/integrations";
 import {
   ideas,
   scoreLabels,
@@ -32,6 +34,25 @@ export default function IdeeenPage() {
       subtitle={`${ideas.filter((i) => i.category !== "later").length} actieve sporen · gesorteerd op timing`}
     >
       <div className="mx-auto max-w-4xl space-y-10">
+        <section className="rounded-2xl border border-sky-400/25 bg-sky-400/5 p-6 sm:p-8">
+          <h2 className="text-lg font-bold text-sky-300">Maarten — snel delen</h2>
+          <p className="mt-2 text-sm text-white/55">
+            Typ idee → goudzoeker mompelt het bij Mike. Sync via{" "}
+            <a
+              href={integrations.maartenIdeeen.subscribe}
+              className="text-sky-300 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ntfy
+            </a>
+            . Of open de goudzoeker-agent (klik op de lopende goudzoeker).
+          </p>
+          <div className="mt-4">
+            <MaartenIdeeDeel />
+          </div>
+        </section>
+
         <section className="rounded-2xl border border-white/8 bg-white/[0.02] p-6 sm:p-8">
           <p className="text-sm text-white/55">
             Geen startup-dromen. Vijf manieren om cash te maken — met of zonder code.
