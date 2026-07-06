@@ -9,6 +9,7 @@ type Props = {
   wandelt?: boolean;
   bijGoud?: boolean;
   diepte?: number;
+  opdringerig?: boolean;
 };
 
 export function GoudzoekerCharacter({
@@ -17,6 +18,7 @@ export function GoudzoekerCharacter({
   wandelt = false,
   bijGoud = false,
   diepte = 0.5,
+  opdringerig = false,
 }: Props) {
   const uid = useId().replace(/:/g, "");
 
@@ -25,8 +27,8 @@ export function GoudzoekerCharacter({
       className={`relative h-[9.375rem] w-[8.125rem] ${
         agentOpen ? "goud-agent-modus" : "goud-mijn-modus"
       } ${wandelt ? "goud-is-wandelen" : ""} ${bijGoud ? "goud-bij-goud" : ""} ${
-        diepte > 0.65 ? "goud-dichtbij" : diepte < 0.35 ? "goud-verweg" : ""
-      }`}
+        opdringerig ? "goud-opdringerig-char" : ""
+      } ${diepte > 0.65 ? "goud-dichtbij" : diepte < 0.35 ? "goud-verweg" : ""}`}
       style={{ transform: `translateZ(${diepte * 20}px)`, transformStyle: "preserve-3d" }}
       aria-hidden
     >

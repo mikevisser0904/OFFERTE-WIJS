@@ -57,7 +57,7 @@ export function GoudzoekerPijl({ from, to }: Props) {
         d={pathD}
         fill="none"
         stroke={`url(#${uid}-lijn)`}
-        strokeWidth="3.5"
+        strokeWidth="5"
         strokeDasharray="12 9"
         strokeLinecap="round"
         markerEnd={`url(#${uid}-pijl-kop)`}
