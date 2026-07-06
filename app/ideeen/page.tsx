@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DashboardShell } from "@/components/dashboard-shell";
 import {
   ideas,
   scoreLabels,
@@ -6,7 +7,6 @@ import {
   categoryMeta,
   spoorMeta,
   type IdeaCategory,
-  type IncomeSpoor,
 } from "@/data/ideas";
 
 function ScoreBar({ label, value, max = 5 }: { label: string; value: number; max?: number }) {
@@ -23,94 +23,32 @@ function ScoreBar({ label, value, max = 5 }: { label: string; value: number; max
 }
 
 const categoryOrder: IdeaCategory[] = ["deze-week", "deze-maand", "later"];
-const spoorOrder: IncomeSpoor[] = [
-  "verkopen",
-  "uren",
-  "netwerk",
-  "doorverkoop",
-  "recurring",
-];
 
 export default function IdeeenPage() {
   return (
-    <div className="min-h-screen bg-[#0a0f1a] text-white">
-      <header className="border-b border-white/5">
-        <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-5">
-          <Link href="/" className="text-sm text-white/60 hover:text-white">
-            ← Home
+    <DashboardShell
+      active="/ideeen/"
+      title="Ideeën"
+      subtitle={`${ideas.filter((i) => i.category !== "later").length} actieve sporen · gesorteerd op timing`}
+    >
+      <div className="mx-auto max-w-4xl space-y-10">
+        <section className="rounded-2xl border border-white/8 bg-white/[0.02] p-6 sm:p-8">
+          <p className="text-sm text-white/55">
+            Geen startup-dromen. Vijf manieren om cash te maken — met of zonder code.
+            Kies maximaal 2 sporen.
+          </p>
+          <Link
+            href="/"
+            className="mt-4 inline-flex text-sm font-medium text-emerald-300 hover:text-emerald-200"
+          >
+            ← Terug naar dashboard
           </Link>
-          <span className="text-xs text-white/40">Geld · korte termijn · 5 sporen</span>
-        </div>
-      </header>
-
-      <main className="mx-auto max-w-4xl px-6 pb-24">
-        <section className="border-b border-white/5 py-12">
-          <p className="text-sm font-semibold uppercase tracking-widest text-emerald-400">
-            Mike + Maarten
-          </p>
-          <h1 className="mt-2 text-4xl font-bold sm:text-5xl">
-            Geld verdienen
-            <br />
-            <span className="text-white/50">wat nu kan</span>
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg text-white/55">
-            Niet één SaaS-idee — maar vijf manieren om cash te maken: verkopen, uren,
-            netwerk, doorverkoop en recurring. Alles wat jullie deze maand echt kunnen
-            uitvoeren, met of zonder code.
-          </p>
         </section>
 
-        {/* 5 sporen */}
-        <section className="py-10">
-          <h2 className="text-lg font-bold text-white/90">5 sporen naar cash</h2>
-          <p className="mt-2 text-sm text-white/50">
-            Kies minstens 2 sporen — niet alles uit één categorie.
-          </p>
-          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {spoorOrder.map((s) => {
-              const meta = spoorMeta[s];
-              const count = ideas.filter((i) => i.spoor === s && i.category !== "later").length;
-              return (
-                <div
-                  key={s}
-                  className="rounded-xl border border-white/8 bg-white/[0.03] p-4"
-                >
-                  <p className="text-lg">{meta.emoji}</p>
-                  <p className="mt-1 font-bold text-white/90">{meta.label}</p>
-                  <p className="mt-1 text-xs text-white/45">{meta.uitleg}</p>
-                  <p className="mt-2 font-mono text-xs text-emerald-400/80">
-                    {count} ideeën
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* 3-fasen plan */}
-        <section className="border-t border-white/5 py-10">
+        <section>
           <h2 className="text-lg font-bold text-emerald-300">{aanbeveling.titel}</h2>
           <p className="mt-2 text-white/60">{aanbeveling.tekst}</p>
-
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {aanbeveling.sporen.map((s) => {
-              const meta = spoorMeta[s.spoor];
-              return (
-                <div
-                  key={s.spoor}
-                  className="rounded-xl border border-emerald-400/15 bg-emerald-400/5 p-4"
-                >
-                  <p className="text-sm font-bold text-emerald-300">
-                    {meta.emoji} {meta.label}
-                  </p>
-                  <p className="mt-1 text-xs text-white/60">{s.actie}</p>
-                  <p className="mt-2 font-mono text-xs text-emerald-400">{s.euro}</p>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
             {aanbeveling.plan.map((f) => (
               <div
                 key={f.fase}
@@ -122,19 +60,15 @@ export default function IdeeenPage() {
               </div>
             ))}
           </div>
-          <p className="mt-4 text-xs text-white/35">
-            Niet nu: {aanbeveling.nietNu.join(" · ")}
-          </p>
         </section>
 
-        {/* Per categorie */}
         {categoryOrder.map((cat) => {
           const meta = categoryMeta[cat];
           const items = ideas.filter((i) => i.category === cat);
           if (items.length === 0) return null;
 
           return (
-            <section key={cat} className="mt-14">
+            <section key={cat}>
               <div className="mb-6">
                 <h2
                   className={`text-2xl font-bold ${
@@ -159,7 +93,7 @@ export default function IdeeenPage() {
                       <article
                         key={idea.id}
                         id={idea.id}
-                        className={`scroll-mt-8 rounded-2xl border p-7 ${
+                        className={`scroll-mt-24 rounded-2xl border p-7 ${
                           idea.recommended
                             ? "border-emerald-400/40 bg-emerald-400/[0.06]"
                             : "border-white/8 bg-white/[0.02]"
@@ -247,18 +181,7 @@ export default function IdeeenPage() {
             </section>
           );
         })}
-
-        <section className="mt-16 rounded-2xl border border-white/10 p-8 text-center">
-          <h2 className="text-xl font-bold">Besluit</h2>
-          <p className="mx-auto mt-3 max-w-lg text-white/55">
-            Kies 2 sporen: één voor deze week (cash), één voor recurring of doorverkoop.
-            Niet alles tegelijk. Bel 20 min. Begin maandag.
-          </p>
-          <p className="mt-4 text-sm text-white/35">
-            Deel: mikevisser0904.github.io/OFFERTE-WIJS/ideeen/
-          </p>
-        </section>
-      </main>
-    </div>
+      </div>
+    </DashboardShell>
   );
 }
