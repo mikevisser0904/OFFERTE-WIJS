@@ -32,6 +32,12 @@ export default function StoreHomePage() {
             >
               Bekijk demo-site
             </Link>
+            <a
+              href={`https://wa.me/${webklaar.whatsapp}?text=${encodeURIComponent("Hoi Mike, ik wil graag meer weten over WebKlaar.")}`}
+              className="rounded-full border border-teal-200 px-8 py-4 text-base font-semibold text-teal-700 hover:bg-teal-50"
+            >
+              WhatsApp Mike
+            </a>
           </div>
           <div className="mt-12 flex flex-wrap gap-6 text-sm text-slate-500">
             {webklaar.usps.map((u) => (

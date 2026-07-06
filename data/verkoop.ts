@@ -22,6 +22,9 @@ export const merk = {
   tagline: "Moderne site voor vakmannen — live in 3 dagen",
   wie: "Mike Visser + Maarten (opdevlugt-tech)",
   contact: "Mike belt/app — Maarten bouwt",
+  telefoon: "0627362142",
+  whatsapp: "31627362142",
+  email: "mikevisser0904@gmail.com",
   demo: "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/",
   webklaar: "https://mikevisser0904.github.io/OFFERTE-WIJS/webklaar/",
 };

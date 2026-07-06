@@ -35,10 +35,8 @@ Ik ga akkoord met betaling bij oplevering.`;
       : `https://wa.me/?text=${encodeURIComponent(body)}`;
     const mailUrl = `mailto:${webklaar.email}?subject=${encodeURIComponent(`Bestelling ${gekozen.naam}`)}&body=${encodeURIComponent(body)}`;
 
-    window.open(waUrl, "_blank");
-    setTimeout(() => {
-      window.location.href = mailUrl;
-    }, 500);
+    window.open(waUrl, "_blank", "noopener,noreferrer");
+    window.location.href = mailUrl;
     setVerzonden(true);
   }
 

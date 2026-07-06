@@ -18,9 +18,10 @@ export const webklaar = {
   sub: "AI + developers. Vaste prijs. Live in dagen, niet maanden.",
   url: "https://mikevisser0904.github.io/OFFERTE-WIJS/",
   demo: "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/",
-  /** Vul in voor directe WhatsApp-orders */
-  whatsapp: "",
-  email: "bestelling@webklaar.nl",
+  telefoon: "0627362142",
+  telefoonDisplay: "06 - 27 36 21 42",
+  whatsapp: "31627362142",
+  email: "mikevisser0904@gmail.com",
   usps: [
     "Vaste prijs — geen verrassingen",
     "Live in 1–3 dagen",

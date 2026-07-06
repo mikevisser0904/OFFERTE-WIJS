@@ -78,12 +78,22 @@ export function StorefrontShell({
               </ul>
             </div>
             <div>
-              <p className="text-sm font-semibold">Team</p>
+              <p className="text-sm font-semibold">Contact</p>
               <p className="mt-2 text-sm text-slate-500">
                 Mike Visser + Maarten
-                <br />
-                AI + development
               </p>
+              <a
+                href={`https://wa.me/${webklaar.whatsapp}`}
+                className="mt-2 block text-sm text-teal-600 hover:underline"
+              >
+                WhatsApp {webklaar.telefoonDisplay}
+              </a>
+              <a
+                href={`mailto:${webklaar.email}`}
+                className="block text-sm text-teal-600 hover:underline"
+              >
+                {webklaar.email}
+              </a>
               <Link
                 href="/dashboard/"
                 className="mt-3 inline-block text-xs text-slate-400 hover:text-slate-600"
