@@ -5,51 +5,54 @@ import Link from "next/link";
 import { GoudzoekerAgentChat } from "@/components/goudzoeker-agent-chat";
 import { GoudzoekerCharacter } from "@/components/goudzoeker-character";
 import { GoudzoekerPijl } from "@/components/goudzoeker-pijl";
+import { useGoudzoekerWandel } from "@/hooks/use-goudzoeker-wandel";
 import { laadKpi, waarLigtHetGeld, type GoudTip } from "@/lib/goudzoeker";
+import { GROOTTE, randomMompel } from "@/lib/goudzoeker-mompels";
 
 type Point = { x: number; y: number };
-
-function berekenWijsHoek(from: Point, to: Point): number {
-  return (Math.atan2(to.y - from.y, to.x - from.x) * 180) / Math.PI;
-}
 
 export function Goudzoeker() {
   const [tip, setTip] = useState<GoudTip | null>(null);
   const [from, setFrom] = useState<Point | null>(null);
   const [to, setTo] = useState<Point | null>(null);
-  const [wijstHoek, setWijstHoek] = useState<number | null>(null);
+  const [goudDoel, setGoudDoel] = useState<Point | null>(null);
   const [zichtbaar, setZichtbaar] = useState(true);
   const [agentOpen, setAgentOpen] = useState(false);
+  const [mompel, setMompel] = useState("");
+  const [mompelKey, setMompelKey] = useState(0);
+
+  const { pos, richting, wandelt, bijGoud } = useGoudzoekerWandel({
+    actief: zichtbaar && !agentOpen,
+    goudDoel,
+  });
 
   const update = useCallback(() => {
     const t = waarLigtHetGeld(laadKpi());
     setTip(t);
 
-    const anchor = document.getElementById("goudzoeker-anchor");
     const target = document.querySelector(`[data-goud-target="${t.target}"]`);
-
-    if (!anchor || !target) {
-      setFrom(null);
+    if (!target) {
       setTo(null);
-      setWijstHoek(null);
+      setGoudDoel(null);
       return;
     }
 
-    const a = anchor.getBoundingClientRect();
     const tg = target.getBoundingClientRect();
-
-    const fromPt = { x: a.left + a.width * 0.35, y: a.top + a.height * 0.35 };
     const toPt = { x: tg.left + tg.width / 2, y: tg.top + tg.height / 2 };
-
-    setFrom(fromPt);
     setTo(toPt);
-    setWijstHoek(berekenWijsHoek(fromPt, toPt));
+    setGoudDoel(toPt);
 
     document.querySelectorAll("[data-goud-highlight]").forEach((el) => {
       el.classList.remove("goud-pulse");
     });
     target.classList.add("goud-pulse");
   }, []);
+
+  const updatePijl = useCallback(() => {
+    const cx = pos.x + GROOTTE.w * 0.5;
+    const cy = pos.y + GROOTTE.h * 0.42;
+    setFrom({ x: cx, y: cy });
+  }, [pos]);
 
   useEffect(() => {
     update();
@@ -66,68 +69,102 @@ export function Goudzoeker() {
     };
   }, [update]);
 
+  useEffect(() => {
+    updatePijl();
+  }, [updatePijl, pos]);
+
+  useEffect(() => {
+    if (!zichtbaar || agentOpen) return;
+
+    let vorige = "";
+    const toon = () => {
+      const zin = randomMompel(vorige);
+      vorige = zin;
+      setMompel(zin);
+      setMompelKey((k) => k + 1);
+    };
+
+    toon();
+    const id = setInterval(toon, 2200 + Math.random() * 1800);
+    return () => clearInterval(id);
+  }, [zichtbaar, agentOpen, bijGoud]);
+
+  useEffect(() => {
+    if (bijGoud && tip) {
+      setMompel(`${tip.titel} — ${tip.euro}!`);
+      setMompelKey((k) => k + 1);
+    }
+  }, [bijGoud, tip]);
+
   if (!zichtbaar || !tip) return null;
 
   return (
     <>
       <GoudzoekerAgentChat open={agentOpen} onClose={() => setAgentOpen(false)} />
 
-      {from && to && <GoudzoekerPijl from={from} to={to} />}
+      {from && to && (bijGoud || wandelt) && <GoudzoekerPijl from={from} to={to} />}
 
       <div
         id="goudzoeker-anchor"
-        className={`fixed bottom-6 z-[100] flex max-w-[240px] flex-col items-end gap-2 transition-all duration-300 sm:max-w-xs ${
-          agentOpen ? "hidden sm:flex sm:right-[25.5rem]" : "right-6"
-        }`}
+        className="pointer-events-none fixed z-[100] flex flex-col items-center"
+        style={{
+          left: pos.x,
+          top: pos.y,
+          width: GROOTTE.w,
+          transition: agentOpen ? "none" : undefined,
+        }}
       >
-        {!agentOpen && (
-          <div className="goud-tip-bubble relative rounded-2xl border border-amber-400/40 bg-[#1a1408]/95 px-4 py-3 shadow-lg shadow-amber-900/30 backdrop-blur-md">
-            <div className="pointer-events-none absolute -bottom-2 right-10 h-4 w-4 rotate-45 border-b border-r border-amber-400/40 bg-[#1a1408]/95" />
-            <button
-              type="button"
-              onClick={() => setZichtbaar(false)}
-              className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/10 text-xs text-white/60 hover:bg-white/20"
-              aria-label="Sluit goudzoeker"
-            >
-              ×
-            </button>
-            <p className="text-xs font-bold uppercase tracking-wider text-amber-400">
-              {tip.titel}
+        {/* mompel */}
+        {mompel && !agentOpen && (
+          <div
+            key={mompelKey}
+            className="goud-mompel-bubble pointer-events-none mb-1 max-w-[11rem] self-center px-3 py-1.5"
+          >
+            <p className="text-center text-[11px] font-medium italic leading-snug text-amber-100/90">
+              &ldquo;{mompel}&rdquo;
             </p>
-            <p className="goud-euro-text mt-1 font-mono text-lg font-bold text-amber-300">
-              {tip.euro}
-            </p>
-            <p className="mt-1 text-sm leading-snug text-white/70">{tip.tekst}</p>
-            <div className="mt-3 flex flex-wrap items-center gap-3">
-              <Link
-                href={tip.href}
-                className="text-sm font-bold text-amber-400 transition hover:scale-105 hover:text-amber-300"
-              >
-                Ga ernaartoe →
-              </Link>
-              <button
-                type="button"
-                onClick={() => setAgentOpen(true)}
-                className="text-sm font-bold text-violet-400 transition hover:scale-105 hover:text-violet-300"
-              >
-                Vraag agent →
-              </button>
-            </div>
           </div>
         )}
 
-        <button
-          type="button"
-          onClick={() => setAgentOpen((o) => !o)}
-          className="goudzoeker-knop group flex items-end gap-1 text-left"
-          aria-label={agentOpen ? "Sluit agent" : "Open goudzoeker-agent"}
+        {!agentOpen && bijGoud && (
+          <div className="goud-tip-bubble pointer-events-auto relative mb-1 max-w-[13rem] rounded-2xl border border-amber-400/40 bg-[#1a1408]/95 px-3 py-2 shadow-lg shadow-amber-900/30 backdrop-blur-md">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-amber-400">{tip.titel}</p>
+            <p className="goud-euro-text font-mono text-sm font-bold text-amber-300">{tip.euro}</p>
+            <Link href={tip.href} className="mt-1 inline-block text-xs font-bold text-amber-400 hover:text-amber-300">
+              Pak het →
+            </Link>
+          </div>
+        )}
+
+        <div
+          className={`goudzoeker-knop pointer-events-auto relative ${richting === "links" ? "goud-flip-links" : ""}`}
+          style={{ width: GROOTTE.w, height: GROOTTE.h }}
         >
-          <GoudzoekerCharacter
-            wijstHoek={wijstHoek}
-            agentOpen={agentOpen}
-            euro={tip.euro}
-          />
-        </button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              setZichtbaar(false);
+            }}
+            className="absolute -right-1 -top-1 z-10 flex h-5 w-5 items-center justify-center rounded-full bg-black/60 text-[10px] text-white/60 hover:bg-black/80"
+            aria-label="Sluit goudzoeker"
+          >
+            ×
+          </button>
+          <button
+            type="button"
+            onClick={() => setAgentOpen((o) => !o)}
+            className="group h-full w-full text-left"
+            aria-label={agentOpen ? "Sluit agent" : "Open goudzoeker-agent"}
+          >
+            <GoudzoekerCharacter
+              agentOpen={agentOpen}
+              euro={tip.euro}
+              wandelt={wandelt && !agentOpen}
+              bijGoud={bijGoud}
+            />
+          </button>
+        </div>
       </div>
     </>
   );

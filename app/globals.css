@@ -111,38 +111,164 @@ body {
   transform-origin: center bottom;
 }
 
-/* Pikhouweel swing */
-@keyframes goud-pik-swing {
+/* Wiggelrode */
+@keyframes goud-wiggel-vork {
   0%,
   100% {
-    transform: rotate(-8deg);
+    transform: rotate(-22deg);
   }
-  40% {
-    transform: rotate(28deg);
-  }
-  55% {
+  50% {
     transform: rotate(22deg);
   }
 }
 
-.goud-pik-arm {
-  animation: goud-pik-swing 0.85s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+.goud-wiggel-vork {
+  animation: goud-wiggel-vork 0.55s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center 58px;
 }
 
-.goud-pik-tip {
-  animation: goud-pik-flash 0.85s ease-in-out infinite;
-}
-
-@keyframes goud-pik-flash {
+@keyframes goud-wiggel-schacht {
   0%,
-  35%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+.goud-wiggel-schacht {
+  animation: goud-wiggel-schacht 0.55s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.goud-bij-goud .goud-wiggel-vork {
+  animation: goud-wiggel-wild 0.28s ease-in-out infinite;
+}
+
+@keyframes goud-wiggel-wild {
+  0%,
+  100% {
+    transform: rotate(-38deg);
+  }
+  50% {
+    transform: rotate(38deg);
+  }
+}
+
+.goud-wiggel-tip {
+  animation: goud-tip-pulse 0.55s ease-in-out infinite;
+}
+
+@keyframes goud-tip-pulse {
+  0%,
   100% {
     fill: #fbbf24;
   }
-  42% {
+  50% {
     fill: #fef08a;
-    filter: drop-shadow(0 0 4px #fde047);
+    filter: drop-shadow(0 0 5px #fde047);
   }
+}
+
+.goud-wiggel-hit {
+  animation: goud-wiggel-hit 0.4s ease-out infinite;
+}
+
+@keyframes goud-wiggel-hit {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+/* Lopen */
+@keyframes goud-been-links {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-6deg);
+  }
+}
+
+@keyframes goud-been-rechts {
+  0%,
+  100% {
+    transform: translateY(-5px) rotate(6deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.goud-is-wandelen .goud-been-links {
+  animation: goud-been-links 0.42s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.goud-is-wandelen .goud-been-rechts {
+  animation: goud-been-rechts 0.42s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.goud-is-wandelen .goudzoeker-scene {
+  animation: goud-scene-hop 0.42s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+.goud-is-wandelen .goud-mompel-mond {
+  animation: goud-mompel-praat 0.35s ease-in-out infinite;
+}
+
+@keyframes goud-mompel-praat {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.4);
+  }
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.goud-flip-links {
+  transform: scaleX(-1);
+}
+
+/* Mompel-bubble */
+@keyframes goud-mompel-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.9);
+  }
+  15%,
+  85% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.95);
+  }
+}
+
+.goud-mompel-bubble {
+  animation: goud-mompel-pop 3.5s ease-in-out forwards;
+  border-radius: 9999px;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  background: rgba(26, 20, 8, 0.92);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.2);
 }
 
 /* Hoed */
@@ -586,7 +712,12 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .goudzoeker-scene,
   .goud-body-bob,
-  .goud-pik-arm,
+  .goud-wiggel-vork,
+  .goud-wiggel-schacht,
+  .goud-been-links,
+  .goud-been-rechts,
+  .goud-mompel-bubble,
+  .goud-mompel-mond,
   .goud-hat,
   .goud-blik,
   .goud-wijs-arm,
