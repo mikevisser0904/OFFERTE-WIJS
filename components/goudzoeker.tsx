@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { GoudzoekerAgentChat } from "@/components/goudzoeker-agent-chat";
 import { laadKpi, waarLigtHetGeld, type GoudTip } from "@/lib/goudzoeker";
 
 type Point = { x: number; y: number };
@@ -11,6 +12,7 @@ export function Goudzoeker() {
   const [from, setFrom] = useState<Point | null>(null);
   const [to, setTo] = useState<Point | null>(null);
   const [zichtbaar, setZichtbaar] = useState(true);
+  const [agentOpen, setAgentOpen] = useState(false);
 
   const update = useCallback(() => {
     const t = waarLigtHetGeld(laadKpi());
@@ -56,6 +58,7 @@ export function Goudzoeker() {
 
   return (
     <>
+      <GoudzoekerAgentChat open={agentOpen} onClose={() => setAgentOpen(false)} />
       <svg
         className="pointer-events-none fixed inset-0 z-[90] h-full w-full"
         aria-hidden
@@ -95,46 +98,73 @@ export function Goudzoeker() {
 
       <div
         id="goudzoeker-anchor"
-        className="fixed bottom-6 right-6 z-[100] flex max-w-[220px] flex-col items-end gap-2 sm:max-w-xs"
+        className={`fixed bottom-6 z-[100] flex max-w-[220px] flex-col items-end gap-2 transition-all duration-300 sm:max-w-xs ${
+          agentOpen ? "hidden sm:flex sm:right-[25.5rem]" : "right-6"
+        }`}
       >
-        <div className="relative rounded-2xl border border-amber-400/40 bg-[#1a1408]/95 px-4 py-3 shadow-lg shadow-amber-900/30 backdrop-blur-md">
-          <button
-            type="button"
-            onClick={() => setZichtbaar(false)}
-            className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/10 text-xs text-white/60 hover:bg-white/20"
-            aria-label="Sluit goudzoeker"
-          >
-            ×
-          </button>
-          <p className="text-xs font-bold uppercase tracking-wider text-amber-400">
-            {tip.titel}
-          </p>
-          <p className="mt-1 font-mono text-lg font-bold text-amber-300">{tip.euro}</p>
-          <p className="mt-1 text-sm leading-snug text-white/70">{tip.tekst}</p>
-          <Link
-            href={tip.href}
-            className="mt-3 inline-block text-sm font-bold text-amber-400 hover:text-amber-300"
-          >
-            Ga ernaartoe →
-          </Link>
-        </div>
+        {!agentOpen && (
+          <div className="relative rounded-2xl border border-amber-400/40 bg-[#1a1408]/95 px-4 py-3 shadow-lg shadow-amber-900/30 backdrop-blur-md">
+            <button
+              type="button"
+              onClick={() => setZichtbaar(false)}
+              className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/10 text-xs text-white/60 hover:bg-white/20"
+              aria-label="Sluit goudzoeker"
+            >
+              ×
+            </button>
+            <p className="text-xs font-bold uppercase tracking-wider text-amber-400">
+              {tip.titel}
+            </p>
+            <p className="mt-1 font-mono text-lg font-bold text-amber-300">{tip.euro}</p>
+            <p className="mt-1 text-sm leading-snug text-white/70">{tip.tekst}</p>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <Link
+                href={tip.href}
+                className="text-sm font-bold text-amber-400 hover:text-amber-300"
+              >
+                Ga ernaartoe →
+              </Link>
+              <button
+                type="button"
+                onClick={() => setAgentOpen(true)}
+                className="text-sm font-bold text-violet-400 hover:text-violet-300"
+              >
+                Vraag agent →
+              </button>
+            </div>
+          </div>
+        )}
 
-        <div className="goudzoeker-wiggle flex items-end gap-1">
+        <button
+          type="button"
+          onClick={() => setAgentOpen((o) => !o)}
+          className="goudzoeker-wiggle group flex items-end gap-1 text-left"
+          aria-label={agentOpen ? "Sluit agent" : "Open goudzoeker-agent"}
+        >
           <div className="relative">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-amber-500/50 bg-gradient-to-b from-amber-700 to-amber-900 text-3xl shadow-lg shadow-amber-900/50">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-amber-500/50 bg-gradient-to-b from-amber-700 to-amber-900 text-3xl shadow-lg shadow-amber-900/50 transition group-hover:border-amber-400/70">
               ⛏️
             </div>
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-2xl">🤠</span>
-            <span
-              className="absolute -left-6 top-4 origin-right text-2xl"
-              style={{ transform: "rotate(-25deg)" }}
-              aria-hidden
-            >
-              👉
-            </span>
+            {!agentOpen && (
+              <span
+                className="absolute -left-6 top-4 origin-right text-2xl"
+                style={{ transform: "rotate(-25deg)" }}
+                aria-hidden
+              >
+                👉
+              </span>
+            )}
+            {agentOpen && (
+              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-violet-500 text-[10px] font-bold text-white">
+                💬
+              </span>
+            )}
           </div>
-          <p className="mb-2 text-xs font-bold text-amber-500/80">Goudzoeker</p>
-        </div>
+          <p className="mb-2 text-xs font-bold text-amber-500/80 group-hover:text-amber-400">
+            {agentOpen ? "Agent aan" : "Goudzoeker"}
+          </p>
+        </button>
       </div>
 
     </>
