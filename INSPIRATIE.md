@@ -1,68 +1,40 @@
-# Mike + Maarten — projectinspiratie
+# Mike + Maarten — beslisdocument
 
-Jullie hebben bewezen dat samenwerken werkt: **ZonComfort-site**, git-flow, Grok aan beide kanten.
-
-## 5 ideeën (kort)
-
-### 1. OfferteWijs ⭐ (dit project)
-**Wat:** Offerte in 2 minuten voor vakbedrijven (zonwering, kozijnen, schilders).  
-**Waarom jullie:** configurator + prijzen + mooie UI al gedaan bij ZonComfort.  
-**Geld:** SaaS €29/maand per bedrijf, of white-label per installateur.  
-**Mike:** product, prijslogica, klantcontact. **Maarten:** UI, flows, deploy.
-
-### 2. KlusBoard Web
-**Wat:** Webversie van Mikes renovatie-app — uren, materialen, planning.  
-**Waarom:** Mike heeft de app al; Maarten maakt dashboard + delen met opdrachtgever.  
-**Geld:** freemium voor zzp'ers.
-
-### 3. ZonScan
-**Wat:** Foto van raam uploaden → AI schat maat + productadvies + prijsrange.  
-**Waarom:** wow-factor voor zonwering-klanten, viral potentie.  
-**Geld:** leads verkopen aan installateurs.
-
-### 4. InstallateurKit (template-verkoop)
-**Wat:** Jullie ZonComfort-site als template — ander bedrijf, andere kleuren, zelfde motor.  
-**Waarom:** eenmalig bouwen, meerdere keren verkopen.  
-**Geld:** €499 eenmalig + hosting.
-
-### 5. Beslisser (beslisser-app)
-**Wat:** "Moet ik dit wel/niet doen?" — renovatie, aankoop, klus.  
-**Waarom:** Mike had dit al als Expo-idee; web + app combo.  
-**Geld:** affiliate (bol.com gereedschap), premium tips.
+**Live versie (deel met Maarten):**  
+https://mikevisser0904.github.io/OFFERTE-WIJS/ideeen/
 
 ---
 
-## Waarom OfferteWijs als eerste?
+## Ranking
 
-| Criterium | Score |
-|-----------|-------|
-| Bouwt voort op ZonComfort | ✅✅✅ |
-| Duidelijke klant (zzp vakman) | ✅✅ |
-| Snel MVP (2–3 weken) | ✅✅ |
-| Jullie rollen passen | ✅✅✅ |
-| Geld verdienen realistisch | ✅✅ |
+| # | Project | Score | Kern |
+|---|---------|-------|------|
+| 1 | **OfferteWijs** ⭐ | 22/25 | SaaS offertes voor vakmannen |
+| 2 | **InstallateurKit** | 21/25 | ZonComfort white-label verkopen |
+| 3 | **KlusBoard Web** | 19/25 | Renovatie-dashboard (Mike's app) |
+| 4 | **LeadPing** | 18/25 | Gemiste call → SMS offerte |
+| 5 | **ZonScan** | 19/25* | Foto → prijs (maar traag MVP) |
+| 6 | **Beslisser** | 17/25 | Beslishulp renovatie |
 
----
-
-## MVP OfferteWijs (versie 0.1)
-
-1. Bedrijfsnaam + logo upload
-2. Product kiezen (zonwering, rolluik, …)
-3. Maten + opties
-4. **PDF-offerte** of shareable link
-5. Dashboard: openstaande offertes
-
-**Niet in v0.1:** betalingen, multi-user, app.
+*ZonScan scoort hoog op markt/leuk, laag op snel MVP.
 
 ---
 
-## Wie doet wat (voorstel)
+## Aanbeveling
 
-| Mike | Maarten |
-|------|---------|
-| `data/products.ts` prijzen | `app/` pagina's |
-| Klantgesprekken / validatie | Componenten + styling |
-| `lib/pricing.ts` | PDF/export |
-| Deploy + domein later | Logo/branding per klant |
+**Start met OfferteWijs.** Jullie hebben de motor (ZonComfort). Terugkerend inkomen. Eerste klant binnen 3 weken.
 
-Afspraak: **git pull → werk → push**, net als ZonComfort.
+**Plan B:** InstallateurKit als je liever €499 per klant verkoopt dan €39/maand.
+
+---
+
+## Beslissing (4 stappen)
+
+1. Bel 20 min — welk idee?
+2. Kies **één** project
+3. Mike = data/prijzen, Maarten = UI
+4. Eerste echte gebruiker in week 3
+
+---
+
+Zie `data/ideas.ts` en `/ideeen` voor volledige analyse per project.

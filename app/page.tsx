@@ -1,28 +1,7 @@
 import Link from "next/link";
+import { ideas } from "@/data/ideas";
 
-const ideas = [
-  {
-    title: "OfferteWijs",
-    tag: "Dit project",
-    desc: "Offerte in 2 min voor vakbedrijven — bouwt voort op ZonComfort.",
-    active: true,
-  },
-  {
-    title: "KlusBoard Web",
-    tag: "Idee",
-    desc: "Renovatie-uren en materialen in een webdashboard.",
-  },
-  {
-    title: "ZonScan",
-    tag: "Idee",
-    desc: "Foto van raam → maat + product + prijsrange.",
-  },
-  {
-    title: "InstallateurKit",
-    tag: "Idee",
-    desc: "Jullie site als template voor andere bedrijven.",
-  },
-];
+const topThree = [...ideas].sort((a, b) => b.totaal - a.totaal).slice(0, 3);
 
 export default function Home() {
   return (
@@ -47,8 +26,8 @@ export default function Home() {
             <span className="text-sky-400">elke vakman</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-white/70">
-            Configurator, prijzen, mooie PDF — jullie hebben het al gebouwd.
-            Nu voor álle installateurs die nog in Word offertes typen.
+            6 projectideeën uitgewerkt — met probleem, geld, risico en scores.
+            Jullie bewezen dat samenwerken werkt. Nu kiezen waar de energie naartoe gaat.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
@@ -66,23 +45,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid gap-4 sm:grid-cols-2">
-          {ideas.map((idea) => (
+        <section className="grid gap-4 sm:grid-cols-3">
+          {topThree.map((idea, i) => (
             <article
-              key={idea.title}
+              key={idea.id}
               className={`rounded-2xl border p-6 ${
-                idea.active
-                  ? "border-amber-400/40 bg-amber-400/10"
+                idea.recommended
+                  ? "border-amber-400/40 bg-amber-400/10 sm:col-span-1"
                   : "border-white/10 bg-white/5"
               }`}
             >
               <div className="mb-2 flex items-center gap-2">
+                <span className="font-mono text-xs text-amber-400">#{i + 1}</span>
                 <h2 className="text-lg font-bold">{idea.title}</h2>
                 <span className="rounded-full bg-white/10 px-2 py-0.5 text-xs">
-                  {idea.tag}
+                  {idea.totaal}/25
                 </span>
               </div>
-              <p className="text-sm text-white/65">{idea.desc}</p>
+              <p className="text-sm text-white/65">{idea.tagline}</p>
             </article>
           ))}
         </section>
