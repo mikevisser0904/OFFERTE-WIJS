@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
+import { GoalTracker, GoalBreakdown, GoalMilestones } from "@/components/goal-tracker";
+import { doelWekelijks, hoofddoel } from "@/data/doel";
 import {
   getDashboardStats,
   aanbeveling,
@@ -38,21 +40,25 @@ function StatCard({
 }
 
 export default function DashboardPage() {
-  const week1 = aanbeveling.plan[0];
-
   return (
     <DashboardShell
       active="/"
       title="Geld Dashboard"
-      subtitle="Korte termijn · wat jullie nu kunnen verdienen"
+      subtitle={`Eerste doel: ${hoofddoel.label} in ${hoofddoel.deadline}`}
     >
       <div className="mx-auto max-w-6xl space-y-8">
+        <GoalTracker />
+
+        <GoalMilestones />
+
+        <GoalBreakdown />
+
         {/* KPI row */}
         <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <StatCard
-            label="Potentie week 1"
-            value={week1.euro.replace(" mogelijk", "")}
-            sub="Bij 1–2 acties deze week"
+            label="Week 1–2 target"
+            value="€1.500"
+            sub="Eerste mijlpaal · ZonComfort + 1 verkoop"
             accent="emerald"
           />
           <StatCard
@@ -239,22 +245,39 @@ export default function DashboardPage() {
           </div>
         </section>
 
+        {/* Wekelijkse KPI's */}
+        <section>
+          <h2 className="mb-4 text-lg font-bold">Wekelijkse discipline</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {doelWekelijks.map((w) => (
+              <div
+                key={w.metric}
+                className="rounded-xl border border-white/8 bg-white/[0.02] px-4 py-3"
+              >
+                <p className="text-xs text-white/40">{w.metric}</p>
+                <p className="mt-1 font-bold text-emerald-300">{w.doel}</p>
+                <p className="text-xs text-white/35">{w.wie}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Rollen + niet nu + links */}
         <section className="grid gap-6 lg:grid-cols-3">
           <div className="rounded-2xl border border-sky-400/20 bg-sky-400/5 p-5">
-            <p className="text-sm font-bold text-sky-300">Mike</p>
+            <p className="text-sm font-bold text-sky-300">Mike → €5.000</p>
             <ul className="mt-3 space-y-1.5 text-sm text-white/60">
-              <li>· Netwerk activeren (5 contacten/week)</li>
-              <li>· Verkopen + intake + facturen</li>
+              <li>· 5 contacten/week (60 totaal)</li>
+              <li>· 6 sites verkopen + upsells</li>
               <li>· Renovatie + digitaal upsell</li>
             </ul>
           </div>
           <div className="rounded-2xl border border-amber-400/20 bg-amber-400/5 p-5">
-            <p className="text-sm font-bold text-amber-300">Maarten</p>
+            <p className="text-sm font-bold text-amber-300">Maarten → €5.000</p>
             <ul className="mt-3 space-y-1.5 text-sm text-white/60">
-              <li>· Templates + deploy</li>
-              <li>· Technische levering (48u)</li>
-              <li>· Support + onderhoud batch</li>
+              <li>· 6 sites klonen (template)</li>
+              <li>· Levertijd ≤ 3 dagen</li>
+              <li>· Excel-tools + remote support</li>
             </ul>
           </div>
           <div className="rounded-2xl border border-rose-400/20 bg-rose-400/5 p-5">

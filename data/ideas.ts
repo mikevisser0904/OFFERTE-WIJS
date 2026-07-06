@@ -534,8 +534,8 @@ export const scoreLabels: Record<keyof IdeaScores, string> = {
 };
 
 export const aanbeveling = {
-  titel: "Kortetermijnplan: 5 sporen, niet 1 product",
-  tekst: "Jullie hoeven geen startup. Combineer: verkopen (sites/pakketten), uren (kluswerk + digitale opruiming), netwerk (Mike's contacten), en stapel recurring erachteraan.",
+  titel: "Doel: 10 ruggen in 12 weken",
+  tekst: "€10.000 via mix: 6 sites (€5.400), ZonComfort (€1.000), Google-pakketten, opruiming en Excel-klussen. Geen SaaS-wachten — verkopen wat je al hebt.",
   sporen: [
     { spoor: "verkopen" as IncomeSpoor, actie: "Site of Google-pakket aan installateur", euro: "€299–1.200" },
     { spoor: "uren" as IncomeSpoor, actie: "ZonComfort afmaken + digitale opruiming zzp", euro: "€250–1.500" },
