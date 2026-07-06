@@ -15,6 +15,8 @@ npm run dev
 
 → http://localhost:3000
 
+**Live (iedereen, ook Maarten):** https://mikevisser0904.github.io/OFFERTE-WIJS/ideeen/
+
 ## Samenwerken
 
 Zelfde flow als MIKE-AND-MAARTEN:
