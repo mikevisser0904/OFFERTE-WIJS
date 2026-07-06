@@ -24,8 +24,9 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      - run: GITHUB_PAGES=true npm run build
+      - run: GITHUB_PAGES=true GOOGLE_SITE_VERIFICATION=${{ secrets.GOOGLE_SITE_VERIFICATION }} npm run build
       - run: node scripts/health-check.mjs || true
+      - run: node scripts/indexnow-submit.mjs || true
       - run: cp public/llms.txt out/llms.txt && cp public/og.svg out/og.svg && cp public/health.json out/health.json
       - uses: actions/upload-pages-artifact@v3
         with:

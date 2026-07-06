@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build && node scripts/generate-sitemap.mjs",
     "build:pages": "GITHUB_PAGES=true npm run build",
+    "setup:uptimerobot": "node scripts/setup-uptimerobot-agent.mjs",
+    "setup:gsc": "bash scripts/open-gsc-setup.sh",
     "start": "next start",
     "lint": "eslint"
   },

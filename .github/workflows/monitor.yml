@@ -42,6 +42,14 @@ jobs:
           echo "## Site monitor" >> $GITHUB_STEP_SUMMARY
           cat public/health.json >> $GITHUB_STEP_SUMMARY
 
+      - name: Push alert (ntfy)
+        if: steps.check.outcome == 'failure'
+        run: |
+          curl -s -d "WebKlaar DOWN — check GitHub Actions" \
+            -H "Title: Site offline" \
+            -H "Priority: urgent" \
+            https://ntfy.sh/webklaar-mike || true
+
       - name: Fail if unhealthy
         if: steps.check.outcome == 'failure'
         run: exit 1
