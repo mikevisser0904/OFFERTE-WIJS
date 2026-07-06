@@ -1,7 +1,8 @@
 import { doelMijlpalen, hoofddoel } from "@/data/doel";
 import { berekenSlagingskans, type KpiInput } from "@/data/monitoring";
 import { merk, whatsappBerichten } from "@/data/verkoop";
-import { waarLigtHetGeld, type GoudTip } from "@/lib/goudzoeker";
+import { kiesActiefGoudDoel } from "@/lib/goudzoeker-doelen";
+import type { GoudTip } from "@/lib/goudzoeker";
 
 export type AgentBericht = {
   id: string;
@@ -27,7 +28,7 @@ export type AgentContext = {
 export function bouwAgentContext(kpi: KpiInput): AgentContext {
   return {
     kpi,
-    tip: waarLigtHetGeld(kpi),
+    tip: kiesActiefGoudDoel(kpi),
     slagings: berekenSlagingskans(kpi),
   };
 }
