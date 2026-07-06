@@ -70,46 +70,25 @@ export const alleGoudDoelen: Record<GoudTargetId, GoudTip> = {
   },
 };
 
-const RONDE_VOLGORDE: GoudTargetId[] = [
-  "dashboard",
-  "webshop",
-  "verkoop",
-  "monitor",
-  "ideeen",
-  "listings",
-  "configurator",
-  "actie",
-];
-
 export function tipVoorTarget(id: GoudTargetId): GoudTip {
   return alleGoudDoelen[id];
 }
 
-export function volgendDoelUitRonde(offset = 0): GoudTargetId {
-  const slot = Math.floor((Date.now() + offset * 4000) / 11000);
-  return RONDE_VOLGORDE[slot % RONDE_VOLGORDE.length]!;
-}
-
-function kpiGebaseerd(kpi: KpiInput): GoudTip {
-  const result = berekenSlagingskans(kpi);
-  const laagste = [...result.kpiScores].sort((a, b) => a.score - b.score)[0];
-
-  if (result.totaal >= 70) return alleGoudDoelen.monitor;
-  if (laagste?.id === "omzet" && laagste.score < 50) return alleGoudDoelen.verkoop;
-  if (kpi.bestellingen === 0 && result.week >= 2) return alleGoudDoelen.webshop;
-  if (laagste?.id === "sites" && kpi.sitesGeleverd < 2) return alleGoudDoelen.configurator;
-  if (laagste?.id === "bestellingen") return alleGoudDoelen.webshop;
-  if (laagste?.id === "contacten" && kpi.contactenDezeWeek < 5) return alleGoudDoelen.actie;
-
-  const pool: GoudTargetId[] = ["verkoop", "webshop", "monitor", "ideeen", "dashboard"];
-  return alleGoudDoelen[pool[result.week % pool.length]!]!;
-}
-
-/** Deterministisch — alleen voor de agent-chat (geen random) */
-export function kiesAgentDoel(kpi: KpiInput): {
+/** Deterministisch op monitor-KPI — agent én wandelende goudzoeker */
+export function kiesAgentDoel(
+  kpi: KpiInput,
+  monitorIngevuld = true
+): {
   tip: GoudTip;
   reden: string;
 } {
+  if (!monitorIngevuld) {
+    return {
+      tip: alleGoudDoelen.monitor,
+      reden: "Monitor leeg — vul KPI's in of ik wijs blind.",
+    };
+  }
+
   const result = berekenSlagingskans(kpi);
   const laagste = [...result.kpiScores].sort((a, b) => a.score - b.score)[0]!;
 
@@ -168,13 +147,7 @@ export function kiesAgentDoel(kpi: KpiInput): {
   };
 }
 
-/** Mix: rond door alle hoeken, niet alleen actie */
-export function kiesActiefGoudDoel(kpi: KpiInput): GoudTip {
-  const roll = Math.random();
-
-  if (roll < 0.55) return tipVoorTarget(volgendDoelUitRonde());
-  if (roll < 0.8) return kpiGebaseerd(kpi);
-
-  const randomId = RONDE_VOLGORDE[Math.floor(Math.random() * RONDE_VOLGORDE.length)]!;
-  return tipVoorTarget(randomId);
+/** Alias — wandelende goudzoeker gebruikt dezelfde logica als de agent */
+export function kiesWandelDoel(kpi: KpiInput, monitorIngevuld = true) {
+  return kiesAgentDoel(kpi, monitorIngevuld);
 }

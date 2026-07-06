@@ -8,10 +8,9 @@ import { GoudzoekerOpdringer } from "@/components/goudzoeker-opdringer";
 import { GoudzoekerPijl } from "@/components/goudzoeker-pijl";
 import { useGoudzoekerWandel } from "@/hooks/use-goudzoeker-wandel";
 import { useMaartenIdeeen } from "@/hooks/use-maarten-ideeen";
-import { tipVoorTarget } from "@/lib/goudzoeker-doelen";
-import { kiesActiefGoudDoel } from "@/lib/goudzoeker-doelen";
+import { kiesWandelDoel, tipVoorTarget } from "@/lib/goudzoeker-doelen";
 import { mompelVanIdee } from "@/lib/maarten-ideeen";
-import { laadKpi, type GoudTip } from "@/lib/goudzoeker";
+import { KPI_CHANGE_EVENT, laadKpiMetMeta, type GoudTip } from "@/lib/goudzoeker";
 import {
   koppelGoudzoekerGeluid,
   speelBingoGeluid,
@@ -21,6 +20,7 @@ import {
   GROOTTE,
   MOMPEL_INTERVAL_MS,
   TERUG_NA_WEG_MS,
+  mompelBijPrioriteit,
   randomMompel,
   randomMompelBijDoel,
 } from "@/lib/goudzoeker-mompels";
@@ -29,6 +29,7 @@ type Point = { x: number; y: number };
 
 export function Goudzoeker() {
   const [tip, setTip] = useState<GoudTip | null>(null);
+  const [reden, setReden] = useState("");
   const [from, setFrom] = useState<Point | null>(null);
   const [to, setTo] = useState<Point | null>(null);
   const [goudDoel, setGoudDoel] = useState<{
@@ -56,8 +57,10 @@ export function Goudzoeker() {
   });
 
   const update = useCallback(() => {
-    const t = kiesActiefGoudDoel(laadKpi());
+    const { kpi, opgeslagen } = laadKpiMetMeta();
+    const { tip: t, reden: r } = kiesWandelDoel(kpi, opgeslagen);
     setTip(t);
+    setReden(r);
 
     const target = document.querySelector(`[data-goud-target="${t.target}"]`);
     if (!target) {
@@ -109,13 +112,18 @@ export function Goudzoeker() {
     update();
     const interval = setInterval(update, 10000);
     const t = setTimeout(update, 300);
+    const onKpi = () => update();
+
     window.addEventListener("resize", update);
     window.addEventListener("scroll", update, true);
+    window.addEventListener(KPI_CHANGE_EVENT, onKpi);
+
     return () => {
       clearInterval(interval);
       clearTimeout(t);
       window.removeEventListener("resize", update);
       window.removeEventListener("scroll", update, true);
+      window.removeEventListener(KPI_CHANGE_EVENT, onKpi);
       document.querySelectorAll("[data-goud-highlight]").forEach((el) => {
         el.classList.remove("goud-pulse", "goud-pulse-heftig");
       });
@@ -139,7 +147,10 @@ export function Goudzoeker() {
       if (maartenIdee && Math.random() < 0.45) {
         zin = mompelVanIdee(maartenIdee);
         setIsSchreeuw(true);
-      } else if (Math.random() < 0.35 && tip) {
+      } else if (reden && tip && Math.random() < 0.6) {
+        zin = mompelBijPrioriteit(tip.titel, tip.euro, reden);
+        setIsSchreeuw(true);
+      } else if (tip && Math.random() < 0.25) {
         zin = randomMompelBijDoel(tip.titel, tip.euro);
       } else {
         zin = randomMompel(vorige, schreeuw);
@@ -156,19 +167,26 @@ export function Goudzoeker() {
       MOMPEL_INTERVAL_MS.min + Math.random() * (MOMPEL_INTERVAL_MS.max - MOMPEL_INTERVAL_MS.min)
     );
     return () => clearInterval(id);
-  }, [zichtbaar, agentOpen, tip?.titel, tip?.euro, wegTeller, maartenIdee?.id]);
+  }, [zichtbaar, agentOpen, tip?.titel, tip?.euro, reden, wegTeller, maartenIdee?.id]);
 
   useEffect(() => {
     if (!maartenVers || maartenVers.id === wasMaartenIdeeRef.current) return;
     wasMaartenIdeeRef.current = maartenVers.id;
 
     const ideeTip = tipVoorTarget("ideeen");
+    const kort =
+      maartenVers.tekst.slice(0, 40) + (maartenVers.tekst.length > 40 ? "…" : "");
     setTip({
       ...ideeTip,
-      titel: `Maarten: ${maartenVers.tekst.slice(0, 40)}${maartenVers.tekst.length > 40 ? "…" : ""}`,
+      titel: `Maarten: ${kort}`,
       euro: maartenVers.euro ?? "€???",
       tekst: maartenVers.tekst,
     });
+    setReden(
+      maartenVers.euro
+        ? `Nieuw idee van Maarten — ${maartenVers.euro}`
+        : "Nieuw idee van Maarten — check ideeënbus"
+    );
 
     const target = document.querySelector('[data-goud-target="ideeen"]');
     if (target) {
@@ -203,12 +221,12 @@ export function Goudzoeker() {
       const grappen = [
         `BINGO — ${tip.titel} — ${tip.euro}!!!`,
         `MIKE KOM — ${tip.euro} LIGT HIER`,
-        `WIGGELRODE SLAAT ALARM: ${tip.titel}`,
+        reden ? reden.toUpperCase() : `WIGGELRODE SLAAT ALARM: ${tip.titel}`,
       ];
       setMompel(grappen[Math.floor(Math.random() * grappen.length)]!);
       setMompelKey((k) => k + 1);
     }
-  }, [bijGoud, tip]);
+  }, [bijGoud, tip, reden]);
 
   useEffect(() => {
     const cls = "goud-schud-body";
@@ -293,7 +311,7 @@ export function Goudzoeker() {
             </p>
             <p className="goud-euro-text font-mono text-base font-black text-amber-300">{tip.euro}</p>
             <p className="text-xs font-bold text-white/80">{tip.titel}</p>
-            <p className="mt-0.5 text-[10px] text-white/45">{tip.tekst}</p>
+            <p className="mt-0.5 text-[10px] text-white/45">{reden || tip.tekst}</p>
             <Link
               href={tip.href}
               className="mt-2 inline-block rounded-full bg-amber-500 px-3 py-1 text-xs font-black text-slate-900 hover:bg-amber-400"

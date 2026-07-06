@@ -39,7 +39,7 @@ export function bouwAgentContext(
 ): AgentContext {
   const slagings = berekenSlagingskans(kpi);
   const laagsteKpi = [...slagings.kpiScores].sort((a, b) => a.score - b.score)[0]!;
-  const { tip, reden } = kiesAgentDoel(kpi);
+  const { tip, reden } = kiesAgentDoel(kpi, monitorIngevuld);
 
   return { kpi, tip, slagings, laagsteKpi, reden, monitorIngevuld };
 }

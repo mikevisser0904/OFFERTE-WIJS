@@ -52,6 +52,18 @@ export function randomMompelBijDoel(doelLabel: string, euro?: string): string {
   return extras[Math.floor(Math.random() * extras.length)]!;
 }
 
+export function mompelBijPrioriteit(titel: string, euro: string, reden: string): string {
+  const kort = reden.length > 72 ? `${reden.slice(0, 69)}…` : reden;
+  const opties = [
+    kort.toUpperCase(),
+    `${titel.toUpperCase()} — ${euro}. NU.`,
+    `MONITOR: ${kort}`,
+    `GEEN EXCUSES — ${euro}`,
+    `MIKE. ${titel.toUpperCase()}. VANDAAG.`,
+  ];
+  return opties[Math.floor(Math.random() * opties.length)]!;
+}
+
 export const GROOTTE = { w: 168, h: 192 } as const;
 export const MARGIN = 8;
 export const SNELHEID = 0.95;
