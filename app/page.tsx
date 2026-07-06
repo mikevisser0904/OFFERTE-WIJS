@@ -47,6 +47,24 @@ export default function DashboardPage() {
       subtitle={`Eerste doel: ${hoofddoel.label} in ${hoofddoel.deadline}`}
     >
       <div className="mx-auto max-w-6xl space-y-8">
+        <section className="rounded-2xl border border-emerald-400/30 bg-emerald-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-emerald-400">
+              Alles klaar — jij klikt alleen Verstuur
+            </p>
+            <h2 className="mt-2 text-xl font-bold">Actie-pagina</h2>
+            <p className="mt-1 text-sm text-white/55">
+              Plak 5 nummers → WhatsApp opent met bericht + demo-link. Rest: Grok + Maarten.
+            </p>
+          </div>
+          <Link
+            href="/actie/"
+            className="mt-4 inline-flex shrink-0 rounded-full bg-emerald-400 px-8 py-3 font-bold text-slate-900 hover:bg-emerald-300 sm:mt-0"
+          >
+            Naar actie →
+          </Link>
+        </section>
+
         <GoalTracker />
 
         <GoalMilestones />

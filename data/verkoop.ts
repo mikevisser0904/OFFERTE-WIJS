@@ -22,7 +22,8 @@ export const merk = {
   tagline: "Moderne site voor vakmannen — live in 3 dagen",
   wie: "Mike Visser + Maarten (opdevlugt-tech)",
   contact: "Mike belt/app — Maarten bouwt",
-  demo: "mikevisser0904.github.io/OFFERTE-WIJS/",
+  demo: "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/",
+  webklaar: "https://mikevisser0904.github.io/OFFERTE-WIJS/webklaar/",
 };
 
 export const pakketten: VerkoopPakket[] = [
