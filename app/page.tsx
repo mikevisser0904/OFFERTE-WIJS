@@ -292,6 +292,12 @@ export default function DashboardPage() {
 
         <section className="flex flex-wrap gap-3 rounded-2xl border border-white/8 bg-white/[0.02] p-5">
           <Link
+            href="/verkoop/"
+            className="rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-amber-300"
+          >
+            Verkoopkit → kopieer & verstuur
+          </Link>
+          <Link
             href="/ideeen/"
             className="rounded-full bg-emerald-400 px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-300"
           >

@@ -2,9 +2,12 @@ import Link from "next/link";
 
 const nav = [
   { href: "/", label: "Dashboard", icon: "▦" },
+  { href: "/verkoop/", label: "Verkoop", icon: "€" },
   { href: "/ideeen/", label: "Ideeën", icon: "◎" },
   { href: "/configurator/", label: "Configurator", icon: "⚙" },
 ] as const;
+
+export type DashboardRoute = (typeof nav)[number]["href"];
 
 export function DashboardShell({
   children,
@@ -13,7 +16,7 @@ export function DashboardShell({
   subtitle,
 }: {
   children: React.ReactNode;
-  active: "/" | "/ideeen/" | "/configurator/";
+  active: DashboardRoute;
   title: string;
   subtitle?: string;
 }) {
