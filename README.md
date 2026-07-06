@@ -7,7 +7,7 @@ Mike (mikevisser0904) + Maarten (opdevlugt-tech).
 ## Start
 
 ```bash
-git clone https://github.com/opdevlugt-tech/OFFERTE-WIJS.git
+git clone https://github.com/mikevisser0904/OFFERTE-WIJS.git
 cd OFFERTE-WIJS
 npm install
 npm run dev
