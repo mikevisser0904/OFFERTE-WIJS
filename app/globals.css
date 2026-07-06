@@ -25,6 +25,8 @@ body {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
 
+/* ─── Goudzoeker animaties ─── */
+
 @keyframes goud-wiggle {
   0%,
   100% {
@@ -54,4 +56,516 @@ body {
   outline: 2px solid rgba(251, 191, 36, 0.6) !important;
   outline-offset: 3px;
   border-radius: 8px;
+}
+
+/* Scene bounce */
+@keyframes goud-scene-hop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    transform: translateY(-6px) scale(1.02);
+  }
+  60% {
+    transform: translateY(-2px) scale(0.99);
+  }
+}
+
+.goudzoeker-scene {
+  animation: goud-scene-hop 1.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+.goud-mijn-modus > .goudzoeker-scene {
+  animation-duration: 1.8s;
+}
+
+.goud-agent-modus > .goudzoeker-scene {
+  animation: goud-agent-bounce 2.2s ease-in-out infinite;
+}
+
+@keyframes goud-agent-bounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+/* Body bob */
+@keyframes goud-body-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.goud-body-bob {
+  animation: goud-body-bob 0.9s ease-in-out infinite;
+  transform-origin: 60px 100px;
+}
+
+/* Pikhouweel swing */
+@keyframes goud-pik-swing {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(28deg);
+  }
+  55% {
+    transform: rotate(22deg);
+  }
+}
+
+.goud-pik-arm {
+  animation: goud-pik-swing 0.85s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.goud-pik-tip {
+  animation: goud-pik-flash 0.85s ease-in-out infinite;
+}
+
+@keyframes goud-pik-flash {
+  0%,
+  35%,
+  100% {
+    fill: #fbbf24;
+  }
+  42% {
+    fill: #fef08a;
+    filter: drop-shadow(0 0 4px #fde047);
+  }
+}
+
+/* Hoed */
+@keyframes goud-hat-tilt {
+  0%,
+  100% {
+    transform: rotate(-4deg) translateY(0);
+  }
+  50% {
+    transform: rotate(4deg) translateY(-2px);
+  }
+}
+
+.goud-hat {
+  animation: goud-hat-tilt 1.6s ease-in-out infinite;
+  transform-origin: 60px 42px;
+}
+
+/* Ogen knipperen */
+@keyframes goud-blink {
+  0%,
+  46%,
+  48%,
+  100% {
+    transform: scaleY(1);
+  }
+  47% {
+    transform: scaleY(0.1);
+  }
+}
+
+.goud-blik {
+  animation: goud-blink 4s ease-in-out infinite;
+  transform-origin: 60px 56px;
+}
+
+.goud-glimlach {
+  animation: goud-smile-wiggle 2s ease-in-out infinite;
+  transform-origin: 60px 66px;
+}
+
+@keyframes goud-smile-wiggle {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.08);
+  }
+  transform-origin: 60px 66px;
+}
+
+/* Wijsvinger */
+@keyframes goud-point-pulse {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.25);
+  }
+}
+
+.goud-wijs-arm {
+  animation: goud-point-pulse 1.1s ease-in-out infinite;
+}
+
+.goud-vinger {
+  transform-origin: 96px 78px;
+}
+
+/* Stof */
+@keyframes goud-dust-puff {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.6);
+  }
+  35% {
+    opacity: 0.7;
+    transform: translateY(-6px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-14px) scale(1.3);
+  }
+}
+
+.goud-stof {
+  animation: goud-dust-puff 0.85s ease-out infinite;
+  transform-origin: 40px 110px;
+}
+
+/* Sparkles */
+@keyframes goud-sparkle-twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.7) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+.goud-sparkles path:nth-child(1) {
+  animation: goud-sparkle-twinkle 1.4s ease-in-out infinite;
+  transform-origin: 22px 58px;
+}
+
+.goud-sparkles path:nth-child(2) {
+  animation: goud-sparkle-twinkle 1.8s ease-in-out 0.3s infinite;
+  transform-origin: 94px 48px;
+}
+
+.goud-sparkles path:nth-child(3) {
+  animation: goud-sparkle-twinkle 1.2s ease-in-out 0.6s infinite;
+  transform-origin: 88px 82px;
+}
+
+/* Aura */
+@keyframes goud-aura-pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    r: 38;
+  }
+  50% {
+    opacity: 0.45;
+    r: 44;
+  }
+}
+
+.goud-aura {
+  animation: goud-aura-pulse 2s ease-in-out infinite;
+}
+
+/* Zwevende munten rond figuur */
+@keyframes goud-munt-float-1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-8px, -18px) rotate(20deg) scale(1.15);
+    opacity: 1;
+  }
+}
+
+@keyframes goud-munt-float-2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(10px, -22px) rotate(-15deg) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes goud-munt-float-3 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(0.9);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-4px, -14px) scale(1.1);
+    opacity: 1;
+  }
+}
+
+.goud-munt {
+  position: absolute;
+  pointer-events: none;
+  font-size: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(245, 158, 11, 0.5));
+}
+
+.goud-munt-1 {
+  top: 4px;
+  left: 2px;
+  animation: goud-munt-float-1 2.2s ease-in-out infinite;
+}
+
+.goud-munt-2 {
+  top: 0;
+  right: 4px;
+  animation: goud-munt-float-2 1.7s ease-in-out 0.4s infinite;
+}
+
+.goud-munt-3 {
+  bottom: 28px;
+  left: -6px;
+  font-size: 0.85rem;
+  animation: goud-munt-float-3 2.5s ease-in-out 0.8s infinite;
+}
+
+.goud-agent-modus .goud-munt {
+  animation-play-state: paused;
+  opacity: 0.35;
+}
+
+.goud-wijs-wrapper {
+  transition: transform 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+/* Eureka badge */
+@keyframes goud-eureka-pop {
+  0%,
+  100% {
+    transform: scale(1) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1.08) rotate(3deg);
+  }
+}
+
+.goud-eureka {
+  animation: goud-eureka-pop 1.5s ease-in-out infinite;
+  transform-origin: 94px 19px;
+}
+
+.goud-chat-bubble-mini {
+  animation: goud-eureka-pop 1.2s ease-in-out infinite;
+  transform-origin: 96px 24px;
+}
+
+/* Label */
+@keyframes goud-label-shimmer {
+  0%,
+  100% {
+    color: rgba(245, 158, 11, 0.75);
+  }
+  50% {
+    color: rgba(253, 224, 71, 1);
+  }
+}
+
+.goud-label-badge {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  translate: -50% 0;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: goud-label-shimmer 2s ease-in-out infinite;
+}
+
+/* Pijl */
+@keyframes goud-dash-march {
+  to {
+    stroke-dashoffset: -36;
+  }
+}
+
+.goud-pijl-lijn {
+  animation: goud-dash-march 0.6s linear infinite;
+}
+
+@keyframes goud-doel-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.85;
+  }
+}
+
+.goud-doel-ring {
+  animation: goud-doel-pulse 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.goud-doel-ring-2 {
+  animation: goud-doel-pulse 1.5s ease-in-out 0.4s infinite;
+  transform-origin: center;
+}
+
+@keyframes goud-trophy-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.goud-doel-emoji {
+  animation: goud-trophy-bounce 1.2s ease-in-out infinite;
+}
+
+.goud-deeltje {
+  filter: drop-shadow(0 0 3px #fde047);
+}
+
+/* Speech bubble */
+@keyframes goud-bubble-in {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.goud-tip-bubble {
+  animation: goud-bubble-in 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.goud-tip-bubble::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(
+    from var(--goud-angle, 0deg),
+    transparent 0%,
+    #fbbf24 15%,
+    transparent 30%,
+    transparent 70%,
+    #fde047 85%,
+    transparent 100%
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: goud-border-spin 3s linear infinite;
+  pointer-events: none;
+}
+
+@property --goud-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes goud-border-spin {
+  to {
+    --goud-angle: 360deg;
+  }
+}
+
+@keyframes goud-euro-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(253, 224, 71, 0.8), 0 0 24px rgba(245, 158, 11, 0.4);
+  }
+}
+
+.goud-euro-text {
+  animation: goud-euro-glow 2s ease-in-out infinite;
+}
+
+/* Hover op goudzoeker-knop */
+.goudzoeker-knop:hover .goudzoeker-scene {
+  animation-duration: 0.9s;
+  filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.6));
+}
+
+.goudzoeker-knop:hover .goud-pik-arm {
+  animation-duration: 0.45s;
+}
+
+.goudzoeker-knop:hover .goud-munt {
+  animation-duration: 1s;
+}
+
+.goudzoeker-knop:active .goudzoeker-scene {
+  transform: scale(0.92);
+}
+
+/* SVG transform-box fix */
+.goud-pik-arm,
+.goud-hat,
+.goud-body-bob,
+.goud-wijs-arm,
+.goud-blik,
+.goud-glimlach {
+  transform-box: fill-box;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .goudzoeker-scene,
+  .goud-body-bob,
+  .goud-pik-arm,
+  .goud-hat,
+  .goud-blik,
+  .goud-wijs-arm,
+  .goud-stof,
+  .goud-sparkles path,
+  .goud-aura,
+  .goud-munt,
+  .goud-eureka,
+  .goud-pijl-lijn,
+  .goud-doel-ring,
+  .goud-doel-ring-2,
+  .goud-doel-emoji,
+  .goud-tip-bubble,
+  .goud-euro-text,
+  .goud-label-badge {
+    animation: none !important;
+  }
+
+  .goud-deeltje animateMotion {
+    display: none;
+  }
 }

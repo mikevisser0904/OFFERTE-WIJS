@@ -3,14 +3,21 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { GoudzoekerAgentChat } from "@/components/goudzoeker-agent-chat";
+import { GoudzoekerCharacter } from "@/components/goudzoeker-character";
+import { GoudzoekerPijl } from "@/components/goudzoeker-pijl";
 import { laadKpi, waarLigtHetGeld, type GoudTip } from "@/lib/goudzoeker";
 
 type Point = { x: number; y: number };
+
+function berekenWijsHoek(from: Point, to: Point): number {
+  return (Math.atan2(to.y - from.y, to.x - from.x) * 180) / Math.PI;
+}
 
 export function Goudzoeker() {
   const [tip, setTip] = useState<GoudTip | null>(null);
   const [from, setFrom] = useState<Point | null>(null);
   const [to, setTo] = useState<Point | null>(null);
+  const [wijstHoek, setWijstHoek] = useState<number | null>(null);
   const [zichtbaar, setZichtbaar] = useState(true);
   const [agentOpen, setAgentOpen] = useState(false);
 
@@ -24,14 +31,19 @@ export function Goudzoeker() {
     if (!anchor || !target) {
       setFrom(null);
       setTo(null);
+      setWijstHoek(null);
       return;
     }
 
     const a = anchor.getBoundingClientRect();
     const tg = target.getBoundingClientRect();
 
-    setFrom({ x: a.left + a.width * 0.3, y: a.top + 20 });
-    setTo({ x: tg.left + tg.width / 2, y: tg.top + tg.height / 2 });
+    const fromPt = { x: a.left + a.width * 0.35, y: a.top + a.height * 0.35 };
+    const toPt = { x: tg.left + tg.width / 2, y: tg.top + tg.height / 2 };
+
+    setFrom(fromPt);
+    setTo(toPt);
+    setWijstHoek(berekenWijsHoek(fromPt, toPt));
 
     document.querySelectorAll("[data-goud-highlight]").forEach((el) => {
       el.classList.remove("goud-pulse");
@@ -59,51 +71,18 @@ export function Goudzoeker() {
   return (
     <>
       <GoudzoekerAgentChat open={agentOpen} onClose={() => setAgentOpen(false)} />
-      <svg
-        className="pointer-events-none fixed inset-0 z-[90] h-full w-full"
-        aria-hidden
-      >
-        {from && to && (
-          <>
-            <defs>
-              <marker
-                id="goud-pijl"
-                markerWidth="10"
-                markerHeight="10"
-                refX="8"
-                refY="3"
-                orient="auto"
-              >
-                <path d="M0,0 L8,3 L0,6 Z" fill="#fbbf24" />
-              </marker>
-            </defs>
-            <line
-              x1={from.x}
-              y1={from.y}
-              x2={to.x}
-              y2={to.y}
-              stroke="#fbbf24"
-              strokeWidth="3"
-              strokeDasharray="8 6"
-              markerEnd="url(#goud-pijl)"
-              opacity="0.85"
-            />
-            <circle cx={to.x} cy={to.y} r="28" fill="none" stroke="#fbbf24" strokeWidth="2" opacity="0.5">
-              <animate attributeName="r" values="22;32;22" dur="2s" repeatCount="indefinite" />
-              <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite" />
-            </circle>
-          </>
-        )}
-      </svg>
+
+      {from && to && <GoudzoekerPijl from={from} to={to} />}
 
       <div
         id="goudzoeker-anchor"
-        className={`fixed bottom-6 z-[100] flex max-w-[220px] flex-col items-end gap-2 transition-all duration-300 sm:max-w-xs ${
+        className={`fixed bottom-6 z-[100] flex max-w-[240px] flex-col items-end gap-2 transition-all duration-300 sm:max-w-xs ${
           agentOpen ? "hidden sm:flex sm:right-[25.5rem]" : "right-6"
         }`}
       >
         {!agentOpen && (
-          <div className="relative rounded-2xl border border-amber-400/40 bg-[#1a1408]/95 px-4 py-3 shadow-lg shadow-amber-900/30 backdrop-blur-md">
+          <div className="goud-tip-bubble relative rounded-2xl border border-amber-400/40 bg-[#1a1408]/95 px-4 py-3 shadow-lg shadow-amber-900/30 backdrop-blur-md">
+            <div className="pointer-events-none absolute -bottom-2 right-10 h-4 w-4 rotate-45 border-b border-r border-amber-400/40 bg-[#1a1408]/95" />
             <button
               type="button"
               onClick={() => setZichtbaar(false)}
@@ -115,19 +94,21 @@ export function Goudzoeker() {
             <p className="text-xs font-bold uppercase tracking-wider text-amber-400">
               {tip.titel}
             </p>
-            <p className="mt-1 font-mono text-lg font-bold text-amber-300">{tip.euro}</p>
+            <p className="goud-euro-text mt-1 font-mono text-lg font-bold text-amber-300">
+              {tip.euro}
+            </p>
             <p className="mt-1 text-sm leading-snug text-white/70">{tip.tekst}</p>
             <div className="mt-3 flex flex-wrap items-center gap-3">
               <Link
                 href={tip.href}
-                className="text-sm font-bold text-amber-400 hover:text-amber-300"
+                className="text-sm font-bold text-amber-400 transition hover:scale-105 hover:text-amber-300"
               >
                 Ga ernaartoe →
               </Link>
               <button
                 type="button"
                 onClick={() => setAgentOpen(true)}
-                className="text-sm font-bold text-violet-400 hover:text-violet-300"
+                className="text-sm font-bold text-violet-400 transition hover:scale-105 hover:text-violet-300"
               >
                 Vraag agent →
               </button>
@@ -138,35 +119,16 @@ export function Goudzoeker() {
         <button
           type="button"
           onClick={() => setAgentOpen((o) => !o)}
-          className="goudzoeker-wiggle group flex items-end gap-1 text-left"
+          className="goudzoeker-knop group flex items-end gap-1 text-left"
           aria-label={agentOpen ? "Sluit agent" : "Open goudzoeker-agent"}
         >
-          <div className="relative">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-amber-500/50 bg-gradient-to-b from-amber-700 to-amber-900 text-3xl shadow-lg shadow-amber-900/50 transition group-hover:border-amber-400/70">
-              ⛏️
-            </div>
-            <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-2xl">🤠</span>
-            {!agentOpen && (
-              <span
-                className="absolute -left-6 top-4 origin-right text-2xl"
-                style={{ transform: "rotate(-25deg)" }}
-                aria-hidden
-              >
-                👉
-              </span>
-            )}
-            {agentOpen && (
-              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-violet-500 text-[10px] font-bold text-white">
-                💬
-              </span>
-            )}
-          </div>
-          <p className="mb-2 text-xs font-bold text-amber-500/80 group-hover:text-amber-400">
-            {agentOpen ? "Agent aan" : "Goudzoeker"}
-          </p>
+          <GoudzoekerCharacter
+            wijstHoek={wijstHoek}
+            agentOpen={agentOpen}
+            euro={tip.euro}
+          />
         </button>
       </div>
-
     </>
   );
 }
