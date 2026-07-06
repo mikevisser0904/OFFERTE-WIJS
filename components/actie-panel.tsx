@@ -47,7 +47,11 @@ export function ActiePanel() {
 
   return (
     <div className="space-y-6">
-      <section className="rounded-2xl border border-amber-400/25 bg-amber-400/5 p-6">
+      <section
+        className="rounded-2xl border border-amber-400/25 bg-amber-400/5 p-6"
+        data-goud-target="actie"
+        data-goud-highlight
+      >
         <h2 className="text-lg font-bold text-amber-300">Jullie enige handeling</h2>
         <p className="mt-2 text-sm text-white/55">
           Plak namen + telefoonnummers. Klik per contact op <strong>Verstuur</strong>.

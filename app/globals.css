@@ -24,3 +24,34 @@ body {
   color: #ededed;
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
+
+@keyframes goud-wiggle {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.goudzoeker-wiggle {
+  animation: goud-wiggle 2.5s ease-in-out infinite;
+}
+
+@keyframes goud-pulse-ring {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(251, 191, 36, 0);
+  }
+}
+
+.goud-pulse {
+  animation: goud-pulse-ring 1.5s ease-in-out infinite;
+  outline: 2px solid rgba(251, 191, 36, 0.6) !important;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
