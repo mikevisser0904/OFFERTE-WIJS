@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { laadKpi, STORAGE_KEY } from "@/lib/goudzoeker";
+import { GoudzoekerAvatarMini } from "@/components/goudzoeker-art";
 import {
   beantwoord,
   bouwAgentContext,
@@ -112,9 +113,7 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
       <div className="flex max-h-[min(70vh,32rem)] flex-col overflow-hidden rounded-2xl border border-amber-400/35 bg-[#120e06]/98 shadow-2xl shadow-amber-950/50 backdrop-blur-xl">
         <header className="flex items-center justify-between border-b border-amber-400/20 px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="text-xl" aria-hidden>
-              🤠⛏️
-            </span>
+            <GoudzoekerAvatarMini className="h-9 w-9 shrink-0" />
             <div>
               <p className="text-sm font-bold text-amber-300">Goudzoeker-agent</p>
               <p className="text-[10px] text-white/40">

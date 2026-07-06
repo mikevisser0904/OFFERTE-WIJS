@@ -107,7 +107,8 @@ body {
 
 .goud-body-bob {
   animation: goud-body-bob 0.9s ease-in-out infinite;
-  transform-origin: 60px 100px;
+  transform-box: fill-box;
+  transform-origin: center bottom;
 }
 
 /* Pikhouweel swing */
@@ -157,7 +158,8 @@ body {
 
 .goud-hat {
   animation: goud-hat-tilt 1.6s ease-in-out infinite;
-  transform-origin: 60px 42px;
+  transform-box: fill-box;
+  transform-origin: center top;
 }
 
 /* Ogen knipperen */
@@ -175,7 +177,8 @@ body {
 
 .goud-blik {
   animation: goud-blink 4s ease-in-out infinite;
-  transform-origin: 60px 56px;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .goud-glimlach {
@@ -191,7 +194,6 @@ body {
   50% {
     transform: scaleX(1.08);
   }
-  transform-origin: 60px 66px;
 }
 
 /* Wijsvinger */
@@ -231,7 +233,8 @@ body {
 
 .goud-stof {
   animation: goud-dust-puff 0.85s ease-out infinite;
-  transform-origin: 40px 110px;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 /* Sparkles */
@@ -247,19 +250,28 @@ body {
   }
 }
 
-.goud-sparkles path:nth-child(1) {
+.goud-sparkle-a {
   animation: goud-sparkle-twinkle 1.4s ease-in-out infinite;
-  transform-origin: 22px 58px;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-.goud-sparkles path:nth-child(2) {
+.goud-sparkle-b {
   animation: goud-sparkle-twinkle 1.8s ease-in-out 0.3s infinite;
-  transform-origin: 94px 48px;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-.goud-sparkles path:nth-child(3) {
+.goud-sparkle-c {
   animation: goud-sparkle-twinkle 1.2s ease-in-out 0.6s infinite;
-  transform-origin: 88px 82px;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.goud-sparkle-d {
+  animation: goud-sparkle-twinkle 1.6s ease-in-out 0.9s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 /* Aura */
@@ -317,28 +329,20 @@ body {
 }
 
 .goud-munt {
-  position: absolute;
   pointer-events: none;
-  font-size: 1rem;
-  filter: drop-shadow(0 2px 4px rgba(245, 158, 11, 0.5));
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .goud-munt-1 {
-  top: 4px;
-  left: 2px;
   animation: goud-munt-float-1 2.2s ease-in-out infinite;
 }
 
 .goud-munt-2 {
-  top: 0;
-  right: 4px;
   animation: goud-munt-float-2 1.7s ease-in-out 0.4s infinite;
 }
 
 .goud-munt-3 {
-  bottom: 28px;
-  left: -6px;
-  font-size: 0.85rem;
   animation: goud-munt-float-3 2.5s ease-in-out 0.8s infinite;
 }
 
@@ -364,12 +368,38 @@ body {
 
 .goud-eureka {
   animation: goud-eureka-pop 1.5s ease-in-out infinite;
-  transform-origin: 94px 19px;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .goud-chat-bubble-mini {
   animation: goud-eureka-pop 1.2s ease-in-out infinite;
-  transform-origin: 96px 24px;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes goud-chat-typing {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+.goud-chat-dot-1 {
+  animation: goud-chat-typing 1.2s ease-in-out infinite;
+}
+
+.goud-chat-dot-2 {
+  animation: goud-chat-typing 1.2s ease-in-out 0.2s infinite;
+}
+
+.goud-chat-dot-3 {
+  animation: goud-chat-typing 1.2s ease-in-out 0.4s infinite;
 }
 
 /* Label */
@@ -429,18 +459,28 @@ body {
   transform-origin: center;
 }
 
-@keyframes goud-trophy-bounce {
+@keyframes goud-berg-shine {
   0%,
   100% {
     transform: translateY(0);
+    filter: brightness(1);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-3px);
+    filter: brightness(1.15);
   }
 }
 
-.goud-doel-emoji {
-  animation: goud-trophy-bounce 1.2s ease-in-out infinite;
+.goud-doel-berg {
+  animation: goud-berg-shine 1.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.goud-doel-pik {
+  animation: goud-hat-tilt 2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .goud-deeltje {
@@ -551,14 +591,19 @@ body {
   .goud-blik,
   .goud-wijs-arm,
   .goud-stof,
-  .goud-sparkles path,
+  .goud-sparkle-a,
+  .goud-sparkle-b,
+  .goud-sparkle-c,
+  .goud-sparkle-d,
   .goud-aura,
   .goud-munt,
   .goud-eureka,
   .goud-pijl-lijn,
   .goud-doel-ring,
   .goud-doel-ring-2,
-  .goud-doel-emoji,
+  .goud-doel-berg,
+  .goud-doel-pik,
+  .goud-chat-dot,
   .goud-tip-bubble,
   .goud-euro-text,
   .goud-label-badge {

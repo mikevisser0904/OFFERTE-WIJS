@@ -180,7 +180,7 @@ export function welkomBericht(ctx: AgentContext): AgentBericht {
   return {
     id: "welkom",
     van: "agent",
-    tekst: `Hoi Mike! Ik ben de goudzoeker-agent ⛏️\n\n**${tip.titel}** — ${tip.tekst}\nPotentieel: **${tip.euro}**\n\nSlagingskans: **${slagings.totaal}%** (${slagings.label}). Wat kan ik voor je regelen?`,
+    tekst: `Hoi Mike! Ik ben de goudzoeker-agent.\n\n**${tip.titel}** — ${tip.tekst}\nPotentieel: **${tip.euro}**\n\nSlagingskans: **${slagings.totaal}%** (${slagings.label}). Wat kan ik voor je regelen?`,
     acties: [
       { label: tip.target === "actie" ? "→ Actie" : "→ Doel", type: "link", href: tip.href },
       { label: "Kopieer voor Grok", type: "copy", copy: genereerGrokPrompt(ctx) },
