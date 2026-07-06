@@ -78,14 +78,27 @@ export function waarLigtHetGeld(kpi: KpiInput = defaultKpi): GoudTip {
 }
 
 export const STORAGE_KEY = "webklaar-monitor-kpi";
+export const KPI_CHANGE_EVENT = "webklaar-kpi-change";
 
 export function laadKpi(): KpiInput {
-  if (typeof window === "undefined") return defaultKpi;
+  return laadKpiMetMeta().kpi;
+}
+
+export function laadKpiMetMeta(): { kpi: KpiInput; opgeslagen: boolean } {
+  if (typeof window === "undefined") {
+    return { kpi: defaultKpi, opgeslagen: false };
+  }
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return defaultKpi;
-    return { ...defaultKpi, ...JSON.parse(raw) };
+    if (!raw) return { kpi: defaultKpi, opgeslagen: false };
+    return { kpi: { ...defaultKpi, ...JSON.parse(raw) }, opgeslagen: true };
   } catch {
-    return defaultKpi;
+    return { kpi: defaultKpi, opgeslagen: false };
   }
+}
+
+export function slaKpi(kpi: KpiInput) {
+  if (typeof window === "undefined") return;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(kpi));
+  window.dispatchEvent(new CustomEvent(KPI_CHANGE_EVENT, { detail: kpi }));
 }

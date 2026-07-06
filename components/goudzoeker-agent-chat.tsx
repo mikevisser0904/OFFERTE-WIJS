@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { laadKpi, STORAGE_KEY } from "@/lib/goudzoeker";
+import { KPI_CHANGE_EVENT, laadKpiMetMeta, STORAGE_KEY } from "@/lib/goudzoeker";
 import { MaartenIdeeDeel } from "@/components/maarten-idee-deel";
 import { GoudzoekerAvatarMini } from "@/components/goudzoeker-art";
 import {
@@ -55,7 +55,8 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const ververs = useCallback(() => {
-    const nieuwCtx = bouwAgentContext(laadKpi());
+    const { kpi, opgeslagen } = laadKpiMetMeta();
+    const nieuwCtx = bouwAgentContext(kpi, opgeslagen);
     setCtx(nieuwCtx);
     return nieuwCtx;
   }, []);
@@ -74,12 +75,16 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
     const onStorage = (e: StorageEvent) => {
       if (e.key === STORAGE_KEY) ververs();
     };
+    const onKpiChange = () => ververs();
+
     window.addEventListener("storage", onStorage);
+    window.addEventListener(KPI_CHANGE_EVENT, onKpiChange);
 
     const interval = setInterval(ververs, 8000);
 
     return () => {
       window.removeEventListener("storage", onStorage);
+      window.removeEventListener(KPI_CHANGE_EVENT, onKpiChange);
       clearInterval(interval);
     };
   }, [open, ververs]);
@@ -90,12 +95,14 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
 
   function stuur(vraag: string) {
     const trimmed = vraag.trim();
-    if (!trimmed || !ctx) return;
+    if (!trimmed) return;
+
+    const nieuwCtx = ververs();
 
     setBerichten((prev) => {
       const ids = prev.map((b) => b.id);
       const user = userBericht(trimmed, ids);
-      const antwoord = beantwoord(trimmed, ctx, [...ids, user.id]);
+      const antwoord = beantwoord(trimmed, nieuwCtx, [...ids, user.id]);
       return [...prev, user, antwoord];
     });
     setInvoer("");
@@ -118,7 +125,8 @@ export function GoudzoekerAgentChat({ open, onClose }: Props) {
             <div>
               <p className="text-sm font-bold text-amber-300">Goudzoeker-agent</p>
               <p className="text-[10px] text-white/40">
-                Associaal · brutaal · behulpzaam · week {ctx.slagings.week}
+                €{ctx.kpi.omzet} · {ctx.kpi.contactenDezeWeek}/5 contacten · {ctx.slagings.totaal}%
+                {!ctx.monitorIngevuld && " · monitor leeg"}
               </p>
             </div>
           </div>

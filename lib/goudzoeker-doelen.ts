@@ -105,6 +105,69 @@ function kpiGebaseerd(kpi: KpiInput): GoudTip {
   return alleGoudDoelen[pool[result.week % pool.length]!]!;
 }
 
+/** Deterministisch — alleen voor de agent-chat (geen random) */
+export function kiesAgentDoel(kpi: KpiInput): {
+  tip: GoudTip;
+  reden: string;
+} {
+  const result = berekenSlagingskans(kpi);
+  const laagste = [...result.kpiScores].sort((a, b) => a.score - b.score)[0]!;
+
+  if (result.totaal >= 70) {
+    return {
+      tip: alleGoudDoelen.monitor,
+      reden: `Slagingskans ${result.totaal}% — op koers. Houd tempo en upsell bij levering.`,
+    };
+  }
+  if (kpi.contactenDezeWeek < 3) {
+    return {
+      tip: alleGoudDoelen.actie,
+      reden: `${kpi.contactenDezeWeek}/5 contacten deze week — zonder pipeline geen omzet.`,
+    };
+  }
+  if (laagste.id === "omzet" && laagste.score < 50) {
+    return {
+      tip: alleGoudDoelen.verkoop,
+      reden: `Omzet €${kpi.omzet} vs verwacht €${laagste.doel} (week ${result.week}/12).`,
+    };
+  }
+  if (kpi.bestellingen === 0 && result.week >= 2) {
+    return {
+      tip: alleGoudDoelen.webshop,
+      reden: `Week ${result.week} en nog 0 bestellingen — webshop krijgt geen verkeer.`,
+    };
+  }
+  if (laagste.id === "sites" && kpi.sitesGeleverd < 2) {
+    return {
+      tip: alleGoudDoelen.verkoop,
+      reden: `${kpi.sitesGeleverd}/6 sites geleverd — te weinig verkocht of te traag gesloten.`,
+    };
+  }
+  if (laagste.id === "reacties" && laagste.score < 50 && kpi.contactenDezeWeek > 0) {
+    return {
+      tip: alleGoudDoelen.verkoop,
+      reden: `${kpi.reacties}/${kpi.contactenDezeWeek} reacties — bericht of follow-up faalt.`,
+    };
+  }
+  if (laagste.id === "contacten") {
+    return {
+      tip: alleGoudDoelen.actie,
+      reden: `${kpi.contactenDezeWeek}/5 contacten — onder de weekdoel.`,
+    };
+  }
+  if (result.acties.length > 0) {
+    return {
+      tip: alleGoudDoelen.actie,
+      reden: result.acties[0]!,
+    };
+  }
+
+  return {
+    tip: alleGoudDoelen.actie,
+    reden: `Zwakste KPI: ${laagste.label} (${laagste.score}%).`,
+  };
+}
+
 /** Mix: rond door alle hoeken, niet alleen actie */
 export function kiesActiefGoudDoel(kpi: KpiInput): GoudTip {
   const roll = Math.random();

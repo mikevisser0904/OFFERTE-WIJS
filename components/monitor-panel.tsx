@@ -9,8 +9,7 @@ import {
 } from "@/data/monitoring";
 import { hoofddoel } from "@/data/doel";
 import { SITE_URL } from "@/lib/seo";
-
-const STORAGE_KEY = "webklaar-monitor-kpi";
+import { laadKpiMetMeta, slaKpi } from "@/lib/goudzoeker";
 
 type HealthStatus = {
   checkedAt: string;
@@ -25,14 +24,7 @@ export function MonitorPanel() {
   const [geladen, setGeladen] = useState(false);
 
   useEffect(() => {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      try {
-        setKpi({ ...defaultKpi, ...JSON.parse(raw) });
-      } catch {
-        /* ignore */
-      }
-    }
+    setKpi(laadKpiMetMeta().kpi);
     setGeladen(true);
 
     fetch(`${SITE_URL}/health.json`)
@@ -43,7 +35,7 @@ export function MonitorPanel() {
 
   function save(next: KpiInput) {
     setKpi(next);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    slaKpi(next);
   }
 
   function exportData() {
