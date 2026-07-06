@@ -1,3 +1,6 @@
+/** Zet op true om mompel- en bingo-geluid weer aan te zetten */
+export const GOUDZOEKER_GELUID_AAN = false;
+
 let audioCtx: AudioContext | null = null;
 let audioKlaar = false;
 let reducedMotion = false;
@@ -63,6 +66,7 @@ function speelRuis(when: number, dur: number, peak: number, freq: number) {
 }
 
 export async function initGoudzoekerGeluid(): Promise<boolean> {
+  if (!GOUDZOEKER_GELUID_AAN) return false;
   if (typeof window === "undefined") return false;
   reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reducedMotion) return false;
@@ -90,7 +94,7 @@ async function zorgAudio(): Promise<boolean> {
 }
 
 export function koppelGoudzoekerGeluid() {
-  if (typeof window === "undefined") return;
+  if (!GOUDZOEKER_GELUID_AAN || typeof window === "undefined") return;
   const ontgrendel = () => {
     void initGoudzoekerGeluid();
   };
@@ -99,6 +103,7 @@ export function koppelGoudzoekerGeluid() {
 }
 
 export function speelMompelGeluid(schreeuw = false) {
+  if (!GOUDZOEKER_GELUID_AAN) return;
   void zorgAudio().then((ok) => {
     if (!ok) return;
     speelMompelGeluidNu(schreeuw);
@@ -126,6 +131,7 @@ function speelMompelGeluidNu(schreeuw = false) {
 }
 
 export function speelBingoGeluid() {
+  if (!GOUDZOEKER_GELUID_AAN) return;
   void zorgAudio().then((ok) => {
     if (!ok) return;
     speelBingoGeluidNu();
