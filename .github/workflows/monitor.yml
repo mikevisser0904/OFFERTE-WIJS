@@ -1,0 +1,47 @@
+name: Site monitor
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "public/health.json"
+      - "scripts/health-check.mjs"
+      - ".github/workflows/monitor.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run health checks
+        id: check
+        run: node scripts/health-check.mjs
+        continue-on-error: true
+
+      - name: Commit health status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/health.json
+          git diff --staged --quiet || git commit -m "monitor: health check $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push || true
+
+      - name: Summary
+        run: |
+          echo "## Site monitor" >> $GITHUB_STEP_SUMMARY
+          cat public/health.json >> $GITHUB_STEP_SUMMARY
+
+      - name: Fail if unhealthy
+        if: steps.check.outcome == 'failure'
+        run: exit 1

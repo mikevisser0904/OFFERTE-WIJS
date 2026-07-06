@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-07-06T23:10:34.613Z",
+  "site": "https://mikevisser0904.github.io/OFFERTE-WIJS",
+  "healthy": true,
+  "avgResponseMs": 247,
+  "checks": [
+    {
+      "name": "Homepage",
+      "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/",
+      "ok": true,
+      "status": 200,
+      "ms": 280
+    },
+    {
+      "name": "Bestellen",
+      "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/bestellen/",
+      "ok": true,
+      "status": 200,
+      "ms": 242
+    },
+    {
+      "name": "Diensten",
+      "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/diensten/",
+      "ok": true,
+      "status": 200,
+      "ms": 241
+    },
+    {
+      "name": "Demo",
+      "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/",
+      "ok": true,
+      "status": 200,
+      "ms": 241
+    },
+    {
+      "name": "Sitemap",
+      "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/sitemap.xml",
+      "ok": true,
+      "status": 200,
+      "ms": 240
+    },
+    {
+      "name": "SEO Utrecht",
+      "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/land/website-vakman-utrecht/",
+      "ok": true,
+      "status": 200,
+      "ms": 239
+    }
+  ],
+  "seo": {
+    "sitemap": true,
+    "landingPages": true
+  }
+}

@@ -49,6 +49,24 @@ export default function DashboardPage() {
       subtitle={`Eerste doel: ${hoofddoel.label} in ${hoofddoel.deadline}`}
     >
       <div className="mx-auto max-w-6xl space-y-8">
+        <section className="rounded-2xl border border-violet-400/30 bg-violet-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-violet-400">
+              Continu monitoring
+            </p>
+            <h2 className="mt-2 text-xl font-bold">Slagingskans live</h2>
+            <p className="mt-1 text-sm text-white/55">
+              Site-check elke 4u + KPI&apos;s + score richting 10 ruggen.
+            </p>
+          </div>
+          <Link
+            href="/monitor/"
+            className="mt-4 inline-flex shrink-0 rounded-full bg-violet-400 px-8 py-3 font-bold text-slate-900 hover:bg-violet-300 sm:mt-0"
+          >
+            Open monitor →
+          </Link>
+        </section>
+
         <section className="rounded-2xl border border-teal-400/30 bg-teal-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-teal-400">

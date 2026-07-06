@@ -25,7 +25,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: GITHUB_PAGES=true npm run build
-      - run: cp public/llms.txt out/llms.txt && cp public/og.svg out/og.svg
+      - run: node scripts/health-check.mjs || true
+      - run: cp public/llms.txt out/llms.txt && cp public/og.svg out/og.svg && cp public/health.json out/health.json
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
