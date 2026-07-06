@@ -246,6 +246,45 @@ body {
   transform: scaleX(-1);
 }
 
+/* 3D-wereld */
+.goud-3d-wereld {
+  transform-style: preserve-3d;
+}
+
+.goud-3d-figuur {
+  transform-style: preserve-3d;
+  transition: filter 0.35s ease;
+  will-change: transform, filter;
+}
+
+.goud-3d-loopt .goudzoeker-scene {
+  animation:
+    goud-scene-hop 0.42s cubic-bezier(0.45, 0, 0.55, 1) infinite,
+    goud-3d-bob 2.4s ease-in-out infinite;
+}
+
+@keyframes goud-3d-bob {
+  0%,
+  100% {
+    transform: translateZ(0) rotateZ(-1deg);
+  }
+  50% {
+    transform: translateZ(8px) rotateZ(1deg);
+  }
+}
+
+.goud-dichtbij .goudzoeker-scene {
+  animation-duration: 0.38s;
+}
+
+.goud-verweg .goudzoeker-svg {
+  opacity: 0.88;
+}
+
+.goud-3d-schaduw {
+  transform-style: preserve-3d;
+}
+
 /* Mompel-bubble */
 @keyframes goud-mompel-pop {
   0% {
@@ -718,6 +757,7 @@ body {
   .goud-been-rechts,
   .goud-mompel-bubble,
   .goud-mompel-mond,
+  .goud-3d-loopt .goudzoeker-scene,
   .goud-hat,
   .goud-blik,
   .goud-wijs-arm,

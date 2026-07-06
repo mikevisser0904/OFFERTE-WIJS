@@ -8,16 +8,26 @@ type Props = {
   euro?: string;
   wandelt?: boolean;
   bijGoud?: boolean;
+  diepte?: number;
 };
 
-export function GoudzoekerCharacter({ agentOpen, euro, wandelt = false, bijGoud = false }: Props) {
+export function GoudzoekerCharacter({
+  agentOpen,
+  euro,
+  wandelt = false,
+  bijGoud = false,
+  diepte = 0.5,
+}: Props) {
   const uid = useId().replace(/:/g, "");
 
   return (
     <div
       className={`relative h-[9.375rem] w-[8.125rem] ${
         agentOpen ? "goud-agent-modus" : "goud-mijn-modus"
-      } ${wandelt ? "goud-is-wandelen" : ""} ${bijGoud ? "goud-bij-goud" : ""}`}
+      } ${wandelt ? "goud-is-wandelen" : ""} ${bijGoud ? "goud-bij-goud" : ""} ${
+        diepte > 0.65 ? "goud-dichtbij" : diepte < 0.35 ? "goud-verweg" : ""
+      }`}
+      style={{ transform: `translateZ(${diepte * 20}px)`, transformStyle: "preserve-3d" }}
       aria-hidden
     >
       <div className="goudzoeker-scene relative h-full w-full">

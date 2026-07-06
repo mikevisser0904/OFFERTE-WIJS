@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Goudzoeker } from "@/components/goudzoeker";
+import { goudTargetVoorHref, isGoudNavItem } from "@/lib/goud-nav-target";
 
 const nav = [
   { href: "/dashboard/", label: "Dashboard", icon: "▦" },
@@ -44,25 +45,8 @@ export function DashboardShell({
                 <Link
                   key={item.href}
                   href={item.href}
-                  data-goud-target={
-                    item.href === "/actie/"
-                      ? "actie"
-                      : item.href === "/monitor/"
-                        ? "monitor"
-                        : item.href === "/verkoop/"
-                          ? "verkoop"
-                          : item.href === "/"
-                            ? "webshop"
-                            : undefined
-                  }
-                  data-goud-highlight={
-                    item.href === "/actie/" ||
-                    item.href === "/monitor/" ||
-                    item.href === "/verkoop/" ||
-                    item.href === "/"
-                      ? ""
-                      : undefined
-                  }
+                  data-goud-target={goudTargetVoorHref(item.href)}
+                  data-goud-highlight={isGoudNavItem(item.href) ? "" : undefined}
                   className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition ${
                     isActive
                       ? "bg-emerald-400/10 font-semibold text-emerald-300"
@@ -112,25 +96,8 @@ export function DashboardShell({
                   <Link
                     key={item.href}
                     href={item.href}
-                    data-goud-target={
-                      item.href === "/actie/"
-                        ? "actie"
-                        : item.href === "/monitor/"
-                          ? "monitor"
-                          : item.href === "/verkoop/"
-                            ? "verkoop"
-                            : item.href === "/"
-                              ? "webshop"
-                              : undefined
-                    }
-                    data-goud-highlight={
-                      item.href === "/actie/" ||
-                      item.href === "/monitor/" ||
-                      item.href === "/verkoop/" ||
-                      item.href === "/"
-                        ? ""
-                        : undefined
-                    }
+                    data-goud-target={goudTargetVoorHref(item.href)}
+                    data-goud-highlight={isGoudNavItem(item.href) ? "" : undefined}
                     className={`shrink-0 rounded-full px-4 py-1.5 text-xs font-medium transition ${
                       isActive
                         ? "bg-emerald-400/15 text-emerald-300"
