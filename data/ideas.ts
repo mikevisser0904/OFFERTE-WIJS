@@ -1,220 +1,564 @@
+export type IdeaCategory = "deze-week" | "deze-maand" | "later";
+
+export type IncomeSpoor =
+  | "verkopen"
+  | "uren"
+  | "doorverkoop"
+  | "recurring"
+  | "netwerk";
+
 export type IdeaScores = {
-  snelMvp: number;
-  geld: number;
+  korteTermijn: number;
+  zekerheid: number;
+  opbrengst: number;
   julliePassen: number;
-  markt: number;
-  leuk: number;
+  schaalbaar: number;
 };
 
-export type ProjectIdea = {
+export type MoneyIdea = {
   id: string;
   title: string;
   tagline: string;
+  category: IdeaCategory;
+  spoor: IncomeSpoor;
   recommended?: boolean;
+  eersteEuro: string;
   problem: string;
-  solution: string;
-  klant: string;
-  voorbeeldKlant: string;
-  waaromJullie: string;
+  aanpak: string;
   geld: string;
   geldDetail: string;
-  mike: string[];
-  maarten: string[];
-  mvp: string[];
-  nietNu: string[];
+  wie: { mike: string[]; maarten: string[] };
+  stappen: string[];
   risico: string;
   scores: IdeaScores;
   totaal: number;
 };
 
+export const categoryMeta: Record<
+  IdeaCategory,
+  { label: string; sub: string; color: string }
+> = {
+  "deze-week": {
+    label: "Deze week geld",
+    sub: "0–7 dagen · direct uitvoerbaar",
+    color: "emerald",
+  },
+  "deze-maand": {
+    label: "Deze maand geld",
+    sub: "2–4 weken · eerste betaling realistisch",
+    color: "amber",
+  },
+  later: {
+    label: "Bouwsteen",
+    sub: "Maanden · pas na eerste cash",
+    color: "sky",
+  },
+};
+
+export const spoorMeta: Record<
+  IncomeSpoor,
+  { label: string; emoji: string; uitleg: string }
+> = {
+  verkopen: {
+    label: "Verkopen",
+    emoji: "📦",
+    uitleg: "Eenmalig product of pakket — snelste cash",
+  },
+  uren: {
+    label: "Uren",
+    emoji: "⏱",
+    uitleg: "Tijd verkopen — flexibel, direct factureerbaar",
+  },
+  doorverkoop: {
+    label: "Doorverkoop",
+    emoji: "🔗",
+    uitleg: "Commissie of marge op tools van anderen",
+  },
+  recurring: {
+    label: "Recurring",
+    emoji: "🔄",
+    uitleg: "Maandelijks terugkerend — stapelbaar",
+  },
+  netwerk: {
+    label: "Netwerk",
+    emoji: "🤝",
+    uitleg: "Warme contacten activeren — weinig acquisitie",
+  },
+};
+
 function total(s: IdeaScores) {
-  return s.snelMvp + s.geld + s.julliePassen + s.markt + s.leuk;
+  return s.korteTermijn + s.zekerheid + s.opbrengst + s.julliePassen + s.schaalbaar;
 }
 
-const offerteWijs: ProjectIdea = {
-  id: "offertewijs",
-  title: "OfferteWijs",
-  tagline: "Van Word-document naar professionele offerte in 2 minuten",
-  recommended: true,
-  problem:
-    "80% van de zzp-vakmannen (zonwering, kozijnen, schilders) typt offertes nog in Word. Dat kost 30–60 min per offerte, ziet er amateuristisch uit, en klanten gaan 3x vergelijken op prijs alleen.",
-  solution:
-    "SaaS-tool: bedrijfslogo + producten + maten → mooie PDF of link. Klant ziet direct wat hij krijgt. Jullie hebben de motor al (ZonComfort-configurator).",
-  klant: "Zzp-installateur, 1–5 man, 20–100 offertes per maand",
-  voorbeeldKlant: "Jan, zonweringbedrijf Utrecht — nu 45 min per offerte in Word",
-  waaromJullie:
-    "ZonComfort = werkende configurator, pricing.ts, PDF-flow bijna klaar. Mike kent het vak (renovatie/zonwering). Maarten maakt het generiek voor elk bedrijf.",
-  geld: "€29–49/maand per bedrijf",
-  geldDetail:
-    "50 klanten × €39 = €1.950/maand. Eén sale per week = break-even op jullie tijd binnen 2 maanden.",
-  mike: ["Prijzen & productlogica", "Eerste 3 betaal-klanten benaderen", "Support & domeinkennis"],
-  maarten: ["UI + onboarding flow", "PDF/export + branding per klant", "Deploy & analytics"],
-  mvp: [
-    "Week 1: kopieer ZonComfort-logica, generiek maken",
-    "Week 2: logo upload + bedrijfsnaam + PDF",
-    "Week 3: dashboard + 1 echte klant testen",
-  ],
-  nietNu: ["Betalingen", "Multi-user teams", "Mobiele app"],
-  risico: "Vakmannen zijn traag met nieuwe software — oplossing: gratis proef + jij installeert het voor ze",
-  scores: { snelMvp: 5, geld: 4, julliePassen: 5, markt: 4, leuk: 4 },
-  totaal: 0,
-};
-
-const installateurKit: ProjectIdea = {
-  id: "installateurkit",
-  title: "InstallateurKit",
-  tagline: "ZonComfort verkopen als kant-en-klaar pakket",
-  problem:
-    "Elke zonwering-installateur wil een moderne site met configurator. Bouwen kost €5.000–15.000 bij een bureau. Jullie hebben het al.",
-  solution:
-    "White-label: ander logo, kleuren, teksten — zelfde code. Setup in 1 dag. Verkoop als product, niet als project.",
-  klant: "Installateur die nu een verouderde site heeft of alleen Facebook",
-  voorbeeldKlant: "Screens & Zo Groningen — wil configurator, budget < €2.000",
-  waaromJullie:
-    "MIKE-AND-MAARTEN is het bewijs. Maarten maakt thema-systeem; Mike doet sales en onboarding-call.",
-  geld: "€499 setup + €29/maand hosting",
-  geldDetail: "2 verkopen per maand = €1.000 setup + recurring. Schaalbaar zonder per klant te coderen.",
-  mike: ["Sales (lokale installateurs)", "Onboarding-call", "Content invullen per klant"],
-  maarten: ["Theme switcher (kleur/logo)", "Deploy pipeline per klant", "Documentatie"],
-  mvp: [
-    "Week 1: env-variabelen voor brand (naam, kleur, logo)",
-    "Week 2: deploy-script voor klant #2",
-    "Week 3: sales-pagina + 1 pitch naar installateur",
-  ],
-  nietNu: ["Self-service zonder jullie hulp", "Configurator per niche"],
-  risico: "Elke klant wil maatwerk — oplossing: strikte grenzen in pakket",
-  scores: { snelMvp: 5, geld: 5, julliePassen: 5, markt: 3, leuk: 3 },
-  totaal: 0,
-};
-
-const klusBoard: ProjectIdea = {
-  id: "klusboard",
-  title: "KlusBoard Web",
-  tagline: "Mikes renovatie-app — nu ook in de browser",
-  problem:
-    "Zzp'ers in renovatie verliezen overzicht: uren, materialen, wat kost de klus echt, wat moet ik factureren?",
-  solution:
-    "Web-dashboard gekoppeld aan KlusBoard-app. Opdrachtgever ziet voortgang (optioneel). Mike's domeinkennis ingebakken.",
-  klant: "Renovateur / klusser, 1–3 personen",
-  voorbeeldKlant: "Mike zelf — KlusBoard op telefoon, maar opdrachtgever wil browser-link",
-  waaromJullie:
-    "Mike heeft de app al (renovatie-app). Maarten bouwt web-kant. Geen concurrentie-onderzoek nodig — jij bent gebruiker #1.",
-  geld: "Freemium: gratis 1 project, €9/maand onbeperkt",
-  geldDetail: "Minder SaaS-potentie, maar laagste risico — je lost je eigen probleem op.",
-  mike: ["App-logica hergebruiken", "Workflow & features", "Dogfooding"],
-  maarten: ["Web UI + sync", "Rapporten voor opdrachtgever", "Auth"],
-  mvp: [
-    "Week 1: projecten + uren in web",
-    "Week 2: materialen + totaal",
-    "Week 3: shareable link voor opdrachtgever",
-  ],
-  nietNu: ["iOS/Android rewrite", "Boekhoudkoppeling"],
-  risico: "Kleinere markt — oplossing: later uitbreiden naar alle zzp-bouw",
-  scores: { snelMvp: 4, geld: 2, julliePassen: 5, markt: 3, leuk: 5 },
-  totaal: 0,
-};
-
-const zonScan: ProjectIdea = {
-  id: "zonscan",
-  title: "ZonScan",
-  tagline: "Foto van raam → maat, product en prijsindicatie",
-  problem:
-    "Klant wil snel weten wat zonwering kost, maar wil geen meetafspraak. Installateur verliest leads aan concurrent die sneller reageert.",
-  solution:
-    "Upload foto → AI schat breedte/hoogte → productadvies + prijsrange. Lead gaat naar installateur. Viral: 'wat kost jouw raam?'",
-  klant: "Consument (B2C) + installateur als afnemer van leads",
-  voorbeeldKlant: "Huiseigenaar Amsterdam — wil prijs vóór monteur langskomt",
-  waaromJullie:
-    "Jullie kennen producten en prijzen. Wow-factor voor marketing. Maarten kan AI-integratie; Mike valideert output.",
-  geld: "€15–25 per lead naar installateur",
-  geldDetail: "100 leads/maand × €20 = €2.000. Vereist marketing-budget en AI-kosten.",
-  mike: ["Productregels & prijsranges", "Installateurs werven", "Output valideren"],
-  maarten: ["Foto-upload UI", "AI API (vision)", "Landingspagina"],
-  mvp: [
-    "Week 1: handmatige maat-invoer + foto (geen AI)",
-    "Week 2: AI-maatschatting",
-    "Week 3: lead-formulier + 1 installateur test",
-  ],
-  nietNu: ["100% automatische offerte", "App"],
-  risico: "AI-maat niet altijd klopt — oplossing: altijd 'indicatie, definitief na opmeting'",
-  scores: { snelMvp: 2, geld: 4, julliePassen: 3, markt: 5, leuk: 5 },
-  totaal: 0,
-};
-
-const beslisser: ProjectIdea = {
-  id: "beslisser",
-  title: "Beslisser",
-  tagline: "Moet ik deze klus wel doen? Eerlijk antwoord in 5 vragen",
-  problem:
-    "Mensen nemen slechte beslissingen bij renovatie (te duur, verkeerde aannemer, verkeerde prioriteit). Geen neutrale second opinion.",
-  solution:
-    "5 vragen → advies + geschatte kosten + 'nu / later / nooit'. Affiliate naar gereedschap/materialen.",
-  klant: "Huiseigenaar vóór grote uitgave",
-  voorbeeldKlant: "Wie twijfelt: rolluiken nu of eerst keuken?",
-  waaromJullie:
-    "Mike had beslisser-app al als Expo-idee. Maarten maakt web. Content = Mikes renovatie-ervaring.",
-  geld: "Affiliate + premium advies €4,99",
-  geldDetail: "Moeilijker te monetizen; beter als traffic-driver naar OfferteWijs/InstallateurKit.",
-  mike: ["Beslislogica & vragen", "Content (eerlijk advies)", "Renovatie-voorbeelden"],
-  maarten: ["Quiz-flow UI", "Resultaat-pagina's", "SEO"],
-  mvp: [
-    "Week 1: 1 beslissing (zonwering ja/nee)",
-    "Week 2: 5 vragen + resultaat",
-    "Week 3: share + affiliate links",
-  ],
-  nietNu: ["AI coach", "Community"],
-  risico: "Afspraken aansprakelijkheid — oplossing: duidelijk 'indicatie, geen garantie'",
-  scores: { snelMvp: 4, geld: 2, julliePassen: 4, markt: 3, leuk: 4 },
-  totaal: 0,
-};
-
-const leadPing: ProjectIdea = {
-  id: "leadping",
-  title: "LeadPing",
-  tagline: "Gemiste oproep → automatisch SMS met offerte-link",
-  problem:
-    "Vakman is op ladder, mist telefoon. Klant belt concurrent. 30% van leads verloren door gemiste calls.",
-  solution:
-    "Koppeling met telefoon: gemiste call → SMS 'Bedankt voor uw bel! Offerte aanvragen: [link]'. Link = mini OfferteWijs.",
-  klant: "Drukke zzp'er die vaak niet opneemt",
-  voorbeeldKlant: "Monteur zonwering — 8 gemiste calls per week",
-  waaromJullie:
-    "Combineert met OfferteWijs. Sterk verkoopargument. Technisch: webhook + SMS (Twilio).",
-  geld: "€19/maand add-on op OfferteWijs",
-  geldDetail: "Upsell — pas zinvol als OfferteWijs draait.",
-  mike: ["Sales pitch", "Twilio/SMS testen", "Klantgesprekken"],
-  maarten: ["Webhook + SMS flow", "Landingspagina vanaf SMS", "Integratie OfferteWijs"],
-  mvp: ["Week 1: handmatige SMS na form", "Week 2: Twilio", "Week 3: koppel met OfferteWijs"],
-  nietNu: ["Telefoon-integratie iOS/Android"],
-  risico: "SMS-kosten — oplossing: in abonnement inclusief 50 SMS/maand",
-  scores: { snelMvp: 3, geld: 4, julliePassen: 4, markt: 4, leuk: 3 },
-  totaal: 0,
-};
-
-export const ideas: ProjectIdea[] = [
-  offerteWijs,
-  installateurKit,
-  klusBoard,
-  zonScan,
-  beslisser,
-  leadPing,
-].map((i) => ({ ...i, totaal: total(i.scores) }));
+export const ideas: MoneyIdea[] = [
+  {
+    id: "site-verkopen",
+    title: "Website verkopen (kant-en-klaar)",
+    tagline: "ZonComfort-klonen voor een echte installateur — €750–1.200",
+    category: "deze-week",
+    spoor: "verkopen",
+    recommended: true,
+    eersteEuro: "Week 1–2: eerste factuur €750+",
+    problem:
+      "Lokale zonwering/kozijnen-bedrijven hebben geen moderne site. Bureau vraagt €5.000. Jullie hebben de site al.",
+    aanpak:
+      "Kopieer MIKE-AND-MAARTEN → ander logo, kleuren, teksten, telefoonnummer. Deploy Vercel. Verkoop als pakket inclusief 1 jaar hosting.",
+    geld: "€750–1.200 eenmalig",
+    geldDetail:
+      "1 klant per 2 weken = €1.500–2.400/maand naast je werk. Geen SaaS nodig — gewoon verkopen wat je al hebt.",
+    wie: {
+      mike: ["3 bedrijven bellen/appen (eigen netwerk)", "Teksten + prijzen invullen", "Offerte + factuur"],
+      maarten: ["Theme aanpassen (logo/kleur)", "Deploy + domein", "1-pager uitleg voor klant"],
+    },
+    stappen: [
+      "Maak 1 demo-site klaar (andere naam, zelfde motor)",
+      "Mike: lijst van 10 lokale installateurs",
+      "Stuur link + 'uw site, klaar in 3 dagen, €899'",
+      "Eerste ja = geld op rekening",
+    ],
+    risico: "Klant wil eindeloos maatwerk → vaste prijs, vaste scope (5 pagina's + configurator)",
+    scores: { korteTermijn: 5, zekerheid: 5, opbrengst: 4, julliePassen: 5, schaalbaar: 3 },
+    totaal: 0,
+  },
+  {
+    id: "werk-uren",
+    title: "Betaald kluswerk (opdevlugt-tech)",
+    tagline: "MIKE-AND-MAARTEN afmaken en factureren",
+    category: "deze-week",
+    spoor: "uren",
+    eersteEuro: "Week 1: uren declareren",
+    problem: "Jullie bouwen al samen — maar zonder tarief. Maarten (admin) en Mike (uitvoering) zonder factuur.",
+    aanpak:
+      "Spreek af: uurtarief of vast bedrag voor ZonComfort-site live. Werk via git, geen gedoe. Eerlijk en direct.",
+    geld: "€25–45/uur of €500–1.500 vast",
+    geldDetail: "20 uur × €35 = €700. Of: 'site live + echte data = €800' eenmalig.",
+    wie: {
+      mike: ["Echte bedrijfsdata invullen", "Content + foto's regelen", "Testen opdrachtgever"],
+      maarten: ["Site afmaken", "Deploy productie", "Bugfixes"],
+    },
+    stappen: [
+      "Bel 15 min: uurtarief of vast?",
+      "Lijst wat nog moet voor 'live'",
+      "Afspraak deadline + betaling bij oplevering",
+      "Werk verder zoals nu (git)",
+    ],
+    risico: "Vriendschap + geld → schriftelijk kort vastleggen (WhatsApp is ok)",
+    scores: { korteTermijn: 5, zekerheid: 5, opbrengst: 3, julliePassen: 5, schaalbaar: 1 },
+    totaal: 0,
+  },
+  {
+    id: "mike-verkoopt",
+    title: "Mike verkoopt, Maarten bouwt",
+    tagline: "50/50 split op freelance webklussen",
+    category: "deze-week",
+    spoor: "netwerk",
+    eersteEuro: "Week 1–2: eerste klus",
+    problem: "Maarten kan bouwen maar heeft geen lokale sales. Mike kent mensen in bouw/renovatie.",
+    aanpak:
+      "Mike benadert netwerk: 'Wie heeft site nodig?' Maarten levert. 50/50 na betaling. Geen eigen product nodig.",
+    geld: "€400–2.000 per klus, 50/50",
+    geldDetail: "1 klus/maand à €800 = €400 elk. Schaal met templates (site-verkopen idee).",
+    wie: {
+      mike: ["Netwerk, intake, offerte", "Content van klant", "Factuur"],
+      maarten: ["Bouwen", "Design", "Oplevering"],
+    },
+    stappen: [
+      "Mike: 5 WhatsApps deze week",
+      "Simpele prijslijst (one-pager / site / shop)",
+      "Eerste klus = bewijs dat het werkt",
+    ],
+    risico: "Onduidelijke scope → standaard pakketten, niet maatwerk",
+    scores: { korteTermijn: 5, zekerheid: 4, opbrengst: 4, julliePassen: 5, schaalbaar: 2 },
+    totaal: 0,
+  },
+  {
+    id: "digitaal-opruimen",
+    title: "Digitale opruiming (zzp & winkels)",
+    tagline: "E-mail, cloud, backup, wachtwoorden — €125/uur",
+    category: "deze-week",
+    spoor: "uren",
+    eersteEuro: "Week 1: eerste 2-uurs klus €250",
+    problem:
+      "Veel zzp'ers en kleine winkels draaien op chaos: oude Gmail, geen backup, Excel overal. Geen site nodig — ze betalen voor rust.",
+    aanpak:
+      "Vast pakket: 2 uur on-site of remote. Inbox structureren, cloud koppelen, wachtwoordmanager, backup check. Geen development.",
+    geld: "€125/uur · pakket €249 (2 uur)",
+    geldDetail: "2 klussen/week = €500. Mike kent deze mensen al via renovatie/netwerk.",
+    wie: {
+      mike: ["Lokaal verkopen ('ik ruim je digitale rommel op')", "On-site bij winkels", "Factuur"],
+      maarten: ["Remote support", "Checklist + handleiding achterlaten", "Backup instellen"],
+    },
+    stappen: [
+      "Maak 1-pager checklist (wat je doet in 2 uur)",
+      "Mike: 5 zzp'ers/winkeliers uit netwerk",
+      "Lever binnen 1 week — mond-tot-mond",
+    ],
+    risico: "Scope explodeert → strikt 2-uur pakket, meer uren = nieuwe afspraak",
+    scores: { korteTermijn: 5, zekerheid: 4, opbrengst: 3, julliePassen: 4, schaalbaar: 2 },
+    totaal: 0,
+  },
+  {
+    id: "platform-gigs",
+    title: "Platform-gigs (Malt / Fiverr / Upwork)",
+    tagline: "Kleine klussen wereldwijd — geen eigen marketing",
+    category: "deze-week",
+    spoor: "uren",
+    eersteEuro: "Week 2–3: eerste gig €50–300",
+    problem: "Jullie wachten op lokaal netwerk, maar platforms hebben nu al vraag naar fixes, forms, WordPress, dashboards.",
+    aanpak:
+      "Maarten: profiel + 3 portfolio-items (ZonComfort, OfferteWijs). Mike: NL-teksten. Start met kleine fixed-price gigs (€75–150).",
+    geld: "€50–500 per gig",
+    geldDetail: "3 gigs/maand à €150 = €450. Geen sales-gesprek — gewoon leveren.",
+    wie: {
+      mike: ["Profielteksten NL", "Intake met klant (Engels mag)", "Reviews vragen"],
+      maarten: ["Profiel + portfolio", "Technische levering", "Snel reageren op gigs"],
+    },
+    stappen: [
+      "Kies 1 platform (Malt = NL, Fiverr = volume)",
+      "3 fixed-price aanbiedingen (form fix, landing page, Excel→sheet)",
+      "Eerste 5 sterren review = momentum",
+    ],
+    risico: "Race to bottom → alleen vaste prijs, geen uurtarief onder €35",
+    scores: { korteTermijn: 4, zekerheid: 3, opbrengst: 3, julliePassen: 4, schaalbaar: 3 },
+    totaal: 0,
+  },
+  {
+    id: "renovatie-plus-digitaal",
+    title: "Renovatieklus + digitaal upsell",
+    tagline: "Mike's fysieke werk + Google/site erachteraan",
+    category: "deze-week",
+    spoor: "netwerk",
+    eersteEuro: "Week 1: renovatie-uren + €149 digitaal extra",
+    problem:
+      "Mike doet al renovatieklussen. Klant vertrouwt hem. Na de klus is het makkelijk om Google-pakket of simpele site te verkopen.",
+    aanpak:
+      "Na elke renovatie: 'Zal ik uw Google-profiel ook netjes zetten? €149'. Geen koude acquisitie — warme klant die je al kent.",
+    geld: "Renovatie + €149–299 digitaal extra",
+    geldDetail: "2 renovaties/maand + upsell = €300–600 extra zonder nieuwe leads.",
+    wie: {
+      mike: ["Renovatie uitvoeren", "Upsell na oplevering", "Google invullen met klant"],
+      maarten: ["Site/one-pager klaarzetten", "Deploy", "Template aanpassen"],
+    },
+    stappen: [
+      "Kaartje achterlaten: 'Google + website vanaf €149'",
+      "Bij volgende klus: mondeling aanbieden",
+      "Maarten levert binnen 48 uur",
+    ],
+    risico: "Renovatie kost tijd → upsell alleen als digitale levering uitbesteed aan Maarten",
+    scores: { korteTermijn: 5, zekerheid: 4, opbrengst: 3, julliePassen: 5, schaalbaar: 2 },
+    totaal: 0,
+  },
+  {
+    id: "google-pakket",
+    title: "Google-pakket voor vakmannen",
+    tagline: "Site + Google Business + WhatsApp-knop — €299",
+    category: "deze-maand",
+    spoor: "verkopen",
+    eersteEuro: "Week 2–3: eerste €299",
+    problem:
+      "Vakman heeft geen Google-profiel of oude site. Verliest klanten aan concurrent met betere reviews.",
+    aanpak:
+      "Mini-pakket: simpele one-pager OF jullie template + Google Business aanmaken + review-verzoek template.",
+    geld: "€299 eenmalig (+ €19/maand onderhoud optioneel)",
+    geldDetail: "3 per maand = €900. Minder werk dan volledige configurator-site.",
+    wie: {
+      mike: ["Lokaal verkopen", "Google Business invullen (met klant)", "Review uitleg"],
+      maarten: ["One-pager template", "Snel deploy", "Checklist PDF"],
+    },
+    stappen: [
+      "Maak one-pager template (1 uur)",
+      "Mike verkoopt aan 5 warme contacten",
+      "Lever in 2 dagen",
+      "Upsell later naar volledige site",
+    ],
+    risico: "Te veel handwerk → strikte checklist, max 2 uur per klant",
+    scores: { korteTermijn: 4, zekerheid: 4, opbrengst: 3, julliePassen: 4, schaalbaar: 2 },
+    totaal: 0,
+  },
+  {
+    id: "excel-automatisering",
+    title: "Excel / administratie automatiseren",
+    tagline: "Offertes, uren, voorraad — €350–750 per bedrijf",
+    category: "deze-maand",
+    spoor: "verkopen",
+    eersteEuro: "Week 3: eerste €350",
+    problem:
+      "Kleine bedrijven leven in Excel. Fouten, dubbel werk, geen overzicht. Ze willen geen SaaS — ze willen dat het probleem weg is.",
+    aanpak:
+      "Intake: welk Excel-sheet? Maarten bouwt simpele tool (Google Sheet + script of mini-app). Vaste prijs, 1 week levering.",
+    geld: "€350–750 eenmalig",
+    geldDetail: "1 per 2 weken = €700–1.500/maand. Vaak zelfde klanten als site-verkoop.",
+    wie: {
+      mike: ["Intake: welk probleem?", "Testen met klant", "Verkopen via netwerk"],
+      maarten: ["Sheet/script bouwen", "Korte uitleg video", "Oplevering"],
+    },
+    stappen: [
+      "3 veelvoorkomende templates (uren, offerte, voorraad)",
+      "Mike: 3 bedrijven met Excel-pijn",
+      "Vaste scope: 1 sheet, 1 flow, klaar",
+    ],
+    risico: "Wordt maatwerk → alleen vanuit template, geen custom ERP",
+    scores: { korteTermijn: 4, zekerheid: 4, opbrengst: 4, julliePassen: 5, schaalbaar: 3 },
+    totaal: 0,
+  },
+  {
+    id: "ai-snelstart",
+    title: "AI-snelstart voor ondernemers",
+    tagline: "ChatGPT + prompts voor offertes en mail — €199",
+    category: "deze-maand",
+    spoor: "verkopen",
+    eersteEuro: "Week 2: eerste €199",
+    problem:
+      "Ondernemers horen over AI maar weten niet waar te beginnen. Ze betalen graag voor iemand die het in 1 uur werkend maakt.",
+    aanpak:
+      "Setup: account, 10 kant-en-klare prompts (offerte, klantmail, social post). 1 uur Zoom + handleiding PDF.",
+    geld: "€199 eenmalig",
+    geldDetail: "4 per maand = €800. Weinig code — veel waarde.",
+    wie: {
+      mike: ["Verkopen ('uw AI-assistent in 1 uur')", "Prompts schrijven (offerte/branche)", "Zoom uitleg"],
+      maarten: ["Technische setup", "PDF handleiding", "Optioneel: eigen GPT"],
+    },
+    stappen: [
+      "Prompt-bibliotheek voor installateurs/zzp",
+      "Mike: 5 ondernemers uit netwerk",
+      "Lever binnen 3 dagen",
+    ],
+    risico: "Gratis alternatieven → focus op branche-specifieke prompts, niet 'ChatGPT installeren'",
+    scores: { korteTermijn: 4, zekerheid: 4, opbrengst: 3, julliePassen: 4, schaalbaar: 3 },
+    totaal: 0,
+  },
+  {
+    id: "workshop",
+    title: "Workshop 'digitaal zelf doen'",
+    tagline: "2 uur live · €49 p.p. · max 8 mensen",
+    category: "deze-maand",
+    spoor: "verkopen",
+    eersteEuro: "Week 3–4: eerste workshop €245–392",
+    problem:
+      "Lokale ondernemers willen leren, niet alles uitbesteden. Ze betalen voor uitleg + handvatten.",
+    aanpak:
+      "Thema kiezen: 'Google Business zelf bijhouden' of 'AI voor uw offertes'. Bibliotheek of horeca-lokaal. Eventbrite/HeyInvite.",
+    geld: "€49 p.p. × 5–8 = €245–392",
+    geldDetail: "1 workshop/maand = extra cash + leads voor pakketten. Upsell: €299 Google-pakket.",
+    wie: {
+      mike: ["Locatie regelen", "Uitnodigen via netwerk", "Presenteren + Q&A"],
+      maarten: ["Slides + demo", "Follow-up mail met aanbod", "Aanwezig voor technische vragen"],
+    },
+    stappen: [
+      "Datum + thema vastleggen",
+      "15 uitnodigingen, 5 betalen = break-even",
+      "Aan einde: kort aanbod Google-pakket / site",
+    ],
+    risico: "Te weinig opkomst → gratis voor eerste keer, video opnemen voor marketing",
+    scores: { korteTermijn: 3, zekerheid: 3, opbrengst: 2, julliePassen: 4, schaalbaar: 2 },
+    totaal: 0,
+  },
+  {
+    id: "onderhoud",
+    title: "Onderhoudsabonnement",
+    tagline: "€49/maand per site die jullie bouwden",
+    category: "deze-maand",
+    spoor: "recurring",
+    eersteEuro: "Maand 2: eerste recurring €49",
+    problem: "Klant heeft site maar kan niet updaten. Belt jullie elk kwartaal paniekerig.",
+    aanpak: "Bij elke site-verkoop: 'Onderhoud €49/maand — tekst wijzigen, updates, backup'.",
+    geld: "€49/maand × klanten",
+    geldDetail: "10 klanten = €490/maand passief. Kost 1–2 uur/maand totaal.",
+    wie: {
+      mike: ["Verkopen bij oplevering", "Kleine content-wijzigingen", "Klantcontact"],
+      maarten: ["Updates, security patches", "Monitoring", "Backup"],
+    },
+    stappen: [
+      "Standaard contract 1 A4",
+      "Bied aan bij elke site-verkoop",
+      "Batch updates 1x per maand",
+    ],
+    risico: "Scope creep → alleen tekst/foto, geen nieuwe features",
+    scores: { korteTermijn: 3, zekerheid: 4, opbrengst: 3, julliePassen: 5, schaalbaar: 4 },
+    totaal: 0,
+  },
+  {
+    id: "hosting-doorverkoop",
+    title: "Hosting & tools doorverkopen",
+    tagline: "Marge op Vercel, e-mail, domein — €10–25/maand per klant",
+    category: "deze-maand",
+    spoor: "doorverkoop",
+    eersteEuro: "Maand 2: eerste €15/maand marge",
+    problem:
+      "Elke site-klant heeft hosting, domein, soms e-mail nodig. Jullie regelen het — klant betaalt één factuur.",
+    aanpak:
+      "Reseller of simpel: jullie betaalt Vercel/TransIP, klant betaalt jullie €25/maand all-in. Geen support-drama: standaard pakket.",
+    geld: "€10–25 marge/maand per klant",
+    geldDetail: "20 klanten × €15 = €300/maand. Stapelen bij elke site-verkoop.",
+    wie: {
+      mike: ["All-in prijs communiceren", "Factuur", "Jaarlijks incasso"],
+      maarten: ["Technisch beheer", "Domein + DNS", "Vercel project"],
+    },
+    stappen: [
+      "Standaard hosting-prijs: €25/maand all-in",
+      "Bij elke site-verkoop automatisch aanbieden",
+      "Jaarlijks factureren = minder churn",
+    ],
+    risico: "Support bij uitval → SLA in contract, niet 24/7",
+    scores: { korteTermijn: 3, zekerheid: 4, opbrengst: 3, julliePassen: 4, schaalbaar: 4 },
+    totaal: 0,
+  },
+  {
+    id: "offertewijs-pilot",
+    title: "OfferteWijs pilot",
+    tagline: "3 gratis testers → 2 betalen €29/maand",
+    category: "deze-maand",
+    spoor: "recurring",
+    eersteEuro: "Week 3–4: eerste €29/maand",
+    problem: "Offertes in Word — maar SaaS verkoop is trager dan een site verkopen.",
+    aanpak:
+      "Geef 3 installateurs gratis toegang. Als ze na 2 weken nog gebruiken → €29/maand. Klein, niet perfect.",
+    geld: "€29–39/maand (na pilot)",
+    geldDetail: "5 betalende = €145–195/maand. Pas schalen als site-verkoop loopt.",
+    wie: {
+      mike: ["3 pilot-klanten werven (uit site-klanten!)", "Prijzen instellen", "Feedback"],
+      maarten: ["MVP configurator + PDF", "Login simpel houden", "Deploy"],
+    },
+    stappen: [
+      "Kopieer ZonComfort-logica",
+      "PDF export (week 2)",
+      "Pilot met klant van site-verkoop",
+    ],
+    risico: "Te lang bouwen zonder geld → max 3 weken, dan betalen of stoppen",
+    scores: { korteTermijn: 3, zekerheid: 3, opbrengst: 4, julliePassen: 5, schaalbaar: 5 },
+    totaal: 0,
+  },
+  {
+    id: "klusboard",
+    title: "KlusBoard verkopen",
+    tagline: "Mikes renovatie-app doorverkopen aan 5 zzp'ers",
+    category: "deze-maand",
+    spoor: "recurring",
+    eersteEuro: "Week 4: €9/maand × eerste gebruiker",
+    problem: "Renovateurs gebruiken Excel voor uren en materialen.",
+    aanpak: "Mike gebruikt het zelf. Nodig 5 kennissen uit. €9/maand of €79/jaar.",
+    geld: "€9/maand of €79/jaar",
+    geldDetail: "20 gebruikers = €180/maand. Klein maar eigen product.",
+    wie: {
+      mike: ["App afmaken", "5 renovateurs benaderen", "Support"],
+      maarten: ["Web-dashboard (optioneel)", "Landing page", "Betaling Stripe"],
+    },
+    stappen: [
+      "Mike: app bruikbaar voor eigen klus",
+      "Simpele landingspagina",
+      "5 gratis trials → betalen",
+    ],
+    risico: "Te niche → combineer met site-verkoop aan zelfde klanten",
+    scores: { korteTermijn: 2, zekerheid: 3, opbrengst: 2, julliePassen: 5, schaalbaar: 3 },
+    totaal: 0,
+  },
+  {
+    id: "leads-lokaal",
+    title: "Lokale lead-pagina's",
+    tagline: "Rank op 'zonwering [stad]' — verkoop leads",
+    category: "deze-maand",
+    spoor: "doorverkoop",
+    eersteEuro: "Week 4–8: eerste lead €15–25",
+    problem: "Installateurs betalen voor leads (Werkspot, Trustoo) maar die zijn duur en slecht.",
+    aanpak:
+      "5 steden × landingspagina 'offerte zonwering Utrecht'. SEO. Formulier → doorverkopen aan installateur.",
+    geld: "€15–25 per lead",
+    geldDetail: "20 leads/maand = €300–500. Kost tijd (SEO) maar weinig bouw.",
+    wie: {
+      mike: ["Steden kiezen", "Installateur die leads koopt vinden", "Content lokaal"],
+      maarten: ["Landingspagina template", "SEO technisch", "Form + tracking"],
+    },
+    stappen: [
+      "1 stad live als test",
+      "Google Search Console",
+      "Deal met 1 installateur: €20/lead",
+    ],
+    risico: "SEO duurt → combineer met betaalde ads (klein budget)",
+    scores: { korteTermijn: 2, zekerheid: 2, opbrengst: 3, julliePassen: 3, schaalbaar: 4 },
+    totaal: 0,
+  },
+  {
+    id: "referral-fee",
+    title: "Referral fee (doorverwijzen)",
+    tagline: "Kennissen doorverwijzen — €50–200 per deal",
+    category: "deze-maand",
+    spoor: "doorverkoop",
+    eersteEuro: "Week 2–4: eerste commissie",
+    problem:
+      "Mike kent installateurs, leveranciers, andere vakmannen. Die betalen soms voor warme intro's of leads.",
+    aanpak:
+      "Vraag actief: 'Betaalt u iets voor een klant die ik aanlever?' Niet alleen digitaal — ook materialen, onderaanneming.",
+    geld: "€50–200 per succesvolle intro",
+    geldDetail: "2 referrals/maand = €100–400. Nul bouwwerk.",
+    wie: {
+      mike: ["Netwerk in kaart", "Intro's maken", "Follow-up"],
+      maarten: ["Optioneel: simpele landingspagina voor tracking", "Niet verplicht"],
+    },
+    stappen: [
+      "Lijst: wie betaalt voor leads/referrals?",
+      "1 intro testen met duidelijke afspraak",
+      "Documenteer wat werkt",
+    ],
+    risico: "Informeel → vooraf schriftelijk percentage/bedrag afspreken",
+    scores: { korteTermijn: 4, zekerheid: 3, opbrengst: 2, julliePassen: 4, schaalbaar: 2 },
+    totaal: 0,
+  },
+  {
+    id: "zonscan",
+    title: "ZonScan (foto → prijs)",
+    tagline: "Wow-tool — pas na eerste cash",
+    category: "later",
+    spoor: "recurring",
+    eersteEuro: "Maand 2+",
+    problem: "Cool maar AI + marketing = tijd en geld zonder snelle return.",
+    aanpak: "Bewaren voor als site-verkoop of OfferteWijs draait. Niet nu starten.",
+    geld: "€15–25/lead (later)",
+    geldDetail: "Potentieel hoog, maar niet korte termijn.",
+    wie: {
+      mike: ["Productregels", "Later: sales"],
+      maarten: ["AI integratie", "Later: UI"],
+    },
+    stappen: ["Wacht", "Herbeoordelen Q3"],
+    risico: "Afleiding van geld nu → expliciet 'later'",
+    scores: { korteTermijn: 1, zekerheid: 2, opbrengst: 4, julliePassen: 3, schaalbaar: 5 },
+    totaal: 0,
+  },
+].map((i) => ({ ...i, totaal: total(i.scores) })) as MoneyIdea[];
 
 export const scoreLabels: Record<keyof IdeaScores, string> = {
-  snelMvp: "Snel MVP",
-  geld: "Geld verdienen",
+  korteTermijn: "Geld snel",
+  zekerheid: "Zekerheid",
+  opbrengst: "Opbrengst",
   julliePassen: "Past bij jullie",
-  markt: "Marktgrootte",
-  leuk: "Leuk om te doen",
+  schaalbaar: "Schaalbaar",
 };
 
 export const aanbeveling = {
-  titel: "Onze aanbeveling: start met OfferteWijs",
-  tekst: "Hoogste combinatie van snelheid, jullie ervaring (ZonComfort), en terugkerende inkomsten. InstallateurKit is plan B als je liever 2× €499 verkoopt dan SaaS.",
-  beslissing: [
-    "Bel 20 min — welk idee voelt het beste?",
-    "Kies 1 project (niet 2 tegelijk)",
-    "Mike pakt data/prijzen, Maarten pakt UI",
-    "Eerste echte gebruiker binnen 3 weken",
+  titel: "Kortetermijnplan: 5 sporen, niet 1 product",
+  tekst: "Jullie hoeven geen startup. Combineer: verkopen (sites/pakketten), uren (kluswerk + digitale opruiming), netwerk (Mike's contacten), en stapel recurring erachteraan.",
+  sporen: [
+    { spoor: "verkopen" as IncomeSpoor, actie: "Site of Google-pakket aan installateur", euro: "€299–1.200" },
+    { spoor: "uren" as IncomeSpoor, actie: "ZonComfort afmaken + digitale opruiming zzp", euro: "€250–1.500" },
+    { spoor: "netwerk" as IncomeSpoor, actie: "Renovatie-upsell + 5 WhatsApps", euro: "€149–800" },
+    { spoor: "doorverkoop" as IncomeSpoor, actie: "Hosting-marge + referral fee", euro: "€15–200" },
+    { spoor: "recurring" as IncomeSpoor, actie: "Onderhoud na elke levering", euro: "€49/maand" },
   ],
+  plan: [
+    {
+      fase: "Week 1",
+      actie: "Tarief afspreken + demo-site + 5 contacten bellen (site, Google, of digitale opruiming)",
+      euro: "€250–1.200 mogelijk",
+    },
+    {
+      fase: "Week 2–3",
+      actie: "Leveren + upsell (onderhoud, hosting, AI-pakket) + optioneel 1 platform-gig",
+      euro: "€299–1.500",
+    },
+    {
+      fase: "Week 4",
+      actie: "Recurring starten + OfferteWijs pilot bij tevreden klant",
+      euro: "€49–78/maand extra",
+    },
+  ],
+  nietNu: ["ZonScan", "Perfecte SaaS", "Alles tegelijk", "Alleen maar bouwen zonder verkopen"],
 };
