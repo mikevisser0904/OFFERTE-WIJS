@@ -8,7 +8,7 @@ export default function DemoSitePage() {
     <div className="min-h-screen bg-white text-slate-900">
       <div className="bg-amber-500 px-4 py-2 text-center text-sm font-medium text-slate-900">
         DEMO — zo ziet de site van uw klant eruit ·{" "}
-        <Link href="/webklaar/" className="underline hover:no-underline">
+        <Link href="/bestellen/" className="underline hover:no-underline">
           Bestel uw eigen site →
         </Link>
       </div>

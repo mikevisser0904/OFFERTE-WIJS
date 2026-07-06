@@ -1,337 +1,110 @@
 import Link from "next/link";
-import { DashboardShell } from "@/components/dashboard-shell";
-import { GoalTracker, GoalBreakdown, GoalMilestones } from "@/components/goal-tracker";
-import { doelWekelijks, hoofddoel } from "@/data/doel";
-import {
-  getDashboardStats,
-  aanbeveling,
-  spoorMeta,
-  categoryMeta,
-  spoorOrder,
-} from "@/lib/dashboard";
+import { StorefrontShell } from "@/components/storefront-shell";
+import { SeoJsonLd } from "@/components/seo-json-ld";
+import { diensten, webklaar } from "@/data/diensten-online";
 
-const stats = getDashboardStats();
-
-function StatCard({
-  label,
-  value,
-  sub,
-  accent = "emerald",
-}: {
-  label: string;
-  value: string;
-  sub: string;
-  accent?: "emerald" | "amber" | "sky" | "rose";
-}) {
-  const colors = {
-    emerald: { box: "border-emerald-400/20 bg-emerald-400/5", value: "text-emerald-300" },
-    amber: { box: "border-amber-400/20 bg-amber-400/5", value: "text-amber-300" },
-    sky: { box: "border-sky-400/20 bg-sky-400/5", value: "text-sky-300" },
-    rose: { box: "border-rose-400/20 bg-rose-400/5", value: "text-rose-300" },
-  };
-
+export default function StoreHomePage() {
   return (
-    <div className={`rounded-2xl border p-5 ${colors[accent].box}`}>
-      <p className="text-xs font-medium uppercase tracking-wider text-white/40">{label}</p>
-      <p className={`mt-2 text-2xl font-bold sm:text-3xl ${colors[accent].value}`}>{value}</p>
-      <p className="mt-1 text-xs text-white/45">{sub}</p>
-    </div>
-  );
-}
+    <StorefrontShell>
+      <SeoJsonLd />
 
-export default function DashboardPage() {
-  return (
-    <DashboardShell
-      active="/"
-      title="Geld Dashboard"
-      subtitle={`Eerste doel: ${hoofddoel.label} in ${hoofddoel.deadline}`}
-    >
-      <div className="mx-auto max-w-6xl space-y-8">
-        <section className="rounded-2xl border border-emerald-400/30 bg-emerald-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-emerald-400">
-              Alles klaar — jij klikt alleen Verstuur
-            </p>
-            <h2 className="mt-2 text-xl font-bold">Actie-pagina</h2>
-            <p className="mt-1 text-sm text-white/55">
-              Plak 5 nummers → WhatsApp opent met bericht + demo-link. Rest: Grok + Maarten.
-            </p>
-          </div>
-          <Link
-            href="/actie/"
-            className="mt-4 inline-flex shrink-0 rounded-full bg-emerald-400 px-8 py-3 font-bold text-slate-900 hover:bg-emerald-300 sm:mt-0"
-          >
-            Naar actie →
-          </Link>
-        </section>
-
-        <GoalTracker />
-
-        <GoalMilestones />
-
-        <GoalBreakdown />
-
-        {/* KPI row */}
-        <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <StatCard
-            label="Week 1–2 target"
-            value="€1.500"
-            sub="Eerste mijlpaal · ZonComfort + 1 verkoop"
-            accent="emerald"
-          />
-          <StatCard
-            label="Ideeën actief"
-            value={String(stats.actiefIdeeën)}
-            sub={`${stats.dezeWeek} deze week · ${stats.dezeMaand} deze maand`}
-            accent="amber"
-          />
-          <StatCard
-            label="Top score"
-            value={`${stats.topScore}/25`}
-            sub={stats.topIdea?.title ?? "—"}
-            accent="sky"
-          />
-          <StatCard
-            label="Sporen"
-            value="5"
-            sub="Verkopen · uren · netwerk · doorverkoop · recurring"
-            accent="rose"
-          />
-        </section>
-
-        {/* Week plan + start hier */}
-        <section className="grid gap-6 lg:grid-cols-3">
-          <div className="lg:col-span-2">
-            <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-lg font-bold">4-weken plan</h2>
-              <span className="text-xs text-white/35">{aanbeveling.titel}</span>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {aanbeveling.plan.map((fase, i) => (
-                <div
-                  key={fase.fase}
-                  className="relative rounded-2xl border border-white/8 bg-white/[0.02] p-5"
-                >
-                  <div className="mb-3 flex items-center gap-2">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-400/15 text-xs font-bold text-emerald-300">
-                      {i + 1}
-                    </span>
-                    <p className="font-bold text-emerald-300">{fase.fase}</p>
-                  </div>
-                  <p className="text-sm leading-relaxed text-white/65">{fase.actie}</p>
-                  <p className="mt-3 font-mono text-sm font-semibold text-emerald-400">
-                    {fase.euro}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="rounded-2xl border border-emerald-400/30 bg-emerald-400/[0.06] p-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-emerald-400">
-              Start hier
-            </p>
-            {stats.recommended.map((idea) => (
-              <div key={idea.id} className="mt-4">
-                <h3 className="text-lg font-bold">{idea.title}</h3>
-                <p className="mt-1 text-sm text-white/55">{idea.tagline}</p>
-                <p className="mt-3 inline-block rounded-lg bg-emerald-400/10 px-3 py-1 text-sm font-semibold text-emerald-300">
-                  {idea.eersteEuro}
-                </p>
-                <p className="mt-3 text-lg font-bold text-emerald-400">{idea.geld}</p>
-              </div>
-            ))}
+      <section className="bg-gradient-to-b from-teal-50 to-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-sm font-semibold uppercase tracking-widest text-teal-600">
+            Online te bestellen · vaste prijs
+          </p>
+          <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            Websites & digitaal
+            <br />
+            <span className="text-teal-600">voor vakmannen.</span>
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg text-slate-600">{webklaar.sub}</p>
+          <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/ideeen/#site-verkopen"
-              className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-emerald-300 hover:text-emerald-200"
+              href="/bestellen/"
+              className="rounded-full bg-teal-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-teal-600/20 hover:bg-teal-500"
             >
-              Volledig uitgewerkt →
+              Bestel direct →
+            </Link>
+            <Link
+              href="/demo/"
+              className="rounded-full border border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 hover:bg-slate-50"
+            >
+              Bekijk demo-site
             </Link>
           </div>
-        </section>
-
-        {/* 5 sporen */}
-        <section>
-          <h2 className="mb-4 text-lg font-bold">5 sporen</h2>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {spoorOrder.map((spoor) => {
-              const meta = spoorMeta[spoor];
-              const data = stats.perSpoor[spoor];
-              const aanbevel = aanbeveling.sporen.find((s) => s.spoor === spoor);
-              return (
-                <div
-                  key={spoor}
-                  className="rounded-2xl border border-white/8 bg-white/[0.02] p-4 transition hover:border-white/15"
-                >
-                  <p className="text-xl">{meta.emoji}</p>
-                  <p className="mt-2 font-bold">{meta.label}</p>
-                  <p className="mt-1 text-xs text-white/40">{meta.uitleg}</p>
-                  {aanbevel && (
-                    <p className="mt-3 font-mono text-xs text-emerald-400">{aanbevel.euro}</p>
-                  )}
-                  {data.top && (
-                    <p className="mt-2 truncate text-xs text-white/50" title={data.top.title}>
-                      → {data.top.title}
-                    </p>
-                  )}
-                  <p className="mt-2 text-xs text-white/30">{data.count} ideeën</p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* Prioriteiten + deze week */}
-        <section className="grid gap-6 lg:grid-cols-5">
-          <div className="lg:col-span-3">
-            <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-lg font-bold">Top prioriteiten</h2>
-              <Link href="/ideeen/" className="text-xs text-white/40 hover:text-white">
-                Alle ideeën →
-              </Link>
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/8">
-              <table className="w-full text-left text-sm">
-                <thead>
-                  <tr className="border-b border-white/8 bg-white/[0.03] text-xs uppercase tracking-wider text-white/40">
-                    <th className="px-4 py-3 font-medium">#</th>
-                    <th className="px-4 py-3 font-medium">Idee</th>
-                    <th className="hidden px-4 py-3 font-medium sm:table-cell">Spoor</th>
-                    <th className="px-4 py-3 font-medium">Score</th>
-                    <th className="hidden px-4 py-3 font-medium md:table-cell">Eerste €</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {stats.topVijf.map((idea, i) => (
-                    <tr
-                      key={idea.id}
-                      className="border-b border-white/5 transition hover:bg-white/[0.02]"
-                    >
-                      <td className="px-4 py-3 font-mono text-white/40">{i + 1}</td>
-                      <td className="px-4 py-3">
-                        <Link
-                          href={`/ideeen/#${idea.id}`}
-                          className="font-medium hover:text-emerald-300"
-                        >
-                          {idea.title}
-                        </Link>
-                        <p className="mt-0.5 text-xs text-white/40 sm:hidden">
-                          {spoorMeta[idea.spoor].label}
-                        </p>
-                      </td>
-                      <td className="hidden px-4 py-3 text-white/50 sm:table-cell">
-                        {spoorMeta[idea.spoor].emoji} {spoorMeta[idea.spoor].label}
-                      </td>
-                      <td className="px-4 py-3">
-                        <span className="rounded-full bg-white/10 px-2 py-0.5 font-mono text-xs">
-                          {idea.totaal}/25
-                        </span>
-                      </td>
-                      <td className="hidden px-4 py-3 text-xs text-emerald-400/80 md:table-cell">
-                        {idea.eersteEuro}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="lg:col-span-2">
-            <h2 className="mb-4 text-lg font-bold">
-              {categoryMeta["deze-week"].label}
-            </h2>
-            <div className="space-y-2">
-              {stats.perCategorie["deze-week"]
-                .sort((a, b) => b.totaal - a.totaal)
-                .map((idea) => (
-                  <Link
-                    key={idea.id}
-                    href={`/ideeen/#${idea.id}`}
-                    className="flex items-center justify-between rounded-xl border border-white/8 bg-white/[0.02] px-4 py-3 transition hover:border-emerald-400/30 hover:bg-emerald-400/5"
-                  >
-                    <div className="min-w-0">
-                      <p className="truncate font-medium">{idea.title}</p>
-                      <p className="text-xs text-white/40">{idea.geld}</p>
-                    </div>
-                    <span className="ml-3 shrink-0 font-mono text-xs text-white/50">
-                      {idea.totaal}
-                    </span>
-                  </Link>
-                ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Wekelijkse KPI's */}
-        <section>
-          <h2 className="mb-4 text-lg font-bold">Wekelijkse discipline</h2>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {doelWekelijks.map((w) => (
-              <div
-                key={w.metric}
-                className="rounded-xl border border-white/8 bg-white/[0.02] px-4 py-3"
-              >
-                <p className="text-xs text-white/40">{w.metric}</p>
-                <p className="mt-1 font-bold text-emerald-300">{w.doel}</p>
-                <p className="text-xs text-white/35">{w.wie}</p>
-              </div>
+          <div className="mt-12 flex flex-wrap gap-6 text-sm text-slate-500">
+            {webklaar.usps.map((u) => (
+              <span key={u}>✓ {u}</span>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Rollen + niet nu + links */}
-        <section className="grid gap-6 lg:grid-cols-3">
-          <div className="rounded-2xl border border-sky-400/20 bg-sky-400/5 p-5">
-            <p className="text-sm font-bold text-sky-300">Mike → €5.000</p>
-            <ul className="mt-3 space-y-1.5 text-sm text-white/60">
-              <li>· 5 contacten/week (60 totaal)</li>
-              <li>· 6 sites verkopen + upsells</li>
-              <li>· Renovatie + digitaal upsell</li>
-            </ul>
-          </div>
-          <div className="rounded-2xl border border-amber-400/20 bg-amber-400/5 p-5">
-            <p className="text-sm font-bold text-amber-300">Maarten → €5.000</p>
-            <ul className="mt-3 space-y-1.5 text-sm text-white/60">
-              <li>· 6 sites klonen (template)</li>
-              <li>· Levertijd ≤ 3 dagen</li>
-              <li>· Excel-tools + remote support</li>
-            </ul>
-          </div>
-          <div className="rounded-2xl border border-rose-400/20 bg-rose-400/5 p-5">
-            <p className="text-sm font-bold text-rose-300">Niet nu</p>
-            <ul className="mt-3 space-y-1.5 text-sm text-white/60">
-              {aanbeveling.nietNu.map((item) => (
-                <li key={item}>· {item}</li>
-              ))}
-            </ul>
-          </div>
-        </section>
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <h2 className="text-2xl font-bold">Diensten online bestellen</h2>
+        <p className="mt-2 text-slate-500">
+          Kies, vul formulier in, klaar. Wij bouwen — u levert logo + teksten.
+        </p>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {diensten.map((d) => (
+            <article
+              key={d.slug}
+              className={`relative rounded-2xl border p-6 transition hover:shadow-md ${
+                d.populair ? "border-teal-300 bg-teal-50/50" : "border-slate-100"
+              }`}
+            >
+              {d.populair && (
+                <span className="absolute -top-2 right-4 rounded-full bg-teal-600 px-3 py-0.5 text-xs font-bold text-white">
+                  Populair
+                </span>
+              )}
+              <p className="text-2xl font-bold text-teal-600">{d.prijs}</p>
+              <h3 className="mt-2 text-lg font-bold">{d.naam}</h3>
+              <p className="mt-2 text-sm text-slate-500">{d.korteOms}</p>
+              <p className="mt-3 text-xs text-slate-400">{d.levertijd}</p>
+              <div className="mt-5 flex gap-3">
+                <Link
+                  href={`/diensten/${d.slug}/`}
+                  className="text-sm font-medium text-teal-600 hover:underline"
+                >
+                  Meer info
+                </Link>
+                <Link
+                  href={`/bestellen/?dienst=${d.slug}`}
+                  className="text-sm font-bold text-slate-900 hover:text-teal-600"
+                >
+                  Bestel →
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-        <section className="flex flex-wrap gap-3 rounded-2xl border border-white/8 bg-white/[0.02] p-5">
+      <section className="bg-slate-900 px-6 py-16 text-white">
+        <div className="mx-auto max-w-5xl text-center">
+          <h2 className="text-2xl font-bold">Zo werkt bestellen</h2>
+          <ol className="mx-auto mt-10 grid max-w-3xl gap-8 text-left sm:grid-cols-3">
+            {[
+              { stap: "1", tekst: "Kies dienst en vul formulier in" },
+              { stap: "2", tekst: "Wij nemen binnen 24u contact op" },
+              { stap: "3", tekst: "U levert logo + teksten — wij bouwen" },
+            ].map((s) => (
+              <li key={s.stap}>
+                <span className="text-3xl font-bold text-teal-400">{s.stap}</span>
+                <p className="mt-2 text-sm text-slate-300">{s.tekst}</p>
+              </li>
+            ))}
+          </ol>
           <Link
-            href="/verkoop/"
-            className="rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-amber-300"
+            href="/bestellen/"
+            className="mt-10 inline-flex rounded-full bg-teal-500 px-8 py-3 font-bold text-white hover:bg-teal-400"
           >
-            Verkoopkit → kopieer & verstuur
+            Naar bestelformulier
           </Link>
-          <Link
-            href="/ideeen/"
-            className="rounded-full bg-emerald-400 px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-300"
-          >
-            Alle ideeën bekijken
-          </Link>
-          <Link
-            href="/configurator/"
-            className="rounded-full border border-white/15 px-5 py-2 text-sm font-medium text-white/80 hover:bg-white/5"
-          >
-            Configurator MVP
-          </Link>
-          <span className="flex items-center text-xs text-white/30">
-            Deel: mikevisser0904.github.io/OFFERTE-WIJS/
-          </span>
-        </section>
-      </div>
-    </DashboardShell>
+        </div>
+      </section>
+    </StorefrontShell>
   );
 }

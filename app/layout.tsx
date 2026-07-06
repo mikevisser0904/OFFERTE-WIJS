@@ -13,8 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OfferteWijs — Geld Dashboard",
-  description: "Mike + Maarten: kortetermijn geld verdienen — dashboard, ideeën en configurator",
+  title: "WebKlaar — Websites voor vakmannen | Online bestellen",
+  description:
+    "Website vakman €899, Google Start €299, digitale opruiming, Excel & AI. Vaste prijs, live in dagen. Online bestellen.",
+  keywords: [
+    "website vakman",
+    "website installateur",
+    "google business zzp",
+    "goedkope website",
+  ],
+  openGraph: {
+    title: "WebKlaar — Websites voor vakmannen",
+    description: "Online bestellen. Vaste prijs. Live in 3 dagen.",
+    url: "https://mikevisser0904.github.io/OFFERTE-WIJS/",
+    siteName: "WebKlaar",
+    locale: "nl_NL",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

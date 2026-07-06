@@ -1,9 +1,11 @@
 import Link from "next/link";
 
 const nav = [
-  { href: "/", label: "Dashboard", icon: "▦" },
+  { href: "/dashboard/", label: "Dashboard", icon: "▦" },
+  { href: "/", label: "Webshop", icon: "🛒" },
   { href: "/actie/", label: "Actie", icon: "→" },
   { href: "/verkoop/", label: "Verkoop", icon: "€" },
+  { href: "/marktplaats/", label: "Listings", icon: "⊕" },
   { href: "/ideeen/", label: "Ideeën", icon: "◎" },
   { href: "/configurator/", label: "Configurator", icon: "⚙" },
 ] as const;
