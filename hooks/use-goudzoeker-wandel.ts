@@ -7,7 +7,9 @@ import {
   GOUD_PAUSE_MS,
   GROOTTE,
   MARGIN,
+  MUIS_VOLG_INTERVAL_MS,
   MUIS_VOLG_KANS,
+  ORBIT_SNELHEID,
   SNELHEID,
 } from "@/lib/goudzoeker-mompels";
 
@@ -171,13 +173,13 @@ export function useGoudzoekerWandel({
         return;
       }
 
-      hoekRef.current += 0.012;
+      hoekRef.current += ORBIT_SNELHEID;
       const p = posRef.current;
       const d = doelRef.current;
 
-      const orbitX = Math.cos(hoekRef.current) * 0.65;
-      const orbitY = Math.sin(hoekRef.current * 0.7) * 0.25;
-      const orbitZ = Math.sin(hoekRef.current) * 0.12;
+      const orbitX = Math.cos(hoekRef.current) * 0.35;
+      const orbitY = Math.sin(hoekRef.current * 0.7) * 0.14;
+      const orbitZ = Math.sin(hoekRef.current) * 0.06;
 
       const dx = d.x - p.x + orbitX;
       const dy = d.y - p.y + orbitY;
@@ -192,9 +194,9 @@ export function useGoudzoekerWandel({
           goudModusRef.current = false;
           setTimeout(() => setBijGoud(false), GOUD_PAUSE_MS);
         } else {
-          pauseTotRef.current = t + 120 + Math.random() * 280;
+          pauseTotRef.current = t + 500 + Math.random() * 900;
         }
-        kiesNieuwDoel(false, Math.random() < 0.5);
+        kiesNieuwDoel(false, Math.random() < 0.25);
         frameRef.current = requestAnimationFrame(loop);
         return;
       }
@@ -227,8 +229,8 @@ export function useGoudzoekerWandel({
     const naarMuis = () => kiesNieuwDoel(false, true);
 
     const goudId = setInterval(naarGoud, GOUD_NAAR_INTERVAL_MS);
-    const muisId = setInterval(naarMuis, 7000);
-    const eerste = setTimeout(naarGoud, 1500);
+    const muisId = setInterval(naarMuis, MUIS_VOLG_INTERVAL_MS);
+    const eerste = setTimeout(naarGoud, 5000);
     return () => {
       clearInterval(goudId);
       clearInterval(muisId);

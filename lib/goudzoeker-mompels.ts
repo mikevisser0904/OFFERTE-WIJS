@@ -54,9 +54,12 @@ export function randomMompelBijDoel(doelLabel: string, euro?: string): string {
 
 export const GROOTTE = { w: 168, h: 192 } as const;
 export const MARGIN = 8;
-export const SNELHEID = 2.4;
-export const GOUD_PAUSE_MS = 4200;
-export const GOUD_NAAR_INTERVAL_MS = 5500;
-export const TERUG_NA_WEG_MS = 18000;
-export const MUIS_VOLG_KANS = 0.45;
-export const CENTRUM_KANS = 0.35;
+export const SNELHEID = 0.95;
+export const ORBIT_SNELHEID = 0.004;
+export const GOUD_PAUSE_MS = 4500;
+export const GOUD_NAAR_INTERVAL_MS = 13000;
+export const MUIS_VOLG_INTERVAL_MS = 16000;
+export const TERUG_NA_WEG_MS = 22000;
+export const MUIS_VOLG_KANS = 0.18;
+export const CENTRUM_KANS = 0.22;
+export const MOMPEL_INTERVAL_MS = { min: 3200, max: 4800 } as const;

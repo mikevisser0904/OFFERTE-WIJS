@@ -235,23 +235,23 @@ body {
 }
 
 .goud-is-wandelen .goud-been-links {
-  animation: goud-been-links 0.42s ease-in-out infinite;
+  animation: goud-been-links 0.78s ease-in-out infinite;
   transform-box: fill-box;
   transform-origin: center bottom;
 }
 
 .goud-is-wandelen .goud-been-rechts {
-  animation: goud-been-rechts 0.42s ease-in-out infinite;
+  animation: goud-been-rechts 0.78s ease-in-out infinite;
   transform-box: fill-box;
   transform-origin: center bottom;
 }
 
 .goud-is-wandelen .goudzoeker-scene {
-  animation: goud-scene-hop 0.42s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  animation: goud-scene-hop 0.78s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
 
 .goud-is-wandelen .goud-mompel-mond {
-  animation: goud-mompel-praat 0.35s ease-in-out infinite;
+  animation: goud-mompel-praat 0.55s ease-in-out infinite;
 }
 
 @keyframes goud-mompel-praat {
@@ -995,15 +995,15 @@ body {
 }
 
 .goud-opdringerig-char .goud-wiggel-vork {
-  animation-duration: 0.28s !important;
+  animation-duration: 0.62s !important;
 }
 
 .goud-opdringerig-char .goud-wiggel-schacht {
-  animation-duration: 0.28s !important;
+  animation-duration: 0.62s !important;
 }
 
 .goud-opdringerig-char .goudzoeker-scene {
-  animation-duration: 0.32s !important;
+  animation-duration: 0.68s !important;
 }
 
 .goud-opdringer-piek {
@@ -1012,7 +1012,7 @@ body {
 
 .goud-pijl-lijn {
   stroke-width: 4.5;
-  animation: goud-dash-march 0.35s linear infinite;
+  animation: goud-dash-march 0.55s linear infinite;
 }
 
 /* Reduced motion */

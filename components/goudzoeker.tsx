@@ -10,7 +10,13 @@ import { useGoudzoekerWandel } from "@/hooks/use-goudzoeker-wandel";
 import { kiesActiefGoudDoel } from "@/lib/goudzoeker-doelen";
 import { laadKpi, type GoudTip } from "@/lib/goudzoeker";
 import {
+  koppelGoudzoekerGeluid,
+  speelBingoGeluid,
+  speelMompelGeluid,
+} from "@/lib/goudzoeker-geluid";
+import {
   GROOTTE,
+  MOMPEL_INTERVAL_MS,
   TERUG_NA_WEG_MS,
   randomMompel,
   randomMompelBijDoel,
@@ -35,6 +41,7 @@ export function Goudzoeker() {
   const [isSchreeuw, setIsSchreeuw] = useState(false);
   const [wegTeller, setWegTeller] = useState(0);
   const terugTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const wasBijGoudRef = useRef(false);
 
   const { pos, richting, wandelt, bijGoud, visueel } = useGoudzoekerWandel({
     actief: zichtbaar && !agentOpen,
@@ -89,8 +96,12 @@ export function Goudzoeker() {
   }, [planTerugkomst]);
 
   useEffect(() => {
+    koppelGoudzoekerGeluid();
+  }, []);
+
+  useEffect(() => {
     update();
-    const interval = setInterval(update, 6000);
+    const interval = setInterval(update, 10000);
     const t = setTimeout(update, 300);
     window.addEventListener("resize", update);
     window.addEventListener("scroll", update, true);
@@ -125,14 +136,23 @@ export function Goudzoeker() {
       vorige = zin;
       setMompel(zin);
       setMompelKey((k) => k + 1);
+      speelMompelGeluid(schreeuw);
     };
 
     toon();
-    const id = setInterval(toon, 900 + Math.random() * 700);
+    const id = setInterval(
+      toon,
+      MOMPEL_INTERVAL_MS.min + Math.random() * (MOMPEL_INTERVAL_MS.max - MOMPEL_INTERVAL_MS.min)
+    );
     return () => clearInterval(id);
   }, [zichtbaar, agentOpen, tip?.titel, tip?.euro, wegTeller]);
 
   useEffect(() => {
+    if (bijGoud && !wasBijGoudRef.current) {
+      speelBingoGeluid();
+    }
+    wasBijGoudRef.current = bijGoud;
+
     if (bijGoud && tip) {
       setIsSchreeuw(true);
       const grappen = [
@@ -267,7 +287,10 @@ export function Goudzoeker() {
             </button>
             <button
               type="button"
-              onClick={() => setAgentOpen((o) => !o)}
+              onClick={() => {
+                koppelGoudzoekerGeluid();
+                setAgentOpen((o) => !o);
+              }}
               className="group h-full w-full text-left"
               aria-label={agentOpen ? "Sluit agent" : "Open goudzoeker-agent"}
             >
