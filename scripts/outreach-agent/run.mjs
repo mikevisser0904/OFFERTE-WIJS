@@ -64,6 +64,7 @@ async function main() {
   const gescoord = load(join(ROOT, "data/klanten-gescoord.json"), { leads: [] });
   const klantenLek = load(join(ROOT, "data/klanten-lek-rapport.json"), { klanten: [] });
   const echte = load(join(ROOT, "data/echte-klanten.json"), { klanten: [] });
+  const pmaLogins = load(join(ROOT, "data/pma-login-urls.json"), { sterk: [] });
   const uitsluit = load(join(ROOT, "data/scan-uitsluitingen.json"), { hosts: [] });
   const blockedHosts = new Set((uitsluit.hosts || []).map((h) => h.host.toLowerCase()));
   function hostOf(url) {
@@ -74,6 +75,20 @@ async function main() {
     }
   }
 
+  /** Alleen geverifieerde phpMyAdmin op eigen domein (data/pma-login-urls.json). */
+  const sterkByHost = new Map();
+  for (const s of pmaLogins.sterk || []) {
+    const h = hostOf(s.klantUrl);
+    if (h) sterkByHost.set(h, s);
+  }
+  const filterPmaSterk = sterkByHost.size > 0;
+  function isSterkPmaSite(url) {
+    return sterkByHost.has(hostOf(url));
+  }
+  function sterkMeta(url) {
+    return sterkByHost.get(hostOf(url));
+  }
+
   const candidates = [];
   const seenUrls = new Set();
 
@@ -81,6 +96,15 @@ async function main() {
     const key = c.url?.toLowerCase();
     if (!key || isDemoOrTestUrl(c.url) || seenUrls.has(key)) return;
     if (blockedHosts.has(hostOf(c.url))) return;
+    if (filterPmaSterk && !isSterkPmaSite(c.url)) return;
+    const sterk = sterkMeta(c.url);
+    if (sterk) {
+      c.pmaLoginUrl = sterk.loginUrl;
+      c.verkoop = "sterk";
+      if (c.type === "lek" && !c.reden?.includes("eigen domein")) {
+        c.reden = `phpMyAdmin-login op eigen domein (${sterk.loginUrl})`;
+      }
+    }
     if (!c.whatsapp && c.whatsappUrl) {
       try {
         const u = new URL(c.whatsappUrl);
@@ -239,12 +263,15 @@ async function main() {
   const payload = {
     generatedAt: new Date().toISOString(),
     agent: "outreach",
+    filter: filterPmaSterk ? "pma-sterk" : "alle",
+    sterkSites: filterPmaSterk ? (pmaLogins.sterk || []).length : null,
     totaalKandidaten: candidates.length,
     vandaag,
     samenvatting: {
       lekken: vandaag.filter((v) => v.type === "lek").length,
       hogeScore: vandaag.filter((v) => v.type === "rapport" || v.type === "score").length,
       koud: vandaag.filter((v) => v.type === "lead").length,
+      sterk: vandaag.filter((v) => v.verkoop === "sterk").length,
     },
     agentPrompt:
       vandaag.length > 0

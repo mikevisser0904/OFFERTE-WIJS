@@ -1,17 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T08:23:23.189Z",
+  "updatedAt": "2026-07-07T08:24:35.136Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T08:22:55.579Z",
+      "lastRun": "2026-07-07T08:24:35.136Z",
       "ok": true,
-      "contactenVandaag": 15,
-      "lekkenEerst": 15,
-      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
+      "contactenVandaag": 12,
+      "lekkenEerst": 6,
+      "agentPrompt": "Outreach: 12 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
       "top3": [
-        "Firma Fred van Rijn: De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
-        "Amer Houttechniek: De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
-        "Kroon interieurbouw: Technisch beheerpaneel is publiek bereikbaar."
+        "Bos Elektrotechniek: phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/)",
+        "ChargeCars: phpMyAdmin-login op eigen domein (https://chargecars.nl/phpMyAdmin/)",
+        "Burggraeve Woonstyling: phpMyAdmin-login op eigen domein (https://www.bwstyling.nl/phpmyadmin/)"
       ]
     },
     "manager": {
