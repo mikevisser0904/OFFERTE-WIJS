@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-07T14:36:18.258Z",
+  "updatedAt": "2026-07-07T17:49:43.446Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
   "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 1,
-  "mislukt": 4,
+  "gesimuleerd": 0,
+  "mislukt": 5,
   "items": [
     {
       "bedrijf": "Kroon interieurbouw",
@@ -21,12 +21,6 @@
       "phone": "31950635027"
     },
     {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "status": "simulated",
-      "email": "info@rioolservice-pvanadrichem.nl",
-      "phone": "31653373931"
-    },
-    {
       "bedrijf": "De Pagter",
       "status": "failed",
       "email": null,
@@ -34,6 +28,12 @@
     },
     {
       "bedrijf": "Pruis Schilderwerken",
+      "status": "failed",
+      "email": null,
+      "phone": "31950635027"
+    },
+    {
+      "bedrijf": "Verzijl De Woonprofessionals",
       "status": "failed",
       "email": null,
       "phone": "31950635027"
