@@ -1,17 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T08:24:35.136Z",
+  "updatedAt": "2026-07-07T08:26:10.383Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T08:24:35.136Z",
+      "lastRun": "2026-07-07T08:26:10.383Z",
       "ok": true,
-      "contactenVandaag": 12,
+      "contactenVandaag": 6,
       "lekkenEerst": 6,
-      "agentPrompt": "Outreach: 12 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
+      "agentPrompt": "Outreach: 6 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
       "top3": [
         "Bos Elektrotechniek: phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/)",
-        "ChargeCars: phpMyAdmin-login op eigen domein (https://chargecars.nl/phpMyAdmin/)",
-        "Burggraeve Woonstyling: phpMyAdmin-login op eigen domein (https://www.bwstyling.nl/phpmyadmin/)"
+        "Burggraeve Woonstyling: phpMyAdmin-login op eigen domein (https://www.bwstyling.nl/phpmyadmin/)",
+        "ChargeCars: phpMyAdmin-login op eigen domein (https://chargecars.nl/phpMyAdmin/)"
       ]
     },
     "manager": {
@@ -49,14 +49,14 @@
       "wachtrijPending": 1
     },
     "data-flow": {
-      "lastRun": "2026-07-07T08:23:23.189Z",
-      "ok": true,
-      "healthy": true,
+      "lastRun": "2026-07-07T08:26:05.529Z",
+      "ok": false,
+      "healthy": false,
       "streams": 22,
-      "drift": 0,
-      "synced": 0,
-      "agentPrompt": "22 streams OK · queue 0 pending · 1 lekken",
-      "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
+      "drift": 1,
+      "synced": 1,
+      "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+      "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
     },
     "klanten-lek": {
       "lastRun": "2026-07-07T08:07:04.958Z",
@@ -79,6 +79,14 @@
       "leadsTotaal": 184,
       "queuePending": 0,
       "agentPrompt": "Lead Hunter: 184 leads, 0 queue pending — npm run funnel voor outreach"
+    },
+    "auto-verify": {
+      "lastRun": "2026-07-07T08:26:06.002Z",
+      "ok": true,
+      "leakVerified": 1,
+      "consentProofOk": 1,
+      "agentPrompt": "1 verified · 1 consent OK · 0 failed recheck",
+      "grokPrompt": "auto-verify: 1 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     }
   },
   "manager": {

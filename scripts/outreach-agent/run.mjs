@@ -91,11 +91,13 @@ async function main() {
 
   const candidates = [];
   const seenUrls = new Set();
+  const seenHosts = new Set();
 
   function pushCandidate(c) {
     const key = c.url?.toLowerCase();
-    if (!key || isDemoOrTestUrl(c.url) || seenUrls.has(key)) return;
-    if (blockedHosts.has(hostOf(c.url))) return;
+    const host = hostOf(c.url);
+    if (!key || !host || isDemoOrTestUrl(c.url) || seenUrls.has(key) || seenHosts.has(host)) return;
+    if (blockedHosts.has(host)) return;
     if (filterPmaSterk && !isSterkPmaSite(c.url)) return;
     const sterk = sterkMeta(c.url);
     if (sterk) {
@@ -115,9 +117,27 @@ async function main() {
     }
     if (!c.whatsapp) c.whatsapp = whatsappKoud(c.bedrijf);
     seenUrls.add(key);
+    seenHosts.add(host);
     candidates.push(c);
   }
 
+  if (filterPmaSterk) {
+    for (const s of pmaLogins.sterk) {
+      const hit = (hits.hits || []).find((h) => hostOf(h.url) === hostOf(s.klantUrl));
+      pushCandidate({
+        type: "lek",
+        prioriteit: 0,
+        bedrijf: s.bedrijf,
+        plaats: s.plaats,
+        url: s.klantUrl,
+        risicoScore: hit?.risicoScore ?? 100,
+        reden: `phpMyAdmin-login op eigen domein (${s.loginUrl})`,
+        actie: "Website Veilig €299 — vandaag bellen",
+        whatsapp: whatsappLek(s.bedrijf, "de database-beheerlogin staat open op uw eigen domein"),
+        reportId: hit?.reportId,
+      });
+    }
+  } else {
   for (const k of echte.klanten || []) {
     if (k.uitgesloten || blockedHosts.has(hostOf(k.url))) continue;
     if (!k.heeftScan || !k.verkoopBericht || !k.adminProof?.ok) continue;
@@ -255,6 +275,7 @@ async function main() {
       actie: "Koud: demo sturen",
       whatsapp: whatsappKoud(l.bedrijf),
     });
+  }
   }
 
   candidates.sort((a, b) => scoreItem(b) - scoreItem(a));
