@@ -7,6 +7,7 @@ const root = process.cwd();
 const staticPaths = [
   "",
   "start/",
+  "spoed/",
   "diensten/",
   "bestellen/",
   "demo/",

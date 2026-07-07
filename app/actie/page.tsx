@@ -1,6 +1,7 @@
 import { DashboardShell } from "@/components/dashboard-shell";
 import { ActiePanel } from "@/components/actie-panel";
 import { VandaagGeldPanel } from "@/components/vandaag-geld-panel";
+import { Spoed50Panel } from "@/components/spoed-50-panel";
 import Link from "next/link";
 
 export default function ActiePage() {
@@ -11,6 +12,7 @@ export default function ActiePage() {
       subtitle="5 WhatsApps · 1 gesprek · €299 Google Start is de snelste ja"
     >
       <div className="mx-auto max-w-3xl">
+        <Spoed50Panel />
         <VandaagGeldPanel />
 
         <p className="mt-10 text-xs font-semibold uppercase tracking-widest text-white/35">Extra</p>
