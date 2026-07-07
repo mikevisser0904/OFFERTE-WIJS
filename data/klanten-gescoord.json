@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-07T07:36:39.067Z",
+  "generatedAt": "2026-07-07T07:43:30.020Z",
   "totaal": 184,
   "metTelefoon": 0,
-  "leakMatches": 18,
+  "leakMatches": 31,
   "leads": [
     {
       "bedrijf": "Dreumel",
@@ -48,23 +48,6 @@
       "redenen": [
         "database/datalek in VakScan",
         "sterke niche: elektricien"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "Suntec zonwering",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.suntec-zonwering.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 97,
-      "redenen": [
-        "database/datalek in VakScan",
-        "sterke niche: zonwering"
       ],
       "aanbod": "Website Veilig €299 — urgent",
       "siteOk": true,
@@ -226,10 +209,210 @@
       "actie": "bel-nu"
     },
     {
+      "bedrijf": "Decor Gordijn",
+      "plaats": "Leiden",
+      "url": "https://www.decorgordijn.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "url": "https://www.boselektrotechniek.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "url": "https://www.ejvandermeer.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "url": "https://rioolservice-pvanadrichem.nl",
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: loodgieter"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Decorette",
+      "plaats": "Nieuw-Vennep",
+      "url": "https://decorette.nl/winkels/nieuw-vennep",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "url": "https://chargecars.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Loodgieterskwartier",
+      "plaats": "Rijswijk",
+      "url": "https://loodgieterskwartier.nl",
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: loodgieter"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: kozijnen"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
       "bedrijf": "Pruis Schilderwerken",
       "plaats": "Amersfoort",
       "url": "https://pruisschilderwerken.nl",
       "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 85,
+      "redenen": [
+        "database/datalek in VakScan"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Mks schilderwerken",
+      "plaats": "Houten",
+      "url": "https://mksschilderwerken.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 85,
+      "redenen": [
+        "database/datalek in VakScan"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "url": "https://vogelaarschilder.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 85,
+      "redenen": [
+        "database/datalek in VakScan"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "plaats": "Nieuw-Lekkerland",
+      "url": "https://verzijlbv.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 85,
+      "redenen": [
+        "database/datalek in VakScan"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Finish Profiles",
+      "plaats": "Purmerend",
+      "url": "https://www.finish-profiles.nl",
+      "categorie": "dakdekker",
       "prioriteit": "scan-eerst",
       "score": 85,
       "redenen": [
@@ -327,20 +510,22 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Van Beek Schilders",
-      "plaats": "Den Hoorn",
-      "url": "http://vanbeek-schilders.nl",
-      "categorie": "schilder",
+      "bedrijf": "Suntec zonwering",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.suntec-zonwering.nl",
+      "categorie": "zonwering",
       "prioriteit": "scan-eerst",
-      "score": 70,
+      "score": 62,
       "redenen": [
-        "geen goede HTTPS"
+        "database/datalek in VakScan",
+        "sterke niche: zonwering",
+        "site reageert slecht"
       ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": null,
-      "actie": "whatsapp"
+      "actie": "bel-nu"
     },
     {
       "bedrijf": "T.B. van Wichen",
@@ -1215,22 +1400,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "BVR Wooncomfort",
-      "plaats": "Houten",
-      "url": "https://www.bvrzonwering.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "STB",
       "plaats": "Houten",
       "url": "https://stb.eu",
@@ -1359,22 +1528,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Decor Gordijn",
-      "plaats": "Leiden",
-      "url": "https://www.decorgordijn.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
       "plaats": "Leidschendam",
       "url": "https://www.fonteinelektrotechniek.nl",
@@ -1471,73 +1624,9 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "url": "https://www.boselektrotechniek.nl",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "van der Meer Elektrotechniek BV",
-      "plaats": "Maasland",
-      "url": "https://www.ejvandermeer.nl",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Voorberg zonwering",
       "plaats": "Maassluis",
       "url": "https://www.voorbergzonwering.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl",
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: loodgieter"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Decorette",
-      "plaats": "Nieuw-Vennep",
-      "url": "https://decorette.nl/winkels/nieuw-vennep",
       "categorie": "zonwering",
       "prioriteit": "scan-eerst",
       "score": 52,
@@ -1586,22 +1675,6 @@
       "bedrijf": "GroepenkastCompleet",
       "plaats": "Nieuwerkerk aan den IJssel",
       "url": "https://www.groepenkastcompleet.nl",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "url": "https://chargecars.nl",
       "categorie": "elektricien",
       "prioriteit": "scan-eerst",
       "score": 52,
@@ -1671,38 +1744,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "EBD Techniek",
-      "plaats": "Purmerend",
-      "url": "https://www.ebd-purmerend.nl",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Engberts Elektrotechniek",
-      "plaats": "Purmerend",
-      "url": "https://engberts.nu",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -1839,22 +1880,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Loodgieterskwartier",
-      "plaats": "Rijswijk",
-      "url": "https://loodgieterskwartier.nl",
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: loodgieter"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Bastasol Zonwering",
       "plaats": "Rotterdam",
       "url": "https://www.bastasol.nl",
@@ -1911,22 +1936,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Installatiebedrijf Vis",
-      "plaats": "Rotterdam",
-      "url": "https://installatiebedrijfvis.nl",
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: loodgieter"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -2127,22 +2136,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Tafelboom",
       "plaats": "Utrecht",
       "url": "https://www.tafelboom.nl",
@@ -2319,22 +2312,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Plomp installatietechniek",
-      "plaats": "Woerden",
-      "url": "https://www.plompinstallatietechniek.nl",
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: loodgieter"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "url": "https://www.willemseelektrotechniek.nl",
@@ -2365,6 +2342,23 @@
       "heeftHttps": true,
       "whatsappUrl": null,
       "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Schreuder Glas- en Schilderwerken",
+      "plaats": "Noordwijk",
+      "url": "https://www.schreuderschilderwerken.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 50,
+      "redenen": [
+        "database/datalek in VakScan",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
     },
     {
       "bedrijf": "Koek & Reinders",
@@ -2423,51 +2417,9 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Mks schilderwerken",
-      "plaats": "Houten",
-      "url": "https://mksschilderwerken.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Glas- en Schilderwerken van Muiden",
-      "plaats": "Leiden",
-      "url": "https://vanmuiden.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
       "plaats": "Leidschendam",
       "url": "https://www.jkuijper.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "url": "https://vogelaarschilder.nl",
       "categorie": "schilder",
       "prioriteit": "scan-eerst",
       "score": 40,
@@ -2493,51 +2445,9 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Verzijl De Woonprofessionals",
-      "plaats": "Nieuw-Lekkerland",
-      "url": "https://verzijlbv.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "C&M Schilders",
       "plaats": "Noordwijk",
       "url": "https://cm-schilders.com",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Joost & Bart Schilderwerken",
-      "plaats": "Noordwijk",
-      "url": "https://www.joostenbartschilderwerken.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Schreuder Glas- en Schilderwerken",
-      "plaats": "Noordwijk",
-      "url": "https://www.schreuderschilderwerken.nl",
       "categorie": "schilder",
       "prioriteit": "scan-eerst",
       "score": 40,
@@ -2553,20 +2463,6 @@
       "plaats": "Noordwijk",
       "url": "https://vdnat.nl",
       "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Finish Profiles",
-      "plaats": "Purmerend",
-      "url": "https://www.finish-profiles.nl",
-      "categorie": "dakdekker",
       "prioriteit": "scan-eerst",
       "score": 40,
       "redenen": [],
@@ -2814,6 +2710,23 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "BVR Wooncomfort",
+      "plaats": "Houten",
+      "url": "https://www.bvrzonwering.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Van Rennes Elektro- & Installatietechniek",
       "plaats": "Klaaswaal",
       "url": "https://www.vanrennes.nl",
@@ -2856,6 +2769,57 @@
       "score": 17,
       "redenen": [
         "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "EBD Techniek",
+      "plaats": "Purmerend",
+      "url": "https://www.ebd-purmerend.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: elektricien",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Engberts Elektrotechniek",
+      "plaats": "Purmerend",
+      "url": "https://engberts.nu",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: elektricien",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Installatiebedrijf Vis",
+      "plaats": "Rotterdam",
+      "url": "https://installatiebedrijfvis.nl",
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: loodgieter",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
@@ -2916,9 +2880,74 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Plomp installatietechniek",
+      "plaats": "Woerden",
+      "url": "https://www.plompinstallatietechniek.nl",
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: loodgieter",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Van Olst Schilders",
       "plaats": "Amersfoort",
       "url": "https://vanolstschilders.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 5,
+      "redenen": [
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Van Beek Schilders",
+      "plaats": "Den Hoorn",
+      "url": "http://vanbeek-schilders.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 5,
+      "redenen": [
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Glas- en Schilderwerken van Muiden",
+      "plaats": "Leiden",
+      "url": "https://vanmuiden.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 5,
+      "redenen": [
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Joost & Bart Schilderwerken",
+      "plaats": "Noordwijk",
+      "url": "https://www.joostenbartschilderwerken.nl",
       "categorie": "schilder",
       "prioriteit": "scan-eerst",
       "score": 5,

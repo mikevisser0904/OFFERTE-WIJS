@@ -1,5 +1,17 @@
 [
   {
+    "id": "02a3c62e62d4",
+    "url": "https://www.dreumel.nl/",
+    "bedrijf": "Dreumel",
+    "plaats": "'s-Gravenhage",
+    "scannedAt": "2026-07-07T07:43:17.982Z",
+    "risicoScore": 40,
+    "niveau": "hoog",
+    "niveauLabel": "Hoog",
+    "scanMode": "leaks",
+    "leakHit": true
+  },
+  {
     "id": "2f229b8f5c49",
     "url": "https://www.reinaerde.nl/zorg/remakemeubel",
     "bedrijf": "Reinaerde Remake Meubel",
@@ -140,18 +152,6 @@
     "risicoScore": 100,
     "niveau": "kritiek",
     "niveauLabel": "Kritiek",
-    "scanMode": "leaks",
-    "leakHit": true
-  },
-  {
-    "id": "02a3c62e62d4",
-    "url": "https://www.dreumel.nl/",
-    "bedrijf": "Dreumel",
-    "plaats": "'s-Gravenhage",
-    "scannedAt": "2026-07-07T07:37:59.092Z",
-    "risicoScore": 40,
-    "niveau": "hoog",
-    "niveauLabel": "Hoog",
     "scanMode": "leaks",
     "leakHit": true
   },

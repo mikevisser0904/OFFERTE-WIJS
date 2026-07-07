@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T07:43:03.103Z",
+  "updatedAt": "2026-07-07T07:43:23.364Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T07:42:55.374Z",
@@ -58,12 +58,12 @@
       "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
     },
     "klanten-lek": {
-      "lastRun": "2026-07-07T07:40:22.139Z",
+      "lastRun": "2026-07-07T07:43:23.364Z",
       "ok": true,
-      "gescand": 80,
-      "metLek": 13,
-      "agentPrompt": "13 echte lek(ken) — /leads/ database-export · outreach",
-      "grokPrompt": "agent outreach — 13 klanten met database-lek in klanten-lek-rapport"
+      "gescand": 1,
+      "metLek": 31,
+      "agentPrompt": "31 echte lek(ken) — /leads/ database-export · outreach",
+      "grokPrompt": "agent outreach — 31 klanten met database-lek in klanten-lek-rapport"
     },
     "vakscan-leaks": {
       "lastRun": "2026-07-07T07:40:27.309Z",

@@ -3,7 +3,7 @@
  * Lead hunter — OpenStreetMap (gratis, legaal).
  * Vakbedrijven met website-tag in ~20km straal rond NL-steden.
  */
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { execFileSync } from "child_process";
 
@@ -195,6 +195,7 @@ async function main() {
   const leads = dedupe(all);
   const root = process.cwd();
   const outJson = join(root, "data/potentiele-klanten.json");
+  const backupJson = join(root, "data/potentiele-klanten.osm-raw.json");
   const outTxt = join(root, "data/klanten-leads-import.txt");
   const outPublic = join(root, "public/potentiele-klanten.json");
 
@@ -203,7 +204,29 @@ async function main() {
     count: leads.filter((l) => l.zoekstad === s.plaats).length,
   }));
 
-  const exportLeads = leads.map(({ zoekstad: _z, ...rest }) => rest);
+  let exportLeads = leads.map(({ zoekstad: _z, ...rest }) => rest);
+
+  mkdirSync(join(root, "data"), { recursive: true });
+  writeFileSync(backupJson, JSON.stringify({ generatedAt: new Date().toISOString(), leads: exportLeads }, null, 2));
+
+  if (existsSync(outJson)) {
+    try {
+      const prev = JSON.parse(readFileSync(outJson, "utf8"));
+      const prevLeads = prev.leads || [];
+      if (prevLeads.length > exportLeads.length) {
+        const byUrl = new Map(prevLeads.map((l) => [l.url.toLowerCase(), l]));
+        for (const l of exportLeads) {
+          const key = l.url.toLowerCase();
+          const old = byUrl.get(key);
+          byUrl.set(key, old ? { ...old, telefoon: l.telefoon || old.telefoon, email: l.email || old.email } : l);
+        }
+        exportLeads = [...byUrl.values()];
+        console.log(`Merge: behoud ${exportLeads.length} leads (nieuwe run had ${leads.length})`);
+      }
+    } catch {
+      /* ignore */
+    }
+  }
 
   const payload = {
     generatedAt: new Date().toISOString(),
@@ -213,7 +236,6 @@ async function main() {
     leads: exportLeads,
   };
 
-  mkdirSync(join(root, "data"), { recursive: true });
   writeFileSync(outJson, JSON.stringify(payload, null, 2));
   writeFileSync(outPublic, JSON.stringify(payload, null, 2));
   const lines = [
