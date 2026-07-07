@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T08:28:34.899Z",
+  "generatedAt": "2026-07-07T10:36:35.561Z",
   "totaal": 112,
   "zonderContact": 72,
   "klanten": [
@@ -31,8 +31,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:20.908Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "s230.webhostingserver.nl",
@@ -41,7 +51,7 @@
         "panelUrl": "https://s230.webhostingserver.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Firma Fred van Rijn.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s230.webhostingserver.nl (naam onbekend); beheerpaneel: https://s230.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s230.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Firma Fred van Rijn.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s230.webhostingserver.nl (naam onbekend); beheerpaneel: https://s230.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s230.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). Firma Fred van Rijn: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://s230.webhostingserver.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": "https://wa.me/31703211400?text=Hoi%2C%20Mike%20(WebKlaar).%20Firma%20Fred%20van%20Rijn%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fs230.webhostingserver.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "86dde731b1e4"
@@ -74,8 +84,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:20.947Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "s205.webhostingserver.nl",
@@ -84,7 +104,7 @@
         "panelUrl": "https://s205.webhostingserver.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Amer Houttechniek.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s205.webhostingserver.nl (naam onbekend); beheerpaneel: https://s205.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s205.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Amer Houttechniek.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s205.webhostingserver.nl (naam onbekend); beheerpaneel: https://s205.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s205.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). Amer Houttechniek: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://s205.webhostingserver.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": null,
       "reportId": "dd78e57b812d"
@@ -103,17 +123,19 @@
       "heeftScan": true,
       "risicoScore": 100,
       "schrikRegels": [
-        "Technisch beheerpaneel is publiek bereikbaar.",
-        "Een beheer- of technische pagina reageert publiek op dit adres."
+        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel."
       ],
       "adminProof": {
         "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
         "ok": true,
-        "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
-        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
-        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        "adminType": "phpMyAdmin",
+        "titel": "phpMyAdmin",
+        "verified": true,
+        "panelKind": "login",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
       "scanToestemming": null,
       "consentDeep": null,
@@ -125,9 +147,9 @@
         "panelUrl": "https://www.kroon-interieurbouw.nl/phpmyadmin/"
       },
       "bewijsUrl": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Kroon interieurbouw.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.kroon-interieurbouw.nl (naam onbekend); beheerpaneel: https://www.kroon-interieurbouw.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.kroon-interieurbouw.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Kroon interieurbouw: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://www.kroon-interieurbouw.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Kroon%20interieurbouw%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fwww.kroon-interieurbouw.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Kroon interieurbouw.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.kroon-interieurbouw.nl (naam onbekend); beheerpaneel: https://www.kroon-interieurbouw.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.kroon-interieurbouw.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Kroon interieurbouw: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://www.kroon-interieurbouw.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Kroon%20interieurbouw%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fwww.kroon-interieurbouw.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "d0419394d0db"
     },
     {
@@ -158,8 +180,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:20.949Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "s225.webhostingserver.nl",
@@ -168,7 +200,7 @@
         "panelUrl": "https://s225.webhostingserver.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Textilia.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s225.webhostingserver.nl (naam onbekend); beheerpaneel: https://s225.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s225.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Textilia.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s225.webhostingserver.nl (naam onbekend); beheerpaneel: https://s225.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s225.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). Textilia: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://s225.webhostingserver.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": "https://wa.me/31639112809?text=Hoi%2C%20Mike%20(WebKlaar).%20Textilia%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fs225.webhostingserver.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "2bf236f50a7b"
@@ -187,17 +219,19 @@
       "heeftScan": true,
       "risicoScore": 100,
       "schrikRegels": [
-        "Technisch beheerpaneel is publiek bereikbaar.",
-        "Een beheer- of technische pagina reageert publiek op dit adres."
+        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel."
       ],
       "adminProof": {
         "url": "https://www.decorgordijn.nl/phpmyadmin/",
         "ok": true,
-        "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
-        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
-        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        "adminType": "phpMyAdmin",
+        "titel": "phpMyAdmin",
+        "verified": true,
+        "panelKind": "login",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
       "scanToestemming": null,
       "consentDeep": null,
@@ -209,9 +243,9 @@
         "panelUrl": "https://www.decorgordijn.nl/phpmyadmin/"
       },
       "bewijsUrl": "https://www.decorgordijn.nl/phpmyadmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Decor Gordijn.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.decorgordijn.nl (naam onbekend); beheerpaneel: https://www.decorgordijn.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.decorgordijn.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Decor Gordijn: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://www.decorgordijn.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Decor%20Gordijn%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fwww.decorgordijn.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Decor Gordijn.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.decorgordijn.nl (naam onbekend); beheerpaneel: https://www.decorgordijn.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.decorgordijn.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Decor Gordijn: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://www.decorgordijn.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Decor%20Gordijn%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fwww.decorgordijn.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "ec27b9f2d9e9"
     },
     {
@@ -242,8 +276,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:21.106Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "www.boselektrotechniek.nl",
@@ -252,7 +296,7 @@
         "panelUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Bos Elektrotechniek.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.boselektrotechniek.nl (naam onbekend); beheerpaneel: https://www.boselektrotechniek.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.boselektrotechniek.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Bos Elektrotechniek.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.boselektrotechniek.nl (naam onbekend); beheerpaneel: https://www.boselektrotechniek.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.boselektrotechniek.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). Bos Elektrotechniek: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://www.boselektrotechniek.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": "https://wa.me/31520585539?text=Hoi%2C%20Mike%20(WebKlaar).%20Bos%20Elektrotechniek%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fwww.boselektrotechniek.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "e2b94249c285"
@@ -271,17 +315,19 @@
       "heeftScan": true,
       "risicoScore": 100,
       "schrikRegels": [
-        "Technisch beheerpaneel is publiek bereikbaar.",
-        "Een beheer- of technische pagina reageert publiek op dit adres."
+        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel."
       ],
       "adminProof": {
         "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
         "ok": true,
-        "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
-        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
-        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        "adminType": "phpMyAdmin",
+        "titel": "phpMyAdmin",
+        "verified": true,
+        "panelKind": "login",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
       "scanToestemming": null,
       "consentDeep": null,
@@ -293,9 +339,9 @@
         "panelUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Rioolservice P. van Adrichem.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op rioolservice-pvanadrichem.nl (naam onbekend); beheerpaneel: https://rioolservice-pvanadrichem.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://rioolservice-pvanadrichem.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Rioolservice P. van Adrichem: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://rioolservice-pvanadrichem.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
-      "whatsappSchrik": "https://wa.me/31653373931?text=Hoi%2C%20Mike%20(WebKlaar).%20Rioolservice%20P.%20van%20Adrichem%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Frioolservice-pvanadrichem.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Rioolservice P. van Adrichem.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op rioolservice-pvanadrichem.nl (naam onbekend); beheerpaneel: https://rioolservice-pvanadrichem.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://rioolservice-pvanadrichem.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Rioolservice P. van Adrichem: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://rioolservice-pvanadrichem.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31653373931?text=Hoi%2C%20Mike%20(WebKlaar).%20Rioolservice%20P.%20van%20Adrichem%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Frioolservice-pvanadrichem.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "cb76ce138bc5"
     },
     {
@@ -326,8 +372,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:21.387Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "chargecars.nl",
@@ -336,7 +392,7 @@
         "panelUrl": "https://chargecars.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://chargecars.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals ChargeCars.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op chargecars.nl (naam onbekend); beheerpaneel: https://chargecars.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://chargecars.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals ChargeCars.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op chargecars.nl (naam onbekend); beheerpaneel: https://chargecars.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://chargecars.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). ChargeCars: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://chargecars.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": null,
       "reportId": "d3536446812f"
@@ -369,8 +425,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:21.455Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "s246.webhostingserver.nl",
@@ -379,7 +445,7 @@
         "panelUrl": "https://s246.webhostingserver.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Reinaerde Remake Meubel.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s246.webhostingserver.nl (naam onbekend); beheerpaneel: https://s246.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s246.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Reinaerde Remake Meubel.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s246.webhostingserver.nl (naam onbekend); beheerpaneel: https://s246.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s246.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). Reinaerde Remake Meubel: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://s246.webhostingserver.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": "https://wa.me/31623369577?text=Hoi%2C%20Mike%20(WebKlaar).%20Reinaerde%20Remake%20Meubel%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fs246.webhostingserver.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "2f229b8f5c49"
@@ -398,17 +464,19 @@
       "heeftScan": true,
       "risicoScore": 100,
       "schrikRegels": [
-        "Technisch beheerpaneel is publiek bereikbaar.",
-        "Een beheer- of technische pagina reageert publiek op dit adres."
+        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel."
       ],
       "adminProof": {
         "url": "https://depagter.info/phpmyadmin/",
         "ok": true,
-        "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
-        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
-        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        "adminType": "phpMyAdmin",
+        "titel": "phpMyAdmin",
+        "verified": true,
+        "panelKind": "login",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
       "scanToestemming": null,
       "consentDeep": null,
@@ -420,9 +488,9 @@
         "panelUrl": "https://depagter.info/phpmyadmin/"
       },
       "bewijsUrl": "https://depagter.info/phpmyadmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals De Pagter.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op depagter.info (naam onbekend); beheerpaneel: https://depagter.info/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://depagter.info/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). De Pagter: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://depagter.info/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20De%20Pagter%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fdepagter.info%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals De Pagter.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op depagter.info (naam onbekend); beheerpaneel: https://depagter.info/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://depagter.info/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). De Pagter: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://depagter.info/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20De%20Pagter%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fdepagter.info%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "679c884eb23e"
     },
     {
@@ -453,8 +521,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:21.478Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "s250.webhostingserver.nl",
@@ -463,7 +541,7 @@
         "panelUrl": "https://s250.webhostingserver.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals H. Willemse Elektrotechniek B.V..\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s250.webhostingserver.nl (naam onbekend); beheerpaneel: https://s250.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s250.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals H. Willemse Elektrotechniek B.V..\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op s250.webhostingserver.nl (naam onbekend); beheerpaneel: https://s250.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://s250.webhostingserver.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). H. Willemse Elektrotechniek B.V.: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://s250.webhostingserver.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": "https://wa.me/31235739278?text=Hoi%2C%20Mike%20(WebKlaar).%20H.%20Willemse%20Elektrotechniek%20B.V.%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fs250.webhostingserver.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "fe9d43611024"
@@ -482,17 +560,19 @@
       "heeftScan": true,
       "risicoScore": 100,
       "schrikRegels": [
-        "Technisch beheerpaneel is publiek bereikbaar.",
-        "Een beheer- of technische pagina reageert publiek op dit adres."
+        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel."
       ],
       "adminProof": {
         "url": "https://server-alfa.heroo.nl/phpMyAdmin/",
         "ok": true,
-        "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
-        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
-        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        "adminType": "phpMyAdmin",
+        "titel": "phpMyAdmin",
+        "verified": true,
+        "panelKind": "login",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
       "scanToestemming": null,
       "consentDeep": null,
@@ -504,9 +584,9 @@
         "panelUrl": "https://server-alfa.heroo.nl/phpMyAdmin/"
       },
       "bewijsUrl": "https://server-alfa.heroo.nl/phpMyAdmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Pruis Schilderwerken.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op server-alfa.heroo.nl (naam onbekend); beheerpaneel: https://server-alfa.heroo.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://server-alfa.heroo.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Pruis Schilderwerken: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://server-alfa.heroo.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Pruis%20Schilderwerken%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fserver-alfa.heroo.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Pruis Schilderwerken.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op server-alfa.heroo.nl (naam onbekend); beheerpaneel: https://server-alfa.heroo.nl/phpMyAdmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://server-alfa.heroo.nl/phpMyAdmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Pruis Schilderwerken: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://server-alfa.heroo.nl/phpMyAdmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Pruis%20Schilderwerken%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fserver-alfa.heroo.nl%2FphpMyAdmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "13c475feed67"
     },
     {
@@ -523,17 +603,19 @@
       "heeftScan": true,
       "risicoScore": 100,
       "schrikRegels": [
-        "Technisch beheerpaneel is publiek bereikbaar.",
-        "Een beheer- of technische pagina reageert publiek op dit adres."
+        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel."
       ],
       "adminProof": {
         "url": "https://verzijlbv.nl/phpmyadmin/",
         "ok": true,
-        "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
-        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
-        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        "adminType": "phpMyAdmin",
+        "titel": "phpMyAdmin",
+        "verified": true,
+        "panelKind": "login",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
       "scanToestemming": null,
       "consentDeep": null,
@@ -545,9 +627,9 @@
         "panelUrl": "https://verzijlbv.nl/phpmyadmin/"
       },
       "bewijsUrl": "https://verzijlbv.nl/phpmyadmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Verzijl De Woonprofessionals.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op verzijlbv.nl (naam onbekend); beheerpaneel: https://verzijlbv.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://verzijlbv.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Verzijl De Woonprofessionals: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://verzijlbv.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Verzijl%20De%20Woonprofessionals%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fverzijlbv.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Verzijl De Woonprofessionals.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op verzijlbv.nl (naam onbekend); beheerpaneel: https://verzijlbv.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://verzijlbv.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Verzijl De Woonprofessionals: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://verzijlbv.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Verzijl%20De%20Woonprofessionals%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fverzijlbv.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "7d32e5ce9787"
     },
     {
@@ -564,17 +646,19 @@
       "heeftScan": true,
       "risicoScore": 100,
       "schrikRegels": [
-        "Technisch beheerpaneel is publiek bereikbaar.",
-        "Een beheer- of technische pagina reageert publiek op dit adres."
+        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel."
       ],
       "adminProof": {
         "url": "https://finish-profiles.nl/phpmyadmin/",
         "ok": true,
-        "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
-        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
-        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        "adminType": "phpMyAdmin",
+        "titel": "phpMyAdmin",
+        "verified": true,
+        "panelKind": "login",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
       "scanToestemming": null,
       "consentDeep": null,
@@ -586,9 +670,9 @@
         "panelUrl": "https://finish-profiles.nl/phpmyadmin/"
       },
       "bewijsUrl": "https://finish-profiles.nl/phpmyadmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Finish Profiles.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op finish-profiles.nl (naam onbekend); beheerpaneel: https://finish-profiles.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://finish-profiles.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Finish Profiles: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://finish-profiles.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Finish%20Profiles%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Ffinish-profiles.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Finish Profiles.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op finish-profiles.nl (naam onbekend); beheerpaneel: https://finish-profiles.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://finish-profiles.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 100/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Finish Profiles: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://finish-profiles.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Finish%20Profiles%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Ffinish-profiles.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "6732bd8e5565"
     },
     {
@@ -739,8 +823,18 @@
         "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
         "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       },
-      "scanToestemming": null,
-      "consentDeep": null,
+      "scanToestemming": {
+        "consentDatum": "2026-07-07",
+        "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
+        "scope": [
+          "passive-deep"
+        ]
+      },
+      "consentDeep": {
+        "checkedAt": "2026-07-07T08:21:21.128Z",
+        "unauthenticatedDashboard": null,
+        "authVerified": null
+      },
       "databaseProfiel": {
         "dbType": "phpMyAdmin",
         "dbHost": "www.ejvandermeer.nl",
@@ -749,7 +843,7 @@
         "panelUrl": "https://www.ejvandermeer.nl/phpmyadmin/"
       },
       "bewijsUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals van der Meer Elektrotechniek BV.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.ejvandermeer.nl (naam onbekend); beheerpaneel: https://www.ejvandermeer.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.ejvandermeer.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 80/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals van der Meer Elektrotechniek BV.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nUw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database phpMyAdmin op www.ejvandermeer.nl (naam onbekend); beheerpaneel: https://www.ejvandermeer.nl/phpmyadmin/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://www.ejvandermeer.nl/phpmyadmin/\n\nWat u daar ziet ZONDER wachtwoord:\nHet MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.\n\nWaarom dit u raakt:\nVanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 80/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). van der Meer Elektrotechniek BV: uw database-beheer (phpMyAdmin) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://www.ejvandermeer.nl/phpmyadmin/ — kunnen we dit vandaag dichten? €299. Bellen?",
       "whatsappSchrik": "https://wa.me/31631514170?text=Hoi%2C%20Mike%20(WebKlaar).%20van%20der%20Meer%20Elektrotechniek%20BV%3A%20uw%20database-beheer%20(phpMyAdmin)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fwww.ejvandermeer.nl%2Fphpmyadmin%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "5424b2313def"
@@ -2397,17 +2491,34 @@
       "probleem": "Mogelijk open beveiligingslek (VakScan)",
       "aanbod": "Website Veilig €299 — urgent",
       "whatsappUrl": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": false,
+      "heeftScan": true,
       "risicoScore": 40,
-      "schrikRegels": [],
-      "adminProof": null,
+      "schrikRegels": [
+        "Technisch beheerpaneel is publiek bereikbaar.",
+        "Een beheer- of technische pagina reageert publiek op dit adres."
+      ],
+      "adminProof": {
+        "url": "https://saelektroexperts.nl/",
+        "ok": true,
+        "adminType": "Onbekend paneel",
+        "titel": "SA Elektro Experts – Lokale elektricien met 24/7 Service.",
+        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
+        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+      },
       "scanToestemming": null,
       "consentDeep": null,
-      "databaseProfiel": null,
+      "databaseProfiel": {
+        "dbType": "Elasticsearch",
+        "dbHost": "saelektroexperts.nl",
+        "dbName": null,
+        "sqlTabellen": [],
+        "panelUrl": "https://saelektroexperts.nl/"
+      },
       "bewijsUrl": "https://saelektroexperts.nl/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals SA Elektro Experts.\n\nCheck op saelektroexperts.nl:\n\n• Ernstige beveiligingsproblemen gevonden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). SA Elektro Experts: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20(WebKlaar).%20SA%20Elektro%20Experts%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals SA Elektro Experts.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database Elasticsearch op saelektroexperts.nl (naam onbekend); beheerpaneel: https://saelektroexperts.nl/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://saelektroexperts.nl/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). SA Elektro Experts: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://saelektroexperts.nl/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20(WebKlaar).%20SA%20Elektro%20Experts%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Fsaelektroexperts.nl%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "aab38445503e"
     },
     {
@@ -2526,7 +2637,7 @@
         "url": "https://decorette.nl/",
         "ok": true,
         "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
+        "titel": "Woonwinkel voor complete interieuroplossing | Decorette",
         "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
         "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
         "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
@@ -2557,17 +2668,34 @@
       "probleem": "Mogelijk open beveiligingslek (VakScan)",
       "aanbod": "Website Veilig €299 — urgent",
       "whatsappUrl": "https://wa.me/31852125588?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": false,
+      "heeftScan": true,
       "risicoScore": 40,
-      "schrikRegels": [],
-      "adminProof": null,
+      "schrikRegels": [
+        "Technisch beheerpaneel is publiek bereikbaar.",
+        "Een beheer- of technische pagina reageert publiek op dit adres."
+      ],
+      "adminProof": {
+        "url": "https://loodgieterskwartier.nl/",
+        "ok": true,
+        "adminType": "Onbekend paneel",
+        "titel": "Loodgieter - 24/7 spoedservice: 085 212 55 88 - [Gratis] Offerte 24u",
+        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
+        "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+      },
       "scanToestemming": null,
       "consentDeep": null,
-      "databaseProfiel": null,
+      "databaseProfiel": {
+        "dbType": "Elasticsearch",
+        "dbHost": "loodgieterskwartier.nl",
+        "dbName": null,
+        "sqlTabellen": [],
+        "panelUrl": "https://loodgieterskwartier.nl/"
+      },
       "bewijsUrl": "https://loodgieterskwartier.nl/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Loodgieterskwartier.\n\nCheck op loodgieterskwartier.nl:\n\n• Ernstige beveiligingsproblemen gevonden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Loodgieterskwartier: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31852125588?text=Hoi%2C%20Mike%20(WebKlaar).%20Loodgieterskwartier%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Loodgieterskwartier.\n\nIk heb NIET ingelogd op uw systemen zonder uw toestemming. Uw database-admin staat WEL open op internet — gecontroleerd op 7-7-2026.\n\n\n\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): database Elasticsearch op loodgieterskwartier.nl (naam onbekend); beheerpaneel: https://loodgieterskwartier.nl/.\n\nZELF NAKIJKEN (30 sec) — plak in uw browser:\nhttps://loodgieterskwartier.nl/\n\nWat u daar ziet ZONDER wachtwoord:\nEen beheer- of technische pagina reageert publiek op dit adres.\n\nWaarom dit u raakt:\nHoort niet vindbaar te zijn voor zoekmachines en scanners.\n\nDit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.\n\nRisicoscore op uw site: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Loodgieterskwartier: uw database-beheer (Onbekend paneel) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: https://loodgieterskwartier.nl/ — kunnen we dit vandaag dichten? €299. Bellen?",
+      "whatsappSchrik": "https://wa.me/31852125588?text=Hoi%2C%20Mike%20(WebKlaar).%20Loodgieterskwartier%3A%20uw%20database-beheer%20(Onbekend%20paneel)%20staat%20OPEN%20op%20internet%20%E2%80%94%20wij%20loggen%20niet%20in%2C%20maar%20dit%20scherm%20is%20voor%20iedereen%20bereikbaar%3A%20https%3A%2F%2Floodgieterskwartier.nl%2F%20%E2%80%94%20kunnen%20we%20dit%20vandaag%20dichten%3F%20%E2%82%AC299.%20Bellen%3F",
       "reportId": "d55c372ed7e5"
     },
     {
@@ -2618,7 +2746,7 @@
         "url": "https://mksschilderwerken.nl/",
         "ok": true,
         "adminType": "Onbekend paneel",
-        "titel": "One moment, please...",
+        "titel": "MKS Schilderwerken, de binnenschilder uit Houten",
         "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
         "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
         "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
@@ -3024,7 +3152,7 @@
     }
   ],
   "metPersoonlijkBericht": 112,
-  "metAdminBewijs": 18,
+  "metAdminBewijs": 20,
   "ethisch": "Nooit inloggen op klant-systemen. Nooit zeggen 'wij zitten in uw admin' — wel: 'uw admin-inlog staat op internet open'. Klant kan link zelf openen.",
-  "metScanFeiten": 18
+  "metScanFeiten": 20
 }

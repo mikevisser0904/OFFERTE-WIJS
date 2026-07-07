@@ -1,27 +1,223 @@
 {
-  "updatedAt": "2026-07-07T08:26:06.001Z",
+  "updatedAt": "2026-07-07T10:36:35.624Z",
   "agent": "auto-verify",
   "summary": {
-    "leakHits": 1,
-    "leakVerified": 1,
+    "leakHits": 15,
+    "leakVerified": 15,
     "leakFailed": 0,
-    "consentChecked": 1,
-    "consentProofOk": 1
+    "consentChecked": 15,
+    "consentProofOk": 15
   },
   "leakRows": [
     {
-      "url": "https://www.voordeelgordijnen.nl/",
+      "url": "https://www.amer-hout.nl",
+      "bedrijf": "Amer Houttechniek",
+      "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://firmavanrijn.nl",
+      "bedrijf": "Firma Fred van Rijn",
+      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://hetinterieur.nl",
+      "bedrijf": "Het Interieur",
+      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.voordeelgordijnen.nl",
       "bedrijf": "Voordeelgordijnen",
       "evidence": "https://www.voordeelgordijnen.nl/.env",
       "dbOk": false,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://klompelektrotechniek.nl",
+      "bedrijf": "Klomp Elektrotechniek",
+      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.textilia-dordrecht.nl",
+      "bedrijf": "Textilia",
+      "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.bwstyling.nl",
+      "bedrijf": "Burggraeve Woonstyling",
+      "evidence": "https://www.bwstyling.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://vogelaarschilder.nl",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.boselektrotechniek.nl",
+      "bedrijf": "Bos Elektrotechniek",
+      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.ejvandermeer.nl",
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://chargecars.nl",
+      "bedrijf": "ChargeCars",
+      "evidence": "https://chargecars.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": false,
+      "status": "verified"
+    },
+    {
+      "url": "https://nuoveni.nl",
+      "bedrijf": "Nuoveni",
+      "evidence": "https://nuoveni.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.tafelboom.nl",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.willemseelektrotechniek.nl",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     }
   ],
   "consentResults": [
     {
-      "siteUrl": "https://www.voordeelgordijnen.nl/",
+      "siteUrl": "https://firmavanrijn.nl",
+      "bedrijf": "Firma Fred van Rijn",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.amer-hout.nl",
+      "bedrijf": "Amer Houttechniek",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.textilia-dordrecht.nl",
+      "bedrijf": "Textilia",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.boselektrotechniek.nl",
+      "bedrijf": "Bos Elektrotechniek",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.ejvandermeer.nl",
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://chargecars.nl",
+      "bedrijf": "ChargeCars",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.willemseelektrotechniek.nl",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.tafelboom.nl",
+      "bedrijf": "Tafelboom",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://nuoveni.nl",
+      "bedrijf": "Nuoveni",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://klompelektrotechniek.nl",
+      "bedrijf": "Klomp Elektrotechniek",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://vogelaarschilder.nl",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.bwstyling.nl",
+      "bedrijf": "Burggraeve Woonstyling",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://www.voordeelgordijnen.nl",
       "bedrijf": "Voordeelgordijnen",
+      "passiveOk": true,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://hetinterieur.nl",
+      "bedrijf": "Het Interieur",
       "passiveOk": true,
       "authOk": null
     }
@@ -44,6 +240,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 1 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "1 verified · 1 consent OK · 0 failed recheck"
+  "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck"
 }

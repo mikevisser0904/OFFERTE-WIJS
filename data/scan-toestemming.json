@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T08:25:43.784Z",
+  "updatedAt": "2026-07-07T10:34:53.035Z",
   "uitleg": "individualConsent=true alleen na echte toestemming. auth-verify vereist scan-toestemming.local.json — geen klantdata-export.",
   "entries": [
     {
@@ -31,13 +31,15 @@
       "siteUrl": "https://firmavanrijn.nl",
       "bedrijf": "Firma Fred van Rijn",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://saelektroexperts.nl",
@@ -67,13 +69,15 @@
       "siteUrl": "https://www.amer-hout.nl",
       "bedrijf": "Amer Houttechniek",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://www.kroon-interieurbouw.nl",
@@ -91,13 +95,15 @@
       "siteUrl": "https://www.textilia-dordrecht.nl",
       "bedrijf": "Textilia",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://www.decorgordijn.nl",
@@ -115,25 +121,29 @@
       "siteUrl": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://www.ejvandermeer.nl",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://rioolservice-pvanadrichem.nl",
@@ -163,13 +173,15 @@
       "siteUrl": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://chargecars.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://loodgieterskwartier.nl",
@@ -187,13 +199,15 @@
       "siteUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
       "bedrijf": "Reinaerde Remake Meubel",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://depagter.info",
@@ -211,13 +225,15 @@
       "siteUrl": "https://www.willemseelektrotechniek.nl",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://pruisschilderwerken.nl",
@@ -1300,28 +1316,32 @@
       "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
-      "siteUrl": "https://www.tafelboom.nl/",
+      "siteUrl": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://tafelboom.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
-      "siteUrl": "https://nuoveni.nl/",
+      "siteUrl": "https://nuoveni.nl",
       "bedrijf": "Nuoveni",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://nuoveni.nl/phpmyadmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://www.wonnink.nl/",
@@ -1336,40 +1356,46 @@
       "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
-      "siteUrl": "https://klompelektrotechniek.nl/",
+      "siteUrl": "https://klompelektrotechniek.nl",
       "bedrijf": "Klomp Elektrotechniek",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
-      "siteUrl": "https://vogelaarschilder.nl/",
+      "siteUrl": "https://vogelaarschilder.nl",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
-      "siteUrl": "https://www.bwstyling.nl/",
+      "siteUrl": "https://www.bwstyling.nl",
       "bedrijf": "Burggraeve Woonstyling",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://www.bwstyling.nl/phpmyadmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://www.jwfborn.nl/",
@@ -1384,7 +1410,7 @@
       "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
-      "siteUrl": "https://www.voordeelgordijnen.nl/",
+      "siteUrl": "https://www.voordeelgordijnen.nl",
       "bedrijf": "Voordeelgordijnen",
       "consentDatum": "2026-07-07",
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
@@ -1395,7 +1421,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-07T08:25:43.784Z"
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://www.schreuderschilderwerken.nl/",
@@ -1410,16 +1436,18 @@
       "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
-      "siteUrl": "https://hetinterieur.nl/",
+      "siteUrl": "https://hetinterieur.nl",
       "bedrijf": "Het Interieur",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T10:34:53.035Z"
     },
     {
       "siteUrl": "https://www.blygold.nl/",
