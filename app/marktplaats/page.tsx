@@ -2,33 +2,7 @@ import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
 import { CopyBlock } from "@/components/copy-block";
 import { webklaar } from "@/data/diensten-online";
-
-const fiverrGig = `TITEL: I will build a professional website for your trade business in 3 days
-
-BESCHRIJVING:
-Need a modern website for your installation, sun protection, or trade business?
-
-I deliver a complete 5-page website — mobile-friendly, WhatsApp button, contact form, 1 year hosting included.
-
-✅ What you get:
-• Home, services, about, projects, contact pages
-• Mobile-first design
-• WhatsApp integration
-• Fast loading (Vercel hosting)
-• Delivered in 3 business days
-
-✅ What I need from you:
-• Logo (or I use a placeholder)
-• Company texts + phone number
-• Photos (optional)
-
-Fixed price: €899 (message me for custom quote)
-
-DEMO: ${webklaar.demo}
-
-Perfect for: electricians, sun protection, window installers, contractors, local trades.
-
-TAGS: website, wordpress alternative, landing page, small business, dutch`;
+import { fiverrGigTitle } from "@/data/fiverr-gig";
 
 const maltProfiel = `WebKlaar — Websites voor vakmannen in 3 dagen
 
@@ -62,7 +36,17 @@ export default function MarktplaatsPage() {
           </p>
         </section>
 
-        <CopyBlock label="Fiverr gig (Engels, internationaal)" tekst={fiverrGig} />
+        <section className="rounded-xl border border-violet-400/25 bg-violet-400/5 p-5">
+          <p className="font-bold text-violet-200">Fiverr</p>
+          <p className="mt-2 text-sm text-white/60">
+            Volledige gig ($199 / $299 / $449):{" "}
+            <Link href="/fiverr/" className="font-semibold text-violet-300 hover:underline">
+              /fiverr/
+            </Link>{" "}
+            — kopieerblokken per veld.
+          </p>
+          <p className="mt-1 text-xs text-white/40">Titel: {fiverrGigTitle}</p>
+        </section>
         <CopyBlock label="Malt profiel (Nederlands)" tekst={maltProfiel} />
 
         <section className="rounded-xl border border-white/8 p-5 text-sm text-white/55">

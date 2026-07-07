@@ -13,6 +13,7 @@ const nav = [
   { href: "/", label: "Webshop", icon: "🛒" },
   { href: "/actie/", label: "Actie", icon: "→" },
   { href: "/verkoop/", label: "Verkoop", icon: "€" },
+  { href: "/fiverr/", label: "Fiverr", icon: "◆" },
   { href: "/marktplaats/", label: "Listings", icon: "⊕" },
   { href: "/ideeen/", label: "Ideeën", icon: "◎" },
   { href: "/configurator/", label: "Configurator", icon: "⚙" },
