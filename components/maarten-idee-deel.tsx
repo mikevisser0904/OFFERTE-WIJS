@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { publiceerMaartenIdee, type MaartenIdee } from "@/lib/maarten-ideeen";
 import { genereerAgentOpdracht, githubIssueUrl } from "@/lib/maarten-wachtrij";
+import { GOUZOEKER_ENABLED } from "@/lib/goudzoeker-config";
 
 type Props = {
   compact?: boolean;
@@ -53,7 +54,7 @@ export function MaartenIdeeDeel({ compact = false }: Props) {
     >
       <div className="flex items-center justify-between gap-2">
         <p className={`font-bold text-sky-300 ${compact ? "text-[10px]" : "text-xs"}`}>
-          Maarten — snel idee → goudzoeker
+          Maarten — snel idee{GOUZOEKER_ENABLED ? " → goudzoeker" : ""}
         </p>
         {!compact && (
           <span className="rounded-full bg-sky-400/15 px-2 py-0.5 text-[9px] font-medium text-sky-200/80">
@@ -96,7 +97,15 @@ export function MaartenIdeeDeel({ compact = false }: Props) {
           compact ? "py-1.5 text-xs" : "py-2 text-sm"
         }`}
       >
-        {status === "bezig" ? "Versturen…" : status === "klaar" ? "✓ Goudzoeker heeft het!" : "Deel in goudzoeker →"}
+        {status === "bezig"
+          ? "Versturen…"
+          : status === "klaar"
+            ? GOUZOEKER_ENABLED
+              ? "✓ Goudzoeker heeft het!"
+              : "✓ Verstuurd!"
+            : GOUZOEKER_ENABLED
+              ? "Deel in goudzoeker →"
+              : "Deel idee →"}
       </button>
 
       {laatste && status !== "bezig" && (

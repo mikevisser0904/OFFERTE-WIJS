@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MaartenIdeeDeel } from "@/components/maarten-idee-deel";
 import { MaartenWachtrijPanel } from "@/components/maarten-wachtrij-panel";
 import { DashboardShell } from "@/components/dashboard-shell";
+import { GOUZOEKER_ENABLED } from "@/lib/goudzoeker-config";
 import { integrations } from "@/data/integrations";
 import {
   ideas,
@@ -38,7 +39,9 @@ export default function IdeeenPage() {
         <section className="rounded-2xl border border-sky-400/25 bg-sky-400/5 p-6 sm:p-8">
           <h2 className="text-lg font-bold text-sky-300">Maarten — snel delen</h2>
           <p className="mt-2 text-sm text-white/55">
-            Typ idee → goudzoeker mompelt het bij Mike. Sync via{" "}
+            {GOUZOEKER_ENABLED
+              ? "Typ idee → goudzoeker mompelt het bij Mike. Sync via "
+              : "Typ idee → sync naar wachtrij via "}
             <a
               href={integrations.maartenIdeeen.subscribe}
               className="text-sky-300 hover:underline"
@@ -47,7 +50,8 @@ export default function IdeeenPage() {
             >
               ntfy
             </a>
-            . Of open de goudzoeker-agent (klik op de lopende goudzoeker).
+            .
+            {GOUZOEKER_ENABLED ? " Of open de goudzoeker-agent (klik op de lopende goudzoeker)." : null}
           </p>
           <div className="mt-4">
             <MaartenIdeeDeel />

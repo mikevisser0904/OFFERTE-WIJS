@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Goudzoeker } from "@/components/goudzoeker";
+import { GOUZOEKER_ENABLED } from "@/lib/goudzoeker-config";
 import { goudTargetVoorHref, isGoudNavItem } from "@/lib/goud-nav-target";
 
 const nav = [
@@ -118,7 +119,7 @@ export function DashboardShell({
           <main className="flex-1 px-4 py-6 sm:px-6 sm:py-8">{children}</main>
         </div>
       </div>
-      <Goudzoeker />
+      {GOUZOEKER_ENABLED ? <Goudzoeker /> : null}
     </div>
   );
 }
