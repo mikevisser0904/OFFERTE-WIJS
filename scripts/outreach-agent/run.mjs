@@ -63,6 +63,7 @@ async function main() {
   const klantenVandaag = load(join(ROOT, "data/klanten-vandaag.json"), { top: [] });
   const gescoord = load(join(ROOT, "data/klanten-gescoord.json"), { leads: [] });
   const klantenLek = load(join(ROOT, "data/klanten-lek-rapport.json"), { klanten: [] });
+  const echte = load(join(ROOT, "data/echte-klanten.json"), { klanten: [] });
 
   const candidates = [];
   const seenUrls = new Set();
@@ -81,6 +82,26 @@ async function main() {
     if (!c.whatsapp) c.whatsapp = whatsappKoud(c.bedrijf);
     seenUrls.add(key);
     candidates.push(c);
+  }
+
+  for (const k of echte.klanten || []) {
+    if (!k.heeftScan || !k.verkoopBericht) continue;
+    const regel = (k.schrikRegels || [])[0] || "concrete beveiligingsfouten op uw site";
+    pushCandidate({
+      type: "lek",
+      prioriteit: 0,
+      bedrijf: k.bedrijf,
+      plaats: k.plaats,
+      url: k.url,
+      risicoScore: k.risicoScore ?? k.score,
+      reden: regel,
+      actie: k.aanbod || "Website Veilig €299",
+      whatsapp: k.verkoopKort || k.verkoopBericht.slice(0, 500),
+      whatsappUrl: k.whatsappSchrik || k.whatsappUrl || undefined,
+      telefoon: k.telefoon || undefined,
+      reportId: k.reportId,
+      verkoopBericht: k.verkoopBericht,
+    });
   }
 
   for (const k of klantenLek.klanten || []) {

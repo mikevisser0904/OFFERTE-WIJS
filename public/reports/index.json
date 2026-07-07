@@ -1,5 +1,65 @@
 [
   {
+    "id": "fe9d43611024",
+    "url": "https://www.willemseelektrotechniek.nl/",
+    "bedrijf": "H. Willemse Elektrotechniek B.V.",
+    "plaats": "Zandvoort",
+    "scannedAt": "2026-07-07T07:48:38.230Z",
+    "risicoScore": 100,
+    "niveau": "kritiek",
+    "niveauLabel": "Kritiek",
+    "scanMode": "leaks",
+    "leakHit": true
+  },
+  {
+    "id": "c54e890fe8fc",
+    "url": "https://www.ambiance-zonwering.nl/broere-woerden",
+    "bedrijf": "Ambiance Zonwering",
+    "plaats": "Woerden",
+    "scannedAt": "2026-07-07T07:48:33.304Z",
+    "risicoScore": 40,
+    "niveau": "hoog",
+    "niveauLabel": "Hoog",
+    "scanMode": "leaks",
+    "leakHit": true
+  },
+  {
+    "id": "95bee736a13f",
+    "url": "https://nuoveni.nl/",
+    "bedrijf": "Nuoveni",
+    "plaats": "Voorburg",
+    "scannedAt": "2026-07-07T07:48:16.852Z",
+    "risicoScore": 100,
+    "niveau": "kritiek",
+    "niveauLabel": "Kritiek",
+    "scanMode": "leaks",
+    "leakHit": true
+  },
+  {
+    "id": "216370c66063",
+    "url": "https://www.tafelboom.nl/",
+    "bedrijf": "Tafelboom",
+    "plaats": "Utrecht",
+    "scannedAt": "2026-07-07T07:48:15.905Z",
+    "risicoScore": 100,
+    "niveau": "kritiek",
+    "niveauLabel": "Kritiek",
+    "scanMode": "leaks",
+    "leakHit": true
+  },
+  {
+    "id": "679c884eb23e",
+    "url": "https://depagter.info/",
+    "bedrijf": "De Pagter",
+    "plaats": "Voorburg",
+    "scannedAt": "2026-07-07T07:48:08.755Z",
+    "risicoScore": 100,
+    "niveau": "kritiek",
+    "niveauLabel": "Kritiek",
+    "scanMode": "leaks",
+    "leakHit": true
+  },
+  {
     "id": "19c84aa5ca49",
     "url": "https://www.wonnink.nl/",
     "bedrijf": "Wonnink Zonwering",

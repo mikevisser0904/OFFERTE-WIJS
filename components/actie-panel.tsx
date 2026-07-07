@@ -82,7 +82,10 @@ export function ActiePanel() {
             {outreach.vandaag.slice(0, 8).map((c, i) => (
               <li key={`${c.url}-${i}`} className="rounded-xl border border-white/8 bg-black/25 px-4 py-3">
                 <p className="font-medium text-white">{c.bedrijf}</p>
-                <p className="text-xs text-white/45">{c.reden}</p>
+                <p className="text-xs text-rose-200/90">{c.reden}</p>
+                {c.verkoopBericht && (
+                  <p className="mt-2 line-clamp-3 whitespace-pre-wrap text-xs text-white/55">{c.verkoopBericht}</p>
+                )}
                 <div className="mt-2 flex flex-wrap gap-2">
                   {c.whatsappUrl ? (
                     <a
@@ -98,7 +101,7 @@ export function ActiePanel() {
                     <button
                       type="button"
                       onClick={() => {
-                        void navigator.clipboard.writeText(c.whatsapp);
+                        void navigator.clipboard.writeText(c.verkoopBericht || c.whatsapp);
                         setCopied(c.url);
                         setTimeout(() => setCopied(null), 2000);
                       }}

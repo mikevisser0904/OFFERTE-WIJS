@@ -42,6 +42,8 @@ if (withKlantenLek) {
 }
 
 steps.push({ id: "score", ok: step("4 Lead score refresh", "node", ["scripts/lead-hunter/enrich-score.mjs"]) });
+steps.push({ id: "contact", ok: step("4b Contact + verkooptekst", "node", ["scripts/lead-hunter/grab-contact.mjs"]) });
+steps.push({ id: "berichten", ok: step("4c Persoonlijke schrik-berichten", "node", ["scripts/lead-hunter/personalize-verkoop.mjs"]) });
 steps.push({ id: "outreach", ok: step("5 Outreach", "npm", ["run", "agent:outreach"]) });
 steps.push({ id: "optimizer", ok: step("6 Optimizer (meten)", "node", ["scripts/optimizer-agent/run.mjs"]) });
 steps.push({ id: "dataflow2", ok: step("7 Data-flow sync", "node", ["scripts/agents/data-flow/run.mjs"]) });

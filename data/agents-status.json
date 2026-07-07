@@ -1,17 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T07:46:35.552Z",
+  "updatedAt": "2026-07-07T07:49:57.256Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T07:46:32.736Z",
+      "lastRun": "2026-07-07T07:49:57.256Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 15,
-      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Klanten-lek: phpMyAdmin)",
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (phpMyAdmin — publiek bereikbaar via /phpMyAdmin/)",
       "top3": [
-        "Reinaerde Remake Meubel: Klanten-lek: phpMyAdmin",
-        "Loodgieterskwartier: Klanten-lek: Elasticsearch",
-        "Klomp Elektrotechniek: Klanten-lek: phpMyAdmin"
+        "Firma Fred van Rijn: phpMyAdmin — publiek bereikbaar via /phpMyAdmin/",
+        "Amer Houttechniek: phpMyAdmin — publiek bereikbaar via /phpMyAdmin/",
+        "Kroon interieurbouw: phpMyAdmin — publiek bereikbaar via /phpmyadmin/"
       ]
     },
     "manager": {
@@ -48,14 +48,14 @@
       "wachtrijPending": 0
     },
     "data-flow": {
-      "lastRun": "2026-07-07T07:46:35.552Z",
-      "ok": false,
-      "healthy": false,
+      "lastRun": "2026-07-07T07:47:14.357Z",
+      "ok": true,
+      "healthy": true,
       "streams": 22,
-      "drift": 1,
-      "synced": 1,
-      "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
-      "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
+      "drift": 0,
+      "synced": 0,
+      "agentPrompt": "22 streams OK · queue 0 pending · 32 lekken",
+      "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "klanten-lek": {
       "lastRun": "2026-07-07T07:43:23.364Z",

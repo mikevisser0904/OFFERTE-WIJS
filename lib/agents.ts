@@ -22,6 +22,7 @@ export type OutreachContact = {
   whatsappUrl?: string;
   telefoon?: string;
   reportId?: string;
+  verkoopBericht?: string;
 };
 
 export type FunnelStep = { id: string; ok: boolean };
