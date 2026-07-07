@@ -66,6 +66,35 @@ export function optimizerStatusUrl() {
   return publicUrl("/optimizer-status.json");
 }
 
+export function dataFlowStatusUrl() {
+  return publicUrl("/data-flow-status.json");
+}
+
+export type DataFlowStream = {
+  id: string;
+  naam: string;
+  status: string;
+  drift: boolean;
+  synced: boolean;
+  detail: string;
+  issues?: string[];
+};
+
+export type DataFlowStatus = {
+  updatedAt: string;
+  healthy: boolean;
+  summary: {
+    streams: number;
+    ok: number;
+    drift: number;
+    synced: number;
+    missing: number;
+    warnings: number;
+  };
+  streams: DataFlowStream[];
+  agentPrompt?: string;
+};
+
 export type OptimizerStatus = {
   updatedAt: string;
   grokPrompt: string;

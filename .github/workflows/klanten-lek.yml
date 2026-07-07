@@ -1,0 +1,34 @@
+name: Agent Klanten-lek
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max sites"
+        default: "60"
+
+permissions:
+  contents: write
+
+jobs:
+  klanten-lek:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: node scripts/agents/klanten-lek/run.mjs --limit=${{ github.event.inputs.limit || '60' }} --min-score=55
+      - run: npm run agent:dataflow
+      - run: npm run agent:outreach
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ public/ 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "klanten-lek: scan $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main || true
+          git push || true

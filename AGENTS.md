@@ -147,6 +147,17 @@ Als Mike zegt **"potentiële klanten"**, **"leads"**, **"vul queue"**:
 3. Commit `data/`, `public/potentiele-klanten.json`, queue, leak-hits
 4. Mike: **/leads/** → top targets → **/scan/** hits → **/actie/** WhatsApp
 
+### Klanten-lek (database per klant)
+
+Skill: `.grok/skills/klanten-lek-agent/SKILL.md` · UI: **/leads/** (database-tabel)
+
+```bash
+npm run agent:klanten-lek
+KLANTEN_LEK_LIMIT=184 npm run agent:klanten-lek   # alle OSM-leads
+```
+
+Output: `data/klanten-database-export.json` (dbType, host, dbName, user, panel, SQL-tabellen). **Geen wachtwoorden** in repo.
+
 Geen verzonnen bedrijven — alleen OSM + handmatige aanvullingen in `data/klanten-leads-import.txt`.
 
 ## Agent-team — één taak = één agent
@@ -155,12 +166,15 @@ Live hub: **/agents/** · Registry (bron): `data/agents-registry.json` (+ skill 
 
 | Agent | Taak | Commando |
 |-------|------|----------|
+| **Data-flow** | Alle `data/` → `public/` streams | `npm run agent:dataflow` |
 | **Optimizer** | Continu meten + veilige fixes + Grok-wachtrij | `npm run agent:optimizer:apply` |
+| **Data-flow** | Alle `data/` → `public/` streams | `npm run agent:dataflow` |
 | **Manager** | Orchestratie | `npm run agent:manager` |
 | **Health Monitor** | Site ping | `npm run agent:health` |
 | **Maarten Sync** | ntfy → wachtrij | `npm run agent:maarten-sync` |
 | **Maarten Bouw** | Pending ideeën bouwen | `npm run agent:maarten-bouw` → Grok voert uit |
 | **Lead Hunter** | OSM leads → queue | `npm run agent:leads` |
+| **Klanten-lek** | Leads → echte lek + database-profiel | `npm run agent:klanten-lek` |
 | **VakScan Import** | URL-lijst → queue | `npm run agent:vakscan-import` |
 | **VakScan Leaks** | Database-lek scan | `npm run agent:vakscan-leaks` |
 | **VakScan Full** | Volledige scan | `npm run agent:vakscan-full` |
@@ -181,6 +195,18 @@ npm run autopilot         # optimizer:apply + health + sync + manager + ntfy
 Grok-taken: `data/optimizer-wachtrij.json` — trigger: **optimizer wachtrij**.
 
 Legacy: `npm run scan:leaks` = zelfde als `agent:vakscan-leaks`.
+
+## Data-flow (alle datastromen)
+
+Skill: `.grok/skills/data-flow-agent/SKILL.md` · Registry: `data/data-flow-registry.json` · Status: **/agents/** (Data-flow blok)
+
+Als Mike zegt **"dataflow"**, **"sync public"**, of na bulk scan/leads/outreach:
+
+1. `npm run agent:dataflow` — kopieert drift, herbouwt `public/reports/index.json`, valideert JSON
+2. `npm run agent:dataflow:check` — alleen audit (geen copy)
+3. Commit `data/` + `public/` vóór deploy
+
+Nieuwe JSON voor de UI? Voeg stream toe in `data-flow-registry.json`, niet alleen los `copyFileSync` in scripts.
 
 ## Groot plan (visie & fases)
 

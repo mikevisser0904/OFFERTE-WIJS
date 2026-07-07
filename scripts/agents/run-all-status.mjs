@@ -6,6 +6,7 @@ import { fileURLToPath } from "url";
 
 const ROOT = join(import.meta.dirname, "../..");
 const LIGHT = [
+  "scripts/agents/data-flow/run.mjs",
   "scripts/agents/health-monitor/run.mjs",
   "scripts/agents/maarten-sync/run.mjs",
   "scripts/agents/maarten-bouw/run.mjs",

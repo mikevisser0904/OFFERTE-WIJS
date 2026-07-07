@@ -55,6 +55,7 @@ function collect() {
   const wachtrij = load(join(ROOT, "data/maarten-wachtrij.json"), { ideeen: [] });
   const optimizer = load(join(ROOT, "data/optimizer-status.json"), {});
   const optWachtrij = load(join(ROOT, "data/optimizer-wachtrij.json"), { items: [] });
+  const dataFlow = load(join(ROOT, "data/data-flow-status.json"), { healthy: true });
 
   const pendingMaarten = (wachtrij.ideeen || []).filter((i) => i.status === "pending").length;
   const queuePending = (queue.items || []).filter((i) => i.status === "pending").length;
@@ -85,6 +86,9 @@ function collect() {
     leadsAge: hoursSince(leads.generatedAt),
     optimizer,
     optPending: (optWachtrij.items || []).filter((i) => i.status === "pending").length,
+    dataFlow,
+    dataFlowDrift: dataFlow.summary?.drift ?? 0,
+    dataFlowHealthy: dataFlow.healthy !== false,
   };
 }
 
@@ -95,6 +99,17 @@ function decide(s) {
   let grokPrompt = "manager check — geen urgente actie";
   let mikeActie = "Check /agents/ en /dashboard/";
   let prioriteit = 1;
+
+  if (!s.dataFlowHealthy && s.dataFlowDrift > 0) {
+    acties.push({ wie: "grok", actie: "Data-flow sync", script: "npm run agent:dataflow" });
+    if (fase === "rust") {
+      fase = "data";
+      faseLabel = "Data streams drift";
+      prioriteit = 4;
+      grokPrompt = `agent dataflow — ${s.dataFlowDrift} stream(s) niet live op GitHub Pages`;
+      mikeActie = "Even wachten tot CI sync pusht, of lokaal: npm run agent:dataflow";
+    }
+  }
 
   if (!s.health.healthy) {
     fase = "site";
@@ -113,6 +128,11 @@ function decide(s) {
     grokPrompt = `voer maarten wachtrij uit — ${s.pendingMaarten} pending (vóór verkopen)`;
     mikeActie = "Maarten-idee laten bouwen; jij kunt ondertussen /actie/ doen.";
     acties.push({ wie: "grok", actie: "Maarten wachtrij", script: "AGENTS.md maarten-wachtrij" });
+  }
+
+  const klantenLek = load(join(ROOT, "data/klanten-lek-rapport.json"), { metLek: 0 });
+  if (klantenLek.metLek > 0 && s.outreachCount === 0) {
+    acties.push({ wie: "grok", actie: "Outreach na klanten-lek", script: "npm run agent:outreach" });
   }
 
   if (s.leakCount > 0 && s.outreachAge > 12) {
@@ -249,6 +269,10 @@ async function main() {
       if (a.id === "optimizer") {
         ok = s.optPending < 5;
         detail = `Grok-wachtrij ${s.optPending} · laatste fixes ${st.safeDone ?? 0}`;
+      }
+      if (a.id === "data-flow") {
+        ok = s.dataFlowHealthy;
+        detail = s.dataFlow?.agentPrompt || `${s.dataFlowDrift} drift`;
       }
       return agentCard(a.id, a.naam, ok, detail, st.lastRun);
     });

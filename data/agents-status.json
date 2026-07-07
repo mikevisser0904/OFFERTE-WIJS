@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T07:33:30.703Z",
+  "updatedAt": "2026-07-07T07:39:00.582Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T07:31:26.061Z",
@@ -11,7 +11,7 @@
       "top3": []
     },
     "manager": {
-      "lastRun": "2026-07-07T07:33:30.702Z",
+      "lastRun": "2026-07-07T07:34:32.090Z",
       "fase": "rust",
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "mikeActie": "5 WhatsApps via /agents/"
@@ -42,10 +42,28 @@
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 2,
       "wachtrijPending": 0
+    },
+    "data-flow": {
+      "lastRun": "2026-07-07T07:39:00.582Z",
+      "ok": false,
+      "healthy": false,
+      "streams": 23,
+      "drift": 1,
+      "synced": 1,
+      "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+      "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
+    },
+    "klanten-lek": {
+      "lastRun": "2026-07-07T07:39:00.015Z",
+      "ok": true,
+      "gescand": 5,
+      "metLek": 30,
+      "agentPrompt": "30 echte lek(ken) — /leads/ database-export · outreach",
+      "grokPrompt": "agent outreach — 30 klanten met database-lek in klanten-lek-rapport"
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T07:33:30.702Z",
+    "updatedAt": "2026-07-07T07:34:32.090Z",
     "agent": "manager",
     "fase": "rust",
     "faseLabel": "Alles rustig",
@@ -60,6 +78,13 @@
         "status": "ok",
         "detail": "Grok-wachtrij 0 · laatste fixes 2",
         "lastRun": "2026-07-07T07:33:30.084Z"
+      },
+      {
+        "id": "data-flow",
+        "naam": "Data-flow",
+        "status": "ok",
+        "detail": "17 streams OK · queue 184 pending · 5 lekken",
+        "lastRun": "2026-07-07T07:34:31.966Z"
       },
       {
         "id": "health-monitor",
@@ -99,8 +124,8 @@
       {
         "id": "vakscan-leaks",
         "naam": "VakScan Leaks",
-        "status": "actie",
-        "detail": "0 lekken · 184 pending",
+        "status": "ok",
+        "detail": "5 lekken · 184 pending",
         "lastRun": null
       },
       {

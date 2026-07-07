@@ -7,6 +7,7 @@ type TopLead = {
   bedrijf: string;
   plaats: string;
   url: string;
+  categorie?: string;
   telefoon?: string | null;
   score: number;
   redenen: string[];

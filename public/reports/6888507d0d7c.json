@@ -1,0 +1,34 @@
+{
+  "id": "6888507d0d7c",
+  "url": "https://www.suntec-zonwering.nl/",
+  "bedrijf": "Suntec zonwering",
+  "plaats": "'s-Gravenhage",
+  "scannedAt": "2026-07-07T07:37:46.264Z",
+  "risicoScore": 40,
+  "niveau": "hoog",
+  "niveauLabel": "Hoog",
+  "klantBullets": [
+    "Database-beheer is vindbaar — data kan gestolen worden."
+  ],
+  "findings": [
+    {
+      "id": "db-admin-_adminer.php",
+      "check": "database",
+      "severity": "critical",
+      "title": "Adminer mogelijk open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+      "intern": "Kritiek — Website Veilig + hosting review.",
+      "evidence": "https://www.suntec-zonwering.nl/adminer.php"
+    }
+  ],
+  "verkoop": {
+    "dienst": "Website Veilig",
+    "slug": "website-veilig",
+    "prijs": "€299",
+    "prijsNum": 299,
+    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Suntec zonwering gedaan. Belangrijkste punt: Database-beheer is vindbaar — data kan gestolen worden. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+  },
+  "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck.",
+  "scanMode": "leaks",
+  "leakHit": true
+}

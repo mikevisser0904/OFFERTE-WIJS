@@ -1,0 +1,25 @@
+# VakScan rapport — Ambiance zonwering
+
+**URL:** https://www.ambiance-zonwering.nl/van-der-wal-de-bilt  
+**Plaats:** De Bilt  
+**Datum:** 2026-07-07T07:38:06.061Z  
+**Risicoscore:** 40/100 — **Hoog**
+
+## Voor de vakman (max. 5 punten)
+
+- Database-beheer is vindbaar — data kan gestolen worden.
+
+## Intern — verkoop
+
+- Aanbevolen: **Website Veilig** (€299)
+- WhatsApp: Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Ambiance zonwering gedaan. Belangrijkste punt: Database-beheer is vindbaar — data kan gestolen worden. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?
+
+## Technische bevindingen
+
+### phpMyAdmin mogelijk open op internet (critical)
+- Kritiek — Website Veilig + hosting review.
+- Bewijs: `https://www.ambiance-zonwering.nl/phpmyadmin/index.php`
+
+---
+
+*Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck.*

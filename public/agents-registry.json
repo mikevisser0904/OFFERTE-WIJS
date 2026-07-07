@@ -13,6 +13,16 @@
       "trigger": ["optimizer", "optimaliseer", "verbeter automatisch"]
     },
     {
+      "id": "data-flow",
+      "taak": "data-pijplijn",
+      "naam": "Data-flow",
+      "rol": "Sync en validatie van alle data/ → public/ streams voor GitHub Pages",
+      "skill": ".grok/skills/data-flow-agent/SKILL.md",
+      "script": "npm run agent:dataflow",
+      "workflow": ".github/workflows/data-flow-agent.yml",
+      "trigger": ["dataflow", "data stromen", "sync public"]
+    },
+    {
       "id": "manager",
       "taak": "orchestratie",
       "naam": "Manager",
@@ -71,6 +81,16 @@
       "script": "npm run agent:vakscan-import",
       "workflow": null,
       "trigger": ["import urls", "queue vullen"]
+    },
+    {
+      "id": "klanten-lek",
+      "taak": "klant-lek-scan",
+      "naam": "Klanten-lek",
+      "rol": "Potentiële klanten → echte datalek + database-profiel (host, type, tabellen)",
+      "skill": ".grok/skills/klanten-lek-agent/SKILL.md",
+      "script": "npm run agent:klanten-lek",
+      "workflow": ".github/workflows/klanten-lek.yml",
+      "trigger": ["klanten lek", "database lek klanten", "potentiële klanten scannen"]
     },
     {
       "id": "vakscan-leaks",

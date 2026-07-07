@@ -1,0 +1,1784 @@
+{
+  "generatedAt": "2026-07-07T07:39:00.010Z",
+  "agent": "klanten-lek",
+  "gescand": 5,
+  "metLek": 30,
+  "disclaimer": "Passieve HTTP-checks alleen. Geen wachtwoorden opgeslagen. Gebruik voor Website Veilig €299 outreach met toestemming.",
+  "klanten": [
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "url": "https://firmavanrijn.nl",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:38:20.534Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "86dde731b1e4",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
+            "host": "s230.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
+            "host": "s230.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s230.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s230.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s230.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Amer Houttechniek",
+      "plaats": "Amersfoort",
+      "url": "https://www.amer-hout.nl",
+      "categorie": "kozijnen",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:38:06.907Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "dd78e57b812d",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
+            "host": "s205.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
+            "host": "s205.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s205.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s205.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s205.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Loodgieterskwartier",
+      "plaats": "Rijswijk",
+      "url": "https://loodgieterskwartier.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:47.761Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "d55c372ed7e5",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://loodgieterskwartier.nl/",
+            "host": "loodgieterskwartier.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://loodgieterskwartier.nl/"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env.local mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env.production mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": "Config-backup mogelijk open",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "url": "https://klompelektrotechniek.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:33.446Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "ec2d0042034c",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Finish Profiles",
+      "plaats": "Purmerend",
+      "url": "https://www.finish-profiles.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:26.595Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "6732bd8e5565",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/phpmyadmin/",
+            "host": "finish-profiles.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/phpMyAdmin/",
+            "host": "finish-profiles.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/pma/",
+            "host": "finish-profiles.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/phpmyadmin/index.php",
+            "host": "finish-profiles.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "url": "https://www.bwstyling.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:12.758Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "49aba6bb1a63",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.bwstyling.nl/phpmyadmin/",
+            "host": "www.bwstyling.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.bwstyling.nl/phpMyAdmin/",
+            "host": "www.bwstyling.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.bwstyling.nl/pma/",
+            "host": "www.bwstyling.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.bwstyling.nl/phpmyadmin/index.php",
+            "host": "www.bwstyling.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.bwstyling.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.bwstyling.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.bwstyling.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.bwstyling.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "url": "https://www.textilia-dordrecht.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:11.515Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "2bf236f50a7b",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
+            "host": "s225.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
+            "host": "s225.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s225.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s225.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s225.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "url": "https://chargecars.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:55.046Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "d3536446812f",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Schreuder Glas- en Schilderwerken",
+      "plaats": "Noordwijk",
+      "url": "https://www.schreuderschilderwerken.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:58.146Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "4fccd84bc7e1",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/",
+            "host": "www.schreuderschilderwerken.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/phpMyAdmin/",
+            "host": "www.schreuderschilderwerken.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/pma/",
+            "host": "www.schreuderschilderwerken.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/index.php",
+            "host": "www.schreuderschilderwerken.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
+      "plaats": "Amstelveen",
+      "url": "https://www.jwfborn.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:56.224Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "cf629bfb83b6",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/phpmyadmin/",
+            "host": "www.jwfborn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/phpMyAdmin/",
+            "host": "www.jwfborn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/pma/",
+            "host": "www.jwfborn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/phpmyadmin/index.php",
+            "host": "www.jwfborn.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "url": "https://hetinterieur.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:59.366Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "1c2376857c87",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
+            "host": "s229.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
+            "host": "s229.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s229.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s229.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s229.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "plaats": "Nieuw-Lekkerland",
+      "url": "https://verzijlbv.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:46.831Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "7d32e5ce9787",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://verzijlbv.nl/phpmyadmin/",
+            "host": "verzijlbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://verzijlbv.nl/phpMyAdmin/",
+            "host": "verzijlbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://verzijlbv.nl/phpmyadmin/index.php",
+            "host": "verzijlbv.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://verzijlbv.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://verzijlbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://verzijlbv.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:41.648Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "cb76ce138bc5",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "url": "https://www.boselektrotechniek.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:37.701Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "e2b94249c285",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Decor Gordijn",
+      "plaats": "Leiden",
+      "url": "https://www.decorgordijn.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:36:53.337Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "ec27b9f2d9e9",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.decorgordijn.nl/phpmyadmin/",
+            "host": "www.decorgordijn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.decorgordijn.nl/phpMyAdmin/",
+            "host": "www.decorgordijn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.decorgordijn.nl/pma/",
+            "host": "www.decorgordijn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.decorgordijn.nl/phpmyadmin/index.php",
+            "host": "www.decorgordijn.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.decorgordijn.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.decorgordijn.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.decorgordijn.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.decorgordijn.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Blygold",
+      "plaats": "Houten",
+      "url": "https://www.blygold.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:36:10.051Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "fac607ec508f",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/phpmyadmin/",
+            "host": "www.blygold.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/phpMyAdmin/",
+            "host": "www.blygold.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/pma/",
+            "host": "www.blygold.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/phpmyadmin/index.php",
+            "host": "www.blygold.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Installatiebedrijf Keyzer",
+      "plaats": "Den Hoorn",
+      "url": "https://www.keyzerbv.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:35:14.190Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "7cb3690b73a7",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Kroon interieurbouw",
+      "plaats": "De Meern",
+      "url": "https://www.kroon-interieurbouw.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:35:09.912Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "d0419394d0db",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
+            "host": "www.kroon-interieurbouw.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/phpMyAdmin/",
+            "host": "www.kroon-interieurbouw.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/pma/",
+            "host": "www.kroon-interieurbouw.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php",
+            "host": "www.kroon-interieurbouw.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Pruis Schilderwerken",
+      "plaats": "Amersfoort",
+      "url": "https://pruisschilderwerken.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:34:32.409Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "13c475feed67",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://server-alfa.heroo.nl/phpMyAdmin/",
+            "host": "server-alfa.heroo.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://server-alfa.heroo.nl/phpMyAdmin/",
+            "host": "server-alfa.heroo.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://server-alfa.heroo.nl/phpMyAdmin/",
+            "host": "server-alfa.heroo.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://server-alfa.heroo.nl/phpMyAdmin/index.php",
+            "host": "server-alfa.heroo.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://server-alfa.heroo.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://server-alfa.heroo.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://server-alfa.heroo.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://server-alfa.heroo.nl/phpMyAdmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "T.B. van Wichen",
+      "plaats": "'s-Gravenhage",
+      "url": "https://vanwichenbv.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:34:21.706Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "207fbcd9b13c",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://vanwichenbv.nl/phpMyAdmin/",
+            "host": "vanwichenbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://vanwichenbv.nl/phpMyAdmin/",
+            "host": "vanwichenbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://vanwichenbv.nl/phpMyAdmin/",
+            "host": "vanwichenbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://vanwichenbv.nl/phpMyAdmin/",
+            "host": "vanwichenbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://vanwichenbv.nl/phpMyAdmin/",
+            "host": "vanwichenbv.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://vanwichenbv.nl/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "url": "https://www.ejvandermeer.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:38.760Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 80,
+      "reportId": "5424b2313def",
+      "database": {
+        "samenvatting": "2 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ejvandermeer.nl/phpmyadmin/",
+            "host": "www.ejvandermeer.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ejvandermeer.nl/phpmyadmin/index.php",
+            "host": "www.ejvandermeer.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ejvandermeer.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ejvandermeer.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "url": "https://vogelaarschilder.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:24.610Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 80,
+      "reportId": "d8987ac955c8",
+      "database": {
+        "samenvatting": "2 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hosting102.resellerdns.nl/phpmyadmin/",
+            "host": "hosting102.resellerdns.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hosting102.resellerdns.nl/phpmyadmin/index.php",
+            "host": "hosting102.resellerdns.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hosting102.resellerdns.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hosting102.resellerdns.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Dreumel",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.dreumel.nl",
+      "categorie": "kozijnen",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:38:01.047Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "02a3c62e62d4",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://www.dreumel.nl/404",
+            "host": "www.dreumel.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://www.dreumel.nl/404"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.dreumel.nl/404"
+        }
+      ]
+    },
+    {
+      "bedrijf": "SA Elektro Experts",
+      "plaats": "'s-Gravenhage",
+      "url": "https://saelektroexperts.nl",
+      "categorie": "elektricien",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:38:57.132Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "aab38445503e",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://saelektroexperts.nl/",
+            "host": "saelektroexperts.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://saelektroexperts.nl/"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://saelektroexperts.nl/"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Suntec zonwering",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.suntec-zonwering.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:46.264Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "6888507d0d7c",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Adminer",
+            "url": "https://www.suntec-zonwering.nl/adminer.php",
+            "host": "www.suntec-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "Adminer mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.suntec-zonwering.nl/adminer.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Voordeelgordijnen",
+      "plaats": "Amsterdam",
+      "url": "https://www.voordeelgordijnen.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:08.086Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "e362535e17f6",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": ".env mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://www.voordeelgordijnen.nl/.env"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Ambiance zonwering",
+      "plaats": "De Bilt",
+      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:06.061Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "c2d3cc1f8cbf",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+            "host": "www.ambiance-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Ambiance Heko-Becewe",
+      "plaats": "Amsterdam",
+      "url": "https://www.ambiance-zonwering.nl/heko-becewe",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:53.417Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "dec1c3541b87",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+            "host": "www.ambiance-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Decorette",
+      "plaats": "Nieuw-Vennep",
+      "url": "https://decorette.nl/winkels/nieuw-vennep",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:49.143Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "47cfe84cc8f4",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://decorette.nl/",
+            "host": "decorette.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://decorette.nl/"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://decorette.nl/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Mks schilderwerken",
+      "plaats": "Houten",
+      "url": "https://mksschilderwerken.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:36:24.521Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "940bd317871f",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://mksschilderwerken.nl/",
+            "host": "mksschilderwerken.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://mksschilderwerken.nl/"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://mksschilderwerken.nl/"
+        }
+      ],
+      "bron": "leak-hits"
+    }
+  ]
+}

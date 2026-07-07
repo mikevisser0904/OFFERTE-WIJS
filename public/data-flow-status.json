@@ -1,0 +1,231 @@
+{
+  "updatedAt": "2026-07-07T07:39:00.580Z",
+  "agent": "data-flow",
+  "healthy": false,
+  "fixApplied": true,
+  "summary": {
+    "streams": 23,
+    "ok": 23,
+    "drift": 1,
+    "synced": 1,
+    "missing": 0,
+    "warnings": 0
+  },
+  "cross": {
+    "queuePending": 44,
+    "queueScanned": 0,
+    "leakHits": 30,
+    "issues": []
+  },
+  "streams": [
+    {
+      "id": "agents-registry",
+      "naam": "Agent registry",
+      "status": "ok",
+      "drift": true,
+      "synced": true,
+      "issues": [],
+      "detail": "gesynchroniseerd data → public"
+    },
+    {
+      "id": "agents-status",
+      "naam": "Agent status",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "autopilot-status",
+      "naam": "Autopilot",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "manager-status",
+      "naam": "Manager",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "scan-queue",
+      "naam": "VakScan queue",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "scan-stats",
+      "naam": "VakScan stats",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "leak-hits",
+      "naam": "Database-lek hits",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "klanten-gescoord",
+      "naam": "Leads gescoord",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "klanten-vandaag",
+      "naam": "Klanten vandaag",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "klanten-lek-rapport",
+      "naam": "Klanten lek rapport",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "klanten-database-export",
+      "naam": "Klanten database export",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "klanten-gescoord",
+      "naam": "Leads gescoord",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "klanten-vandaag",
+      "naam": "Klanten vandaag",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "potentiele-klanten",
+      "naam": "Leads OSM",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "outreach-vandaag",
+      "naam": "Outreach vandaag",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "maarten-wachtrij",
+      "naam": "Maarten wachtrij",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "kpi-snapshot",
+      "naam": "Team KPI",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "optimizer-status",
+      "naam": "Optimizer status",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "optimizer-log",
+      "naam": "Optimizer log",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "optimizer-wachtrij",
+      "naam": "Optimizer wachtrij",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
+      "id": "reports",
+      "naam": "VakScan rapporten",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "32 rapporten · 0 gekopieerd"
+    },
+    {
+      "id": "health",
+      "naam": "Site health",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "public-only OK"
+    },
+    {
+      "id": "maarten-ideeen",
+      "naam": "Maarten ideeën (UI)",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "public-only OK"
+    }
+  ],
+  "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced",
+  "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow"
+}

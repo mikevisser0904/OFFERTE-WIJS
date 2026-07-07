@@ -28,6 +28,7 @@ if (process.env.LEAD_SCAN === "1") {
     `--limit=${process.env.VAKSCAN_LIMIT || "300"}`,
     `--concurrency=${process.env.VAKSCAN_CONCURRENCY || "4"}`,
   ]);
+  run("node", ["scripts/lead-hunter/enrich-score.mjs"]);
 }
 
-console.log("\nLead hunt klaar. Bekijk /leads/ en data/leak-hits.json na scan.");
+console.log("\nLead hunt klaar → /dashboard/ (top vandaag) · /leads/ · leak-hits na scan.");

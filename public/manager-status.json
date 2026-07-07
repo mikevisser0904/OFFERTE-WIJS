@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T07:33:30.702Z",
+  "updatedAt": "2026-07-07T07:34:32.090Z",
   "agent": "manager",
   "fase": "rust",
   "faseLabel": "Alles rustig",
@@ -14,6 +14,13 @@
       "status": "ok",
       "detail": "Grok-wachtrij 0 · laatste fixes 2",
       "lastRun": "2026-07-07T07:33:30.084Z"
+    },
+    {
+      "id": "data-flow",
+      "naam": "Data-flow",
+      "status": "ok",
+      "detail": "17 streams OK · queue 184 pending · 5 lekken",
+      "lastRun": "2026-07-07T07:34:31.966Z"
     },
     {
       "id": "health-monitor",
@@ -53,8 +60,8 @@
     {
       "id": "vakscan-leaks",
       "naam": "VakScan Leaks",
-      "status": "actie",
-      "detail": "0 lekken · 184 pending",
+      "status": "ok",
+      "detail": "5 lekken · 184 pending",
       "lastRun": null
     },
     {
@@ -87,7 +94,7 @@
     }
   ],
   "snapshot": {
-    "leakCount": 0,
+    "leakCount": 5,
     "queuePending": 184,
     "outreachCount": 0,
     "leadsTotaal": 184,

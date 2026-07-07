@@ -9,7 +9,9 @@ import {
   potentieleKlantenUrl,
   managerStatusUrl,
   optimizerStatusUrl,
+  dataFlowStatusUrl,
   type AgentRegistryEntry,
+  type DataFlowStatus,
   type OptimizerStatus,
   type OutreachVandaag,
   type ManagerStatus,
@@ -41,16 +43,18 @@ export function AgentsPanel() {
   const [leads, setLeads] = useState<LeadsPayload | null>(null);
   const [manager, setManager] = useState<ManagerStatus | null>(null);
   const [optimizer, setOptimizer] = useState<OptimizerStatus | null>(null);
+  const [dataFlow, setDataFlow] = useState<DataFlowStatus | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    const [reg, st, out, ld, mgr, opt] = await Promise.all([
+    const [reg, st, out, ld, mgr, opt, df] = await Promise.all([
       fetch(agentsRegistryUrl()).then((r) => (r.ok ? r.json() : { agents: [] })),
       fetch(agentsStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(outreachVandaagUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(potentieleKlantenUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(managerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(optimizerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
+      fetch(dataFlowStatusUrl()).then((r) => (r.ok ? r.json() : null)),
     ]);
     setRegistry(reg.agents || []);
     setStatus(st);
@@ -58,6 +62,7 @@ export function AgentsPanel() {
     setLeads(ld);
     setManager(mgr);
     setOptimizer(opt);
+    setDataFlow(df);
   }, []);
 
   useEffect(() => {
@@ -130,9 +135,43 @@ export function AgentsPanel() {
           </div>
         )}
         <pre className="mt-4 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs text-white/50">
-          npm run agent:manager · npm run agent:optimizer:apply
+          npm run agent:manager · npm run agent:optimizer:apply · npm run agent:dataflow
         </pre>
       </section>
+
+      {dataFlow && (
+        <section
+          className={`rounded-2xl border p-5 ${
+            dataFlow.healthy ? "border-sky-400/25 bg-sky-500/5" : "border-amber-400/30 bg-amber-500/10"
+          }`}
+        >
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-white/45">Data-flow</p>
+              <h2 className="text-lg font-bold text-white">
+                {dataFlow.healthy ? "Alle streams live" : "Sync nodig"}
+              </h2>
+              <p className="mt-1 text-sm text-white/55">{dataFlow.agentPrompt}</p>
+            </div>
+            <p className="font-mono text-xs text-white/40">
+              {dataFlow.summary.ok}/{dataFlow.summary.streams} OK
+              {dataFlow.summary.synced > 0 ? ` · ${dataFlow.summary.synced} gesynced` : ""}
+            </p>
+          </div>
+          {!dataFlow.healthy && (
+            <ul className="mt-3 max-h-32 space-y-1 overflow-y-auto text-xs text-amber-200/80">
+              {(dataFlow.streams || [])
+                .filter((s) => s.status !== "ok")
+                .slice(0, 10)
+                .map((s) => (
+                  <li key={s.id}>
+                    {s.naam}: {s.detail}
+                  </li>
+                ))}
+            </ul>
+          )}
+        </section>
+      )}
 
       <section className="rounded-2xl border border-white/10 bg-black/20 p-5">
         <h2 className="text-lg font-semibold text-violet-200">Agent-team</h2>

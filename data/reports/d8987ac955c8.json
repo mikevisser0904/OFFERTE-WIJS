@@ -1,0 +1,44 @@
+{
+  "id": "d8987ac955c8",
+  "url": "https://vogelaarschilder.nl/",
+  "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+  "plaats": "Leidschendam",
+  "scannedAt": "2026-07-07T07:37:24.610Z",
+  "risicoScore": 80,
+  "niveau": "kritiek",
+  "niveauLabel": "Kritiek",
+  "klantBullets": [
+    "Database-beheer is vindbaar — data kan gestolen worden.",
+    "Database-beheer is vindbaar — data kan gestolen worden."
+  ],
+  "findings": [
+    {
+      "id": "db-admin-_phpmyadmin_",
+      "check": "database",
+      "severity": "critical",
+      "title": "phpMyAdmin mogelijk open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+      "intern": "Kritiek — Website Veilig + hosting review.",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/"
+    },
+    {
+      "id": "db-admin-_phpmyadmin_index.php",
+      "check": "database",
+      "severity": "critical",
+      "title": "phpMyAdmin mogelijk open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+      "intern": "Kritiek — Website Veilig + hosting review.",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/index.php"
+    }
+  ],
+  "verkoop": {
+    "dienst": "Website Veilig",
+    "slug": "website-veilig",
+    "prijs": "€299",
+    "prijsNum": 299,
+    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Vogelaar timmerwerk schilderen behangen gedaan. Belangrijkste punt: Database-beheer is vindbaar — data kan gestolen worden. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+  },
+  "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck.",
+  "scanMode": "leaks",
+  "leakHit": true
+}

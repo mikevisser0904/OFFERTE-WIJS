@@ -1,0 +1,217 @@
+{
+  "versie": 1,
+  "beschrijving": "Canonieke datastromen OFFERTE-WIJS — data/ → public/ voor GitHub Pages UI",
+  "streams": [
+    {
+      "id": "agents-registry",
+      "naam": "Agent registry",
+      "bron": "data/agents-registry.json",
+      "publiek": "public/agents-registry.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "handmatig / Grok"
+    },
+    {
+      "id": "agents-status",
+      "naam": "Agent status",
+      "bron": "data/agents-status.json",
+      "publiek": "public/agents-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "patch-status / manager"
+    },
+    {
+      "id": "autopilot-status",
+      "naam": "Autopilot",
+      "bron": "data/autopilot-status.json",
+      "publiek": "public/autopilot-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "autopilot-run"
+    },
+    {
+      "id": "manager-status",
+      "naam": "Manager",
+      "bron": "data/manager-status.json",
+      "publiek": "public/manager-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "manager-agent"
+    },
+    {
+      "id": "scan-queue",
+      "naam": "VakScan queue",
+      "bron": "data/scan-queue.json",
+      "publiek": "public/scan-queue.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "lead-hunter / vakscan-import / optimizer",
+      "validatie": { "array": "items" }
+    },
+    {
+      "id": "scan-stats",
+      "naam": "VakScan stats",
+      "bron": "data/scan-stats.json",
+      "publiek": "public/scan-stats.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "scan-stats"
+    },
+    {
+      "id": "leak-hits",
+      "naam": "Database-lek hits",
+      "bron": "data/leak-hits.json",
+      "publiek": "public/leak-hits.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "leak-hits / batch",
+      "validatie": { "array": "hits" }
+    },
+    {
+      "id": "klanten-gescoord",
+      "naam": "Leads gescoord",
+      "bron": "data/klanten-gescoord.json",
+      "publiek": "public/klanten-gescoord.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "lead-hunter/enrich-score"
+    },
+    {
+      "id": "klanten-vandaag",
+      "naam": "Klanten vandaag",
+      "bron": "data/klanten-vandaag.json",
+      "publiek": "public/klanten-vandaag.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "lead-hunter/enrich-score"
+    },
+    {
+      "id": "klanten-lek-rapport",
+      "naam": "Klanten lek rapport",
+      "bron": "data/klanten-lek-rapport.json",
+      "publiek": "public/klanten-lek-rapport.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "klanten-lek-agent"
+    },
+    {
+      "id": "klanten-database-export",
+      "naam": "Klanten database export",
+      "bron": "data/klanten-database-export.json",
+      "publiek": "public/klanten-database-export.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "klanten-lek-agent"
+    },
+    {
+      "id": "klanten-gescoord",
+      "naam": "Leads gescoord",
+      "bron": "data/klanten-gescoord.json",
+      "publiek": "public/klanten-gescoord.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "lead-hunter / enrich-score"
+    },
+    {
+      "id": "klanten-vandaag",
+      "naam": "Klanten vandaag",
+      "bron": "data/klanten-vandaag.json",
+      "publiek": "public/klanten-vandaag.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "enrich-score"
+    },
+    {
+      "id": "potentiele-klanten",
+      "naam": "Leads OSM",
+      "bron": "data/potentiele-klanten.json",
+      "publiek": "public/potentiele-klanten.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "lead-hunter / osm-fetch",
+      "validatie": { "array": "leads", "totaalField": "totaal" }
+    },
+    {
+      "id": "outreach-vandaag",
+      "naam": "Outreach vandaag",
+      "bron": "data/outreach-vandaag.json",
+      "publiek": "public/outreach-vandaag.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "outreach-agent"
+    },
+    {
+      "id": "maarten-wachtrij",
+      "naam": "Maarten wachtrij",
+      "bron": "data/maarten-wachtrij.json",
+      "publiek": "public/maarten-wachtrij.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "maarten-sync",
+      "validatie": { "array": "ideeen" }
+    },
+    {
+      "id": "kpi-snapshot",
+      "naam": "Team KPI",
+      "bron": "data/kpi-snapshot.json",
+      "publiek": "public/kpi-snapshot.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "kpi-snapshot / kpi-agent"
+    },
+    {
+      "id": "optimizer-status",
+      "naam": "Optimizer status",
+      "bron": "data/optimizer-status.json",
+      "publiek": "public/optimizer-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "optimizer-agent"
+    },
+    {
+      "id": "optimizer-log",
+      "naam": "Optimizer log",
+      "bron": "data/optimizer-log.json",
+      "publiek": "public/optimizer-log.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "optimizer-agent"
+    },
+    {
+      "id": "optimizer-wachtrij",
+      "naam": "Optimizer wachtrij",
+      "bron": "data/optimizer-wachtrij.json",
+      "publiek": "public/optimizer-wachtrij.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "optimizer-agent"
+    },
+    {
+      "id": "reports",
+      "naam": "VakScan rapporten",
+      "bron": "data/reports",
+      "publiek": "public/reports",
+      "type": "reports-dir",
+      "canoniek": "data",
+      "producent": "security-scan/run"
+    },
+    {
+      "id": "health",
+      "naam": "Site health",
+      "bron": null,
+      "publiek": "public/health.json",
+      "type": "json",
+      "canoniek": "public",
+      "producent": "health-check / health-monitor"
+    },
+    {
+      "id": "maarten-ideeen",
+      "naam": "Maarten ideeën (UI)",
+      "bron": null,
+      "publiek": "public/maarten-ideeen.json",
+      "type": "json",
+      "canoniek": "public",
+      "producent": "sync-maarten / client"
+    }
+  ]
+}

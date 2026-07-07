@@ -1,4 +1,1305 @@
 {
-  "updatedAt": null,
-  "hits": []
+  "updatedAt": "2026-07-07T07:38:57.131Z",
+  "hits": [
+    {
+      "url": "https://saelektroexperts.nl/",
+      "bedrijf": "SA Elektro Experts",
+      "plaats": "'s-Gravenhage",
+      "reportId": "aab38445503e",
+      "scannedAt": "2026-07-07T07:38:33.970Z",
+      "risicoScore": 40,
+      "titles": [
+        "Elasticsearch-indexen mogelijk zichtbaar"
+      ],
+      "findings": [
+        {
+          "id": "elastic-indices",
+          "check": "database",
+          "severity": "critical",
+          "title": "Elasticsearch-indexen mogelijk zichtbaar",
+          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+          "intern": "Passieve HTTP-check — geen poortscan.",
+          "evidence": "https://saelektroexperts.nl/"
+        }
+      ]
+    },
+    {
+      "url": "https://loodgieterskwartier.nl/",
+      "bedrijf": "Loodgieterskwartier",
+      "plaats": "Rijswijk",
+      "reportId": "d55c372ed7e5",
+      "scannedAt": "2026-07-07T07:38:47.761Z",
+      "risicoScore": 100,
+      "titles": [
+        "Elasticsearch-indexen mogelijk zichtbaar",
+        ".env mogelijk downloadbaar",
+        ".env.local mogelijk downloadbaar",
+        ".env.production mogelijk downloadbaar",
+        "Config-backup mogelijk open"
+      ],
+      "findings": [
+        {
+          "id": "elastic-indices",
+          "check": "database",
+          "severity": "critical",
+          "title": "Elasticsearch-indexen mogelijk zichtbaar",
+          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+          "intern": "Passieve HTTP-check — geen poortscan.",
+          "evidence": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "id": "env-exposed",
+          "check": "datalek",
+          "severity": "critical",
+          "title": ".env mogelijk downloadbaar",
+          "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+          "intern": "Direct escaleren — Website Veilig.",
+          "evidence": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "id": "env-local",
+          "check": "datalek",
+          "severity": "critical",
+          "title": ".env.local mogelijk downloadbaar",
+          "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+          "intern": "Direct escaleren — Website Veilig.",
+          "evidence": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "id": "env-prod",
+          "check": "datalek",
+          "severity": "critical",
+          "title": ".env.production mogelijk downloadbaar",
+          "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+          "intern": "Direct escaleren — Website Veilig.",
+          "evidence": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "id": "config-bak",
+          "check": "datalek",
+          "severity": "critical",
+          "title": "Config-backup mogelijk open",
+          "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+          "intern": "Direct escaleren — Website Veilig.",
+          "evidence": "https://loodgieterskwartier.nl/"
+        }
+      ]
+    },
+    {
+      "url": "https://klompelektrotechniek.nl/",
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "reportId": "ec2d0042034c",
+      "scannedAt": "2026-07-07T07:38:33.446Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://web3.hostingcp.eu/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.finish-profiles.nl/",
+      "bedrijf": "Finish Profiles",
+      "plaats": "Purmerend",
+      "reportId": "6732bd8e5565",
+      "scannedAt": "2026-07-07T07:38:26.595Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://finish-profiles.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://finish-profiles.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://finish-profiles.nl/pma/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://finish-profiles.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://firmavanrijn.nl/",
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "reportId": "86dde731b1e4",
+      "scannedAt": "2026-07-07T07:38:11.815Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.bwstyling.nl/",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "reportId": "49aba6bb1a63",
+      "scannedAt": "2026-07-07T07:38:12.758Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.bwstyling.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.bwstyling.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.bwstyling.nl/pma/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.bwstyling.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.textilia-dordrecht.nl/",
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "reportId": "2bf236f50a7b",
+      "scannedAt": "2026-07-07T07:38:11.515Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.voordeelgordijnen.nl/",
+      "bedrijf": "Voordeelgordijnen",
+      "plaats": "Amsterdam",
+      "reportId": "e362535e17f6",
+      "scannedAt": "2026-07-07T07:38:08.086Z",
+      "risicoScore": 40,
+      "titles": [
+        ".env mogelijk downloadbaar"
+      ],
+      "findings": [
+        {
+          "id": "env-exposed",
+          "check": "datalek",
+          "severity": "critical",
+          "title": ".env mogelijk downloadbaar",
+          "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+          "intern": "Direct escaleren — Website Veilig.",
+          "evidence": "https://www.voordeelgordijnen.nl/.env"
+        }
+      ]
+    },
+    {
+      "url": "https://chargecars.nl/",
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "reportId": "d3536446812f",
+      "scannedAt": "2026-07-07T07:37:55.046Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://chargecars.nl/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
+      "bedrijf": "Ambiance zonwering",
+      "plaats": "De Bilt",
+      "reportId": "c2d3cc1f8cbf",
+      "scannedAt": "2026-07-07T07:38:06.061Z",
+      "risicoScore": 40,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.amer-hout.nl/",
+      "bedrijf": "Amer Houttechniek",
+      "plaats": "Amersfoort",
+      "reportId": "dd78e57b812d",
+      "scannedAt": "2026-07-07T07:38:04.500Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.schreuderschilderwerken.nl/",
+      "bedrijf": "Schreuder Glas- en Schilderwerken",
+      "plaats": "Noordwijk",
+      "reportId": "4fccd84bc7e1",
+      "scannedAt": "2026-07-07T07:37:58.146Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.schreuderschilderwerken.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.schreuderschilderwerken.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.schreuderschilderwerken.nl/pma/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.schreuderschilderwerken.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.jwfborn.nl/",
+      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
+      "plaats": "Amstelveen",
+      "reportId": "cf629bfb83b6",
+      "scannedAt": "2026-07-07T07:37:56.224Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.jwfborn.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.jwfborn.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.jwfborn.nl/pma/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.jwfborn.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "reportId": "1c2376857c87",
+      "scannedAt": "2026-07-07T07:37:59.366Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.dreumel.nl/",
+      "bedrijf": "Dreumel",
+      "plaats": "'s-Gravenhage",
+      "reportId": "02a3c62e62d4",
+      "scannedAt": "2026-07-07T07:37:59.092Z",
+      "risicoScore": 40,
+      "titles": [
+        "Elasticsearch-indexen mogelijk zichtbaar"
+      ],
+      "findings": [
+        {
+          "id": "elastic-indices",
+          "check": "database",
+          "severity": "critical",
+          "title": "Elasticsearch-indexen mogelijk zichtbaar",
+          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+          "intern": "Passieve HTTP-check — geen poortscan.",
+          "evidence": "https://www.dreumel.nl/404"
+        }
+      ]
+    },
+    {
+      "url": "https://verzijlbv.nl/",
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "plaats": "Nieuw-Lekkerland",
+      "reportId": "7d32e5ce9787",
+      "scannedAt": "2026-07-07T07:37:46.831Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://verzijlbv.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://verzijlbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://verzijlbv.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ambiance-zonwering.nl/heko-becewe",
+      "bedrijf": "Ambiance Heko-Becewe",
+      "plaats": "Amsterdam",
+      "reportId": "dec1c3541b87",
+      "scannedAt": "2026-07-07T07:37:53.417Z",
+      "risicoScore": 40,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "reportId": "cb76ce138bc5",
+      "scannedAt": "2026-07-07T07:37:41.648Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "url": "https://decorette.nl/winkels/nieuw-vennep",
+      "bedrijf": "Decorette",
+      "plaats": "Nieuw-Vennep",
+      "reportId": "47cfe84cc8f4",
+      "scannedAt": "2026-07-07T07:37:49.143Z",
+      "risicoScore": 40,
+      "titles": [
+        "Elasticsearch-indexen mogelijk zichtbaar"
+      ],
+      "findings": [
+        {
+          "id": "elastic-indices",
+          "check": "database",
+          "severity": "critical",
+          "title": "Elasticsearch-indexen mogelijk zichtbaar",
+          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+          "intern": "Passieve HTTP-check — geen poortscan.",
+          "evidence": "https://decorette.nl/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.suntec-zonwering.nl/",
+      "bedrijf": "Suntec zonwering",
+      "plaats": "'s-Gravenhage",
+      "reportId": "6888507d0d7c",
+      "scannedAt": "2026-07-07T07:37:46.264Z",
+      "risicoScore": 40,
+      "titles": [
+        "Adminer mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_adminer.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "Adminer mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.suntec-zonwering.nl/adminer.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.ejvandermeer.nl/",
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "reportId": "5424b2313def",
+      "scannedAt": "2026-07-07T07:37:38.760Z",
+      "risicoScore": 80,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.ejvandermeer.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.ejvandermeer.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.boselektrotechniek.nl/",
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "reportId": "e2b94249c285",
+      "scannedAt": "2026-07-07T07:37:37.701Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "url": "https://vogelaarschilder.nl/",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "reportId": "d8987ac955c8",
+      "scannedAt": "2026-07-07T07:37:24.610Z",
+      "risicoScore": 80,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.decorgordijn.nl/",
+      "bedrijf": "Decor Gordijn",
+      "plaats": "Leiden",
+      "reportId": "ec27b9f2d9e9",
+      "scannedAt": "2026-07-07T07:36:53.337Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.decorgordijn.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.decorgordijn.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.decorgordijn.nl/pma/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.decorgordijn.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://mksschilderwerken.nl/",
+      "bedrijf": "Mks schilderwerken",
+      "plaats": "Houten",
+      "reportId": "940bd317871f",
+      "scannedAt": "2026-07-07T07:36:24.521Z",
+      "risicoScore": 40,
+      "titles": [
+        "Elasticsearch-indexen mogelijk zichtbaar"
+      ],
+      "findings": [
+        {
+          "id": "elastic-indices",
+          "check": "database",
+          "severity": "critical",
+          "title": "Elasticsearch-indexen mogelijk zichtbaar",
+          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+          "intern": "Passieve HTTP-check — geen poortscan.",
+          "evidence": "https://mksschilderwerken.nl/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.blygold.nl/",
+      "bedrijf": "Blygold",
+      "plaats": "Houten",
+      "reportId": "fac607ec508f",
+      "scannedAt": "2026-07-07T07:36:10.051Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.blygold.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.blygold.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.blygold.nl/pma/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.blygold.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://www.keyzerbv.nl/",
+      "bedrijf": "Installatiebedrijf Keyzer",
+      "plaats": "Den Hoorn",
+      "reportId": "7cb3690b73a7",
+      "scannedAt": "2026-07-07T07:35:14.190Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://keyzerbv.nl/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kroon-interieurbouw.nl/",
+      "bedrijf": "Kroon interieurbouw",
+      "plaats": "De Meern",
+      "reportId": "d0419394d0db",
+      "scannedAt": "2026-07-07T07:35:09.912Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.kroon-interieurbouw.nl/phpmyadmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.kroon-interieurbouw.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.kroon-interieurbouw.nl/pma/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://pruisschilderwerken.nl/",
+      "bedrijf": "Pruis Schilderwerken",
+      "plaats": "Amersfoort",
+      "reportId": "13c475feed67",
+      "scannedAt": "2026-07-07T07:34:32.409Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://server-alfa.heroo.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://server-alfa.heroo.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://server-alfa.heroo.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://server-alfa.heroo.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "url": "https://vanwichenbv.nl/",
+      "bedrijf": "T.B. van Wichen",
+      "plaats": "'s-Gravenhage",
+      "reportId": "207fbcd9b13c",
+      "scannedAt": "2026-07-07T07:34:21.706Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://vanwichenbv.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://vanwichenbv.nl/phpMyAdmin/"
+        }
+      ]
+    }
+  ]
 }

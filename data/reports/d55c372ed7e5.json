@@ -1,0 +1,74 @@
+{
+  "id": "d55c372ed7e5",
+  "url": "https://loodgieterskwartier.nl/",
+  "bedrijf": "Loodgieterskwartier",
+  "plaats": "Rijswijk",
+  "scannedAt": "2026-07-07T07:38:47.761Z",
+  "risicoScore": 100,
+  "niveau": "kritiek",
+  "niveauLabel": "Kritiek",
+  "klantBullets": [
+    "Bedrijfsdata kan via internet benaderbaar zijn.",
+    "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+    "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+    "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+    "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen."
+  ],
+  "findings": [
+    {
+      "id": "elastic-indices",
+      "check": "database",
+      "severity": "critical",
+      "title": "Elasticsearch-indexen mogelijk zichtbaar",
+      "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+      "intern": "Passieve HTTP-check — geen poortscan.",
+      "evidence": "https://loodgieterskwartier.nl/"
+    },
+    {
+      "id": "env-exposed",
+      "check": "datalek",
+      "severity": "critical",
+      "title": ".env mogelijk downloadbaar",
+      "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+      "intern": "Direct escaleren — Website Veilig.",
+      "evidence": "https://loodgieterskwartier.nl/"
+    },
+    {
+      "id": "env-local",
+      "check": "datalek",
+      "severity": "critical",
+      "title": ".env.local mogelijk downloadbaar",
+      "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+      "intern": "Direct escaleren — Website Veilig.",
+      "evidence": "https://loodgieterskwartier.nl/"
+    },
+    {
+      "id": "env-prod",
+      "check": "datalek",
+      "severity": "critical",
+      "title": ".env.production mogelijk downloadbaar",
+      "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+      "intern": "Direct escaleren — Website Veilig.",
+      "evidence": "https://loodgieterskwartier.nl/"
+    },
+    {
+      "id": "config-bak",
+      "check": "datalek",
+      "severity": "critical",
+      "title": "Config-backup mogelijk open",
+      "klant": "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+      "intern": "Direct escaleren — Website Veilig.",
+      "evidence": "https://loodgieterskwartier.nl/"
+    }
+  ],
+  "verkoop": {
+    "dienst": "Website Veilig",
+    "slug": "website-veilig",
+    "prijs": "€299",
+    "prijsNum": 299,
+    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Loodgieterskwartier gedaan. Belangrijkste punt: Bedrijfsdata kan via internet benaderbaar zijn. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+  },
+  "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck.",
+  "scanMode": "leaks",
+  "leakHit": true
+}
