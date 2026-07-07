@@ -134,6 +134,8 @@ function plan(a) {
   }
 
   safe.push({ id: "sync-report-index", titel: "Rapport-index syncen", fn: "syncIndex" });
+  safe.push({ id: "consent-scrub", titel: "Toestemming opschonen (geen bulk/404)", fn: "consentScrub" });
+  safe.push({ id: "sanitize-leak-hits", titel: "Leak-hits sanitizen (actionable-only)", fn: "sanitizeHits" });
 
   if (a.leadsTotaal < 25 && a.leadsAge > 72) {
     safe.push({ id: "run-lead-hunter", titel: "Lead Hunter (weinig leads)", fn: "runLeads", zwaar: true });
@@ -187,6 +189,8 @@ function purgeDemoQueue() {
 const SAFE_FNS = {
   purgeDemoQueue,
   syncIndex: () => runNode("scripts/security-scan/sync-index.mjs").ok,
+  consentScrub: () => runNpm("consent:scrub").ok,
+  sanitizeHits: () => runNpm("scan:sanitize-hits").ok,
   refreshOutreach: () => runNpm("agent:outreach").ok,
   runLeakScan: () => {
     process.env.VAKSCAN_LIMIT = "80";

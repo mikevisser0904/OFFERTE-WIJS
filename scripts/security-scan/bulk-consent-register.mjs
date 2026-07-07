@@ -29,6 +29,16 @@ function besteEvidence(findings) {
 }
 
 function main() {
+  if (process.env.CONFIRM_BULK_CONSENT !== "1") {
+    console.error(
+      "Bulk-toestemming is uitgeschakeld (misleidend zonder echte ref per klant).\n" +
+        "Voeg handmatig toe in data/scan-toestemming.json met individualConsent: true,\n" +
+        "of draai alleen opruimen: npm run consent:scrub\n" +
+        "Expliciet bulk (niet aanbevolen): CONFIRM_BULK_CONSENT=1 npm run consent:bulk",
+    );
+    process.exit(1);
+  }
+
   const storePath = join(root, "data/scan-toestemming.json");
   const store = load(storePath, { entries: [] });
   const byHost = new Map((store.entries || []).map((e) => [hostKey(e.siteUrl), e]));
@@ -86,7 +96,8 @@ function main() {
     entries: [...byHost.values()],
   };
   writeFileSync(storePath, JSON.stringify(out, null, 2));
-  console.log(`Toestemming: ${out.entries.length} actief (${added} nieuw, ${updated} evidence bijgewerkt)`);
+  const active = out.entries.filter((e) => e.status === "active").length;
+  console.log(`Toestemming: ${out.entries.length} entries, ${active} actief (${added} nieuw, ${updated} evidence bijgewerkt)`);
   console.log(`consentRef: ${CONSENT_REF.slice(0, 80)}…`);
 }
 

@@ -149,10 +149,17 @@ Als de klant **schriftelijk/mail/WhatsApp** akkoord geeft:
 
 **Nooit:** brute force, massa-inlog zonder register, wachtwoorden in git, claimen “wij zaten in uw admin” zonder geregistreerde toestemming.
 
-Bulk toestemming + passief database-profiel (geen rijen/scrape via inlog):
+Toestemming opschonen (revoke bulk/404 zonder echte ref):
 
 ```bash
-npm run consent:bulk
+npm run consent:scrub
+MIKE_TOESTEMMING=1 CONSENT_REF="WhatsApp — eigenaar akkoord VakScan" npm run consent:activate
+```
+
+Handmatig per klant: `individualConsent: true` in `data/scan-toestemming.json`. Bulk-register is **uit** tenzij expliciet:
+
+```bash
+CONFIRM_BULK_CONSENT=1 npm run consent:bulk   # niet aanbevolen
 KLANTEN_LEK_LIMIT=184 npm run lead:database   # panels, .env-meta, SQL-dump-tabelnamen
 npm run scan:consent && npm run lead:berichten
 ```

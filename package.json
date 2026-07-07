@@ -30,6 +30,8 @@
     "scan:sanitize-hits": "node scripts/security-scan/sanitize-leak-hits.mjs",
     "test:vakscan-detect": "node --test scripts/security-scan/admin-panel-detect.test.mjs",
     "consent:bulk": "node scripts/security-scan/bulk-consent-register.mjs",
+    "consent:scrub": "node scripts/security-scan/consent-scrub.mjs",
+    "consent:activate": "node scripts/security-scan/consent-activate-owner.mjs",
     "lead:database": "node scripts/agents/klanten-lek/run.mjs",
     "scan:import": "node scripts/security-scan/import-queue.mjs",
     "lead:hunt": "node scripts/lead-hunter/run.mjs",

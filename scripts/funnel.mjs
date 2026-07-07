@@ -41,6 +41,19 @@ if (withKlantenLek) {
   steps.push({ id: "vakscan-leaks", ok: step("3 VakScan leaks", "npm", ["run", "agent:vakscan-leaks"]) });
 }
 
+const rebuildLimit = light ? "40" : "120";
+steps.push({
+  id: "actionable-hits",
+  ok: step(
+    "3b Actionable leak-hits",
+    "node",
+    ["scripts/security-scan/rebuild-leak-hits.mjs"],
+    { REBUILD_LIMIT: rebuildLimit, REBUILD_CONCURRENCY: "4" },
+  ),
+});
+steps.push({ id: "sanitize-hits", ok: step("3c Sanitize leak-hits", "npm", ["run", "scan:sanitize-hits"]) });
+steps.push({ id: "consent-scrub", ok: step("3d Consent scrub", "npm", ["run", "consent:scrub"]) });
+
 steps.push({ id: "score", ok: step("4 Lead score refresh", "node", ["scripts/lead-hunter/enrich-score.mjs"]) });
 steps.push({ id: "contact", ok: step("4b Contact + verkooptekst", "node", ["scripts/lead-hunter/grab-contact.mjs"]) });
 steps.push({ id: "berichten", ok: step("4c Persoonlijke schrik-berichten", "node", ["scripts/lead-hunter/personalize-verkoop.mjs"]) });

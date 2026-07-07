@@ -6,7 +6,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, copyFileSync, mkd
 import { join } from "path";
 import { fileURLToPath } from "url";
 import { haalAdminBewijs } from "./admin-proof.mjs";
-import { getActiveConsent, hostKey } from "../security-scan/consent-registry.mjs";
+import { getActiveConsent, hostKey, consentIsVerifiable } from "../security-scan/consent-registry.mjs";
 
 const root = process.cwd();
 
@@ -255,7 +255,8 @@ async function main() {
       ? [proof.magClaimen, proof.zichtbaar]
       : actionableOnly.slice(0, 2).map((f) => f.klant || f.title);
 
-    const consent = getActiveConsent(k.url);
+    const rawConsent = getActiveConsent(k.url);
+    const consent = consentIsVerifiable(rawConsent) ? rawConsent : null;
     const consentDeep = consent ? laadConsentDeep(k.url) : null;
     const dbRow =
       proof?.ok && dbExportMap.get(hostKey(k.url))?.panelUrl ? dbExportMap.get(hostKey(k.url)) : null;
@@ -300,12 +301,14 @@ async function main() {
   klanten.sort((a, b) => (Number(b.risicoScore) || 0) - (Number(a.risicoScore) || 0));
 
   const metProof = klanten.filter((k) => k.adminProof?.ok).length;
+  const metScanFeiten = klanten.filter((k) => !k.uitgesloten && k.adminProof?.ok && k.verkoopBericht).length;
 
   const out = {
     ...store,
     generatedAt: new Date().toISOString(),
     metPersoonlijkBericht: klanten.length,
     metAdminBewijs: metProof,
+    metScanFeiten,
     ethisch: ETHICAL,
     klanten,
   };
@@ -315,7 +318,7 @@ async function main() {
   copyFileSync(inPath, join(root, "public/echte-klanten.json"));
 
   const exportTxt = klanten
-    .filter((k) => k.heeftScan && k.bewijsUrl)
+    .filter((k) => k.adminProof?.ok && k.verkoopBericht)
     .slice(0, 40)
     .map((k) => `=== ${k.bedrijf} | ${k.telefoon || k.email} ===\n${k.verkoopBericht}\n`)
     .join("\n---\n\n");

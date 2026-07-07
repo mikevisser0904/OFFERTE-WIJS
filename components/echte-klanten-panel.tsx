@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { publicAssetUrl } from "@/lib/github-pages-base";
+import { publicAssetPath, publicAssetUrl } from "@/lib/github-pages-base";
 
 type EchteKlant = {
   bedrijf: string;
@@ -21,7 +21,7 @@ type EchteKlant = {
   verkoopKort?: string;
   whatsappSchrik?: string | null;
   bewijsUrl?: string | null;
-  adminProof?: { adminType?: string; zichtbaar?: string };
+  adminProof?: { ok?: boolean; adminType?: string; zichtbaar?: string; url?: string };
   uitgesloten?: boolean;
   herstelBericht?: string;
 };
@@ -76,13 +76,13 @@ export function EchteKlantenPanel() {
           <p className="mt-1 text-xs text-rose-300/90">Niet inloggen. Wel: “uw voordeur staat open” + bewijs-URL.</p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <Link
-            href="/vandaag-bellen.csv"
+          <a
+            href={publicAssetPath("/vandaag-bellen.csv")}
             download="vandaag-bellen.csv"
             className="rounded-full border border-white/20 px-4 py-2 text-sm"
           >
             CSV
-          </Link>
+          </a>
           <Link href="/actie/" className="rounded-full bg-amber-500 px-5 py-2 text-sm font-bold text-black">
             Actie
           </Link>

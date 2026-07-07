@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "at": "2026-07-07T08:22:56.520Z",
+      "actie": "sanitize-leak-hits",
+      "titel": "Leak-hits sanitizen (actionable-only)",
+      "result": true
+    },
+    {
+      "at": "2026-07-07T08:22:56.386Z",
+      "actie": "consent-scrub",
+      "titel": "Toestemming opschonen (geen bulk/404)",
+      "result": false
+    },
+    {
+      "at": "2026-07-07T08:22:56.287Z",
+      "actie": "sync-report-index",
+      "titel": "Rapport-index syncen",
+      "result": true
+    },
+    {
       "at": "2026-07-07T08:08:49.919Z",
       "actie": "sync-report-index",
       "titel": "Rapport-index syncen",

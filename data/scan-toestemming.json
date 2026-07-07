@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T08:21:20.781Z",
+  "updatedAt": "2026-07-07T08:23:18.785Z",
   "uitleg": "individualConsent=true alleen na echte toestemming. auth-verify vereist scan-toestemming.local.json — geen klantdata-export.",
   "entries": [
     {
@@ -36,7 +36,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://saelektroexperts.nl",
@@ -47,7 +48,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.suntec-zonwering.nl",
@@ -58,7 +60,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.amer-hout.nl",
@@ -69,7 +72,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.kroon-interieurbouw.nl",
@@ -80,7 +84,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.textilia-dordrecht.nl",
@@ -91,7 +96,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.decorgordijn.nl",
@@ -102,7 +108,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.boselektrotechniek.nl",
@@ -113,7 +120,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.ejvandermeer.nl",
@@ -124,7 +132,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://rioolservice-pvanadrichem.nl",
@@ -135,7 +144,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://decorette.nl/winkels/nieuw-vennep",
@@ -146,7 +156,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://chargecars.nl",
@@ -157,7 +168,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://loodgieterskwartier.nl",
@@ -168,7 +180,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
@@ -179,7 +192,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://depagter.info",
@@ -190,7 +204,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.willemseelektrotechniek.nl",
@@ -201,7 +216,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://pruisschilderwerken.nl",
@@ -212,7 +228,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://mksschilderwerken.nl",
@@ -223,7 +240,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://verzijlbv.nl",
@@ -234,7 +252,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.finish-profiles.nl",
@@ -245,7 +264,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "http://timmerbedrijf-frank.nl",
@@ -1288,7 +1308,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://nuoveni.nl/",
@@ -1299,7 +1320,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.wonnink.nl/",
@@ -1310,7 +1332,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://klompelektrotechniek.nl/",
@@ -1321,7 +1344,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://vogelaarschilder.nl/",
@@ -1332,7 +1356,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.bwstyling.nl/",
@@ -1343,7 +1368,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.jwfborn.nl/",
@@ -1354,7 +1380,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.voordeelgordijnen.nl/",
@@ -1379,7 +1406,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://hetinterieur.nl/",
@@ -1390,7 +1418,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.blygold.nl/",
@@ -1401,7 +1430,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.keyzerbv.nl/",
@@ -1412,7 +1442,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://vanwichenbv.nl/",
@@ -1423,7 +1454,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
     },
     {
       "siteUrl": "https://www.alx.nl",

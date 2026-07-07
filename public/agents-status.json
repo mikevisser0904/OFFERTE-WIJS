@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T08:18:14.511Z",
+  "updatedAt": "2026-07-07T08:23:23.189Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T08:18:14.511Z",
+      "lastRun": "2026-07-07T08:22:55.579Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 15,
@@ -18,7 +18,8 @@
       "lastRun": "2026-07-07T08:08:57.220Z",
       "fase": "verkopen",
       "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
-      "mikeActie": "15 contacten wachten op /agents/"
+      "mikeActie": "15 contacten wachten op /agents/",
+      "optimizerHint": "optimizer: metrics bijgewerkt — manager check"
     },
     "health-monitor": {
       "lastRun": "2026-07-07T07:31:25.463Z",
@@ -41,20 +42,20 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-07T08:08:49.924Z",
+      "lastRun": "2026-07-07T08:22:56.520Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 1,
+      "safeDone": 3,
       "wachtrijPending": 1
     },
     "data-flow": {
-      "lastRun": "2026-07-07T08:00:56.530Z",
+      "lastRun": "2026-07-07T08:23:23.189Z",
       "ok": true,
       "healthy": true,
       "streams": 22,
       "drift": 0,
       "synced": 0,
-      "agentPrompt": "22 streams OK · queue 0 pending · 37 lekken",
+      "agentPrompt": "22 streams OK · queue 0 pending · 1 lekken",
       "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "klanten-lek": {
@@ -194,6 +195,7 @@
         "detail": "Eén keten: dataflow → leads → scan → outreach → manager",
         "lastRun": null
       }
-    ]
+    ],
+    "optimizerHint": "optimizer: metrics bijgewerkt — manager check"
   }
 }

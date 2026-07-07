@@ -53,3 +53,15 @@ export function consentAllows(siteUrl, scope) {
   const scopes = entry.scope || ["passive-deep"];
   return scopes.includes(scope);
 }
+
+const BULK_CONSENT_SNIPPET = "bundeltoestemming";
+
+/** Alleen echte schriftelijke ref — geen bulk-register zonder individualConsent. */
+export function consentIsVerifiable(consent) {
+  if (!consent || consent.status !== "active") return false;
+  if (!consent.evidenceUrl || String(consent.evidenceUrl).includes("/404")) return false;
+  if (consent.individualConsent) return true;
+  const ref = (consent.consentRef || "").toLowerCase();
+  if (ref.includes(BULK_CONSENT_SNIPPET) || consent.bulkGenerated) return false;
+  return true;
+}

@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-07T08:08:49.924Z",
+  "updatedAt": "2026-07-07T08:22:56.520Z",
   "agent": "optimizer",
   "applyMode": true,
   "metrics": {
     "pending": 0,
-    "leakCount": 37,
+    "leakCount": 1,
     "outreachCount": 15,
     "leadsTotaal": 184,
     "hitRate": 17.5,
@@ -15,6 +15,20 @@
       "id": "sync-report-index",
       "titel": "Rapport-index syncen",
       "fn": "syncIndex",
+      "status": "ok",
+      "result": true
+    },
+    {
+      "id": "consent-scrub",
+      "titel": "Toestemming opschonen (geen bulk/404)",
+      "fn": "consentScrub",
+      "status": "ok",
+      "result": false
+    },
+    {
+      "id": "sanitize-leak-hits",
+      "titel": "Leak-hits sanitizen (actionable-only)",
+      "fn": "sanitizeHits",
       "status": "ok",
       "result": true
     }
