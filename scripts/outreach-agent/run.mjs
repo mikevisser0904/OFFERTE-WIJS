@@ -4,6 +4,7 @@
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join } from "path";
+import { spawnSync } from "child_process";
 import { patchAgent } from "../agents/patch-status.mjs";
 
 const ROOT = join(import.meta.dirname, "../..");
@@ -37,6 +38,7 @@ function whatsappKoud(bedrijf) {
 }
 
 function scoreItem(item) {
+  if (item.type === "bewijs" || item.bron === "verkoop-bewijs") return 2000 + (item.risicoScore || 0);
   if (item.leakHit || item.type === "lek") return 1000 + (item.risicoScore || 0);
   if (item.risicoScore >= 60) return 500 + item.risicoScore;
   if (item.risicoScore >= 35) return 200 + item.risicoScore;
@@ -56,6 +58,15 @@ async function notify(title, body) {
 }
 
 async function main() {
+  if (process.env.SKIP_VERKOOP_BEWIJS !== "1") {
+    spawnSync("node", ["scripts/verkoop-bewijs-agent/run.mjs", "--from-outreach"], {
+      cwd: ROOT,
+      stdio: "inherit",
+      timeout: 900_000,
+    });
+  }
+
+  const verkoopBewijs = load(join(ROOT, "data/verkoop-vandaag.json"), { vandaag: [] });
   const hits = load(join(ROOT, "data/leak-hits.json"), { hits: [] });
   const reports = load(join(ROOT, "public/reports/index.json"), []);
   const queue = load(join(ROOT, "data/scan-queue.json"), { items: [] });
@@ -98,7 +109,7 @@ async function main() {
     const host = hostOf(c.url);
     if (!key || !host || isDemoOrTestUrl(c.url) || seenUrls.has(key) || seenHosts.has(host)) return;
     if (blockedHosts.has(host)) return;
-    if (filterPmaSterk && !isSterkPmaSite(c.url)) return;
+    if (filterPmaSterk && c.type !== "bewijs" && !isSterkPmaSite(c.url)) return;
     const sterk = sterkMeta(c.url);
     if (sterk) {
       c.pmaLoginUrl = sterk.loginUrl;
@@ -119,6 +130,28 @@ async function main() {
     seenUrls.add(key);
     seenHosts.add(host);
     candidates.push(c);
+  }
+
+  for (const v of verkoopBewijs.vandaag || []) {
+    pushCandidate({
+      type: "bewijs",
+      prioriteit: 0,
+      bedrijf: v.bedrijf,
+      plaats: v.plaats,
+      url: v.url,
+      risicoScore: v.risicoScore,
+      reden: `Live bewijs: ${v.adminProof?.adminType || "admin"} HTTP ${v.scanBewijs?.httpStatus ?? "?"}`,
+      actie: "Website Veilig €299 — BEWIJS-blok + scherm delen",
+      whatsapp: v.verkoopKort || (v.verkoopBericht || "").slice(0, 500),
+      whatsappUrl: v.whatsappUrl || undefined,
+      telefoon: v.telefoon || undefined,
+      reportId: v.reportId,
+      verkoopBericht: v.verkoopBericht,
+      controleUrl: v.controleUrl,
+      rapportUrl: v.rapportUrl,
+      scanBewijs: v.scanBewijs,
+      bron: "verkoop-bewijs",
+    });
   }
 
   if (filterPmaSterk) {

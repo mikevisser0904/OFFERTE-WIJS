@@ -1,24 +1,24 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T10:53:30.530Z",
+  "updatedAt": "2026-07-07T11:03:47.263Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T10:33:05.829Z",
+      "lastRun": "2026-07-07T11:03:46.627Z",
       "ok": true,
-      "contactenVandaag": 6,
-      "lekkenEerst": 6,
-      "agentPrompt": "Outreach: 6 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
+      "contactenVandaag": 15,
+      "lekkenEerst": 3,
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (Live bewijs: phpMyAdmin HTTP 200)",
       "top3": [
-        "Bos Elektrotechniek: phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/)",
-        "Burggraeve Woonstyling: phpMyAdmin-login op eigen domein (https://www.bwstyling.nl/phpmyadmin/)",
-        "ChargeCars: phpMyAdmin-login op eigen domein (https://chargecars.nl/phpMyAdmin/)"
+        "Firma Fred van Rijn: Live bewijs: phpMyAdmin HTTP 200",
+        "Textilia: Live bewijs: phpMyAdmin HTTP 200",
+        "Reinaerde Remake Meubel: Live bewijs: phpMyAdmin HTTP 200"
       ]
     },
     "manager": {
-      "lastRun": "2026-07-07T10:53:30.529Z",
+      "lastRun": "2026-07-07T11:03:47.262Z",
       "fase": "verkopen",
-      "grokPrompt": "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/",
-      "mikeActie": "Plak gig op fiverr.com + Marktplaats-advertentie van /fiverr/ (bovenaan op de pagina)"
+      "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+      "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
     },
     "health-monitor": {
       "lastRun": "2026-07-07T10:53:28.556Z",
@@ -86,26 +86,34 @@
       "consentProofOk": 13,
       "agentPrompt": "13 verified · 13 consent OK · 2 failed recheck",
       "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+    },
+    "verkoop-bewijs": {
+      "lastRun": "2026-07-07T11:03:42.882Z",
+      "ok": true,
+      "contactenVandaag": 12,
+      "metBewijs": 16,
+      "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
+      "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+      "top3": [
+        "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
+        "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
+        "Reinaerde Remake Meubel · https://s246.webhostingserver.nl/phpMyAdmin/"
+      ]
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T10:53:30.529Z",
+    "updatedAt": "2026-07-07T11:03:47.262Z",
     "agent": "manager",
     "fase": "verkopen",
-    "faseLabel": "€0 start — Fiverr & Marktplaats",
+    "faseLabel": "Verkoop-bewijs klaar",
     "prioriteit": 1,
-    "grokPrompt": "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/",
-    "mikeActie": "Plak gig op fiverr.com + Marktplaats-advertentie van /fiverr/ (bovenaan op de pagina)",
+    "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+    "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen",
     "acties": [
       {
         "wie": "mike",
-        "actie": "Fiverr + Marktplaats live",
-        "script": "/fiverr/"
-      },
-      {
-        "wie": "mike",
-        "actie": "Warm netwerk (1 bericht)",
-        "script": "docs/ZERO-START.md"
+        "actie": "5 contacten met bewijs",
+        "script": "/dashboard/"
       }
     ],
     "cards": [
@@ -134,7 +142,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 372ms",
+        "detail": "OK 84ms",
         "lastRun": "2026-07-07T10:53:28.556Z"
       },
       {
@@ -187,11 +195,18 @@
         "lastRun": null
       },
       {
+        "id": "verkoop-bewijs",
+        "naam": "Verkoop-bewijs",
+        "status": "ok",
+        "detail": "12 met live bewijs",
+        "lastRun": "2026-07-07T11:03:42.882Z"
+      },
+      {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
-        "detail": "6 contacten",
-        "lastRun": "2026-07-07T10:33:05.829Z"
+        "detail": "15 contacten",
+        "lastRun": "2026-07-07T11:03:46.627Z"
       },
       {
         "id": "seo",

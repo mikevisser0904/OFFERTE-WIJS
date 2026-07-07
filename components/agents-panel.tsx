@@ -6,6 +6,8 @@ import {
   agentsRegistryUrl,
   agentsStatusUrl,
   outreachVandaagUrl,
+  verkoopVandaagUrl,
+  type VerkoopVandaag,
   potentieleKlantenUrl,
   managerStatusUrl,
   optimizerStatusUrl,
@@ -42,6 +44,7 @@ export function AgentsPanel() {
   const [registry, setRegistry] = useState<AgentRegistryEntry[]>([]);
   const [status, setStatus] = useState<AgentsStatus | null>(null);
   const [outreach, setOutreach] = useState<OutreachVandaag | null>(null);
+  const [verkoop, setVerkoop] = useState<VerkoopVandaag | null>(null);
   const [leads, setLeads] = useState<LeadsPayload | null>(null);
   const [manager, setManager] = useState<ManagerStatus | null>(null);
   const [optimizer, setOptimizer] = useState<OptimizerStatus | null>(null);
@@ -50,10 +53,11 @@ export function AgentsPanel() {
   const [copied, setCopied] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    const [reg, st, out, ld, mgr, opt, df, fn] = await Promise.all([
+    const [reg, st, out, vk, ld, mgr, opt, df, fn] = await Promise.all([
       fetch(agentsRegistryUrl()).then((r) => (r.ok ? r.json() : { agents: [] })),
       fetch(agentsStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(outreachVandaagUrl()).then((r) => (r.ok ? r.json() : null)),
+      fetch(verkoopVandaagUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(potentieleKlantenUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(managerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(optimizerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
@@ -63,6 +67,7 @@ export function AgentsPanel() {
     setRegistry(reg.agents || []);
     setStatus(st);
     setOutreach(out);
+    setVerkoop(vk);
     setLeads(ld);
     setManager(mgr);
     setOptimizer(opt);
@@ -81,6 +86,7 @@ export function AgentsPanel() {
   }
 
   const lh = status?.agents?.["lead-hunter"];
+  const vb = status?.agents?.["verkoop-bewijs"];
   const or = status?.agents?.outreach;
 
   const faseKleur =
@@ -258,6 +264,48 @@ export function AgentsPanel() {
         </div>
       </div>
 
+      <section className="rounded-2xl border border-amber-400/30 bg-amber-500/5 p-5">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-wider text-amber-200/80">Verkoop-bewijs agent</p>
+            <h2 className="text-lg font-semibold text-white">
+              {verkoop?.vandaag?.length ?? vb?.contactenVandaag ?? "—"} klanten met live bewijs
+            </h2>
+            <p className="mt-1 text-sm text-white/55">{verkoop?.grokPrompt ?? vb?.agentPrompt ?? "npm run agent:verkoop-bewijs"}</p>
+          </div>
+          <Link href="/dashboard/" className="rounded-lg bg-amber-500/25 px-4 py-2 text-sm font-medium text-amber-100">
+            Dashboard
+          </Link>
+        </div>
+        <ul className="space-y-2">
+          {(verkoop?.vandaag || []).slice(0, 6).map((v) => (
+            <li key={v.url} className="rounded-lg border border-white/10 bg-black/25 px-3 py-2 text-sm">
+              <span className="font-medium">{v.bedrijf}</span>
+              {v.controleUrl && (
+                <a href={v.controleUrl} target="_blank" rel="noreferrer" className="ml-2 text-xs text-amber-300 hover:underline">
+                  controle-URL
+                </a>
+              )}
+              {v.rapportUrl && (
+                <a href={v.rapportUrl} target="_blank" rel="noreferrer" className="ml-2 text-xs text-sky-300 hover:underline">
+                  rapport
+                </a>
+              )}
+              {v.grokTaak && (
+                <button
+                  type="button"
+                  onClick={() => copy(v.grokTaak!, `vb-${v.url}`)}
+                  className="ml-2 rounded bg-violet-500/20 px-2 py-0.5 text-xs text-violet-200"
+                >
+                  {copied === `vb-${v.url}` ? "Grok-taak ✓" : "Grok-taak"}
+                </button>
+              )}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 font-mono text-[10px] text-white/35">npm run agent:verkoop-bewijs · skill verkoop-bewijs-agent</p>
+      </section>
+
       <section>
         <div className="mb-3 flex items-center justify-between">
           <h2 className="text-lg font-semibold">Outreach — bel/WhatsApp vandaag</h2>
@@ -279,6 +327,11 @@ export function AgentsPanel() {
                 {c.plaats && <span className="text-sm text-white/40">{c.plaats}</span>}
               </div>
               <p className="mt-1 text-sm text-white/55">{c.reden}</p>
+              {"controleUrl" in c && c.controleUrl && (
+                <a href={String(c.controleUrl)} target="_blank" rel="noreferrer" className="text-xs text-amber-300 hover:underline">
+                  {String(c.controleUrl)}
+                </a>
+              )}
               <p className="text-xs text-emerald-300/80">{c.actie}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {c.whatsappUrl ? (
@@ -312,7 +365,7 @@ export function AgentsPanel() {
       </section>
 
       <p className="text-xs text-white/35">
-        Skills: <code>manager-agent</code> · <code>lead-hunter</code> · <code>outreach-agent</code>
+        Skills: <code>verkoop-bewijs-agent</code> · <code>outreach-agent</code> · <code>manager-agent</code>
       </p>
     </div>
   );

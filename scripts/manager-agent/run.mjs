@@ -51,6 +51,7 @@ function collect() {
   const queue = load(join(ROOT, "data/scan-queue.json"), { items: [] });
   const leaks = load(join(ROOT, "data/leak-hits.json"), { hits: [] });
   const outreach = load(join(ROOT, "data/outreach-vandaag.json"), { vandaag: [] });
+  const verkoopBewijs = load(join(ROOT, "data/verkoop-vandaag.json"), { vandaag: [] });
   const leads = load(join(ROOT, "data/potentiele-klanten.json"), { totaal: 0 });
   const wachtrij = load(join(ROOT, "data/maarten-wachtrij.json"), { ideeen: [] });
   const optimizer = load(join(ROOT, "data/optimizer-status.json"), {});
@@ -78,9 +79,12 @@ function collect() {
     queuePending,
     leakCount,
     outreachCount,
+    verkoopBewijsCount: (verkoopBewijs.vandaag || []).length,
+    verkoopBewijsAge: hoursSince(verkoopBewijs.generatedAt),
     leadsTotaal,
     lh,
     or,
+    vb: agents.agents?.["verkoop-bewijs"],
     scanStale,
     outreachAge: hoursSince(outreach.generatedAt),
     leadsAge: hoursSince(leads.generatedAt),
@@ -135,14 +139,25 @@ function decide(s) {
     acties.push({ wie: "grok", actie: "Outreach na klanten-lek", script: "npm run agent:outreach" });
   }
 
+  if (s.verkoopBewijsCount > 0 && s.verkoopBewijsAge > 24) {
+    acties.push({ wie: "grok", actie: "Verkoop-bewijs verversen", script: "npm run agent:verkoop-bewijs" });
+  }
+
   if (s.leakCount > 0 && s.outreachAge > 12) {
     fase = "verkopen";
     faseLabel = "Lekken — verkopen!";
     prioriteit = Math.min(prioriteit, 3);
-    grokPrompt = `agent outreach — ${s.leakCount} database-lek(ken), lijst verversen`;
-    mikeActie = `${s.leakCount} lek(ken): open /agents/ → WhatsApp → Website Veilig €299`;
-    acties.push({ wie: "grok", actie: "Outreach verversen", script: "npm run agent:outreach" });
-    acties.push({ wie: "mike", actie: "Bel/WhatsApp top 3 uit outreach", script: "/agents/" });
+    grokPrompt = `agent verkoop-bewijs + outreach — ${s.leakCount} lek(ken), bewijs-first`;
+    mikeActie = `${s.leakCount} lek(ken): /dashboard/ bewijs → /agents/ WhatsApp → €299`;
+    acties.push({ wie: "grok", actie: "Verkoop-bewijs + outreach", script: "npm run agent:outreach" });
+    acties.push({ wie: "mike", actie: "Bel top 3 met BEWIJS-blok", script: "/agents/" });
+  } else if (s.verkoopBewijsCount > 0 && fase !== "bouw" && process.env.VAKSCAN_SALES !== "0") {
+    fase = "verkopen";
+    faseLabel = "Verkoop-bewijs klaar";
+    prioriteit = Math.min(prioriteit, 3);
+    grokPrompt = s.vb?.grokPrompt || s.vb?.agentPrompt || `Verkoop-bewijs: ${s.verkoopBewijsCount} met live HTTP + scanrapport`;
+    mikeActie = `${s.verkoopBewijsCount} bewijs-klanten: /dashboard/ → controle-URL + rapport tonen`;
+    acties.push({ wie: "mike", actie: "5 contacten met bewijs", script: "/dashboard/" });
   } else if (s.outreachCount > 0 && fase !== "bouw" && process.env.VAKSCAN_SALES === "1") {
     fase = "verkopen";
     faseLabel = "Outreach klaar";
@@ -265,6 +280,10 @@ async function main() {
       if (a.id === "vakscan-leaks") {
         ok = s.leakCount > 0 || s.queuePending < 30;
         detail = `${s.leakCount} lekken · ${s.queuePending} pending`;
+      }
+      if (a.id === "verkoop-bewijs") {
+        ok = s.verkoopBewijsCount > 0;
+        detail = `${s.verkoopBewijsCount} met live bewijs`;
       }
       if (a.id === "outreach") {
         ok = s.outreachCount > 0;

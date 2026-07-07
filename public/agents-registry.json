@@ -123,10 +123,20 @@
       "trigger": ["volledige scan", "vakscan full"]
     },
     {
+      "id": "verkoop-bewijs",
+      "taak": "verkoop",
+      "naam": "Verkoop-bewijs",
+      "rol": "Bewijs-first verkoop: live HTTP-check, scanrapport, BEWIJS-berichten, verkoop-vandaag voor Mike/Grok",
+      "skill": ".grok/skills/verkoop-bewijs-agent/SKILL.md",
+      "script": "npm run agent:verkoop-bewijs",
+      "workflow": ".github/workflows/outreach-agent.yml",
+      "trigger": ["verkoop bewijs", "agent verkoop", "geen lucht", "bewijs aan klant"]
+    },
+    {
       "id": "outreach",
       "taak": "verkoop",
       "naam": "Outreach",
-      "rol": "Wie Mike vandaag belt/WhatsAppt",
+      "rol": "Wie Mike vandaag belt/WhatsAppt (na verkoop-bewijs)",
       "skill": ".grok/skills/outreach-agent/SKILL.md",
       "script": "npm run agent:outreach",
       "workflow": ".github/workflows/outreach-agent.yml",

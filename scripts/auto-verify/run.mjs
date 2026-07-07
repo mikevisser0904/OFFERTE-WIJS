@@ -102,6 +102,10 @@ async function main() {
 
   if (config.refreshBerichten !== false) {
     steps.push({ id: "lead-berichten", ...runNode("scripts/lead-hunter/personalize-verkoop.mjs") });
+    steps.push({
+      id: "verkoop-bewijs",
+      ...runNode("scripts/verkoop-bewijs-agent/run.mjs", ["--skip-berichten"]),
+    });
   }
 
   runNode("scripts/agents/data-flow/run.mjs");

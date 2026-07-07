@@ -1,21 +1,16 @@
 {
-  "updatedAt": "2026-07-07T10:53:30.529Z",
+  "updatedAt": "2026-07-07T11:03:47.262Z",
   "agent": "manager",
   "fase": "verkopen",
-  "faseLabel": "€0 start — Fiverr & Marktplaats",
+  "faseLabel": "Verkoop-bewijs klaar",
   "prioriteit": 1,
-  "grokPrompt": "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/",
-  "mikeActie": "Plak gig op fiverr.com + Marktplaats-advertentie van /fiverr/ (bovenaan op de pagina)",
+  "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+  "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen",
   "acties": [
     {
       "wie": "mike",
-      "actie": "Fiverr + Marktplaats live",
-      "script": "/fiverr/"
-    },
-    {
-      "wie": "mike",
-      "actie": "Warm netwerk (1 bericht)",
-      "script": "docs/ZERO-START.md"
+      "actie": "5 contacten met bewijs",
+      "script": "/dashboard/"
     }
   ],
   "cards": [
@@ -44,7 +39,7 @@
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 372ms",
+      "detail": "OK 84ms",
       "lastRun": "2026-07-07T10:53:28.556Z"
     },
     {
@@ -97,11 +92,18 @@
       "lastRun": null
     },
     {
+      "id": "verkoop-bewijs",
+      "naam": "Verkoop-bewijs",
+      "status": "ok",
+      "detail": "12 met live bewijs",
+      "lastRun": "2026-07-07T11:03:42.882Z"
+    },
+    {
       "id": "outreach",
       "naam": "Outreach",
       "status": "ok",
-      "detail": "6 contacten",
-      "lastRun": "2026-07-07T10:33:05.829Z"
+      "detail": "15 contacten",
+      "lastRun": "2026-07-07T11:03:46.627Z"
     },
     {
       "id": "seo",
@@ -128,7 +130,7 @@
   "snapshot": {
     "leakCount": 15,
     "queuePending": 0,
-    "outreachCount": 6,
+    "outreachCount": 15,
     "leadsTotaal": 184,
     "pendingMaarten": 0
   }

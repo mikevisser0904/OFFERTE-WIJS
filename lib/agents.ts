@@ -23,6 +23,9 @@ export type OutreachContact = {
   telefoon?: string;
   reportId?: string;
   verkoopBericht?: string;
+  controleUrl?: string;
+  rapportUrl?: string;
+  bron?: string;
 };
 
 export type FunnelStep = { id: string; ok: boolean };
@@ -66,6 +69,37 @@ export function agentsRegistryUrl() {
 
 export function outreachVandaagUrl() {
   return publicUrl("/outreach-vandaag.json");
+}
+
+export type VerkoopBewijsContact = {
+  bedrijf: string;
+  plaats: string;
+  url: string;
+  telefoon: string | null;
+  risicoScore: number;
+  controleUrl: string | null;
+  rapportUrl: string | null;
+  reportId: string | null;
+  verkoopKort?: string;
+  whatsappUrl?: string | null;
+  belScript?: string;
+  grokTaak?: string;
+  scanBewijs?: Record<string, unknown> | null;
+};
+
+export type VerkoopVandaag = {
+  generatedAt: string;
+  agent: string;
+  metAdminBewijs?: number;
+  totaalMetBewijs?: number;
+  vandaag: VerkoopBewijsContact[];
+  agentPrompt: string;
+  grokPrompt: string;
+  docs?: string;
+};
+
+export function verkoopVandaagUrl() {
+  return publicUrl("/verkoop-vandaag.json");
 }
 
 export function potentieleKlantenUrl() {

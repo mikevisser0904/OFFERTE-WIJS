@@ -7,10 +7,12 @@ description: Tweede sales-agent — prioriteert wie Mike vandaag belt/WhatsAppt 
 
 **Rol:** Mike hoeft niet te zoeken — jij levert een **gesorteerde bellen/WhatsApp-lijst**.
 
+**Eerst:** [verkoop-bewijs-agent](../verkoop-bewijs-agent/SKILL.md) — bewijs-first berichten + `verkoop-vandaag.json`. Outreach roept die agent automatisch aan.
+
 ## Run
 
 ```bash
-cd ~/Developer/OFFERTE-WIJS
+cd ~/Developer/offerte-wijs
 npm run agent:outreach
 ```
 
