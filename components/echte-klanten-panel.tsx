@@ -22,6 +22,8 @@ type EchteKlant = {
   whatsappSchrik?: string | null;
   bewijsUrl?: string | null;
   adminProof?: { adminType?: string; zichtbaar?: string };
+  uitgesloten?: boolean;
+  herstelBericht?: string;
 };
 
 export function EchteKlantenPanel() {
@@ -52,7 +54,8 @@ export function EchteKlantenPanel() {
     setTimeout(() => setCopied(null), 2000);
   }
 
-  const metSchrik = klanten.filter((k) => k.heeftScan && k.verkoopBericht);
+  const herstel = klanten.filter((k) => k.uitgesloten && k.herstelBericht);
+  const metSchrik = klanten.filter((k) => !k.uitgesloten && k.heeftScan && k.verkoopBericht);
 
   return (
     <section className="rounded-2xl border-2 border-amber-400/40 bg-gradient-to-br from-amber-500/15 to-rose-500/10 p-6">
@@ -87,6 +90,27 @@ export function EchteKlantenPanel() {
       <p className="mt-3 text-xs text-white/40">
         Vernieuwen na scan: <code className="text-white/55">npm run lead:berichten</code>
       </p>
+
+      {herstel.length > 0 && (
+        <div className="mt-4 rounded-xl border border-sky-400/30 bg-sky-500/10 p-4">
+          <p className="text-sm font-bold text-sky-200">Herstel na scan-fout ({herstel.length})</p>
+          <p className="mt-1 text-xs text-white/55">Kopieer excuus-bericht — geen lek-claim meer in outreach.</p>
+          <ul className="mt-3 space-y-2">
+            {herstel.map((k) => (
+              <li key={k.url} className="rounded-lg border border-white/10 bg-black/30 px-3 py-2 text-sm">
+                <span className="font-medium">{k.bedrijf}</span>
+                <button
+                  type="button"
+                  className="ml-3 rounded bg-sky-500/30 px-2 py-0.5 text-xs text-sky-100"
+                  onClick={() => copy(k.herstelBericht!, `herstel-${k.url}`)}
+                >
+                  {copied === `herstel-${k.url}` ? "Gekopieerd ✓" : "Excuus-tekst"}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <ul className="mt-5 max-h-[32rem] space-y-3 overflow-y-auto">
         {(metSchrik.length ? metSchrik : klanten).slice(0, 35).map((k) => {

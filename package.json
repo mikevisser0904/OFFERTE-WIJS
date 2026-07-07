@@ -35,6 +35,7 @@
     "lead:contact": "node scripts/lead-hunter/grab-contact.mjs",
     "lead:echt": "node scripts/lead-hunter/enrich-score.mjs && node scripts/lead-hunter/grab-contact.mjs && node scripts/lead-hunter/personalize-verkoop.mjs",
     "lead:berichten": "node scripts/lead-hunter/personalize-verkoop.mjs",
+    "lead:scrub-exclusions": "node scripts/lead-hunter/scrub-exclusions.mjs",
     "lead:clean": "node scripts/lead-hunter/queue-clean.mjs",
     "agent:leads": "node scripts/lead-hunter/run.mjs",
     "agent:leads:queue": "node scripts/lead-hunter/agent-run.mjs",

@@ -1,0 +1,12 @@
+{
+  "updatedAt": "2026-07-07T08:15:00.000Z",
+  "uitleg": "Geen outreach/lek-claim meer — false positive of klantrelatie hersteld.",
+  "hosts": [
+    {
+      "host": "ambiance-zonwering.nl",
+      "bedrijf": "Ambiance Zonwering (alle vestigingen)",
+      "reden": "VakScan false positive phpMyAdmin (WordPress 404). Excuses naar klant — geen database-lek.",
+      "sinds": "2026-07-07"
+    }
+  ]
+}

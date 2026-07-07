@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-07T08:07:04.949Z",
-  "totaalMetLek": 37,
+  "totaalMetLek": 34,
   "rijen": [
     {
       "bedrijf": "Dreumel",
@@ -99,22 +99,6 @@
       "reportId": "19c84aa5ca49"
     },
     {
-      "bedrijf": "Ambiance Heko-Becewe",
-      "plaats": "Amsterdam",
-      "url": "https://www.ambiance-zonwering.nl/heko-becewe",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "www.ambiance-zonwering.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 40,
-      "reportId": "dec1c3541b87"
-    },
-    {
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
       "url": "https://hetinterieur.nl",
@@ -145,22 +129,6 @@
       "sqlTabelCount": 0,
       "risicoScore": 40,
       "reportId": "e362535e17f6"
-    },
-    {
-      "bedrijf": "Ambiance zonwering",
-      "plaats": "De Bilt",
-      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "www.ambiance-zonwering.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 40,
-      "reportId": "c2d3cc1f8cbf"
     },
     {
       "bedrijf": "Kroon interieurbouw",
@@ -387,22 +355,6 @@
       "reportId": "95bee736a13f"
     },
     {
-      "bedrijf": "Ambiance Zonwering",
-      "plaats": "Woerden",
-      "url": "https://www.ambiance-zonwering.nl/broere-woerden",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "www.ambiance-zonwering.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 40,
-      "reportId": "c54e890fe8fc"
-    },
-    {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "url": "https://www.willemseelektrotechniek.nl",
@@ -594,5 +546,6 @@
       "risicoScore": 100,
       "reportId": "4fccd84bc7e1"
     }
-  ]
+  ],
+  "updatedAt": "2026-07-07T08:12:53.496Z"
 }

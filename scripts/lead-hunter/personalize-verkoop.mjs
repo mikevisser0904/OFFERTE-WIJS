@@ -9,6 +9,17 @@ import { haalAdminBewijs } from "./admin-proof.mjs";
 import { getActiveConsent, hostKey } from "../security-scan/consent-registry.mjs";
 
 const root = process.cwd();
+
+function loadUitgeslotenHosts() {
+  const path = join(root, "data/scan-uitsluitingen.json");
+  if (!existsSync(path)) return new Set();
+  try {
+    const data = JSON.parse(readFileSync(path, "utf8"));
+    return new Set((data.hosts || []).map((h) => h.host.toLowerCase()));
+  } catch {
+    return new Set();
+  }
+}
 const ETHICAL =
   "Nooit inloggen op klant-systemen. Nooit zeggen 'wij zitten in uw admin' — wel: 'uw admin-inlog staat op internet open'. Klant kan link zelf openen.";
 
@@ -205,9 +216,28 @@ async function main() {
   const store = JSON.parse(readFileSync(inPath, "utf8"));
   const maps = laadRapporten();
   const dbExportMap = laadDbExportMap();
+  const blocked = loadUitgeslotenHosts();
 
   const klanten = [];
   for (const k of store.klanten || []) {
+    if (blocked.has(hostKey(k.url)) || k.uitgesloten) {
+      klanten.push({
+        ...k,
+        uitgesloten: true,
+        probleem: "Geen actief lek (scan gecorrigeerd)",
+        heeftScan: false,
+        bewijsUrl: null,
+        adminProof: null,
+        databaseProfiel: null,
+        verkoopBericht: null,
+        verkoopKort: null,
+        whatsappSchrik: null,
+        herstelBericht:
+          k.herstelBericht ||
+          `Beste ${k.bedrijf},\n\nMike van WebKlaar. Excuses: onze eerdere melding over een open database op uw site was onjuist (fout in de automatische scan). Wij hebben niet ingelogd en geen data uit uw database gehaald.\n\nVriendelijke groet,\nMike`,
+      });
+      continue;
+    }
     const rapport = vindRapport(k, maps);
     const evidenceUrl = besteEvidenceUrl(rapport);
     let proof = null;

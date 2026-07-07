@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-07-07T08:07:04.949Z",
   "agent": "klanten-lek",
-  "gescand": 184,
-  "metLek": 37,
+  "gescand": 181,
+  "metLek": 34,
   "disclaimer": "Passieve HTTP-checks alleen. Geen wachtwoorden opgeslagen. Gebruik voor Website Veilig €299 outreach met toestemming.",
   "klanten": [
     {
@@ -1840,40 +1840,6 @@
       ]
     },
     {
-      "bedrijf": "Ambiance Heko-Becewe",
-      "plaats": "Amsterdam",
-      "url": "https://www.ambiance-zonwering.nl/heko-becewe",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:59:45.847Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "dec1c3541b87",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-            "host": "www.ambiance-zonwering.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
-        }
-      ]
-    },
-    {
       "bedrijf": "Voordeelgordijnen",
       "plaats": "Amsterdam",
       "url": "https://www.voordeelgordijnen.nl",
@@ -1898,40 +1864,6 @@
           "type": "datalek",
           "ernst": "critical",
           "url": "https://www.voordeelgordijnen.nl/.env"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Ambiance zonwering",
-      "plaats": "De Bilt",
-      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:59:47.232Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "c2d3cc1f8cbf",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-            "host": "www.ambiance-zonwering.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
         }
       ]
     },
@@ -2036,40 +1968,6 @@
           "type": "datalek",
           "ernst": "critical",
           "url": "https://loodgieterskwartier.nl/"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Ambiance Zonwering",
-      "plaats": "Woerden",
-      "url": "https://www.ambiance-zonwering.nl/broere-woerden",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T08:00:12.211Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "c54e890fe8fc",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-            "host": "www.ambiance-zonwering.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
         }
       ]
     },
@@ -5240,5 +5138,6 @@
       },
       "bevindingen": []
     }
-  ]
+  ],
+  "updatedAt": "2026-07-07T08:12:53.492Z"
 }

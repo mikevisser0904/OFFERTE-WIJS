@@ -64,6 +64,15 @@ async function main() {
   const gescoord = load(join(ROOT, "data/klanten-gescoord.json"), { leads: [] });
   const klantenLek = load(join(ROOT, "data/klanten-lek-rapport.json"), { klanten: [] });
   const echte = load(join(ROOT, "data/echte-klanten.json"), { klanten: [] });
+  const uitsluit = load(join(ROOT, "data/scan-uitsluitingen.json"), { hosts: [] });
+  const blockedHosts = new Set((uitsluit.hosts || []).map((h) => h.host.toLowerCase()));
+  function hostOf(url) {
+    try {
+      return new URL(url).hostname.replace(/^www\./i, "").toLowerCase();
+    } catch {
+      return "";
+    }
+  }
 
   const candidates = [];
   const seenUrls = new Set();
@@ -71,6 +80,7 @@ async function main() {
   function pushCandidate(c) {
     const key = c.url?.toLowerCase();
     if (!key || isDemoOrTestUrl(c.url) || seenUrls.has(key)) return;
+    if (blockedHosts.has(hostOf(c.url))) return;
     if (!c.whatsapp && c.whatsappUrl) {
       try {
         const u = new URL(c.whatsappUrl);
@@ -85,6 +95,7 @@ async function main() {
   }
 
   for (const k of echte.klanten || []) {
+    if (k.uitgesloten || blockedHosts.has(hostOf(k.url))) continue;
     if (!k.heeftScan || !k.verkoopBericht) continue;
     const regel = (k.schrikRegels || [])[0] || "concrete beveiligingsfouten op uw site";
     pushCandidate({

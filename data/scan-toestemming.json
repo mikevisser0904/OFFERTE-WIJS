@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T08:04:59.205Z",
+  "updatedAt": "2026-07-07T08:12:53.501Z",
   "uitleg": "Schriftelijke toestemming per site. scope: passive-deep (GET), auth-verify (alleen met scan-toestemming.local.json). status: active | revoked",
   "entries": [
     {
@@ -12,7 +12,8 @@
         "passive-deep",
         "auth-verify"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "false positive scan — relatie herstellen"
     },
     {
       "siteUrl": "https://www.dreumel.nl",

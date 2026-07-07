@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T08:11:51.695Z",
+  "generatedAt": "2026-07-07T08:13:13.080Z",
   "totaal": 112,
   "zonderContact": 72,
   "klanten": [
@@ -3087,40 +3087,24 @@
       "email": "",
       "url": "https://www.ambiance-zonwering.nl/heko-becewe",
       "score": 97,
-      "probleem": "Mogelijk open beveiligingslek (VakScan)",
-      "aanbod": "Website Veilig €299 — urgent",
+      "probleem": "Geen actief lek (scan gecorrigeerd)",
+      "aanbod": "Alleen op verzoek — geen veiligheidsclaim",
       "whatsappUrl": "https://wa.me/31647333211?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": true,
+      "heeftScan": false,
       "risicoScore": 40,
-      "schrikRegels": [
-        "Database-beheer is vindbaar — data kan gestolen worden."
-      ],
+      "schrikRegels": [],
       "adminProof": null,
-      "scanToestemming": {
-        "consentDatum": "2026-07-07",
-        "consentRef": "Schriftelijke toestemming Ambiance Zonwering (Mike)",
-        "scope": [
-          "passive-deep",
-          "auth-verify"
-        ]
-      },
-      "consentDeep": {
-        "checkedAt": "2026-07-07T08:07:07.575Z",
-        "unauthenticatedDashboard": null,
-        "authVerified": null
-      },
-      "databaseProfiel": {
-        "dbType": "phpMyAdmin",
-        "dbHost": "www.ambiance-zonwering.nl",
-        "dbName": null,
-        "sqlTabellen": [],
-        "panelUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
-      },
-      "bewijsUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Ambiance Heko-Becewe.\n\nCheck op www.ambiance-zonwering.nl/heko-becewe:\n\n• Database-beheer is vindbaar — data kan gestolen worden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Ambiance Heko-Becewe: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31647333211?text=Hoi%2C%20Mike%20(WebKlaar).%20Ambiance%20Heko-Becewe%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "reportId": "dec1c3541b87"
+      "scanToestemming": null,
+      "consentDeep": null,
+      "databaseProfiel": null,
+      "bewijsUrl": null,
+      "verkoopBericht": null,
+      "verkoopKort": null,
+      "whatsappSchrik": null,
+      "reportId": "dec1c3541b87",
+      "uitgesloten": true,
+      "uitgeslotenReden": "VakScan false positive phpMyAdmin (WordPress 404). Excuses naar klant — geen database-lek.",
+      "herstelBericht": "Beste Ambiance Heko-Becewe,\n\nMike van WebKlaar. U gaf toestemming voor een check — dank daarvoor. Na handmatige controle blijkt: de eerdere melding over een open database-beheer (phpMyAdmin) op uw site was onjuist. Het betrof een fout in onze automatische scan (WordPress-pagina, geen database).\n\nExcuses voor de zorg en de tijd. Wij hebben niets ingelogd en geen gegevens uit uw database gehaald. Als u wilt, stuur ik u kort schriftelijk wat wij wél en niet hebben gedaan.\n\nVriendelijke groet,\nMike"
     },
     {
       "bedrijf": "Ambiance zonwering",
@@ -3130,40 +3114,24 @@
       "email": "",
       "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
       "score": 97,
-      "probleem": "Mogelijk open beveiligingslek (VakScan)",
-      "aanbod": "Website Veilig €299 — urgent",
+      "probleem": "Geen actief lek (scan gecorrigeerd)",
+      "aanbod": "Alleen op verzoek — geen veiligheidsclaim",
       "whatsappUrl": "https://wa.me/31647333211?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": true,
+      "heeftScan": false,
       "risicoScore": 40,
-      "schrikRegels": [
-        "Database-beheer is vindbaar — data kan gestolen worden."
-      ],
+      "schrikRegels": [],
       "adminProof": null,
-      "scanToestemming": {
-        "consentDatum": "2026-07-07",
-        "consentRef": "Schriftelijke toestemming Ambiance Zonwering (Mike)",
-        "scope": [
-          "passive-deep",
-          "auth-verify"
-        ]
-      },
-      "consentDeep": {
-        "checkedAt": "2026-07-07T08:07:07.575Z",
-        "unauthenticatedDashboard": null,
-        "authVerified": null
-      },
-      "databaseProfiel": {
-        "dbType": "phpMyAdmin",
-        "dbHost": "www.ambiance-zonwering.nl",
-        "dbName": null,
-        "sqlTabellen": [],
-        "panelUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
-      },
-      "bewijsUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Ambiance zonwering.\n\nCheck op www.ambiance-zonwering.nl/van-der-wal-de-bilt:\n\n• Database-beheer is vindbaar — data kan gestolen worden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Ambiance zonwering: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31647333211?text=Hoi%2C%20Mike%20(WebKlaar).%20Ambiance%20zonwering%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "reportId": "c2d3cc1f8cbf"
+      "scanToestemming": null,
+      "consentDeep": null,
+      "databaseProfiel": null,
+      "bewijsUrl": null,
+      "verkoopBericht": null,
+      "verkoopKort": null,
+      "whatsappSchrik": null,
+      "reportId": "c2d3cc1f8cbf",
+      "uitgesloten": true,
+      "uitgeslotenReden": "VakScan false positive phpMyAdmin (WordPress 404). Excuses naar klant — geen database-lek.",
+      "herstelBericht": "Beste Ambiance zonwering,\n\nMike van WebKlaar. U gaf toestemming voor een check — dank daarvoor. Na handmatige controle blijkt: de eerdere melding over een open database-beheer (phpMyAdmin) op uw site was onjuist. Het betrof een fout in onze automatische scan (WordPress-pagina, geen database).\n\nExcuses voor de zorg en de tijd. Wij hebben niets ingelogd en geen gegevens uit uw database gehaald. Als u wilt, stuur ik u kort schriftelijk wat wij wél en niet hebben gedaan.\n\nVriendelijke groet,\nMike"
     },
     {
       "bedrijf": "Decorette",
@@ -3266,40 +3234,24 @@
       "email": "",
       "url": "https://www.ambiance-zonwering.nl/broere-woerden",
       "score": 97,
-      "probleem": "Mogelijk open beveiligingslek (VakScan)",
-      "aanbod": "Website Veilig €299 — urgent",
+      "probleem": "Geen actief lek (scan gecorrigeerd)",
+      "aanbod": "Alleen op verzoek — geen veiligheidsclaim",
       "whatsappUrl": "https://wa.me/31647333211?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": true,
+      "heeftScan": false,
       "risicoScore": 40,
-      "schrikRegels": [
-        "Database-beheer is vindbaar — data kan gestolen worden."
-      ],
+      "schrikRegels": [],
       "adminProof": null,
-      "scanToestemming": {
-        "consentDatum": "2026-07-07",
-        "consentRef": "Schriftelijke toestemming Ambiance Zonwering (Mike)",
-        "scope": [
-          "passive-deep",
-          "auth-verify"
-        ]
-      },
-      "consentDeep": {
-        "checkedAt": "2026-07-07T08:07:07.575Z",
-        "unauthenticatedDashboard": null,
-        "authVerified": null
-      },
-      "databaseProfiel": {
-        "dbType": "phpMyAdmin",
-        "dbHost": "www.ambiance-zonwering.nl",
-        "dbName": null,
-        "sqlTabellen": [],
-        "panelUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
-      },
-      "bewijsUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Ambiance Zonwering.\n\nCheck op www.ambiance-zonwering.nl/broere-woerden:\n\n• Database-beheer is vindbaar — data kan gestolen worden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
-      "verkoopKort": "Hoi, Mike (WebKlaar). Ambiance Zonwering: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31647333211?text=Hoi%2C%20Mike%20(WebKlaar).%20Ambiance%20Zonwering%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "reportId": "c54e890fe8fc"
+      "scanToestemming": null,
+      "consentDeep": null,
+      "databaseProfiel": null,
+      "bewijsUrl": null,
+      "verkoopBericht": null,
+      "verkoopKort": null,
+      "whatsappSchrik": null,
+      "reportId": "c54e890fe8fc",
+      "uitgesloten": true,
+      "uitgeslotenReden": "VakScan false positive phpMyAdmin (WordPress 404). Excuses naar klant — geen database-lek.",
+      "herstelBericht": "Beste Ambiance Zonwering,\n\nMike van WebKlaar. U gaf toestemming voor een check — dank daarvoor. Na handmatige controle blijkt: de eerdere melding over een open database-beheer (phpMyAdmin) op uw site was onjuist. Het betrof een fout in onze automatische scan (WordPress-pagina, geen database).\n\nExcuses voor de zorg en de tijd. Wij hebben niets ingelogd en geen gegevens uit uw database gehaald. Als u wilt, stuur ik u kort schriftelijk wat wij wél en niet hebben gedaan.\n\nVriendelijke groet,\nMike"
     },
     {
       "bedrijf": "Mks schilderwerken",

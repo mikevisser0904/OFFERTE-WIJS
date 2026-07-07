@@ -26,6 +26,20 @@ Betaling: binnen 14 dagen na oplevering
 IBAN: [INVULLEN]`;
 
 /** Bellen na schriftelijke toestemming voor diepere VakScan */
+/** Na false positive scan (bijv. Ambiance) — plak naar klant */
+export const excuusScanFout = `Beste [BEDRIJF],
+
+Mike van WebKlaar. Dank voor uw toestemming om mee te kijken.
+
+Na handmatige controle: onze eerdere melding over een open database-beheer (phpMyAdmin) op uw website was onjuist. Dat kwam door een fout in onze automatische scan (een gewone WordPress-pagina, geen database-inlog).
+
+Excuses voor de zorg en uw tijd. Wij hebben niet ingelogd op uw systemen en geen gegevens uit uw database gehaald.
+
+Als u wilt, licht ik kort toe wat wij wél hebben gedaan (alleen publieke, passieve checks).
+
+Vriendelijke groet,
+Mike`;
+
 export const belscriptToestemming = `BELSCRIPT — klant gaf toestemming (Website Veilig / diepere check)
 
 1. "Dank voor uw toestemming — ik noteer dat u [datum] akkoord gaf voor een veiligheidscheck op [domein]."
