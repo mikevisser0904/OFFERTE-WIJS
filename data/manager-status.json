@@ -1,17 +1,12 @@
 {
-  "updatedAt": "2026-07-07T07:43:03.102Z",
+  "updatedAt": "2026-07-07T07:53:15.604Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Outreach klaar",
-  "prioriteit": 4,
-  "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Database/datalek: phpMyAdmin mogelijk open op internet)",
+  "prioriteit": 1,
+  "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
   "mikeActie": "15 contacten wachten op /agents/",
   "acties": [
-    {
-      "wie": "grok",
-      "actie": "Data-flow sync",
-      "script": "npm run agent:dataflow"
-    },
     {
       "wie": "mike",
       "actie": "5 WhatsApps vandaag",
@@ -29,9 +24,9 @@
     {
       "id": "data-flow",
       "naam": "Data-flow",
-      "status": "actie",
-      "detail": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
-      "lastRun": "2026-07-07T07:39:00.582Z"
+      "status": "ok",
+      "detail": "22 streams OK · queue 0 pending · 37 lekken",
+      "lastRun": "2026-07-07T07:53:15.483Z"
     },
     {
       "id": "health-monitor",
@@ -72,14 +67,14 @@
       "id": "klanten-lek",
       "naam": "Klanten-lek",
       "status": "ok",
-      "detail": "13 echte lek(ken) — /leads/ database-export · outreach",
-      "lastRun": "2026-07-07T07:40:22.139Z"
+      "detail": "38 echte lek(ken) — /leads/ database-export · outreach",
+      "lastRun": "2026-07-07T07:52:44.246Z"
     },
     {
       "id": "vakscan-leaks",
       "naam": "VakScan Leaks",
       "status": "ok",
-      "detail": "31 lekken · 0 pending",
+      "detail": "37 lekken · 0 pending",
       "lastRun": "2026-07-07T07:40:27.309Z"
     },
     {
@@ -94,7 +89,7 @@
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-07-07T07:42:55.374Z"
+      "lastRun": "2026-07-07T07:52:49.946Z"
     },
     {
       "id": "seo",
@@ -109,10 +104,17 @@
       "status": "ok",
       "detail": "Team KPI snapshot naar repo",
       "lastRun": null
+    },
+    {
+      "id": "funnel",
+      "naam": "Funnel",
+      "status": "ok",
+      "detail": "Eén keten: dataflow → leads → scan → outreach → manager",
+      "lastRun": null
     }
   ],
   "snapshot": {
-    "leakCount": 31,
+    "leakCount": 37,
     "queuePending": 0,
     "outreachCount": 15,
     "leadsTotaal": 184,

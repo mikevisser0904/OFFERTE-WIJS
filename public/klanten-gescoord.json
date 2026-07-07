@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-07T07:43:30.020Z",
+  "generatedAt": "2026-07-07T07:53:15.159Z",
   "totaal": 184,
   "metTelefoon": 0,
-  "leakMatches": 31,
+  "leakMatches": 37,
   "leads": [
     {
       "bedrijf": "Dreumel",
@@ -56,6 +56,23 @@
       "actie": "bel-nu"
     },
     {
+      "bedrijf": "Suntec zonwering",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.suntec-zonwering.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
       "url": "https://www.amer-hout.nl",
@@ -73,15 +90,15 @@
       "actie": "bel-nu"
     },
     {
-      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
-      "plaats": "Amstelveen",
-      "url": "https://www.jwfborn.nl",
-      "categorie": "loodgieter",
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
+      "categorie": "zonwering",
       "prioriteit": "scan-eerst",
       "score": 97,
       "redenen": [
         "database/datalek in VakScan",
-        "sterke niche: loodgieter"
+        "sterke niche: zonwering"
       ],
       "aanbod": "Website Veilig €299 — urgent",
       "siteOk": true,
@@ -345,6 +362,91 @@
       "actie": "bel-nu"
     },
     {
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "url": "https://www.tafelboom.nl",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: kozijnen"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "De Pagter",
+      "plaats": "Voorburg",
+      "url": "https://depagter.info",
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: installateur"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Nuoveni",
+      "plaats": "Voorburg",
+      "url": "https://nuoveni.nl",
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: installateur"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Ambiance Zonwering",
+      "plaats": "Woerden",
+      "url": "https://www.ambiance-zonwering.nl/broere-woerden",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "url": "https://www.willemseelektrotechniek.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
       "bedrijf": "Pruis Schilderwerken",
       "plaats": "Amersfoort",
       "url": "https://pruisschilderwerken.nl",
@@ -510,22 +612,20 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Suntec zonwering",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.suntec-zonwering.nl",
-      "categorie": "zonwering",
+      "bedrijf": "Van Beek Schilders",
+      "plaats": "Den Hoorn",
+      "url": "http://vanbeek-schilders.nl",
+      "categorie": "schilder",
       "prioriteit": "scan-eerst",
-      "score": 62,
+      "score": 70,
       "redenen": [
-        "database/datalek in VakScan",
-        "sterke niche: zonwering",
-        "site reageert slecht"
+        "geen goede HTTPS"
       ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": false,
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
       "heeftHttps": false,
       "whatsappUrl": null,
-      "actie": "bel-nu"
+      "actie": "whatsapp"
     },
     {
       "bedrijf": "T.B. van Wichen",
@@ -537,6 +637,24 @@
       "redenen": [
         "database/datalek in VakScan",
         "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
+      "plaats": "Amstelveen",
+      "url": "https://www.jwfborn.nl",
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 62,
+      "redenen": [
+        "database/datalek in VakScan",
+        "sterke niche: loodgieter",
         "site reageert slecht"
       ],
       "aanbod": "Website Veilig €299 — urgent",
@@ -640,22 +758,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Bonarius Zuid-Holland",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.bonarius.com",
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -832,22 +934,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Wonnink Zonwering",
-      "plaats": "Amersfoort",
-      "url": "https://www.wonnink.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -1432,22 +1518,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Wooncentrum Ubo Kok",
-      "plaats": "IJmuiden",
-      "url": "https://wooncentrumubokok.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Terberg Totaal Installaties",
       "plaats": "IJsselstein",
       "url": "https://terberg.eu",
@@ -1712,38 +1782,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Denhil Kozijn en Geveltechniek",
-      "plaats": "Purmerend",
-      "url": "https://denhil.nl",
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Denhil Zonwering en Buitenleven",
-      "plaats": "Purmerend",
-      "url": "https://denhil.nl/producten/zonwering-purmerend",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -2136,70 +2174,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "url": "https://www.tafelboom.nl",
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "De Pagter",
-      "plaats": "Voorburg",
-      "url": "https://depagter.info",
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Hennink Installatietechniek",
-      "plaats": "Voorburg",
-      "url": "https://hennink.info",
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "I.B. Kracht",
-      "plaats": "Voorburg",
-      "url": "https://www.kracht.nl",
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "JCM Styles",
       "plaats": "Voorburg",
       "url": "https://www.zonwering.nl/verkooppunten/rolluiken-voorburg",
@@ -2232,22 +2206,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Nuoveni",
-      "plaats": "Voorburg",
-      "url": "https://nuoveni.nl",
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Sima Installatietechniek",
       "plaats": "Voorburg",
       "url": "https://simainstallatie.nl",
@@ -2256,70 +2214,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Eyelux Zonwering",
-      "plaats": "Voorschoten",
-      "url": "https://www.eyelux.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Wolters Perez",
-      "plaats": "Voorschoten",
-      "url": "https://perezvoorschoten.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Ambiance Zonwering",
-      "plaats": "Woerden",
-      "url": "https://www.ambiance-zonwering.nl/broere-woerden",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "url": "https://www.willemseelektrotechniek.nl",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -2557,6 +2451,23 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Bonarius Zuid-Holland",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.bonarius.com",
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Oranjegordijn",
       "plaats": "'s-Gravenhage",
       "url": "https://oranjegordijn.nl",
@@ -2727,6 +2638,23 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Wooncentrum Ubo Kok",
+      "plaats": "IJmuiden",
+      "url": "https://wooncentrumubokok.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Van Rennes Elektro- & Installatietechniek",
       "plaats": "Klaaswaal",
       "url": "https://www.vanrennes.nl",
@@ -2769,6 +2697,40 @@
       "score": 17,
       "redenen": [
         "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Denhil Kozijn en Geveltechniek",
+      "plaats": "Purmerend",
+      "url": "https://denhil.nl",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Denhil Zonwering en Buitenleven",
+      "plaats": "Purmerend",
+      "url": "https://denhil.nl/producten/zonwering-purmerend",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
@@ -2863,6 +2825,74 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Hennink Installatietechniek",
+      "plaats": "Voorburg",
+      "url": "https://hennink.info",
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "I.B. Kracht",
+      "plaats": "Voorburg",
+      "url": "https://www.kracht.nl",
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Eyelux Zonwering",
+      "plaats": "Voorschoten",
+      "url": "https://www.eyelux.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Wolters Perez",
+      "plaats": "Voorschoten",
+      "url": "https://perezvoorschoten.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Installatiebureau Jonker BV",
       "plaats": "Wassenaar",
       "url": "https://www.jonkerbv.eu",
@@ -2900,22 +2930,6 @@
       "bedrijf": "Van Olst Schilders",
       "plaats": "Amersfoort",
       "url": "https://vanolstschilders.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 5,
-      "redenen": [
-        "site reageert slecht"
-      ],
-      "aanbod": "Google Start €299",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Van Beek Schilders",
-      "plaats": "Den Hoorn",
-      "url": "http://vanbeek-schilders.nl",
       "categorie": "schilder",
       "prioriteit": "scan-eerst",
       "score": 5,

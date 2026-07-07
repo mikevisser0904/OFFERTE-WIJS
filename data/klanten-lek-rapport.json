@@ -1,290 +1,17 @@
 {
-  "generatedAt": "2026-07-07T07:43:23.363Z",
+  "generatedAt": "2026-07-07T07:52:44.243Z",
   "agent": "klanten-lek",
-  "gescand": 1,
-  "metLek": 31,
+  "gescand": 184,
+  "metLek": 38,
   "disclaimer": "Passieve HTTP-checks alleen. Geen wachtwoorden opgeslagen. Gebruik voor Website Veilig €299 outreach met toestemming.",
   "klanten": [
     {
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:39:22.695Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "2f229b8f5c49",
-      "database": {
-        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
-            "host": "s246.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
-            "host": "s246.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-            "host": "s246.webhostingserver.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s246.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s246.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Loodgieterskwartier",
-      "plaats": "Rijswijk",
-      "url": "https://loodgieterskwartier.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:47.761Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "d55c372ed7e5",
-      "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "Elasticsearch",
-            "url": "https://loodgieterskwartier.nl/",
-            "host": "loodgieterskwartier.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": [
-          {
-            "type": "Elasticsearch",
-            "url": "https://loodgieterskwartier.nl/"
-          }
-        ]
-      },
-      "bevindingen": [
-        {
-          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": ".env mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": ".env.local mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": ".env.production mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": "Config-backup mogelijk open",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Klomp Elektrotechniek",
-      "plaats": "Barneveld",
-      "url": "https://klompelektrotechniek.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:33.446Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "ec2d0042034c",
-      "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Finish Profiles",
-      "plaats": "Purmerend",
-      "url": "https://www.finish-profiles.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:26.595Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "6732bd8e5565",
-      "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://finish-profiles.nl/phpmyadmin/",
-            "host": "finish-profiles.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://finish-profiles.nl/phpMyAdmin/",
-            "host": "finish-profiles.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://finish-profiles.nl/pma/",
-            "host": "finish-profiles.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://finish-profiles.nl/phpmyadmin/index.php",
-            "host": "finish-profiles.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://finish-profiles.nl/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://finish-profiles.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://finish-profiles.nl/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://finish-profiles.nl/phpmyadmin/index.php"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
       "bedrijf": "Firma Fred van Rijn",
       "plaats": "'s-Gravenhage",
-      "url": "https://firmavanrijn.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:11.815Z",
+      "url": "https://firmavanrijn.nl",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:38.562Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -332,224 +59,15 @@
           "ernst": "critical",
           "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Burggraeve Woonstyling",
-      "plaats": "Haarlem",
-      "url": "https://www.bwstyling.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:12.758Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "49aba6bb1a63",
-      "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.bwstyling.nl/phpmyadmin/",
-            "host": "www.bwstyling.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.bwstyling.nl/phpMyAdmin/",
-            "host": "www.bwstyling.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.bwstyling.nl/pma/",
-            "host": "www.bwstyling.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.bwstyling.nl/phpmyadmin/index.php",
-            "host": "www.bwstyling.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.bwstyling.nl/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.bwstyling.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.bwstyling.nl/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.bwstyling.nl/phpmyadmin/index.php"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Textilia",
-      "plaats": "Dordrecht",
-      "url": "https://www.textilia-dordrecht.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:11.515Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "2bf236f50a7b",
-      "database": {
-        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
-            "host": "s225.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
-            "host": "s225.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
-            "host": "s225.webhostingserver.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s225.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s225.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "url": "https://chargecars.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:55.046Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "d3536446812f",
-      "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://chargecars.nl/phpMyAdmin/",
-            "host": "chargecars.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://chargecars.nl/phpMyAdmin/",
-            "host": "chargecars.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://chargecars.nl/phpMyAdmin/",
-            "host": "chargecars.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://chargecars.nl/phpMyAdmin/",
-            "host": "chargecars.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://chargecars.nl/phpMyAdmin/",
-            "host": "chargecars.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://chargecars.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://chargecars.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://chargecars.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://chargecars.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://chargecars.nl/phpMyAdmin/"
-        }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
-      "url": "https://www.amer-hout.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:04.500Z",
+      "url": "https://www.amer-hout.nl",
+      "categorie": "kozijnen",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:25.754Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -597,86 +115,15 @@
           "ernst": "critical",
           "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Schreuder Glas- en Schilderwerken",
-      "plaats": "Noordwijk",
-      "url": "https://www.schreuderschilderwerken.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:58.146Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "4fccd84bc7e1",
-      "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/",
-            "host": "www.schreuderschilderwerken.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.schreuderschilderwerken.nl/phpMyAdmin/",
-            "host": "www.schreuderschilderwerken.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.schreuderschilderwerken.nl/pma/",
-            "host": "www.schreuderschilderwerken.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/index.php",
-            "host": "www.schreuderschilderwerken.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.schreuderschilderwerken.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.schreuderschilderwerken.nl/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/index.php"
-        }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Loodgietersbedrijf J.W.F. Born",
       "plaats": "Amstelveen",
-      "url": "https://www.jwfborn.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:56.224Z",
+      "url": "https://www.jwfborn.nl",
+      "categorie": "loodgieter",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:42.102Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -735,17 +182,15 @@
           "ernst": "critical",
           "url": "https://www.jwfborn.nl/phpmyadmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
-      "url": "https://hetinterieur.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:59.366Z",
+      "url": "https://hetinterieur.nl",
+      "categorie": "kozijnen",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:36.656Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -793,39 +238,104 @@
           "ernst": "critical",
           "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
-      "bedrijf": "Verzijl De Woonprofessionals",
-      "plaats": "Nieuw-Lekkerland",
-      "url": "https://verzijlbv.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:46.831Z",
+      "bedrijf": "Kroon interieurbouw",
+      "plaats": "De Meern",
+      "url": "https://www.kroon-interieurbouw.nl",
+      "categorie": "kozijnen",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:43.230Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
-      "reportId": "7d32e5ce9787",
+      "reportId": "d0419394d0db",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
+            "host": "www.kroon-interieurbouw.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/phpMyAdmin/",
+            "host": "www.kroon-interieurbouw.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/pma/",
+            "host": "www.kroon-interieurbouw.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php",
+            "host": "www.kroon-interieurbouw.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "url": "https://www.textilia-dordrecht.nl",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:47.487Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "2bf236f50a7b",
       "database": {
         "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
         "heeftLek": true,
         "panels": [
           {
             "panel": "phpMyAdmin",
-            "url": "https://verzijlbv.nl/phpmyadmin/",
-            "host": "verzijlbv.nl"
+            "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
+            "host": "s225.webhostingserver.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://verzijlbv.nl/phpMyAdmin/",
-            "host": "verzijlbv.nl"
+            "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
+            "host": "s225.webhostingserver.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://verzijlbv.nl/phpmyadmin/index.php",
-            "host": "verzijlbv.nl"
+            "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s225.webhostingserver.nl"
           }
         ],
         "credentials": null,
@@ -837,63 +347,56 @@
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://verzijlbv.nl/phpmyadmin/"
+          "url": "https://s225.webhostingserver.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://verzijlbv.nl/phpMyAdmin/"
+          "url": "https://s225.webhostingserver.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://verzijlbv.nl/phpmyadmin/index.php"
+          "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:41.648Z",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "url": "https://www.bwstyling.nl",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:50.642Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
-      "reportId": "cb76ce138bc5",
+      "reportId": "49aba6bb1a63",
       "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
         "heeftLek": true,
         "panels": [
           {
             "panel": "phpMyAdmin",
-            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-            "host": "rioolservice-pvanadrichem.nl"
+            "url": "https://www.bwstyling.nl/phpmyadmin/",
+            "host": "www.bwstyling.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-            "host": "rioolservice-pvanadrichem.nl"
+            "url": "https://www.bwstyling.nl/phpMyAdmin/",
+            "host": "www.bwstyling.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-            "host": "rioolservice-pvanadrichem.nl"
+            "url": "https://www.bwstyling.nl/pma/",
+            "host": "www.bwstyling.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-            "host": "rioolservice-pvanadrichem.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-            "host": "rioolservice-pvanadrichem.nl"
+            "url": "https://www.bwstyling.nl/phpmyadmin/index.php",
+            "host": "www.bwstyling.nl"
           }
         ],
         "credentials": null,
@@ -905,114 +408,27 @@
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+          "url": "https://www.bwstyling.nl/phpmyadmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+          "url": "https://www.bwstyling.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+          "url": "https://www.bwstyling.nl/pma/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+          "url": "https://www.bwstyling.nl/phpmyadmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "url": "https://www.boselektrotechniek.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:37.701Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "e2b94249c285",
-      "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-            "host": "www.boselektrotechniek.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-            "host": "www.boselektrotechniek.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-            "host": "www.boselektrotechniek.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-            "host": "www.boselektrotechniek.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-            "host": "www.boselektrotechniek.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
-        }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Decor Gordijn",
@@ -1084,114 +500,44 @@
       "bron": "leak-hits"
     },
     {
-      "bedrijf": "Blygold",
-      "plaats": "Houten",
-      "url": "https://www.blygold.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:36:10.051Z",
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "url": "https://www.boselektrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:47.249Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
-      "reportId": "fac607ec508f",
-      "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.blygold.nl/phpmyadmin/",
-            "host": "www.blygold.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.blygold.nl/phpMyAdmin/",
-            "host": "www.blygold.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.blygold.nl/pma/",
-            "host": "www.blygold.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.blygold.nl/phpmyadmin/index.php",
-            "host": "www.blygold.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.blygold.nl/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.blygold.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.blygold.nl/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.blygold.nl/phpmyadmin/index.php"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Installatiebedrijf Keyzer",
-      "plaats": "Den Hoorn",
-      "url": "https://www.keyzerbv.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:35:14.190Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "7cb3690b73a7",
+      "reportId": "e2b94249c285",
       "database": {
         "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
         "heeftLek": true,
         "panels": [
           {
             "panel": "phpMyAdmin",
-            "url": "https://keyzerbv.nl/phpMyAdmin/",
-            "host": "keyzerbv.nl"
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://keyzerbv.nl/phpMyAdmin/",
-            "host": "keyzerbv.nl"
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://keyzerbv.nl/phpMyAdmin/",
-            "host": "keyzerbv.nl"
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://keyzerbv.nl/phpMyAdmin/",
-            "host": "keyzerbv.nl"
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://keyzerbv.nl/phpMyAdmin/",
-            "host": "keyzerbv.nl"
+            "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+            "host": "www.boselektrotechniek.nl"
           }
         ],
         "credentials": null,
@@ -1203,70 +549,73 @@
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://keyzerbv.nl/phpMyAdmin/"
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://keyzerbv.nl/phpMyAdmin/"
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://keyzerbv.nl/phpMyAdmin/"
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://keyzerbv.nl/phpMyAdmin/"
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://keyzerbv.nl/phpMyAdmin/"
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
-      "bedrijf": "Kroon interieurbouw",
-      "plaats": "De Meern",
-      "url": "https://www.kroon-interieurbouw.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:35:09.912Z",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "url": "https://rioolservice-pvanadrichem.nl",
+      "categorie": "loodgieter",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:55.638Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
-      "reportId": "d0419394d0db",
+      "reportId": "cb76ce138bc5",
       "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
         "heeftLek": true,
         "panels": [
           {
             "panel": "phpMyAdmin",
-            "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
-            "host": "www.kroon-interieurbouw.nl"
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://www.kroon-interieurbouw.nl/phpMyAdmin/",
-            "host": "www.kroon-interieurbouw.nl"
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://www.kroon-interieurbouw.nl/pma/",
-            "host": "www.kroon-interieurbouw.nl"
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php",
-            "host": "www.kroon-interieurbouw.nl"
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+            "host": "rioolservice-pvanadrichem.nl"
           }
         ],
         "credentials": null,
@@ -1278,37 +627,238 @@
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/"
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://www.kroon-interieurbouw.nl/phpMyAdmin/"
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://www.kroon-interieurbouw.nl/pma/"
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php"
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
         }
-      ],
-      "bron": "leak-hits"
+      ]
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "url": "https://chargecars.nl",
+      "categorie": "elektricien",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:45:21.110Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "d3536446812f",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://chargecars.nl/phpMyAdmin/",
+            "host": "chargecars.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://chargecars.nl/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Loodgieterskwartier",
+      "plaats": "Rijswijk",
+      "url": "https://loodgieterskwartier.nl",
+      "categorie": "loodgieter",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:45:07.250Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "d55c372ed7e5",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://loodgieterskwartier.nl/",
+            "host": "loodgieterskwartier.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://loodgieterskwartier.nl/"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env.local mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env.production mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": "Config-backup mogelijk open",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "categorie": "kozijnen",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:45:06.649Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "2f229b8f5c49",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+            "host": "s246.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+            "host": "s246.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s246.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s246.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s246.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
     },
     {
       "bedrijf": "Pruis Schilderwerken",
       "plaats": "Amersfoort",
-      "url": "https://pruisschilderwerken.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:34:32.409Z",
+      "url": "https://pruisschilderwerken.nl",
+      "categorie": "schilder",
+      "score": 85,
+      "scannedAt": "2026-07-07T07:45:00.078Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -1367,8 +917,130 @@
           "ernst": "critical",
           "url": "https://server-alfa.heroo.nl/phpMyAdmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
+    },
+    {
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "plaats": "Nieuw-Lekkerland",
+      "url": "https://verzijlbv.nl",
+      "categorie": "schilder",
+      "score": 85,
+      "scannedAt": "2026-07-07T07:45:08.375Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "7d32e5ce9787",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://verzijlbv.nl/phpmyadmin/",
+            "host": "verzijlbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://verzijlbv.nl/phpMyAdmin/",
+            "host": "verzijlbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://verzijlbv.nl/phpmyadmin/index.php",
+            "host": "verzijlbv.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://verzijlbv.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://verzijlbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://verzijlbv.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Finish Profiles",
+      "plaats": "Purmerend",
+      "url": "https://www.finish-profiles.nl",
+      "categorie": "dakdekker",
+      "score": 85,
+      "scannedAt": "2026-07-07T07:45:09.615Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "6732bd8e5565",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/phpmyadmin/",
+            "host": "finish-profiles.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/phpMyAdmin/",
+            "host": "finish-profiles.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/pma/",
+            "host": "finish-profiles.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://finish-profiles.nl/phpmyadmin/index.php",
+            "host": "finish-profiles.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://finish-profiles.nl/phpmyadmin/index.php"
+        }
+      ]
     },
     {
       "bedrijf": "T.B. van Wichen",
@@ -1451,13 +1123,576 @@
       "bron": "leak-hits"
     },
     {
-      "bedrijf": "van der Meer Elektrotechniek BV",
-      "plaats": "Maasland",
-      "url": "https://www.ejvandermeer.nl/",
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "url": "https://klompelektrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 62,
+      "scannedAt": "2026-07-07T07:45:47.879Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "ec2d0042034c",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Installatiebedrijf Keyzer",
+      "plaats": "Den Hoorn",
+      "url": "https://www.keyzerbv.nl/",
       "categorie": null,
       "telefoon": null,
       "score": null,
-      "scannedAt": "2026-07-07T07:37:38.760Z",
+      "scannedAt": "2026-07-07T07:35:14.190Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "7cb3690b73a7",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://keyzerbv.nl/phpMyAdmin/",
+            "host": "keyzerbv.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://keyzerbv.nl/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Blygold",
+      "plaats": "Houten",
+      "url": "https://www.blygold.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:36:10.051Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "fac607ec508f",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/phpmyadmin/",
+            "host": "www.blygold.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/phpMyAdmin/",
+            "host": "www.blygold.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/pma/",
+            "host": "www.blygold.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.blygold.nl/phpmyadmin/index.php",
+            "host": "www.blygold.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.blygold.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "url": "https://www.tafelboom.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:29.439Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "216370c66063",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "bedrijf": "De Pagter",
+      "plaats": "Voorburg",
+      "url": "https://depagter.info",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:13.820Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "679c884eb23e",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/phpmyadmin/",
+            "host": "depagter.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/phpMyAdmin/",
+            "host": "depagter.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/pma/",
+            "host": "depagter.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/phpmyadmin/index.php",
+            "host": "depagter.info"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Nuoveni",
+      "plaats": "Voorburg",
+      "url": "https://nuoveni.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:17.638Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "95bee736a13f",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/phpmyadmin/",
+            "host": "nuoveni.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/phpMyAdmin/",
+            "host": "nuoveni.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/pma/",
+            "host": "nuoveni.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/phpmyadmin/index.php",
+            "host": "nuoveni.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "url": "https://www.willemseelektrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:50.571Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "fe9d43611024",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+            "host": "s250.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+            "host": "s250.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s250.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Schreuder Glas- en Schilderwerken",
+      "plaats": "Noordwijk",
+      "url": "https://www.schreuderschilderwerken.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:58.146Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "4fccd84bc7e1",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/",
+            "host": "www.schreuderschilderwerken.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/phpMyAdmin/",
+            "host": "www.schreuderschilderwerken.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/pma/",
+            "host": "www.schreuderschilderwerken.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/index.php",
+            "host": "www.schreuderschilderwerken.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "url": "https://www.ejvandermeer.nl",
+      "categorie": "elektricien",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:57.532Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 80,
@@ -1494,17 +1729,15 @@
           "ernst": "critical",
           "url": "https://www.ejvandermeer.nl/phpmyadmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
-      "url": "https://vogelaarschilder.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:24.610Z",
+      "url": "https://vogelaarschilder.nl",
+      "categorie": "schilder",
+      "score": 85,
+      "scannedAt": "2026-07-07T07:45:15.205Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 80,
@@ -1541,8 +1774,7 @@
           "ernst": "critical",
           "url": "https://hosting102.resellerdns.nl/phpmyadmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Dreumel",
@@ -1550,7 +1782,7 @@
       "url": "https://www.dreumel.nl",
       "categorie": "kozijnen",
       "score": 97,
-      "scannedAt": "2026-07-07T07:43:19.565Z",
+      "scannedAt": "2026-07-07T07:44:24.964Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -1586,11 +1818,10 @@
     {
       "bedrijf": "SA Elektro Experts",
       "plaats": "'s-Gravenhage",
-      "url": "https://saelektroexperts.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:33.970Z",
+      "url": "https://saelektroexperts.nl",
+      "categorie": "elektricien",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:53.125Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -1621,83 +1852,15 @@
           "ernst": "critical",
           "url": "https://saelektroexperts.nl/"
         }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Voordeelgordijnen",
-      "plaats": "Amsterdam",
-      "url": "https://www.voordeelgordijnen.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:08.086Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "e362535e17f6",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": ".env mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://www.voordeelgordijnen.nl/.env"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
-      "bedrijf": "Ambiance zonwering",
-      "plaats": "De Bilt",
-      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:38:06.061Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "c2d3cc1f8cbf",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-            "host": "www.ambiance-zonwering.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
-        }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Ambiance Heko-Becewe",
       "plaats": "Amsterdam",
       "url": "https://www.ambiance-zonwering.nl/heko-becewe",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:53.417Z",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:27.673Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -1723,17 +1886,77 @@
           "ernst": "critical",
           "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
+    },
+    {
+      "bedrijf": "Voordeelgordijnen",
+      "plaats": "Amsterdam",
+      "url": "https://www.voordeelgordijnen.nl",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:40.625Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "e362535e17f6",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": ".env mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://www.voordeelgordijnen.nl/.env"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Ambiance zonwering",
+      "plaats": "De Bilt",
+      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:40.514Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "c2d3cc1f8cbf",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+            "host": "www.ambiance-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ]
     },
     {
       "bedrijf": "Decorette",
       "plaats": "Nieuw-Vennep",
       "url": "https://decorette.nl/winkels/nieuw-vennep",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:49.143Z",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:44:58.545Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -1764,8 +1987,7 @@
           "ernst": "critical",
           "url": "https://decorette.nl/"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Suntec zonwering",
@@ -1804,16 +2026,88 @@
       "bron": "leak-hits"
     },
     {
-      "bedrijf": "Mks schilderwerken",
-      "plaats": "Houten",
-      "url": "https://mksschilderwerken.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:36:24.521Z",
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:27.905Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
+      "reportId": "19c84aa5ca49",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://www.wonnink.nl/_cat/indices?v",
+            "host": "www.wonnink.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://www.wonnink.nl/_cat/indices?v"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.wonnink.nl/_cat/indices?v"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Ambiance Zonwering",
+      "plaats": "Woerden",
+      "url": "https://www.ambiance-zonwering.nl/broere-woerden",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:34.120Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "c54e890fe8fc",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+            "host": "www.ambiance-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Mks schilderwerken",
+      "plaats": "Houten",
+      "url": "https://mksschilderwerken.nl",
+      "categorie": "schilder",
+      "score": 85,
+      "scannedAt": "2026-07-07T07:45:08.610Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 0,
       "reportId": "940bd317871f",
       "database": {
         "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
@@ -1841,8 +2135,3156 @@
           "ernst": "critical",
           "url": "https://mksschilderwerken.nl/"
         }
-      ],
-      "bron": "leak-hits"
+      ]
+    },
+    {
+      "bedrijf": "Hennink Installatietechniek",
+      "plaats": "Voorburg",
+      "url": "https://hennink.info",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:49:35.796Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": "cf8a5654c646",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hennink.info/phpmyadmin/",
+            "host": "hennink.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hennink.info/phpMyAdmin/",
+            "host": "hennink.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hennink.info/pma/",
+            "host": "hennink.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hennink.info/phpmyadmin/index.php",
+            "host": "hennink.info"
+          },
+          {
+            "panel": "Elasticsearch",
+            "url": "https://hennink.info/404-foutpagina",
+            "host": "hennink.info"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://hennink.info/404-foutpagina"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hennink.info/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hennink.info/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hennink.info/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hennink.info/phpmyadmin/index.php"
+        },
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hennink.info/404-foutpagina"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Timmerbedrijf Simon Frank & Zn.",
+      "plaats": "Amersfoort",
+      "url": "http://timmerbedrijf-frank.nl",
+      "categorie": "kozijnen",
+      "score": 82,
+      "scannedAt": "2026-07-07T07:45:09.165Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Rinus van Stein",
+      "plaats": "Haarlem",
+      "url": "http://www.rinusvanstein.nl",
+      "categorie": "zonwering",
+      "score": 82,
+      "scannedAt": "2026-07-07T07:45:11.968Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Atelier Zuidinga",
+      "plaats": "Purmerend",
+      "url": "http://atelierzuidinga.nl",
+      "categorie": "zonwering",
+      "score": 82,
+      "scannedAt": "2026-07-07T07:45:10.126Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "De Bovenkamer",
+      "plaats": "Utrecht",
+      "url": "http://bovenkamerutrecht.nl",
+      "categorie": "kozijnen",
+      "score": 82,
+      "scannedAt": "2026-07-07T07:45:13.596Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Leidekkersbedrijf van Eijk",
+      "plaats": "Voorburg",
+      "url": "http://ericvaneijk.nl",
+      "categorie": "loodgieter",
+      "score": 82,
+      "scannedAt": "2026-07-07T07:45:12.410Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "A. Buitelaar Zonwering",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.buitelaarzonwering.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:45:48.666Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "ALX Elektra",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.alx.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:45:49.705Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Atelier-AW",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.atelieraw.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:45:53.303Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Bonarius Zuid-Holland",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.bonarius.com",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:23.326Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "HBC Wooncomfort",
+      "plaats": "'s-Gravenhage",
+      "url": "https://hbcwooncomfort.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:20.955Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "L-Groep totaalonderhoud",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.l-groep.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:22.220Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Kreeft & van Wissen",
+      "plaats": "Aalsmeer",
+      "url": "https://www.kreeft-wissen.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:22.817Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Bectro",
+      "plaats": "Amersfoort",
+      "url": "https://www.bectro.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:24.494Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Delektro",
+      "plaats": "Amersfoort",
+      "url": "https://www.delektro.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:25.820Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Designbekleding",
+      "plaats": "Amersfoort",
+      "url": "https://designbekleding.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:25.346Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Elitair Klimaattechniek",
+      "plaats": "Amersfoort",
+      "url": "https://elitairklimaat.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:32.623Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Goossensen",
+      "plaats": "Amersfoort",
+      "url": "https://loodgietersbedrijfgoossensen.nl",
+      "categorie": "loodgieter",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:26.331Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Houtindustrie Amersfoort",
+      "plaats": "Amersfoort",
+      "url": "https://houtindustrie-amersfoort.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:26.621Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "i-Kozijn",
+      "plaats": "Amersfoort",
+      "url": "https://www.i-kozijn.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:27.021Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "MIRvA",
+      "plaats": "Amersfoort",
+      "url": "https://mirva.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:27.478Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Amstelland Kozijnen",
+      "plaats": "Amstelveen",
+      "url": "https://www.amstellandkozijnen.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:33.217Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Lambertus van den Broek",
+      "plaats": "Amstelveen",
+      "url": "https://www.lambertusvandenbroek.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:41.161Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Schipper Kozijnen",
+      "plaats": "Amstelveen",
+      "url": "https://www.schipperkozijnen.nl/showrooms/amstelveen",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:34.810Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Blossom Paardencoaching",
+      "plaats": "Amsterdam",
+      "url": "https://www.blossompaardencoaching.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:34.856Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Bruens Electrotechniek",
+      "plaats": "Amsterdam",
+      "url": "https://www.bruens-electrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:38.028Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Evimvloeren",
+      "plaats": "Amsterdam",
+      "url": "https://www.evimvloeren.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:35.674Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Gordijnenhuis Madina",
+      "plaats": "Amsterdam",
+      "url": "https://www.facebook.com/gordijnenhuis.madina",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:37.545Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Kilim Tapijt & Vinyl",
+      "plaats": "Amsterdam",
+      "url": "https://www.kilim-tapijt-vinyl.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:38.202Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Klimaatservice Noordholland",
+      "plaats": "Amsterdam",
+      "url": "https://klimaatservicenoordholland.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:43.272Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Knook Deuren en Kozijnen",
+      "plaats": "Amsterdam",
+      "url": "https://www.knookmetaal.nl/producten/knook-deuren-en-kozijnen",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:38.944Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Louwen Houtbewerking",
+      "plaats": "Amsterdam",
+      "url": "https://louwenhoutbewerking.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:45.058Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Protectsun",
+      "plaats": "Amsterdam",
+      "url": "https://www.protectsun.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:41.851Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Onnink",
+      "plaats": "Barendrecht",
+      "url": "https://onnink-bv.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:47.909Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Brandsen Installatietechniek",
+      "plaats": "Barneveld",
+      "url": "https://brandsen-installatietechniek.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:42.812Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Enery Shift",
+      "plaats": "Barneveld",
+      "url": "https://www.energyshift.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:53.072Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Zon en Scherm Berkel en Rodenrijs",
+      "plaats": "Berkel en Rodenrijs",
+      "url": "https://www.zonenscherm.nl/site/zon-en-scherm-berkel-en-rodenrijs",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:54.348Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Kokall",
+      "plaats": "Bunschoten-Spakenburg",
+      "url": "https://www.kokall.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:46.915Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van den Hoogen engineering",
+      "plaats": "Bunschoten-Spakenburg",
+      "url": "https://www.vandenhoogen.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:52.055Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Eradus Zonwering",
+      "plaats": "Delft",
+      "url": "https://www.eraduszonwering.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:54.689Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Groenewegen",
+      "plaats": "Delft",
+      "url": "https://www.groenewegendelft.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:53.232Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "De Lamellengigant",
+      "plaats": "Den Haag",
+      "url": "https://www.delamellengigant.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:59.545Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Smit Wonen in Sfeer",
+      "plaats": "Den Haag",
+      "url": "https://www.smit-interieur.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:53.948Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Woningtextielhuis",
+      "plaats": "Den Haag",
+      "url": "https://www.woningtextielhuis.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:55.068Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Joost Wonen",
+      "plaats": "Den Hoorn",
+      "url": "https://joostwonen.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:57.012Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van Leeuwen Elektrotechniek",
+      "plaats": "Den Hoorn",
+      "url": "https://www.vanleeuwenelektrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:58.081Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Drechtse Loodgieter",
+      "plaats": "Dordrecht",
+      "url": "https://drechtseloodgieter.nl",
+      "categorie": "loodgieter",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:59.143Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Kiwatt",
+      "plaats": "Ede",
+      "url": "https://www.kiwatt.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:58.011Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Schipper Kozijnen",
+      "plaats": "Gouda",
+      "url": "https://www.schipperkozijnen.nl/showrooms/gouda",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:46:59.712Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Marcel Vittali",
+      "plaats": "Haarlem",
+      "url": "https://www.marcelvittali.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:03.358Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Mesut Timmerfabriek",
+      "plaats": "Haarlem",
+      "url": "https://www.mesuttimmerfabriek.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:01.983Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:08.984Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Efzon Doseer- en Installatietechniek",
+      "plaats": "Heinenoord",
+      "url": "https://www.efzon.com",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:00.933Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Quadraat Bouw",
+      "plaats": "Hilversum",
+      "url": "https://www.quadraatbouw.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:02.759Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Randstad Zonweringen",
+      "plaats": "Hoofddorp",
+      "url": "https://www.randstadzonweringen.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:04.804Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "STB",
+      "plaats": "Houten",
+      "url": "https://stb.eu",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:11.544Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van Baaren Installatietechniek",
+      "plaats": "Houten",
+      "url": "https://evanbaareninstallatietechniek.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:10.370Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Wooncentrum Ubo Kok",
+      "plaats": "IJmuiden",
+      "url": "https://wooncentrumubokok.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:08.835Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Terberg Totaal Installaties",
+      "plaats": "IJsselstein",
+      "url": "https://terberg.eu",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:17.335Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Ventana Zonwering",
+      "plaats": "IJsselstein",
+      "url": "https://ventanazonwering.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:10.998Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Schipper Kozijnen",
+      "plaats": "Katwijk",
+      "url": "https://www.schipperkozijnen.nl/showrooms/Katwijk",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:12.688Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "De Schrijn",
+      "plaats": "Langbroek",
+      "url": "https://deschrijn.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:12.879Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Bekenkamp",
+      "plaats": "Laren",
+      "url": "https://woonspecialist.nl/winkels/bekenkamp-laren",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:27.837Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
+      "plaats": "Leidschendam",
+      "url": "https://www.fonteinelektrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:45.167Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Lameko zonwering",
+      "plaats": "Leidschendam",
+      "url": "https://www.lameko.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:29.629Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Timmerfabriek Verhagen",
+      "plaats": "Leidschendam",
+      "url": "https://www.timmerfabriekverhagen.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:21.917Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Woordes Bouw- & Timmerwerken",
+      "plaats": "Leusden",
+      "url": "https://www.woordesbouw.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:22.734Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Zandschulp Zonwering",
+      "plaats": "Leusden",
+      "url": "https://zandschulpzonwering.nl/showrooms/zonwering-leusden",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:27.381Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "ZENS Maatwerk",
+      "plaats": "Loosdrecht",
+      "url": "https://zensmaatwerk.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:31.866Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Voorberg zonwering",
+      "plaats": "Maassluis",
+      "url": "https://www.voorbergzonwering.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:34.617Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Rojas Zonwering & Interieur",
+      "plaats": "Nieuw-Vennep",
+      "url": "https://www.rojas-colorsathome.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:32.111Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Maat Dakkapellen",
+      "plaats": "Nieuwegein",
+      "url": "https://www.maatdakkapellen.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:32.707Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "GroepenkastCompleet",
+      "plaats": "Nieuwerkerk aan den IJssel",
+      "url": "https://www.groepenkastcompleet.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:33.440Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Bert Witsel Rioolservice Waterland",
+      "plaats": "Purmerend",
+      "url": "https://www.rioolservicewaterland.nl",
+      "categorie": "loodgieter",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:33.962Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "CoolAir Nederland",
+      "plaats": "Purmerend",
+      "url": "https://www.coolairnederland.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:34.392Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Denhil Kozijn en Geveltechniek",
+      "plaats": "Purmerend",
+      "url": "https://denhil.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:48.674Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Denhil Zonwering en Buitenleven",
+      "plaats": "Purmerend",
+      "url": "https://denhil.nl/producten/zonwering-purmerend",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:50.738Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "IVG Electro Groep",
+      "plaats": "Purmerend",
+      "url": "https://ivgelectrogroep.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:43.602Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Katuin",
+      "plaats": "Purmerend",
+      "url": "https://www.loodgieterkatuin.nl",
+      "categorie": "loodgieter",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:44.501Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Koel-My",
+      "plaats": "Purmerend",
+      "url": "https://koelmy.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:45.342Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Mazurel Installatietechniek",
+      "plaats": "Purmerend",
+      "url": "https://www.mazurel.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:46.201Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Ramenfabriek op 't Hoog",
+      "plaats": "Purmerend",
+      "url": "https://www.opthoog.nl/contact/vestigingen/purmerend",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:46.911Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "REVO",
+      "plaats": "Purmerend",
+      "url": "https://rizzyco.wixsite.com/revobv-2",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:48.226Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Decosier",
+      "plaats": "Ridderkerk",
+      "url": "https://www.decosier.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:47.705Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Starkozijn Katwijk",
+      "plaats": "Rijnsburg",
+      "url": "https://www.starkozijnkatwijk.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:50.253Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Bastasol Zonwering",
+      "plaats": "Rotterdam",
+      "url": "https://www.bastasol.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:58.076Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "De Gier",
+      "plaats": "Rotterdam",
+      "url": "https://degierwonen.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:50.970Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "De Klussenier",
+      "plaats": "Rotterdam",
+      "url": "https://wimdejong.klussenier.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:53.128Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Harmony Gordijnen",
+      "plaats": "Rotterdam",
+      "url": "https://harmonygordijnen.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:53.367Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Lohmann",
+      "plaats": "Rotterdam",
+      "url": "https://lohmannbv.nl",
+      "categorie": "loodgieter",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:53.632Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Lugthart",
+      "plaats": "Rotterdam",
+      "url": "https://lugthart.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:53.917Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Plant services",
+      "plaats": "Rotterdam",
+      "url": "https://plantservices.nl",
+      "categorie": "elektricien",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:01.506Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Tulay",
+      "plaats": "Rotterdam",
+      "url": "https://tulay.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:58.183Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Luxury Home",
+      "plaats": "Spijkenisse",
+      "url": "https://luxuryhomeraamdecoratie.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:02.164Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Merwede tapijten",
+      "plaats": "Spijkenisse",
+      "url": "https://www.merwede-tapijten.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:59.742Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Woninginrichting-Aanhuis.nl",
+      "plaats": "Spijkenisse",
+      "url": "https://www.woninginrichting-aanhuis.nl/winkels/spijkenisse",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:47:59.126Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Ambachtelijke Naaiwinkel",
+      "plaats": "Utrecht",
+      "url": "https://amnaaiwinkel.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:00.849Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Arena Gordijnenland",
+      "plaats": "Utrecht",
+      "url": "https://arenagordijnenland.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:00.703Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "De Kroon Zonwering",
+      "plaats": "Utrecht",
+      "url": "https://www.dekroonzonwering.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:01.858Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Loodgietersbedrijf Utrecht",
+      "plaats": "Utrecht",
+      "url": "https://loodgietersbedrijfutrecht.nl",
+      "categorie": "loodgieter",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:09.303Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Louvenda Home",
+      "plaats": "Utrecht",
+      "url": "https://louvendahome.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:12.461Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "I.B. Kracht",
+      "plaats": "Voorburg",
+      "url": "https://www.kracht.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:52.627Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "JCM Styles",
+      "plaats": "Voorburg",
+      "url": "https://www.zonwering.nl/verkooppunten/rolluiken-voorburg",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:14.673Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Loodgietersbedrijf Robberts",
+      "plaats": "Voorburg",
+      "url": "https://installatiebedrijfrobberts.nl",
+      "categorie": "loodgieter",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:15.642Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Sima Installatietechniek",
+      "plaats": "Voorburg",
+      "url": "https://simainstallatie.nl",
+      "categorie": "installateur",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:22.558Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Eyelux Zonwering",
+      "plaats": "Voorschoten",
+      "url": "https://www.eyelux.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:42.787Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Wolters Perez",
+      "plaats": "Voorschoten",
+      "url": "https://perezvoorschoten.nl",
+      "categorie": "zonwering",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:32.259Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Aluku",
+      "plaats": "Zuidland",
+      "url": "https://aluku.nl",
+      "categorie": "kozijnen",
+      "score": 52,
+      "scannedAt": "2026-07-07T07:48:51.352Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Koek & Reinders",
+      "plaats": "'s-Gravenhage",
+      "url": "https://koekenreinders.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:48:59.262Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Achterberg Schilders & Onderhoud",
+      "plaats": "Amersfoort",
+      "url": "https://www.achterbergschilders.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:01.580Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "H.J. Slierings",
+      "plaats": "Haarlem",
+      "url": "https://www.hjslierings.nl",
+      "categorie": "dakdekker",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:00.471Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "BOS Groep Techniek",
+      "plaats": "Houten",
+      "url": "https://www.bosgroep.com",
+      "categorie": "dakdekker",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:11.762Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
+      "plaats": "Leidschendam",
+      "url": "https://www.jkuijper.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:09.974Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "RvW Schilderwerken",
+      "plaats": "Leimuiden",
+      "url": "https://rvwschilderwerken.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:11.685Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "C&M Schilders",
+      "plaats": "Noordwijk",
+      "url": "https://cm-schilders.com",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:13.629Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van der Nat Glas- en Schilderwerken",
+      "plaats": "Noordwijk",
+      "url": "https://vdnat.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:12.588Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Schildersbedrijf K. de Graaf",
+      "plaats": "Purmerend",
+      "url": "https://kevindegraaf.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:22.672Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Schildersbedrijf van der Meer",
+      "plaats": "Purmerend",
+      "url": "https://meerschilder.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:14.139Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Quick Paint",
+      "plaats": "Rotterdam",
+      "url": "https://www.quickpaint.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:25.321Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van Lochem Schildersbedrijven",
+      "plaats": "Rotterdam",
+      "url": "https://www.vanlochem.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:32.002Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Kuyt Schilders B.V. Schilderwerk",
+      "plaats": "Wassenaar",
+      "url": "https://www.kuytschilders.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:27.241Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Leen Meurs",
+      "plaats": "Zoetermeer",
+      "url": "https://www.schilderleenmeurs.nl",
+      "categorie": "schilder",
+      "score": 40,
+      "scannedAt": "2026-07-07T07:49:31.433Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Oranjegordijn",
+      "plaats": "'s-Gravenhage",
+      "url": "https://oranjegordijn.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:49:31.454Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Ideaal Gordijnen Specialisten",
+      "plaats": "Amsterdam",
+      "url": "https://ideaalgordijin.com",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:49:31.469Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Vivante Bekenkamp",
+      "plaats": "Baarn",
+      "url": "https://www.vivante-bekenkamp.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:50:35.505Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "AAD Elektrotechniek & Onderhoudsbedrijf",
+      "plaats": "Barendrecht",
+      "url": "http://www.aadelektrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:50:36.082Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Ehi Stolle",
+      "plaats": "Bunschoten-Spakenburg",
+      "url": "https://www.ehi-stolle.nl",
+      "categorie": "elektricien",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:49:37.318Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Algemene Houthandel & Timmerfabriek van der Meer",
+      "plaats": "Delft",
+      "url": "http://www.meerhouthandel.nl",
+      "categorie": "kozijnen",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:49:37.335Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Mastr Interieurspecialisten",
+      "plaats": "Delft",
+      "url": "https://mastrinterieurspecialisten.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:49:37.349Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Fa. van Taarling",
+      "plaats": "Haarlem",
+      "url": "http://www.vantaarling.nl",
+      "categorie": "loodgieter",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:49:37.361Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Vinkesteyn",
+      "plaats": "Haarlem",
+      "url": "https://www.vinkesteyn.nl",
+      "categorie": "installateur",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:50:41.566Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "BVR Wooncomfort",
+      "plaats": "Houten",
+      "url": "https://www.bvrzonwering.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:50:58.862Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van Rennes Elektro- & Installatietechniek",
+      "plaats": "Klaaswaal",
+      "url": "https://www.vanrennes.nl",
+      "categorie": "elektricien",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:39.584Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Ozbay Gordijnen",
+      "plaats": "Nieuw-Vennep",
+      "url": "http://www.ozbaygordijnen.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:50:36.101Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "D.S. Service",
+      "plaats": "Purmerend",
+      "url": "https://www.ds-service.nl",
+      "categorie": "installateur",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:40.140Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "EBD Techniek",
+      "plaats": "Purmerend",
+      "url": "https://www.ebd-purmerend.nl",
+      "categorie": "elektricien",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:05.192Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Engberts Elektrotechniek",
+      "plaats": "Purmerend",
+      "url": "https://engberts.nu",
+      "categorie": "elektricien",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:22.006Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Installatiebedrijf Vis",
+      "plaats": "Rotterdam",
+      "url": "https://installatiebedrijfvis.nl",
+      "categorie": "loodgieter",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:07.027Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Stoffenhuis Bestevaer",
+      "plaats": "Rotterdam",
+      "url": "http://www.stoffenhuisbestevaer.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:07.048Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "etech soest",
+      "plaats": "Utrecht",
+      "url": "https://www.etech.nu",
+      "categorie": "elektricien",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:09.218Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Installatiebureau Jonker BV",
+      "plaats": "Wassenaar",
+      "url": "https://www.jonkerbv.eu",
+      "categorie": "loodgieter",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:51:09.239Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Plomp installatietechniek",
+      "plaats": "Woerden",
+      "url": "https://www.plompinstallatietechniek.nl",
+      "categorie": "loodgieter",
+      "score": 17,
+      "scannedAt": "2026-07-07T07:52:13.309Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van Olst Schilders",
+      "plaats": "Amersfoort",
+      "url": "https://vanolstschilders.nl",
+      "categorie": "schilder",
+      "score": 5,
+      "scannedAt": "2026-07-07T07:52:27.022Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van Beek Schilders",
+      "plaats": "Den Hoorn",
+      "url": "http://vanbeek-schilders.nl",
+      "categorie": "schilder",
+      "score": 5,
+      "scannedAt": "2026-07-07T07:51:40.187Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Glas- en Schilderwerken van Muiden",
+      "plaats": "Leiden",
+      "url": "https://vanmuiden.nl",
+      "categorie": "schilder",
+      "score": 5,
+      "scannedAt": "2026-07-07T07:52:44.239Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Joost & Bart Schilderwerken",
+      "plaats": "Noordwijk",
+      "url": "https://www.joostenbartschilderwerken.nl",
+      "categorie": "schilder",
+      "score": 5,
+      "scannedAt": "2026-07-07T07:52:44.239Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Schilder en Wandafwerkingsbedrijf Rene Lek",
+      "plaats": "Purmerend",
+      "url": "https://renelek.nl",
+      "categorie": "schilder",
+      "score": 5,
+      "scannedAt": "2026-07-07T07:52:13.984Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
     }
   ]
 }
