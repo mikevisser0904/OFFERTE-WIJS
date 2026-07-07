@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-07T08:12:53.501Z",
-  "uitleg": "Schriftelijke toestemming per site. scope: passive-deep (GET), auth-verify (alleen met scan-toestemming.local.json). status: active | revoked",
+  "updatedAt": "2026-07-07T08:21:20.781Z",
+  "uitleg": "individualConsent=true alleen na echte toestemming. auth-verify vereist scan-toestemming.local.json — geen klantdata-export.",
   "entries": [
     {
       "siteUrl": "https://www.ambiance-zonwering.nl/",
@@ -24,7 +24,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://firmavanrijn.nl",
@@ -255,7 +256,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://www.rinusvanstein.nl",
@@ -266,7 +268,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://atelierzuidinga.nl",
@@ -277,7 +280,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://bovenkamerutrecht.nl",
@@ -288,7 +292,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://ericvaneijk.nl",
@@ -299,7 +304,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://vanbeek-schilders.nl",
@@ -310,7 +316,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.buitelaarzonwering.nl",
@@ -321,7 +328,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.atelieraw.nl",
@@ -332,7 +340,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.l-groep.nl",
@@ -343,7 +352,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.bectro.nl",
@@ -354,7 +364,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.delektro.nl",
@@ -365,7 +376,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://designbekleding.nl",
@@ -376,7 +388,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://elitairklimaat.nl",
@@ -387,7 +400,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://houtindustrie-amersfoort.nl",
@@ -398,7 +412,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.i-kozijn.nl",
@@ -409,7 +424,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://mirva.nl",
@@ -420,7 +436,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.amstellandkozijnen.nl",
@@ -431,7 +448,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.lambertusvandenbroek.nl",
@@ -442,7 +460,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.schipperkozijnen.nl/showrooms/amstelveen",
@@ -453,7 +472,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.bruens-electrotechniek.nl",
@@ -464,7 +484,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.evimvloeren.nl",
@@ -475,7 +496,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.kilim-tapijt-vinyl.nl",
@@ -486,7 +508,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://klimaatservicenoordholland.nl",
@@ -497,7 +520,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.knookmetaal.nl/producten/knook-deuren-en-kozijnen",
@@ -508,7 +532,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.protectsun.nl",
@@ -519,7 +544,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://brandsen-installatietechniek.nl",
@@ -530,7 +556,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.energyshift.nl",
@@ -541,7 +568,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.zonenscherm.nl/site/zon-en-scherm-berkel-en-rodenrijs",
@@ -552,7 +580,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.vandenhoogen.nl",
@@ -563,7 +592,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.eraduszonwering.nl",
@@ -574,7 +604,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.groenewegendelft.nl",
@@ -585,7 +616,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.delamellengigant.nl",
@@ -596,7 +628,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.woningtextielhuis.nl",
@@ -607,7 +640,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://joostwonen.nl",
@@ -618,7 +652,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.vanleeuwenelektrotechniek.nl",
@@ -629,7 +664,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.kiwatt.nl",
@@ -640,7 +676,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.marcelvittali.nl",
@@ -651,7 +688,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.mesuttimmerfabriek.nl",
@@ -662,7 +700,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.woonbasis.nl",
@@ -673,7 +712,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.efzon.com",
@@ -684,7 +724,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.quadraatbouw.nl",
@@ -695,7 +736,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.randstadzonweringen.nl",
@@ -706,7 +748,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://stb.eu",
@@ -717,7 +760,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://evanbaareninstallatietechniek.nl",
@@ -728,7 +772,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://terberg.eu",
@@ -739,7 +784,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://ventanazonwering.nl",
@@ -750,7 +796,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://deschrijn.nl",
@@ -761,7 +808,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.timmerfabriekverhagen.nl",
@@ -772,7 +820,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.woordesbouw.nl",
@@ -783,7 +832,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://zandschulpzonwering.nl/showrooms/zonwering-leusden",
@@ -794,7 +844,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://zensmaatwerk.nl",
@@ -805,7 +856,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.voorbergzonwering.nl",
@@ -816,7 +868,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.rojas-colorsathome.nl",
@@ -827,7 +880,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.coolairnederland.nl",
@@ -838,7 +892,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://koelmy.nl",
@@ -849,7 +904,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.mazurel.nl",
@@ -860,7 +916,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.opthoog.nl/contact/vestigingen/purmerend",
@@ -871,7 +928,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.decosier.nl",
@@ -882,7 +940,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://degierwonen.nl",
@@ -893,7 +952,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://harmonygordijnen.nl",
@@ -904,7 +964,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://lohmannbv.nl",
@@ -915,7 +976,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://tulay.nl",
@@ -926,7 +988,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://luxuryhomeraamdecoratie.nl",
@@ -937,7 +1000,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.merwede-tapijten.nl",
@@ -948,7 +1012,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://amnaaiwinkel.nl",
@@ -959,7 +1024,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://arenagordijnenland.nl",
@@ -970,7 +1036,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.dekroonzonwering.nl",
@@ -981,7 +1048,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://loodgietersbedrijfutrecht.nl",
@@ -992,7 +1060,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://louvendahome.nl",
@@ -1003,7 +1072,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://simainstallatie.nl",
@@ -1014,7 +1084,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://koekenreinders.nl",
@@ -1025,7 +1096,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.achterbergschilders.nl",
@@ -1036,7 +1108,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.hjslierings.nl",
@@ -1047,7 +1120,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.bosgroep.com",
@@ -1058,7 +1132,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.jkuijper.nl",
@@ -1069,7 +1144,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://rvwschilderwerken.nl",
@@ -1080,7 +1156,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://cm-schilders.com",
@@ -1091,7 +1168,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://vdnat.nl",
@@ -1102,7 +1180,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://kevindegraaf.nl",
@@ -1113,7 +1192,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://meerschilder.nl",
@@ -1124,7 +1204,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.quickpaint.nl",
@@ -1135,7 +1216,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.vanlochem.nl",
@@ -1146,7 +1228,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.kuytschilders.nl",
@@ -1157,7 +1240,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.schilderleenmeurs.nl",
@@ -1168,7 +1252,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://wooncentrumubokok.nl",
@@ -1179,7 +1264,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.ebd-purmerend.nl",
@@ -1190,7 +1276,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.tafelboom.nl/",
@@ -1273,12 +1360,15 @@
       "siteUrl": "https://www.voordeelgordijnen.nl/",
       "bedrijf": "Voordeelgordijnen",
       "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentRef": "Mike bevestigt schriftelijke/mail toestemming eigenaar voor passieve VakScan (2026-07-07)",
       "evidenceUrl": "https://www.voordeelgordijnen.nl/.env",
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-07T08:21:20.781Z"
     },
     {
       "siteUrl": "https://www.schreuderschilderwerken.nl/",
@@ -1344,7 +1434,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.bonarius.com",
@@ -1355,7 +1446,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://hbcwooncomfort.nl",
@@ -1366,7 +1458,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://oranjegordijn.nl",
@@ -1377,7 +1470,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.kreeft-wissen.nl",
@@ -1388,7 +1482,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://loodgietersbedrijfgoossensen.nl",
@@ -1399,7 +1494,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://vanolstschilders.nl",
@@ -1410,7 +1506,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.blossompaardencoaching.nl",
@@ -1421,7 +1518,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.facebook.com/gordijnenhuis.madina",
@@ -1432,7 +1530,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://ideaalgordijin.com",
@@ -1443,7 +1542,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://louwenhoutbewerking.nl",
@@ -1454,7 +1554,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.vivante-bekenkamp.nl",
@@ -1465,7 +1566,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://www.aadelektrotechniek.nl",
@@ -1476,7 +1578,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://onnink-bv.nl",
@@ -1487,7 +1590,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.ehi-stolle.nl",
@@ -1498,7 +1602,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.kokall.nl",
@@ -1509,7 +1614,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://www.meerhouthandel.nl",
@@ -1520,7 +1626,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://mastrinterieurspecialisten.nl",
@@ -1531,7 +1638,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.smit-interieur.nl",
@@ -1542,7 +1650,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://drechtseloodgieter.nl",
@@ -1553,7 +1662,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://www.vantaarling.nl",
@@ -1564,7 +1674,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.vinkesteyn.nl",
@@ -1575,7 +1686,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.bvrzonwering.nl",
@@ -1586,7 +1698,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.vanrennes.nl",
@@ -1597,7 +1710,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://woonspecialist.nl/winkels/bekenkamp-laren",
@@ -1608,7 +1722,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://vanmuiden.nl",
@@ -1619,7 +1734,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.fonteinelektrotechniek.nl",
@@ -1630,7 +1746,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.lameko.nl",
@@ -1641,7 +1758,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://www.ozbaygordijnen.nl",
@@ -1652,7 +1770,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.maatdakkapellen.nl",
@@ -1663,7 +1782,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.groepenkastcompleet.nl",
@@ -1674,7 +1794,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.joostenbartschilderwerken.nl",
@@ -1685,7 +1806,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.rioolservicewaterland.nl",
@@ -1696,7 +1818,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.ds-service.nl",
@@ -1707,7 +1830,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://denhil.nl",
@@ -1718,7 +1842,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://engberts.nu",
@@ -1729,7 +1854,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://ivgelectrogroep.nl",
@@ -1740,7 +1866,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.loodgieterkatuin.nl",
@@ -1751,7 +1878,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://rizzyco.wixsite.com/revobv-2",
@@ -1762,7 +1890,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://renelek.nl",
@@ -1773,7 +1902,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.starkozijnkatwijk.nl",
@@ -1784,7 +1914,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.bastasol.nl",
@@ -1795,7 +1926,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://wimdejong.klussenier.nl",
@@ -1806,7 +1938,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://installatiebedrijfvis.nl",
@@ -1817,7 +1950,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://lugthart.nl",
@@ -1828,7 +1962,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://plantservices.nl",
@@ -1839,7 +1974,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "http://www.stoffenhuisbestevaer.nl",
@@ -1850,7 +1986,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.woninginrichting-aanhuis.nl/winkels/spijkenisse",
@@ -1861,7 +1998,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.etech.nu",
@@ -1872,7 +2010,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://hennink.info",
@@ -1883,7 +2022,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.kracht.nl",
@@ -1894,7 +2034,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.zonwering.nl/verkooppunten/rolluiken-voorburg",
@@ -1905,7 +2046,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://installatiebedrijfrobberts.nl",
@@ -1916,7 +2058,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.eyelux.nl",
@@ -1927,7 +2070,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://perezvoorschoten.nl",
@@ -1938,7 +2082,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.jonkerbv.eu",
@@ -1949,7 +2094,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://www.plompinstallatietechniek.nl",
@@ -1960,7 +2106,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     },
     {
       "siteUrl": "https://aluku.nl",
@@ -1971,7 +2118,8 @@
       "scope": [
         "passive-deep"
       ],
-      "status": "active"
+      "status": "revoked",
+      "revokedReden": "geen geldige evidenceUrl — eerst VakScan/leak-hit"
     }
   ]
 }
