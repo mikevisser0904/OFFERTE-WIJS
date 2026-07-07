@@ -1,0 +1,65 @@
+{
+  "updatedAt": "2026-07-07T07:28:59.728Z",
+  "agent": "manager",
+  "fase": "verkopen",
+  "faseLabel": "Outreach klaar",
+  "prioriteit": 1,
+  "grokPrompt": "Outreach: 2 contacten klaar op /agents/ — begin met Demo Installateur (VakScan score 100 (Kritiek))",
+  "mikeActie": "2 contacten wachten op /agents/",
+  "acties": [
+    {
+      "wie": "mike",
+      "actie": "5 WhatsApps vandaag",
+      "script": "/actie/"
+    },
+    {
+      "wie": "grok",
+      "actie": "Lead Hunter (OSM)",
+      "script": "npm run agent:leads"
+    }
+  ],
+  "cards": [
+    {
+      "id": "site",
+      "naam": "Website",
+      "status": "ok",
+      "detail": "OK · 283ms",
+      "lastRun": "2026-07-07T07:28:59.545Z"
+    },
+    {
+      "id": "lead-hunter",
+      "naam": "Lead Hunter",
+      "status": "actie",
+      "detail": "0 leads · queue 1 pending",
+      "lastRun": null
+    },
+    {
+      "id": "vakscan",
+      "naam": "VakScan",
+      "status": "ok",
+      "detail": "0 lekken · 1 wacht",
+      "lastRun": null
+    },
+    {
+      "id": "outreach",
+      "naam": "Outreach",
+      "status": "ok",
+      "detail": "2 contacten vandaag",
+      "lastRun": "2026-07-07T07:27:18.430Z"
+    },
+    {
+      "id": "maarten",
+      "naam": "Maarten-wachtrij",
+      "status": "ok",
+      "detail": "0 pending bouw",
+      "lastRun": null
+    }
+  ],
+  "snapshot": {
+    "leakCount": 0,
+    "queuePending": 1,
+    "outreachCount": 2,
+    "leadsTotaal": 0,
+    "pendingMaarten": 0
+  }
+}

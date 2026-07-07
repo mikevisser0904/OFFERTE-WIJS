@@ -134,16 +134,19 @@ Bulk leak-scan slaat **geen** rapport op voor schone sites (alleen `data/leak-hi
 
 **Disclaimer** staat in elk rapport en op `/scan/`: alleen met toestemming eigenaar of als aangeboden gratis check.
 
-## Agent-team (Lead Hunter + Outreach)
+## Agent-team (Manager + Lead Hunter + Outreach)
 
 Live hub: **/agents/** · Registry: `data/agents-registry.json`
 
 | Agent | Doel | Commando | Grok-trigger |
 |-------|------|----------|--------------|
+| **Manager** | Houdt alles in de gaten, één prompt | `npm run agent:manager` | **"manager check"**, "wat moet er nu" |
 | **Lead Hunter** | OSM vakbedrijven → `scan-queue` | `npm run agent:leads` | "agent leads", "potentiële klanten" |
 | **VakScan** | Leak-scan op queue | `npm run scan:leaks` | "vakscan", "database lek" |
 | **Outreach** | Wie Mike vandaag belt/WhatsAppt | `npm run agent:outreach` | "agent outreach", "wie bellen" |
-| **Autopilot** | Health + wachtrij + agent-hint | `npm run autopilot` | "monitor check" |
+| **Autopilot** | Health + sync + roept Manager aan | `npm run autopilot` | "monitor check" |
+
+Skill Manager: `.grok/skills/manager-agent/SKILL.md`
 
 **Volledige funnel (lokaal of op verzoek Mike):**
 
@@ -151,7 +154,11 @@ Live hub: **/agents/** · Registry: `data/agents-registry.json`
 npm run agent:pipeline
 ```
 
-Skills: `.grok/skills/lead-hunter/SKILL.md` · `.grok/skills/outreach-agent/SKILL.md`
+Pipeline eindigt met **Manager** (status + autopilot prompt).
+
+**Als Mike alleen één ding zegt:** `manager check` → lees `data/manager-status.json` en voer `grokPrompt` uit.
+
+Skills: `manager-agent` · `lead-hunter` · `outreach-agent`
 
 ### Outreach-agent (tweede agent — sales)
 

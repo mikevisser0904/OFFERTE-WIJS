@@ -7,8 +7,10 @@ import {
   agentsStatusUrl,
   outreachVandaagUrl,
   potentieleKlantenUrl,
+  managerStatusUrl,
   type AgentRegistryEntry,
   type OutreachVandaag,
+  type ManagerStatus,
 } from "@/lib/agents";
 
 type AgentsStatus = {
@@ -34,19 +36,22 @@ export function AgentsPanel() {
   const [status, setStatus] = useState<AgentsStatus | null>(null);
   const [outreach, setOutreach] = useState<OutreachVandaag | null>(null);
   const [leads, setLeads] = useState<LeadsPayload | null>(null);
+  const [manager, setManager] = useState<ManagerStatus | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    const [reg, st, out, ld] = await Promise.all([
+    const [reg, st, out, ld, mgr] = await Promise.all([
       fetch(agentsRegistryUrl()).then((r) => (r.ok ? r.json() : { agents: [] })),
       fetch(agentsStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(outreachVandaagUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(potentieleKlantenUrl()).then((r) => (r.ok ? r.json() : null)),
+      fetch(managerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
     ]);
     setRegistry(reg.agents || []);
     setStatus(st);
     setOutreach(out);
     setLeads(ld);
+    setManager(mgr);
   }, []);
 
   useEffect(() => {
@@ -62,17 +67,58 @@ export function AgentsPanel() {
   const lh = status?.agents?.["lead-hunter"];
   const or = status?.agents?.outreach;
 
+  const faseKleur =
+    manager?.fase === "site"
+      ? "border-rose-400/40 bg-rose-500/15"
+      : manager?.fase === "verkopen"
+        ? "border-amber-400/35 bg-amber-500/10"
+        : "border-violet-400/30 bg-violet-500/10";
+
   return (
     <div className="space-y-8">
-      <section className="rounded-2xl border border-violet-400/25 bg-violet-500/10 p-5">
+      <section className={`rounded-2xl border p-5 ${faseKleur}`}>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-wider text-white/45">Manager Agent</p>
+            <h2 className="text-xl font-bold text-white">{manager?.faseLabel ?? "Nog geen run"}</h2>
+            <p className="mt-2 text-sm text-white/60">
+              <span className="text-violet-200">Mike:</span> {manager?.mikeActie ?? "Open /agents/ na npm run agent:manager"}
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => manager?.grokPrompt && copy(manager.grokPrompt, "grok")}
+            className="rounded-lg bg-violet-500/25 px-4 py-2 text-sm font-medium text-violet-100"
+          >
+            {copied === "grok" ? "Prompt gekopieerd ✓" : "Grok-prompt kopiëren"}
+          </button>
+        </div>
+        {manager?.grokPrompt && (
+          <p className="mt-3 rounded-lg bg-black/35 p-3 font-mono text-xs text-emerald-200/90">{manager.grokPrompt}</p>
+        )}
+        <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
+          {(manager?.cards || []).map((c) => (
+            <div
+              key={c.id}
+              className={`rounded-lg border px-3 py-2 text-xs ${
+                c.status === "ok" ? "border-emerald-400/25 bg-emerald-400/5" : "border-amber-400/30 bg-amber-400/10"
+              }`}
+            >
+              <p className="font-semibold text-white">{c.naam}</p>
+              <p className="text-white/50">{c.detail}</p>
+            </div>
+          ))}
+        </div>
+        <pre className="mt-4 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs text-white/50">
+          npm run agent:manager · npm run agent:manager:run
+        </pre>
+      </section>
+
+      <section className="rounded-2xl border border-white/10 bg-black/20 p-5">
         <h2 className="text-lg font-semibold text-violet-200">Agent-team</h2>
         <p className="mt-1 text-sm text-white/55">
-          <strong className="text-white">Lead Hunter</strong> vindt klanten → <strong className="text-white">VakScan</strong>{" "}
-          scant → <strong className="text-white">Outreach</strong> zegt wie Mike belt. Jij opent Grok en zegt de trigger.
+          Manager stuurt aan → Lead Hunter → VakScan → Outreach. Zeg tegen Grok: <strong>manager check</strong>
         </p>
-        <pre className="mt-4 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs text-emerald-200/90">
-          npm run agent:pipeline
-        </pre>
       </section>
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -146,7 +192,7 @@ export function AgentsPanel() {
       </section>
 
       <p className="text-xs text-white/35">
-        Skills: <code>.grok/skills/lead-hunter</code> · <code>.grok/skills/outreach-agent</code>
+        Skills: <code>manager-agent</code> · <code>lead-hunter</code> · <code>outreach-agent</code>
       </p>
     </div>
   );

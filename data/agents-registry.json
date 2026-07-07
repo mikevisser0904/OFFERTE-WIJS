@@ -3,6 +3,15 @@
   "team": "Mike verkoopt · Maarten bouwt · Agents automatiseren",
   "agents": [
     {
+      "id": "manager",
+      "naam": "Manager",
+      "rol": "Houdt alle agents in de gaten — één Grok-prompt + Mike-actie voor de hub",
+      "skill": ".grok/skills/manager-agent/SKILL.md",
+      "script": "npm run agent:manager",
+      "workflow": ".github/workflows/manager-agent.yml",
+      "trigger": ["manager", "agent hub", "wat moet er nu", "alles in de gaten"]
+    },
+    {
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "rol": "Vindt vakbedrijven met website (OSM) → queue → VakScan",

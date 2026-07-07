@@ -17,7 +17,9 @@
     "scan:import": "node scripts/security-scan/import-queue.mjs",
     "agent:leads": "node scripts/lead-hunter/agent-run.mjs",
     "agent:outreach": "node scripts/outreach-agent/run.mjs",
-    "agent:pipeline": "npm run agent:leads && npm run scan:leaks && npm run agent:outreach",
+    "agent:manager": "node scripts/manager-agent/run.mjs",
+    "agent:manager:run": "node scripts/manager-agent/run.mjs --execute",
+    "agent:pipeline": "npm run agent:leads && npm run scan:leaks && npm run agent:outreach && npm run agent:manager",
     "maarten": "git pull --rebase && npm run sync:maarten",
     "start": "next start",
     "lint": "eslint"

@@ -56,3 +56,25 @@ export function outreachVandaagUrl() {
 export function potentieleKlantenUrl() {
   return publicUrl("/potentiele-klanten.json");
 }
+
+export function managerStatusUrl() {
+  return publicUrl("/manager-status.json");
+}
+
+export type ManagerCard = {
+  id: string;
+  naam: string;
+  status: "ok" | "actie";
+  detail: string;
+  lastRun: string | null;
+};
+
+export type ManagerStatus = {
+  updatedAt: string;
+  fase: string;
+  faseLabel: string;
+  grokPrompt: string;
+  mikeActie: string;
+  acties: { wie: string; actie: string; script: string }[];
+  cards: ManagerCard[];
+};

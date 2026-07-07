@@ -43,17 +43,12 @@ if (existsSync(WACHTRIJ)) {
   }
 }
 
+const managerRun = runNode("scripts/manager-agent/run.mjs");
 let agentHint = null;
 if (existsSync(AGENTS_STATUS)) {
   try {
     const a = JSON.parse(readFileSync(AGENTS_STATUS, "utf8"));
-    const outreach = a.agents?.outreach;
-    const lh = a.agents?.["lead-hunter"];
-    if (outreach?.contactenVandaag > 0 && outreach?.agentPrompt) {
-      agentHint = outreach.agentPrompt;
-    } else if ((lh?.queuePending ?? 0) > 20) {
-      agentHint = `Lead Hunter: ${lh.queuePending} pending — draai npm run scan:leaks en agent:outreach`;
-    }
+    agentHint = a.manager?.grokPrompt || a.agents?.manager?.grokPrompt || null;
   } catch {
     /* ignore */
   }
@@ -70,6 +65,7 @@ const status = {
   lastHealthCheck: healthJson.checkedAt ?? null,
   healthOk: health.ok,
   syncOk: sync.ok,
+  managerOk: managerRun.ok,
   nextAgentPrompt:
     pending.length > 0
       ? `voer maarten wachtrij uit — ${pending.length} pending in OFFERTE-WIJS`

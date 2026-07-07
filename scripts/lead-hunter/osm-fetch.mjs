@@ -7,7 +7,11 @@ import { writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { execFileSync } from "child_process";
 
-const OVERPASS = "https://overpass-api.de/api/interpreter";
+const OVERPASS_ENDPOINTS = [
+  "https://overpass-api.de/api/interpreter",
+  "https://overpass.openstreetmap.fr/api/interpreter",
+  "https://overpass.private.coffee/api/interpreter",
+];
 
 const STEDEN = [
   { plaats: "Utrecht", lat: 52.0907, lon: 5.1214, radius: 20000 },
@@ -91,29 +95,37 @@ function categorieFromTags(tags) {
 }
 
 function overpassFetch(query) {
-  const out = execFileSync(
-    "curl",
-    [
-      "-sS",
-      "-m",
-      "120",
-      "-X",
-      "POST",
-      OVERPASS,
-      "-H",
-      "Content-Type: application/x-www-form-urlencoded; charset=UTF-8",
-      "--data-urlencode",
-      `data=${query}`,
-    ],
-    { encoding: "utf8", maxBuffer: 30 * 1024 * 1024 }
-  );
-  if (out.includes("<title>406 Not Acceptable</title>")) {
-    throw new Error("Overpass HTTP 406 (blocked client)");
+  let lastErr = null;
+  for (const endpoint of OVERPASS_ENDPOINTS) {
+    try {
+      const out = execFileSync(
+        "curl",
+        [
+          "-sS",
+          "-m",
+          "120",
+          "-X",
+          "POST",
+          endpoint,
+          "-H",
+          "Content-Type: application/x-www-form-urlencoded; charset=UTF-8",
+          "--data-urlencode",
+          `data=${query}`,
+        ],
+        { encoding: "utf8", maxBuffer: 30 * 1024 * 1024 }
+      );
+      if (out.includes("<title>406 Not Acceptable</title>")) {
+        throw new Error("HTTP 406");
+      }
+      if (out.includes("<strong") && out.includes("Error</strong>")) {
+        throw new Error(out.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 240));
+      }
+      return JSON.parse(out);
+    } catch (e) {
+      lastErr = new Error(`${endpoint}: ${e.message}`);
+    }
   }
-  if (out.includes("<strong") && out.includes("Error</strong>")) {
-    throw new Error(out.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 240));
-  }
-  return JSON.parse(out);
+  throw lastErr ?? new Error("Geen Overpass endpoint bereikbaar");
 }
 
 function fetchCity(stad) {
