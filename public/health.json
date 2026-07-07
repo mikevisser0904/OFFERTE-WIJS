@@ -1,71 +1,78 @@
 {
-  "checkedAt": "2026-07-07T06:52:23.704Z",
+  "checkedAt": "2026-07-07T07:03:07.159Z",
   "site": "https://mikevisser0904.github.io/OFFERTE-WIJS",
-  "healthy": true,
-  "avgResponseMs": 141,
+  "healthy": false,
+  "avgResponseMs": 122,
   "checks": [
     {
       "name": "Homepage",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/",
       "ok": true,
       "status": 200,
-      "ms": 188
+      "ms": 175
     },
     {
       "name": "Geld Dashboard",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/dashboard/",
       "ok": true,
       "status": 200,
-      "ms": 137
+      "ms": 122
     },
     {
       "name": "Monitor",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/monitor/",
       "ok": true,
       "status": 200,
-      "ms": 132
+      "ms": 126
+    },
+    {
+      "name": "VakScan",
+      "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/scan/",
+      "ok": false,
+      "status": 404,
+      "ms": 102
     },
     {
       "name": "Bestellen",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/bestellen/",
       "ok": true,
       "status": 200,
-      "ms": 127
+      "ms": 107
     },
     {
       "name": "Ideeën",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/ideeen/",
       "ok": true,
       "status": 200,
-      "ms": 137
+      "ms": 118
     },
     {
       "name": "Diensten",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/diensten/",
       "ok": true,
       "status": 200,
-      "ms": 135
+      "ms": 116
     },
     {
       "name": "Demo",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/",
       "ok": true,
       "status": 200,
-      "ms": 139
+      "ms": 103
     },
     {
       "name": "Sitemap",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/sitemap.xml",
       "ok": true,
       "status": 200,
-      "ms": 129
+      "ms": 122
     },
     {
       "name": "SEO Utrecht",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/land/website-vakman-utrecht/",
       "ok": true,
       "status": 200,
-      "ms": 141
+      "ms": 124
     }
   ],
   "seo": {
