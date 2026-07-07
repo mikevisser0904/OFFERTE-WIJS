@@ -1,4 +1,8 @@
-# Fiverr + Marktplaats kit (copy-paste)
+# Fiverr kit
+
+**Live UI:** [/fiverr/](https://mikevisser0904.github.io/OFFERTE-WIJS/fiverr/) — tabs Setup · Packages · Berichten · Profiel
+
+**Data:** `data/fiverr-gig.ts`
 
 Portfolio: https://mikevisser0904.github.io/OFFERTE-WIJS/demo/
 
