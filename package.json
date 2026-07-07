@@ -25,6 +25,7 @@
     "scan:leaks": "node scripts/security-scan/batch.mjs --mode=leaks",
     "scan:consent": "node scripts/security-scan/consent-deep-check.mjs",
     "scan:verify-pma": "node scripts/security-scan/verify-phpmyadmin.mjs",
+    "scan:pma-logins": "node scripts/security-scan/verify-phpmyadmin.mjs",
     "scan:prune-hits": "node scripts/security-scan/prune-leak-hits.mjs",
     "consent:bulk": "node scripts/security-scan/bulk-consent-register.mjs",
     "lead:database": "node scripts/agents/klanten-lek/run.mjs",

@@ -1,0 +1,290 @@
+{
+  "updatedAt": "2026-07-07T08:15:27.183Z",
+  "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
+  "sterk": [
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "loginUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "klantUrl": "https://chargecars.nl/",
+      "loginUrl": "https://chargecars.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Nuoveni",
+      "plaats": "Voorburg",
+      "klantUrl": "https://nuoveni.nl/",
+      "loginUrl": "https://nuoveni.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.tafelboom.nl/",
+      "loginUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "klantUrl": "https://www.ejvandermeer.nl/",
+      "loginUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    }
+  ],
+  "voorzichtig": [
+    {
+      "bedrijf": "Amer Houttechniek",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://www.amer-hout.nl/",
+      "loginUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "loginUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "loginUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
+      "loginUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "klantUrl": "https://klompelektrotechniek.nl/",
+      "loginUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "loginUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "klantUrl": "https://www.textilia-dordrecht.nl/",
+      "loginUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "klantUrl": "https://vogelaarschilder.nl/",
+      "loginUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    }
+  ],
+  "alleLoginUrls": [
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "loginUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "klantUrl": "https://chargecars.nl/",
+      "loginUrl": "https://chargecars.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Nuoveni",
+      "plaats": "Voorburg",
+      "klantUrl": "https://nuoveni.nl/",
+      "loginUrl": "https://nuoveni.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.tafelboom.nl/",
+      "loginUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "klantUrl": "https://www.ejvandermeer.nl/",
+      "loginUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Amer Houttechniek",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://www.amer-hout.nl/",
+      "loginUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "loginUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "loginUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
+      "loginUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "klantUrl": "https://klompelektrotechniek.nl/",
+      "loginUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "loginUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "klantUrl": "https://www.textilia-dordrecht.nl/",
+      "loginUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "klantUrl": "https://vogelaarschilder.nl/",
+      "loginUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    }
+  ]
+}
