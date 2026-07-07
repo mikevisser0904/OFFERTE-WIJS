@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T11:18:50.865Z",
+  "updatedAt": "2026-07-07T11:21:16.918Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T11:03:46.627Z",
@@ -48,14 +48,14 @@
       "wachtrijPending": 1
     },
     "data-flow": {
-      "lastRun": "2026-07-07T11:09:14.749Z",
-      "ok": false,
-      "healthy": false,
-      "streams": 23,
-      "drift": 1,
-      "synced": 1,
-      "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
-      "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
+      "lastRun": "2026-07-07T11:21:16.918Z",
+      "ok": true,
+      "healthy": true,
+      "streams": 24,
+      "drift": 0,
+      "synced": 0,
+      "agentPrompt": "24 streams OK · queue 0 pending · 15 lekken",
+      "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "klanten-lek": {
       "lastRun": "2026-07-07T08:07:04.958Z",

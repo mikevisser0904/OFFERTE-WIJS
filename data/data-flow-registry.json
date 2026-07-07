@@ -187,6 +187,15 @@
       "producent": "optimizer-agent"
     },
     {
+      "id": "traffic-status",
+      "naam": "Traffic status",
+      "bron": "data/traffic-status.json",
+      "publiek": "public/traffic-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "traffic-run"
+    },
+    {
       "id": "reports",
       "naam": "VakScan rapporten",
       "bron": "data/reports",

@@ -2,17 +2,370 @@
   "uitleg": "Eén entry per week naar seo-landingen.ts (slug uniek). Grok vult pool.",
   "pending": [
     {
-      "slug": "website-hair-salon-fast",
-      "title": "Hair salon website in 3 days | WebKlaar",
-      "h1": "Website for hair salons & beauty",
-      "metaDescription": "5-page salon website, mobile, booking contact. Fixed price, 3-day delivery.",
-      "keywords": ["hair salon website", "beauty salon web design"],
-      "intro": "Clients book on Instagram — but Google still sends high-value appointments to sites that look trustworthy.",
-      "paragraphs": [
-        "WebKlaar template: services, prices overview, gallery, team, contact.",
-        "See demo, order when ready — no surprise invoices."
+      "slug": "website-schilder-amsterdam",
+      "title": "Website voor schilder in Amsterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor schilder in Amsterdam",
+      "metaDescription": "Professionele website voor schilder in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website schilder Amsterdam",
+        "website laten maken Amsterdam"
       ],
-      "dienst": "vakman-site"
+      "intro": "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor schilder in Amsterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Amsterdam"
+    },
+    {
+      "slug": "website-hovenier-amsterdam",
+      "title": "Website voor hovenier in Amsterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor hovenier in Amsterdam",
+      "metaDescription": "Professionele website voor hovenier in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website hovenier Amsterdam",
+        "website laten maken Amsterdam"
+      ],
+      "intro": "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor hovenier in Amsterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Amsterdam"
+    },
+    {
+      "slug": "website-dakdekker-amsterdam",
+      "title": "Website voor dakdekker in Amsterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor dakdekker in Amsterdam",
+      "metaDescription": "Professionele website voor dakdekker in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website dakdekker Amsterdam",
+        "website laten maken Amsterdam"
+      ],
+      "intro": "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor dakdekker in Amsterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Amsterdam"
+    },
+    {
+      "slug": "website-isolatie-amsterdam",
+      "title": "Website voor isolatiebedrijf in Amsterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor isolatiebedrijf in Amsterdam",
+      "metaDescription": "Professionele website voor isolatiebedrijf in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website isolatiebedrijf Amsterdam",
+        "website laten maken Amsterdam"
+      ],
+      "intro": "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor isolatiebedrijf in Amsterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Amsterdam"
+    },
+    {
+      "slug": "website-kozijnen-amsterdam",
+      "title": "Website voor kozijnenbedrijf in Amsterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor kozijnenbedrijf in Amsterdam",
+      "metaDescription": "Professionele website voor kozijnenbedrijf in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website kozijnenbedrijf Amsterdam",
+        "website laten maken Amsterdam"
+      ],
+      "intro": "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor kozijnenbedrijf in Amsterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Amsterdam"
+    },
+    {
+      "slug": "website-zonwering-amsterdam",
+      "title": "Website voor zonweringbedrijf in Amsterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor zonweringbedrijf in Amsterdam",
+      "metaDescription": "Professionele website voor zonweringbedrijf in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website zonweringbedrijf Amsterdam",
+        "website laten maken Amsterdam"
+      ],
+      "intro": "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor zonweringbedrijf in Amsterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Amsterdam"
+    },
+    {
+      "slug": "google-start-google-vakman-amsterdam",
+      "title": "Google Start voor vakman in Amsterdam — vaste prijs | WebKlaar",
+      "h1": "Google Start voor vakman in Amsterdam",
+      "metaDescription": "Google Business + one-pager voor vakman in Amsterdam. €299, live in 2 dagen. Bestel online.",
+      "keywords": [
+        "google business vakman Amsterdam",
+        "online vindbaar Amsterdam"
+      ],
+      "intro": "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor vakman in Amsterdam en omgeving.",
+        "Google Start €299: profiel, one-pager, WhatsApp. Geen bureau-tarieven."
+      ],
+      "dienst": "google-start",
+      "stad": "Amsterdam"
+    },
+    {
+      "slug": "website-loodgieter-rotterdam",
+      "title": "Website voor loodgieter in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor loodgieter in Rotterdam",
+      "metaDescription": "Professionele website voor loodgieter in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website loodgieter Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor loodgieter in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-elektricien-rotterdam",
+      "title": "Website voor elektricien in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor elektricien in Rotterdam",
+      "metaDescription": "Professionele website voor elektricien in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website elektricien Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor elektricien in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-schilder-rotterdam",
+      "title": "Website voor schilder in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor schilder in Rotterdam",
+      "metaDescription": "Professionele website voor schilder in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website schilder Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor schilder in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-hovenier-rotterdam",
+      "title": "Website voor hovenier in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor hovenier in Rotterdam",
+      "metaDescription": "Professionele website voor hovenier in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website hovenier Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor hovenier in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-dakdekker-rotterdam",
+      "title": "Website voor dakdekker in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor dakdekker in Rotterdam",
+      "metaDescription": "Professionele website voor dakdekker in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website dakdekker Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor dakdekker in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-isolatie-rotterdam",
+      "title": "Website voor isolatiebedrijf in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor isolatiebedrijf in Rotterdam",
+      "metaDescription": "Professionele website voor isolatiebedrijf in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website isolatiebedrijf Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor isolatiebedrijf in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-kozijnen-rotterdam",
+      "title": "Website voor kozijnenbedrijf in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor kozijnenbedrijf in Rotterdam",
+      "metaDescription": "Professionele website voor kozijnenbedrijf in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website kozijnenbedrijf Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor kozijnenbedrijf in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-zonwering-rotterdam",
+      "title": "Website voor zonweringbedrijf in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Website voor zonweringbedrijf in Rotterdam",
+      "metaDescription": "Professionele website voor zonweringbedrijf in Rotterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website zonweringbedrijf Rotterdam",
+        "website laten maken Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor zonweringbedrijf in Rotterdam en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "google-start-google-vakman-rotterdam",
+      "title": "Google Start voor vakman in Rotterdam — vaste prijs | WebKlaar",
+      "h1": "Google Start voor vakman in Rotterdam",
+      "metaDescription": "Google Business + one-pager voor vakman in Rotterdam. €299, live in 2 dagen. Bestel online.",
+      "keywords": [
+        "google business vakman Rotterdam",
+        "online vindbaar Rotterdam"
+      ],
+      "intro": "Rotterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor vakman in Rotterdam en omgeving.",
+        "Google Start €299: profiel, one-pager, WhatsApp. Geen bureau-tarieven."
+      ],
+      "dienst": "google-start",
+      "stad": "Rotterdam"
+    },
+    {
+      "slug": "website-loodgieter-den-haag",
+      "title": "Website voor loodgieter in Den Haag — vaste prijs | WebKlaar",
+      "h1": "Website voor loodgieter in Den Haag",
+      "metaDescription": "Professionele website voor loodgieter in Den Haag. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website loodgieter Den Haag",
+        "website laten maken Den Haag"
+      ],
+      "intro": "Den Haag: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor loodgieter in Den Haag en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Den Haag"
+    },
+    {
+      "slug": "website-elektricien-den-haag",
+      "title": "Website voor elektricien in Den Haag — vaste prijs | WebKlaar",
+      "h1": "Website voor elektricien in Den Haag",
+      "metaDescription": "Professionele website voor elektricien in Den Haag. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website elektricien Den Haag",
+        "website laten maken Den Haag"
+      ],
+      "intro": "Den Haag: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor elektricien in Den Haag en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Den Haag"
+    },
+    {
+      "slug": "website-schilder-den-haag",
+      "title": "Website voor schilder in Den Haag — vaste prijs | WebKlaar",
+      "h1": "Website voor schilder in Den Haag",
+      "metaDescription": "Professionele website voor schilder in Den Haag. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website schilder Den Haag",
+        "website laten maken Den Haag"
+      ],
+      "intro": "Den Haag: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor schilder in Den Haag en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Den Haag"
+    },
+    {
+      "slug": "website-hovenier-den-haag",
+      "title": "Website voor hovenier in Den Haag — vaste prijs | WebKlaar",
+      "h1": "Website voor hovenier in Den Haag",
+      "metaDescription": "Professionele website voor hovenier in Den Haag. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website hovenier Den Haag",
+        "website laten maken Den Haag"
+      ],
+      "intro": "Den Haag: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor hovenier in Den Haag en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Den Haag"
+    },
+    {
+      "slug": "website-dakdekker-den-haag",
+      "title": "Website voor dakdekker in Den Haag — vaste prijs | WebKlaar",
+      "h1": "Website voor dakdekker in Den Haag",
+      "metaDescription": "Professionele website voor dakdekker in Den Haag. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+      "keywords": [
+        "website dakdekker Den Haag",
+        "website laten maken Den Haag"
+      ],
+      "intro": "Den Haag: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+      "paragraphs": [
+        "WebKlaar levert vaste-prijs pakketten voor dakdekker in Den Haag en omgeving.",
+        "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."
+      ],
+      "dienst": "vakman-site",
+      "stad": "Den Haag"
     }
-  ]
+  ],
+  "lastFill": {
+    "added": 23,
+    "at": "2026-07-07T11:20:28.784Z",
+    "pendingCount": 24
+  },
+  "lastAdded": {
+    "slug": "website-elektricien-amsterdam",
+    "at": "2026-07-07T11:20:28.869Z"
+  }
 }

@@ -20,6 +20,13 @@ Mike verkoopt, Maarten bouwt. Static Next.js export op GitHub Pages — **geen s
 
 Optioneel Fiverr/Marktplaats: `docs/ZERO-START.md` (niet primair).
 
+## Traffic (geautomatiseerd)
+
+- **Dagelijks CI:** `.github/workflows/traffic-daily.yml` — pool + 3 SEO-landings + IndexNow + push
+- **Lokaal:** `npm run traffic` · `npm run funnel:traffic` (geen VakScan-outreach)
+- **Docs:** `docs/TRAFFIC.md` · status `data/traffic-status.json`
+- Outreach-cron **uit** — alleen `workflow_dispatch` op outreach workflow
+
 ## Maarten-wachtrij (ideeën doorvoeren)
 
 Maarten deelt ideeën via het formulier op `/ideeen/` of in de goudzoeker-agent. Ze komen binnen via ntfy en worden elke 5 min gesynchroniseerd naar:

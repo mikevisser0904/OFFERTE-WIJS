@@ -220,6 +220,38 @@ export const seoLandingen: SeoLanding[] = [
     ],
     dienst: "vakman-site",
   },
+  {
+    slug: "website-hair-salon-fast",
+    title: "Hair salon website in 3 days | WebKlaar",
+    h1: "Website for hair salons & beauty",
+    metaDescription: "5-page salon website, mobile, booking contact. Fixed price, 3-day delivery.",
+    keywords: ["hair salon website","beauty salon web design"],
+    intro: "Clients book on Instagram — but Google still sends high-value appointments to sites that look trustworthy.",
+    paragraphs: ["WebKlaar template: services, prices overview, gallery, team, contact.","See demo, order when ready — no surprise invoices."],
+    dienst: "vakman-site",
+  },
+  {
+    slug: "website-loodgieter-amsterdam",
+    title: "Website voor loodgieter in Amsterdam — vaste prijs | WebKlaar",
+    h1: "Website voor loodgieter in Amsterdam",
+    metaDescription: "Professionele website voor loodgieter in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+    keywords: ["website loodgieter Amsterdam","website laten maken Amsterdam"],
+    intro: "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+    paragraphs: ["WebKlaar levert vaste-prijs pakketten voor loodgieter in Amsterdam en omgeving.","Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."],
+    dienst: "vakman-site",
+    stad: "Amsterdam",
+  },
+  {
+    slug: "website-elektricien-amsterdam",
+    title: "Website voor elektricien in Amsterdam — vaste prijs | WebKlaar",
+    h1: "Website voor elektricien in Amsterdam",
+    metaDescription: "Professionele website voor elektricien in Amsterdam. €899, 3 dagen, mobiel + WhatsApp. Vaste prijs.",
+    keywords: ["website elektricien Amsterdam","website laten maken Amsterdam"],
+    intro: "Amsterdam: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.",
+    paragraphs: ["WebKlaar levert vaste-prijs pakketten voor elektricien in Amsterdam en omgeving.","Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen."],
+    dienst: "vakman-site",
+    stad: "Amsterdam",
+  },
 ];
 
 export function getSeoLanding(slug: string) {

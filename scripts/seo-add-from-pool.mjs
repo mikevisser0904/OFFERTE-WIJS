@@ -42,12 +42,12 @@ function main() {
 ${next.stad ? `    stad: ${JSON.stringify(next.stad)},\n` : ""}  },
 `;
 
-  const marker = "\n];\n\nexport function getSeoLanding";
-  if (!land.includes(marker)) {
+  const marker = /\n  \},\n\];\n\nexport function getSeoLanding/;
+  if (!marker.test(land)) {
     console.error("seo-pool: kan seo-landingen.ts niet patchen");
     process.exit(1);
   }
-  land = land.replace(marker, `,\n${block}];\n\nexport function getSeoLanding`);
+  land = land.replace(marker, `\n  },\n${block}];\n\nexport function getSeoLanding`);
   writeFileSync(LAND, land);
 
   pool.pending = pending.slice(1);

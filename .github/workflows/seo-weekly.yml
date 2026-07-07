@@ -18,12 +18,14 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      - run: node scripts/seo-add-from-pool.mjs
+      - run: node scripts/traffic-run.mjs
+        env:
+          TRAFFIC_LANDINGS_PER_RUN: "5"
       - run: GITHUB_PAGES=true npm run build
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/seo-landingen.ts data/seo-landing-pool.json
+          git add data/seo-landingen.ts data/seo-landing-pool.json data/traffic-status.json public/traffic-status.json public/sitemap.xml
           git diff --staged --quiet || git commit -m "seo: weekly pool + build $(date -u +%Y-%m-%d)"
           git pull --rebase origin main || true
           git push || true

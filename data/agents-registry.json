@@ -159,8 +159,18 @@
       "rol": "Sitemap + IndexNow na wijzigingen",
       "skill": ".grok/skills/seo-agent/SKILL.md",
       "script": "npm run agent:seo",
-      "workflow": null,
+      "workflow": ".github/workflows/seo-weekly.yml",
       "trigger": ["sitemap", "seo update"]
+    },
+    {
+      "id": "traffic",
+      "taak": "traffic",
+      "naam": "Traffic",
+      "rol": "SEO-pool, landings, IndexNow — organisch verkeer zonder outreach",
+      "skill": null,
+      "script": "npm run traffic",
+      "workflow": ".github/workflows/traffic-daily.yml",
+      "trigger": ["traffic", "organisch verkeer", "seo landings"]
     },
     {
       "id": "kpi",

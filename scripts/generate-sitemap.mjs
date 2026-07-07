@@ -6,10 +6,13 @@ const root = process.cwd();
 
 const staticPaths = [
   "",
+  "start/",
   "diensten/",
   "bestellen/",
   "demo/",
-  "dashboard/",
+  "webklaar/",
+  "fiverr/",
+  "marktplaats/",
 ];
 
 const landingsTs = readFileSync(join(root, "data/seo-landingen.ts"), "utf8");

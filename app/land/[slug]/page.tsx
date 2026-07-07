@@ -64,10 +64,10 @@ export default async function SeoLandingPage({
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
-              href={`/bestellen/?dienst=${land.dienst}`}
+              href={land.dienst === "google-start" ? "/start/" : `/bestellen/?dienst=${land.dienst}`}
               className="rounded-full bg-emerald-600 px-8 py-3 font-bold text-white hover:bg-emerald-500"
             >
-              Bestel nu →
+              {land.dienst === "google-start" ? "Google Start €299 →" : "Bestel nu →"}
             </Link>
             <Link
               href="/demo/"

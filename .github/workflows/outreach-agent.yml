@@ -1,8 +1,7 @@
 name: Agent Outreach
 
 on:
-  schedule:
-    - cron: "0 7 * * *"
+  # Geen cron — alleen handmatig of VAKSCAN_SALES=1 in repo vars
   workflow_dispatch:
 
 permissions:

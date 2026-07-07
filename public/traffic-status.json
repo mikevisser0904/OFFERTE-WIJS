@@ -1,0 +1,37 @@
+{
+  "versie": 1,
+  "updatedAt": "2026-07-07T11:20:29.675Z",
+  "startedAt": "2026-07-07T11:20:28.756Z",
+  "landingsAddedThisRun": 3,
+  "landingPagesTotal": 17,
+  "sitemapUrls": 33,
+  "steps": [
+    {
+      "id": "fill-pool",
+      "ok": true
+    },
+    {
+      "id": "add-1",
+      "ok": true
+    },
+    {
+      "id": "add-2",
+      "ok": true
+    },
+    {
+      "id": "add-3",
+      "ok": true
+    },
+    {
+      "id": "sitemap",
+      "ok": true
+    },
+    {
+      "id": "indexnow",
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "next": "Google Search Console: npm run setup:gsc · Deel /start/ op social",
+  "grokPrompt": "traffic OK — 3 landings toegevoegd, 33 URLs sitemap. Geen outreach."
+}
