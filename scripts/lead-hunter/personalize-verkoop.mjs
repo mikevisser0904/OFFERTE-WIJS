@@ -246,13 +246,19 @@ async function main() {
       if (proof && proof.ok === false) proof = null;
     }
 
+    const actionableOnly = (rapport?.findings || []).filter(
+      (f) =>
+        f.check === "datalek" ||
+        (f.check === "database" && f.verified && f.panelConfidence === "high"),
+    );
     const schrikRegels = proof?.magClaimen
       ? [proof.magClaimen, proof.zichtbaar]
-      : (rapport?.findings || []).slice(0, 2).map((f) => f.klant || f.title);
+      : actionableOnly.slice(0, 2).map((f) => f.klant || f.title);
 
     const consent = getActiveConsent(k.url);
     const consentDeep = consent ? laadConsentDeep(k.url) : null;
-    const dbRow = dbExportMap.get(hostKey(k.url)) || null;
+    const dbRow =
+      proof?.ok && dbExportMap.get(hostKey(k.url))?.panelUrl ? dbExportMap.get(hostKey(k.url)) : null;
     const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof, consent, consentDeep, dbRow);
     const verkoopKort = bouwSmsKort(k, proof);
     const wa = k.telefoonWa || (k.telefoon ? normalizeWa(k.telefoon) : null);
@@ -260,7 +266,7 @@ async function main() {
 
     klanten.push({
       ...k,
-      heeftScan: !!rapport,
+      heeftScan: !!rapport && (!!proof?.ok || actionableOnly.length > 0),
       risicoScore: rapport?.risicoScore ?? k.score,
       schrikRegels,
       adminProof: proof,

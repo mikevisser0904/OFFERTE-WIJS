@@ -40,18 +40,6 @@ export function detectPhpMyAdmin(html) {
     return { kind: "open_dashboard", confidence: "high", detail: "phpMyAdmin dashboard zonder inlog" };
   }
 
-  if (/phpmyadmin/i.test(title) && l.length < 30_000 && /password|pma_/i.test(l)) {
-    return { kind: "login", confidence: "medium", detail: "Titel + wachtwoordveld" };
-  }
-
-  if (l.includes("phpmyadmin") && l.length > 15_000) {
-    return null;
-  }
-
-  if (/phpmyadmin/i.test(l) && l.length < 8_000 && /mysql|server.*choice|collation/i.test(l)) {
-    return { kind: "login", confidence: "medium", detail: "Compacte phpMyAdmin-pagina" };
-  }
-
   return null;
 }
 
@@ -87,7 +75,7 @@ export function panelProbeToFinding(panel, pr) {
     label = "Adminer";
   }
 
-  if (!det) return null;
+  if (!det || det.confidence !== "high") return null;
 
   const title =
     det.kind === "open_dashboard"

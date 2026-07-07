@@ -1,5 +1,6 @@
 import { fetchSafe, originOf, probePath } from "./fetch-util.mjs";
-import { panelProbeToFinding } from "./admin-panel-detect.mjs";
+import { isSiteNoisePage, panelProbeToFinding } from "./admin-panel-detect.mjs";
+import { confirmDatabaseEvidence } from "./leak-actionable.mjs";
 
 /** Bekende paden — alleen GET, geen poortscan. */
 export const ADMIN_PANELS = [
@@ -102,13 +103,21 @@ export async function runLeakProbesForOrigin(origin) {
 
   const panelResults = await mapPool(ADMIN_PANELS, CONC, async (panel) => {
     const pr = await probePath(origin, panel.path, PROBE_OPTS);
-    return panelFinding(panel, pr);
+    const f = panelFinding(panel, pr);
+    if (!f) return null;
+    if (f.check === "database" && f.evidence) {
+      const ok = await confirmDatabaseEvidence(f.evidence);
+      if (!ok) return null;
+    }
+    return f;
   });
   for (const f of panelResults) if (f) findings.push(f);
 
   const apiResults = await mapPool(API_PROBES, CONC, async (api) => {
     const pr = await probePath(origin, api.path, PROBE_OPTS);
+    if (isSiteNoisePage(pr.body || "", pr.status)) return null;
     if (!api.test(pr.body || "", pr.status)) return null;
+    if ((pr.body || "").length > 25_000) return null;
     return {
       id: api.id,
       check: "database",

@@ -19,6 +19,9 @@ const qPath = join(ROOT, "data/scan-queue.json");
 if (existsSync(lPath)) leaks = JSON.parse(readFileSync(lPath, "utf8")).hits?.length ?? 0;
 if (existsSync(qPath)) pending = JSON.parse(readFileSync(qPath, "utf8")).items?.filter((i) => i.status === "pending").length ?? 0;
 
+spawnSync("node", [join(ROOT, "scripts/security-scan/sanitize-leak-hits.mjs")], { cwd: ROOT, stdio: "inherit" });
+if (existsSync(lPath)) leaks = JSON.parse(readFileSync(lPath, "utf8")).hits?.length ?? 0;
+
 patchAgent("vakscan-leaks", {
   ok: r.status === 0,
   leakHits: leaks,

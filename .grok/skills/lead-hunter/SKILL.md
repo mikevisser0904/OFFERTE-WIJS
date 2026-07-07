@@ -19,7 +19,8 @@ Stappen: OSM Overpass → `potentiele-klanten.json` → merge `scan-queue.json` 
 ## Daarna (vaak zelfde sessie)
 
 ```bash
-npm run scan:leaks
+npm run scan:leaks          # eindigt met sanitize — alleen actionable phpMyAdmin
+npm run lead:berichten      # schrik-tekst alleen bij verified admin-bewijs
 npm run agent:outreach
 ```
 
@@ -39,8 +40,9 @@ Utrecht, Amersfoort, Amsterdam, Rotterdam, Den Haag, Haarlem — zie `scripts/le
 ## Regels
 
 - Alleen **publieke OSM-data**; geen verzonnen bedrijven
-- Outreach alleen met **gratis-check-verhaal** of toestemming
+- Outreach alleen met **gratis-check-verhaar** of toestemming
 - Geen mass-scan zonder queue — altijd via `scan-queue.json`
+- **Geen false-positive phpMyAdmin:** alleen `pma_username`/loginform + live confirm → `leak-hits.json` met `actionable: true`. Geen lek-claim zonder `adminProof.ok`.
 
 ## Schriftelijke toestemming
 

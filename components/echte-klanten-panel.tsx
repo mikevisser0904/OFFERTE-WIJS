@@ -55,7 +55,9 @@ export function EchteKlantenPanel() {
   }
 
   const herstel = klanten.filter((k) => k.uitgesloten && k.herstelBericht);
-  const metSchrik = klanten.filter((k) => !k.uitgesloten && k.heeftScan && k.verkoopBericht);
+  const metSchrik = klanten.filter(
+    (k) => !k.uitgesloten && k.heeftScan && k.verkoopBericht && k.adminProof?.ok,
+  );
 
   return (
     <section className="rounded-2xl border-2 border-amber-400/40 bg-gradient-to-br from-amber-500/15 to-rose-500/10 p-6">

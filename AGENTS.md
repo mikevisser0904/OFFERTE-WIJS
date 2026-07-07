@@ -113,7 +113,7 @@ Live UI: **/scan/** · Rapporten: `public/reports/` · Queue: `data/scan-queue.j
 
 **Passief:** publieke HTTP(S)-checks + bekende misconfiguratie-paden (phpMyAdmin, Adminer, Elastic/Mongo UI, `.env`, SQL-dumps). **Geen** poortscan, SQL-injectie, inlog of brute force.
 
-**Panel-detectie (echte klanten):** `scripts/security-scan/admin-panel-detect.mjs` — geen hit op WordPress-404 met “phpmyadmin” in footer. Alleen loginform (`pma_username`) of echt dashboard. Opruimen oude hits: `npm run scan:prune-hits` · verificatie: `npm run scan:verify-pma`.
+**Panel-detectie (echte klanten):** Alleen **actionable** lekken → lead/outreach. Drie poorten: (1) `pma_username` / loginform high-confidence, (2) live `confirmDatabaseEvidence` op evidence-URL, (3) `sanitize-leak-hits` na elke batch. Geen medium/substring hits. Test: `npm run test:vakscan-detect`. Commando's: `scan:sanitize-hits`, `scan:verify-pma`.
 
 ### Commando's
 

@@ -25,6 +25,7 @@ run("node", ["scripts/lead-hunter/enrich-score.mjs"]);
 
 if (process.env.LEAD_SCAN === "1") {
   run("node", ["scripts/agents/vakscan-leaks/run.mjs"]);
+  run("node", ["scripts/security-scan/sanitize-leak-hits.mjs"]);
   run("node", ["scripts/lead-hunter/enrich-score.mjs"]);
 }
 

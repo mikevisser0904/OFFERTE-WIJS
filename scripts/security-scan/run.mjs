@@ -7,7 +7,12 @@ import { runAllChecks } from "./checks.mjs";
 import { runLeakChecks } from "./leak-probes.mjs";
 import { buildReport, reportToMarkdown } from "./report.mjs";
 import { normalizeTargetUrl } from "./fetch-util.mjs";
-import { appendHit, hasLeakFindings } from "./leak-hits.mjs";
+import { appendHit } from "./leak-hits.mjs";
+import {
+  filterActionableFindings,
+  hasActionableLeakFindings,
+  sanitizeHitEntry,
+} from "./leak-actionable.mjs";
 
 const root = process.cwd();
 const dataReports = join(root, "data/reports");
@@ -89,7 +94,8 @@ export async function scanOne(opts) {
       ? await runLeakChecks(normalized.href)
       : await runAllChecks(normalized.href, { bedrijf, plaats });
 
-  const leakHit = hasLeakFindings(findings);
+  const actionableFindings = filterActionableFindings(findings);
+  const leakHit = hasActionableLeakFindings(findings);
 
   if (mode === "leaks" && !leakHit && !saveIfClean) {
     return {
@@ -108,30 +114,38 @@ export async function scanOne(opts) {
     };
   }
 
+  const reportFindings = [
+    ...actionableFindings,
+    ...findings.filter((f) => f.check !== "database" && f.check !== "datalek"),
+  ];
   const report = buildReport({
     id,
     url: normalized.href,
     bedrijf,
     plaats,
-    findings,
+    findings: reportFindings,
     scannedAt,
   });
   report.scanMode = mode;
   report.leakHit = leakHit;
+  report.actionableLeak = leakHit;
 
   persistReport(report);
 
   if (leakHit) {
-    appendHit({
-      url: report.url,
-      bedrijf: report.bedrijf,
-      plaats: report.plaats,
-      reportId: report.id,
-      scannedAt: report.scannedAt,
-      risicoScore: report.risicoScore,
-      titles: report.findings.filter((f) => f.check === "database" || f.check === "datalek").map((f) => f.title),
-      findings: report.findings.filter((f) => f.check === "database" || f.check === "datalek"),
-    });
+    appendHit(
+      sanitizeHitEntry({
+        url: report.url,
+        bedrijf: report.bedrijf,
+        plaats: report.plaats,
+        reportId: report.id,
+        scannedAt: report.scannedAt,
+        risicoScore: report.risicoScore,
+        titles: actionableFindings.map((f) => f.title),
+        findings: actionableFindings,
+        actionable: true,
+      }),
+    );
   }
 
   return report;

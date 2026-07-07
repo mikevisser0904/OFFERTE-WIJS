@@ -96,7 +96,7 @@ async function main() {
 
   for (const k of echte.klanten || []) {
     if (k.uitgesloten || blockedHosts.has(hostOf(k.url))) continue;
-    if (!k.heeftScan || !k.verkoopBericht) continue;
+    if (!k.heeftScan || !k.verkoopBericht || !k.adminProof?.ok) continue;
     const regel = (k.schrikRegels || [])[0] || "concrete beveiligingsfouten op uw site";
     pushCandidate({
       type: "lek",
@@ -117,6 +117,11 @@ async function main() {
 
   for (const k of klantenLek.klanten || []) {
     if (!k.heeftLek) continue;
+    if (blockedHosts.has(hostOf(k.url))) continue;
+    const panels = k.database?.panels || [];
+    const hasVerifiedPanel = panels.some((p) => p.panel === "phpMyAdmin" || p.panel === "Adminer");
+    const hasEnvOrSql = (k.bevindingen || []).some((b) => b.type === "datalek");
+    if (!hasVerifiedPanel && !hasEnvOrSql) continue;
     const top = k.database?.panels?.[0]?.panel || k.database?.samenvatting?.slice(0, 60) || "database/datalek";
     pushCandidate({
       type: "lek",

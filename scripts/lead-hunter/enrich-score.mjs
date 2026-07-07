@@ -80,7 +80,7 @@ function scoreOne(lead, probe, leakUrls) {
   const urlKey = lead.url.replace(/\/$/, "").toLowerCase();
   if (leakUrls.has(urlKey)) {
     score += 45;
-    redenen.unshift("database/datalek in VakScan");
+    redenen.unshift("bevestigd database-lek (VakScan actionable)");
   }
 
   if (probe) {
@@ -137,6 +137,12 @@ async function main() {
   if (existsSync(lhPath)) {
     const lh = JSON.parse(readFileSync(lhPath, "utf8"));
     for (const h of lh.hits || []) {
+      if (h.actionable === false) continue;
+      const hasDb = (h.findings || []).some(
+        (f) => f.check === "database" && f.verified && f.panelConfidence === "high",
+      );
+      const hasData = (h.findings || []).some((f) => f.check === "datalek");
+      if (!hasDb && !hasData) continue;
       leakUrls.add(h.url.replace(/\/$/, "").toLowerCase());
     }
   }

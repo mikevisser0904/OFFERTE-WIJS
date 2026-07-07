@@ -7,7 +7,7 @@ import { join } from "path";
 import { fileURLToPath } from "url";
 import { patchAgent } from "../patch-status.mjs";
 import { runLeakChecks } from "../../security-scan/leak-probes.mjs";
-import { hasLeakFindings } from "../../security-scan/leak-hits.mjs";
+import { hasActionableLeakFindings, hitIsActionable } from "../../security-scan/leak-actionable.mjs";
 import { buildDatabaseProfile } from "../../security-scan/db-hints.mjs";
 import { scanOne } from "../../security-scan/run.mjs";
 import { originOf } from "../../security-scan/fetch-util.mjs";
@@ -106,7 +106,7 @@ async function main() {
 
   const scanned = await pool(leads, concurrency, async (lead) => {
     const { findings, ctx } = await runLeakChecks(lead.url);
-    const leak = hasLeakFindings(findings);
+    const leak = hasActionableLeakFindings(findings);
     const database = await buildDatabaseProfile(findings, ctx);
     let reportId = null;
     let risicoScore = leak ? 85 : 0;
@@ -156,6 +156,7 @@ async function main() {
   if (existsSync(LEAK_HITS)) {
     const hits = JSON.parse(readFileSync(LEAK_HITS, "utf8")).hits || [];
     for (const h of hits) {
+      if (!hitIsActionable(h)) continue;
       const key = h.url.replace(/\/$/, "").toLowerCase();
       if (byUrl.has(key) && byUrl.get(key).heeftLek) continue;
       const findings = h.findings || [];

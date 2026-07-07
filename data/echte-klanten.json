@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T08:13:13.080Z",
+  "generatedAt": "2026-07-07T08:18:00.539Z",
   "totaal": 112,
   "zonderContact": 72,
   "klanten": [
@@ -2955,11 +2955,9 @@
       "probleem": "Mogelijk open beveiligingslek (VakScan)",
       "aanbod": "Website Veilig €299 — urgent",
       "whatsappUrl": "https://wa.me/31703864484?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": true,
+      "heeftScan": false,
       "risicoScore": 40,
-      "schrikRegels": [
-        "Bedrijfsdata kan via internet benaderbaar zijn."
-      ],
+      "schrikRegels": [],
       "adminProof": null,
       "scanToestemming": {
         "consentDatum": "2026-07-07",
@@ -2973,15 +2971,9 @@
         "unauthenticatedDashboard": null,
         "authVerified": null
       },
-      "databaseProfiel": {
-        "dbType": "Elasticsearch",
-        "dbHost": "www.dreumel.nl",
-        "dbName": null,
-        "sqlTabellen": [],
-        "panelUrl": "https://www.dreumel.nl/404"
-      },
+      "databaseProfiel": null,
       "bewijsUrl": "https://www.dreumel.nl/404",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Dreumel.\n\nCheck op www.dreumel.nl:\n\n• Bedrijfsdata kan via internet benaderbaar zijn.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Dreumel.\n\nCheck op www.dreumel.nl:\n\n• Ernstige beveiligingsproblemen gevonden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). Dreumel: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
       "whatsappSchrik": "https://wa.me/31703864484?text=Hoi%2C%20Mike%20(WebKlaar).%20Dreumel%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
       "reportId": "02a3c62e62d4"
@@ -2997,11 +2989,9 @@
       "probleem": "Mogelijk open beveiligingslek (VakScan)",
       "aanbod": "Website Veilig €299 — urgent",
       "whatsappUrl": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": true,
+      "heeftScan": false,
       "risicoScore": 40,
-      "schrikRegels": [
-        "Bedrijfsdata kan via internet benaderbaar zijn."
-      ],
+      "schrikRegels": [],
       "adminProof": null,
       "scanToestemming": {
         "consentDatum": "2026-07-07",
@@ -3015,15 +3005,9 @@
         "unauthenticatedDashboard": null,
         "authVerified": null
       },
-      "databaseProfiel": {
-        "dbType": "Elasticsearch",
-        "dbHost": "saelektroexperts.nl",
-        "dbName": null,
-        "sqlTabellen": [],
-        "panelUrl": "https://saelektroexperts.nl/"
-      },
+      "databaseProfiel": null,
       "bewijsUrl": "https://saelektroexperts.nl/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals SA Elektro Experts.\n\nCheck op saelektroexperts.nl:\n\n• Bedrijfsdata kan via internet benaderbaar zijn.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals SA Elektro Experts.\n\nCheck op saelektroexperts.nl:\n\n• Ernstige beveiligingsproblemen gevonden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). SA Elektro Experts: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
       "whatsappSchrik": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20(WebKlaar).%20SA%20Elektro%20Experts%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
       "reportId": "aab38445503e"
@@ -3195,11 +3179,9 @@
       "probleem": "Mogelijk open beveiligingslek (VakScan)",
       "aanbod": "Website Veilig €299 — urgent",
       "whatsappUrl": "https://wa.me/31852125588?text=Hoi%2C%20Mike%20van%20WebKlaar.%20Ik%20keek%20even%20naar%20uw%20website%20%E2%80%94%20er%20zijn%201%E2%80%932%20punten%20qua%20veiligheid%2Fonline%20vindbaarheid%20die%20we%20snel%20kunnen%20fixen%20(vaste%20prijs).%20Heeft%20u%2010%20min%20deze%20week%3F",
-      "heeftScan": true,
+      "heeftScan": false,
       "risicoScore": 40,
-      "schrikRegels": [
-        "Bedrijfsdata kan via internet benaderbaar zijn."
-      ],
+      "schrikRegels": [],
       "adminProof": null,
       "scanToestemming": {
         "consentDatum": "2026-07-07",
@@ -3213,15 +3195,9 @@
         "unauthenticatedDashboard": null,
         "authVerified": null
       },
-      "databaseProfiel": {
-        "dbType": "Elasticsearch",
-        "dbHost": "loodgieterskwartier.nl",
-        "dbName": null,
-        "sqlTabellen": [],
-        "panelUrl": "https://loodgieterskwartier.nl/"
-      },
+      "databaseProfiel": null,
       "bewijsUrl": "https://loodgieterskwartier.nl/",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Loodgieterskwartier.\n\nCheck op loodgieterskwartier.nl:\n\n• Bedrijfsdata kan via internet benaderbaar zijn.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Loodgieterskwartier.\n\nCheck op loodgieterskwartier.nl:\n\n• Ernstige beveiligingsproblemen gevonden.\n\nScore: 40/100.\n\nWij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?",
       "verkoopKort": "Hoi, Mike (WebKlaar). Loodgieterskwartier: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.",
       "whatsappSchrik": "https://wa.me/31852125588?text=Hoi%2C%20Mike%20(WebKlaar).%20Loodgieterskwartier%3A%20ernstig%20lek%20op%20uw%20website%20gevonden%20%E2%80%94%2010%20min%20bellen%3F%20Website%20Veilig%20%E2%82%AC299.",
       "reportId": "d55c372ed7e5"
