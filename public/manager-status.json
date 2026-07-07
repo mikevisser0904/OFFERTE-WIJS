@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-07T08:00:56.656Z",
+  "updatedAt": "2026-07-07T08:08:57.220Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Outreach klaar",
   "prioriteit": 1,
-  "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (Klanten-lek: phpMyAdmin)",
+  "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
   "mikeActie": "15 contacten wachten op /agents/",
   "acties": [
     {
@@ -18,8 +18,8 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 1 · laatste fixes 0",
-      "lastRun": "2026-07-07T08:00:56.458Z"
+      "detail": "Grok-wachtrij 1 · laatste fixes 1",
+      "lastRun": "2026-07-07T08:08:49.924Z"
     },
     {
       "id": "data-flow",
@@ -67,8 +67,8 @@
       "id": "klanten-lek",
       "naam": "Klanten-lek",
       "status": "ok",
-      "detail": "38 echte lek(ken) — /leads/ database-export · outreach",
-      "lastRun": "2026-07-07T07:52:44.246Z"
+      "detail": "37 echte lek(ken) — /leads/ database-export · outreach",
+      "lastRun": "2026-07-07T08:07:04.958Z"
     },
     {
       "id": "vakscan-leaks",
@@ -89,7 +89,7 @@
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-07-07T08:00:55.950Z"
+      "lastRun": "2026-07-07T08:07:55.899Z"
     },
     {
       "id": "seo",

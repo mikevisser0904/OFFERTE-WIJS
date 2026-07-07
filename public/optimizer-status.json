@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-07T08:00:56.458Z",
+  "updatedAt": "2026-07-07T08:08:49.924Z",
   "agent": "optimizer",
-  "applyMode": false,
+  "applyMode": true,
   "metrics": {
     "pending": 0,
     "leakCount": 37,
@@ -15,7 +15,8 @@
       "id": "sync-report-index",
       "titel": "Rapport-index syncen",
       "fn": "syncIndex",
-      "status": "voorgesteld"
+      "status": "ok",
+      "result": true
     }
   ],
   "aanbevelingen": [
@@ -27,6 +28,6 @@
       "actie": "5 WhatsApps via /actie/ vandaag"
     }
   ],
-  "grokPrompt": "optimizer: draai npm run agent:optimizer:apply voor auto-fix",
+  "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
   "pendingGrok": 1
 }
