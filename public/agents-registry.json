@@ -123,6 +123,16 @@
       "trigger": ["volledige scan", "vakscan full"]
     },
     {
+      "id": "verkoop-effectiviteit",
+      "taak": "meten",
+      "naam": "Verkoop-effectiviteit",
+      "rol": "Test tekst (feit vs angst), pipeline, bewijs — score + aanbevelingen",
+      "skill": ".grok/skills/verkoop-bewijs-agent/SKILL.md",
+      "script": "npm run test:effectiviteit",
+      "workflow": null,
+      "trigger": ["test effectiviteit", "verkoop effectiviteit", "meet verkoop"]
+    },
+    {
       "id": "verkoop-bewijs",
       "taak": "verkoop",
       "naam": "Verkoop-bewijs",

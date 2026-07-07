@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T11:18:04.069Z",
+  "updatedAt": "2026-07-07T11:18:50.865Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T11:03:46.627Z",
@@ -106,6 +106,13 @@
       "sitemapOk": true,
       "indexnowOk": true,
       "agentPrompt": "SEO sitemap bijgewerkt"
+    },
+    "verkoop-effectiviteit": {
+      "lastRun": "2026-07-07T11:18:50.865Z",
+      "ok": true,
+      "totaalScore": 75,
+      "agentPrompt": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week",
+      "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     }
   },
   "manager": {
