@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-07-07T07:44:31.579Z",
+  "updatedAt": "2026-07-07T07:46:35.551Z",
   "agent": "data-flow",
-  "healthy": true,
+  "healthy": false,
   "fixApplied": true,
   "summary": {
-    "streams": 21,
-    "ok": 21,
-    "drift": 0,
-    "synced": 0,
+    "streams": 22,
+    "ok": 22,
+    "drift": 1,
+    "synced": 1,
     "missing": 0,
     "warnings": 0
   },
   "cross": {
     "queuePending": 0,
-    "queueScanned": 0,
-    "leakHits": 31,
+    "queueScanned": 184,
+    "leakHits": 32,
     "issues": []
   },
   "streams": [
@@ -118,6 +118,15 @@
       "detail": "in sync"
     },
     {
+      "id": "funnel-status",
+      "naam": "Funnel status",
+      "status": "ok",
+      "drift": true,
+      "synced": true,
+      "issues": [],
+      "detail": "gesynchroniseerd data → public"
+    },
+    {
       "id": "potentiele-klanten",
       "naam": "Leads OSM",
       "status": "ok",
@@ -187,7 +196,7 @@
       "drift": false,
       "synced": false,
       "issues": [],
-      "detail": "33 rapporten · 0 gekopieerd"
+      "detail": "34 rapporten · 0 gekopieerd"
     },
     {
       "id": "health",
@@ -208,6 +217,6 @@
       "detail": "public-only OK"
     }
   ],
-  "grokPrompt": "data-flow OK — alle streams gesynchroniseerd",
-  "agentPrompt": "21 streams OK · queue 0 pending · 31 lekken"
+  "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced",
+  "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow"
 }

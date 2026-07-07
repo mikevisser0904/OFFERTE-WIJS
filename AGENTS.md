@@ -186,9 +186,11 @@ Live hub: **/agents/** · Registry (bron): `data/agents-registry.json` (+ skill 
 **Mike → Grok:** `manager check` (start hier). Status: `data/agents-status.json` per agent-id.
 
 ```bash
-npm run agent:pipeline    # leads → leaks → outreach → manager
+npm run funnel            # dataflow → leads (+scan) → outreach → manager (canoniek)
+npm run funnel:light      # zonder zware leak-scan
+npm run agent:pipeline    # alias voor funnel
 npm run agent:status      # health + sync + bouw-hint + outreach + manager
-npm run autopilot         # optimizer:apply + health + sync + manager + ntfy
+npm run autopilot         # dataflow + health + sync + optimizer (meten) + manager + ntfy
 ```
 
 **Optimizer** draait ook elke **6 uur** in CI (`.github/workflows/optimizer-agent.yml`).  

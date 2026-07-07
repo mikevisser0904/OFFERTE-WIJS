@@ -1,0 +1,34 @@
+{
+  "id": "19c84aa5ca49",
+  "url": "https://www.wonnink.nl/",
+  "bedrijf": "Wonnink Zonwering",
+  "plaats": "Amersfoort",
+  "scannedAt": "2026-07-07T07:46:27.517Z",
+  "risicoScore": 40,
+  "niveau": "hoog",
+  "niveauLabel": "Hoog",
+  "klantBullets": [
+    "Bedrijfsdata kan via internet benaderbaar zijn."
+  ],
+  "findings": [
+    {
+      "id": "elastic-indices",
+      "check": "database",
+      "severity": "critical",
+      "title": "Elasticsearch-indexen mogelijk zichtbaar",
+      "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+      "intern": "Passieve HTTP-check — geen poortscan.",
+      "evidence": "https://www.wonnink.nl/_cat/indices?v"
+    }
+  ],
+  "verkoop": {
+    "dienst": "Website Veilig",
+    "slug": "website-veilig",
+    "prijs": "€299",
+    "prijsNum": 299,
+    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Wonnink Zonwering gedaan. Belangrijkste punt: Bedrijfsdata kan via internet benaderbaar zijn. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+  },
+  "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck.",
+  "scanMode": "leaks",
+  "leakHit": true
+}

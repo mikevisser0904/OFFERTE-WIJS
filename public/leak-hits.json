@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-07-07T07:45:47.878Z",
+  "updatedAt": "2026-07-07T07:46:27.905Z",
   "hits": [
+    {
+      "url": "https://www.wonnink.nl/",
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "reportId": "19c84aa5ca49",
+      "scannedAt": "2026-07-07T07:46:27.517Z",
+      "risicoScore": 40,
+      "titles": [
+        "Elasticsearch-indexen mogelijk zichtbaar"
+      ],
+      "findings": [
+        {
+          "id": "elastic-indices",
+          "check": "database",
+          "severity": "critical",
+          "title": "Elasticsearch-indexen mogelijk zichtbaar",
+          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+          "intern": "Passieve HTTP-check — geen poortscan.",
+          "evidence": "https://www.wonnink.nl/_cat/indices?v"
+        }
+      ]
+    },
     {
       "url": "https://klompelektrotechniek.nl/",
       "bedrijf": "Klomp Elektrotechniek",

@@ -1,17 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T07:44:31.580Z",
+  "updatedAt": "2026-07-07T07:46:35.552Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T07:42:55.374Z",
+      "lastRun": "2026-07-07T07:46:32.736Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 15,
-      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Database/datalek: phpMyAdmin mogelijk open op internet)",
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Klanten-lek: phpMyAdmin)",
       "top3": [
-        "Reinaerde Remake Meubel: Database/datalek: phpMyAdmin mogelijk open op internet",
-        "Loodgieterskwartier: Database/datalek: Elasticsearch-indexen mogelijk zichtbaar",
-        "Klomp Elektrotechniek: Database/datalek: phpMyAdmin mogelijk open op internet"
+        "Reinaerde Remake Meubel: Klanten-lek: phpMyAdmin",
+        "Loodgieterskwartier: Klanten-lek: Elasticsearch",
+        "Klomp Elektrotechniek: Klanten-lek: phpMyAdmin"
       ]
     },
     "manager": {
@@ -48,14 +48,14 @@
       "wachtrijPending": 0
     },
     "data-flow": {
-      "lastRun": "2026-07-07T07:44:31.580Z",
-      "ok": true,
-      "healthy": true,
-      "streams": 21,
-      "drift": 0,
-      "synced": 0,
-      "agentPrompt": "21 streams OK · queue 0 pending · 31 lekken",
-      "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
+      "lastRun": "2026-07-07T07:46:35.552Z",
+      "ok": false,
+      "healthy": false,
+      "streams": 22,
+      "drift": 1,
+      "synced": 1,
+      "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+      "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
     },
     "klanten-lek": {
       "lastRun": "2026-07-07T07:43:23.364Z",
