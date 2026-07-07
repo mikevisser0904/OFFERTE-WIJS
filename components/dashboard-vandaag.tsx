@@ -65,9 +65,9 @@ export function DashboardVandaag() {
       <div className="mt-5 flex flex-wrap gap-2">
         <Link
           href="/actie/"
-          className="rounded-full bg-emerald-400 px-4 py-1.5 text-xs font-bold text-slate-900"
+          className="rounded-full bg-amber-400 px-4 py-1.5 text-xs font-bold text-slate-900"
         >
-          Actie (WhatsApp)
+          Vandaag geld →
         </Link>
         <Link
           href="/bestellen/"

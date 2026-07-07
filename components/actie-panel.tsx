@@ -7,6 +7,7 @@ import { belscriptToestemming, klantIntake } from "@/data/onboarding";
 import { CopyBlock } from "@/components/copy-block";
 import { recordContactVerstuurd } from "@/lib/kpi-autobump";
 import { outreachVandaagUrl, type OutreachVandaag } from "@/lib/agents";
+import { LEK_OUTREACH_OP_ACTIE } from "@/data/vandaag-geld";
 
 const DEMO_LINK = "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/";
 const coldMsg = whatsappBerichten.find((b) => b.id === "cold-2")!;
@@ -61,6 +62,7 @@ export function ActiePanel() {
 
   return (
     <div className="space-y-6">
+      {LEK_OUTREACH_OP_ACTIE && (
       <section className="rounded-2xl border border-emerald-400/25 bg-emerald-400/5 p-6">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-lg font-bold text-emerald-300">Outreach vandaag (automatisch)</h2>
@@ -116,6 +118,7 @@ export function ActiePanel() {
           </ul>
         )}
       </section>
+      )}
 
       <section
         className="rounded-2xl border border-amber-400/25 bg-amber-400/5 p-6"

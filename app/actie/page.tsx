@@ -1,26 +1,22 @@
 import { DashboardShell } from "@/components/dashboard-shell";
 import { ActiePanel } from "@/components/actie-panel";
+import { VandaagGeldPanel } from "@/components/vandaag-geld-panel";
 import Link from "next/link";
 
 export default function ActiePage() {
   return (
     <DashboardShell
       active="/actie/"
-      title="Actie"
-      subtitle="Plak nummers → klik Verstuur. Dat is alles."
+      title="Vandaag geld"
+      subtitle="5 WhatsApps · 1 gesprek · €299 Google Start is de snelste ja"
     >
       <div className="mx-auto max-w-3xl">
-        <ActiePanel />
+        <VandaagGeldPanel />
 
-        <section className="mt-6 rounded-xl border border-rose-400/20 bg-rose-400/5 p-4">
-          <p className="text-sm font-semibold text-rose-200">Eerst VakScan → dan bericht</p>
-          <p className="mt-1 text-xs text-white/50">
-            Scan de site, kopieer de WhatsApp-tekst uit het rapport, plak hierboven bij contacten.
-          </p>
-          <Link href="/scan/" className="mt-3 inline-block text-sm font-medium text-emerald-400 hover:underline">
-            Open VakScan →
-          </Link>
-        </section>
+        <p className="mt-10 text-xs font-semibold uppercase tracking-widest text-white/35">Extra</p>
+        <div className="mt-3">
+          <ActiePanel />
+        </div>
 
         <section className="mt-10 grid gap-4 sm:grid-cols-3">
           <Link

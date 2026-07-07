@@ -167,12 +167,12 @@ function decide(s) {
     acties.push({ wie: "mike", actie: "5 WhatsApps vandaag", script: "/actie/" });
   } else if (fase === "rust" && process.env.VAKSCAN_SALES !== "1") {
     fase = "verkopen";
-    faseLabel = "€0 start — Fiverr & Marktplaats";
+    faseLabel = "Vandaag geld — warm netwerk";
     prioriteit = Math.min(prioriteit, 4);
-    grokPrompt = "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/";
-    mikeActie = "Plak gig op fiverr.com + Marktplaats-advertentie van /fiverr/ (bovenaan op de pagina)";
-    acties.push({ wie: "mike", actie: "Fiverr + Marktplaats live", script: "/fiverr/" });
-    acties.push({ wie: "mike", actie: "Warm netwerk (1 bericht)", script: "docs/ZERO-START.md" });
+    grokPrompt = "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan";
+    mikeActie = "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel.";
+    acties.push({ wie: "mike", actie: "5 WhatsApps vandaag", script: "/actie/" });
+    acties.push({ wie: "mike", actie: "Marktplaats + status-deel", script: "/fiverr/" });
   }
 
   if (s.queuePending > 15 && s.scanStale > 20) {

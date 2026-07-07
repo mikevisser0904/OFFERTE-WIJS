@@ -3,11 +3,13 @@
 **Doel:** eerste order via Fiverr, Marktplaats of bekenden.  
 **Demo:** https://mikevisser0904.github.io/OFFERTE-WIJS/demo/
 
-## Jij (week 1)
+## Jij (vandaag)
 
-1. **Fiverr** — gig plakken uit `docs/FIVERR.md` (EN, ±30 min)
-2. **Marktplaats** — zelfde aanbod, blok “Marktplaats” in dat bestand
-3. **2 bekenden** — demo-link + prijs (€349–499 NL / $199 Fiverr)
+1. **`/actie/`** — plak 5 nummers → **5× Verstuur** (warm netwerk, €299 Google Start)
+2. **Status/LinkedIn** — knop “Deel via WhatsApp-status” op die pagina
+3. **Marktplaats** — copy van `/fiverr/` (groene sectie)
+
+Daarna: Fiverr gig (`docs/FIVERR.md`, ±30 min).
 
 ## Bij een order
 
