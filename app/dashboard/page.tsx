@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
+import { DashboardVandaag } from "@/components/dashboard-vandaag";
 import { GoalTracker, GoalBreakdown, GoalMilestones } from "@/components/goal-tracker";
 import { doelWekelijks, hoofddoel } from "@/data/doel";
 import {
@@ -49,6 +50,8 @@ export default function DashboardPage() {
       subtitle={`Eerste doel: ${hoofddoel.label} in ${hoofddoel.deadline}`}
     >
       <div className="mx-auto max-w-6xl space-y-8">
+        <DashboardVandaag />
+
         <section className="rounded-2xl border border-violet-400/30 bg-violet-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-violet-400">

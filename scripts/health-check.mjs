@@ -5,7 +5,10 @@ const SITE = "https://mikevisser0904.github.io/OFFERTE-WIJS";
 
 const checks = [
   { name: "Homepage", path: "/" },
+  { name: "Geld Dashboard", path: "/dashboard/" },
+  { name: "Monitor", path: "/monitor/" },
   { name: "Bestellen", path: "/bestellen/" },
+  { name: "Ideeën", path: "/ideeen/" },
   { name: "Diensten", path: "/diensten/" },
   { name: "Demo", path: "/demo/" },
   { name: "Sitemap", path: "/sitemap.xml" },

@@ -15,7 +15,13 @@ npm run dev
 
 → http://localhost:3000
 
-**Live (iedereen, ook Maarten):** https://mikevisser0904.github.io/OFFERTE-WIJS/ideeen/
+**Live webshop:** https://mikevisser0904.github.io/OFFERTE-WIJS/
+
+**Team dashboard:** https://mikevisser0904.github.io/OFFERTE-WIJS/dashboard/
+
+**Monitor (KPI + health):** https://mikevisser0904.github.io/OFFERTE-WIJS/monitor/
+
+**Ideeën:** https://mikevisser0904.github.io/OFFERTE-WIJS/ideeen/
 
 ## Samenwerken
 

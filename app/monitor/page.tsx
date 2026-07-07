@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
+import { MaartenWachtrijPanel } from "@/components/maarten-wachtrij-panel";
 import { MonitorPanel } from "@/components/monitor-panel";
 import { IntegrationsPanel } from "@/components/integrations-panel";
 import { monitorUitleg } from "@/data/monitoring";
@@ -33,6 +34,9 @@ export default function MonitorPage() {
           >
             Google Search Console ↗
           </a>
+        </div>
+        <div className="mb-10">
+          <MaartenWachtrijPanel />
         </div>
         <IntegrationsPanel />
         <div className="mt-10">

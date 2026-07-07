@@ -24,8 +24,18 @@ export function MonitorPanel() {
   const [geladen, setGeladen] = useState(false);
 
   useEffect(() => {
-    setKpi(laadKpiMetMeta().kpi);
+    const local = laadKpiMetMeta();
+    setKpi(local.kpi);
     setGeladen(true);
+
+    fetch(`${SITE_URL}/kpi-snapshot.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((snap) => {
+        if (snap?.kpi && !local.opgeslagen) {
+          setKpi({ ...defaultKpi, ...snap.kpi });
+        }
+      })
+      .catch(() => {});
 
     fetch(`${SITE_URL}/health.json`)
       .then((r) => (r.ok ? r.json() : null))
@@ -159,13 +169,18 @@ export function MonitorPanel() {
             </div>
           ))}
         </div>
-        <button
-          type="button"
-          onClick={exportData}
-          className="mt-4 rounded-full border border-white/15 px-5 py-2 text-sm hover:bg-white/5"
-        >
-          Exporteer JSON → deel met Maarten
-        </button>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={exportData}
+            className="rounded-full border border-white/15 px-5 py-2 text-sm hover:bg-white/5"
+          >
+            Exporteer JSON
+          </button>
+          <p className="text-xs text-white/40 self-center">
+            Team: <code className="text-white/55">npm run kpi:snapshot -- bestand.json</code> → commit → push
+          </p>
+        </div>
       </section>
 
       <section>

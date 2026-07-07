@@ -72,3 +72,20 @@ Haalt nieuwe ntfy-berichten op en merged in de wachtrij (behoudt bestaande statu
 | Idee delen | `components/maarten-idee-deel.tsx` |
 | Wachtrij UI | `components/maarten-wachtrij-panel.tsx` |
 | Integraties | `data/integrations.ts` |
+| Geld dashboard | `app/dashboard/page.tsx` |
+| Monitor | `app/monitor/page.tsx`, `scripts/health-check.mjs` |
+| Team KPI snapshot | `data/kpi-snapshot.json`, `npm run kpi:snapshot` |
+
+## Monitor / geld-dashboard (wekelijks of op verzoek)
+
+Live: **/dashboard/** (doel €10k) · **/monitor/** (KPI + health + integraties)
+
+Als Mike zegt **"monitor check"**, **"dashboard inrichten"**, of **"voer monitor uit"**:
+
+1. Lees `public/health.json` — unhealthy → fix site, push, hercheck
+2. Lees `data/integrations.ts` — GSC secret / UptimeRobot nog pending? Documenteer in commit of update status na bevestiging
+3. `data/maarten-wachtrij.json` — pending items → **voer maarten wachtrij uit**
+4. `GITHUB_PAGES=true npm run build` vóór push
+5. Korte status naar Mike: slagingskans-tip, pending count, health OK ja/nee
+
+KPI team-sync: Monitor → Exporteer JSON → `npm run kpi:snapshot -- file.json` → commit `data/` + `public/kpi-snapshot.json`
