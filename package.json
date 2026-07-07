@@ -15,6 +15,8 @@
     "scan:batch": "node scripts/security-scan/batch.mjs",
     "scan:leaks": "node scripts/security-scan/batch.mjs --mode=leaks",
     "scan:import": "node scripts/security-scan/import-queue.mjs",
+    "lead:hunt": "node scripts/lead-hunter/run.mjs",
+    "lead:osm": "node scripts/lead-hunter/osm-fetch.mjs",
     "agent:leads": "node scripts/lead-hunter/agent-run.mjs",
     "agent:outreach": "node scripts/outreach-agent/run.mjs",
     "agent:manager": "node scripts/manager-agent/run.mjs",

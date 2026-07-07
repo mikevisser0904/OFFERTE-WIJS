@@ -2,14 +2,21 @@
 /**
  * Outreach Agent — wie moet Mike vandaag contacteren?
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join } from "path";
+import { patchAgent } from "../agents/patch-status.mjs";
 
 const ROOT = join(import.meta.dirname, "../..");
 const NTFY = process.env.VAKSCAN_NTFY_TOPIC || "webklaar-mike";
 const MAX_VANDAAG = 15;
 
 const DEMO = "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/";
+
+const SKIP_URL_PARTS = ["neverssl.com", "example.com", "example.org", "test.com"];
+function isDemoOrTestUrl(url) {
+  const u = (url || "").toLowerCase();
+  return SKIP_URL_PARTS.some((p) => u.includes(p));
+}
 
 function load(path, fallback) {
   try {
@@ -48,17 +55,6 @@ async function notify(title, body) {
   }
 }
 
-function patchAgentsStatus(patch) {
-  const path = join(ROOT, "data/agents-status.json");
-  const pub = join(ROOT, "public/agents-status.json");
-  const base = load(path, { versie: 1, agents: {} });
-  base.updatedAt = new Date().toISOString();
-  base.agents = { ...base.agents, ...patch };
-  writeFileSync(path, JSON.stringify(base, null, 2));
-  mkdirSync(join(ROOT, "public"), { recursive: true });
-  writeFileSync(pub, JSON.stringify(base, null, 2));
-}
-
 async function main() {
   const hits = load(join(ROOT, "data/leak-hits.json"), { hits: [] });
   const reports = load(join(ROOT, "public/reports/index.json"), []);
@@ -84,7 +80,8 @@ async function main() {
   }
 
   for (const r of reports) {
-    if ((r.risicoScore || 0) < 35) continue;
+    if (isDemoOrTestUrl(r.url)) continue;
+    if (r.leakHit !== true && (r.risicoScore || 0) < 60) continue;
     if (candidates.some((c) => c.url === r.url)) continue;
     candidates.push({
       type: "rapport",
@@ -149,14 +146,12 @@ async function main() {
   mkdirSync(join(ROOT, "public"), { recursive: true });
   writeFileSync(pub, JSON.stringify(payload, null, 2));
 
-  patchAgentsStatus({
-    outreach: {
-      lastRun: payload.generatedAt,
-      contactenVandaag: vandaag.length,
-      lekkenEerst: payload.samenvatting.lekken,
-      agentPrompt: payload.agentPrompt,
-      top3: vandaag.slice(0, 3).map((v) => `${v.bedrijf}: ${v.reden}`),
-    },
+  patchAgent("outreach", {
+    ok: true,
+    contactenVandaag: vandaag.length,
+    lekkenEerst: payload.samenvatting.lekken,
+    agentPrompt: payload.agentPrompt,
+    top3: vandaag.slice(0, 3).map((v) => `${v.bedrijf}: ${v.reden}`),
   });
 
   const lines = vandaag.slice(0, 8).map((v, i) => `${i + 1}. ${v.bedrijf} — ${v.reden}`);

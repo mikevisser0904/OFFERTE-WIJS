@@ -74,6 +74,18 @@ export function leakHitsUrl(): string {
   return publicUrl("/leak-hits.json");
 }
 
+export function scanStatsUrl(): string {
+  return publicUrl("/scan-stats.json");
+}
+
+export type ScanStats = {
+  lastBatchAt: string | null;
+  hitRateLaatste?: number;
+  totaalGescand: number;
+  totaalLekken: number;
+  batches?: { at: string; processed: number; leaks: number; hitRate: number }[];
+};
+
 export type LeakHit = {
   url: string;
   bedrijf: string;

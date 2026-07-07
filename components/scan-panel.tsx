@@ -11,7 +11,9 @@ import {
   reportJsonUrl,
   scanQueueUrl,
   leakHitsUrl,
+  scanStatsUrl,
   type ScanIndexItem,
+  type ScanStats,
   type ScanQueue,
   type LeakHit,
 } from "@/lib/vakscan";
@@ -24,6 +26,7 @@ type FullReport = ScanIndexItem & {
 export function ScanPanel() {
   const [reports, setReports] = useState<ScanIndexItem[]>([]);
   const [leakHits, setLeakHits] = useState<LeakHit[]>([]);
+  const [stats, setStats] = useState<ScanStats | null>(null);
   const [queue, setQueue] = useState<ScanQueue | null>(null);
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -37,14 +40,16 @@ export function ScanPanel() {
   const load = useCallback(async () => {
     setLoading(true);
     try {
-      const [ri, q, lh] = await Promise.all([
+      const [ri, q, lh, st] = await Promise.all([
         fetch(reportsIndexUrl()).then((r) => (r.ok ? r.json() : [])),
         fetch(scanQueueUrl()).then((r) => (r.ok ? r.json() : { items: [] })),
         fetch(leakHitsUrl()).then((r) => (r.ok ? r.json() : { hits: [] })),
+        fetch(scanStatsUrl()).then((r) => (r.ok ? r.json() : null)),
       ]);
       setReports(Array.isArray(ri) ? ri : []);
       setQueue(q);
       setLeakHits(Array.isArray(lh?.hits) ? lh.hits : []);
+      setStats(st);
     } catch {
       setReports([]);
       setQueue({ updatedAt: "", items: [] });
@@ -102,6 +107,29 @@ export function ScanPanel() {
           poortscan en geen inlogpogingen.
         </p>
       </div>
+
+      {stats && (
+        <div className="grid gap-3 sm:grid-cols-4">
+          <div className="rounded-xl border border-white/10 bg-black/20 p-3">
+            <p className="text-xs text-white/40">Gescand (totaal)</p>
+            <p className="text-xl font-bold text-white">{stats.totaalGescand}</p>
+          </div>
+          <div className="rounded-xl border border-rose-400/20 bg-rose-400/5 p-3">
+            <p className="text-xs text-white/40">Lekken gevonden</p>
+            <p className="text-xl font-bold text-rose-300">{stats.totaalLekken}</p>
+          </div>
+          <div className="rounded-xl border border-emerald-400/20 bg-emerald-400/5 p-3">
+            <p className="text-xs text-white/40">Hit-rate laatste batch</p>
+            <p className="text-xl font-bold text-emerald-300">{stats.hitRateLaatste ?? "—"}%</p>
+          </div>
+          <div className="rounded-xl border border-violet-400/20 bg-violet-400/5 p-3">
+            <p className="text-xs text-white/40">Manager</p>
+            <Link href="/agents/" className="text-sm font-medium text-violet-300 hover:underline">
+              Agent-hub →
+            </Link>
+          </div>
+        </div>
+      )}
 
       <div className="grid gap-6 lg:grid-cols-2">
         <section className="rounded-2xl border border-emerald-400/15 bg-[var(--site-surface)]/60 p-5">

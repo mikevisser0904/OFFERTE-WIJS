@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/scan-queue.json public/scan-queue.json data/reports public/reports data/leak-hits.json public/leak-hits.json 2>/dev/null || true
+          git add data/scan-queue.json public/scan-queue.json data/reports public/reports data/leak-hits.json public/leak-hits.json data/scan-stats.json public/scan-stats.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "vakscan: batch $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase origin main || true
           git push || true

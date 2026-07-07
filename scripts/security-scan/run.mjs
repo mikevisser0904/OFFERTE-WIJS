@@ -42,6 +42,7 @@ function syncIndex() {
       niveau: report.niveau,
       niveauLabel: report.niveauLabel,
       scanMode: report.scanMode,
+      leakHit: !!report.leakHit,
     });
   }
   const merged = [...byId.values()].sort((a, b) => new Date(b.scannedAt) - new Date(a.scannedAt));

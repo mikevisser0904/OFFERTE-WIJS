@@ -125,6 +125,8 @@ VAKSCAN_LIMIT=2000 VAKSCAN_CONCURRENCY=5 npm run scan:leaks   # grote lijst loka
 
 Bulk leak-scan slaat **geen** rapport op voor schone sites (alleen `data/leak-hits.json` + rapport bij treffer).
 
+Verbeteringen & roadmap: `docs/VAKSCAN.md` · stats: `data/scan-stats.json`
+
 ### Agent / Mike workflow
 
 1. URL + bedrijf in queue (`data/` + `public/scan-queue.json`, status `pending`)
@@ -133,6 +135,19 @@ Bulk leak-scan slaat **geen** rapport op voor schone sites (alleen `data/leak-hi
 4. Verkoop via **Website Veilig** (€299) + template `vakscan` in `data/verkoop.ts` → `/actie/`
 
 **Disclaimer** staat in elk rapport en op `/scan/`: alleen met toestemming eigenaar of als aangeboden gratis check.
+
+## Lead hunter (potentiële klanten — aparte agent-taak)
+
+Skill: `.grok/skills/lead-hunter/SKILL.md` · UI: **/leads/**
+
+Als Mike zegt **"potentiële klanten"**, **"leads"**, **"vul queue"**:
+
+1. `npm run lead:hunt` (OSM → `data/potentiele-klanten.json` + import queue)
+2. Optioneel `LEAD_SCAN=1 npm run lead:hunt` of `npm run scan:leaks`
+3. Commit `data/`, `public/potentiele-klanten.json`, queue, leak-hits
+4. Mike: **/leads/** → top targets → **/scan/** hits → **/actie/** WhatsApp
+
+Geen verzonnen bedrijven — alleen OSM + handmatige aanvullingen in `data/klanten-leads-import.txt`.
 
 ## Agent-team (Manager + Lead Hunter + Outreach)
 

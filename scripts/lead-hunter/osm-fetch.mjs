@@ -8,6 +8,7 @@ import { join } from "path";
 import { execFileSync } from "child_process";
 
 const OVERPASS_ENDPOINTS = [
+  "https://overpass.kumi.systems/api/interpreter",
   "https://overpass-api.de/api/interpreter",
   "https://overpass.openstreetmap.fr/api/interpreter",
   "https://overpass.private.coffee/api/interpreter",
@@ -104,6 +105,8 @@ function overpassFetch(query) {
           "-sS",
           "-m",
           "120",
+          "-A",
+          "WebKlaar-LeadHunter/1.0",
           "-X",
           "POST",
           endpoint,

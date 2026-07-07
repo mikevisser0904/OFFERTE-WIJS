@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { scanOne } from "./run.mjs";
+import { recordBatchResult } from "./scan-stats.mjs";
 
 const root = process.cwd();
 const queuePath = join(root, "data/scan-queue.json");
@@ -96,6 +97,10 @@ async function main() {
   const done = [];
   const leaks = [];
   let processed = 0;
+  let leakN = 0;
+  let cleanN = 0;
+  let errN = 0;
+  const t0 = Date.now();
 
   await runPool(batch, opts.concurrency, opts.delayMs, async (item) => {
     try {
@@ -112,11 +117,13 @@ async function main() {
       item.risicoScore = report.risicoScore ?? 0;
       item.leakHit = !!report.leakHit;
       if (report.leakHit) {
+        leakN++;
         leaks.push(`${item.bedrijf || item.url} → ${report.risicoScore}`);
-      }
+      } else if (report.skippedReport) cleanN++;
       done.push(`${item.bedrijf || item.url} (${report.risicoScore}${report.leakHit ? " LEK" : ""})`);
       console.log(`OK ${item.url}${report.skippedReport ? " (schoon)" : ""}`);
     } catch (e) {
+      errN++;
       item.status = "fout";
       item.fout = String(e);
       console.error(`FOUT ${item.url}:`, e);
@@ -131,7 +138,16 @@ async function main() {
   queue.updatedAt = new Date().toISOString();
   saveQueue(queue);
 
-  const summary = `Verwerkt: ${done.length}. Database-lekken: ${leaks.length}.\n${leaks.slice(0, 15).join("\n")}`;
+  recordBatchResult({
+    mode: opts.mode,
+    processed: done.length,
+    leaks: leakN,
+    clean: cleanN,
+    errors: errN,
+    durationMs: Date.now() - t0,
+  });
+
+  const summary = `Verwerkt: ${done.length}. Lekken: ${leakN}. Schoon: ${cleanN}. Fout: ${errN}.\n${leaks.slice(0, 15).join("\n")}`;
   if (done.length > 0) {
     await notify(`VakScan ${opts.mode}: ${leaks.length} lek(ken)`, summary);
   }

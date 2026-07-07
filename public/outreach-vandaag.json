@@ -1,37 +1,12 @@
 {
-  "generatedAt": "2026-07-07T07:27:18.430Z",
+  "generatedAt": "2026-07-07T07:30:47.955Z",
   "agent": "outreach",
-  "totaalKandidaten": 2,
-  "vandaag": [
-    {
-      "type": "rapport",
-      "prioriteit": 2,
-      "bedrijf": "Demo Installateur",
-      "plaats": "Utrecht",
-      "url": "http://neverssl.com/",
-      "risicoScore": 100,
-      "reden": "VakScan score 100 (Kritiek)",
-      "actie": "Website Veilig",
-      "whatsapp": "Hoi! Mike van WebKlaar. Ik bood u graag een gratis veiligheidscheck op uw website aan — daarbij viel op: score 100 op de veiligheidscheck. Dat lossen wij vaak in 2 dagen op met Website Veilig (€299). Zin in een kort belletje? Geen verplichtingen.",
-      "reportId": "acae45ea3621"
-    },
-    {
-      "type": "rapport",
-      "prioriteit": 2,
-      "bedrijf": "Voorbeeld Vakman",
-      "plaats": "Amersfoort",
-      "url": "https://example.com/",
-      "risicoScore": 71,
-      "reden": "VakScan score 71 (Kritiek)",
-      "actie": "Website Veilig",
-      "whatsapp": "Hoi! Mike van WebKlaar. Ik bood u graag een gratis veiligheidscheck op uw website aan — daarbij viel op: score 71 op de veiligheidscheck. Dat lossen wij vaak in 2 dagen op met Website Veilig (€299). Zin in een kort belletje? Geen verplichtingen.",
-      "reportId": "0f115db062b7"
-    }
-  ],
+  "totaalKandidaten": 0,
+  "vandaag": [],
   "samenvatting": {
     "lekken": 0,
-    "hogeScore": 2,
+    "hogeScore": 0,
     "koud": 0
   },
-  "agentPrompt": "Outreach: 2 contacten klaar op /agents/ — begin met Demo Installateur (VakScan score 100 (Kritiek))"
+  "agentPrompt": "Outreach: geen hits — draai agent:leads en scan:leaks eerst"
 }

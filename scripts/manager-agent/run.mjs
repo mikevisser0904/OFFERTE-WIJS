@@ -217,7 +217,7 @@ async function main() {
       "VakScan",
       s.queuePending < 50 || s.scanStale < 24,
       `${s.leakCount} lekken · ${s.queuePending} wacht`,
-      s.queue.items?.find((i) => i.scannedAt)?.scannedAt
+      (s.queue?.items || []).map((i) => i.scannedAt).filter(Boolean).sort().reverse()[0]
     ),
     agentCard(
       "outreach",

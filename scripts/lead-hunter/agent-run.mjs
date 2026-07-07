@@ -64,16 +64,7 @@ async function notify(title, body) {
   }
 }
 
-function patchAgentsStatus(patch) {
-  const path = join(ROOT, "data/agents-status.json");
-  const pub = join(ROOT, "public/agents-status.json");
-  const base = loadJson(path, { versie: 1, agents: {} });
-  base.updatedAt = new Date().toISOString();
-  base.agents = { ...base.agents, ...patch };
-  writeFileSync(path, JSON.stringify(base, null, 2));
-  mkdirSync(join(ROOT, "public"), { recursive: true });
-  writeFileSync(pub, JSON.stringify(base, null, 2));
-}
+import { patchAgent } from "../agents/patch-status.mjs";
 
 async function main() {
   const osm = run("scripts/lead-hunter/osm-fetch.mjs");

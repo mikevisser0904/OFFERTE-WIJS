@@ -1,17 +1,12 @@
 {
-  "updatedAt": "2026-07-07T07:28:59.728Z",
+  "updatedAt": "2026-07-07T07:30:48.870Z",
   "agent": "manager",
-  "fase": "verkopen",
-  "faseLabel": "Outreach klaar",
-  "prioriteit": 1,
-  "grokPrompt": "Outreach: 2 contacten klaar op /agents/ — begin met Demo Installateur (VakScan score 100 (Kritiek))",
-  "mikeActie": "2 contacten wachten op /agents/",
+  "fase": "prospectie",
+  "faseLabel": "Meer leads nodig",
+  "prioriteit": 6,
+  "grokPrompt": "agent leads — weinig potentiële klanten in OSM, queue vullen",
+  "mikeActie": "Check /agents/ en /dashboard/",
   "acties": [
-    {
-      "wie": "mike",
-      "actie": "5 WhatsApps vandaag",
-      "script": "/actie/"
-    },
     {
       "wie": "grok",
       "actie": "Lead Hunter (OSM)",
@@ -23,8 +18,8 @@
       "id": "site",
       "naam": "Website",
       "status": "ok",
-      "detail": "OK · 283ms",
-      "lastRun": "2026-07-07T07:28:59.545Z"
+      "detail": "OK · 175ms",
+      "lastRun": "2026-07-07T07:29:09.334Z"
     },
     {
       "id": "lead-hunter",
@@ -44,8 +39,8 @@
       "id": "outreach",
       "naam": "Outreach",
       "status": "ok",
-      "detail": "2 contacten vandaag",
-      "lastRun": "2026-07-07T07:27:18.430Z"
+      "detail": "0 contacten vandaag",
+      "lastRun": "2026-07-07T07:30:47.956Z"
     },
     {
       "id": "maarten",
@@ -58,7 +53,7 @@
   "snapshot": {
     "leakCount": 0,
     "queuePending": 1,
-    "outreachCount": 2,
+    "outreachCount": 0,
     "leadsTotaal": 0,
     "pendingMaarten": 0
   }

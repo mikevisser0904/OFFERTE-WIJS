@@ -39,7 +39,8 @@ export const API_PROBES = [
     path: "/redis/",
     id: "redis-ui",
     title: "Redis-beheer mogelijk open",
-    test: (b, status) => status === 200 && /redis/i.test(b) && b.length < 50000,
+    test: (b, status) =>
+      status === 200 && /redis/i.test(b) && (b.includes("key") || b.includes("database")) && b.length < 20000,
   },
 ];
 
@@ -61,13 +62,13 @@ const PROBE_OPTS = { timeoutMs: 8000, maxBytes: 48_000 };
 
 function panelFinding(panel, pr) {
   const b = (pr.body || "").toLowerCase();
+  if (pr.status !== 200 || b.length < 80) return null;
   const looksLike =
-    pr.status === 200 &&
-    (b.includes("phpmyadmin") ||
-      b.includes("pma_username") ||
-      b.includes("adminer") ||
-      (b.includes("password") && b.includes("mysql")) ||
-      (b.includes("database") && b.includes("login")));
+    b.includes("phpmyadmin") ||
+    b.includes("pma_username") ||
+    b.includes("welcome to phpmyadmin") ||
+    (b.includes("adminer") && b.includes("login")) ||
+    (b.includes("password") && b.includes("mysql") && b.includes("server"));
   if (!looksLike) return null;
   return {
     id: `db-admin-${panel.path.replace(/\//g, "_")}`,
@@ -95,47 +96,61 @@ export async function resolveOrigin(targetUrl) {
   }
 }
 
+async function mapPool(items, concurrency, fn) {
+  const out = [];
+  let i = 0;
+  async function worker() {
+    while (i < items.length) {
+      const idx = i++;
+      out[idx] = await fn(items[idx], idx);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, worker));
+  return out;
+}
+
 /**
- * Alle lek-probes op één host (sequentieel per host om load te spreiden).
+ * Lek-probes op één host — beperkte paralleliteit (sneller, zelfde passieve regels).
  */
 export async function runLeakProbesForOrigin(origin) {
   const findings = [];
+  const CONC = 5;
 
-  for (const panel of ADMIN_PANELS) {
+  const panelResults = await mapPool(ADMIN_PANELS, CONC, async (panel) => {
     const pr = await probePath(origin, panel.path, PROBE_OPTS);
-    const f = panelFinding(panel, pr);
-    if (f) findings.push(f);
-  }
+    return panelFinding(panel, pr);
+  });
+  for (const f of panelResults) if (f) findings.push(f);
 
-  for (const api of API_PROBES) {
+  const apiResults = await mapPool(API_PROBES, CONC, async (api) => {
     const pr = await probePath(origin, api.path, PROBE_OPTS);
-    if (api.test(pr.body || "", pr.status)) {
-      findings.push({
-        id: api.id,
-        check: "database",
-        severity: "critical",
-        title: api.title,
-        klant: "Bedrijfsdata kan via internet benaderbaar zijn.",
-        intern: "Passieve HTTP-check — geen poortscan.",
-        evidence: pr.url,
-      });
-    }
-  }
+    if (!api.test(pr.body || "", pr.status)) return null;
+    return {
+      id: api.id,
+      check: "database",
+      severity: "critical",
+      title: api.title,
+      klant: "Bedrijfsdata kan via internet benaderbaar zijn.",
+      intern: "Passieve HTTP-check — geen poortscan.",
+      evidence: pr.url,
+    };
+  });
+  for (const f of apiResults) if (f) findings.push(f);
 
-  for (const lp of FILE_LEAKS) {
+  const fileResults = await mapPool(FILE_LEAKS, CONC, async (lp) => {
     const pr = await probePath(origin, lp.path, PROBE_OPTS);
-    if (pr.status === 200 && lp.match(pr.body || "")) {
-      findings.push({
-        id: lp.id,
-        check: "datalek",
-        severity: "critical",
-        title: lp.title,
-        klant: "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
-        intern: "Direct escaleren — Website Veilig.",
-        evidence: pr.url,
-      });
-    }
-  }
+    if (pr.status !== 200 || !lp.match(pr.body || "")) return null;
+    return {
+      id: lp.id,
+      check: "datalek",
+      severity: "critical",
+      title: lp.title,
+      klant: "Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen.",
+      intern: "Direct escaleren — Website Veilig.",
+      evidence: pr.url,
+    };
+  });
+  for (const f of fileResults) if (f) findings.push(f);
 
   const dedup = new Map();
   for (const f of findings) {

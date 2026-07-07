@@ -1,51 +1,126 @@
 {
-  "versie": 1,
-  "team": "Mike verkoopt · Maarten bouwt · Agents automatiseren",
+  "versie": 2,
+  "team": "Één taak = één agent · Manager stuurt aan",
   "agents": [
     {
       "id": "manager",
+      "taak": "orchestratie",
       "naam": "Manager",
-      "rol": "Houdt alle agents in de gaten — één Grok-prompt + Mike-actie voor de hub",
+      "rol": "Ziet alles, kiest Grok-prompt + Mike-actie",
       "skill": ".grok/skills/manager-agent/SKILL.md",
       "script": "npm run agent:manager",
       "workflow": ".github/workflows/manager-agent.yml",
-      "trigger": ["manager", "agent hub", "wat moet er nu", "alles in de gaten"]
+      "trigger": ["manager check", "agent hub", "wat moet er nu"]
+    },
+    {
+      "id": "health-monitor",
+      "taak": "site-health",
+      "naam": "Health Monitor",
+      "rol": "Pingt alle pagina's op GitHub Pages",
+      "skill": ".grok/skills/health-monitor/SKILL.md",
+      "script": "npm run agent:health",
+      "workflow": ".github/workflows/monitor.yml",
+      "trigger": ["health", "site down", "health check"]
+    },
+    {
+      "id": "maarten-sync",
+      "taak": "ntfy-sync",
+      "naam": "Maarten Sync",
+      "rol": "Haalt ideeën van ntfy → wachtrij JSON",
+      "skill": ".grok/skills/maarten-sync/SKILL.md",
+      "script": "npm run agent:maarten-sync",
+      "workflow": ".github/workflows/maarten-wachtrij.yml",
+      "trigger": ["sync maarten", "ntfy ideeën"]
+    },
+    {
+      "id": "maarten-bouw",
+      "taak": "development",
+      "naam": "Maarten Bouw",
+      "rol": "Voert pending wachtrij uit (Grok bouwt in repo)",
+      "skill": ".grok/skills/maarten-bouw/SKILL.md",
+      "script": "npm run agent:maarten-bouw",
+      "workflow": null,
+      "trigger": ["maarten wachtrij", "voer ideeën uit", "pending bouwen"]
     },
     {
       "id": "lead-hunter",
+      "taak": "prospectie",
       "naam": "Lead Hunter",
-      "rol": "Vindt vakbedrijven met website (OSM) → queue → VakScan",
+      "rol": "OSM vakbedrijven met website → scan-queue",
       "skill": ".grok/skills/lead-hunter/SKILL.md",
       "script": "npm run agent:leads",
       "workflow": ".github/workflows/lead-hunter.yml",
-      "trigger": ["potentiële klanten", "leads halen", "vul queue", "agent leads"]
+      "trigger": ["agent leads", "potentiële klanten"]
+    },
+    {
+      "id": "vakscan-import",
+      "taak": "data-import",
+      "naam": "VakScan Import",
+      "rol": "URL-lijst → scan-queue.json",
+      "skill": ".grok/skills/vakscan-import/SKILL.md",
+      "script": "npm run agent:vakscan-import",
+      "workflow": null,
+      "trigger": ["import urls", "queue vullen"]
+    },
+    {
+      "id": "vakscan-leaks",
+      "taak": "security-scan",
+      "naam": "VakScan Leaks",
+      "rol": "Bulk database/datalek-paden op queue",
+      "skill": ".grok/skills/vakscan-leaks/SKILL.md",
+      "script": "npm run agent:vakscan-leaks",
+      "workflow": ".github/workflows/scan-batch.yml",
+      "trigger": ["scan leaks", "database lek scan"]
+    },
+    {
+      "id": "vakscan-full",
+      "taak": "security-scan",
+      "naam": "VakScan Full",
+      "rol": "Volledige veiligheidscheck (HTTPS, headers, CMS)",
+      "skill": ".grok/skills/vakscan-full/SKILL.md",
+      "script": "npm run agent:vakscan-full",
+      "workflow": null,
+      "trigger": ["volledige scan", "vakscan full"]
     },
     {
       "id": "outreach",
+      "taak": "verkoop",
       "naam": "Outreach",
-      "rol": "Prioriteert wie Mike vandaag belt/WhatsAppt (lekken eerst, dan warme scores)",
+      "rol": "Wie Mike vandaag belt/WhatsAppt",
       "skill": ".grok/skills/outreach-agent/SKILL.md",
       "script": "npm run agent:outreach",
       "workflow": ".github/workflows/outreach-agent.yml",
-      "trigger": ["wie bellen", "outreach", "verkoop vandaag", "agent outreach"]
+      "trigger": ["agent outreach", "wie bellen"]
     },
     {
-      "id": "vakscan",
-      "naam": "VakScan",
-      "rol": "Passieve security + database-lek checks op queue",
-      "skill": "AGENTS.md § VakScan",
-      "script": "npm run scan:leaks",
-      "workflow": ".github/workflows/scan-batch.yml",
-      "trigger": ["scan", "database lek", "vakscan"]
+      "id": "seo",
+      "taak": "seo",
+      "naam": "SEO",
+      "rol": "Sitemap + IndexNow na wijzigingen",
+      "skill": ".grok/skills/seo-agent/SKILL.md",
+      "script": "npm run agent:seo",
+      "workflow": null,
+      "trigger": ["sitemap", "seo update"]
     },
     {
-      "id": "autopilot",
-      "naam": "Autopilot",
-      "rol": "Health, maarten-sync, KPI — coördineert prompts",
-      "skill": ".grok/skills/webklaar-monitor/SKILL.md",
-      "script": "npm run autopilot",
-      "workflow": ".github/workflows/autopilot.yml",
-      "trigger": ["monitor", "dashboard", "autopilot"]
+      "id": "kpi",
+      "taak": "kpi",
+      "naam": "KPI",
+      "rol": "Team KPI snapshot naar repo",
+      "skill": ".grok/skills/kpi-agent/SKILL.md",
+      "script": "npm run agent:kpi",
+      "workflow": null,
+      "trigger": ["kpi snapshot", "team kpi"]
+    },
+    {
+      "id": "deploy-pages",
+      "taak": "deploy",
+      "naam": "Deploy Pages",
+      "rol": "GitHub Actions → GitHub Pages live",
+      "skill": ".grok/skills/deploy-pages/SKILL.md",
+      "script": "git push origin main",
+      "workflow": ".github/workflows/deploy-pages.yml",
+      "trigger": ["deploy", "live zetten", "push pages"]
     }
   ]
 }
