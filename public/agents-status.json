@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T10:36:35.625Z",
+  "updatedAt": "2026-07-07T10:40:46.272Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T10:33:05.829Z",
@@ -48,7 +48,7 @@
       "wachtrijPending": 1
     },
     "data-flow": {
-      "lastRun": "2026-07-07T10:36:35.618Z",
+      "lastRun": "2026-07-07T10:40:46.267Z",
       "ok": true,
       "healthy": true,
       "streams": 23,
@@ -80,12 +80,12 @@
       "agentPrompt": "Lead Hunter: 184 leads, 0 queue pending — npm run funnel voor outreach"
     },
     "auto-verify": {
-      "lastRun": "2026-07-07T10:36:35.625Z",
+      "lastRun": "2026-07-07T10:40:46.272Z",
       "ok": true,
-      "leakVerified": 15,
-      "consentProofOk": 15,
-      "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck",
-      "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 13,
+      "consentProofOk": 13,
+      "agentPrompt": "13 verified · 13 consent OK · 2 failed recheck",
+      "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     }
   },
   "manager": {

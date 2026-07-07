@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-07T10:36:35.624Z",
+  "updatedAt": "2026-07-07T10:40:46.271Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 15,
-    "leakVerified": 15,
-    "leakFailed": 0,
+    "leakVerified": 13,
+    "leakFailed": 2,
     "consentChecked": 15,
-    "consentProofOk": 15
+    "consentProofOk": 13
   },
   "leakRows": [
     {
@@ -77,9 +77,9 @@
       "url": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.ejvandermeer.nl",
@@ -93,16 +93,16 @@
       "url": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -152,7 +152,7 @@
     {
       "siteUrl": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -164,7 +164,7 @@
     {
       "siteUrl": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -240,6 +240,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck"
+  "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "13 verified · 13 consent OK · 2 failed recheck"
 }
