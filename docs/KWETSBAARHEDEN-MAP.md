@@ -31,7 +31,7 @@ Voor verkoop na VakScan. Gebaseerd op jullie echte hits (15 vakmannen, 2026-07).
 - Sterk uniek DB-wachtwoord; geen hergebruik
 - Overweeg: DB niet via publiek paneel, alleen lokaal/phpMyAdmin via SSH-tunnel
 
-**Verkoopzin:** *“Uw database-deur staat op internet; wij dichten dat in 2 dagen.”*
+**Verkoopzin:** *“Deze beheer-URL reageert publiek — plak hem zelf; wij schermen af binnen 2 dagen (€299).”*
 
 ---
 

@@ -96,7 +96,7 @@ export function EchteKlantenPanel() {
             Bericht + directe link naar hun open admin-inlog. Op bellen: scherm delen zodat zij het zelf zien.
           </p>
           <p className="mt-1 text-xs text-rose-300/90">
-            Niet inloggen. Wel: live HTTP-check + scanrapport-link — klant kan alles zelf verifiëren (geen “lucht”).
+            Feit eerst: HTTP-check + rapport — klant opent zelf de URL. Geen angstpraat in de teksten.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">

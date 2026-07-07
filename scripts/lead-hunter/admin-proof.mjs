@@ -63,13 +63,13 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
       verified: true,
       panelKind: pma.kind,
       zichtbaar: openDash
-        ? "Het phpMyAdmin-hoofdscherm lijkt ZONDER inlog zichtbaar — ernstige misconfiguratie."
-        : "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        ? "phpMyAdmin-hoofdscherm is zonder inlog zichtbaar (afwijkend t.o.v. gebruikelijke hosting-instellingen)."
+        : "phpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.",
       impact:
-        "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+        "Database-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.",
       magClaimen: openDash
-        ? "Uw database-beheer is mogelijk direct bereikbaar zonder wachtwoord."
-        : "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        ? "Database-beheer reageert publiek; het hoofdscherm is zonder inlog zichtbaar."
+        : "Database-beheer (phpMyAdmin) is via een publieke URL bereikbaar — wij hebben niet ingelogd.",
     };
   }
 
@@ -81,9 +81,9 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
       httpStatus,
       adminType: "Adminer",
       titel: title || "Adminer",
-      zichtbaar: "Database-beheer (Adminer) is via de browser bereikbaar — inlogformulier voor de database.",
-      impact: "Zelfde risico als phpMyAdmin: brute-force en data-export als inloggegevens lekken.",
-      magClaimen: "Uw database-beheerpanel is vindbaar op internet zonder extra beveiliging.",
+      zichtbaar: "Adminer-inlogpagina voor database-beheer, bereikbaar via deze URL.",
+      impact: "Database-beheer is via het internet bereikbaar; gebruikelijk is extra afscherming (hosting/VPN).",
+      magClaimen: "Database-beheer (Adminer) is via een publieke URL bereikbaar.",
     };
   }
 
@@ -93,9 +93,9 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
       ok: true,
       adminType: "Mongo Express",
       titel: title || "Mongo Express",
-      zichtbaar: "MongoDB-beheerinterface is via HTTP bereikbaar.",
-      impact: "Bedrijfsdata in MongoDB kan via dit panel benaderd worden na inlog of misconfiguratie.",
-      magClaimen: "Mongo-beheer staat bloot op internet.",
+      zichtbaar: "Mongo Express-beheerinterface reageert op deze URL.",
+      impact: "Beheerinterface is publiek bereikbaar; gebruikelijk is beperkte toegang tot beheerdersnetwerk.",
+      magClaimen: "Mongo-beheer is via een publieke URL bereikbaar.",
     };
   }
 
@@ -105,9 +105,9 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
       ok: true,
       adminType: "Elasticsearch",
       titel: "Elasticsearch API",
-      zichtbaar: "Elasticsearch-cluster reageert publiek zonder authenticatie.",
-      impact: "Indexen met bedrijfsdata kunnen uitgelezen of gewist worden.",
-      magClaimen: "Uw zoek-/datalaag is open voor het internet.",
+      zichtbaar: "Elasticsearch-API reageert op deze URL (geen inlogscherm op deze check).",
+      impact: "Datalaag is vanaf internet bereikbaar; gebruikelijk is authenticatie en netwerkafscherming.",
+      magClaimen: "Elasticsearch is via een publieke URL bereikbaar.",
     };
   }
 
@@ -117,9 +117,9 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
       ok: true,
       adminType: "Config-lek",
       titel: title || "Configuratiebestand",
-      zichtbaar: "Bestand met database-gegevens of wachtwoorden is downloadbaar.",
-      impact: "Met deze gegevens kan iemand direct op uw database inloggen — geen gokwerk meer.",
-      magClaimen: "Database-wachtwoorden liggen op internet.",
+      zichtbaar: "Configuratiebestand met database-velden is via deze URL opvraagbaar.",
+      impact: "Gevoelige configuratie hoort niet in de publieke webroot; roteren van credentials is gebruikelijk na blootstelling.",
+      magClaimen: "Configuratie met database-gegevens is publiek opvraagbaar.",
     };
   }
 
@@ -128,8 +128,8 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
     ok: true,
     adminType: "Onbekend paneel",
     titel: title || "Beheer-URL",
-    zichtbaar: "Een beheer- of technische pagina reageert publiek op dit adres.",
-    impact: "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
-    magClaimen: "Technisch beheerpaneel is publiek bereikbaar.",
+    zichtbaar: "Technische of beheerpagina reageert op deze URL.",
+    impact: "Dit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.",
+    magClaimen: "Beheer-URL reageert publiek (type nog te bevestigen in gesprek).",
   };
 }

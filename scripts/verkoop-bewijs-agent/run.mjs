@@ -60,7 +60,7 @@ function grokTaakVoorContact(k, i) {
   const rapport = k.scanBewijs?.rapportUrl || k.rapportUrl;
   return [
     `Verkoop-bewijs #${i + 1}: ${naam}`,
-    `Doel: klant overtuigen met FEITEN — geen vermoeden.`,
+    `Doel: feit eerst (URL + rapport) — geen angstpraat, geen "u bent gehackt".`,
     url ? `Laat klant deze URL openen: ${url}` : null,
     rapport ? `Optioneel scanrapport JSON: ${rapport}` : null,
     `Gebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.`,

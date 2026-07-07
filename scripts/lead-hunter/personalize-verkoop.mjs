@@ -56,7 +56,7 @@ function bouwScanBewijs(rapport, proof, consentDeep) {
 function bewijsTekstBlok(bewijs) {
   if (!bewijs?.controleUrl && !bewijs?.rapportUrl && !bewijs?.evidenceUrls?.length) return null;
   const regels = [
-    "BEWIJS (geen gevoel — zelf nakijken):",
+    "BEWIJS (meetbaar — zelf nakijken):",
     `• ${bewijs.methode}`,
   ];
   if (bewijs.scanAt) regels.push(`• Eerste scan: ${formatScanDatum(bewijs.scanAt)}`);
@@ -78,7 +78,7 @@ function bewijsTekstBlok(bewijs) {
   for (const u of bewijs.evidenceUrls || []) {
     if (u && u !== bewijs.controleUrl) regels.push(`• Extra pad uit rapport: ${u}`);
   }
-  regels.push("• Dit is geen vermoeden: plak de controle-URL in uw browser — u ziet wat wij zagen.");
+  regels.push("• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.");
   return regels.join("\n");
 }
 
@@ -93,7 +93,7 @@ function loadUitgeslotenHosts() {
   }
 }
 const ETHICAL =
-  "Nooit inloggen op klant-systemen. Nooit zeggen 'wij zitten in uw admin' — wel: 'uw admin-inlog staat op internet open'. Klant kan link zelf openen.";
+  "Feit eerst, geen angstpraat. Nooit inloggen zonder toestemming. Nooit 'wij zitten in uw database' — wel: meetbare URL + wat de klant zelf ziet. Klant verifieert zelf.";
 
 function normUrl(u) {
   try {
@@ -235,30 +235,31 @@ function bouwBericht(klant, rapport, proof, consent, consentDeep, dbRow, scanBew
     const extraDash = consentDeep?.passive?.unauthenticatedDashboard?.summary;
     const extraAuth =
       consentDeep?.auth?.loginSuccess === true
-        ? "Met door u verstrekte inloggegevens hebben we bevestigd dat het database-beheer echt bereikbaar is (zonder klantdata te exporteren)."
+        ? "Met door u verstrekte inloggegevens: beheeromgeving bereikbaar bevestigd (geen data gekopieerd)."
         : consentDeep?.auth?.loginSuccess === false
-          ? "Ook met de door u verstrekte gegevens was extra verificatie nodig — het paneel blijft een risico."
+          ? "Met door u verstrekte gegevens: extra stap nodig; de publieke URL blijft bereikbaar."
           : null;
 
     const bewijsBlok = bewijsTekstBlok(scanBewijs);
-    kern = `${toestemmingRegel ? `${toestemmingRegel}\n\n` : ""}${consent ? "" : "Ik heb NIET ingelogd op uw systemen zonder uw toestemming. "}Uw database-admin staat WEL open op internet — gecontroleerd op ${formatScanDatum(scanBewijs?.liveCheckAt || rapport?.scannedAt)}.
-${bewijsBlok ? `\n\n${bewijsBlok}\n` : ""}
-${extraDash ? `\nExtra bevinding: ${extraDash}` : ""}
+    const typeLabel = proof.adminType || "beheerpagina";
+    kern = `${toestemmingRegel ? `${toestemmingRegel}\n\n` : ""}FEIT (passieve check, geen inlog) — ${formatScanDatum(scanBewijs?.liveCheckAt || rapport?.scannedAt)}:
+• ${typeLabel} reageert op: ${proof.url}
+${consent ? "" : "• Wij hebben niet ingelogd zonder uw toestemming.\n"}
+${bewijsBlok ? `\n${bewijsBlok}\n` : ""}
+${extraDash ? `\nAanvullende meting: ${extraDash}` : ""}
 ${extraAuth ? `\n${extraAuth}` : ""}
-${dbFeitenRegel(dbRow) ? `\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): ${dbFeitenRegel(dbRow)}.` : ""}
+${dbFeitenRegel(dbRow) ? `\nUit publieke site/config (geen database-inlog): ${dbFeitenRegel(dbRow)}.` : ""}
 
-ZELF NAKIJKEN (30 sec) — plak in uw browser:
+ZELF NAKIJKEN — plak in uw browser:
 ${proof.url}
 
-Wat u daar ziet ZONDER wachtwoord:
+Wat op die pagina staat (zonder wachtwoord in te vullen):
 ${proof.zichtbaar}
 
-Waarom dit u raakt:
+Kort uitgelegd:
 ${proof.impact}
 
-Dit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.
-
-Risicoscore op uw site: ${score}/100.`;
+VakScan-weging: ${score}/100 (interne prioriteitsscore, geen officieel certificaat).`;
   } else {
     const regels = (klant.schrikRegels || []).map((r) => `• ${r}`).join("\n");
     const findingBullets = uniekeFindings(rapport?.findings)
@@ -268,13 +269,13 @@ Risicoscore op uw site: ${score}/100.`;
     const bewijsBlok = bewijsTekstBlok(scanBewijs);
     kern = `Check op ${site}:
 
-${regels || findingBullets || "• Ernstige beveiligingsproblemen gevonden."}
+${regels || findingBullets || "• Concrete bevindingen in het scanrapport (zie URL’s hieronder)."}
 ${bewijsBlok ? `\n\n${bewijsBlok}` : ""}
 
-Score: ${score}/100.`;
+VakScan-weging: ${score}/100.`;
   }
 
-  const close = `Wij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?`;
+  const close = `Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?`;
 
   return `${intro}\n\n${kern}\n\n${close}`;
 }
@@ -285,12 +286,12 @@ function bouwSmsKort(klant, proof, scanBewijs) {
   if (proof?.ok && proof.url) {
     const http =
       proof.httpStatus != null ? ` (HTTP ${proof.httpStatus}, live gecontroleerd)` : " (live gecontroleerd)";
-    return `Hoi, Mike (WebKlaar). ${naam}: uw database-beheer (${proof.adminType}) staat OPEN op internet${http} — wij loggen niet in: ${proof.url}.${ref} Zelf plakken in browser = zelfde beeld. €299 dichten? Bellen?`;
+    return `Hoi, Mike (WebKlaar). ${naam}: passieve check${http} — ${proof.adminType} op ${proof.url} (niet ingelogd).${ref} Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.`;
   }
   if (scanBewijs?.rapportUrl) {
-    return `Hoi, Mike (WebKlaar). ${naam}: VakScan vond concrete risico's op uw site.${ref} Rapport: ${scanBewijs.rapportUrl} — 10 min bellen? Website Veilig €299.`;
+    return `Hoi, Mike (WebKlaar). ${naam}: VakScan: bevindingen met URL’s in rapport.${ref} ${scanBewijs.rapportUrl} — 10 min uitleg? Website Veilig €299.`;
   }
-  return `Hoi, Mike (WebKlaar). ${naam}: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.`;
+  return `Hoi, Mike (WebKlaar). ${naam}: VakScan vond punten op uw site — 10 min bellen? Website Veilig €299.`;
 }
 
 async function main() {
