@@ -179,7 +179,6 @@ npm run autopilot         # optimizer:apply + health + sync + manager + ntfy
 
 **Optimizer** draait ook elke **6 uur** in CI (`.github/workflows/optimizer-agent.yml`).  
 Grok-taken: `data/optimizer-wachtrij.json` — trigger: **optimizer wachtrij**.
-```
 
 Legacy: `npm run scan:leaks` = zelfde als `agent:vakscan-leaks`.
 
