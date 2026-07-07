@@ -2,6 +2,12 @@
  * Publiek bewijs: wat zichtbaar is op admin-URL zonder inloggen.
  * GEEN login, GEEN POST, GEEN wachtwoord — alleen GET.
  */
+import {
+  detectPhpMyAdmin,
+  detectAdminer,
+  isSiteNoisePage,
+  extractTitle,
+} from "../security-scan/admin-panel-detect.mjs";
 
 export async function haalAdminBewijs(evidenceUrl) {
   if (!evidenceUrl || !/^https?:\/\//i.test(evidenceUrl)) return null;
@@ -14,37 +20,59 @@ export async function haalAdminBewijs(evidenceUrl) {
       headers: { "User-Agent": "VakScan-Proof/1.0 (passief)", Accept: "text/html" },
       signal: AbortSignal.timeout(12_000),
     });
-    if (!res.ok) return { url: evidenceUrl, ok: false, status: res.status };
+    if (!res.ok) {
+      const buf = await res.arrayBuffer().catch(() => new ArrayBuffer(0));
+      const errHtml = new TextDecoder("utf8", { fatal: false }).decode(buf.slice(0, 50_000));
+      const parsed = parseAdminHtml(errHtml, evidenceUrl, res.status);
+      if (!parsed.ok) return { url: evidenceUrl, ok: false, status: res.status, ...parsed };
+      return { url: evidenceUrl, ok: false, status: res.status };
+    }
     const buf = await res.arrayBuffer();
     html = new TextDecoder("utf8", { fatal: false }).decode(buf.slice(0, 100_000));
   } catch (e) {
     return { url: evidenceUrl, ok: false, error: String(e) };
   }
 
-  return parseAdminHtml(html, evidenceUrl);
+  return parseAdminHtml(html, evidenceUrl, 200);
 }
 
-export function parseAdminHtml(html, url) {
+export function parseAdminHtml(html, url, httpStatus = 200) {
   const l = html.toLowerCase();
-  const titleMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i);
-  const title = titleMatch ? titleMatch[1].trim() : "";
+  const title = extractTitle(html);
 
-  if (l.includes("pma_username") || l.includes("phpmyadmin") || /phpmyadmin/i.test(title)) {
+  if (isSiteNoisePage(html, httpStatus)) {
+    return {
+      url,
+      ok: false,
+      adminType: "geen-panel",
+      titel: title || "Site-pagina",
+      reden: "Geen phpMyAdmin — waarschijnlijk WordPress/404 of gewone sitepagina.",
+    };
+  }
+
+  const pma = detectPhpMyAdmin(html);
+  if (pma) {
+    const openDash = pma.kind === "open_dashboard";
     return {
       url,
       ok: true,
       adminType: "phpMyAdmin",
       titel: title || "phpMyAdmin",
-      zichtbaar:
-        "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+      verified: true,
+      panelKind: pma.kind,
+      zichtbaar: openDash
+        ? "Het phpMyAdmin-hoofdscherm lijkt ZONDER inlog zichtbaar — ernstige misconfiguratie."
+        : "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
       impact:
         "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
-      magClaimen:
-        "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+      magClaimen: openDash
+        ? "Uw database-beheer is mogelijk direct bereikbaar zonder wachtwoord."
+        : "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
     };
   }
 
-  if (l.includes("adminer") || /adminer/i.test(title)) {
+  const adminer = detectAdminer(html);
+  if (adminer) {
     return {
       url,
       ok: true,

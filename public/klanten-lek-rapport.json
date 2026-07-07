@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-07T07:52:44.243Z",
+  "generatedAt": "2026-07-07T08:07:04.949Z",
   "agent": "klanten-lek",
   "gescand": 184,
-  "metLek": 38,
+  "metLek": 37,
   "disclaimer": "Passieve HTTP-checks alleen. Geen wachtwoorden opgeslagen. Gebruik voor Website Veilig €299 outreach met toestemming.",
   "klanten": [
     {
@@ -11,7 +11,7 @@
       "url": "https://firmavanrijn.nl",
       "categorie": "zonwering",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:38.562Z",
+      "scannedAt": "2026-07-07T07:59:58.321Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -67,7 +67,7 @@
       "url": "https://www.amer-hout.nl",
       "categorie": "kozijnen",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:25.754Z",
+      "scannedAt": "2026-07-07T07:59:44.872Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -118,79 +118,12 @@
       ]
     },
     {
-      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
-      "plaats": "Amstelveen",
-      "url": "https://www.jwfborn.nl",
-      "categorie": "loodgieter",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:42.102Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "cf629bfb83b6",
-      "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.jwfborn.nl/phpmyadmin/",
-            "host": "www.jwfborn.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.jwfborn.nl/phpMyAdmin/",
-            "host": "www.jwfborn.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.jwfborn.nl/pma/",
-            "host": "www.jwfborn.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.jwfborn.nl/phpmyadmin/index.php",
-            "host": "www.jwfborn.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.jwfborn.nl/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.jwfborn.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.jwfborn.nl/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.jwfborn.nl/phpmyadmin/index.php"
-        }
-      ]
-    },
-    {
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
       "url": "https://hetinterieur.nl",
       "categorie": "kozijnen",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:36.656Z",
+      "scannedAt": "2026-07-07T07:59:52.927Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -243,10 +176,11 @@
     {
       "bedrijf": "Kroon interieurbouw",
       "plaats": "De Meern",
-      "url": "https://www.kroon-interieurbouw.nl",
-      "categorie": "kozijnen",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:43.230Z",
+      "url": "https://www.kroon-interieurbouw.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:44:42.108Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -305,7 +239,8 @@
           "ernst": "critical",
           "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php"
         }
-      ]
+      ],
+      "bron": "leak-hits"
     },
     {
       "bedrijf": "Textilia",
@@ -313,7 +248,7 @@
       "url": "https://www.textilia-dordrecht.nl",
       "categorie": "zonwering",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:47.487Z",
+      "scannedAt": "2026-07-07T07:59:54.355Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -369,7 +304,7 @@
       "url": "https://www.bwstyling.nl",
       "categorie": "zonwering",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:50.642Z",
+      "scannedAt": "2026-07-07T07:59:56.336Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -505,7 +440,7 @@
       "url": "https://www.boselektrotechniek.nl",
       "categorie": "elektricien",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:47.249Z",
+      "scannedAt": "2026-07-07T07:59:57.133Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -580,10 +515,11 @@
     {
       "bedrijf": "Rioolservice P. van Adrichem",
       "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl",
-      "categorie": "loodgieter",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:55.638Z",
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:44:51.602Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -653,7 +589,8 @@
           "ernst": "critical",
           "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
         }
-      ]
+      ],
+      "bron": "leak-hits"
     },
     {
       "bedrijf": "ChargeCars",
@@ -661,7 +598,7 @@
       "url": "https://chargecars.nl",
       "categorie": "elektricien",
       "score": 97,
-      "scannedAt": "2026-07-07T07:45:21.110Z",
+      "scannedAt": "2026-07-07T08:00:26.529Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -734,75 +671,12 @@
       ]
     },
     {
-      "bedrijf": "Loodgieterskwartier",
-      "plaats": "Rijswijk",
-      "url": "https://loodgieterskwartier.nl",
-      "categorie": "loodgieter",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:45:07.250Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "d55c372ed7e5",
-      "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "Elasticsearch",
-            "url": "https://loodgieterskwartier.nl/",
-            "host": "loodgieterskwartier.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": [
-          {
-            "type": "Elasticsearch",
-            "url": "https://loodgieterskwartier.nl/"
-          }
-        ]
-      },
-      "bevindingen": [
-        {
-          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": ".env mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": ".env.local mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": ".env.production mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        },
-        {
-          "titel": "Config-backup mogelijk open",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://loodgieterskwartier.nl/"
-        }
-      ]
-    },
-    {
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
       "categorie": "kozijnen",
       "score": 97,
-      "scannedAt": "2026-07-07T07:45:06.649Z",
+      "scannedAt": "2026-07-07T08:00:07.989Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -853,12 +727,283 @@
       ]
     },
     {
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "url": "https://www.tafelboom.nl",
+      "categorie": "kozijnen",
+      "score": 97,
+      "scannedAt": "2026-07-07T08:00:29.499Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "216370c66063",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://tafelboom.nl/phpMyAdmin/",
+            "host": "tafelboom.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://tafelboom.nl/phpMyAdmin/"
+        }
+      ]
+    },
+    {
+      "bedrijf": "De Pagter",
+      "plaats": "Voorburg",
+      "url": "https://depagter.info/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:48:08.755Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "679c884eb23e",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/phpmyadmin/",
+            "host": "depagter.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/phpMyAdmin/",
+            "host": "depagter.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/pma/",
+            "host": "depagter.info"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://depagter.info/phpmyadmin/index.php",
+            "host": "depagter.info"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://depagter.info/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Nuoveni",
+      "plaats": "Voorburg",
+      "url": "https://nuoveni.nl",
+      "categorie": "installateur",
+      "score": 97,
+      "scannedAt": "2026-07-07T08:00:10.266Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "95bee736a13f",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/phpmyadmin/",
+            "host": "nuoveni.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/phpMyAdmin/",
+            "host": "nuoveni.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/pma/",
+            "host": "nuoveni.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://nuoveni.nl/phpmyadmin/index.php",
+            "host": "nuoveni.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://nuoveni.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "url": "https://www.willemseelektrotechniek.nl",
+      "categorie": "elektricien",
+      "score": 97,
+      "scannedAt": "2026-07-07T08:00:19.470Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "fe9d43611024",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+            "host": "s250.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+            "host": "s250.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s250.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
       "bedrijf": "Pruis Schilderwerken",
       "plaats": "Amersfoort",
-      "url": "https://pruisschilderwerken.nl",
-      "categorie": "schilder",
-      "score": 85,
-      "scannedAt": "2026-07-07T07:45:00.078Z",
+      "url": "https://pruisschilderwerken.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:44:59.370Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -917,15 +1062,17 @@
           "ernst": "critical",
           "url": "https://server-alfa.heroo.nl/phpMyAdmin/index.php"
         }
-      ]
+      ],
+      "bron": "leak-hits"
     },
     {
       "bedrijf": "Verzijl De Woonprofessionals",
       "plaats": "Nieuw-Lekkerland",
-      "url": "https://verzijlbv.nl",
-      "categorie": "schilder",
-      "score": 85,
-      "scannedAt": "2026-07-07T07:45:08.375Z",
+      "url": "https://verzijlbv.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:45:07.897Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -973,15 +1120,17 @@
           "ernst": "critical",
           "url": "https://verzijlbv.nl/phpmyadmin/index.php"
         }
-      ]
+      ],
+      "bron": "leak-hits"
     },
     {
       "bedrijf": "Finish Profiles",
       "plaats": "Purmerend",
-      "url": "https://www.finish-profiles.nl",
-      "categorie": "dakdekker",
-      "score": 85,
-      "scannedAt": "2026-07-07T07:45:09.615Z",
+      "url": "https://www.finish-profiles.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:45:09.268Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -1040,7 +1189,8 @@
           "ernst": "critical",
           "url": "https://finish-profiles.nl/phpmyadmin/index.php"
         }
-      ]
+      ],
+      "bron": "leak-hits"
     },
     {
       "bedrijf": "T.B. van Wichen",
@@ -1123,12 +1273,81 @@
       "bron": "leak-hits"
     },
     {
+      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
+      "plaats": "Amstelveen",
+      "url": "https://www.jwfborn.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:44:33.658Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "cf629bfb83b6",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/phpmyadmin/",
+            "host": "www.jwfborn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/phpMyAdmin/",
+            "host": "www.jwfborn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/pma/",
+            "host": "www.jwfborn.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.jwfborn.nl/phpmyadmin/index.php",
+            "host": "www.jwfborn.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/pma/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.jwfborn.nl/phpmyadmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
       "url": "https://klompelektrotechniek.nl",
       "categorie": "elektricien",
       "score": 62,
-      "scannedAt": "2026-07-07T07:45:47.879Z",
+      "scannedAt": "2026-07-07T08:01:07.453Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -1350,274 +1569,6 @@
       "bron": "leak-hits"
     },
     {
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "url": "https://www.tafelboom.nl",
-      "categorie": "kozijnen",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:29.439Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "216370c66063",
-      "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://tafelboom.nl/phpMyAdmin/",
-            "host": "tafelboom.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://tafelboom.nl/phpMyAdmin/",
-            "host": "tafelboom.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://tafelboom.nl/phpMyAdmin/",
-            "host": "tafelboom.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://tafelboom.nl/phpMyAdmin/",
-            "host": "tafelboom.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://tafelboom.nl/phpMyAdmin/",
-            "host": "tafelboom.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://tafelboom.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://tafelboom.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://tafelboom.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://tafelboom.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://tafelboom.nl/phpMyAdmin/"
-        }
-      ]
-    },
-    {
-      "bedrijf": "De Pagter",
-      "plaats": "Voorburg",
-      "url": "https://depagter.info",
-      "categorie": "installateur",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:13.820Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "679c884eb23e",
-      "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://depagter.info/phpmyadmin/",
-            "host": "depagter.info"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://depagter.info/phpMyAdmin/",
-            "host": "depagter.info"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://depagter.info/pma/",
-            "host": "depagter.info"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://depagter.info/phpmyadmin/index.php",
-            "host": "depagter.info"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://depagter.info/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://depagter.info/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://depagter.info/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://depagter.info/phpmyadmin/index.php"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Nuoveni",
-      "plaats": "Voorburg",
-      "url": "https://nuoveni.nl",
-      "categorie": "installateur",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:17.638Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "95bee736a13f",
-      "database": {
-        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://nuoveni.nl/phpmyadmin/",
-            "host": "nuoveni.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://nuoveni.nl/phpMyAdmin/",
-            "host": "nuoveni.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://nuoveni.nl/pma/",
-            "host": "nuoveni.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://nuoveni.nl/phpmyadmin/index.php",
-            "host": "nuoveni.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://nuoveni.nl/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://nuoveni.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://nuoveni.nl/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://nuoveni.nl/phpmyadmin/index.php"
-        }
-      ]
-    },
-    {
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "url": "https://www.willemseelektrotechniek.nl",
-      "categorie": "elektricien",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:50.571Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "fe9d43611024",
-      "database": {
-        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
-            "host": "s250.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
-            "host": "s250.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
-            "host": "s250.webhostingserver.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php"
-        }
-      ]
-    },
-    {
       "bedrijf": "Schreuder Glas- en Schilderwerken",
       "plaats": "Noordwijk",
       "url": "https://www.schreuderschilderwerken.nl/",
@@ -1692,7 +1643,7 @@
       "url": "https://www.ejvandermeer.nl",
       "categorie": "elektricien",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:57.532Z",
+      "scannedAt": "2026-07-07T08:00:02.117Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 80,
@@ -1737,7 +1688,7 @@
       "url": "https://vogelaarschilder.nl",
       "categorie": "schilder",
       "score": 85,
-      "scannedAt": "2026-07-07T07:45:15.205Z",
+      "scannedAt": "2026-07-07T08:00:29.191Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 80,
@@ -1782,7 +1733,7 @@
       "url": "https://www.dreumel.nl",
       "categorie": "kozijnen",
       "score": 97,
-      "scannedAt": "2026-07-07T07:44:24.964Z",
+      "scannedAt": "2026-07-07T07:59:44.150Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -1816,187 +1767,12 @@
       ]
     },
     {
-      "bedrijf": "SA Elektro Experts",
-      "plaats": "'s-Gravenhage",
-      "url": "https://saelektroexperts.nl",
-      "categorie": "elektricien",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:53.125Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "aab38445503e",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "Elasticsearch",
-            "url": "https://saelektroexperts.nl/",
-            "host": "saelektroexperts.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": [
-          {
-            "type": "Elasticsearch",
-            "url": "https://saelektroexperts.nl/"
-          }
-        ]
-      },
-      "bevindingen": [
-        {
-          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://saelektroexperts.nl/"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Ambiance Heko-Becewe",
-      "plaats": "Amsterdam",
-      "url": "https://www.ambiance-zonwering.nl/heko-becewe",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:27.673Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "dec1c3541b87",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-            "host": "www.ambiance-zonwering.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Voordeelgordijnen",
-      "plaats": "Amsterdam",
-      "url": "https://www.voordeelgordijnen.nl",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:40.625Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "e362535e17f6",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": ".env mogelijk downloadbaar",
-          "type": "datalek",
-          "ernst": "critical",
-          "url": "https://www.voordeelgordijnen.nl/.env"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Ambiance zonwering",
-      "plaats": "De Bilt",
-      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:40.514Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "c2d3cc1f8cbf",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-            "host": "www.ambiance-zonwering.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Decorette",
-      "plaats": "Nieuw-Vennep",
-      "url": "https://decorette.nl/winkels/nieuw-vennep",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:44:58.545Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "47cfe84cc8f4",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "Elasticsearch",
-            "url": "https://decorette.nl/",
-            "host": "decorette.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": [
-          {
-            "type": "Elasticsearch",
-            "url": "https://decorette.nl/"
-          }
-        ]
-      },
-      "bevindingen": [
-        {
-          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://decorette.nl/"
-        }
-      ]
-    },
-    {
       "bedrijf": "Suntec zonwering",
       "plaats": "'s-Gravenhage",
-      "url": "https://www.suntec-zonwering.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:46.264Z",
+      "url": "https://www.suntec-zonwering.nl",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:59:43.625Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -2022,16 +1798,15 @@
           "ernst": "critical",
           "url": "https://www.suntec-zonwering.nl/adminer.php"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "Wonnink Zonwering",
       "plaats": "Amersfoort",
       "url": "https://www.wonnink.nl",
       "categorie": "zonwering",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:46:27.905Z",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:59:44.572Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -2065,12 +1840,212 @@
       ]
     },
     {
+      "bedrijf": "Ambiance Heko-Becewe",
+      "plaats": "Amsterdam",
+      "url": "https://www.ambiance-zonwering.nl/heko-becewe",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:59:45.847Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "dec1c3541b87",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+            "host": "www.ambiance-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Voordeelgordijnen",
+      "plaats": "Amsterdam",
+      "url": "https://www.voordeelgordijnen.nl",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:59:48.327Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "e362535e17f6",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": ".env mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://www.voordeelgordijnen.nl/.env"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Ambiance zonwering",
+      "plaats": "De Bilt",
+      "url": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
+      "categorie": "zonwering",
+      "score": 97,
+      "scannedAt": "2026-07-07T07:59:47.232Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "c2d3cc1f8cbf",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+            "host": "www.ambiance-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Decorette",
+      "plaats": "Nieuw-Vennep",
+      "url": "https://decorette.nl/winkels/nieuw-vennep",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:44:55.505Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "47cfe84cc8f4",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://decorette.nl/",
+            "host": "decorette.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://decorette.nl/"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://decorette.nl/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Loodgieterskwartier",
+      "plaats": "Rijswijk",
+      "url": "https://loodgieterskwartier.nl",
+      "categorie": "loodgieter",
+      "score": 97,
+      "scannedAt": "2026-07-07T08:00:32.755Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "d55c372ed7e5",
+      "database": {
+        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Elasticsearch",
+            "url": "https://loodgieterskwartier.nl/",
+            "host": "loodgieterskwartier.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": [
+          {
+            "type": "Elasticsearch",
+            "url": "https://loodgieterskwartier.nl/"
+          }
+        ]
+      },
+      "bevindingen": [
+        {
+          "titel": "Elasticsearch-indexen mogelijk zichtbaar",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env.local mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": ".env.production mogelijk downloadbaar",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        },
+        {
+          "titel": "Config-backup mogelijk open",
+          "type": "datalek",
+          "ernst": "critical",
+          "url": "https://loodgieterskwartier.nl/"
+        }
+      ]
+    },
+    {
       "bedrijf": "Ambiance Zonwering",
       "plaats": "Woerden",
       "url": "https://www.ambiance-zonwering.nl/broere-woerden",
       "categorie": "zonwering",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:34.120Z",
+      "score": 97,
+      "scannedAt": "2026-07-07T08:00:12.211Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -2101,13 +2076,14 @@
     {
       "bedrijf": "Mks schilderwerken",
       "plaats": "Houten",
-      "url": "https://mksschilderwerken.nl",
-      "categorie": "schilder",
-      "score": 85,
-      "scannedAt": "2026-07-07T07:45:08.610Z",
+      "url": "https://mksschilderwerken.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:36:24.521Z",
       "heeftLek": true,
       "unreachable": false,
-      "risicoScore": 0,
+      "risicoScore": 40,
       "reportId": "940bd317871f",
       "database": {
         "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
@@ -2135,47 +2111,28 @@
           "ernst": "critical",
           "url": "https://mksschilderwerken.nl/"
         }
-      ]
+      ],
+      "bron": "leak-hits"
     },
     {
-      "bedrijf": "Hennink Installatietechniek",
-      "plaats": "Voorburg",
-      "url": "https://hennink.info",
-      "categorie": "installateur",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:49:35.796Z",
+      "bedrijf": "SA Elektro Experts",
+      "plaats": "'s-Gravenhage",
+      "url": "https://saelektroexperts.nl",
+      "categorie": "elektricien",
+      "score": 97,
+      "scannedAt": "2026-07-07T08:00:40.479Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 0,
-      "reportId": "cf8a5654c646",
+      "reportId": "aab38445503e",
       "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
         "heeftLek": true,
         "panels": [
           {
-            "panel": "phpMyAdmin",
-            "url": "https://hennink.info/phpmyadmin/",
-            "host": "hennink.info"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://hennink.info/phpMyAdmin/",
-            "host": "hennink.info"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://hennink.info/pma/",
-            "host": "hennink.info"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://hennink.info/phpmyadmin/index.php",
-            "host": "hennink.info"
-          },
-          {
             "panel": "Elasticsearch",
-            "url": "https://hennink.info/404-foutpagina",
-            "host": "hennink.info"
+            "url": "https://saelektroexperts.nl/",
+            "host": "saelektroexperts.nl"
           }
         ],
         "credentials": null,
@@ -2183,40 +2140,16 @@
         "apiExposure": [
           {
             "type": "Elasticsearch",
-            "url": "https://hennink.info/404-foutpagina"
+            "url": "https://saelektroexperts.nl/"
           }
         ]
       },
       "bevindingen": [
         {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://hennink.info/phpmyadmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://hennink.info/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://hennink.info/pma/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://hennink.info/phpmyadmin/index.php"
-        },
-        {
           "titel": "Elasticsearch-indexen mogelijk zichtbaar",
           "type": "database",
           "ernst": "critical",
-          "url": "https://hennink.info/404-foutpagina"
+          "url": "https://saelektroexperts.nl/"
         }
       ]
     },
@@ -2226,7 +2159,7 @@
       "url": "http://timmerbedrijf-frank.nl",
       "categorie": "kozijnen",
       "score": 82,
-      "scannedAt": "2026-07-07T07:45:09.165Z",
+      "scannedAt": "2026-07-07T08:00:28.478Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2247,7 +2180,7 @@
       "url": "http://www.rinusvanstein.nl",
       "categorie": "zonwering",
       "score": 82,
-      "scannedAt": "2026-07-07T07:45:11.968Z",
+      "scannedAt": "2026-07-07T08:00:29.203Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2268,7 +2201,7 @@
       "url": "http://atelierzuidinga.nl",
       "categorie": "zonwering",
       "score": 82,
-      "scannedAt": "2026-07-07T07:45:10.126Z",
+      "scannedAt": "2026-07-07T08:00:29.584Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2289,7 +2222,7 @@
       "url": "http://bovenkamerutrecht.nl",
       "categorie": "kozijnen",
       "score": 82,
-      "scannedAt": "2026-07-07T07:45:13.596Z",
+      "scannedAt": "2026-07-07T08:00:32.401Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2310,7 +2243,28 @@
       "url": "http://ericvaneijk.nl",
       "categorie": "loodgieter",
       "score": 82,
-      "scannedAt": "2026-07-07T07:45:12.410Z",
+      "scannedAt": "2026-07-07T08:00:29.946Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Van Beek Schilders",
+      "plaats": "Den Hoorn",
+      "url": "http://vanbeek-schilders.nl",
+      "categorie": "schilder",
+      "score": 70,
+      "scannedAt": "2026-07-07T08:00:29.968Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2331,7 +2285,7 @@
       "url": "https://www.buitelaarzonwering.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:45:48.666Z",
+      "scannedAt": "2026-07-07T08:01:08.225Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2352,7 +2306,7 @@
       "url": "https://www.alx.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:45:49.705Z",
+      "scannedAt": "2026-07-07T08:01:08.779Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2373,28 +2327,7 @@
       "url": "https://www.atelieraw.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:45:53.303Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Bonarius Zuid-Holland",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.bonarius.com",
-      "categorie": "installateur",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:46:23.326Z",
+      "scannedAt": "2026-07-07T08:01:12.346Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2415,7 +2348,7 @@
       "url": "https://hbcwooncomfort.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:20.955Z",
+      "scannedAt": "2026-07-07T08:01:18.158Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2436,7 +2369,7 @@
       "url": "https://www.l-groep.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:22.220Z",
+      "scannedAt": "2026-07-07T08:01:18.708Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2457,7 +2390,7 @@
       "url": "https://www.kreeft-wissen.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:22.817Z",
+      "scannedAt": "2026-07-07T08:01:19.452Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2478,7 +2411,7 @@
       "url": "https://www.bectro.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:24.494Z",
+      "scannedAt": "2026-07-07T08:01:20.873Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2499,7 +2432,7 @@
       "url": "https://www.delektro.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:25.820Z",
+      "scannedAt": "2026-07-07T08:01:23.541Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2520,7 +2453,7 @@
       "url": "https://designbekleding.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:25.346Z",
+      "scannedAt": "2026-07-07T08:01:24.172Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2541,7 +2474,7 @@
       "url": "https://elitairklimaat.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:32.623Z",
+      "scannedAt": "2026-07-07T08:01:24.933Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2562,7 +2495,7 @@
       "url": "https://loodgietersbedrijfgoossensen.nl",
       "categorie": "loodgieter",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:26.331Z",
+      "scannedAt": "2026-07-07T08:01:25.687Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2583,7 +2516,7 @@
       "url": "https://houtindustrie-amersfoort.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:26.621Z",
+      "scannedAt": "2026-07-07T08:01:26.552Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2604,7 +2537,7 @@
       "url": "https://www.i-kozijn.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:27.021Z",
+      "scannedAt": "2026-07-07T08:01:27.187Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2625,7 +2558,7 @@
       "url": "https://mirva.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:27.478Z",
+      "scannedAt": "2026-07-07T08:01:27.871Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2646,7 +2579,7 @@
       "url": "https://www.amstellandkozijnen.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:33.217Z",
+      "scannedAt": "2026-07-07T08:01:32.959Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2667,7 +2600,7 @@
       "url": "https://www.lambertusvandenbroek.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:41.161Z",
+      "scannedAt": "2026-07-07T08:01:33.603Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2688,7 +2621,7 @@
       "url": "https://www.schipperkozijnen.nl/showrooms/amstelveen",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:34.810Z",
+      "scannedAt": "2026-07-07T08:01:35.539Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2709,7 +2642,7 @@
       "url": "https://www.blossompaardencoaching.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:34.856Z",
+      "scannedAt": "2026-07-07T08:01:35.488Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2730,7 +2663,7 @@
       "url": "https://www.bruens-electrotechniek.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:38.028Z",
+      "scannedAt": "2026-07-07T08:01:38.112Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2751,7 +2684,7 @@
       "url": "https://www.evimvloeren.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:35.674Z",
+      "scannedAt": "2026-07-07T08:01:36.168Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2772,7 +2705,7 @@
       "url": "https://www.facebook.com/gordijnenhuis.madina",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:37.545Z",
+      "scannedAt": "2026-07-07T08:01:37.315Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2793,7 +2726,7 @@
       "url": "https://www.kilim-tapijt-vinyl.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:38.202Z",
+      "scannedAt": "2026-07-07T08:01:36.674Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2814,7 +2747,7 @@
       "url": "https://klimaatservicenoordholland.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:43.272Z",
+      "scannedAt": "2026-07-07T08:01:37.350Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2835,7 +2768,7 @@
       "url": "https://www.knookmetaal.nl/producten/knook-deuren-en-kozijnen",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:38.944Z",
+      "scannedAt": "2026-07-07T08:01:37.730Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2856,7 +2789,7 @@
       "url": "https://louwenhoutbewerking.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:45.058Z",
+      "scannedAt": "2026-07-07T08:01:45.036Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2877,7 +2810,7 @@
       "url": "https://www.protectsun.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:41.851Z",
+      "scannedAt": "2026-07-07T08:01:37.883Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2898,7 +2831,7 @@
       "url": "https://onnink-bv.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:47.909Z",
+      "scannedAt": "2026-07-07T08:01:53.786Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2919,7 +2852,7 @@
       "url": "https://brandsen-installatietechniek.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:42.812Z",
+      "scannedAt": "2026-07-07T08:01:38.600Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2940,7 +2873,7 @@
       "url": "https://www.energyshift.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:53.072Z",
+      "scannedAt": "2026-07-07T08:01:49.888Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2961,7 +2894,7 @@
       "url": "https://www.zonenscherm.nl/site/zon-en-scherm-berkel-en-rodenrijs",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:54.348Z",
+      "scannedAt": "2026-07-07T08:01:48.528Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -2982,7 +2915,7 @@
       "url": "https://www.kokall.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:46.915Z",
+      "scannedAt": "2026-07-07T08:01:45.515Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3003,7 +2936,7 @@
       "url": "https://www.vandenhoogen.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:52.055Z",
+      "scannedAt": "2026-07-07T08:01:50.746Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3024,7 +2957,7 @@
       "url": "https://www.eraduszonwering.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:54.689Z",
+      "scannedAt": "2026-07-07T08:01:52.012Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3045,7 +2978,7 @@
       "url": "https://www.groenewegendelft.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:53.232Z",
+      "scannedAt": "2026-07-07T08:01:49.775Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3066,7 +2999,7 @@
       "url": "https://www.delamellengigant.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:59.545Z",
+      "scannedAt": "2026-07-07T08:01:56.393Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3087,7 +3020,7 @@
       "url": "https://www.smit-interieur.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:53.948Z",
+      "scannedAt": "2026-07-07T08:01:50.866Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3108,7 +3041,7 @@
       "url": "https://www.woningtextielhuis.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:55.068Z",
+      "scannedAt": "2026-07-07T08:01:52.204Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3129,7 +3062,7 @@
       "url": "https://joostwonen.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:57.012Z",
+      "scannedAt": "2026-07-07T08:01:53.342Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3150,7 +3083,7 @@
       "url": "https://www.vanleeuwenelektrotechniek.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:58.081Z",
+      "scannedAt": "2026-07-07T08:01:52.555Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3171,7 +3104,7 @@
       "url": "https://drechtseloodgieter.nl",
       "categorie": "loodgieter",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:59.143Z",
+      "scannedAt": "2026-07-07T08:01:56.460Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3192,7 +3125,7 @@
       "url": "https://www.kiwatt.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:58.011Z",
+      "scannedAt": "2026-07-07T08:01:53.402Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3213,7 +3146,7 @@
       "url": "https://www.schipperkozijnen.nl/showrooms/gouda",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:46:59.712Z",
+      "scannedAt": "2026-07-07T08:01:55.254Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3234,7 +3167,7 @@
       "url": "https://www.marcelvittali.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:03.358Z",
+      "scannedAt": "2026-07-07T08:01:57.608Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3255,7 +3188,7 @@
       "url": "https://www.mesuttimmerfabriek.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:01.983Z",
+      "scannedAt": "2026-07-07T08:01:55.503Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3276,7 +3209,7 @@
       "url": "https://www.woonbasis.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:08.984Z",
+      "scannedAt": "2026-07-07T08:01:55.876Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3297,7 +3230,7 @@
       "url": "https://www.efzon.com",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:00.933Z",
+      "scannedAt": "2026-07-07T08:01:56.286Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3318,7 +3251,7 @@
       "url": "https://www.quadraatbouw.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:02.759Z",
+      "scannedAt": "2026-07-07T08:02:59.914Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3339,7 +3272,7 @@
       "url": "https://www.randstadzonweringen.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:04.804Z",
+      "scannedAt": "2026-07-07T08:01:57.101Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3360,7 +3293,7 @@
       "url": "https://stb.eu",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:11.544Z",
+      "scannedAt": "2026-07-07T08:02:05.471Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3381,28 +3314,7 @@
       "url": "https://evanbaareninstallatietechniek.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:10.370Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Wooncentrum Ubo Kok",
-      "plaats": "IJmuiden",
-      "url": "https://wooncentrumubokok.nl",
-      "categorie": "zonwering",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:47:08.835Z",
+      "scannedAt": "2026-07-07T08:01:57.026Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3423,7 +3335,7 @@
       "url": "https://terberg.eu",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:17.335Z",
+      "scannedAt": "2026-07-07T08:02:04.611Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3444,7 +3356,7 @@
       "url": "https://ventanazonwering.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:10.998Z",
+      "scannedAt": "2026-07-07T08:01:59.706Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3465,7 +3377,7 @@
       "url": "https://www.schipperkozijnen.nl/showrooms/Katwijk",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:12.688Z",
+      "scannedAt": "2026-07-07T08:01:59.177Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3486,7 +3398,7 @@
       "url": "https://deschrijn.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:12.879Z",
+      "scannedAt": "2026-07-07T08:02:00.342Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3507,7 +3419,7 @@
       "url": "https://woonspecialist.nl/winkels/bekenkamp-laren",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:27.837Z",
+      "scannedAt": "2026-07-07T08:02:12.123Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3528,7 +3440,7 @@
       "url": "https://www.fonteinelektrotechniek.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:45.167Z",
+      "scannedAt": "2026-07-07T08:02:33.328Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3549,7 +3461,7 @@
       "url": "https://www.lameko.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:29.629Z",
+      "scannedAt": "2026-07-07T08:02:22.904Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3570,7 +3482,7 @@
       "url": "https://www.timmerfabriekverhagen.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:21.917Z",
+      "scannedAt": "2026-07-07T08:02:09.502Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3591,7 +3503,7 @@
       "url": "https://www.woordesbouw.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:22.734Z",
+      "scannedAt": "2026-07-07T08:02:10.331Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3612,7 +3524,7 @@
       "url": "https://zandschulpzonwering.nl/showrooms/zonwering-leusden",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:27.381Z",
+      "scannedAt": "2026-07-07T08:02:10.845Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3633,7 +3545,7 @@
       "url": "https://zensmaatwerk.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:31.866Z",
+      "scannedAt": "2026-07-07T08:02:15.265Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3654,7 +3566,7 @@
       "url": "https://www.voorbergzonwering.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:34.617Z",
+      "scannedAt": "2026-07-07T08:02:12.715Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3675,7 +3587,7 @@
       "url": "https://www.rojas-colorsathome.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:32.111Z",
+      "scannedAt": "2026-07-07T08:02:14.220Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3696,7 +3608,7 @@
       "url": "https://www.maatdakkapellen.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:32.707Z",
+      "scannedAt": "2026-07-07T08:02:14.888Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3717,7 +3629,7 @@
       "url": "https://www.groepenkastcompleet.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:33.440Z",
+      "scannedAt": "2026-07-07T08:02:16.318Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3738,7 +3650,7 @@
       "url": "https://www.rioolservicewaterland.nl",
       "categorie": "loodgieter",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:33.962Z",
+      "scannedAt": "2026-07-07T08:02:17.110Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3759,49 +3671,7 @@
       "url": "https://www.coolairnederland.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:34.392Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Denhil Kozijn en Geveltechniek",
-      "plaats": "Purmerend",
-      "url": "https://denhil.nl",
-      "categorie": "kozijnen",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:47:48.674Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Denhil Zonwering en Buitenleven",
-      "plaats": "Purmerend",
-      "url": "https://denhil.nl/producten/zonwering-purmerend",
-      "categorie": "zonwering",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:47:50.738Z",
+      "scannedAt": "2026-07-07T08:02:19.460Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3822,7 +3692,7 @@
       "url": "https://ivgelectrogroep.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:43.602Z",
+      "scannedAt": "2026-07-07T08:02:18.670Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3843,7 +3713,7 @@
       "url": "https://www.loodgieterkatuin.nl",
       "categorie": "loodgieter",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:44.501Z",
+      "scannedAt": "2026-07-07T08:02:19.459Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3864,7 +3734,7 @@
       "url": "https://koelmy.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:45.342Z",
+      "scannedAt": "2026-07-07T08:02:20.160Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3885,7 +3755,7 @@
       "url": "https://www.mazurel.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:46.201Z",
+      "scannedAt": "2026-07-07T08:02:20.300Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3906,7 +3776,7 @@
       "url": "https://www.opthoog.nl/contact/vestigingen/purmerend",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:46.911Z",
+      "scannedAt": "2026-07-07T08:02:21.894Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3927,7 +3797,7 @@
       "url": "https://rizzyco.wixsite.com/revobv-2",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:48.226Z",
+      "scannedAt": "2026-07-07T08:02:22.860Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3948,7 +3818,7 @@
       "url": "https://www.decosier.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:47.705Z",
+      "scannedAt": "2026-07-07T08:02:23.134Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3969,7 +3839,7 @@
       "url": "https://www.starkozijnkatwijk.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:50.253Z",
+      "scannedAt": "2026-07-07T08:02:24.882Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -3990,7 +3860,7 @@
       "url": "https://www.bastasol.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:58.076Z",
+      "scannedAt": "2026-07-07T08:02:33.251Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4011,7 +3881,7 @@
       "url": "https://degierwonen.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:50.970Z",
+      "scannedAt": "2026-07-07T08:02:23.690Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4032,7 +3902,7 @@
       "url": "https://wimdejong.klussenier.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:53.128Z",
+      "scannedAt": "2026-07-07T08:02:26.355Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4053,7 +3923,7 @@
       "url": "https://harmonygordijnen.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:53.367Z",
+      "scannedAt": "2026-07-07T08:02:26.867Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4074,7 +3944,7 @@
       "url": "https://lohmannbv.nl",
       "categorie": "loodgieter",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:53.632Z",
+      "scannedAt": "2026-07-07T08:02:28.706Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4095,7 +3965,7 @@
       "url": "https://lugthart.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:53.917Z",
+      "scannedAt": "2026-07-07T08:02:27.471Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4116,7 +3986,7 @@
       "url": "https://plantservices.nl",
       "categorie": "elektricien",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:01.506Z",
+      "scannedAt": "2026-07-07T08:02:35.088Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4137,7 +4007,7 @@
       "url": "https://tulay.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:58.183Z",
+      "scannedAt": "2026-07-07T08:02:33.840Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4158,7 +4028,7 @@
       "url": "https://luxuryhomeraamdecoratie.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:02.164Z",
+      "scannedAt": "2026-07-07T08:02:41.660Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4179,7 +4049,7 @@
       "url": "https://www.merwede-tapijten.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:59.742Z",
+      "scannedAt": "2026-07-07T08:02:33.981Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4200,7 +4070,7 @@
       "url": "https://www.woninginrichting-aanhuis.nl/winkels/spijkenisse",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:47:59.126Z",
+      "scannedAt": "2026-07-07T08:02:34.793Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4221,7 +4091,7 @@
       "url": "https://amnaaiwinkel.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:00.849Z",
+      "scannedAt": "2026-07-07T08:02:36.277Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4242,7 +4112,7 @@
       "url": "https://arenagordijnenland.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:00.703Z",
+      "scannedAt": "2026-07-07T08:02:35.878Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4263,7 +4133,7 @@
       "url": "https://www.dekroonzonwering.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:01.858Z",
+      "scannedAt": "2026-07-07T08:02:36.821Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4284,7 +4154,7 @@
       "url": "https://loodgietersbedrijfutrecht.nl",
       "categorie": "loodgieter",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:09.303Z",
+      "scannedAt": "2026-07-07T08:02:36.802Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4305,28 +4175,7 @@
       "url": "https://louvendahome.nl",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:12.461Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "I.B. Kracht",
-      "plaats": "Voorburg",
-      "url": "https://www.kracht.nl",
-      "categorie": "installateur",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:52.627Z",
+      "scannedAt": "2026-07-07T08:02:46.843Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4347,7 +4196,7 @@
       "url": "https://www.zonwering.nl/verkooppunten/rolluiken-voorburg",
       "categorie": "zonwering",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:14.673Z",
+      "scannedAt": "2026-07-07T08:02:37.482Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4368,7 +4217,7 @@
       "url": "https://installatiebedrijfrobberts.nl",
       "categorie": "loodgieter",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:15.642Z",
+      "scannedAt": "2026-07-07T08:02:37.497Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4389,49 +4238,7 @@
       "url": "https://simainstallatie.nl",
       "categorie": "installateur",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:22.558Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Eyelux Zonwering",
-      "plaats": "Voorschoten",
-      "url": "https://www.eyelux.nl",
-      "categorie": "zonwering",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:42.787Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Wolters Perez",
-      "plaats": "Voorschoten",
-      "url": "https://perezvoorschoten.nl",
-      "categorie": "zonwering",
-      "score": 52,
-      "scannedAt": "2026-07-07T07:48:32.259Z",
+      "scannedAt": "2026-07-07T08:02:37.962Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4452,7 +4259,7 @@
       "url": "https://aluku.nl",
       "categorie": "kozijnen",
       "score": 52,
-      "scannedAt": "2026-07-07T07:48:51.352Z",
+      "scannedAt": "2026-07-07T08:02:46.287Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4473,7 +4280,7 @@
       "url": "https://koekenreinders.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:48:59.262Z",
+      "scannedAt": "2026-07-07T08:02:42.250Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4494,7 +4301,7 @@
       "url": "https://www.achterbergschilders.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:01.580Z",
+      "scannedAt": "2026-07-07T08:02:51.833Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4515,7 +4322,7 @@
       "url": "https://www.hjslierings.nl",
       "categorie": "dakdekker",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:00.471Z",
+      "scannedAt": "2026-07-07T08:02:47.314Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4536,7 +4343,7 @@
       "url": "https://www.bosgroep.com",
       "categorie": "dakdekker",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:11.762Z",
+      "scannedAt": "2026-07-07T08:02:57.602Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4557,7 +4364,7 @@
       "url": "https://www.jkuijper.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:09.974Z",
+      "scannedAt": "2026-07-07T08:02:56.313Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4578,7 +4385,7 @@
       "url": "https://rvwschilderwerken.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:11.685Z",
+      "scannedAt": "2026-07-07T08:02:53.699Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4599,7 +4406,7 @@
       "url": "https://cm-schilders.com",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:13.629Z",
+      "scannedAt": "2026-07-07T08:02:54.677Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4620,7 +4427,7 @@
       "url": "https://vdnat.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:12.588Z",
+      "scannedAt": "2026-07-07T08:02:56.029Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4641,7 +4448,7 @@
       "url": "https://kevindegraaf.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:22.672Z",
+      "scannedAt": "2026-07-07T08:03:07.552Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4662,7 +4469,7 @@
       "url": "https://meerschilder.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:14.139Z",
+      "scannedAt": "2026-07-07T08:02:56.836Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4683,7 +4490,7 @@
       "url": "https://www.quickpaint.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:25.321Z",
+      "scannedAt": "2026-07-07T08:03:08.121Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4704,7 +4511,7 @@
       "url": "https://www.vanlochem.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:32.002Z",
+      "scannedAt": "2026-07-07T08:03:08.112Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4725,7 +4532,7 @@
       "url": "https://www.kuytschilders.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:27.241Z",
+      "scannedAt": "2026-07-07T08:03:01.926Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4746,7 +4553,28 @@
       "url": "https://www.schilderleenmeurs.nl",
       "categorie": "schilder",
       "score": 40,
-      "scannedAt": "2026-07-07T07:49:31.433Z",
+      "scannedAt": "2026-07-07T08:03:02.484Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Bonarius Zuid-Holland",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.bonarius.com",
+      "categorie": "installateur",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:03:29.189Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4767,7 +4595,7 @@
       "url": "https://oranjegordijn.nl",
       "categorie": "zonwering",
       "score": 17,
-      "scannedAt": "2026-07-07T07:49:31.454Z",
+      "scannedAt": "2026-07-07T08:03:07.619Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4788,7 +4616,7 @@
       "url": "https://ideaalgordijin.com",
       "categorie": "zonwering",
       "score": 17,
-      "scannedAt": "2026-07-07T07:49:31.469Z",
+      "scannedAt": "2026-07-07T08:03:07.667Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4809,7 +4637,7 @@
       "url": "https://www.vivante-bekenkamp.nl",
       "categorie": "zonwering",
       "score": 17,
-      "scannedAt": "2026-07-07T07:50:35.505Z",
+      "scannedAt": "2026-07-07T08:04:11.743Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4830,7 +4658,7 @@
       "url": "http://www.aadelektrotechniek.nl",
       "categorie": "elektricien",
       "score": 17,
-      "scannedAt": "2026-07-07T07:50:36.082Z",
+      "scannedAt": "2026-07-07T08:04:12.264Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4851,7 +4679,7 @@
       "url": "https://www.ehi-stolle.nl",
       "categorie": "elektricien",
       "score": 17,
-      "scannedAt": "2026-07-07T07:49:37.318Z",
+      "scannedAt": "2026-07-07T08:03:09.467Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4872,7 +4700,7 @@
       "url": "http://www.meerhouthandel.nl",
       "categorie": "kozijnen",
       "score": 17,
-      "scannedAt": "2026-07-07T07:49:37.335Z",
+      "scannedAt": "2026-07-07T08:03:09.504Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4893,7 +4721,7 @@
       "url": "https://mastrinterieurspecialisten.nl",
       "categorie": "zonwering",
       "score": 17,
-      "scannedAt": "2026-07-07T07:49:37.349Z",
+      "scannedAt": "2026-07-07T08:03:09.527Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4914,7 +4742,7 @@
       "url": "http://www.vantaarling.nl",
       "categorie": "loodgieter",
       "score": 17,
-      "scannedAt": "2026-07-07T07:49:37.361Z",
+      "scannedAt": "2026-07-07T08:03:09.550Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4935,7 +4763,7 @@
       "url": "https://www.vinkesteyn.nl",
       "categorie": "installateur",
       "score": 17,
-      "scannedAt": "2026-07-07T07:50:41.566Z",
+      "scannedAt": "2026-07-07T08:04:12.798Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4956,7 +4784,28 @@
       "url": "https://www.bvrzonwering.nl",
       "categorie": "zonwering",
       "score": 17,
-      "scannedAt": "2026-07-07T07:50:58.862Z",
+      "scannedAt": "2026-07-07T08:04:33.254Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Wooncentrum Ubo Kok",
+      "plaats": "IJmuiden",
+      "url": "https://wooncentrumubokok.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:03:50.682Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4977,7 +4826,7 @@
       "url": "https://www.vanrennes.nl",
       "categorie": "elektricien",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:39.584Z",
+      "scannedAt": "2026-07-07T08:04:54.724Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -4998,7 +4847,7 @@
       "url": "http://www.ozbaygordijnen.nl",
       "categorie": "zonwering",
       "score": 17,
-      "scannedAt": "2026-07-07T07:50:36.101Z",
+      "scannedAt": "2026-07-07T08:04:11.763Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5019,7 +4868,49 @@
       "url": "https://www.ds-service.nl",
       "categorie": "installateur",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:40.140Z",
+      "scannedAt": "2026-07-07T08:05:15.826Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Denhil Kozijn en Geveltechniek",
+      "plaats": "Purmerend",
+      "url": "https://denhil.nl",
+      "categorie": "kozijnen",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:05:16.331Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Denhil Zonwering en Buitenleven",
+      "plaats": "Purmerend",
+      "url": "https://denhil.nl/producten/zonwering-purmerend",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:05:16.831Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5040,7 +4931,7 @@
       "url": "https://www.ebd-purmerend.nl",
       "categorie": "elektricien",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:05.192Z",
+      "scannedAt": "2026-07-07T08:04:44.442Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5061,7 +4952,7 @@
       "url": "https://engberts.nu",
       "categorie": "elektricien",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:22.006Z",
+      "scannedAt": "2026-07-07T08:05:01.648Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5082,7 +4973,7 @@
       "url": "https://installatiebedrijfvis.nl",
       "categorie": "loodgieter",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:07.027Z",
+      "scannedAt": "2026-07-07T08:04:56.603Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5103,7 +4994,7 @@
       "url": "http://www.stoffenhuisbestevaer.nl",
       "categorie": "zonwering",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:07.048Z",
+      "scannedAt": "2026-07-07T08:04:56.621Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5124,7 +5015,91 @@
       "url": "https://www.etech.nu",
       "categorie": "elektricien",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:09.218Z",
+      "scannedAt": "2026-07-07T08:04:57.572Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Hennink Installatietechniek",
+      "plaats": "Voorburg",
+      "url": "https://hennink.info",
+      "categorie": "installateur",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:06:00.873Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "I.B. Kracht",
+      "plaats": "Voorburg",
+      "url": "https://www.kracht.nl",
+      "categorie": "installateur",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:06:05.719Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Eyelux Zonwering",
+      "plaats": "Voorschoten",
+      "url": "https://www.eyelux.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:05:37.141Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Wolters Perez",
+      "plaats": "Voorschoten",
+      "url": "https://perezvoorschoten.nl",
+      "categorie": "zonwering",
+      "score": 17,
+      "scannedAt": "2026-07-07T08:05:19.044Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5145,7 +5120,7 @@
       "url": "https://www.jonkerbv.eu",
       "categorie": "loodgieter",
       "score": 17,
-      "scannedAt": "2026-07-07T07:51:09.239Z",
+      "scannedAt": "2026-07-07T08:05:16.851Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5166,7 +5141,7 @@
       "url": "https://www.plompinstallatietechniek.nl",
       "categorie": "loodgieter",
       "score": 17,
-      "scannedAt": "2026-07-07T07:52:13.309Z",
+      "scannedAt": "2026-07-07T08:06:20.884Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5187,28 +5162,7 @@
       "url": "https://vanolstschilders.nl",
       "categorie": "schilder",
       "score": 5,
-      "scannedAt": "2026-07-07T07:52:27.022Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Van Beek Schilders",
-      "plaats": "Den Hoorn",
-      "url": "http://vanbeek-schilders.nl",
-      "categorie": "schilder",
-      "score": 5,
-      "scannedAt": "2026-07-07T07:51:40.187Z",
+      "scannedAt": "2026-07-07T08:06:24.058Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5229,7 +5183,7 @@
       "url": "https://vanmuiden.nl",
       "categorie": "schilder",
       "score": 5,
-      "scannedAt": "2026-07-07T07:52:44.239Z",
+      "scannedAt": "2026-07-07T08:06:41.177Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5250,7 +5204,7 @@
       "url": "https://www.joostenbartschilderwerken.nl",
       "categorie": "schilder",
       "score": 5,
-      "scannedAt": "2026-07-07T07:52:44.239Z",
+      "scannedAt": "2026-07-07T08:07:04.921Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -5271,7 +5225,7 @@
       "url": "https://renelek.nl",
       "categorie": "schilder",
       "score": 5,
-      "scannedAt": "2026-07-07T07:52:13.984Z",
+      "scannedAt": "2026-07-07T08:06:06.694Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,

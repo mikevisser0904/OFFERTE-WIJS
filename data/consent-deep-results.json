@@ -1,5 +1,768 @@
 {
-  "updatedAt": "2026-07-07T00:00:00.000Z",
+  "updatedAt": "2026-07-07T08:07:26.202Z",
   "disclaimer": "Alleen uitgevoerd voor geregistreerde schriftelijke toestemming. Geen wachtwoorden in dit bestand.",
-  "results": []
+  "results": [
+    {
+      "siteUrl": "https://www.ambiance-zonwering.nl/",
+      "bedrijf": "Ambiance Zonwering",
+      "consentRef": "Schriftelijke toestemming Ambiance Zonwering (Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.575Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "Pagina niet gevonden",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": {
+        "skipped": true,
+        "reason": "Geen credentials in data/scan-toestemming.local.json voor dit domein."
+      }
+    },
+    {
+      "siteUrl": "https://www.dreumel.nl",
+      "bedrijf": "Dreumel",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.639Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.dreumel.nl/404",
+          "ok": true,
+          "adminType": "Onbekend paneel",
+          "titel": "404",
+          "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+          "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
+          "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "Onbekend paneel",
+        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://firmavanrijn.nl",
+      "bedrijf": "Firma Fred van Rijn",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.640Z",
+      "passive": {
+        "proof": {
+          "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://saelektroexperts.nl",
+      "bedrijf": "SA Elektro Experts",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.642Z",
+      "passive": {
+        "proof": {
+          "url": "https://saelektroexperts.nl/",
+          "ok": false,
+          "error": "TypeError: fetch failed"
+        },
+        "error": "TypeError: fetch failed"
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.suntec-zonwering.nl",
+      "bedrijf": "Suntec zonwering",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.645Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.suntec-zonwering.nl/adminer.php",
+          "ok": true,
+          "adminType": "Adminer",
+          "titel": "Login - Adminer",
+          "zichtbaar": "Database-beheer (Adminer) is via de browser bereikbaar — inlogformulier voor de database.",
+          "impact": "Zelfde risico als phpMyAdmin: brute-force en data-export als inloggegevens lekken.",
+          "magClaimen": "Uw database-beheerpanel is vindbaar op internet zonder extra beveiliging."
+        },
+        "unauthenticatedDashboard": {
+          "critical": true,
+          "summary": "Adminer toont mogelijk direct database-inhoud zonder inlog."
+        },
+        "adminType": "Adminer",
+        "zichtbaar": "Database-beheer (Adminer) is via de browser bereikbaar — inlogformulier voor de database.",
+        "impact": "Zelfde risico als phpMyAdmin: brute-force en data-export als inloggegevens lekken."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.amer-hout.nl",
+      "bedrijf": "Amer Houttechniek",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.647Z",
+      "passive": {
+        "proof": {
+          "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.kroon-interieurbouw.nl",
+      "bedrijf": "Kroon interieurbouw",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.648Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "One moment, please...",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.textilia-dordrecht.nl",
+      "bedrijf": "Textilia",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.649Z",
+      "passive": {
+        "proof": {
+          "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.decorgordijn.nl",
+      "bedrijf": "Decor Gordijn",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.985Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.decorgordijn.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "One moment, please...",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.boselektrotechniek.nl",
+      "bedrijf": "Bos Elektrotechniek",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:07.990Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.ejvandermeer.nl",
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.050Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.ejvandermeer.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://rioolservice-pvanadrichem.nl",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.086Z",
+      "passive": {
+        "proof": {
+          "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "One moment, please...",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://decorette.nl/winkels/nieuw-vennep",
+      "bedrijf": "Decorette",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.092Z",
+      "passive": {
+        "proof": {
+          "url": "https://decorette.nl/",
+          "ok": true,
+          "adminType": "Onbekend paneel",
+          "titel": "One moment, please...",
+          "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+          "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
+          "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "Onbekend paneel",
+        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://chargecars.nl",
+      "bedrijf": "ChargeCars",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.094Z",
+      "passive": {
+        "proof": {
+          "url": "https://chargecars.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://loodgieterskwartier.nl",
+      "bedrijf": "Loodgieterskwartier",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.218Z",
+      "passive": {
+        "proof": {
+          "url": "https://loodgieterskwartier.nl/",
+          "ok": false,
+          "error": "TypeError: fetch failed"
+        },
+        "error": "TypeError: fetch failed"
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.335Z",
+      "passive": {
+        "proof": {
+          "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://depagter.info",
+      "bedrijf": "De Pagter",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.398Z",
+      "passive": {
+        "proof": {
+          "url": "https://depagter.info/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "One moment, please...",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.willemseelektrotechniek.nl",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.399Z",
+      "passive": {
+        "proof": {
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://pruisschilderwerken.nl",
+      "bedrijf": "Pruis Schilderwerken",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.403Z",
+      "passive": {
+        "proof": {
+          "url": "https://server-alfa.heroo.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "One moment, please...",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://mksschilderwerken.nl",
+      "bedrijf": "Mks schilderwerken",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.405Z",
+      "passive": {
+        "proof": {
+          "url": "https://mksschilderwerken.nl/",
+          "ok": true,
+          "adminType": "Onbekend paneel",
+          "titel": "One moment, please...",
+          "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+          "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
+          "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "Onbekend paneel",
+        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://verzijlbv.nl",
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.517Z",
+      "passive": {
+        "proof": {
+          "url": "https://verzijlbv.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "One moment, please...",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.finish-profiles.nl",
+      "bedrijf": "Finish Profiles",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.601Z",
+      "passive": {
+        "proof": {
+          "url": "https://finish-profiles.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "One moment, please...",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.612Z",
+      "passive": {
+        "proof": {
+          "url": "https://tafelboom.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://nuoveni.nl/",
+      "bedrijf": "Nuoveni",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.635Z",
+      "passive": {
+        "proof": {
+          "url": "https://nuoveni.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.wonnink.nl/",
+      "bedrijf": "Wonnink Zonwering",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.745Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.wonnink.nl/_cat/indices?v",
+          "ok": true,
+          "adminType": "Onbekend paneel",
+          "titel": "One moment, please...",
+          "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+          "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
+          "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "Onbekend paneel",
+        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://klompelektrotechniek.nl/",
+      "bedrijf": "Klomp Elektrotechniek",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.929Z",
+      "passive": {
+        "proof": {
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://vogelaarschilder.nl/",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.932Z",
+      "passive": {
+        "proof": {
+          "url": "https://hosting102.resellerdns.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.bwstyling.nl/",
+      "bedrijf": "Burggraeve Woonstyling",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:08.934Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.bwstyling.nl/phpmyadmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.jwfborn.nl/",
+      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:09.004Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.jwfborn.nl/phpmyadmin/",
+          "ok": false,
+          "error": "TypeError: fetch failed"
+        },
+        "error": "TypeError: fetch failed"
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.voordeelgordijnen.nl/",
+      "bedrijf": "Voordeelgordijnen",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:09.053Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.voordeelgordijnen.nl/.env",
+          "ok": true,
+          "adminType": "Onbekend paneel",
+          "titel": "Gordijnen op maat gemaakt, voor iedereen! Bekijk Collectie\n\n                &ndash; Voordeelgordijnen",
+          "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+          "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners.",
+          "magClaimen": "Technisch beheerpaneel is publiek bereikbaar."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "Onbekend paneel",
+        "zichtbaar": "Een beheer- of technische pagina reageert publiek op dit adres.",
+        "impact": "Hoort niet vindbaar te zijn voor zoekmachines en scanners."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.schreuderschilderwerken.nl/",
+      "bedrijf": "Schreuder Glas- en Schilderwerken",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:09.180Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.schreuderschilderwerken.nl/phpmyadmin/",
+          "ok": false,
+          "error": "TypeError: fetch failed"
+        },
+        "error": "TypeError: fetch failed"
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:09.215Z",
+      "passive": {
+        "proof": {
+          "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
+          "ok": true,
+          "adminType": "phpMyAdmin",
+          "titel": "phpMyAdmin",
+          "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+          "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren.",
+          "magClaimen": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
+        },
+        "unauthenticatedDashboard": null,
+        "adminType": "phpMyAdmin",
+        "zichtbaar": "Het MySQL/phpMyAdmin-inlogscherm staat open op internet — velden voor gebruikersnaam en wachtwoord, zonder VPN of beveiligde tunnel.",
+        "impact": "Vanaf dit scherm proberen bots automatisch wachtwoorden. Bij een zwak of hergebruikt wachtwoord is uw volledige database (klanten, offertes, mail) te exportieren."
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.blygold.nl/",
+      "bedrijf": "Blygold",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:09.441Z",
+      "passive": {
+        "proof": {
+          "url": "https://www.blygold.nl/phpmyadmin/",
+          "ok": false,
+          "error": "TypeError: fetch failed"
+        },
+        "error": "TypeError: fetch failed"
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://www.keyzerbv.nl/",
+      "bedrijf": "Installatiebedrijf Keyzer",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:09.570Z",
+      "passive": {
+        "proof": {
+          "url": "https://keyzerbv.nl/phpMyAdmin/",
+          "ok": false,
+          "error": "TypeError: fetch failed"
+        },
+        "error": "TypeError: fetch failed"
+      },
+      "auth": null
+    },
+    {
+      "siteUrl": "https://vanwichenbv.nl/",
+      "bedrijf": "T.B. van Wichen",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-07",
+      "checkedAt": "2026-07-07T08:07:09.905Z",
+      "passive": {
+        "proof": {
+          "url": "https://vanwichenbv.nl/phpMyAdmin/",
+          "ok": false,
+          "error": "TypeError: fetch failed"
+        },
+        "error": "TypeError: fetch failed"
+      },
+      "auth": null
+    }
+  ]
 }

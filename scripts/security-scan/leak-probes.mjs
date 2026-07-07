@@ -1,4 +1,5 @@
 import { fetchSafe, originOf, probePath } from "./fetch-util.mjs";
+import { panelProbeToFinding } from "./admin-panel-detect.mjs";
 
 /** Bekende paden — alleen GET, geen poortscan. */
 export const ADMIN_PANELS = [
@@ -58,27 +59,10 @@ export const FILE_LEAKS = [
   { path: "/config.php.bak", id: "config-bak", title: "Config-backup mogelijk open", match: (b) => /password|database/i.test(b) },
 ];
 
-const PROBE_OPTS = { timeoutMs: 8000, maxBytes: 48_000 };
+const PROBE_OPTS = { timeoutMs: 10000, maxBytes: 64_000 };
 
 function panelFinding(panel, pr) {
-  const b = (pr.body || "").toLowerCase();
-  if (pr.status !== 200 || b.length < 80) return null;
-  const looksLike =
-    b.includes("phpmyadmin") ||
-    b.includes("pma_username") ||
-    b.includes("welcome to phpmyadmin") ||
-    (b.includes("adminer") && b.includes("login")) ||
-    (b.includes("password") && b.includes("mysql") && b.includes("server"));
-  if (!looksLike) return null;
-  return {
-    id: `db-admin-${panel.path.replace(/\//g, "_")}`,
-    check: "database",
-    severity: "critical",
-    title: `${panel.label} mogelijk open op internet`,
-    klant: "Database-beheer is vindbaar — data kan gestolen worden.",
-    intern: "Kritiek — Website Veilig + hosting review.",
-    evidence: pr.url,
-  };
+  return panelProbeToFinding(panel, pr);
 }
 
 export async function resolveOrigin(targetUrl) {

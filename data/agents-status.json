@@ -1,17 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T08:00:56.656Z",
+  "updatedAt": "2026-07-07T08:07:55.899Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T08:00:55.950Z",
+      "lastRun": "2026-07-07T08:07:55.899Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 15,
-      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (Klanten-lek: phpMyAdmin)",
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
       "top3": [
-        "Firma Fred van Rijn: Klanten-lek: phpMyAdmin",
-        "Amer Houttechniek: Klanten-lek: phpMyAdmin",
-        "Loodgietersbedrijf J.W.F. Born: Klanten-lek: phpMyAdmin"
+        "Firma Fred van Rijn: De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Amer Houttechniek: De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Kroon interieurbouw: Technisch beheerpaneel is publiek bereikbaar."
       ]
     },
     "manager": {
@@ -58,12 +58,12 @@
       "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "klanten-lek": {
-      "lastRun": "2026-07-07T07:52:44.246Z",
+      "lastRun": "2026-07-07T08:07:04.958Z",
       "ok": true,
       "gescand": 184,
-      "metLek": 38,
-      "agentPrompt": "38 echte lek(ken) — /leads/ database-export · outreach",
-      "grokPrompt": "agent outreach — 38 klanten met database-lek in klanten-lek-rapport"
+      "metLek": 37,
+      "agentPrompt": "37 echte lek(ken) — /leads/ database-export · outreach",
+      "grokPrompt": "agent outreach — 37 klanten met database-lek in klanten-lek-rapport"
     },
     "vakscan-leaks": {
       "lastRun": "2026-07-07T07:40:27.309Z",

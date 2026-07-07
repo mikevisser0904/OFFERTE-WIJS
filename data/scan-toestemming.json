@@ -1,7 +1,19 @@
 {
-  "updatedAt": "2026-07-07T07:59:37.694Z",
+  "updatedAt": "2026-07-07T08:04:59.205Z",
   "uitleg": "Schriftelijke toestemming per site. scope: passive-deep (GET), auth-verify (alleen met scan-toestemming.local.json). status: active | revoked",
   "entries": [
+    {
+      "siteUrl": "https://www.ambiance-zonwering.nl/",
+      "bedrijf": "Ambiance Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke toestemming Ambiance Zonwering (Mike)",
+      "evidenceUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+      "scope": [
+        "passive-deep",
+        "auth-verify"
+      ],
+      "status": "active"
+    },
     {
       "siteUrl": "https://www.dreumel.nl",
       "bedrijf": "Dreumel",
@@ -52,17 +64,6 @@
       "consentDatum": "2026-07-07",
       "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
       "evidenceUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "scope": [
-        "passive-deep"
-      ],
-      "status": "active"
-    },
-    {
-      "siteUrl": "https://www.ambiance-zonwering.nl/heko-becewe",
-      "bedrijf": "Ambiance Heko-Becewe",
-      "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
-      "evidenceUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
       "scope": [
         "passive-deep"
       ],

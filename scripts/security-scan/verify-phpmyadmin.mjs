@@ -4,6 +4,7 @@
  */
 import { readFileSync, writeFileSync, copyFileSync } from "fs";
 import { join } from "path";
+import { looksLikePhpMyAdminBody } from "./admin-panel-detect.mjs";
 
 const ROOT = process.cwd();
 const hits = JSON.parse(readFileSync(join(ROOT, "data/leak-hits.json"), "utf8"));
@@ -16,13 +17,8 @@ function hostOf(url) {
   }
 }
 
-function isPmaBody(body) {
-  const b = (body || "").toLowerCase();
-  return (
-    b.includes("phpmyadmin") ||
-    b.includes("pma_username") ||
-    b.includes("welcome to phpmyadmin")
-  );
+function isPmaBody(body, status = 200) {
+  return looksLikePhpMyAdminBody(body, status);
 }
 
 async function probe(url) {
@@ -52,7 +48,7 @@ async function probe(url) {
       status: res.status,
       finalUrl: res.url,
       finalHost: hostOf(res.url),
-      looksLikePma: res.status === 200 && isPmaBody(body),
+      looksLikePma: isPmaBody(body, res.status),
       snippet: body.slice(0, 200).replace(/\s+/g, " "),
     };
   } catch (e) {

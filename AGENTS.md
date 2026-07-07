@@ -113,6 +113,8 @@ Live UI: **/scan/** · Rapporten: `public/reports/` · Queue: `data/scan-queue.j
 
 **Passief:** publieke HTTP(S)-checks + bekende misconfiguratie-paden (phpMyAdmin, Adminer, Elastic/Mongo UI, `.env`, SQL-dumps). **Geen** poortscan, SQL-injectie, inlog of brute force.
 
+**Panel-detectie (echte klanten):** `scripts/security-scan/admin-panel-detect.mjs` — geen hit op WordPress-404 met “phpmyadmin” in footer. Alleen loginform (`pma_username`) of echt dashboard. Opruimen oude hits: `npm run scan:prune-hits` · verificatie: `npm run scan:verify-pma`.
+
 ### Commando's
 
 ```bash
@@ -146,6 +148,14 @@ Als de klant **schriftelijk/mail/WhatsApp** akkoord geeft:
 4. `npm run lead:berichten` — berichten vermelden *met uw toestemming*
 
 **Nooit:** brute force, massa-inlog zonder register, wachtwoorden in git, claimen “wij zaten in uw admin” zonder geregistreerde toestemming.
+
+Bulk toestemming + passief database-profiel (geen rijen/scrape via inlog):
+
+```bash
+npm run consent:bulk
+KLANTEN_LEK_LIMIT=184 npm run lead:database   # panels, .env-meta, SQL-dump-tabelnamen
+npm run scan:consent && npm run lead:berichten
+```
 
 ## Lead hunter (potentiële klanten — aparte agent-taak)
 
@@ -207,10 +217,10 @@ npm run funnel            # dataflow → leads (+scan) → outreach → manager 
 npm run funnel:light      # zonder zware leak-scan
 npm run agent:pipeline    # alias voor funnel
 npm run agent:status      # health + sync + bouw-hint + outreach + manager
-npm run autopilot         # dataflow + health + sync + optimizer (meten) + manager + ntfy
+npm run autopilot         # dataflow + health + sync + optimizer:apply + manager + ntfy (elke 4u)
 ```
 
-**Optimizer** draait ook elke **6 uur** in CI (`.github/workflows/optimizer-agent.yml`).  
+**Optimizer** draait elke **2 uur** in CI (`agent:optimizer:apply` + manager) — `.github/workflows/optimizer-agent.yml`.  
 Grok-taken: `data/optimizer-wachtrij.json` — trigger: **optimizer wachtrij**.
 
 Legacy: `npm run scan:leaks` = zelfde als `agent:vakscan-leaks`.

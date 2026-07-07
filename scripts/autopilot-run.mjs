@@ -48,12 +48,13 @@ if (existsSync(WACHTRIJ)) {
   }
 }
 
-const optimizerApply =
-  process.env.OPTIMIZER_APPLY === "1" || process.argv.includes("--optimizer-apply");
-if (optimizerApply) {
-  runNode("scripts/optimizer-agent/run.mjs", ["--apply"]);
-} else {
+// Standaard apply op elke autopilot-run (4u); uitzetten met OPTIMIZER_MEASURE_ONLY=1
+const measureOnly =
+  process.env.OPTIMIZER_MEASURE_ONLY === "1" || process.argv.includes("--optimizer-measure-only");
+if (measureOnly) {
   runNode("scripts/optimizer-agent/run.mjs");
+} else {
+  runNode("scripts/optimizer-agent/run.mjs", ["--apply"]);
 }
 
 const managerRun = runNode("scripts/manager-agent/run.mjs");

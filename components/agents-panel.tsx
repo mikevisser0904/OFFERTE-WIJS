@@ -136,7 +136,7 @@ export function AgentsPanel() {
                 </li>
               ))}
             </ul>
-            <p className="mt-2 font-mono text-[10px] text-white/35">npm run agent:optimizer:apply · elke 6u in CI</p>
+            <p className="mt-2 font-mono text-[10px] text-white/35">npm run agent:optimizer:apply · elke 2u in CI</p>
           </div>
         )}
         <pre className="mt-4 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs text-white/50">

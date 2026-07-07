@@ -93,6 +93,21 @@ function besteEvidenceUrl(rapport) {
   return db?.evidence || findings.find((f) => f.evidence)?.evidence || null;
 }
 
+function laadDbExportMap() {
+  const path = join(root, "data/klanten-database-export.json");
+  const map = new Map();
+  if (!existsSync(path)) return map;
+  try {
+    const data = JSON.parse(readFileSync(path, "utf8"));
+    for (const row of data.rijen || []) {
+      if (row.url) map.set(hostKey(row.url), row);
+    }
+  } catch {
+    /* */
+  }
+  return map;
+}
+
 function laadConsentDeep(klantUrl) {
   const path = join(root, "data/consent-deep-results.json");
   if (!existsSync(path)) return null;
@@ -105,7 +120,23 @@ function laadConsentDeep(klantUrl) {
   }
 }
 
-function bouwBericht(klant, rapport, proof, consent, consentDeep) {
+function dbFeitenRegel(dbRow) {
+  if (!dbRow) return null;
+  const parts = [];
+  if (dbRow.dbHost || dbRow.dbName) {
+    parts.push(`database ${dbRow.dbType || "?"} op ${dbRow.dbHost || "?"} (${dbRow.dbName || "naam onbekend"})`);
+  }
+  if (dbRow.dbUser) parts.push(`gebruiker "${dbRow.dbUser}" in config gevonden`);
+  if (dbRow.wachtwoordLek) parts.push("wachtwoord stond in een downloadbaar config-bestand");
+  if (dbRow.sqlTabelCount > 0 && dbRow.sqlTabellen?.length) {
+    const tabellen = dbRow.sqlTabellen.slice(0, 6).join(", ");
+    parts.push(`${dbRow.sqlTabelCount} tabellen in een publieke SQL-dump (o.a. ${tabellen})`);
+  }
+  if (dbRow.panelUrl) parts.push(`beheerpaneel: ${dbRow.panelUrl}`);
+  return parts.length ? parts.join("; ") : null;
+}
+
+function bouwBericht(klant, rapport, proof, consent, consentDeep, dbRow) {
   const naam = klant.bedrijf || "uw bedrijf";
   const score = rapport?.risicoScore ?? klant.score ?? "?";
   const site = klant.url.replace(/^https?:\/\//, "");
@@ -129,6 +160,7 @@ function bouwBericht(klant, rapport, proof, consent, consentDeep) {
     kern = `${toestemmingRegel ? `${toestemmingRegel}\n\n` : ""}${consent ? "" : "Ik heb NIET ingelogd op uw systemen zonder uw toestemming. "}Uw database-admin staat WEL open op internet — gecontroleerd op ${new Date().toLocaleDateString("nl-NL")}.
 ${extraDash ? `\nExtra bevinding: ${extraDash}` : ""}
 ${extraAuth ? `\n${extraAuth}` : ""}
+${dbFeitenRegel(dbRow) ? `\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): ${dbFeitenRegel(dbRow)}.` : ""}
 
 ZELF NAKIJKEN (30 sec) — plak in uw browser:
 ${proof.url}
@@ -172,6 +204,7 @@ async function main() {
   }
   const store = JSON.parse(readFileSync(inPath, "utf8"));
   const maps = laadRapporten();
+  const dbExportMap = laadDbExportMap();
 
   const klanten = [];
   for (const k of store.klanten || []) {
@@ -180,6 +213,7 @@ async function main() {
     let proof = null;
     if (evidenceUrl) {
       proof = await haalAdminBewijs(evidenceUrl);
+      if (proof && proof.ok === false) proof = null;
     }
 
     const schrikRegels = proof?.magClaimen
@@ -188,7 +222,8 @@ async function main() {
 
     const consent = getActiveConsent(k.url);
     const consentDeep = consent ? laadConsentDeep(k.url) : null;
-    const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof, consent, consentDeep);
+    const dbRow = dbExportMap.get(hostKey(k.url)) || null;
+    const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof, consent, consentDeep, dbRow);
     const verkoopKort = bouwSmsKort(k, proof);
     const wa = k.telefoonWa || (k.telefoon ? normalizeWa(k.telefoon) : null);
     const whatsappSchrik = wa ? `https://wa.me/${wa}?text=${encodeURIComponent(verkoopKort)}` : null;
@@ -207,6 +242,15 @@ async function main() {
             checkedAt: consentDeep.checkedAt,
             unauthenticatedDashboard: consentDeep.passive?.unauthenticatedDashboard?.summary || null,
             authVerified: consentDeep.auth?.loginSuccess ?? null,
+          }
+        : null,
+      databaseProfiel: dbRow
+        ? {
+            dbType: dbRow.dbType,
+            dbHost: dbRow.dbHost,
+            dbName: dbRow.dbName,
+            sqlTabellen: dbRow.sqlTabellen,
+            panelUrl: dbRow.panelUrl,
           }
         : null,
       bewijsUrl: proof?.url || evidenceUrl || null,

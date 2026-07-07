@@ -146,11 +146,23 @@ async function main() {
     process.exit(0);
   }
 
-  const results = [];
-  for (const entry of active) {
-    console.log(`Consent deep: ${entry.bedrijf || entry.siteUrl}`);
-    results.push(await deepCheckEntry(entry));
+  const withEvidence = active.filter((e) => e.evidenceUrl || e.panelUrl);
+  const skip = active.length - withEvidence.length;
+  if (skip) console.log(`${skip} entries zonder evidenceUrl — overgeslagen (passive-deep)`);
+
+  const concurrency = Number(process.env.CONSENT_CONCURRENCY || 6);
+  const queue = [...withEvidence];
+  const results = new Array(queue.length);
+  let idx = 0;
+  async function worker() {
+    while (idx < queue.length) {
+      const i = idx++;
+      const entry = queue[i];
+      console.log(`Consent deep [${i + 1}/${queue.length}]: ${entry.bedrijf || entry.siteUrl}`);
+      results[i] = await deepCheckEntry(entry);
+    }
   }
+  await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, () => worker()));
 
   const out = {
     updatedAt: new Date().toISOString(),
