@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T18:17:53.140Z",
+  "updatedAt": "2026-07-07T18:30:20.714Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Verkoop-bewijs klaar",
@@ -33,13 +33,13 @@
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 15 lekken",
-      "lastRun": "2026-07-07T17:49:42.059Z"
+      "lastRun": "2026-07-07T18:26:41.969Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 178ms",
+      "detail": "OK 196ms",
       "lastRun": "2026-07-07T17:49:42.004Z"
     },
     {
