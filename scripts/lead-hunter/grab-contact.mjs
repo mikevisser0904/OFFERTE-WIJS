@@ -18,6 +18,36 @@ const PHONE_RE =
 
 const EMAIL_RE = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
 
+const JUNK_CONTACT = new Set(["null", "undefined", "none", "n/a", "na", "-", "—", "geen"]);
+
+/** OSM/score soms letterlijk "null" — niet als telefoon gebruiken. */
+function sanitizeIncomingPhone(value) {
+  if (value == null) return null;
+  const s = String(value).trim();
+  if (!s || JUNK_CONTACT.has(s.toLowerCase())) return null;
+  return normalizePhone(s) || normalizePhone(s.replace(/\s/g, "")) || null;
+}
+
+function sanitizeIncomingEmail(value) {
+  if (value == null) return null;
+  const s = String(value).trim();
+  if (!s || JUNK_CONTACT.has(s.toLowerCase())) return null;
+  if (!s.includes("@") || s.length < 6) return null;
+  return s;
+}
+
+function phoneForDisplay(intlPhone) {
+  if (!intlPhone) return null;
+  return intlPhone.startsWith("31") ? `0${intlPhone.slice(2)}` : intlPhone;
+}
+
+function csvCell(value) {
+  if (value == null || value === "") return "";
+  const s = String(value).trim();
+  if (JUNK_CONTACT.has(s.toLowerCase())) return "";
+  return s;
+}
+
 function normalizePhone(raw) {
   let d = raw.replace(/\D/g, "");
   if (d.startsWith("0031")) d = d.slice(2);
@@ -64,7 +94,16 @@ async function fetchText(url) {
 
 async function contactForLead(lead) {
   if (lead.url.includes("facebook.com") && !lead.url.includes("wa.me")) {
-    return { ...lead, telefoon: lead.telefoon || null, email: lead.email || null, contactBron: "skip-facebook" };
+    const telefoonWa = sanitizeIncomingPhone(lead.telefoon);
+    const email = sanitizeIncomingEmail(lead.email);
+    return {
+      ...lead,
+      telefoon: phoneForDisplay(telefoonWa),
+      telefoonWa,
+      email,
+      contactBron: "skip-facebook",
+      echt: !!(telefoonWa || email),
+    };
   }
 
   let blob = "";
@@ -75,21 +114,17 @@ async function contactForLead(lead) {
     if (blob.length > 80_000) break;
   }
 
-  const telefoon = lead.telefoon || pickBestPhone(blob);
-  const email = lead.email || pickEmail(blob);
-  const displayPhone = telefoon
-    ? telefoon.startsWith("31")
-      ? `0${telefoon.slice(2)}`
-      : telefoon
-    : null;
+  const telefoonWa = sanitizeIncomingPhone(lead.telefoon) || pickBestPhone(blob);
+  const email = sanitizeIncomingEmail(lead.email) || pickEmail(blob);
+  const displayPhone = phoneForDisplay(telefoonWa);
 
   return {
     ...lead,
     telefoon: displayPhone,
-    telefoonWa: telefoon,
+    telefoonWa,
     email,
-    contactBron: telefoon || email ? "website" : "geen-contact",
-    echt: !!(telefoon || email),
+    contactBron: telefoonWa || email ? "website" : "geen-contact",
+    echt: !!(telefoonWa || email),
   };
 }
 
@@ -142,7 +177,7 @@ async function main() {
     bedrijf: k.bedrijf,
     plaats: k.plaats,
     categorie: k.categorie,
-    telefoon: k.telefoon,
+    telefoon: k.telefoon || "",
     email: k.email || "",
     url: k.url,
     score: k.score ?? "",
@@ -166,7 +201,7 @@ async function main() {
     "bedrijf,plaats,telefoon,email,probleem,aanbod,url",
     ...exportRows.map((r) =>
       [r.bedrijf, r.plaats, r.telefoon, r.email, r.probleem, r.aanbod, r.url]
-        .map((c) => `"${String(c).replace(/"/g, '""')}"`)
+        .map((c) => `"${csvCell(c).replace(/"/g, '""')}"`)
         .join(",")
     ),
   ].join("\n");

@@ -19,6 +19,8 @@ type EchteKlant = {
   verkoopBericht?: string;
   verkoopKort?: string;
   whatsappSchrik?: string | null;
+  bewijsUrl?: string | null;
+  adminProof?: { adminType?: string; zichtbaar?: string };
 };
 
 function urlJson() {
@@ -73,8 +75,9 @@ export function EchteKlantenPanel() {
             )}
           </h2>
           <p className="mt-1 text-sm text-white/55">
-            Persoonlijk bericht met hun bedrijfsnaam + concrete lekken uit VakScan. Kopieer → WhatsApp/bellen.
+            Bericht + directe link naar hun open admin-inlog. Op bellen: scherm delen zodat zij het zelf zien.
           </p>
+          <p className="mt-1 text-xs text-rose-300/90">Niet inloggen. Wel: “uw voordeur staat open” + bewijs-URL.</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <a href={csvUrl()} className="rounded-full border border-white/20 px-4 py-2 text-sm">
@@ -103,8 +106,10 @@ export function EchteKlantenPanel() {
                   <span className="text-amber-300">score {k.risicoScore ?? k.score}</span>
                   {k.telefoon && <span className="font-mono text-emerald-300">{k.telefoon}</span>}
                 </div>
-                {k.schrikRegels?.[0] && (
-                  <p className="mt-1 text-xs text-rose-200/80 line-clamp-1">{k.schrikRegels[0]}</p>
+                {k.bewijsUrl && (
+                  <a href={k.bewijsUrl} target="_blank" rel="noopener noreferrer" className="mt-1 block truncate text-xs text-amber-300 hover:underline">
+                    Bewijs: {k.bewijsUrl}
+                  </a>
                 )}
               </button>
 

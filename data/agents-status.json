@@ -1,17 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T07:49:57.256Z",
+  "updatedAt": "2026-07-07T07:52:01.355Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T07:49:57.256Z",
+      "lastRun": "2026-07-07T07:52:01.355Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 15,
-      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (phpMyAdmin — publiek bereikbaar via /phpMyAdmin/)",
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
       "top3": [
-        "Firma Fred van Rijn: phpMyAdmin — publiek bereikbaar via /phpMyAdmin/",
-        "Amer Houttechniek: phpMyAdmin — publiek bereikbaar via /phpMyAdmin/",
-        "Kroon interieurbouw: phpMyAdmin — publiek bereikbaar via /phpmyadmin/"
+        "Firma Fred van Rijn: De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Amer Houttechniek: De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+        "Kroon interieurbouw: De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen."
       ]
     },
     "manager": {

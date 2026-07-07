@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 /**
- * Persoonlijke verkoopberichten met echte scan-feiten (naam + concrete lekken).
- * Alleen wat in VakScan-rapport staat — geen verzonnen data.
+ * Persoonlijke verkoopberichten — echte scan + publiek admin-bewijs (zonder inloggen).
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, copyFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { fileURLToPath } from "url";
+import { haalAdminBewijs } from "./admin-proof.mjs";
 
 const root = process.cwd();
+const ETHICAL =
+  "Nooit inloggen op klant-systemen. Nooit zeggen 'wij zitten in uw admin' — wel: 'uw admin-inlog staat op internet open'. Klant kan link zelf openen.";
 
 function normUrl(u) {
   try {
@@ -25,18 +27,6 @@ function hostOnly(u) {
     return new URL(u.startsWith("http") ? u : `https://${u}`).hostname.replace(/^www\./i, "").toLowerCase();
   } catch {
     return "";
-  }
-}
-
-function kortBewijs(evidence) {
-  if (!evidence) return "";
-  try {
-    const x = new URL(evidence);
-    const path = x.pathname + x.search;
-    if (path && path !== "/") return path;
-    return x.hostname;
-  } catch {
-    return evidence.length > 60 ? `${evidence.slice(0, 57)}…` : evidence;
   }
 }
 
@@ -89,7 +79,6 @@ function vindRapport(klant, maps) {
           bedrijf: klant.bedrijf,
           risicoScore: hit.risicoScore,
           findings: hit.findings || [],
-          klantBullets: (hit.findings || []).map((x) => x.klant).slice(0, 3),
         };
       }
     }
@@ -97,58 +86,58 @@ function vindRapport(klant, maps) {
   return null;
 }
 
-function schrikRegels(rapport, klant) {
-  const regels = [];
-  const findings = uniekeFindings(rapport?.findings).slice(0, 4);
-
-  for (const f of findings) {
-    const bewijs = kortBewijs(f.evidence);
-    if (f.check === "database" || f.check === "datalek") {
-      regels.push(
-        bewijs
-          ? `${f.title.replace(" mogelijk open op internet", "")} — publiek bereikbaar via ${bewijs}`
-          : f.klant
-      );
-    } else if (f.id === "no-https" || f.id === "no-http-redirect") {
-      regels.push("Uw site werkt nog zonder beveiligde verbinding (HTTPS) — browsers tonen 'niet veilig'.");
-    } else {
-      regels.push(f.klant || f.title);
-    }
-  }
-
-  if (regels.length === 0 && klant.probleem) {
-    regels.push(klant.probleem);
-  }
-  if (regels.length === 0) {
-    regels.push("Uw website voldoet niet aan basisveiligheid die klanten en Google verwachten.");
-  }
-  return regels.slice(0, 3);
+function besteEvidenceUrl(rapport) {
+  const findings = uniekeFindings(rapport?.findings);
+  const db = findings.find((f) => (f.check === "database" || f.check === "datalek") && f.evidence);
+  return db?.evidence || findings.find((f) => f.evidence)?.evidence || null;
 }
 
-function bouwBericht(klant, regels, rapport) {
+function bouwBericht(klant, rapport, proof) {
   const naam = klant.bedrijf || "uw bedrijf";
   const score = rapport?.risicoScore ?? klant.score ?? "?";
-  const bullets = regels.map((r) => `• ${r}`).join("\n");
+  const site = klant.url.replace(/^https?:\/\//, "");
 
-  const intro = `Hoi, Mike van WebKlaar — ik richt me op vakbedrijven zoals ${naam}.`;
+  const intro = `Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals ${naam}.`;
 
-  const schrik = `Ik heb uw website (${klant.url.replace(/^https?:\/\//, "")}) zojuist gecontroleerd. Dit staat nu letterlijk online:
+  let kern;
+  if (proof?.ok && proof.url) {
+    kern = `Ik heb NIET ingelogd op uw systemen (dat zou illegaal zijn). Maar uw database-admin staat WEL open op internet — gecontroleerd op ${new Date().toLocaleDateString("nl-NL")}.
 
-${bullets}
+ZELF NAKIJKEN (30 sec) — plak in uw browser:
+${proof.url}
 
-Risicoscore: ${score}/100. Dit is precies wat cybercriminelen automatisch zoeken — niet "theorie", maar vindbaar via internet.`;
+Wat u daar ziet ZONDER wachtwoord:
+${proof.zichtbaar}
 
-  const close = `Wij dichten dit in 2 werkdagen met Website Veilig (€299, vaste prijs). Geen verkooppraat: ik laat u in 10 minuten zien wat er openstaat. Zin om vandaag of morgen te bellen?`;
+Waarom dit u raakt:
+${proof.impact}
 
-  return `${intro}\n\n${schrik}\n\n${close}`;
+Dit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is het raden van wachtwoorden of misbruik van een zwak/lekt wachtwoord — daarna kunnen klantgegevens en offertes weg.
+
+Risicoscore op uw site: ${score}/100.`;
+  } else {
+    const regels = (klant.schrikRegels || []).map((r) => `• ${r}`).join("\n");
+    kern = `Check op ${site}:
+
+${regels || "• Ernstige beveiligingsproblemen gevonden."}
+
+Score: ${score}/100.`;
+  }
+
+  const close = `Wij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u **live** zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?`;
+
+  return `${intro}\n\n${kern}\n\n${close}`;
 }
 
-function bouwSmsKort(klant, regels) {
-  const top = regels[0] || "beveiligingsprobleem op uw site";
-  return `Hoi, Mike (WebKlaar). Check op ${klant.bedrijf}: ${top} — kunnen we dit in 2 dagen fixen (€299)? Bellen?`;
+function bouwSmsKort(klant, proof) {
+  const naam = klant.bedrijf;
+  if (proof?.ok && proof.url) {
+    return `Hoi, Mike (WebKlaar). ${naam}: uw database-beheer (${proof.adminType}) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: ${proof.url} — kunnen we dit vandaag dichten? €299. Bellen?`;
+  }
+  return `Hoi, Mike (WebKlaar). ${naam}: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.`;
 }
 
-function main() {
+async function main() {
   const inPath = join(root, "data/echte-klanten.json");
   if (!existsSync(inPath)) {
     console.error("Eerst: npm run lead:contact");
@@ -157,42 +146,48 @@ function main() {
   const store = JSON.parse(readFileSync(inPath, "utf8"));
   const maps = laadRapporten();
 
-  const klanten = (store.klanten || []).map((k) => {
+  const klanten = [];
+  for (const k of store.klanten || []) {
     const rapport = vindRapport(k, maps);
-    const regels = schrikRegels(rapport, k);
-    const verkoopBericht = bouwBericht(k, regels, rapport);
-    const verkoopKort = bouwSmsKort(k, regels);
+    const evidenceUrl = besteEvidenceUrl(rapport);
+    let proof = null;
+    if (evidenceUrl) {
+      proof = await haalAdminBewijs(evidenceUrl);
+    }
+
+    const schrikRegels = proof?.magClaimen
+      ? [proof.magClaimen, proof.zichtbaar]
+      : (rapport?.findings || []).slice(0, 2).map((f) => f.klant || f.title);
+
+    const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof);
+    const verkoopKort = bouwSmsKort(k, proof);
     const wa = k.telefoonWa || (k.telefoon ? normalizeWa(k.telefoon) : null);
     const whatsappSchrik = wa ? `https://wa.me/${wa}?text=${encodeURIComponent(verkoopKort)}` : null;
 
-    return {
+    klanten.push({
       ...k,
       heeftScan: !!rapport,
       risicoScore: rapport?.risicoScore ?? k.score,
-      schrikRegels: regels,
+      schrikRegels,
+      adminProof: proof,
+      bewijsUrl: proof?.url || evidenceUrl || null,
       verkoopBericht,
       verkoopKort,
       whatsappSchrik,
       reportId: rapport?.id ?? null,
-    };
-  });
+    });
+  }
 
-  klanten.sort((a, b) => {
-    const sa = Number(a.risicoScore) || 0;
-    const sb = Number(b.risicoScore) || 0;
-    if (sb !== sa) return sb - sa;
-    return (b.heeftScan ? 1 : 0) - (a.heeftScan ? 1 : 0);
-  });
+  klanten.sort((a, b) => (Number(b.risicoScore) || 0) - (Number(a.risicoScore) || 0));
 
-  const metScan = klanten.filter((k) => k.heeftScan && k.schrikRegels.length > 0).length;
+  const metProof = klanten.filter((k) => k.adminProof?.ok).length;
 
   const out = {
     ...store,
     generatedAt: new Date().toISOString(),
     metPersoonlijkBericht: klanten.length,
-    metScanFeiten: metScan,
-    disclaimer:
-      "Alleen feiten uit VakScan. Gebruik met gratis-check-aanbod. Geen dreigementen — wel concrete waarheid.",
+    metAdminBewijs: metProof,
+    ethisch: ETHICAL,
     klanten,
   };
 
@@ -201,18 +196,15 @@ function main() {
   copyFileSync(inPath, join(root, "public/echte-klanten.json"));
 
   const exportTxt = klanten
-    .filter((k) => k.heeftScan)
-    .slice(0, 50)
-    .map(
-      (k) =>
-        `=== ${k.bedrijf} | ${k.telefoon || k.email} ===\n${k.verkoopBericht}\n`
-    )
+    .filter((k) => k.heeftScan && k.bewijsUrl)
+    .slice(0, 40)
+    .map((k) => `=== ${k.bedrijf} | ${k.telefoon || k.email} ===\n${k.verkoopBericht}\n`)
     .join("\n---\n\n");
   writeFileSync(join(root, "data/verkoop-berichten.txt"), exportTxt);
   copyFileSync(join(root, "data/verkoop-berichten.txt"), join(root, "public/verkoop-berichten.txt"));
 
-  console.log(`Persoonlijke berichten: ${klanten.length} klanten, ${metScan} met scan-feiten`);
-  console.log(`Tekstbestand: data/verkoop-berichten.txt`);
+  console.log(`Berichten: ${klanten.length} klanten, ${metProof} met live admin-bewijs (GET only)`);
+  console.log(ETHICAL);
 }
 
 function normalizeWa(display) {
@@ -223,5 +215,8 @@ function normalizeWa(display) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  main();
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
 }

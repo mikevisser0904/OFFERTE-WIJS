@@ -160,6 +160,12 @@ Output: `data/klanten-database-export.json` (dbType, host, dbName, user, panel, 
 
 Geen verzonnen bedrijven — alleen OSM + handmatige aanvullingen in `data/klanten-leads-import.txt`.
 
+### Verkoop met admin-bewijs (strikt)
+
+- **Wel:** publieke URL naar phpMyAdmin/Adminer-inlogscherm in bericht; klant opent zelf; scherm delen op belletje.
+- **Niet:** inloggen, wachtwoorden proberen, data downloaden, beweren *"wij zitten in uw admin"*.
+- Copy: *"admin-voordeur staat open op internet"* + `bewijsUrl` uit `npm run lead:berichten`.
+
 ## Agent-team — één taak = één agent
 
 Live hub: **/agents/** · Registry (bron): `data/agents-registry.json` (+ skill per agent in `.grok/skills/<id>/`)
