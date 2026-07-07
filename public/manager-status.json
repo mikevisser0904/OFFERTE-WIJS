@@ -1,17 +1,12 @@
 {
-  "updatedAt": "2026-07-07T11:09:16.558Z",
+  "updatedAt": "2026-07-07T11:25:18.215Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Verkoop-bewijs klaar",
-  "prioriteit": 3,
+  "prioriteit": 1,
   "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
   "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen",
   "acties": [
-    {
-      "wie": "grok",
-      "actie": "Data-flow sync",
-      "script": "npm run agent:dataflow"
-    },
     {
       "wie": "mike",
       "actie": "5 contacten met bewijs",
@@ -36,15 +31,15 @@
     {
       "id": "data-flow",
       "naam": "Data-flow",
-      "status": "actie",
-      "detail": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
-      "lastRun": "2026-07-07T11:09:14.749Z"
+      "status": "ok",
+      "detail": "24 streams OK · queue 0 pending · 15 lekken",
+      "lastRun": "2026-07-07T11:22:36.012Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 258ms",
+      "detail": "OK 72ms",
       "lastRun": "2026-07-07T11:09:14.653Z"
     },
     {
@@ -97,11 +92,25 @@
       "lastRun": null
     },
     {
+      "id": "verkoop-effectiviteit",
+      "naam": "Verkoop-effectiviteit",
+      "status": "ok",
+      "detail": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week",
+      "lastRun": "2026-07-07T11:18:50.865Z"
+    },
+    {
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
       "lastRun": "2026-07-07T11:03:42.882Z"
+    },
+    {
+      "id": "outbound-auto",
+      "naam": "Outbound auto",
+      "status": "ok",
+      "detail": "Volledig geautomatiseerde outbound: e-mail (Resend), webhook",
+      "lastRun": null
     },
     {
       "id": "outreach",
@@ -115,7 +124,14 @@
       "naam": "SEO",
       "status": "ok",
       "detail": "SEO sitemap bijgewerkt",
-      "lastRun": "2026-07-07T11:09:07.273Z"
+      "lastRun": "2026-07-07T11:18:04.070Z"
+    },
+    {
+      "id": "traffic",
+      "naam": "Traffic",
+      "status": "ok",
+      "detail": "SEO-pool, landings, IndexNow — organisch verkeer zonder outr",
+      "lastRun": null
     },
     {
       "id": "kpi",
