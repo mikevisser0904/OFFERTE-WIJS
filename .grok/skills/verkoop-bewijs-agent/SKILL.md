@@ -14,6 +14,15 @@ cd ~/Developer/offerte-wijs
 npm run agent:verkoop-bewijs
 ```
 
+## Worktree (geïsoleerd van main)
+
+```bash
+npm run agent:verkoop-bewijs:worktree
+```
+
+Map: `~/Developer/offerte-wijs-wt-verkoop-bewijs` · branch `agent/verkoop-bewijs`  
+Open die map in een **nieuw Cursor-venster** om alleen de agent te draaien zonder je main checkout te raken.
+
 Snel (berichten al vers):
 ```bash
 npm run agent:verkoop-bewijs -- --skip-berichten

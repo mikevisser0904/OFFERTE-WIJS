@@ -53,6 +53,7 @@
     "agent:leads:queue": "node scripts/lead-hunter/agent-run.mjs",
     "agent:klanten-lek": "node scripts/agents/klanten-lek/run.mjs",
     "agent:verkoop-bewijs": "node scripts/verkoop-bewijs-agent/run.mjs",
+    "agent:verkoop-bewijs:worktree": "node scripts/agent-worktree-verkoop.mjs",
     "agent:outreach": "node scripts/outreach-agent/run.mjs",
     "agent:optimizer": "node scripts/optimizer-agent/run.mjs",
     "agent:optimizer:apply": "node scripts/optimizer-agent/run.mjs --apply",
