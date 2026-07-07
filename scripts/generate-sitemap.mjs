@@ -14,6 +14,8 @@ const staticPaths = [
   "webklaar/",
   "fiverr/",
   "marktplaats/",
+  "land/",
+  "spoed/",
 ];
 
 const landingsTs = readFileSync(join(root, "data/seo-landingen.ts"), "utf8");

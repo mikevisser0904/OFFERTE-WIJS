@@ -31,8 +31,8 @@ export function IntegrationsPanel() {
       <div className="rounded-2xl border border-sky-400/25 bg-sky-400/5 p-5">
         <div className="flex items-center justify-between gap-2">
           <p className="font-bold text-sky-300">Google Search Console</p>
-          <span className="rounded-full bg-amber-400/20 px-2 py-0.5 text-xs text-amber-300">
-            1 secret nodig
+          <span className="rounded-full bg-emerald-400/20 px-2 py-0.5 text-xs text-emerald-300">
+            HTML-bestand live
           </span>
         </div>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm text-white/60">
@@ -57,6 +57,16 @@ export function IntegrationsPanel() {
           >
             Sitemap indienen →
           </a>
+          {"verifyFile" in integrations.googleSearchConsole && (
+            <a
+              href={integrations.googleSearchConsole.verifyFile}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-white/15 px-4 py-2 text-sm text-white/80"
+            >
+              Verificatiebestand →
+            </a>
+          )}
         </div>
       </div>
 
@@ -64,6 +74,13 @@ export function IntegrationsPanel() {
         <div className="rounded-xl border border-white/8 bg-white/[0.02] p-4">
           <p className="font-bold text-emerald-400">IndexNow ✓</p>
           <p className="mt-1 text-xs text-white/50">{integrations.indexnow.note}</p>
+        </div>
+        <div className="rounded-xl border border-amber-400/20 bg-amber-400/5 p-4">
+          <p className="font-bold text-amber-300">Traffic-agent</p>
+          <p className="mt-1 text-xs text-white/50">Dagelijks SEO-landings + sitemap (CI)</p>
+          <a href="/traffic-status.json" className="mt-2 block text-xs text-amber-200 hover:underline">
+            traffic-status.json →
+          </a>
         </div>
         <div className="rounded-xl border border-white/8 bg-white/[0.02] p-4">
           <p className="font-bold text-violet-400">ntfy push</p>

@@ -123,7 +123,7 @@ export default function StoreHomePage() {
         <h2 className="text-xl font-bold text-slate-900">Populair in uw regio</h2>
         <p className="mt-2 text-sm text-slate-500">Vakman websites — lokaal en landelijk</p>
         <ul className="mt-6 columns-1 gap-x-8 text-sm sm:columns-2 lg:columns-3">
-          {seoLandingen.slice(0, 9).map((l) => (
+          {seoLandingen.slice(0, 12).map((l) => (
             <li key={l.slug} className="mb-2">
               <Link href={`/land/${l.slug}/`} className="text-emerald-600 hover:underline">
                 {l.h1}
@@ -131,6 +131,9 @@ export default function StoreHomePage() {
             </li>
           ))}
         </ul>
+        <Link href="/land/" className="mt-6 inline-block text-sm font-semibold text-emerald-700 hover:underline">
+          Alle regio&apos;s en vakken ({seoLandingen.length}) →
+        </Link>
       </section>
 
       <FaqSchema />

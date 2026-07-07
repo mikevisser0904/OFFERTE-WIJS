@@ -75,6 +75,16 @@ export function StorefrontShell({
                     Alle diensten →
                   </Link>
                 </li>
+                <li>
+                  <Link href="/start/" className="hover:text-emerald-600">
+                    Google Start €299
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/land/" className="hover:text-emerald-600">
+                    Per regio / vak
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
