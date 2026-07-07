@@ -5,7 +5,7 @@ import { diensten, webklaar } from "@/data/diensten-online";
 import { notifyNtfy, recordBestelling } from "@/lib/kpi-autobump";
 
 export function BestelForm({ preselect }: { preselect?: string }) {
-  const [dienst, setDienst] = useState(preselect ?? diensten[0].slug);
+  const [dienst, setDienst] = useState(preselect ?? "google-start");
   const [bedrijf, setBedrijf] = useState("");
   const [naam, setNaam] = useState("");
   const [tel, setTel] = useState("");

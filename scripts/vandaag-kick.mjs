@@ -2,6 +2,7 @@
 /** Stuurt Mike een urgente ntfy — open /actie/ en stuur 5 WhatsApps */
 const NTFY = process.env.VAKSCAN_NTFY_TOPIC || "webklaar-mike";
 const url = "https://mikevisser0904.github.io/OFFERTE-WIJS/actie/";
+const start = "https://mikevisser0904.github.io/OFFERTE-WIJS/start/";
 
 const body = [
   "Vandaag geld — jouw enige job nu:",
@@ -9,6 +10,7 @@ const body = [
   "2. Plak 5 nummers (warm netwerk)",
   "3. 5× Verstuur → teller naar 5/5",
   "4. Deel status-knop op de pagina",
+  "Deel naar klanten: " + start,
   "Snelste deal: Google Start €299",
 ].join("\n");
 

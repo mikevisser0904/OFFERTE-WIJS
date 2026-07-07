@@ -12,10 +12,13 @@ import {
   vandaagHero,
   vandaagLinks,
   vandaagLinkedIn,
+  vandaagMailWarm,
+  vandaagBel15sec,
   vandaagStappen,
   whatsappShareUrl,
   type VandaagBerichtId,
 } from "@/data/vandaag-geld";
+import { merk } from "@/data/verkoop";
 
 const STORAGE_KEY = "webklaar-vandaag-verstuurd";
 
@@ -94,14 +97,21 @@ export function VandaagGeldPanel() {
         <p className="mt-2 text-sm text-white/60">
           Snelste order: <strong className="text-emerald-300">{vandaagHero.titel}</strong> — {vandaagHero.sub}
         </p>
+        <CopyBlock label="Deel aan klant (korte link)" tekst={vandaagLinks.start} />
         <div className="mt-4 flex flex-wrap gap-2">
           <a
-            href={vandaagLinks.googleStart}
+            href={vandaagLinks.start}
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-white px-5 py-2 text-sm font-bold text-slate-900 hover:bg-white/90"
           >
-            Bestel-link delen (€299) →
+            Open /start/ (€299) →
+          </a>
+          <a
+            href={`tel:${merk.telefoon.replace(/\s/g, "")}`}
+            className="rounded-full border border-white/30 px-5 py-2 text-sm font-bold text-white hover:bg-white/10"
+          >
+            Bel warm netwerk →
           </a>
           <a
             href={whatsappShareUrl(vandaagDeelStatus)}
@@ -201,6 +211,11 @@ export function VandaagGeldPanel() {
       <section className="grid gap-4 sm:grid-cols-2">
         <CopyBlock label="LinkedIn / Facebook (copy)" tekst={vandaagLinkedIn} />
         <CopyBlock label="Bij JA — checklist" tekst={bijJaChecklist} />
+        <CopyBlock
+          label="E-mail warm contact"
+          tekst={`Onderwerp: ${vandaagMailWarm.onderwerp}\n\n${vandaagMailWarm.body}`}
+        />
+        <CopyBlock label="Bel 15 sec (script)" tekst={vandaagBel15sec} />
       </section>
     </div>
   );

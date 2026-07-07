@@ -66,6 +66,7 @@
     "agent:pipeline": "npm run funnel",
     "order:intake": "node scripts/order-intake.mjs",
     "vandaag:kick": "node scripts/vandaag-kick.mjs",
+    "vandaag:push": "node scripts/vandaag-push.mjs",
     "maarten": "git pull --rebase && npm run sync:maarten",
     "start": "next start",
     "lint": "eslint"

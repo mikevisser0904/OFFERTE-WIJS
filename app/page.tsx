@@ -42,7 +42,7 @@ export default function StoreHomePage() {
               <strong>Google Start €299</strong> — profiel + one-pager in 2 werkdagen. Kleinste stap naar online zichtbaarheid.
             </p>
             <Link
-              href="/bestellen/?dienst=google-start"
+              href="/start/"
               className="mt-3 inline-flex shrink-0 rounded-full bg-amber-600 px-5 py-2 font-bold text-white hover:bg-amber-500 sm:mt-0"
             >
               Start hier →

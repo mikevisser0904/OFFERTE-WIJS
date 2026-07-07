@@ -12,6 +12,8 @@ export const VANDAAG_DOEL = {
 
 export const vandaagLinks = {
   demo: webklaar.demo,
+  /** Deel deze URL in WhatsApp — klant ziet alleen €299-aanbod */
+  start: `${webklaar.url}start/`,
   bestellen: `${webklaar.url}bestellen/`,
   googleStart: `${webklaar.url}bestellen/?dienst=google-start`,
   vakmanSite: `${webklaar.url}bestellen/?dienst=vakman-site`,
@@ -57,7 +59,7 @@ Korte demo van wat wij voor vakmannen bouwen: ${vandaagLinks.demo}
 
 Vaste prijs, jij levert logo + teksten, wij live in dagen.
 
-Direct aanvragen: ${vandaagLinks.googleStart}
+Direct aanvragen: ${vandaagLinks.start}
 
 App/bel me als je vragen hebt — ${merk.telefoon}`,
   },
@@ -78,9 +80,9 @@ Bestellen: ${vandaagLinks.bestellen}`,
 export const vandaagDeelStatus = `WebKlaar — websites voor vakmannen, vaste prijs, live in dagen.
 
 Demo: ${vandaagLinks.demo}
-Aanvragen: ${vandaagLinks.googleStart}
+Aanvragen: ${vandaagLinks.start}
 
-Even delen voor wie een installateur/zzp'er kent 🙏`;
+Even delen voor wie een installateur/zzp'er kent`;
 
 export const vandaagLinkedIn = `Ik help vakbedrijven aan een moderne site zonder bureau-prijs — live in 2–3 dagen.
 
@@ -98,3 +100,23 @@ npm run order:intake -- --bedrijf "NAAM" --kanaal whatsapp --prijs 299 --email k
 export function whatsappShareUrl(text: string): string {
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
+
+export const vandaagMailWarm = {
+  onderwerp: "Snel online zichtbaar (vaste prijs €299)",
+  body: `Hoi [NAAM],
+
+Ik help vakbedrijven aan een strakke online presentatie — zonder bureau-prijs.
+
+Google Start (€299, 2 dagen): profiel + one-pager + WhatsApp.
+Alles op één pagina: ${vandaagLinks.start}
+
+Demo grotere site: ${vandaagLinks.demo}
+
+Zin in een kort belletje deze week?
+
+Groet,
+Mike Visser · WebKlaar
+${merk.telefoon}`,
+};
+
+export const vandaagBel15sec = `Mike WebKlaar — kort bellen. Wij zetten vakbedrijven online: Google Start €299 in twee dagen, of volledige site €899. Stuur je demo-link ${vandaagLinks.start} als ze "stuur iets" zeggen. Vraag: "Heb je deze maand nog iemand die een betere site nodig heeft?"`;

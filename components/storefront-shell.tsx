@@ -33,18 +33,18 @@ export function StorefrontShell({
               </Link>
             ))}
             <Link
-              href="/bestellen/"
+              href="/start/"
               className="rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-500"
             >
-              Bestel nu
+              €299 start
             </Link>
           </nav>
-          <Link
-            href="/bestellen/"
+          <a
+            href={`https://wa.me/${webklaar.whatsapp}?text=${encodeURIComponent("Hoi Mike, Google Start €299 graag.")}`}
             className="rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white sm:hidden"
           >
-            Bestel
-          </Link>
+            WhatsApp
+          </a>
         </div>
       </header>
 
@@ -109,12 +109,18 @@ export function StorefrontShell({
       </footer>
 
       {cta && (
-        <div className="fixed bottom-0 left-0 right-0 border-t border-slate-200 bg-white p-3 sm:hidden">
-          <Link
-            href="/bestellen/"
-            className="block rounded-full bg-emerald-600 py-3 text-center text-sm font-bold text-white"
+        <div className="fixed bottom-0 left-0 right-0 z-30 flex gap-2 border-t border-slate-200 bg-white p-3 sm:hidden">
+          <a
+            href={`tel:${webklaar.telefoon.replace(/\s/g, "")}`}
+            className="flex-1 rounded-full border border-emerald-600 py-3 text-center text-sm font-bold text-emerald-700"
           >
-            Bestel een dienst →
+            Bel
+          </a>
+          <Link
+            href="/start/"
+            className="flex-[2] rounded-full bg-emerald-600 py-3 text-center text-sm font-bold text-white"
+          >
+            Google Start €299 →
           </Link>
         </div>
       )}
