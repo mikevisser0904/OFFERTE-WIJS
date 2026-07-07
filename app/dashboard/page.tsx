@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
+import { AutopilotPanel } from "@/components/autopilot-panel";
 import { DashboardVandaag } from "@/components/dashboard-vandaag";
+import { MaartenWachtrijPanel } from "@/components/maarten-wachtrij-panel";
 import { GoalTracker, GoalBreakdown, GoalMilestones } from "@/components/goal-tracker";
 import { doelWekelijks, hoofddoel } from "@/data/doel";
 import {
@@ -50,16 +52,18 @@ export default function DashboardPage() {
       subtitle={`Eerste doel: ${hoofddoel.label} in ${hoofddoel.deadline}`}
     >
       <div className="mx-auto max-w-6xl space-y-8">
+        <AutopilotPanel />
         <DashboardVandaag />
+        <MaartenWachtrijPanel />
 
         <section className="rounded-2xl border border-violet-400/30 bg-violet-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-violet-400">
-              Continu monitoring
+              KPI & slagingskans
             </p>
-            <h2 className="mt-2 text-xl font-bold">Slagingskans live</h2>
+            <h2 className="mt-2 text-xl font-bold">Monitor bijwerken</h2>
             <p className="mt-1 text-sm text-white/55">
-              Site-check elke 4u + KPI&apos;s + score richting 10 ruggen.
+              Omzet en contacten — autopilot leest dit voor agent-tips.
             </p>
           </div>
           <Link

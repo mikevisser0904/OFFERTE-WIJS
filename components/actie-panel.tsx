@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { whatsappBerichten } from "@/data/verkoop";
 import { klantIntake } from "@/data/onboarding";
 import { CopyBlock } from "@/components/copy-block";
+import { recordContactVerstuurd } from "@/lib/kpi-autobump";
 
 const DEMO_LINK = "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/";
 const coldMsg = whatsappBerichten.find((b) => b.id === "cold-2")!;
@@ -102,6 +103,7 @@ export function ActiePanel() {
                 href={c.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => recordContactVerstuurd()}
                 className="rounded-full bg-emerald-400 px-5 py-2 text-sm font-bold text-slate-900 hover:bg-emerald-300"
               >
                 Verstuur WhatsApp →

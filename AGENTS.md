@@ -89,3 +89,20 @@ Als Mike zegt **"monitor check"**, **"dashboard inrichten"**, of **"voer monitor
 5. Korte status naar Mike: slagingskans-tip, pending count, health OK ja/nee
 
 KPI team-sync: Monitor → Exporteer JSON → `npm run kpi:snapshot -- file.json` → commit `data/` + `public/kpi-snapshot.json`
+
+## Autopilot (volledig geautomatiseerd — zoveel mogelijk)
+
+- **GitHub Action** `.github/workflows/autopilot.yml` — elke 4u + handmatig
+- **Script** `node scripts/autopilot-run.mjs` — health, maarten-sync, `autopilot-status.json`, ntfy
+- **Dashboard** `/dashboard/` toont status via `AutopilotPanel`
+- **Bestelling** → ntfy + KPI `bestellingen++` (client)
+- **Actie WhatsApp** → KPI `contactenDezeWeek++`
+
+**Jij (Grok) bij elke ntfy "Goud: agent-wachtrij" of scheduled run:**
+
+1. Open repo `OFFERTE-WIJS`
+2. Lees `data/autopilot-status.json` → `nextAgentPrompt`
+3. Als pending > 0: **voer maarten wachtrij uit** (build, commit, push)
+4. Anders: monitor check + 1 verbetering richting verkoop (SEO, actie, verkoopkit)
+
+Geen menselijke stappen voor site-health of wachtrij-sync — alleen **verkopen** (actie) en **goedkeuren** blijft bij Mike.

@@ -38,7 +38,13 @@ export const integrations = {
   ntfy: {
     topic: "webklaar-mike",
     subscribe: "https://ntfy.sh/webklaar-mike",
-    note: "Push bij site-down (GitHub Action)",
+    note: "Autopilot elke 4u + site-down + nieuwe bestellingen",
+  },
+  autopilot: {
+    workflow: "https://github.com/mikevisser0904/OFFERTE-WIJS/actions/workflows/autopilot.yml",
+    cron: "elke 4 uur",
+    statusUrl: "/autopilot-status.json",
+    note: "Health + wachtrij-sync + agent-prompt naar ntfy",
   },
   maartenIdeeen: {
     topic: "webklaar-maarten-ideeen",

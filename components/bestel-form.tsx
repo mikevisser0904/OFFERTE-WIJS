@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { diensten, webklaar } from "@/data/diensten-online";
+import { notifyNtfy, recordBestelling } from "@/lib/kpi-autobump";
 
 export function BestelForm({ preselect }: { preselect?: string }) {
   const [dienst, setDienst] = useState(preselect ?? diensten[0].slug);
@@ -42,6 +43,13 @@ Ik ga akkoord met betaling bij oplevering.`;
     setWaUrl(wa);
     setMailUrl(mail);
     setVerzonden(true);
+    recordBestelling(gekozen.prijs);
+    void notifyNtfy(
+      "webklaar-mike",
+      `Bestelling: ${gekozen.naam}`,
+      `${bedrijf} · ${naam}\n${tel}\n${gekozen.prijs}`,
+      "urgent"
+    );
     window.open(wa, "_blank", "noopener,noreferrer");
   }
 

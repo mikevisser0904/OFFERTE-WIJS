@@ -16,7 +16,11 @@ Live: https://mikevisser0904.github.io/OFFERTE-WIJS/monitor/
 
 ## Run
 
-Volg `AGENTS.md` sectie "Monitor / geld-dashboard".
+Volg `AGENTS.md` secties "Monitor / geld-dashboard" en **Autopilot**.
+
+Bij ntfy **Goud: agent-wachtrij** → `voer maarten wachtrij uit` in OFFERTE-WIJS.
+
+Dashboard live: `/dashboard/` · status: `/autopilot-status.json`
 
 ## Niet verwarren met
 

@@ -27,7 +27,7 @@ jobs:
       - run: GITHUB_PAGES=true GOOGLE_SITE_VERIFICATION=${{ secrets.GOOGLE_SITE_VERIFICATION }} npm run build
       - run: node scripts/health-check.mjs || true
       - run: node scripts/indexnow-submit.mjs || true
-      - run: cp public/llms.txt out/llms.txt && cp public/og.svg out/og.svg && cp public/health.json out/health.json && cp public/kpi-snapshot.json out/kpi-snapshot.json && cp public/maarten-wachtrij.json out/maarten-wachtrij.json
+      - run: cp public/llms.txt out/llms.txt && cp public/og.svg out/og.svg && cp public/health.json out/health.json && cp public/kpi-snapshot.json out/kpi-snapshot.json && cp public/maarten-wachtrij.json out/maarten-wachtrij.json && cp public/autopilot-status.json out/autopilot-status.json
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
