@@ -104,24 +104,6 @@
       "producent": "klanten-lek-agent"
     },
     {
-      "id": "klanten-gescoord",
-      "naam": "Leads gescoord",
-      "bron": "data/klanten-gescoord.json",
-      "publiek": "public/klanten-gescoord.json",
-      "type": "json",
-      "canoniek": "data",
-      "producent": "lead-hunter / enrich-score"
-    },
-    {
-      "id": "klanten-vandaag",
-      "naam": "Klanten vandaag",
-      "bron": "data/klanten-vandaag.json",
-      "publiek": "public/klanten-vandaag.json",
-      "type": "json",
-      "canoniek": "data",
-      "producent": "enrich-score"
-    },
-    {
       "id": "potentiele-klanten",
       "naam": "Leads OSM",
       "bron": "data/potentiele-klanten.json",
