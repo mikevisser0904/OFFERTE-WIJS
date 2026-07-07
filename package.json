@@ -25,6 +25,7 @@
     "scan:leaks": "node scripts/security-scan/batch.mjs --mode=leaks",
     "demo:pma-proof": "node scripts/security-scan/demo-pma-proof.mjs",
     "scan:risico-passief": "node scripts/security-scan/risico-passief.mjs",
+    "demo:actieve-toegang": "node scripts/security-scan/demo-actieve-toegang.mjs",
     "scan:consent": "node scripts/security-scan/consent-deep-check.mjs",
     "consent:auth-scope": "node scripts/security-scan/consent-add-auth-scope.mjs",
     "scan:verify-pma": "node scripts/security-scan/verify-phpmyadmin.mjs",
