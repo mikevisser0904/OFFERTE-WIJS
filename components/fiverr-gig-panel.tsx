@@ -22,9 +22,12 @@ import {
   fiverrTags,
   fiverrThumbnailBullets,
   fiverrThumbnailHeadline,
+  marktplaatsAdvertentie,
+  marktplaatsTekst,
+  marktplaatsTitel,
 } from "@/data/fiverr-gig";
 
-const tabs = ["Setup", "Packages", "Berichten", "Profiel"] as const;
+const tabs = ["Setup", "Packages", "Berichten", "Profiel", "Marktplaats"] as const;
 type Tab = (typeof tabs)[number];
 
 export function FiverrGigPanel() {
@@ -107,8 +110,24 @@ export function FiverrGigPanel() {
         <>
           <CopyBlock label="Seller bio" tekst={fiverrSellerProfile} />
           <Link href="/marktplaats/" className="text-sm text-emerald-300 hover:underline">
-            Malt / Marktplaats
+            Malt profiel →
           </Link>
+        </>
+      )}
+
+      {tab === "Marktplaats" && (
+        <>
+          <p className="text-sm text-white/55">
+            Marktplaats: categorie <strong className="text-white/75">Diensten en Vakmensen → Websites</strong> (of
+            vergelijkbaar). Plak titel in titelveld, tekst in omschrijving.
+          </p>
+          <CopyBlock label="Titel" tekst={marktplaatsTitel} />
+          <CopyBlock label="Omschrijving" tekst={marktplaatsTekst} />
+          <CopyBlock label="Alles in één (als één veld)" tekst={marktplaatsAdvertentie} />
+          <p className="text-xs text-white/40">
+            Na reactie:{" "}
+            <code className="text-white/55">npm run order:intake -- --bedrijf &quot;…&quot; --kanaal marktplaats --prijs 349</code>
+          </p>
         </>
       )}
     </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
 import { CopyBlock } from "@/components/copy-block";
 import { webklaar } from "@/data/diensten-online";
-import { fiverrGigTitle } from "@/data/fiverr-gig";
+import { fiverrGigTitle, marktplaatsAdvertentie } from "@/data/fiverr-gig";
 
 const maltProfiel = `WebKlaar — Websites voor vakmannen in 3 dagen
 
@@ -37,16 +37,16 @@ export default function MarktplaatsPage() {
         </section>
 
         <section className="rounded-xl border border-violet-400/25 bg-violet-400/5 p-5">
-          <p className="font-bold text-violet-200">Fiverr</p>
+          <p className="font-bold text-violet-200">Fiverr + Marktplaats</p>
           <p className="mt-2 text-sm text-white/60">
-            Volledige gig ($199 / $299 / $449):{" "}
+            Alles op{" "}
             <Link href="/fiverr/" className="font-semibold text-violet-300 hover:underline">
               /fiverr/
             </Link>{" "}
-            — kopieerblokken per veld.
+            (tab Marktplaats). Fiverr: {fiverrGigTitle}
           </p>
-          <p className="mt-1 text-xs text-white/40">Titel: {fiverrGigTitle}</p>
         </section>
+        <CopyBlock label="Marktplaats (zelfde als /fiverr/ tab)" tekst={marktplaatsAdvertentie} />
         <CopyBlock label="Malt profiel (Nederlands)" tekst={maltProfiel} />
 
         <section className="rounded-xl border border-white/8 p-5 text-sm text-white/55">

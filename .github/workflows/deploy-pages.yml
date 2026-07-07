@@ -29,7 +29,7 @@ jobs:
       - run: node scripts/indexnow-submit.mjs || true
       - run: |
           for f in llms.txt og.svg health.json kpi-snapshot.json maarten-wachtrij.json autopilot-status.json \
-            demo-pma-proof.json consent-deep-results.json auto-verify-status.json outreach-vandaag.json echte-klanten.json; do
+            demo-pma-proof.json risico-passief.json consent-deep-results.json auto-verify-status.json outreach-vandaag.json echte-klanten.json; do
             [ -f "public/$f" ] && cp "public/$f" "out/$f" || true
           done
       - uses: actions/upload-pages-artifact@v3

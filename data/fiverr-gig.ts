@@ -202,6 +202,25 @@ Your 3-day clock starts when I have everything.`,
 I'll send preview link + short hosting notes. Use your revision round for tweaks. A 5★ review helps a lot when you're happy — thanks!`,
 } as const;
 
+export const marktplaatsTitel =
+  "Professionele website voor uw bedrijf — 5 pagina's, binnen 3 dagen";
+
+export const marktplaatsTekst = `Website laten maken zonder maanden wachten of duizenden euro's bureau?
+
+WebKlaar bouwt een moderne mobiele website (5 pagina's: home, diensten, over ons, projecten, contact) op basis van een bewezen template.
+
+• Vaste prijs vanaf €349 (eenmalig, geen abonnement verplicht)
+• Live binnen 3 werkdagen na uw teksten/logo
+• WhatsApp-knop + contactformulier
+• Demo: ${fiverrPortfolioUrl}
+
+Stuur een bericht met bedrijfsnaam en branche. Geen verplichtingen.`;
+
+/** Eén blok voor Marktplaats "omschrijving" veld */
+export const marktplaatsAdvertentie = `${marktplaatsTitel}
+
+${marktplaatsTekst}`;
+
 export const fiverrSetupSteps = [
   "Seller profile → paste bio",
   "New gig → category hint",
