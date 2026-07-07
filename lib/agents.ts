@@ -1,10 +1,11 @@
 export type AgentRegistryEntry = {
   id: string;
+  taak?: string;
   naam: string;
   rol: string;
   skill: string;
   script: string;
-  workflow: string;
+  workflow: string | null;
   trigger: string[];
 };
 

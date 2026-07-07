@@ -21,8 +21,9 @@ function runNode(script) {
   return { ok: r.status === 0, out: (r.stdout || "") + (r.stderr || "") };
 }
 
-const health = runNode("scripts/health-check.mjs");
-const sync = runNode("scripts/sync-maarten-wachtrij.mjs");
+const health = runNode("scripts/agents/health-monitor/run.mjs");
+const sync = runNode("scripts/agents/maarten-sync/run.mjs");
+runNode("scripts/agents/maarten-bouw/run.mjs");
 
 let healthJson = { healthy: false };
 try {

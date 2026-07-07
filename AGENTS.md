@@ -149,41 +149,31 @@ Als Mike zegt **"potentiële klanten"**, **"leads"**, **"vul queue"**:
 
 Geen verzonnen bedrijven — alleen OSM + handmatige aanvullingen in `data/klanten-leads-import.txt`.
 
-## Agent-team (Manager + Lead Hunter + Outreach)
+## Agent-team — één taak = één agent
 
-Live hub: **/agents/** · Registry: `data/agents-registry.json`
+Live hub: **/agents/** · Registry (bron): `data/agents-registry.json` (+ skill per agent in `.grok/skills/<id>/`)
 
-| Agent | Doel | Commando | Grok-trigger |
-|-------|------|----------|--------------|
-| **Manager** | Houdt alles in de gaten, één prompt | `npm run agent:manager` | **"manager check"**, "wat moet er nu" |
-| **Lead Hunter** | OSM vakbedrijven → `scan-queue` | `npm run agent:leads` | "agent leads", "potentiële klanten" |
-| **VakScan** | Leak-scan op queue | `npm run scan:leaks` | "vakscan", "database lek" |
-| **Outreach** | Wie Mike vandaag belt/WhatsAppt | `npm run agent:outreach` | "agent outreach", "wie bellen" |
-| **Autopilot** | Health + sync + roept Manager aan | `npm run autopilot` | "monitor check" |
+| Agent | Taak | Commando |
+|-------|------|----------|
+| **Manager** | Orchestratie | `npm run agent:manager` |
+| **Health Monitor** | Site ping | `npm run agent:health` |
+| **Maarten Sync** | ntfy → wachtrij | `npm run agent:maarten-sync` |
+| **Maarten Bouw** | Pending ideeën bouwen | `npm run agent:maarten-bouw` → Grok voert uit |
+| **Lead Hunter** | OSM leads → queue | `npm run agent:leads` |
+| **VakScan Import** | URL-lijst → queue | `npm run agent:vakscan-import` |
+| **VakScan Leaks** | Database-lek scan | `npm run agent:vakscan-leaks` |
+| **VakScan Full** | Volledige scan | `npm run agent:vakscan-full` |
+| **Outreach** | Verkooplijst Mike | `npm run agent:outreach` |
+| **SEO** | Sitemap / IndexNow | `npm run agent:seo` |
+| **KPI** | Snapshot team-KPI | `npm run agent:kpi` |
+| **Deploy Pages** | Push → GitHub Pages | `git push` + workflow deploy |
 
-Skill Manager: `.grok/skills/manager-agent/SKILL.md`
-
-**Volledige funnel (lokaal of op verzoek Mike):**
+**Mike → Grok:** `manager check` (start hier). Status: `data/agents-status.json` per agent-id.
 
 ```bash
-npm run agent:pipeline
+npm run agent:pipeline    # leads → leaks → outreach → manager
+npm run agent:status      # health + sync + bouw-hint + outreach + manager
+npm run autopilot         # health + maarten-sync + bouw-hint + manager + ntfy
 ```
 
-Pipeline eindigt met **Manager** (status + autopilot prompt).
-
-**Als Mike alleen één ding zegt:** `manager check` → lees `data/manager-status.json` en voer `grokPrompt` uit.
-
-Skills: `manager-agent` · `lead-hunter` · `outreach-agent`
-
-### Outreach-agent (tweede agent — sales)
-
-1. Lees `data/outreach-vandaag.json` na `npm run agent:outreach`
-2. Prioriteit: **lek-hits** → hoge VakScan-score → koude leads met demo
-3. Mike gebruikt `/agents/` of `/actie/` — jij pusht geen berichten zonder Mike
-4. GitHub Action: `.github/workflows/outreach-agent.yml` (dagelijks 07:00 UTC)
-
-### Lead Hunter-agent (prospectie)
-
-1. `node scripts/lead-hunter/osm-fetch.mjs` — echte bedrijven met `website` in OSM
-2. `agent-run.mjs` merged automatisch in queue
-3. Action: `.github/workflows/lead-hunter.yml` (maandag 06:00 UTC)
+Legacy: `npm run scan:leaks` = zelfde als `agent:vakscan-leaks`.

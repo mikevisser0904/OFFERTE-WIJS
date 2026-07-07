@@ -20,6 +20,7 @@ type AgentsStatus = {
     {
       lastRun?: string;
       agentPrompt?: string;
+      ok?: boolean;
       leadsTotaal?: number;
       queuePending?: number;
       contactenVandaag?: number;
@@ -121,15 +122,30 @@ export function AgentsPanel() {
         </p>
       </section>
 
-      <div className="grid gap-4 md:grid-cols-2">
-        {registry.map((a) => (
-          <div key={a.id} className="rounded-xl border border-white/10 bg-black/25 p-4">
-            <p className="font-semibold text-white">{a.naam}</p>
-            <p className="mt-1 text-sm text-white/50">{a.rol}</p>
-            <p className="mt-2 font-mono text-xs text-emerald-300/80">{a.script}</p>
-            <p className="mt-2 text-xs text-white/35">Zeg tegen Grok: {a.trigger.slice(0, 3).join(" · ")}</p>
-          </div>
-        ))}
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+        {registry.map((a) => {
+          const st = status?.agents?.[a.id];
+          const ok = st?.ok !== false && st?.ok !== undefined ? st.ok : null;
+          return (
+            <div key={a.id} className="rounded-xl border border-white/10 bg-black/25 p-4">
+              <div className="flex items-center gap-2">
+                <span
+                  className={`h-2 w-2 rounded-full ${
+                    ok === null ? "bg-white/25" : ok ? "bg-emerald-400" : "bg-amber-400"
+                  }`}
+                />
+                <p className="font-semibold text-white">{a.naam}</p>
+                {a.taak && (
+                  <span className="rounded bg-white/5 px-1.5 text-[10px] uppercase text-white/35">{a.taak}</span>
+                )}
+              </div>
+              <p className="mt-1 text-sm text-white/50">{a.rol}</p>
+              <p className="mt-2 font-mono text-xs text-emerald-300/80">{a.script}</p>
+              {st?.agentPrompt && <p className="mt-2 text-xs text-white/40">{st.agentPrompt}</p>}
+              <p className="mt-2 text-xs text-white/35">{a.trigger[0]}</p>
+            </div>
+          );
+        })}
       </div>
 
       <div className="grid gap-4 sm:grid-cols-3">

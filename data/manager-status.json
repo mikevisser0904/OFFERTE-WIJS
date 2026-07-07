@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T07:30:48.870Z",
+  "updatedAt": "2026-07-07T07:31:26.537Z",
   "agent": "manager",
   "fase": "prospectie",
   "faseLabel": "Meer leads nodig",
@@ -15,38 +15,73 @@
   ],
   "cards": [
     {
-      "id": "site",
-      "naam": "Website",
+      "id": "health-monitor",
+      "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK · 175ms",
-      "lastRun": "2026-07-07T07:29:09.334Z"
+      "detail": "OK 251ms",
+      "lastRun": "2026-07-07T07:31:25.463Z"
+    },
+    {
+      "id": "maarten-sync",
+      "naam": "Maarten Sync",
+      "status": "ok",
+      "detail": "maarten-sync OK, geen nieuwe pending",
+      "lastRun": "2026-07-07T07:31:25.997Z"
+    },
+    {
+      "id": "maarten-bouw",
+      "naam": "Maarten Bouw",
+      "status": "ok",
+      "detail": "0 pending",
+      "lastRun": "2026-07-07T07:31:26.031Z"
     },
     {
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "status": "actie",
-      "detail": "0 leads · queue 1 pending",
+      "detail": "0 leads · 1 queue",
       "lastRun": null
     },
     {
-      "id": "vakscan",
-      "naam": "VakScan",
+      "id": "vakscan-import",
+      "naam": "VakScan Import",
       "status": "ok",
-      "detail": "0 lekken · 1 wacht",
+      "detail": "URL-lijst → scan-queue.json",
+      "lastRun": null
+    },
+    {
+      "id": "vakscan-leaks",
+      "naam": "VakScan Leaks",
+      "status": "ok",
+      "detail": "0 lekken · 1 pending",
+      "lastRun": null
+    },
+    {
+      "id": "vakscan-full",
+      "naam": "VakScan Full",
+      "status": "ok",
+      "detail": "Volledige veiligheidscheck (HTTPS, headers, CMS)",
       "lastRun": null
     },
     {
       "id": "outreach",
       "naam": "Outreach",
-      "status": "ok",
-      "detail": "0 contacten vandaag",
-      "lastRun": "2026-07-07T07:30:47.956Z"
+      "status": "actie",
+      "detail": "0 contacten",
+      "lastRun": "2026-07-07T07:31:26.061Z"
     },
     {
-      "id": "maarten",
-      "naam": "Maarten-wachtrij",
+      "id": "seo",
+      "naam": "SEO",
       "status": "ok",
-      "detail": "0 pending bouw",
+      "detail": "Sitemap + IndexNow na wijzigingen",
+      "lastRun": null
+    },
+    {
+      "id": "kpi",
+      "naam": "KPI",
+      "status": "ok",
+      "detail": "Team KPI snapshot naar repo",
       "lastRun": null
     }
   ],

@@ -131,10 +131,10 @@ function decide(s) {
   if (s.queuePending > 15 && s.scanStale > 20) {
     if (fase === "rust" || fase === "verkopen") fase = "scan";
     faseLabel = fase === "scan" ? "VakScan achterstand" : faseLabel;
-    acties.push({ wie: "grok", actie: "Leak-scan queue", script: "npm run scan:leaks" });
+    acties.push({ wie: "grok", actie: "Leak-scan queue", script: "npm run agent:vakscan-leaks" });
     if (prioriteit > 5) {
       prioriteit = 5;
-      grokPrompt = `VakScan: ${s.queuePending} pending in queue — npm run scan:leaks`;
+      grokPrompt = `VakScan Leaks agent: ${s.queuePending} pending — npm run agent:vakscan-leaks`;
     }
   }
 
@@ -197,43 +197,36 @@ async function main() {
   const execute = process.argv.includes("--execute");
   const s = collect();
 
-  const cards = [
-    agentCard(
-      "site",
-      "Website",
-      s.health.healthy,
-      s.health.healthy ? `OK · ${s.health.avgResponseMs ?? "?"}ms` : "Health check failed",
-      s.health.checkedAt
-    ),
-    agentCard(
-      "lead-hunter",
-      "Lead Hunter",
-      s.leadsTotaal >= 20,
-      `${s.leadsTotaal} leads · queue ${s.queuePending} pending`,
-      s.lh?.lastRun
-    ),
-    agentCard(
-      "vakscan",
-      "VakScan",
-      s.queuePending < 50 || s.scanStale < 24,
-      `${s.leakCount} lekken · ${s.queuePending} wacht`,
-      (s.queue?.items || []).map((i) => i.scannedAt).filter(Boolean).sort().reverse()[0]
-    ),
-    agentCard(
-      "outreach",
-      "Outreach",
-      s.outreachCount > 0 || s.leakCount === 0,
-      `${s.outreachCount} contacten vandaag`,
-      s.or?.lastRun
-    ),
-    agentCard(
-      "maarten",
-      "Maarten-wachtrij",
-      s.pendingMaarten === 0,
-      `${s.pendingMaarten} pending bouw`,
-      null
-    ),
-  ];
+  const registry = load(join(ROOT, "data/agents-registry.json"), { agents: [] });
+  const agentState = s.agents.agents || {};
+  const cards = (registry.agents || [])
+    .filter((a) => a.id !== "manager" && a.id !== "deploy-pages")
+    .map((a) => {
+      const st = agentState[a.id] || {};
+      let ok = st.ok !== false;
+      let detail = st.agentPrompt || a.rol.slice(0, 60);
+      if (a.id === "health-monitor") {
+        ok = s.health.healthy;
+        detail = ok ? `OK ${s.health.avgResponseMs}ms` : "site unhealthy";
+      }
+      if (a.id === "lead-hunter") {
+        ok = s.leadsTotaal >= 15;
+        detail = `${s.leadsTotaal} leads · ${s.queuePending} queue`;
+      }
+      if (a.id === "vakscan-leaks") {
+        ok = s.leakCount > 0 || s.queuePending < 30;
+        detail = `${s.leakCount} lekken · ${s.queuePending} pending`;
+      }
+      if (a.id === "outreach") {
+        ok = s.outreachCount > 0;
+        detail = `${s.outreachCount} contacten`;
+      }
+      if (a.id === "maarten-bouw") {
+        ok = s.pendingMaarten === 0;
+        detail = `${s.pendingMaarten} pending`;
+      }
+      return agentCard(a.id, a.naam, ok, detail, st.lastRun);
+    });
 
   const plan = decide(s);
   const executed = [];
@@ -241,12 +234,12 @@ async function main() {
   if (execute) {
     for (const a of plan.acties.filter((x) => x.wie === "grok" && x.script?.startsWith("npm"))) {
       const cmd = a.script.replace("npm run ", "");
-      if (cmd === "scan:leaks" && s.queuePending === 0) continue;
+      if (cmd === "agent:vakscan-leaks" && s.queuePending === 0) continue;
       console.log(`Execute: ${a.script}`);
       const r = runNpm(cmd);
       executed.push({ script: a.script, ok: r.ok });
     }
-    if (executed.some((e) => e.script === "npm run agent:outreach" || e.script === "npm run scan:leaks")) {
+    if (executed.some((e) => e.script === "npm run agent:outreach" || e.script === "npm run agent:vakscan-leaks")) {
       runNpm("agent:outreach");
     }
   }

@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from "fs";
 import { join } from "path";
 import { spawnSync } from "child_process";
+import { patchAgent } from "../agents/patch-status.mjs";
 
 const ROOT = join(import.meta.dirname, "../..");
 const NTFY = process.env.VAKSCAN_NTFY_TOPIC || "webklaar-mike";
@@ -64,28 +65,23 @@ async function notify(title, body) {
   }
 }
 
-import { patchAgent } from "../agents/patch-status.mjs";
-
 async function main() {
   const osm = run("scripts/lead-hunter/osm-fetch.mjs");
   const leadsFile = join(ROOT, "data/potentiele-klanten.json");
   const data = loadJson(leadsFile, { leads: [], totaal: 0 });
   const { added, pending } = mergeQueueFromLeads(data.leads || []);
 
-  const status = {
-    "lead-hunter": {
-      lastRun: new Date().toISOString(),
-      ok: osm.ok,
-      leadsTotaal: data.totaal ?? data.leads?.length ?? 0,
-      queueAdded: added,
-      queuePending: pending,
-      nextStep: pending > 0 ? "npm run scan:leaks" : "osm opnieuw of handmatig urls",
-      agentPrompt: `Lead Hunter klaar: ${data.totaal} leads, ${added} nieuw in queue (${pending} pending). Draai scan:leaks en daarna agent:outreach.`,
-    },
-  };
-  patchAgentsStatus(status);
+  const agentPrompt = `Lead Hunter klaar: ${data.totaal} leads, ${added} nieuw in queue (${pending} pending). Draai agent:vakscan-leaks en agent:outreach.`;
+  patchAgent("lead-hunter", {
+    ok: osm.ok,
+    leadsTotaal: data.totaal ?? data.leads?.length ?? 0,
+    queueAdded: added,
+    queuePending: pending,
+    nextStep: pending > 0 ? "npm run agent:vakscan-leaks" : "osm opnieuw",
+    agentPrompt,
+  });
 
-  const msg = `Leads: ${data.totaal}\nQueue +${added} (pending ${pending})\n${status["lead-hunter"].agentPrompt}`;
+  const msg = `Leads: ${data.totaal}\nQueue +${added} (pending ${pending})\n${agentPrompt}`;
   await notify(`Lead Hunter: +${added} in queue`, msg);
   console.log(msg);
   if (!osm.ok) {
