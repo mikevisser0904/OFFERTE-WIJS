@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T11:03:47.263Z",
+  "updatedAt": "2026-07-07T11:04:58.973Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T11:03:46.627Z",
+      "lastRun": "2026-07-07T11:04:55.993Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -15,7 +15,7 @@
       ]
     },
     "manager": {
-      "lastRun": "2026-07-07T11:03:47.262Z",
+      "lastRun": "2026-07-07T11:04:58.972Z",
       "fase": "verkopen",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
@@ -88,7 +88,7 @@
       "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-07T11:03:42.882Z",
+      "lastRun": "2026-07-07T11:04:52.702Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 16,
@@ -102,7 +102,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T11:03:47.262Z",
+    "updatedAt": "2026-07-07T11:04:58.972Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Verkoop-bewijs klaar",
@@ -199,14 +199,14 @@
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-07T11:03:42.882Z"
+        "lastRun": "2026-07-07T11:04:52.702Z"
       },
       {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-07-07T11:03:46.627Z"
+        "lastRun": "2026-07-07T11:04:55.993Z"
       },
       {
         "id": "seo",
