@@ -1,0 +1,45 @@
+{
+  "at": "2026-07-07T10:43:10.127Z",
+  "disclaimer": "Passieve demo — geen wachtwoord, geen data-export. Inlog: scan-toestemming.local.json + scan:consent.",
+  "runs": [
+    {
+      "bedrijf": "Burggraeve Woonstyling",
+      "loginUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "adminProofOk": true,
+      "databaseEvidence": true,
+      "proofSummary": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+      "httpStatus": 200,
+      "finalUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "title": "phpMyAdmin",
+      "hasPmaUsername": true,
+      "panelKind": "login",
+      "snippet": "<!doctype html> <html lang=\"en\" dir=\"ltr\"> <head> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <meta name=\"referrer\" content=\"same-origin\"> <meta name=\"robots\" content=\"noindex,nofollow,notranslate\"> <meta name=\"google\" content=\"notr"
+    },
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "loginUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "adminProofOk": true,
+      "databaseEvidence": true,
+      "proofSummary": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+      "httpStatus": 200,
+      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "title": "phpMyAdmin",
+      "hasPmaUsername": true,
+      "panelKind": "login",
+      "snippet": "<!doctype html> <html lang=\"en\" dir=\"ltr\"> <head> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <meta name=\"referrer\" content=\"same-origin\"> <meta name=\"robots\" content=\"noindex,nofollow,notranslate\"> <meta name=\"google\" content=\"notr"
+    },
+    {
+      "bedrijf": "Tafelboom",
+      "loginUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "adminProofOk": true,
+      "databaseEvidence": true,
+      "proofSummary": "De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.",
+      "httpStatus": 200,
+      "finalUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "title": "phpMyAdmin",
+      "hasPmaUsername": true,
+      "panelKind": "login",
+      "snippet": "<!doctype html> <html lang=\"en\" dir=\"ltr\"> <head> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <meta name=\"referrer\" content=\"no-referrer\"> <meta name=\"robots\" content=\"noindex,nofollow,notranslate\"> <meta name=\"google\" content=\"notr"
+    }
+  ]
+}
