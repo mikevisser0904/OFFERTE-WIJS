@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T14:36:18.589Z",
+  "updatedAt": "2026-07-07T15:12:22.160Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T14:36:17.943Z",
@@ -15,7 +15,7 @@
       ]
     },
     "manager": {
-      "lastRun": "2026-07-07T11:22:52.539Z",
+      "lastRun": "2026-07-07T15:12:22.160Z",
       "fase": "verkopen",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
@@ -41,11 +41,11 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-07T11:09:16.082Z",
+      "lastRun": "2026-07-07T15:12:21.668Z",
       "applyMode": true,
-      "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
+      "grokPrompt": "optimizer: Gem. 5113ms — images, static chunks, health checks verminderen",
       "safeDone": 3,
-      "wachtrijPending": 1
+      "wachtrijPending": 2
     },
     "data-flow": {
       "lastRun": "2026-07-07T14:23:19.042Z",
@@ -124,7 +124,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T11:22:52.539Z",
+    "updatedAt": "2026-07-07T15:12:22.160Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Verkoop-bewijs klaar",
@@ -143,8 +143,8 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 1 · laatste fixes 3",
-        "lastRun": "2026-07-07T11:09:16.082Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 3",
+        "lastRun": "2026-07-07T15:12:21.668Z"
       },
       {
         "id": "auto-verify",
@@ -157,14 +157,14 @@
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
-        "detail": "24 streams OK · queue 0 pending · 15 lekken",
-        "lastRun": "2026-07-07T11:22:36.012Z"
+        "detail": "25 streams OK · queue 0 pending · 15 lekken",
+        "lastRun": "2026-07-07T14:23:19.042Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 116ms",
+        "detail": "OK 5113ms",
         "lastRun": "2026-07-07T11:09:14.653Z"
       },
       {
@@ -220,29 +220,29 @@
         "id": "verkoop-effectiviteit",
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
-        "detail": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week",
-        "lastRun": "2026-07-07T11:18:50.865Z"
+        "detail": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
+        "lastRun": "2026-07-07T14:36:18.589Z"
       },
       {
         "id": "verkoop-bewijs",
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-07T11:03:42.882Z"
+        "lastRun": "2026-07-07T14:36:17.900Z"
       },
       {
         "id": "outbound-auto",
         "naam": "Outbound auto",
         "status": "ok",
-        "detail": "Volledig geautomatiseerde outbound: e-mail (Resend), webhook",
-        "lastRun": null
+        "detail": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+        "lastRun": "2026-07-07T14:36:18.260Z"
       },
       {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-07-07T11:03:46.627Z"
+        "lastRun": "2026-07-07T14:36:17.943Z"
       },
       {
         "id": "seo",

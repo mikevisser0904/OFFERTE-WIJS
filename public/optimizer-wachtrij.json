@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "id": "perf-pages",
+      "prioriteit": 5,
+      "type": "grok",
+      "titel": "Trage GitHub Pages",
+      "actie": "Gem. 5113ms — images, static chunks, health checks verminderen",
+      "script": null,
+      "status": "pending",
+      "aangemaakt": "2026-07-07T15:12:21.668Z"
+    },
+    {
       "id": "mike-actie",
       "prioriteit": 3,
       "type": "mike",
