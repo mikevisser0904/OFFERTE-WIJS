@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Autopilot: health + dataflow + maarten-sync + (optioneel optimizer apply) + manager + status + ntfy
- * Zware fixes: OPTIMIZER_APPLY=1 of npm run agent:optimizer:apply
+ * Optimizer apply standaard; alleen meten: OPTIMIZER_MEASURE_ONLY=1
  */
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
