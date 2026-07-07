@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T10:34:11.454Z",
+  "updatedAt": "2026-07-07T10:42:18.876Z",
   "uitleg": "individualConsent=true alleen na echte toestemming. auth-verify vereist scan-toestemming.local.json — geen klantdata-export.",
   "entries": [
     {
@@ -34,7 +34,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -72,7 +73,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -98,7 +100,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -124,7 +127,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -138,7 +142,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -176,7 +181,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://chargecars.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -202,7 +208,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -228,7 +235,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -1322,7 +1330,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://tafelboom.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -1336,7 +1345,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://nuoveni.nl/phpmyadmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -1362,7 +1372,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -1376,7 +1387,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -1390,7 +1402,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://www.bwstyling.nl/phpmyadmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
@@ -1442,7 +1455,8 @@
       "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "scope": [
-        "passive-deep"
+        "passive-deep",
+        "auth-verify"
       ],
       "status": "active",
       "individualConsent": true,
