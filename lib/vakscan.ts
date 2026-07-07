@@ -70,6 +70,20 @@ export function scanQueueUrl(): string {
   return publicUrl("/scan-queue.json");
 }
 
+export function leakHitsUrl(): string {
+  return publicUrl("/leak-hits.json");
+}
+
+export type LeakHit = {
+  url: string;
+  bedrijf: string;
+  plaats: string;
+  reportId: string;
+  scannedAt: string;
+  risicoScore: number;
+  titles: string[];
+};
+
 export function nieuwQueueItem(input: {
   bedrijf: string;
   plaats: string;

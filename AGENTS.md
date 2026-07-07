@@ -117,8 +117,13 @@ Live UI: **/scan/** · Rapporten: `public/reports/` · Queue: `data/scan-queue.j
 
 ```bash
 npm run scan -- https://bedrijf.nl --bedrijf "Naam" --plaats Utrecht
-npm run scan:batch   # max 10 pending uit queue
+npm run scan:batch              # volledige check, 10 pending
+npm run scan:import -- data/jouw-urls.txt
+npm run scan:leaks              # alleen database/datalek-paden, 200 pending, parallel 4
+VAKSCAN_LIMIT=2000 VAKSCAN_CONCURRENCY=5 npm run scan:leaks   # grote lijst lokaal
 ```
+
+Bulk leak-scan slaat **geen** rapport op voor schone sites (alleen `data/leak-hits.json` + rapport bij treffer).
 
 ### Agent / Mike workflow
 

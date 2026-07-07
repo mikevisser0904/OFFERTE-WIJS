@@ -1,4 +1,5 @@
 import { fetchSafe, normalizeTargetUrl, originOf, probePath } from "./fetch-util.mjs";
+import { runLeakProbesForOrigin } from "./leak-probes.mjs";
 
 export async function runAllChecks(targetInput, meta = {}) {
   const startUrl = normalizeTargetUrl(targetInput);
@@ -146,28 +147,7 @@ export async function runAllChecks(targetInput, meta = {}) {
     }
   }
 
-  findings.push(...(await probeDataExposure(finalOrigin)));
-
-  const leakPaths = [
-    { path: "/.git/HEAD", id: "git-exposed", title: "Git-repository mogelijk openbaar", severity: "critical", match: (b) => b.startsWith("ref:") },
-    { path: "/.env", id: "env-exposed", title: "Omgevingsbestand (.env) mogelijk downloadbaar", severity: "critical", match: (b) => /DB_|PASSWORD|SECRET/i.test(b) },
-    { path: "/backup.sql", id: "sql-backup", title: "Database-backup mogelijk openbaar", severity: "critical", match: (b) => /CREATE TABLE|INSERT INTO/i.test(b) },
-    { path: "/db.sql", id: "sql-backup-2", title: "SQL-dump mogelijk openbaar", severity: "critical", match: (b) => /CREATE TABLE|INSERT INTO/i.test(b) },
-  ];
-  for (const lp of leakPaths) {
-    const pr = await probePath(finalOrigin, lp.path);
-    if (pr.status === 200 && lp.match(pr.body || "")) {
-      findings.push({
-        id: lp.id,
-        check: "datalek",
-        severity: lp.severity,
-        title: lp.title,
-        klant: "Gevoelige bedrijfs- of klantgegevens kunnen op internet liggen.",
-        intern: "Direct escaleren — Website Veilig + datalek-advies.",
-        evidence: pr.url,
-      });
-    }
-  }
+  findings.push(...(await runLeakProbesForOrigin(finalOrigin)));
 
   const dedup = new Map();
   for (const f of findings) {
@@ -176,61 +156,4 @@ export async function runAllChecks(targetInput, meta = {}) {
   }
 
   return { findings: [...dedup.values()], ctx: { ms, finalUrl: home.url, isHttps }, meta };
-}
-
-async function probeDataExposure(origin) {
-  const out = [];
-  const adminPanels = [
-    { path: "/phpmyadmin/", label: "phpMyAdmin" },
-    { path: "/phpMyAdmin/", label: "phpMyAdmin" },
-    { path: "/pma/", label: "phpMyAdmin" },
-    { path: "/adminer.php", label: "Adminer" },
-    { path: "/adminer/", label: "Adminer" },
-    { path: "/mysql/", label: "MySQL beheer" },
-  ];
-
-  for (const panel of adminPanels) {
-    const pr = await probePath(origin, panel.path);
-    const b = (pr.body || "").toLowerCase();
-    const looksLike =
-      pr.status === 200 &&
-      (b.includes("phpmyadmin") ||
-        b.includes("pma_username") ||
-        b.includes("adminer") ||
-        (b.includes("password") && b.includes("mysql")));
-    if (looksLike) {
-      out.push({
-        id: `db-admin-${panel.path}`,
-        check: "database",
-        severity: "critical",
-        title: `${panel.label} mogelijk open op internet`,
-        klant: "Uw database-beheer is vindbaar — hackers kunnen inloggen proberen of data stelen.",
-        intern: "Kritiek verkoopargument — Website Veilig + hosting review.",
-        evidence: pr.url,
-      });
-    }
-  }
-
-  const apiProbes = [
-    { path: "/_cluster/health", id: "elastic-open", title: "Elasticsearch mogelijk zonder beveiliging", test: (b, status) => status === 200 && b.includes("cluster_name") },
-    { path: "/_cat/indices", id: "elastic-indices", title: "Elasticsearch-indexen mogelijk zichtbaar", test: (b, status) => status === 200 && (b.includes("health") || b.includes("index")) },
-    { path: "/mongo-express/", id: "mongo-express", title: "Mongo Express mogelijk open", test: (b, status) => status === 200 && b.toLowerCase().includes("mongo") },
-  ];
-
-  for (const api of apiProbes) {
-    const pr = await probePath(origin, api.path);
-    if (api.test(pr.body || "", pr.status)) {
-      out.push({
-        id: api.id,
-        check: "database",
-        severity: "critical",
-        title: api.title,
-        klant: "Bedrijfsdata kan via internet benaderbaar zijn zonder goede beveiliging.",
-        intern: "Passieve HTTP-check op bekende paden — geen poortscan.",
-        evidence: pr.url,
-      });
-    }
-  }
-
-  return out;
 }

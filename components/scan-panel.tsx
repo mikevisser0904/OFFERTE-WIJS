@@ -10,8 +10,10 @@ import {
   reportsIndexUrl,
   reportJsonUrl,
   scanQueueUrl,
+  leakHitsUrl,
   type ScanIndexItem,
   type ScanQueue,
+  type LeakHit,
 } from "@/lib/vakscan";
 
 type FullReport = ScanIndexItem & {
@@ -21,6 +23,7 @@ type FullReport = ScanIndexItem & {
 
 export function ScanPanel() {
   const [reports, setReports] = useState<ScanIndexItem[]>([]);
+  const [leakHits, setLeakHits] = useState<LeakHit[]>([]);
   const [queue, setQueue] = useState<ScanQueue | null>(null);
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -34,12 +37,14 @@ export function ScanPanel() {
   const load = useCallback(async () => {
     setLoading(true);
     try {
-      const [ri, q] = await Promise.all([
+      const [ri, q, lh] = await Promise.all([
         fetch(reportsIndexUrl()).then((r) => (r.ok ? r.json() : [])),
         fetch(scanQueueUrl()).then((r) => (r.ok ? r.json() : { items: [] })),
+        fetch(leakHitsUrl()).then((r) => (r.ok ? r.json() : { hits: [] })),
       ]);
       setReports(Array.isArray(ri) ? ri : []);
       setQueue(q);
+      setLeakHits(Array.isArray(lh?.hits) ? lh.hits : []);
     } catch {
       setReports([]);
       setQueue({ updatedAt: "", items: [] });
@@ -135,7 +140,14 @@ export function ScanPanel() {
             </button>
           </div>
           <p className="mt-3 text-xs text-white/35">
-            Lokaal één site: <code className="text-white/50">npm run scan -- https://site.nl --bedrijf Naam</code>
+            Bulk: <code className="text-white/50">npm run scan:import -- data/jouw-urls.txt</code> →{" "}
+            <code className="text-white/50">npm run scan:leaks</code> (200 sites, parallel 4)
+          </p>
+          <p className="mt-1 text-xs text-white/35">
+            Nachtelijk groot:{" "}
+            <code className="text-white/50">
+              VAKSCAN_LIMIT=2000 VAKSCAN_CONCURRENCY=5 npm run scan:leaks
+            </code>
           </p>
         </section>
 
@@ -153,6 +165,27 @@ export function ScanPanel() {
           </ul>
         </section>
       </div>
+
+      {leakHits.length > 0 && (
+        <section className="rounded-2xl border border-rose-400/30 bg-rose-500/10 p-5">
+          <h2 className="text-lg font-semibold text-rose-200">Database-lekken ({leakHits.length})</h2>
+          <p className="mt-1 text-sm text-white/50">Alleen hits uit bulk leak-scan — direct bellen / WhatsApp.</p>
+          <ul className="mt-4 max-h-64 space-y-2 overflow-y-auto text-sm">
+            {leakHits.slice(0, 50).map((h) => (
+              <li key={`${h.reportId}-${h.scannedAt}`} className="rounded-lg border border-rose-400/20 bg-black/20 px-3 py-2">
+                <span className="font-medium text-white">{h.bedrijf || h.url}</span>
+                {h.plaats && <span className="text-white/40"> · {h.plaats}</span>}
+                <span className="ml-2 text-rose-300">score {h.risicoScore}</span>
+                <ul className="mt-1 list-inside list-disc text-xs text-white/55">
+                  {h.titles?.slice(0, 3).map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section>
         <div className="mb-4 flex items-center justify-between">
