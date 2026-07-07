@@ -12,6 +12,16 @@ export default function ActiePage() {
       <div className="mx-auto max-w-3xl">
         <ActiePanel />
 
+        <section className="mt-6 rounded-xl border border-rose-400/20 bg-rose-400/5 p-4">
+          <p className="text-sm font-semibold text-rose-200">Eerst VakScan → dan bericht</p>
+          <p className="mt-1 text-xs text-white/50">
+            Scan de site, kopieer de WhatsApp-tekst uit het rapport, plak hierboven bij contacten.
+          </p>
+          <Link href="/scan/" className="mt-3 inline-block text-sm font-medium text-emerald-400 hover:underline">
+            Open VakScan →
+          </Link>
+        </section>
+
         <section className="mt-10 grid gap-4 sm:grid-cols-3">
           <Link
             href="/demo/"

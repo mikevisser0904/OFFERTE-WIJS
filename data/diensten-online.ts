@@ -52,6 +52,26 @@ export const diensten: OnlineDienst[] = [
     categorie: "website",
   },
   {
+    slug: "website-veilig",
+    naam: "Website Veilig",
+    prijs: "€299",
+    prijsNum: 299,
+    levertijd: "2 werkdagen",
+    korteOms: "HTTPS, headers, login afschermen, database-check fix.",
+    beschrijving:
+      "Na een VakScan-rapport: wij dichten de grootste gaten. SSL/redirect, beveiligings-headers, WordPress-hardening of verwijderen van per ongeluk openstaande beheerpanelen. Geen penetratietest — wel de fixes die 90% van vakman-sites nodig heeft.",
+    bullets: [
+      "HTTPS + http→https redirect",
+      "Security headers (HSTS, clickjack-bescherming)",
+      "WordPress-login afschermen of updates",
+      "Check op open database-beheer (.env, phpMyAdmin-paden)",
+      "Kort rapport na fix",
+    ],
+    voorWie: "Vakman met rode VakScan-score of zichtbare lekken",
+    populair: false,
+    categorie: "website",
+  },
+  {
     slug: "google-start",
     naam: "Google Start Pakket",
     prijs: "€299",

@@ -1,0 +1,90 @@
+{
+  "id": "acae45ea3621",
+  "url": "http://neverssl.com/",
+  "bedrijf": "Demo Installateur",
+  "plaats": "Utrecht",
+  "scannedAt": "2026-07-07T07:01:11.311Z",
+  "risicoScore": 100,
+  "niveau": "kritiek",
+  "niveauLabel": "Kritiek",
+  "klantBullets": [
+    "Browsers tonen 'niet veilig' — klanten vertrouwen dat minder.",
+    "Bezoekers haken af als de site langzaam is — ook op mobiel.",
+    "Extra bescherming tegen verkeerde http-verbindingen ontbreekt.",
+    "Uw site kan makkelijker misbruikt worden in nep-vensters.",
+    "Kleine technische opening voor misbruik."
+  ],
+  "findings": [
+    {
+      "id": "slow",
+      "check": "bereikbaarheid",
+      "severity": "medium",
+      "title": "Website laadt traag",
+      "klant": "Bezoekers haken af als de site langzaam is — ook op mobiel.",
+      "intern": "7216ms eerste reactie — verkoop snellere site/hosting.",
+      "evidence": "7216ms"
+    },
+    {
+      "id": "no-https",
+      "check": "https",
+      "severity": "critical",
+      "title": "Geen beveiligde verbinding (HTTPS)",
+      "klant": "Browsers tonen 'niet veilig' — klanten vertrouwen dat minder.",
+      "intern": "SSL + redirect — Website Veilig of nieuwe hosting.",
+      "evidence": "http://neverssl.com/"
+    },
+    {
+      "id": "hsts",
+      "check": "headers",
+      "severity": "medium",
+      "title": "HSTS ontbreekt",
+      "klant": "Extra bescherming tegen verkeerde http-verbindingen ontbreekt.",
+      "intern": "Header strict-transport-security ontbreekt.",
+      "evidence": "ontbreekt"
+    },
+    {
+      "id": "clickjack",
+      "check": "headers",
+      "severity": "medium",
+      "title": "Bescherming tegen clickjacking ontbreekt",
+      "klant": "Uw site kan makkelijker misbruikt worden in nep-vensters.",
+      "intern": "Header x-frame-options ontbreekt.",
+      "evidence": "ontbreekt"
+    },
+    {
+      "id": "mime",
+      "check": "headers",
+      "severity": "low",
+      "title": "MIME-sniffing niet uitgeschakeld",
+      "klant": "Kleine technische opening voor misbruik.",
+      "intern": "Header x-content-type-options ontbreekt.",
+      "evidence": "ontbreekt"
+    },
+    {
+      "id": "csp",
+      "check": "headers",
+      "severity": "low",
+      "title": "Geen Content-Security-Policy",
+      "klant": "Minder bescherming bij kwaadaardige scripts op de site.",
+      "intern": "Header content-security-policy ontbreekt.",
+      "evidence": "ontbreekt"
+    },
+    {
+      "id": "server-version",
+      "check": "headers",
+      "severity": "low",
+      "title": "Serverversie zichtbaar",
+      "klant": "Hackers zien welke software u draait.",
+      "intern": "Server: Apache/2.4.66 ()",
+      "evidence": "Apache/2.4.66 ()"
+    }
+  ],
+  "verkoop": {
+    "dienst": "Website Veilig",
+    "slug": "website-veilig",
+    "prijs": "€299",
+    "prijsNum": 299,
+    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Demo Installateur gedaan. Belangrijkste punt: Browsers tonen 'niet veilig' — klanten vertrouwen dat minder.. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+  },
+  "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck."
+}

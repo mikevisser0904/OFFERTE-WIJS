@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0f115db062b7",
+    "url": "https://example.com/",
+    "bedrijf": "Voorbeeld Vakman",
+    "plaats": "Amersfoort",
+    "scannedAt": "2026-07-07T07:02:39.514Z",
+    "risicoScore": 71,
+    "niveau": "kritiek",
+    "niveauLabel": "Kritiek"
+  },
+  {
+    "id": "acae45ea3621",
+    "url": "http://neverssl.com/",
+    "bedrijf": "Demo Installateur",
+    "plaats": "Utrecht",
+    "scannedAt": "2026-07-07T07:01:11.311Z",
+    "risicoScore": 100,
+    "niveau": "kritiek",
+    "niveauLabel": "Kritiek"
+  }
+]

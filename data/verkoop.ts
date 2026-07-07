@@ -31,6 +31,22 @@ export const merk = {
 
 export const pakketten: VerkoopPakket[] = [
   {
+    id: "veilig",
+    naam: "Website Veilig",
+    prijs: "€299",
+    prijsNum: 299,
+    levertijd: "2 dagen",
+    voor: "Vakman met VakScan-rood: geen HTTPS, open login of database-beheer",
+    bullets: [
+      "HTTPS + redirect",
+      "Security headers",
+      "WordPress hardening of updates",
+      "Open beheerpanelen dicht",
+      "Kort rapport na fix",
+    ],
+    upsell: "Vakman Site €899 · Onderhoud €49/mnd",
+  },
+  {
     id: "google",
     naam: "Google Start",
     prijs: "€299",
@@ -92,6 +108,19 @@ export const pakketten: VerkoopPakket[] = [
 ];
 
 export const whatsappBerichten: VerkoopBericht[] = [
+  {
+    id: "vakscan",
+    label: "Na VakScan-rapport",
+    kanaal: "whatsapp",
+    wanneer: "Rode/oranje score — database of HTTPS",
+    tekst: `Hoi [NAAM], Mike van WebKlaar.
+
+Ik heb even een gratis veiligheidscheck op jullie website gedaan (met jullie toestemming / als service). Belangrijkste punt: [RODE VLAG — bijv. geen HTTPS of open database-beheer].
+
+Dat kunnen we in 2 dagen oplossen met Website Veilig (€299): beveiligde verbinding, basis-headers, en geen openstaande beheerpanelen meer.
+
+Zin in 10 min bellen? Geen verplichtingen.`,
+  },
   {
     id: "cold-1",
     label: "Eerste contact (koud)",

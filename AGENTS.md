@@ -106,3 +106,25 @@ KPI team-sync: Monitor → Exporteer JSON → `npm run kpi:snapshot -- file.json
 4. Anders: monitor check + 1 verbetering richting verkoop (SEO, actie, verkoopkit)
 
 Geen menselijke stappen voor site-health of wachtrij-sync — alleen **verkopen** (actie) en **goedkeuren** blijft bij Mike.
+
+## VakScan (veiligheid → verkopen Website Veilig)
+
+Live UI: **/scan/** · Rapporten: `public/reports/` · Queue: `data/scan-queue.json`
+
+**Passief:** publieke HTTP(S)-checks + bekende misconfiguratie-paden (phpMyAdmin, Adminer, Elastic/Mongo UI, `.env`, SQL-dumps). **Geen** poortscan, SQL-injectie, inlog of brute force.
+
+### Commando's
+
+```bash
+npm run scan -- https://bedrijf.nl --bedrijf "Naam" --plaats Utrecht
+npm run scan:batch   # max 10 pending uit queue
+```
+
+### Agent / Mike workflow
+
+1. URL + bedrijf in queue (`data/` + `public/scan-queue.json`, status `pending`)
+2. Lokaal `npm run scan` of wacht op **scan-batch** Action (03:00 UTC + handmatig)
+3. Rapport in `data/reports/<id>.json` + `public/reports/` — kopieer WhatsApp uit rapport of `/scan/`
+4. Verkoop via **Website Veilig** (€299) + template `vakscan` in `data/verkoop.ts` → `/actie/`
+
+**Disclaimer** staat in elk rapport en op `/scan/`: alleen met toestemming eigenaar of als aangeboden gratis check.

@@ -3,6 +3,7 @@ import type { DashboardRoute } from "@/components/dashboard-shell";
 export function goudTargetVoorHref(href: DashboardRoute | string): string | undefined {
   const map: Record<string, string> = {
     "/dashboard/": "dashboard",
+    "/scan/": "scan",
     "/monitor/": "monitor",
     "/": "webshop",
     "/actie/": "actie",

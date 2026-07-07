@@ -7,6 +7,7 @@ const checks = [
   { name: "Homepage", path: "/" },
   { name: "Geld Dashboard", path: "/dashboard/" },
   { name: "Monitor", path: "/monitor/" },
+  { name: "VakScan", path: "/scan/" },
   { name: "Bestellen", path: "/bestellen/" },
   { name: "Ideeën", path: "/ideeen/" },
   { name: "Diensten", path: "/diensten/" },

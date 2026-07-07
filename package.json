@@ -11,6 +11,8 @@
     "sync:maarten": "node scripts/sync-maarten-wachtrij.mjs",
     "kpi:snapshot": "node scripts/kpi-snapshot.mjs",
     "autopilot": "node scripts/autopilot-run.mjs",
+    "scan": "node scripts/security-scan/run.mjs",
+    "scan:batch": "node scripts/security-scan/batch.mjs",
     "maarten": "git pull --rebase && npm run sync:maarten",
     "start": "next start",
     "lint": "eslint"

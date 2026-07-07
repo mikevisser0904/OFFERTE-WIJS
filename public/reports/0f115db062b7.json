@@ -1,0 +1,72 @@
+{
+  "id": "0f115db062b7",
+  "url": "https://example.com/",
+  "bedrijf": "Voorbeeld Vakman",
+  "plaats": "Amersfoort",
+  "scannedAt": "2026-07-07T07:02:39.514Z",
+  "risicoScore": 71,
+  "niveau": "kritiek",
+  "niveauLabel": "Kritiek",
+  "klantBullets": [
+    "Bezoekers kunnen per ongeluk op een onveilige verbinding blijven.",
+    "Extra bescherming tegen verkeerde http-verbindingen ontbreekt.",
+    "Uw site kan makkelijker misbruikt worden in nep-vensters.",
+    "Kleine technische opening voor misbruik.",
+    "Minder bescherming bij kwaadaardige scripts op de site."
+  ],
+  "findings": [
+    {
+      "id": "no-http-redirect",
+      "check": "https",
+      "severity": "high",
+      "title": "Geen automatische doorverwijzing naar HTTPS",
+      "klant": "Bezoekers kunnen per ongeluk op een onveilige verbinding blijven.",
+      "intern": "301 redirect http→https — €299 hardening.",
+      "evidence": "http blijft op http://example.com/"
+    },
+    {
+      "id": "hsts",
+      "check": "headers",
+      "severity": "medium",
+      "title": "HSTS ontbreekt",
+      "klant": "Extra bescherming tegen verkeerde http-verbindingen ontbreekt.",
+      "intern": "Header strict-transport-security ontbreekt.",
+      "evidence": "ontbreekt"
+    },
+    {
+      "id": "clickjack",
+      "check": "headers",
+      "severity": "medium",
+      "title": "Bescherming tegen clickjacking ontbreekt",
+      "klant": "Uw site kan makkelijker misbruikt worden in nep-vensters.",
+      "intern": "Header x-frame-options ontbreekt.",
+      "evidence": "ontbreekt"
+    },
+    {
+      "id": "mime",
+      "check": "headers",
+      "severity": "low",
+      "title": "MIME-sniffing niet uitgeschakeld",
+      "klant": "Kleine technische opening voor misbruik.",
+      "intern": "Header x-content-type-options ontbreekt.",
+      "evidence": "ontbreekt"
+    },
+    {
+      "id": "csp",
+      "check": "headers",
+      "severity": "low",
+      "title": "Geen Content-Security-Policy",
+      "klant": "Minder bescherming bij kwaadaardige scripts op de site.",
+      "intern": "Header content-security-policy ontbreekt.",
+      "evidence": "ontbreekt"
+    }
+  ],
+  "verkoop": {
+    "dienst": "Website Veilig",
+    "slug": "website-veilig",
+    "prijs": "€299",
+    "prijsNum": 299,
+    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Voorbeeld Vakman gedaan. Belangrijkste punt: Bezoekers kunnen per ongeluk op een onveilige verbinding blijven.. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+  },
+  "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck."
+}
