@@ -24,7 +24,7 @@ export function BestelForm({ preselect }: { preselect?: string }) {
   }, [preselect]);
 
   function orderTekst() {
-    return `Bestelling WebKlaar
+    return `Bestelling DoekoeWijs
 
 Dienst: ${gekozen.naam} (${gekozen.prijs})
 Bedrijf: ${bedrijf}

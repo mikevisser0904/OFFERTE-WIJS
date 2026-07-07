@@ -3,7 +3,7 @@ import { EchteKlantenPanel } from "@/components/echte-klanten-panel";
 import { LeadsPanel } from "@/components/leads-panel";
 
 export const metadata = {
-  title: "Potentiële klanten — WebKlaar",
+  title: "Potentiële klanten — DoekoeWijs",
   description: "OSM vakman-leads voor VakScan en verkoop.",
 };
 

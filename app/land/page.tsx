@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Websites per regio en vak — overzicht",
   description:
-    "SEO-landingspagina's voor vakmannen per stad en branche. WebKlaar vaste prijs, online bestellen.",
+    "SEO-landingspagina's voor vakmannen per stad en branche. DoekoeWijs vaste prijs, online bestellen.",
   path: "/land",
   keywords: ["website vakman", "website per stad", "webklaar regio"],
 });

@@ -26,10 +26,10 @@ export function pageMetadata({
       title,
       description,
       url,
-      siteName: "WebKlaar",
+      siteName: "DoekoeWijs",
       locale: "nl_NL",
       type: "website" as const,
-      images: [{ url: absoluteUrl("/og.svg"), width: 1200, height: 630, alt: "WebKlaar" }],
+      images: [{ url: absoluteUrl("/og.svg"), width: 1200, height: 630, alt: "DoekoeWijs" }],
     },
     twitter: {
       card: "summary_large_image" as const,

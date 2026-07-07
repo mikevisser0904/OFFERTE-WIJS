@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Diensten & prijzen — websites voor vakmannen",
   description:
-    "Website vakman €899, Google Start €299, digitale opruiming €249, Excel €499, AI €199. Online bestellen bij WebKlaar.",
+    "Website vakman €899, Google Start €299, digitale opruiming €249, Excel €499, AI €199. Online bestellen bij DoekoeWijs.",
   path: "/diensten",
   keywords: ["webklaar diensten", "website vakman prijs", "google start pakket"],
 });

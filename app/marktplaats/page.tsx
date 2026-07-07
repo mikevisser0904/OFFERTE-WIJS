@@ -9,7 +9,7 @@ import {
   marktplaatsTitel,
 } from "@/data/fiverr-gig";
 
-const maltProfiel = `WebKlaar — Websites voor vakmannen in 3 dagen
+const maltProfiel = `DoekoeWijs — Websites voor vakmannen in 3 dagen
 
 Wij bouwen moderne websites voor installateurs, zonwering en zzp'ers. Vaste prijs, geen bureau-tarieven.
 

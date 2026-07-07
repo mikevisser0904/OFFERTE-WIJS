@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { webklaar } from "@/data/diensten-online";
+import { BrandLogo } from "@/components/brand-logo";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -19,9 +20,7 @@ export function StorefrontShell({
     <div className="min-h-screen bg-white text-slate-900">
       <header className="sticky top-0 z-20 border-b border-slate-100 bg-white/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <Link href="/" className="text-xl font-bold tracking-tight">
-            Web<span className="text-emerald-600">Klaar</span>
-          </Link>
+          <BrandLogo href="/" variant="light" size="md" />
           <nav className="hidden items-center gap-6 sm:flex">
             {nav.map((n) => (
               <Link
@@ -113,7 +112,7 @@ export function StorefrontShell({
             </div>
           </div>
           <p className="mt-10 text-center text-xs text-slate-400">
-            © {new Date().getFullYear()} WebKlaar · {webklaar.url}
+            © {new Date().getFullYear()} DoekoeWijs · {webklaar.url}
           </p>
         </div>
       </footer>

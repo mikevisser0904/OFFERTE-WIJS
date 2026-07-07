@@ -2,7 +2,7 @@ import { DashboardShell } from "@/components/dashboard-shell";
 import { AgentsPanel } from "@/components/agents-panel";
 
 export const metadata = {
-  title: "Agents — WebKlaar",
+  title: "Agents — DoekoeWijs",
   description: "Lead Hunter + Outreach + VakScan agent-team voor Mike.",
 };
 

@@ -2,7 +2,7 @@ import { DashboardShell } from "@/components/dashboard-shell";
 import { ScanPanel } from "@/components/scan-panel";
 
 export const metadata = {
-  title: "VakScan — WebKlaar",
+  title: "VakScan — DoekoeWijs",
   description: "Passieve veiligheidscheck voor vakman-websites — rapport en verkooptekst.",
 };
 

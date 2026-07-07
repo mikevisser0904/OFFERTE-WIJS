@@ -8,7 +8,7 @@ import { seoLandingen } from "@/data/seo-landingen";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "WebKlaar — Websites voor vakmannen | Online bestellen",
+  title: "DoekoeWijs — Websites voor vakmannen | Online bestellen",
   description:
     "Website vakman €899, Google Start €299. Live in 3 dagen, vaste prijs. Voor installateurs, zonwering en zzp. Direct online bestellen.",
   path: "/",

@@ -25,7 +25,7 @@ export const fiverrTags = [
 export const fiverrCategoryHint =
   "Programming & Tech → Website Development → Business Website (or WordPress if required)";
 
-export const fiverrDescription = `Hi — I'm Mike from WebKlaar (EU). I build fast, mobile-first business websites for local businesses and trades.
+export const fiverrDescription = `Hi — I'm Mike from DoekoeWijs (EU). I build fast, mobile-first business websites for local businesses and trades.
 
 YOU GET:
 • 5 pages: Home, Services, About, Projects/Gallery, Contact
@@ -184,7 +184,7 @@ To confirm package and timeline:
 
 Demo: ${fiverrPortfolioUrl}
 
-— Mike / WebKlaar`,
+— Mike / DoekoeWijs`,
 
   orderReceived: `Thank you for your order!
 
@@ -207,7 +207,7 @@ export const marktplaatsTitel =
 
 export const marktplaatsTekst = `Website laten maken zonder maanden wachten of duizenden euro's bureau?
 
-WebKlaar bouwt een moderne mobiele website (5 pagina's: home, diensten, over ons, projecten, contact) op basis van een bewezen template.
+DoekoeWijs bouwt een moderne mobiele website (5 pagina's: home, diensten, over ons, projecten, contact) op basis van een bewezen template.
 
 • Vaste prijs vanaf €349 (eenmalig, geen abonnement verplicht)
 • Live binnen 3 werkdagen na uw teksten/logo

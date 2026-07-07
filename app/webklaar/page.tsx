@@ -5,13 +5,13 @@ import { diensten, webklaar } from "@/data/diensten-online";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "WebKlaar — Mike & Maarten",
+  title: "DoekoeWijs — Mike & Maarten",
   description:
-    "WebKlaar bouwt websites en digitaal voor vakmannen. Vaste prijs, GitHub Pages demo, online bestellen.",
+    "DoekoeWijs bouwt websites en digitaal voor vakmannen. Vaste prijs, GitHub Pages demo, online bestellen.",
   path: "/webklaar",
 });
 
-export default function WebKlaarPage() {
+export default function DoekoeWijsPage() {
   return (
     <StorefrontShell>
       <section className="bg-gradient-to-b from-emerald-50 to-white px-6 py-20">

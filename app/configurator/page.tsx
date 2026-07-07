@@ -6,7 +6,7 @@ export default function ConfiguratorPage() {
     <DashboardShell
       active="/configurator/"
       title="Configurator"
-      subtitle="MVP offerte-flow — bouwsteen voor OfferteWijs pilot"
+      subtitle="MVP offerte-flow — bouwsteen voor DoekoeWijs pilot"
     >
       <div className="mx-auto max-w-2xl">
         <div className="rounded-2xl border border-white/8 bg-white/[0.02] p-8 text-center">

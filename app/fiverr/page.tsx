@@ -2,7 +2,7 @@ import { DashboardShell } from "@/components/dashboard-shell";
 import { FiverrGigPanel } from "@/components/fiverr-gig-panel";
 
 export const metadata = {
-  title: "Fiverr gig — WebKlaar",
+  title: "Fiverr gig — DoekoeWijs",
   description: "Copy-paste Fiverr gig setup — $199 starter package.",
 };
 

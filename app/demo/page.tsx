@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Demo website vakman — voorbeeld Zonwering site",
   description:
-    "Bekijk een demo van een professionele vakman-website. Zo ziet uw site eruit. Bestel vanaf €899 bij WebKlaar.",
+    "Bekijk een demo van een professionele vakman-website. Zo ziet uw site eruit. Bestel vanaf €899 bij DoekoeWijs.",
   path: "/demo",
   keywords: ["demo website vakman", "voorbeeld website zonwering"],
 });
@@ -152,7 +152,7 @@ export default function DemoSitePage() {
       </section>
 
       <footer className="border-t border-slate-100 px-6 py-8 text-center text-xs text-slate-400">
-        {demo.bedrijf} · {demo.email} · Demo door WebKlaar
+        {demo.bedrijf} · {demo.email} · Demo door DoekoeWijs
       </footer>
     </div>
   );

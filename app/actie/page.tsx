@@ -32,7 +32,7 @@ export default function ActiePage() {
             href="/webklaar/"
             className="rounded-xl border border-white/8 bg-white/[0.02] p-4 hover:border-emerald-400/30"
           >
-            <p className="font-bold">WebKlaar</p>
+            <p className="font-bold">DoekoeWijs</p>
             <p className="mt-1 text-xs text-white/45">Verkooppagina</p>
           </Link>
           <Link

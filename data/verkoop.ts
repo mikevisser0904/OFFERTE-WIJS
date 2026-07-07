@@ -18,8 +18,8 @@ export type VerkoopBericht = {
 };
 
 export const merk = {
-  naam: "WebKlaar",
-  tagline: "Moderne site voor vakmannen — live in 3 dagen",
+  naam: "DoekoeWijs",
+  tagline: "Meer doekoe — vaste prijs, live in 3 dagen",
   wie: "Mike Visser + Maarten (opdevlugt-tech)",
   contact: "Mike belt/app — Maarten bouwt",
   telefoon: "0627362142",

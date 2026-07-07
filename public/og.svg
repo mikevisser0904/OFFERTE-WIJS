@@ -1,8 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#0f766e"/>
-  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#ffffff"/>
-  <text x="100" y="200" font-family="system-ui,sans-serif" font-size="72" font-weight="700" fill="#0f172a">WebKlaar</text>
-  <text x="100" y="280" font-family="system-ui,sans-serif" font-size="36" fill="#475569">Websites voor vakmannen</text>
-  <text x="100" y="360" font-family="system-ui,sans-serif" font-size="48" font-weight="700" fill="#0d9488">vanaf €299 · live in 3 dagen</text>
-  <text x="100" y="480" font-family="system-ui,sans-serif" font-size="28" fill="#64748b">mikevisser0904.github.io/OFFERTE-WIJS</text>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="#1e293b"/>
+  <rect x="100" y="120" width="72" height="72" rx="16" fill="url(#gold)"/>
+  <text x="136" y="168" text-anchor="middle" font-family="system-ui,sans-serif" font-size="40" font-weight="800" fill="#0f172a">€</text>
+  <text x="200" y="175" font-family="system-ui,sans-serif" font-size="64" font-weight="700" fill="#f8fafc">Doekoe</text>
+  <text x="200" y="240" font-family="system-ui,sans-serif" font-size="64" font-weight="700" fill="#fbbf24">Wijs</text>
+  <text x="100" y="320" font-family="system-ui,sans-serif" font-size="32" fill="#94a3b8">Websites voor vakmannen · vaste prijs</text>
+  <text x="100" y="380" font-family="system-ui,sans-serif" font-size="44" font-weight="700" fill="#fbbf24">vanaf €299 · live in 3 dagen</text>
+  <text x="100" y="480" font-family="system-ui,sans-serif" font-size="26" fill="#64748b">mikevisser0904.github.io/OFFERTE-WIJS</text>
+  <defs>
+    <linearGradient id="gold" x1="100" y1="120" x2="172" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
 </svg>

@@ -40,7 +40,7 @@ export function SeoJsonLd() {
         areaServed: { "@type": "Country", name: "Nederland" },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "WebKlaar diensten",
+          name: "DoekoeWijs diensten",
           itemListElement: diensten.map((d) => ({
             "@type": "Offer",
             url: absoluteUrl(`/diensten/${d.slug}`),

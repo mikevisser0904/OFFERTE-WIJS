@@ -5,6 +5,8 @@ import { Goudzoeker } from "@/components/goudzoeker";
 import { GOUZOEKER_ENABLED } from "@/lib/goudzoeker-config";
 import { goudTargetVoorHref, isGoudNavItem } from "@/lib/goud-nav-target";
 import { navBeheer, navTools, navVerkopen, type NavItem } from "@/data/dashboard-nav";
+import { BrandLogo } from "@/components/brand-logo";
+import { brand } from "@/data/brand";
 
 export type DashboardRoute = NavItem["href"];
 
@@ -60,10 +62,9 @@ export function DashboardShell({
       <div className="relative flex min-h-screen">
         <aside className="hidden w-56 shrink-0 flex-col border-r border-emerald-400/10 bg-[var(--site-surface)]/90 backdrop-blur-xl lg:flex">
           <div className="border-b border-emerald-400/10 px-5 py-6">
-            <p className="text-lg font-bold tracking-tight">
-              Offerte<span className="text-emerald-400">Wijs</span>
-            </p>
-            <p className="mt-1 text-xs text-white/40">Mike + Maarten</p>
+            <BrandLogo href="/dashboard/" size="md" />
+            <p className="mt-2 text-[11px] font-medium text-amber-400/90">{brand.motto}</p>
+            <p className="mt-1 text-xs text-white/40">{brand.team}</p>
           </div>
           <nav className="flex-1 overflow-y-auto p-3">
             <NavGroup label="Verkopen" items={navVerkopen} active={active} />

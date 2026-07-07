@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "WebKlaar — Websites voor vakmannen | Online bestellen",
-    template: "%s | WebKlaar",
+    default: "DoekoeWijs — Websites voor vakmannen | Online bestellen",
+    template: "%s | DoekoeWijs",
   },
   description:
     "Website vakman €899, Google Start €299, digitale opruiming, Excel & AI. Vaste prijs, live in 3 dagen. Online bestellen.",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "WebKlaar — Websites voor vakmannen",
-    description: "Online bestellen. Vaste prijs. Live in 3 dagen.",
+    title: "DoekoeWijs — Websites voor vakmannen",
+    description: "Online bestellen. Vaste prijs. Meer doekoe.",
     url: "/",
-    siteName: "WebKlaar",
+    siteName: "DoekoeWijs",
     locale: "nl_NL",
     type: "website",
-    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "WebKlaar" }],
+    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "DoekoeWijs" }],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

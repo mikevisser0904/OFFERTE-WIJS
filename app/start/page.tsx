@@ -8,7 +8,7 @@ import { vandaagLinks } from "@/data/vandaag-geld";
 export const metadata: Metadata = pageMetadata({
   title: "Google Start €299 — online in 2 dagen",
   description:
-    "Google Business + one-pager + WhatsApp voor vakmannen. Vaste prijs €299. WebKlaar — direct aanvragen.",
+    "Google Business + one-pager + WhatsApp voor vakmannen. Vaste prijs €299. DoekoeWijs — direct aanvragen.",
   path: "/start",
   keywords: ["google business vakman", "website zzp snel", "google start pakket"],
 });

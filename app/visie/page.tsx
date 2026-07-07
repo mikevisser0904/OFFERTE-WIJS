@@ -2,7 +2,7 @@ import { DashboardShell } from "@/components/dashboard-shell";
 import { GrootPlanPanel } from "@/components/groot-plan-panel";
 
 export const metadata = {
-  title: "Groot plan — WebKlaar",
+  title: "Groot plan — DoekoeWijs",
   description: "Visie en fases: VakScan + agent-machine voor heel Nederland.",
 };
 

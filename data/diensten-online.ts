@@ -13,9 +13,9 @@ export type OnlineDienst = {
 };
 
 export const webklaar = {
-  naam: "WebKlaar",
-  tagline: "Websites & digitaal voor vakmannen",
-  sub: "AI + developers. Vaste prijs. Live in dagen, niet maanden.",
+  naam: "DoekoeWijs",
+  tagline: "Websites & digitaal — meer doekoe",
+  sub: "Mike + Maarten. Vaste prijs. Live in dagen. Kanker veel doekoe slaan.",
   url: "https://mikevisser0904.github.io/OFFERTE-WIJS/",
   demo: "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/",
   telefoon: "0627362142",

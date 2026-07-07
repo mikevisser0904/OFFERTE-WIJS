@@ -10,7 +10,7 @@ const faqs = [
     a: "Google Start in 2 werkdagen, volledige website in 3 werkdagen na aanlevering van logo en teksten.",
   },
   {
-    q: "Voor welke bedrijven is WebKlaar bedoeld?",
+    q: "Voor welke bedrijven is DoekoeWijs bedoeld?",
     a: "Installateurs, zonwering, kozijnen, zzp'ers en andere vakbedrijven die online gevonden willen worden.",
   },
   {
