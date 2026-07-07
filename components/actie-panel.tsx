@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { whatsappBerichten } from "@/data/verkoop";
-import { klantIntake } from "@/data/onboarding";
+import { belscriptToestemming, klantIntake } from "@/data/onboarding";
 import { CopyBlock } from "@/components/copy-block";
 import { recordContactVerstuurd } from "@/lib/kpi-autobump";
 import { outreachVandaagUrl, type OutreachVandaag } from "@/lib/agents";
@@ -185,6 +185,18 @@ export function ActiePanel() {
           Vul minstens 1 naam + nummer in om verstuur-knoppen te genereren.
         </p>
       )}
+
+      <section className="rounded-2xl border border-sky-400/25 bg-sky-400/5 p-6">
+        <h2 className="text-lg font-bold text-sky-300">Schriftelijke toestemming → diepere check</h2>
+        <p className="mt-2 text-sm text-white/55">
+          Leg vast in <code className="text-white/60">data/scan-toestemming.json</code>, optioneel inlog in{" "}
+          <code className="text-white/60">scan-toestemming.local.json</code> (niet in git). Daarna lokaal:{" "}
+          <code className="text-white/60">npm run scan:consent</code> en <code className="text-white/60">npm run lead:berichten</code>.
+        </p>
+        <div className="mt-4">
+          <CopyBlock label="Belscript na toestemming" tekst={belscriptToestemming} />
+        </div>
+      </section>
 
       <section>
         <p className="mb-3 text-sm font-bold">Klant zegt ja? → stuur intake naar Grok</p>

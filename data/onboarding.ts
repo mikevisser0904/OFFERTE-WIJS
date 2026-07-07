@@ -24,3 +24,14 @@ Totaal: €[TOTAAL]
 
 Betaling: binnen 14 dagen na oplevering
 IBAN: [INVULLEN]`;
+
+/** Bellen na schriftelijke toestemming voor diepere VakScan */
+export const belscriptToestemming = `BELSCRIPT — klant gaf toestemming (Website Veilig / diepere check)
+
+1. "Dank voor uw toestemming — ik noteer dat u [datum] akkoord gaf voor een veiligheidscheck op [domein]."
+2. "We loggen niet zomaar in op systemen van anderen; bij u mag het omdat u dat expliciet vroeg."
+3. Deel scherm: open de bewijs-URL uit het rapport (phpMyAdmin/Adminer) — laat zien wat íedereen kan zien zonder wachtwoord.
+4. Als u inloggegevens gaf: "Met úw gegevens hebben we alleen gecontroleerd of het paneel echt bereikbaar is — we hebben geen klantdata gedownload."
+5. Afsluiten: "Website Veilig €299 — binnen 2 werkdagen dichten we dit + kort rapport. Zal ik de factuur sturen?"
+
+Vastleggen: vul data/scan-toestemming.json (consentRef = mail/WhatsApp) → npm run scan:consent → npm run lead:berichten`;

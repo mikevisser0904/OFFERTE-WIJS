@@ -136,6 +136,17 @@ Verbeteringen & roadmap: `docs/VAKSCAN.md` · stats: `data/scan-stats.json`
 
 **Disclaimer** staat in elk rapport en op `/scan/`: alleen met toestemming eigenaar of als aangeboden gratis check.
 
+### Schriftelijke toestemming (diepere check)
+
+Als de klant **schriftelijk/mail/WhatsApp** akkoord geeft:
+
+1. Entry in `data/scan-toestemming.json` (`consentRef`, `evidenceUrl`, `scope`: `passive-deep` / `auth-verify`)
+2. Optioneel klant-inlog alleen in `data/scan-toestemming.local.json` (gitignored)
+3. `npm run scan:consent` → `data/consent-deep-results.json`
+4. `npm run lead:berichten` — berichten vermelden *met uw toestemming*
+
+**Nooit:** brute force, massa-inlog zonder register, wachtwoorden in git, claimen “wij zaten in uw admin” zonder geregistreerde toestemming.
+
 ## Lead hunter (potentiële klanten — aparte agent-taak)
 
 Skill: `.grok/skills/lead-hunter/SKILL.md` · UI: **/leads/**

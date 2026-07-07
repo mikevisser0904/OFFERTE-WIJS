@@ -1,0 +1,11 @@
+{
+  "_uitleg": "Kopieer naar scan-toestemming.local.json (staat in .gitignore). Alleen credentials die de klant ZELF aan jullie gaf na toestemming.",
+  "credentials": [
+    {
+      "siteUrl": "https://www.voorbeeld-installateur.nl/",
+      "loginUrl": "https://hosting.example/phpMyAdmin/index.php",
+      "username": "KLANT_GAF_DIT",
+      "password": "NOOIT_COMMITTEN"
+    }
+  ]
+}

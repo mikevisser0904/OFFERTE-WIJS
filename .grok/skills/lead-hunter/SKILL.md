@@ -42,6 +42,15 @@ Utrecht, Amersfoort, Amsterdam, Rotterdam, Den Haag, Haarlem — zie `scripts/le
 - Outreach alleen met **gratis-check-verhaal** of toestemming
 - Geen mass-scan zonder queue — altijd via `scan-queue.json`
 
+## Schriftelijke toestemming
+
+```bash
+# 1. Vul data/scan-toestemming.json (zie scan-toestemming.example.json)
+# 2. Optioneel: data/scan-toestemming.local.json (gitignored)
+npm run scan:consent
+npm run lead:berichten
+```
+
 ## Triggers
 
 **"agent leads"**, **"potentiële klanten"**, **"haal leads op"**

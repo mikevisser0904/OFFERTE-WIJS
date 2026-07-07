@@ -23,6 +23,7 @@
     "scan": "node scripts/security-scan/run.mjs",
     "scan:batch": "node scripts/security-scan/batch.mjs",
     "scan:leaks": "node scripts/security-scan/batch.mjs --mode=leaks",
+    "scan:consent": "node scripts/security-scan/consent-deep-check.mjs",
     "scan:import": "node scripts/security-scan/import-queue.mjs",
     "lead:hunt": "node scripts/lead-hunter/run.mjs",
     "lead:osm": "node scripts/lead-hunter/osm-fetch.mjs",

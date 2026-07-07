@@ -1,0 +1,14 @@
+{
+  "_uitleg": "Kopieer naar scan-toestemming.json en vul per klant in. Bewaar e-mail/WhatsApp/PDF-referentie in consentRef — geen wachtwoorden hier.",
+  "entries": [
+    {
+      "siteUrl": "https://www.voorbeeld-installateur.nl/",
+      "bedrijf": "Voorbeeld Installateur",
+      "consentDatum": "2026-03-07",
+      "consentRef": "WhatsApp: eigenaar gaf mondeling + mail bevestigd",
+      "evidenceUrl": "https://hosting.example/phpMyAdmin/",
+      "scope": ["passive-deep", "auth-verify"],
+      "status": "active"
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, copyFileSync, mkd
 import { join } from "path";
 import { fileURLToPath } from "url";
 import { haalAdminBewijs } from "./admin-proof.mjs";
+import { getActiveConsent, hostKey } from "../security-scan/consent-registry.mjs";
 
 const root = process.cwd();
 const ETHICAL =
@@ -92,16 +93,42 @@ function besteEvidenceUrl(rapport) {
   return db?.evidence || findings.find((f) => f.evidence)?.evidence || null;
 }
 
-function bouwBericht(klant, rapport, proof) {
+function laadConsentDeep(klantUrl) {
+  const path = join(root, "data/consent-deep-results.json");
+  if (!existsSync(path)) return null;
+  try {
+    const store = JSON.parse(readFileSync(path, "utf8"));
+    const h = hostKey(klantUrl);
+    return (store.results || []).find((r) => hostKey(r.siteUrl) === h) || null;
+  } catch {
+    return null;
+  }
+}
+
+function bouwBericht(klant, rapport, proof, consent, consentDeep) {
   const naam = klant.bedrijf || "uw bedrijf";
   const score = rapport?.risicoScore ?? klant.score ?? "?";
   const site = klant.url.replace(/^https?:\/\//, "");
 
   const intro = `Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals ${naam}.`;
 
+  const toestemmingRegel = consent
+    ? `Met uw schriftelijke toestemming (${consent.consentDatum || "geregistreerd"}, ref: ${consent.consentRef || "akkoord eigenaar"}) hebben we extra gecontroleerd.`
+    : null;
+
   let kern;
   if (proof?.ok && proof.url) {
-    kern = `Ik heb NIET ingelogd op uw systemen (dat zou illegaal zijn). Maar uw database-admin staat WEL open op internet — gecontroleerd op ${new Date().toLocaleDateString("nl-NL")}.
+    const extraDash = consentDeep?.passive?.unauthenticatedDashboard?.summary;
+    const extraAuth =
+      consentDeep?.auth?.loginSuccess === true
+        ? "Met door u verstrekte inloggegevens hebben we bevestigd dat het database-beheer echt bereikbaar is (zonder klantdata te exporteren)."
+        : consentDeep?.auth?.loginSuccess === false
+          ? "Ook met de door u verstrekte gegevens was extra verificatie nodig — het paneel blijft een risico."
+          : null;
+
+    kern = `${toestemmingRegel ? `${toestemmingRegel}\n\n` : ""}${consent ? "" : "Ik heb NIET ingelogd op uw systemen zonder uw toestemming. "}Uw database-admin staat WEL open op internet — gecontroleerd op ${new Date().toLocaleDateString("nl-NL")}.
+${extraDash ? `\nExtra bevinding: ${extraDash}` : ""}
+${extraAuth ? `\n${extraAuth}` : ""}
 
 ZELF NAKIJKEN (30 sec) — plak in uw browser:
 ${proof.url}
@@ -159,7 +186,9 @@ async function main() {
       ? [proof.magClaimen, proof.zichtbaar]
       : (rapport?.findings || []).slice(0, 2).map((f) => f.klant || f.title);
 
-    const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof);
+    const consent = getActiveConsent(k.url);
+    const consentDeep = consent ? laadConsentDeep(k.url) : null;
+    const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof, consent, consentDeep);
     const verkoopKort = bouwSmsKort(k, proof);
     const wa = k.telefoonWa || (k.telefoon ? normalizeWa(k.telefoon) : null);
     const whatsappSchrik = wa ? `https://wa.me/${wa}?text=${encodeURIComponent(verkoopKort)}` : null;
@@ -170,6 +199,16 @@ async function main() {
       risicoScore: rapport?.risicoScore ?? k.score,
       schrikRegels,
       adminProof: proof,
+      scanToestemming: consent
+        ? { consentDatum: consent.consentDatum, consentRef: consent.consentRef, scope: consent.scope }
+        : null,
+      consentDeep: consentDeep
+        ? {
+            checkedAt: consentDeep.checkedAt,
+            unauthenticatedDashboard: consentDeep.passive?.unauthenticatedDashboard?.summary || null,
+            authVerified: consentDeep.auth?.loginSuccess ?? null,
+          }
+        : null,
       bewijsUrl: proof?.url || evidenceUrl || null,
       verkoopBericht,
       verkoopKort,
