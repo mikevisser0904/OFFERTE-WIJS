@@ -4,7 +4,7 @@
  * 1) phpMyAdmin open dashboard (geen wachtwoord)
  * 2) phpMyAdmin login met wachtwoord uit publieke .env (alleen bij toestemming)
  * 3) phpMyAdmin login met scan-toestemming.local.json (klant gaf ze)
- * Geen brute force / geen wachtwoordlijsten.
+ * Zie docs/GRENZEN-VAKSCAN.md — geen wachtwoordlijsten.
  */
 import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from "fs";
 import { join } from "path";
@@ -12,9 +12,18 @@ import { fileURLToPath } from "url";
 import { detectPhpMyAdmin } from "./admin-panel-detect.mjs";
 import { hostKey, getActiveConsent, getLocalCredentials, consentIsVerifiable } from "./consent-registry.mjs";
 import { hitIsActionable } from "./leak-actionable.mjs";
-import { ADMIN_PANELS } from "./leak-probes.mjs";
+import { ADMIN_PANELS, FILE_LEAKS } from "./leak-probes.mjs";
 
 const ROOT = process.cwd();
+
+/** Alleen met VAKSCAN_DEFAULT_CREDS=1 + individualConsent — geen externe wordlist. */
+const PMA_DEFAULTS = [
+  { user: "root", pass: "" },
+  { user: "root", pass: "root" },
+  { user: "admin", pass: "" },
+  { user: "admin", pass: "admin" },
+  { user: "pma", pass: "" },
+];
 
 async function discoverPmaOnSite(siteUrl) {
   let origin;
@@ -24,7 +33,7 @@ async function discoverPmaOnSite(siteUrl) {
     return [];
   }
   const found = [];
-  for (const panel of ADMIN_PANELS.slice(0, 6)) {
+  for (const panel of ADMIN_PANELS) {
     const url = `${origin}${panel.path}`;
     try {
       const { body, status } = await fetchHtml(url, 60_000);
@@ -34,6 +43,28 @@ async function discoverPmaOnSite(siteUrl) {
     }
   }
   return found;
+}
+
+async function probeConfigLeaks(siteUrl) {
+  let origin;
+  try {
+    origin = new URL(siteUrl.startsWith("http") ? siteUrl : `https://${siteUrl}`).origin;
+  } catch {
+    return { secrets: null, url: null };
+  }
+  for (const leak of FILE_LEAKS) {
+    if (!leak.path.includes("env") && !leak.path.includes("wp-config")) continue;
+    const url = `${origin}${leak.path}`;
+    try {
+      const { body, status } = await fetchHtml(url, 48_000);
+      if (status !== 200 || !leak.match(body)) continue;
+      const secrets = parseEnvSecrets(body);
+      if (secrets) return { secrets, url };
+    } catch {
+      /* */
+    }
+  }
+  return { secrets: null, url: null };
 }
 
 function parseEnvSecrets(text) {
@@ -178,36 +209,57 @@ async function main() {
       }
     }
 
+    const tryEnvLogin = async (secrets, envLabel) => {
+      if (!secrets) return;
+      row.envGebruikt = true;
+      const tryUrls = pmaUrl ? [pmaUrl] : await discoverPmaOnSite(t.siteUrl);
+      for (const u of tryUrls) {
+        const auth = await tryPmaLogin(u, secrets.user, secrets.pass);
+        if (auth.erin) {
+          row.pmaUrl = u;
+          Object.assign(row, auth);
+          row.methode = "login_via_publieke_config";
+          row.detail = `${auth.detail} (${envLabel})`;
+          return;
+        }
+      }
+      if (!row.erin && !row.methode) {
+        row.methode = "config_gevonden_login_mislukt";
+        row.detail = `DB-gegevens in ${envLabel} maar phpMyAdmin-login geweigerd`;
+      }
+    };
+
     if (!row.erin && consent && t.envUrl) {
       try {
         const { body, status } = await fetchHtml(t.envUrl, 32_000);
-        if (status === 200) {
-          const secrets = parseEnvSecrets(body);
-          if (secrets) {
-            row.envGebruikt = true;
-            const tryUrls = pmaUrl ? [pmaUrl] : await discoverPmaOnSite(t.siteUrl);
-            for (const u of tryUrls) {
-              const auth = await tryPmaLogin(u, secrets.user, secrets.pass);
-              if (auth.erin) {
-                row.pmaUrl = u;
-                Object.assign(row, auth);
-                row.methode = "login_via_publieke_env";
-                row.detail = `${auth.detail} (publieke ${t.envUrl})`;
-                break;
-              }
-            }
-            if (!row.erin && !row.methode && secrets) {
-              row.methode = "env_gevonden_login_mislukt";
-              row.detail = "DB-gegevens in .env maar phpMyAdmin-login geweigerd";
-            }
-          }
-        }
+        if (status === 200) await tryEnvLogin(parseEnvSecrets(body), t.envUrl);
       } catch {
         /* */
       }
     }
 
-    if (!row.erin && !row.methode && t.pmaUrl) {
+    if (!row.erin && consent) {
+      const leaked = await probeConfigLeaks(t.siteUrl);
+      if (leaked.secrets) await tryEnvLogin(leaked.secrets, leaked.url);
+    }
+
+    if (!row.erin && consent && pmaUrl && process.env.VAKSCAN_DEFAULT_CREDS === "1") {
+      try {
+        for (const { user, pass } of PMA_DEFAULTS) {
+          const auth = await tryPmaLogin(pmaUrl, user, pass);
+          if (auth.erin) {
+            Object.assign(row, auth);
+            row.methode = "open_misconfig_default_login";
+            row.detail = `Ingelogd met standaard misconfig (${user}) — geen woordenlijst`;
+            break;
+          }
+        }
+      } catch (e) {
+        row.detail = row.detail || `Default-check: ${String(e).slice(0, 80)}`;
+      }
+    }
+
+    if (!row.erin && !row.methode && pmaUrl) {
       row.methode = "alleen_inlogscherm";
       row.detail = "Deur open — erin alleen met wachtwoord (lokaal.json of .env bij toestemming)";
     }
@@ -220,7 +272,8 @@ async function main() {
   const erin = resultaten.filter((r) => r.erin);
   const out = {
     updatedAt: new Date().toISOString(),
-    focus: "echt_erin_zonder_brute_force",
+    focus: "echt_erin_zie_GRENZEN-VAKSCAN",
+    defaultCredsUsed: process.env.VAKSCAN_DEFAULT_CREDS === "1",
     samenvatting: { sites: resultaten.length, erin: erin.length },
     resultaten: resultaten.sort((a, b) => (b.erin ? 1 : 0) - (a.erin ? 1 : 0)),
   };
