@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T17:49:43.778Z",
+  "updatedAt": "2026-07-07T18:17:53.141Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T14:36:17.943Z",
@@ -15,7 +15,7 @@
       ]
     },
     "manager": {
-      "lastRun": "2026-07-07T17:49:43.136Z",
+      "lastRun": "2026-07-07T18:17:53.140Z",
       "fase": "verkopen",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
@@ -41,7 +41,7 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-07T17:49:42.824Z",
+      "lastRun": "2026-07-07T18:17:52.693Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
@@ -124,7 +124,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T17:49:43.136Z",
+    "updatedAt": "2026-07-07T18:17:53.140Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Verkoop-bewijs klaar",
@@ -144,7 +144,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-07T17:49:42.824Z"
+        "lastRun": "2026-07-07T18:17:52.693Z"
       },
       {
         "id": "auto-verify",
@@ -164,7 +164,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 179ms",
+        "detail": "OK 178ms",
         "lastRun": "2026-07-07T17:49:42.004Z"
       },
       {
@@ -221,7 +221,7 @@
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
         "detail": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
-        "lastRun": "2026-07-07T14:36:18.589Z"
+        "lastRun": "2026-07-07T17:49:43.778Z"
       },
       {
         "id": "verkoop-bewijs",
@@ -235,7 +235,7 @@
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 5 verwerkt",
-        "lastRun": "2026-07-07T14:36:18.260Z"
+        "lastRun": "2026-07-07T17:49:43.447Z"
       },
       {
         "id": "outreach",
