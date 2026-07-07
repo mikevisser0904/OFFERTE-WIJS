@@ -38,10 +38,8 @@ export function AutopilotPanel() {
           <p className="text-xs font-semibold uppercase tracking-widest text-violet-300">
             Autopilot · elke 4 uur
           </p>
-          <h2 className="mt-2 text-xl font-bold">Geld-machine op de achtergrond</h2>
-          <p className="mt-1 text-sm text-white/55">
-            Health check, Maarten-sync, ntfy-push, agent-prompt op GitHub.
-          </p>
+          <h2 className="mt-2 text-lg font-bold">Autopilot</h2>
+          <p className="mt-1 text-sm text-white/55">Health · sync · ntfy (elke 4u)</p>
         </div>
         <span
           className={`rounded-full px-3 py-1 text-xs font-bold ${
