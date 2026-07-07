@@ -3,7 +3,7 @@
  * Optimizer Agent — meet continu, past veilig aan, zet code-taken in wachtrij voor Grok.
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, copyFileSync } from "fs";
-import { join } from "path";
+import { join, dirname } from "path";
 import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 import { patchAgent } from "../agents/patch-status.mjs";
@@ -25,7 +25,7 @@ function load(path, fb) {
 }
 
 function saveJson(path, data) {
-  mkdirSync(join(path, ".."), { recursive: true });
+  mkdirSync(dirname(path), { recursive: true });
   writeFileSync(path, JSON.stringify(data, null, 2));
 }
 
@@ -159,7 +159,7 @@ function plan(a) {
     });
   }
 
-  if ((kpi) => a.kpi && (a.kpi.contactenDezeWeek ?? 0) === 0 && a.outreachCount > 0) {
+  if (a.kpi && (a.kpi.contactenDezeWeek ?? 0) === 0 && a.outreachCount > 0) {
     aanbevelingen.push({
       id: "mike-actie",
       prioriteit: 3,
