@@ -1,4 +1,5 @@
 import { DashboardShell } from "@/components/dashboard-shell";
+import { EchteKlantenPanel } from "@/components/echte-klanten-panel";
 import { LeadsPanel } from "@/components/leads-panel";
 
 export const metadata = {
@@ -13,7 +14,11 @@ export default function LeadsPage() {
       title="Potentiële klanten"
       subtitle="Echte vakbedrijven met website — scan → bel → Website Veilig / Vakman Site"
     >
-      <LeadsPanel />
+      <EchteKlantenPanel />
+      <div className="mt-10">
+        <h2 className="mb-4 text-lg font-semibold text-white/60">Alle URLs (scores)</h2>
+        <LeadsPanel />
+      </div>
     </DashboardShell>
   );
 }

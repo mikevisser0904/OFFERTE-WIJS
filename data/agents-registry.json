@@ -143,6 +143,16 @@
       "trigger": ["kpi snapshot", "team kpi"]
     },
     {
+      "id": "funnel",
+      "taak": "funnel",
+      "naam": "Funnel",
+      "rol": "Eén keten: dataflow → leads → scan → outreach → manager",
+      "skill": ".grok/skills/lead-hunter/SKILL.md",
+      "script": "npm run funnel",
+      "workflow": null,
+      "trigger": ["funnel", "pipeline", "alles draaien"]
+    },
+    {
       "id": "deploy-pages",
       "taak": "deploy",
       "naam": "Deploy Pages",

@@ -281,10 +281,12 @@ async function main() {
   });
 
   const agentsPath = join(ROOT, "data/agents-status.json");
-  const agents = load(agentsPath, { agents: {} });
-  if (agents.manager) {
-    agents.manager.optimizerHint = status.grokPrompt;
-  }
+  const agents = load(agentsPath, { versie: 1, agents: {} });
+  agents.manager = { ...(agents.manager || {}), optimizerHint: status.grokPrompt };
+  agents.agents = {
+    ...(agents.agents || {}),
+    manager: { ...(agents.agents?.manager || {}), optimizerHint: status.grokPrompt },
+  };
   saveJson(agentsPath, agents);
   copyFileSync(agentsPath, join(ROOT, "public/agents-status.json"));
 

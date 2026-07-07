@@ -163,12 +163,12 @@ function decide(s) {
   }
 
   if (s.leadsTotaal < 30 || s.leadsAge > 168) {
-    acties.push({ wie: "grok", actie: "Lead Hunter (OSM)", script: "npm run agent:leads" });
+    acties.push({ wie: "grok", actie: "Funnel (leads+scan+outreach)", script: "npm run funnel:light" });
     if (fase === "rust" && s.leadsTotaal < 30) {
       fase = "prospectie";
       faseLabel = "Meer leads nodig";
       prioriteit = 6;
-      grokPrompt = "agent leads — weinig potentiële klanten in OSM, queue vullen";
+      grokPrompt = "npm run funnel:light — weinig leads, OSM + queue vullen";
     }
   }
 
@@ -288,7 +288,9 @@ async function main() {
       const r = runNpm(cmd);
       executed.push({ script: a.script, ok: r.ok });
     }
-    if (executed.some((e) => e.script === "npm run agent:outreach" || e.script === "npm run agent:vakscan-leaks")) {
+    const ranOutreach = executed.some((e) => e.script === "npm run agent:outreach" && e.ok);
+    const ranLeaks = executed.some((e) => e.script === "npm run agent:vakscan-leaks" && e.ok);
+    if (ranLeaks && !ranOutreach) {
       runNpm("agent:outreach");
     }
   }

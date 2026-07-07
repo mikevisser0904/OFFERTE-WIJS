@@ -210,7 +210,7 @@ function crossChecks(streamResults) {
   const queue = load(join(ROOT, "data/scan-queue.json"), { items: [] });
   const leaks = load(join(ROOT, "data/leak-hits.json"), { hits: [] });
   const pending = (queue.items || []).filter((i) => i.status === "pending").length;
-  const scanned = (queue.items || []).filter((i) => i.status === "scanned").length;
+  const scanned = (queue.items || []).filter((i) => i.status === "scanned" || i.status === "klaar").length;
 
   const leakStream = streamResults.find((s) => s.id === "leak-hits");
   const queueStream = streamResults.find((s) => s.id === "scan-queue");

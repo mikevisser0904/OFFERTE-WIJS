@@ -2,7 +2,7 @@
 
 **URL:** https://www.ambiance-zonwering.nl/van-der-wal-de-bilt  
 **Plaats:** De Bilt  
-**Datum:** 2026-07-07T07:38:06.061Z  
+**Datum:** 2026-07-07T07:44:39.677Z  
 **Risicoscore:** 40/100 — **Hoog**
 
 ## Voor de vakman (max. 5 punten)

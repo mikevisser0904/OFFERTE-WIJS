@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/autopilot-status.json public/autopilot-status.json public/health.json data/maarten-wachtrij.json public/maarten-wachtrij.json 2>/dev/null || true
+          git add data/autopilot-status.json public/autopilot-status.json public/health.json data/maarten-wachtrij.json public/maarten-wachtrij.json data/manager-status.json public/manager-status.json data/agents-status.json public/agents-status.json data/data-flow-status.json public/data-flow-status.json data/optimizer-status.json public/optimizer-status.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "autopilot: status $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase origin main || true
           git push || true

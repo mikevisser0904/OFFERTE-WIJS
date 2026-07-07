@@ -10,8 +10,10 @@ import {
   managerStatusUrl,
   optimizerStatusUrl,
   dataFlowStatusUrl,
+  funnelStatusUrl,
   type AgentRegistryEntry,
   type DataFlowStatus,
+  type FunnelStatus,
   type OptimizerStatus,
   type OutreachVandaag,
   type ManagerStatus,
@@ -44,10 +46,11 @@ export function AgentsPanel() {
   const [manager, setManager] = useState<ManagerStatus | null>(null);
   const [optimizer, setOptimizer] = useState<OptimizerStatus | null>(null);
   const [dataFlow, setDataFlow] = useState<DataFlowStatus | null>(null);
+  const [funnel, setFunnel] = useState<FunnelStatus | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    const [reg, st, out, ld, mgr, opt, df] = await Promise.all([
+    const [reg, st, out, ld, mgr, opt, df, fn] = await Promise.all([
       fetch(agentsRegistryUrl()).then((r) => (r.ok ? r.json() : { agents: [] })),
       fetch(agentsStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(outreachVandaagUrl()).then((r) => (r.ok ? r.json() : null)),
@@ -55,6 +58,7 @@ export function AgentsPanel() {
       fetch(managerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(optimizerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(dataFlowStatusUrl()).then((r) => (r.ok ? r.json() : null)),
+      fetch(funnelStatusUrl()).then((r) => (r.ok ? r.json() : null)),
     ]);
     setRegistry(reg.agents || []);
     setStatus(st);
@@ -63,6 +67,7 @@ export function AgentsPanel() {
     setManager(mgr);
     setOptimizer(opt);
     setDataFlow(df);
+    setFunnel(fn);
   }, []);
 
   useEffect(() => {
@@ -135,9 +140,38 @@ export function AgentsPanel() {
           </div>
         )}
         <pre className="mt-4 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs text-white/50">
-          npm run agent:manager · npm run agent:optimizer:apply · npm run agent:dataflow
+          npm run funnel · npm run agent:manager · npm run agent:dataflow
         </pre>
       </section>
+
+      {funnel && (
+        <section
+          className={`rounded-2xl border p-5 ${
+            funnel.ok ? "border-emerald-400/25 bg-emerald-500/5" : "border-amber-400/30 bg-amber-500/10"
+          }`}
+        >
+          <p className="text-xs font-medium uppercase tracking-wider text-white/45">Funnel · één commando</p>
+          <h2 className="text-lg font-bold text-white">
+            {funnel.ok ? "Laatste run OK" : "Laatste run met waarschuwingen"} · {funnel.mode}
+          </h2>
+          <p className="mt-1 text-xs text-white/50">
+            {funnel.finishedAt ? new Date(funnel.finishedAt).toLocaleString("nl-NL") : "—"}
+          </p>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {(funnel.steps || []).map((s) => (
+              <li
+                key={s.id}
+                className={`rounded-full px-2.5 py-1 text-xs font-medium ${
+                  s.ok ? "bg-emerald-400/15 text-emerald-200" : "bg-amber-400/15 text-amber-200"
+                }`}
+              >
+                {s.id}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 font-mono text-xs text-white/45">{funnel.next}</p>
+        </section>
+      )}
 
       {dataFlow && (
         <section
@@ -176,7 +210,8 @@ export function AgentsPanel() {
       <section className="rounded-2xl border border-white/10 bg-black/20 p-5">
         <h2 className="text-lg font-semibold text-violet-200">Agent-team</h2>
         <p className="mt-1 text-sm text-white/55">
-          Manager stuurt aan → Lead Hunter → VakScan → Outreach. Zeg tegen Grok: <strong>manager check</strong>
+          Eén keten: <strong>npm run funnel</strong> (dataflow → leads → scan → outreach → manager). Zeg:{" "}
+          <strong>manager check</strong>
         </p>
       </section>
 
@@ -219,7 +254,7 @@ export function AgentsPanel() {
         </div>
         <div className="rounded-xl border border-sky-400/20 bg-sky-400/5 p-4">
           <p className="text-xs uppercase text-white/40">Laatste prompt</p>
-          <p className="mt-1 text-sm text-sky-200">{or?.agentPrompt || lh?.agentPrompt || "Draai agent:pipeline"}</p>
+          <p className="mt-1 text-sm text-sky-200">{or?.agentPrompt || lh?.agentPrompt || "Draai npm run funnel"}</p>
         </div>
       </div>
 
@@ -232,7 +267,7 @@ export function AgentsPanel() {
         </div>
         {!outreach?.vandaag?.length && (
           <p className="rounded-xl border border-dashed border-white/15 p-6 text-center text-white/45">
-            Lijst leeg. Lokaal of in CI: <code className="text-white/60">npm run agent:pipeline</code>
+            Lijst leeg. Lokaal of in CI: <code className="text-white/60">npm run funnel</code>
           </p>
         )}
         <ul className="space-y-3">
@@ -246,13 +281,24 @@ export function AgentsPanel() {
               <p className="mt-1 text-sm text-white/55">{c.reden}</p>
               <p className="text-xs text-emerald-300/80">{c.actie}</p>
               <div className="mt-3 flex flex-wrap gap-2">
-                <button
-                  type="button"
-                  onClick={() => copy(c.whatsapp, c.url)}
-                  className="rounded-lg bg-emerald-500/20 px-3 py-1.5 text-sm text-emerald-200"
-                >
-                  {copied === c.url ? "Gekopieerd ✓" : "WhatsApp"}
-                </button>
+                {c.whatsappUrl ? (
+                  <a
+                    href={c.whatsappUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-lg bg-emerald-500/20 px-3 py-1.5 text-sm text-emerald-200"
+                  >
+                    WhatsApp openen →
+                  </a>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => copy(c.whatsapp, c.url)}
+                    className="rounded-lg bg-emerald-500/20 px-3 py-1.5 text-sm text-emerald-200"
+                  >
+                    {copied === c.url ? "Gekopieerd ✓" : "WhatsApp tekst"}
+                  </button>
+                )}
                 <Link href="/actie/" className="rounded-lg border border-white/15 px-3 py-1.5 text-sm text-white/70">
                   /actie/
                 </Link>

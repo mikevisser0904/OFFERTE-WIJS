@@ -7,8 +7,6 @@
 import { spawnSync } from "child_process";
 import { writeFileSync, mkdirSync, copyFileSync } from "fs";
 import { join } from "path";
-import { fileURLToPath } from "url";
-
 const ROOT = join(import.meta.dirname, "..");
 
 function step(label, cmd, args = [], env = {}) {
@@ -65,7 +63,3 @@ copyFileSync(out, join(ROOT, "public/funnel-status.json"));
 
 console.log("\n" + payload.next);
 process.exit(payload.ok ? 0 : 1);
-
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  /* main */
-}

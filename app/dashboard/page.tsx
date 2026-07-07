@@ -2,7 +2,7 @@ import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
 import { AutopilotPanel } from "@/components/autopilot-panel";
 import { DashboardVandaag } from "@/components/dashboard-vandaag";
-import { KlantenVandaagPanel } from "@/components/klanten-vandaag-panel";
+import { EchteKlantenPanel } from "@/components/echte-klanten-panel";
 import { MaartenWachtrijPanel } from "@/components/maarten-wachtrij-panel";
 import { GoalTracker, GoalBreakdown, GoalMilestones } from "@/components/goal-tracker";
 import { doelWekelijks, hoofddoel } from "@/data/doel";
@@ -67,7 +67,7 @@ export default function DashboardPage() {
           </Link>
         </section>
 
-        <KlantenVandaagPanel />
+        <EchteKlantenPanel />
         <AutopilotPanel />
         <DashboardVandaag />
         <MaartenWachtrijPanel />

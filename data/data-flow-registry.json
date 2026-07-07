@@ -104,6 +104,15 @@
       "producent": "klanten-lek-agent"
     },
     {
+      "id": "funnel-status",
+      "naam": "Funnel status",
+      "bron": "data/funnel-status.json",
+      "publiek": "public/funnel-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "funnel.mjs"
+    },
+    {
       "id": "potentiele-klanten",
       "naam": "Leads OSM",
       "bron": "data/potentiele-klanten.json",

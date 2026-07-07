@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { whatsappBerichten } from "@/data/verkoop";
 import { klantIntake } from "@/data/onboarding";
 import { CopyBlock } from "@/components/copy-block";
 import { recordContactVerstuurd } from "@/lib/kpi-autobump";
+import { outreachVandaagUrl, type OutreachVandaag } from "@/lib/agents";
 
 const DEMO_LINK = "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/";
 const coldMsg = whatsappBerichten.find((b) => b.id === "cold-2")!;
@@ -20,6 +22,17 @@ function parseNummers(input: string): string[] {
 export function ActiePanel() {
   const [namen, setNamen] = useState("");
   const [nummers, setNummers] = useState("");
+  const [outreach, setOutreach] = useState<OutreachVandaag | null>(null);
+  const [copied, setCopied] = useState<string | null>(null);
+
+  const loadOutreach = useCallback(async () => {
+    const r = await fetch(outreachVandaagUrl());
+    setOutreach(r.ok ? await r.json() : null);
+  }, []);
+
+  useEffect(() => {
+    void loadOutreach();
+  }, [loadOutreach]);
 
   const contacten = useMemo(() => {
     const naamLijst = namen.split(/[\n,;]+/).map((s) => s.trim()).filter(Boolean);
@@ -48,15 +61,68 @@ export function ActiePanel() {
 
   return (
     <div className="space-y-6">
+      <section className="rounded-2xl border border-emerald-400/25 bg-emerald-400/5 p-6">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg font-bold text-emerald-300">Outreach vandaag (automatisch)</h2>
+          <button type="button" onClick={() => void loadOutreach()} className="text-xs text-emerald-300/80 hover:underline">
+            Vernieuwen
+          </button>
+        </div>
+        <p className="mt-2 text-sm text-white/55">
+          Komt uit <code className="text-white/60">npm run funnel</code> — zelfde lijst als{" "}
+          <Link href="/agents/" className="text-emerald-300 hover:underline">
+            /agents/
+          </Link>
+          . Geen nummers? Kopieer tekst en plak in WhatsApp.
+        </p>
+        {!outreach?.vandaag?.length ? (
+          <p className="mt-4 text-sm text-white/40">Nog leeg — lokaal: npm run funnel</p>
+        ) : (
+          <ul className="mt-4 space-y-2">
+            {outreach.vandaag.slice(0, 8).map((c, i) => (
+              <li key={`${c.url}-${i}`} className="rounded-xl border border-white/8 bg-black/25 px-4 py-3">
+                <p className="font-medium text-white">{c.bedrijf}</p>
+                <p className="text-xs text-white/45">{c.reden}</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {c.whatsappUrl ? (
+                    <a
+                      href={c.whatsappUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={() => recordContactVerstuurd()}
+                      className="rounded-full bg-emerald-400 px-4 py-1.5 text-sm font-bold text-slate-900"
+                    >
+                      Verstuur WhatsApp →
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        void navigator.clipboard.writeText(c.whatsapp);
+                        setCopied(c.url);
+                        setTimeout(() => setCopied(null), 2000);
+                      }}
+                      className="rounded-full bg-emerald-400/20 px-4 py-1.5 text-sm font-medium text-emerald-200"
+                    >
+                      {copied === c.url ? "Tekst gekopieerd ✓" : "Kopieer bericht"}
+                    </button>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
       <section
         className="rounded-2xl border border-amber-400/25 bg-amber-400/5 p-6"
         data-goud-target="actie"
         data-goud-highlight
       >
-        <h2 className="text-lg font-bold text-amber-300">Jullie enige handeling</h2>
+        <h2 className="text-lg font-bold text-amber-300">Handmatig: koude lijst</h2>
         <p className="mt-2 text-sm text-white/55">
           Plak namen + telefoonnummers. Klik per contact op <strong>Verstuur</strong>.
-          Bericht en demo-link zitten er al in. Rest doen wij (Grok + Maarten).
+          Bericht en demo-link zitten er al in.
         </p>
       </section>
 

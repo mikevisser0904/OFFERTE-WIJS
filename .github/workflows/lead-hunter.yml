@@ -23,7 +23,7 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/potentiele-klanten.json public/potentiele-klanten.json data/klanten-leads-import.txt data/scan-queue.json public/scan-queue.json data/agents-status.json public/agents-status.json 2>/dev/null || true
+          git add data/potentiele-klanten.json public/potentiele-klanten.json data/klanten-gescoord.json public/klanten-gescoord.json data/klanten-vandaag.json public/klanten-vandaag.json data/klanten-leads-import.txt data/scan-queue.json public/scan-queue.json data/agents-status.json public/agents-status.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "agent: lead-hunter $(date -u +%Y-%m-%d)"
           git pull --rebase origin main || true
           git push || true

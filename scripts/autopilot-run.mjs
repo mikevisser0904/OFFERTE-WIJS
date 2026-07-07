@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Autopilot: health + maarten-sync + status + ntfy digest (GitHub Actions / lokaal)
+ * Autopilot: health + dataflow + maarten-sync + (optioneel optimizer apply) + manager + status + ntfy
+ * Zware fixes: OPTIMIZER_APPLY=1 of npm run agent:optimizer:apply
  */
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
@@ -11,6 +12,7 @@ const DATA_STATUS = join(ROOT, "data/autopilot-status.json");
 const PUBLIC_STATUS = join(ROOT, "public/autopilot-status.json");
 const WACHTRIJ = join(ROOT, "data/maarten-wachtrij.json");
 const AGENTS_STATUS = join(ROOT, "data/agents-status.json");
+const MANAGER_STATUS = join(ROOT, "data/manager-status.json");
 const NTFY = "https://ntfy.sh/webklaar-mike";
 
 function runNode(script, args = []) {
@@ -23,6 +25,7 @@ function runNode(script, args = []) {
 }
 
 const health = runNode("scripts/agents/health-monitor/run.mjs");
+runNode("scripts/agents/data-flow/run.mjs");
 const sync = runNode("scripts/agents/maarten-sync/run.mjs");
 runNode("scripts/agents/maarten-bouw/run.mjs");
 
@@ -45,13 +48,35 @@ if (existsSync(WACHTRIJ)) {
   }
 }
 
-runNode("scripts/optimizer-agent/run.mjs", ["--apply"]);
+const optimizerApply =
+  process.env.OPTIMIZER_APPLY === "1" || process.argv.includes("--optimizer-apply");
+if (optimizerApply) {
+  runNode("scripts/optimizer-agent/run.mjs", ["--apply"]);
+} else {
+  runNode("scripts/optimizer-agent/run.mjs");
+}
+
 const managerRun = runNode("scripts/manager-agent/run.mjs");
-let agentHint = null;
+
+let managerGrok = null;
+let managerFase = null;
+let managerMike = null;
+if (existsSync(MANAGER_STATUS)) {
+  try {
+    const m = JSON.parse(readFileSync(MANAGER_STATUS, "utf8"));
+    managerGrok = m.grokPrompt || null;
+    managerFase = m.fase || null;
+    managerMike = m.mikeActie || null;
+  } catch {
+    /* ignore */
+  }
+}
+
+let agentHint = managerGrok;
 if (existsSync(AGENTS_STATUS)) {
   try {
     const a = JSON.parse(readFileSync(AGENTS_STATUS, "utf8"));
-    agentHint = a.manager?.grokPrompt || a.agents?.manager?.grokPrompt || null;
+    agentHint = managerGrok || a.manager?.grokPrompt || a.agents?.manager?.grokPrompt || null;
   } catch {
     /* ignore */
   }
@@ -69,11 +94,13 @@ const status = {
   healthOk: health.ok,
   syncOk: sync.ok,
   managerOk: managerRun.ok,
+  managerFase: managerFase || undefined,
   nextAgentPrompt:
     pending.length > 0
       ? `voer maarten wachtrij uit — ${pending.length} pending in OFFERTE-WIJS`
-      : agentHint || "monitor check — of: npm run agent:pipeline voor leads + outreach",
+      : agentHint || "npm run funnel — leads, scan, outreach, manager",
   agentHint,
+  mikeActie: managerMike || (pending.length > 0 ? "Maarten eerst" : "5 WhatsApps via /agents/"),
   eerstePending: pending[0]
     ? { id: pending[0].id, tekst: pending[0].tekst?.slice(0, 120), euro: pending[0].euro }
     : null,

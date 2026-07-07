@@ -60,12 +60,49 @@ async function main() {
   const reports = load(join(ROOT, "public/reports/index.json"), []);
   const queue = load(join(ROOT, "data/scan-queue.json"), { items: [] });
   const leads = load(join(ROOT, "data/potentiele-klanten.json"), { leads: [] });
+  const klantenVandaag = load(join(ROOT, "data/klanten-vandaag.json"), { top: [] });
+  const gescoord = load(join(ROOT, "data/klanten-gescoord.json"), { leads: [] });
+  const klantenLek = load(join(ROOT, "data/klanten-lek-rapport.json"), { klanten: [] });
 
   const candidates = [];
+  const seenUrls = new Set();
+
+  function pushCandidate(c) {
+    const key = c.url?.toLowerCase();
+    if (!key || isDemoOrTestUrl(c.url) || seenUrls.has(key)) return;
+    if (!c.whatsapp && c.whatsappUrl) {
+      try {
+        const u = new URL(c.whatsappUrl);
+        c.whatsapp = decodeURIComponent(u.searchParams.get("text") || "");
+      } catch {
+        c.whatsapp = whatsappKoud(c.bedrijf);
+      }
+    }
+    if (!c.whatsapp) c.whatsapp = whatsappKoud(c.bedrijf);
+    seenUrls.add(key);
+    candidates.push(c);
+  }
+
+  for (const k of klantenLek.klanten || []) {
+    if (!k.heeftLek) continue;
+    const top = k.database?.panels?.[0]?.panel || k.database?.samenvatting?.slice(0, 60) || "database/datalek";
+    pushCandidate({
+      type: "lek",
+      prioriteit: 1,
+      bedrijf: k.bedrijf,
+      plaats: k.plaats,
+      url: k.url,
+      risicoScore: k.risicoScore ?? 100,
+      reden: `Klanten-lek: ${top}`,
+      actie: "Website Veilig €299 — vandaag bellen",
+      whatsapp: whatsappLek(k.bedrijf, top),
+      reportId: k.reportId,
+    });
+  }
 
   for (const h of hits.hits || []) {
     const top = h.titles?.[0] || "mogelijk database- of datalek";
-    candidates.push({
+    pushCandidate({
       type: "lek",
       prioriteit: 1,
       bedrijf: h.bedrijf,
@@ -79,11 +116,51 @@ async function main() {
     });
   }
 
+  for (const t of klantenVandaag.top || []) {
+    if (t.actie !== "bel-nu" && (t.score || 0) < 70) continue;
+    const reden =
+      t.actie === "bel-nu"
+        ? `Top vandaag + lek/score ${t.score}`
+        : `Top vandaag score ${t.score} — ${(t.redenen || [])[0] || "sterke prospect"}`;
+    pushCandidate({
+      type: t.actie === "bel-nu" ? "lek" : "score",
+      prioriteit: t.actie === "bel-nu" ? 1 : 2,
+      bedrijf: t.bedrijf,
+      plaats: t.plaats,
+      url: t.url,
+      risicoScore: t.score,
+      reden,
+      actie: t.aanbod || "Website Veilig €299",
+      whatsapp: t.whatsappUrl
+        ? null
+        : whatsappLek(t.bedrijf, reden),
+      whatsappUrl: t.whatsappUrl || undefined,
+      telefoon: t.telefoon || undefined,
+    });
+  }
+
+  for (const g of (gescoord.leads || []).slice(0, 40)) {
+    if ((g.score || 0) < 75 || g.actie !== "bel-nu") continue;
+    pushCandidate({
+      type: "score",
+      prioriteit: 2,
+      bedrijf: g.bedrijf,
+      plaats: g.plaats,
+      url: g.url,
+      risicoScore: g.score,
+      reden: `Gescoord ${g.score} — ${(g.redenen || [])[0] || "hoge prioriteit"}`,
+      actie: g.aanbod || "Website Veilig €299",
+      whatsapp: g.whatsappUrl ? null : whatsappLek(g.bedrijf, `score ${g.score}`),
+      whatsappUrl: g.whatsappUrl || undefined,
+      telefoon: g.telefoon || undefined,
+    });
+  }
+
   for (const r of reports) {
     if (isDemoOrTestUrl(r.url)) continue;
     if (r.leakHit !== true && (r.risicoScore || 0) < 60) continue;
-    if (candidates.some((c) => c.url === r.url)) continue;
-    candidates.push({
+    if (seenUrls.has(r.url?.toLowerCase())) continue;
+    pushCandidate({
       type: "rapport",
       prioriteit: r.risicoScore >= 60 ? 2 : 3,
       bedrijf: r.bedrijf,
@@ -98,16 +175,15 @@ async function main() {
   }
 
   const inQueue = new Set(queue.items.map((i) => i.url?.toLowerCase()));
-  const already = new Set(candidates.map((c) => c.url?.toLowerCase()));
   for (const l of leads.leads || []) {
     if (candidates.length >= MAX_VANDAAG * 2) break;
     const key = l.url?.toLowerCase();
-    if (!key || already.has(key)) continue;
+    if (!key || seenUrls.has(key)) continue;
     if (!inQueue.has(key)) continue;
     const q = queue.items.find((i) => i.url?.toLowerCase() === key);
     if (q?.status === "pending") continue;
     if (q?.leakHit) continue;
-    candidates.push({
+    pushCandidate({
       type: "lead",
       prioriteit: 4,
       bedrijf: l.bedrijf,
@@ -118,7 +194,6 @@ async function main() {
       actie: "Koud: demo sturen",
       whatsapp: whatsappKoud(l.bedrijf),
     });
-    already.add(key);
   }
 
   candidates.sort((a, b) => scoreItem(b) - scoreItem(a));
@@ -131,13 +206,13 @@ async function main() {
     vandaag,
     samenvatting: {
       lekken: vandaag.filter((v) => v.type === "lek").length,
-      hogeScore: vandaag.filter((v) => v.type === "rapport").length,
+      hogeScore: vandaag.filter((v) => v.type === "rapport" || v.type === "score").length,
       koud: vandaag.filter((v) => v.type === "lead").length,
     },
     agentPrompt:
       vandaag.length > 0
         ? `Outreach: ${vandaag.length} contacten klaar op /agents/ — begin met ${vandaag[0].bedrijf} (${vandaag[0].reden})`
-        : "Outreach: geen hits — draai agent:leads en scan:leaks eerst",
+        : "Outreach: geen hits — draai npm run funnel (of funnel:light)",
   };
 
   const out = join(ROOT, "data/outreach-vandaag.json");

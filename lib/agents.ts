@@ -19,7 +19,20 @@ export type OutreachContact = {
   reden: string;
   actie: string;
   whatsapp: string;
+  whatsappUrl?: string;
+  telefoon?: string;
   reportId?: string;
+};
+
+export type FunnelStep = { id: string; ok: boolean };
+
+export type FunnelStatus = {
+  startedAt: string;
+  finishedAt: string;
+  mode: string;
+  steps: FunnelStep[];
+  ok: boolean;
+  next: string;
 };
 
 export type OutreachVandaag = {
@@ -68,6 +81,10 @@ export function optimizerStatusUrl() {
 
 export function dataFlowStatusUrl() {
   return publicUrl("/data-flow-status.json");
+}
+
+export function funnelStatusUrl() {
+  return publicUrl("/funnel-status.json");
 }
 
 export type DataFlowStream = {
