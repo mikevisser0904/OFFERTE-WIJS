@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-07-07T10:53:28.715Z",
+  "updatedAt": "2026-07-07T11:09:14.747Z",
   "agent": "data-flow",
-  "healthy": true,
+  "healthy": false,
   "fixApplied": true,
   "summary": {
     "streams": 23,
     "ok": 23,
-    "drift": 0,
-    "synced": 0,
+    "drift": 1,
+    "synced": 1,
     "missing": 0,
     "warnings": 0
   },
@@ -193,10 +193,10 @@
       "id": "optimizer-wachtrij",
       "naam": "Optimizer wachtrij",
       "status": "ok",
-      "drift": false,
-      "synced": false,
+      "drift": true,
+      "synced": true,
       "issues": [],
-      "detail": "in sync"
+      "detail": "gesynchroniseerd data → public"
     },
     {
       "id": "reports",
@@ -226,6 +226,6 @@
       "detail": "public-only OK"
     }
   ],
-  "grokPrompt": "data-flow OK — alle streams gesynchroniseerd",
-  "agentPrompt": "23 streams OK · queue 0 pending · 15 lekken"
+  "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced",
+  "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow"
 }

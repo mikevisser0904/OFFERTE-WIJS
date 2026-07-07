@@ -37,12 +37,23 @@ export default function StoreHomePage() {
             <span className="text-emerald-600">voor vakmannen.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-slate-600">{webklaar.sub}</p>
+          <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm text-amber-950 sm:flex sm:items-center sm:justify-between sm:gap-4">
+            <p>
+              <strong>Google Start €299</strong> — profiel + one-pager in 2 werkdagen. Kleinste stap naar online zichtbaarheid.
+            </p>
+            <Link
+              href="/bestellen/?dienst=google-start"
+              className="mt-3 inline-flex shrink-0 rounded-full bg-amber-600 px-5 py-2 font-bold text-white hover:bg-amber-500 sm:mt-0"
+            >
+              Start hier →
+            </Link>
+          </div>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/bestellen/"
+              href="/bestellen/?dienst=google-start"
               className="rounded-full bg-emerald-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-emerald-600/20 hover:bg-emerald-500"
             >
-              Bestel direct →
+              Bestel Google Start →
             </Link>
             <Link
               href="/demo/"
@@ -51,7 +62,9 @@ export default function StoreHomePage() {
               Bekijk demo-site
             </Link>
             <a
-              href={`https://wa.me/${webklaar.whatsapp}?text=${encodeURIComponent("Hoi Mike, ik wil graag meer weten over WebKlaar.")}`}
+              href={`https://wa.me/${webklaar.whatsapp}?text=${encodeURIComponent(
+                `Hoi Mike, ik wil het Google Start pakket (€299) of een website bespreken. Demo bekeken: ${webklaar.demo}`
+              )}`}
               className="rounded-full border border-emerald-200 px-8 py-4 text-base font-semibold text-emerald-700 hover:bg-emerald-50"
             >
               WhatsApp Mike

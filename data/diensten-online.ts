@@ -87,6 +87,7 @@ export const diensten: OnlineDienst[] = [
       "Handleiding zelf bijhouden",
     ],
     voorWie: "ZZP'er of winkel zonder goed Google-profiel",
+    populair: true,
     categorie: "website",
   },
   {

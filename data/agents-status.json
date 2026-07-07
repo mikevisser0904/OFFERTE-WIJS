@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T11:03:47.263Z",
+  "updatedAt": "2026-07-07T11:09:16.559Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T11:03:46.627Z",
@@ -15,47 +15,47 @@
       ]
     },
     "manager": {
-      "lastRun": "2026-07-07T11:03:47.262Z",
+      "lastRun": "2026-07-07T11:09:16.558Z",
       "fase": "verkopen",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
     },
     "health-monitor": {
-      "lastRun": "2026-07-07T10:53:28.556Z",
+      "lastRun": "2026-07-07T11:09:14.653Z",
       "ok": true,
       "healthy": true,
-      "avgResponseMs": 372,
+      "avgResponseMs": 258,
       "agentPrompt": "health OK"
     },
     "maarten-sync": {
-      "lastRun": "2026-07-07T10:53:29.444Z",
+      "lastRun": "2026-07-07T11:09:15.700Z",
       "ok": true,
       "pending": 0,
       "agentPrompt": "maarten-sync OK, geen nieuwe pending"
     },
     "maarten-bouw": {
-      "lastRun": "2026-07-07T10:53:29.483Z",
+      "lastRun": "2026-07-07T11:09:15.728Z",
       "ok": true,
       "pending": 0,
       "eerstePending": null,
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-07T10:53:29.793Z",
+      "lastRun": "2026-07-07T11:09:16.082Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 1
     },
     "data-flow": {
-      "lastRun": "2026-07-07T10:53:28.717Z",
-      "ok": true,
-      "healthy": true,
+      "lastRun": "2026-07-07T11:09:14.749Z",
+      "ok": false,
+      "healthy": false,
       "streams": 23,
-      "drift": 0,
-      "synced": 0,
-      "agentPrompt": "23 streams OK · queue 0 pending · 15 lekken",
-      "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
+      "drift": 1,
+      "synced": 1,
+      "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+      "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
     },
     "klanten-lek": {
       "lastRun": "2026-07-07T08:07:04.958Z",
@@ -99,17 +99,29 @@
         "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
         "Reinaerde Remake Meubel · https://s246.webhostingserver.nl/phpMyAdmin/"
       ]
+    },
+    "seo": {
+      "lastRun": "2026-07-07T11:09:07.273Z",
+      "ok": true,
+      "sitemapOk": true,
+      "indexnowOk": true,
+      "agentPrompt": "SEO sitemap bijgewerkt"
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T11:03:47.262Z",
+    "updatedAt": "2026-07-07T11:09:16.558Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Verkoop-bewijs klaar",
-    "prioriteit": 1,
+    "prioriteit": 3,
     "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
     "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen",
     "acties": [
+      {
+        "wie": "grok",
+        "actie": "Data-flow sync",
+        "script": "npm run agent:dataflow"
+      },
       {
         "wie": "mike",
         "actie": "5 contacten met bewijs",
@@ -122,7 +134,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 1 · laatste fixes 3",
-        "lastRun": "2026-07-07T10:53:29.793Z"
+        "lastRun": "2026-07-07T11:09:16.082Z"
       },
       {
         "id": "auto-verify",
@@ -134,30 +146,30 @@
       {
         "id": "data-flow",
         "naam": "Data-flow",
-        "status": "ok",
-        "detail": "23 streams OK · queue 0 pending · 15 lekken",
-        "lastRun": "2026-07-07T10:53:28.717Z"
+        "status": "actie",
+        "detail": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+        "lastRun": "2026-07-07T11:09:14.749Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 84ms",
-        "lastRun": "2026-07-07T10:53:28.556Z"
+        "detail": "OK 258ms",
+        "lastRun": "2026-07-07T11:09:14.653Z"
       },
       {
         "id": "maarten-sync",
         "naam": "Maarten Sync",
         "status": "ok",
         "detail": "maarten-sync OK, geen nieuwe pending",
-        "lastRun": "2026-07-07T10:53:29.444Z"
+        "lastRun": "2026-07-07T11:09:15.700Z"
       },
       {
         "id": "maarten-bouw",
         "naam": "Maarten Bouw",
         "status": "ok",
         "detail": "0 pending",
-        "lastRun": "2026-07-07T10:53:29.483Z"
+        "lastRun": "2026-07-07T11:09:15.728Z"
       },
       {
         "id": "lead-hunter",
@@ -212,8 +224,8 @@
         "id": "seo",
         "naam": "SEO",
         "status": "ok",
-        "detail": "Sitemap + IndexNow na wijzigingen",
-        "lastRun": null
+        "detail": "SEO sitemap bijgewerkt",
+        "lastRun": "2026-07-07T11:09:07.273Z"
       },
       {
         "id": "kpi",

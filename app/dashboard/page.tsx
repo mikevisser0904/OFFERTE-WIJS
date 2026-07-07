@@ -55,17 +55,19 @@ export default function DashboardPage() {
       subtitle={`Eerste doel: ${hoofddoel.label} in ${hoofddoel.deadline}`}
     >
       <div className="mx-auto max-w-6xl space-y-8">
-        <section className="rounded-2xl border border-violet-400/40 bg-gradient-to-r from-violet-500/15 to-emerald-500/10 p-6 sm:flex sm:items-center sm:justify-between">
+        <DashboardVandaag />
+
+        <section className="rounded-2xl border border-amber-400/40 bg-gradient-to-r from-amber-500/20 to-emerald-500/10 p-6 sm:flex sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-300">Groots bouwen</p>
-            <h2 className="mt-2 text-xl font-bold">Agent-machine + VakScan = schaal</h2>
-            <p className="mt-1 text-sm text-white/55">Fase 1 nu: leads, scan, outreach. Roadmap tot platform.</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-amber-300">Vandaag</p>
+            <h2 className="mt-2 text-xl font-bold">5 WhatsApps = enige handmatige stap</h2>
+            <p className="mt-1 text-sm text-white/55">Warm netwerk · Google Start €299 · teller op /actie/</p>
           </div>
           <Link
-            href="/visie/"
-            className="mt-4 inline-flex shrink-0 rounded-full bg-violet-500 px-8 py-3 font-bold text-white hover:bg-violet-400 sm:mt-0"
+            href="/actie/"
+            className="mt-4 inline-flex shrink-0 rounded-full bg-amber-400 px-8 py-3 font-bold text-slate-900 hover:bg-amber-300 sm:mt-0"
           >
-            Groot plan →
+            Open actie →
           </Link>
         </section>
 
@@ -73,7 +75,6 @@ export default function DashboardPage() {
         <ToegangScanPanel />
         <RisicoPassiefPanel />
         <AutopilotPanel />
-        <DashboardVandaag />
         <MaartenWachtrijPanel />
 
         <section className="rounded-2xl border border-violet-400/30 bg-violet-400/[0.07] p-6 sm:flex sm:items-center sm:justify-between">

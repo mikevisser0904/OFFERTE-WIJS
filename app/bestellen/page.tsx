@@ -18,7 +18,7 @@ export default function BestellenPage() {
       <div className="mx-auto max-w-lg px-6 py-16 pb-28">
         <h1 className="text-3xl font-bold">Bestellen</h1>
         <p className="mt-3 text-slate-600">
-          Vul in → WhatsApp en e-mail openen automatisch. Wij reageren binnen 24 uur.
+          Vul in → WhatsApp en e-mail openen automatisch. Werkdagen: reactie dezelfde dag waar mogelijk.
         </p>
         <div className="mt-10">
           <Suspense fallback={<div className="h-96 animate-pulse rounded-xl bg-slate-100" />}>
