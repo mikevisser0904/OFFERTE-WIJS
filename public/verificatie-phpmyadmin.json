@@ -1,22 +1,11 @@
 {
-  "verifiedAt": "2026-07-07T07:45:42.385Z",
-  "totaal": 24,
-  "bevestigd": 9,
-  "hosting_redirect": 6,
-  "false_positive": 3,
-  "overig": 6,
+  "verifiedAt": "2026-07-07T08:11:19.209Z",
+  "totaal": 14,
+  "bevestigd": 5,
+  "hosting_redirect": 7,
+  "false_positive": 0,
+  "overig": 2,
   "results": [
-    {
-      "bedrijf": "Reinaerde Remake Meubel",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s246.webhostingserver.nl — vaak hosting-default, niet uniek jullie DB",
-      "http": 200,
-      "finalUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "verkoop": "voorzichtig"
-    },
     {
       "bedrijf": "Klomp Elektrotechniek",
       "klantUrl": "https://klompelektrotechniek.nl/",
@@ -29,15 +18,81 @@
       "verkoop": "voorzichtig"
     },
     {
-      "bedrijf": "Finish Profiles",
-      "klantUrl": "https://www.finish-profiles.nl/",
-      "evidence": "https://finish-profiles.nl/phpmyadmin/",
+      "bedrijf": "Tafelboom",
+      "klantUrl": "https://www.tafelboom.nl/",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "verdict": "redirect_anders",
-      "reden": "Redirect naar finish-profiles.nl",
+      "reden": "Redirect naar tafelboom.nl",
       "http": 200,
-      "finalUrl": "https://finish-profiles.nl/phpmyadmin/",
+      "finalUrl": "https://tafelboom.nl/phpMyAdmin/",
       "looksLikePma": true,
       "verkoop": "niet bellen"
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "klantUrl": "https://vogelaarschilder.nl/",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "verdict": "redirect_anders",
+      "reden": "Redirect naar hosting102.resellerdns.nl",
+      "http": 200,
+      "finalUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "verkoop": "niet bellen"
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "klantUrl": "https://chargecars.nl/",
+      "evidence": "https://chargecars.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
+      "http": 200,
+      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "verkoop": "sterk"
+    },
+    {
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host s250.webhostingserver.nl — vaak hosting-default, niet uniek jullie DB",
+      "http": 200,
+      "finalUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "verkoop": "voorzichtig"
+    },
+    {
+      "bedrijf": "Nuoveni",
+      "klantUrl": "https://nuoveni.nl/",
+      "evidence": "https://nuoveni.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (nuoveni.nl)",
+      "http": 200,
+      "finalUrl": "https://nuoveni.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "verkoop": "sterk"
+    },
+    {
+      "bedrijf": "Reinaerde Remake Meubel",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host s246.webhostingserver.nl — vaak hosting-default, niet uniek jullie DB",
+      "http": 200,
+      "finalUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "verkoop": "voorzichtig"
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "klantUrl": "https://www.ejvandermeer.nl/",
+      "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.ejvandermeer.nl)",
+      "http": 200,
+      "finalUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Firma Fred van Rijn",
@@ -49,6 +104,17 @@
       "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "looksLikePma": true,
       "verkoop": "voorzichtig"
+    },
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Burggraeve Woonstyling",
@@ -73,58 +139,6 @@
       "verkoop": "voorzichtig"
     },
     {
-      "bedrijf": "ChargeCars",
-      "klantUrl": "https://chargecars.nl/",
-      "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
-      "http": 200,
-      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
-      "bedrijf": "Ambiance zonwering",
-      "klantUrl": "https://www.ambiance-zonwering.nl/van-der-wal-de-bilt",
-      "evidence": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.ambiance-zonwering.nl)",
-      "http": 200,
-      "finalUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
-      "bedrijf": "Amer Houttechniek",
-      "klantUrl": "https://www.amer-hout.nl/",
-      "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s205.webhostingserver.nl — vaak hosting-default, niet uniek jullie DB",
-      "http": 200,
-      "finalUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "verkoop": "voorzichtig"
-    },
-    {
-      "bedrijf": "Schreuder Glas- en Schilderwerken",
-      "klantUrl": "https://www.schreuderschilderwerken.nl/",
-      "evidence": "https://www.schreuderschilderwerken.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "TypeError: fetch failed",
-      "verkoop": "niet bellen"
-    },
-    {
-      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
-      "klantUrl": "https://www.jwfborn.nl/",
-      "evidence": "https://www.jwfborn.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.jwfborn.nl)",
-      "http": 200,
-      "finalUrl": "https://www.jwfborn.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
       "bedrijf": "Het Interieur",
       "klantUrl": "https://hetinterieur.nl/",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
@@ -136,127 +150,15 @@
       "verkoop": "voorzichtig"
     },
     {
-      "bedrijf": "Verzijl De Woonprofessionals",
-      "klantUrl": "https://verzijlbv.nl/",
-      "evidence": "https://verzijlbv.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (verzijlbv.nl)",
+      "bedrijf": "Amer Houttechniek",
+      "klantUrl": "https://www.amer-hout.nl/",
+      "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host s205.webhostingserver.nl — vaak hosting-default, niet uniek jullie DB",
       "http": 200,
-      "finalUrl": "https://verzijlbv.nl/phpmyadmin/",
+      "finalUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
       "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
-      "bedrijf": "Ambiance Heko-Becewe",
-      "klantUrl": "https://www.ambiance-zonwering.nl/heko-becewe",
-      "evidence": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.ambiance-zonwering.nl)",
-      "http": 200,
-      "finalUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
-      "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
-      "bedrijf": "van der Meer Elektrotechniek BV",
-      "klantUrl": "https://www.ejvandermeer.nl/",
-      "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.ejvandermeer.nl)",
-      "http": 200,
-      "finalUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
-      "bedrijf": "Bos Elektrotechniek",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
-      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
-      "http": 200,
-      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "verkoop": "sterk"
-    },
-    {
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "klantUrl": "https://vogelaarschilder.nl/",
-      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "verdict": "redirect_anders",
-      "reden": "Redirect naar hosting102.resellerdns.nl",
-      "http": 200,
-      "finalUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "verkoop": "niet bellen"
-    },
-    {
-      "bedrijf": "Decor Gordijn",
-      "klantUrl": "https://www.decorgordijn.nl/",
-      "evidence": "https://www.decorgordijn.nl/phpmyadmin/",
-      "verdict": "false_positive",
-      "reden": "HTTP 415, geen phpMyAdmin HTML",
-      "http": 415,
-      "finalUrl": "https://www.decorgordijn.nl/phpmyadmin/",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
-    },
-    {
-      "bedrijf": "Blygold",
-      "klantUrl": "https://www.blygold.nl/",
-      "evidence": "https://www.blygold.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "TypeError: fetch failed",
-      "verkoop": "niet bellen"
-    },
-    {
-      "bedrijf": "Installatiebedrijf Keyzer",
-      "klantUrl": "https://www.keyzerbv.nl/",
-      "evidence": "https://keyzerbv.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "TypeError: fetch failed",
-      "verkoop": "niet bellen"
-    },
-    {
-      "bedrijf": "Kroon interieurbouw",
-      "klantUrl": "https://www.kroon-interieurbouw.nl/",
-      "evidence": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
-      "verdict": "false_positive",
-      "reden": "HTTP 415, geen phpMyAdmin HTML",
-      "http": 415,
-      "finalUrl": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
-    },
-    {
-      "bedrijf": "Pruis Schilderwerken",
-      "klantUrl": "https://pruisschilderwerken.nl/",
-      "evidence": "https://server-alfa.heroo.nl/phpMyAdmin/",
-      "verdict": "false_positive",
-      "reden": "HTTP 415, geen phpMyAdmin HTML",
-      "http": 415,
-      "finalUrl": "https://server-alfa.heroo.nl/phpMyAdmin/",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
-    },
-    {
-      "bedrijf": "T.B. van Wichen",
-      "klantUrl": "https://vanwichenbv.nl/",
-      "evidence": "https://vanwichenbv.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "TypeError: fetch failed",
-      "verkoop": "niet bellen"
+      "verkoop": "voorzichtig"
     }
   ]
 }
