@@ -196,6 +196,15 @@
       "producent": "traffic-run"
     },
     {
+      "id": "gsc-status",
+      "naam": "GSC status",
+      "bron": "data/gsc-status.json",
+      "publiek": "public/gsc-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "gsc-setup"
+    },
+    {
       "id": "reports",
       "naam": "VakScan rapporten",
       "bron": "data/reports",

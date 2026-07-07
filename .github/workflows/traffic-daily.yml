@@ -23,6 +23,7 @@ jobs:
         env:
           TRAFFIC_LANDINGS_PER_RUN: "3"
       - run: GITHUB_PAGES=true npm run build
+      - run: node scripts/gsc-setup.mjs || true
       - run: node scripts/agents/data-flow/run.mjs
       - run: |
           git config user.name "github-actions[bot]"

@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-07-07T11:30:42.138Z",
+  "updatedAt": "2026-07-07T11:44:05.652Z",
   "agent": "data-flow",
   "healthy": true,
   "fixApplied": true,
   "summary": {
-    "streams": 24,
-    "ok": 24,
+    "streams": 25,
+    "ok": 25,
     "drift": 0,
     "synced": 0,
     "missing": 0,
@@ -208,6 +208,15 @@
       "detail": "in sync"
     },
     {
+      "id": "gsc-status",
+      "naam": "GSC status",
+      "status": "ok",
+      "drift": false,
+      "synced": false,
+      "issues": [],
+      "detail": "in sync"
+    },
+    {
       "id": "reports",
       "naam": "VakScan rapporten",
       "status": "ok",
@@ -236,5 +245,5 @@
     }
   ],
   "grokPrompt": "data-flow OK — alle streams gesynchroniseerd",
-  "agentPrompt": "24 streams OK · queue 0 pending · 15 lekken"
+  "agentPrompt": "25 streams OK · queue 0 pending · 15 lekken"
 }

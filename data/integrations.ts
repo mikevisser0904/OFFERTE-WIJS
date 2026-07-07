@@ -16,15 +16,15 @@ export const integrations = {
   googleSearchConsole: {
     property: SITE_URL,
     sitemap: `${SITE_URL}/sitemap.xml`,
-    status: "pending_verification" as const,
+    status: "html_file_ready" as const,
     stappen: [
-      "Ga naar Search Console → URL-prefix property toevoegen",
-      `Plak: ${SITE_URL}`,
-      "Verificatie → HTML-tag → kopieer content= code",
-      "GitHub repo → Settings → Secrets → GOOGLE_SITE_VERIFICATION → plak code",
-      "Wacht op deploy (~1 min) → klik Verifiëren in GSC",
-      `Sitemaps → voeg toe: sitemap.xml`,
+      `Property URL-prefix: ${SITE_URL}`,
+      "Verificatie → HTML-bestand → googlec6b9c20bff6e7f49.html (staat in public/, live na deploy)",
+      "Klik Verifiëren in GSC",
+      `Sitemaps → nieuwe sitemap: sitemap.xml`,
+      "Optioneel meta-tag: GitHub Secret GOOGLE_SITE_VERIFICATION + rebuild",
     ],
+    verifyFile: `${SITE_URL}googlec6b9c20bff6e7f49.html`,
     urls: {
       welcome: "https://search.google.com/search-console/welcome",
       sitemaps: `https://search.google.com/search-console/sitemaps?resource_id=${encodeURIComponent(SITE_URL)}`,

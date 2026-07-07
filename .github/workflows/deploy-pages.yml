@@ -27,6 +27,7 @@ jobs:
       - run: GITHUB_PAGES=true GOOGLE_SITE_VERIFICATION=${{ secrets.GOOGLE_SITE_VERIFICATION }} npm run build
       - run: node scripts/health-check.mjs || true
       - run: node scripts/indexnow-submit.mjs || true
+      - run: node scripts/gsc-setup.mjs || true
       - run: |
           for f in llms.txt og.svg health.json kpi-snapshot.json maarten-wachtrij.json autopilot-status.json \
             demo-pma-proof.json demo-actieve-toegang.json toegang-scan.json risico-passief.json consent-deep-results.json auto-verify-status.json outreach-vandaag.json echte-klanten.json; do
