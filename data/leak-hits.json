@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-07-07T07:38:57.131Z",
+  "updatedAt": "2026-07-07T07:39:59.584Z",
   "hits": [
+    {
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "reportId": "2f229b8f5c49",
+      "scannedAt": "2026-07-07T07:39:22.695Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet",
+        "phpMyAdmin mogelijk open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin mogelijk open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
+          "intern": "Kritiek — Website Veilig + hosting review.",
+          "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
     {
       "url": "https://saelektroexperts.nl/",
       "bedrijf": "SA Elektro Experts",

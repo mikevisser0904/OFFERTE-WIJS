@@ -1,12 +1,23 @@
 {
-  "updatedAt": "2026-07-07T07:34:32.090Z",
+  "updatedAt": "2026-07-07T07:43:03.102Z",
   "agent": "manager",
-  "fase": "rust",
-  "faseLabel": "Alles rustig",
-  "prioriteit": 1,
-  "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-  "mikeActie": "5 WhatsApps via /agents/",
-  "acties": [],
+  "fase": "verkopen",
+  "faseLabel": "Outreach klaar",
+  "prioriteit": 4,
+  "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Database/datalek: phpMyAdmin mogelijk open op internet)",
+  "mikeActie": "15 contacten wachten op /agents/",
+  "acties": [
+    {
+      "wie": "grok",
+      "actie": "Data-flow sync",
+      "script": "npm run agent:dataflow"
+    },
+    {
+      "wie": "mike",
+      "actie": "5 WhatsApps vandaag",
+      "script": "/actie/"
+    }
+  ],
   "cards": [
     {
       "id": "optimizer",
@@ -18,9 +29,9 @@
     {
       "id": "data-flow",
       "naam": "Data-flow",
-      "status": "ok",
-      "detail": "17 streams OK · queue 184 pending · 5 lekken",
-      "lastRun": "2026-07-07T07:34:31.966Z"
+      "status": "actie",
+      "detail": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+      "lastRun": "2026-07-07T07:39:00.582Z"
     },
     {
       "id": "health-monitor",
@@ -47,7 +58,7 @@
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "status": "ok",
-      "detail": "184 leads · 184 queue",
+      "detail": "184 leads · 0 queue",
       "lastRun": null
     },
     {
@@ -58,11 +69,18 @@
       "lastRun": null
     },
     {
+      "id": "klanten-lek",
+      "naam": "Klanten-lek",
+      "status": "ok",
+      "detail": "13 echte lek(ken) — /leads/ database-export · outreach",
+      "lastRun": "2026-07-07T07:40:22.139Z"
+    },
+    {
       "id": "vakscan-leaks",
       "naam": "VakScan Leaks",
       "status": "ok",
-      "detail": "5 lekken · 184 pending",
-      "lastRun": null
+      "detail": "31 lekken · 0 pending",
+      "lastRun": "2026-07-07T07:40:27.309Z"
     },
     {
       "id": "vakscan-full",
@@ -74,9 +92,9 @@
     {
       "id": "outreach",
       "naam": "Outreach",
-      "status": "actie",
-      "detail": "0 contacten",
-      "lastRun": "2026-07-07T07:31:26.061Z"
+      "status": "ok",
+      "detail": "15 contacten",
+      "lastRun": "2026-07-07T07:42:55.374Z"
     },
     {
       "id": "seo",
@@ -94,9 +112,9 @@
     }
   ],
   "snapshot": {
-    "leakCount": 5,
-    "queuePending": 184,
-    "outreachCount": 0,
+    "leakCount": 31,
+    "queuePending": 0,
+    "outreachCount": 15,
     "leadsTotaal": 184,
     "pendingMaarten": 0
   }

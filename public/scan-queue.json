@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T07:38:48.846Z",
+  "updatedAt": "2026-07-07T07:40:25.298Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -1506,8 +1506,12 @@
       "bedrijf": "D.S. Service",
       "plaats": "Purmerend",
       "url": "https://www.ds-service.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:06.730Z",
+      "reportId": "977d09968185",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-126",
@@ -1694,344 +1698,516 @@
       "bedrijf": "Starkozijn Katwijk",
       "plaats": "Rijnsburg",
       "url": "https://www.starkozijnkatwijk.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:43.258Z",
+      "reportId": "21f9eeb7c11d",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-142",
       "bedrijf": "Loodgieterskwartier",
       "plaats": "Rijswijk",
       "url": "https://loodgieterskwartier.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:47.761Z",
+      "reportId": "d55c372ed7e5",
+      "risicoScore": 100,
+      "leakHit": true
     },
     {
       "id": "q-mrabzuyh-143",
       "bedrijf": "Bastasol Zonwering",
       "plaats": "Rotterdam",
       "url": "https://www.bastasol.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:49.198Z",
+      "reportId": "6a8cbb150bd0",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-144",
       "bedrijf": "De Gier",
       "plaats": "Rotterdam",
       "url": "https://degierwonen.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:50.242Z",
+      "reportId": "d50411536fba",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-145",
       "bedrijf": "De Klussenier",
       "plaats": "Rotterdam",
       "url": "https://wimdejong.klussenier.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:53.200Z",
+      "reportId": "67fdb43c22da",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-146",
       "bedrijf": "Harmony Gordijnen",
       "plaats": "Rotterdam",
       "url": "https://harmonygordijnen.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:54.002Z",
+      "reportId": "9682b06f5a8a",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-147",
       "bedrijf": "Installatiebedrijf Vis",
       "plaats": "Rotterdam",
       "url": "https://installatiebedrijfvis.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:57.177Z",
+      "reportId": "71258df9d54a",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-148",
       "bedrijf": "Lohmann",
       "plaats": "Rotterdam",
       "url": "https://lohmannbv.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:57.582Z",
+      "reportId": "693fb2b75563",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-149",
       "bedrijf": "Lugthart",
       "plaats": "Rotterdam",
       "url": "https://lugthart.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:59.320Z",
+      "reportId": "9670d97392bb",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-150",
       "bedrijf": "Plant services",
       "plaats": "Rotterdam",
       "url": "https://plantservices.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:38:59.710Z",
+      "reportId": "e96d1b0c8287",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-151",
       "bedrijf": "Quick Paint",
       "plaats": "Rotterdam",
       "url": "https://www.quickpaint.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:00.534Z",
+      "reportId": "e322f2b6991d",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-152",
       "bedrijf": "Stoffenhuis Bestevaer",
       "plaats": "Rotterdam",
       "url": "http://www.stoffenhuisbestevaer.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:01.058Z",
+      "reportId": "6e4fadda34f1",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-153",
       "bedrijf": "Tulay",
       "plaats": "Rotterdam",
       "url": "https://tulay.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:01.440Z",
+      "reportId": "7d7a2d65cf3b",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-154",
       "bedrijf": "Van Lochem Schildersbedrijven",
       "plaats": "Rotterdam",
       "url": "https://www.vanlochem.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:07.351Z",
+      "reportId": "cc83fa37494c",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-155",
       "bedrijf": "Luxury Home",
       "plaats": "Spijkenisse",
       "url": "https://luxuryhomeraamdecoratie.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:10.306Z",
+      "reportId": "039a5ff585d8",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-156",
       "bedrijf": "Merwede tapijten",
       "plaats": "Spijkenisse",
       "url": "https://www.merwede-tapijten.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:11.124Z",
+      "reportId": "69cb04cb7834",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-157",
       "bedrijf": "Woninginrichting-Aanhuis.nl",
       "plaats": "Spijkenisse",
       "url": "https://www.woninginrichting-aanhuis.nl/winkels/spijkenisse",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:14.774Z",
+      "reportId": "c871a5b34aa6",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-158",
       "bedrijf": "Ambachtelijke Naaiwinkel",
       "plaats": "Utrecht",
       "url": "https://amnaaiwinkel.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:16.311Z",
+      "reportId": "627d27b9702d",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-159",
       "bedrijf": "Arena Gordijnenland",
       "plaats": "Utrecht",
       "url": "https://arenagordijnenland.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:17.017Z",
+      "reportId": "be82aa5763e0",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-160",
       "bedrijf": "De Bovenkamer",
       "plaats": "Utrecht",
       "url": "http://bovenkamerutrecht.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:18.670Z",
+      "reportId": "2b1c38fac2f8",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-161",
       "bedrijf": "De Kroon Zonwering",
       "plaats": "Utrecht",
       "url": "https://www.dekroonzonwering.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:18.882Z",
+      "reportId": "e8bf388674d3",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-162",
       "bedrijf": "etech soest",
       "plaats": "Utrecht",
       "url": "https://www.etech.nu",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:19.600Z",
+      "reportId": "d18cc7b28bd9",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-163",
       "bedrijf": "Loodgietersbedrijf Utrecht",
       "plaats": "Utrecht",
       "url": "https://loodgietersbedrijfutrecht.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:20.888Z",
+      "reportId": "e0085dffafe0",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-164",
       "bedrijf": "Louvenda Home",
       "plaats": "Utrecht",
       "url": "https://louvendahome.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:21.342Z",
+      "reportId": "aa351d8d9e27",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-165",
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:22.695Z",
+      "reportId": "2f229b8f5c49",
+      "risicoScore": 100,
+      "leakHit": true
     },
     {
       "id": "q-mrabzuyh-166",
       "bedrijf": "Tafelboom",
       "plaats": "Utrecht",
       "url": "https://www.tafelboom.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:24.412Z",
+      "reportId": "216370c66063",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-167",
       "bedrijf": "De Pagter",
       "plaats": "Voorburg",
       "url": "https://depagter.info",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:39:59.935Z",
+      "reportId": "679c884eb23e",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-168",
       "bedrijf": "Hennink Installatietechniek",
       "plaats": "Voorburg",
       "url": "https://hennink.info",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:06.620Z",
+      "reportId": "cf8a5654c646",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-169",
       "bedrijf": "I.B. Kracht",
       "plaats": "Voorburg",
       "url": "https://www.kracht.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:09.977Z",
+      "reportId": "833ed356fc14",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-170",
       "bedrijf": "JCM Styles",
       "plaats": "Voorburg",
       "url": "https://www.zonwering.nl/verkooppunten/rolluiken-voorburg",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:18.203Z",
+      "reportId": "1961120e704b",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-171",
       "bedrijf": "Leidekkersbedrijf van Eijk",
       "plaats": "Voorburg",
       "url": "http://ericvaneijk.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:18.591Z",
+      "reportId": "a73c9b1041e3",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-172",
       "bedrijf": "Loodgietersbedrijf Robberts",
       "plaats": "Voorburg",
       "url": "https://installatiebedrijfrobberts.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:18.955Z",
+      "reportId": "11e9ba821df7",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-173",
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "url": "https://nuoveni.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:19.322Z",
+      "reportId": "95bee736a13f",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-174",
       "bedrijf": "Sima Installatietechniek",
       "plaats": "Voorburg",
       "url": "https://simainstallatie.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:19.691Z",
+      "reportId": "acd00c6a7fb1",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-175",
       "bedrijf": "Eyelux Zonwering",
       "plaats": "Voorschoten",
       "url": "https://www.eyelux.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:20.057Z",
+      "reportId": "a955e5d0e056",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-176",
       "bedrijf": "Wolters Perez",
       "plaats": "Voorschoten",
       "url": "https://perezvoorschoten.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:20.427Z",
+      "reportId": "2a8304b12fa7",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-177",
       "bedrijf": "Installatiebureau Jonker BV",
       "plaats": "Wassenaar",
       "url": "https://www.jonkerbv.eu",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:20.799Z",
+      "reportId": "6157936a88aa",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-178",
       "bedrijf": "Kuyt Schilders B.V. Schilderwerk",
       "plaats": "Wassenaar",
       "url": "https://www.kuytschilders.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:21.166Z",
+      "reportId": "16a949c939a3",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-179",
       "bedrijf": "Ambiance Zonwering",
       "plaats": "Woerden",
       "url": "https://www.ambiance-zonwering.nl/broere-woerden",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:21.536Z",
+      "reportId": "c54e890fe8fc",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-180",
       "bedrijf": "Plomp installatietechniek",
       "plaats": "Woerden",
       "url": "https://www.plompinstallatietechniek.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:21.776Z",
+      "reportId": "34155eff82f8",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-181",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "url": "https://www.willemseelektrotechniek.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:21.904Z",
+      "reportId": "fe9d43611024",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-182",
       "bedrijf": "Leen Meurs",
       "plaats": "Zoetermeer",
       "url": "https://www.schilderleenmeurs.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:22.151Z",
+      "reportId": "9f9592c9bf6d",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mrabzuyh-183",
       "bedrijf": "Aluku",
       "plaats": "Zuidland",
       "url": "https://aluku.nl",
-      "status": "pending",
-      "toegevoegd": "2026-07-07T07:32:23.801Z"
+      "status": "klaar",
+      "toegevoegd": "2026-07-07T07:32:23.801Z",
+      "scannedAt": "2026-07-07T07:40:22.271Z",
+      "reportId": "e25586b79696",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }

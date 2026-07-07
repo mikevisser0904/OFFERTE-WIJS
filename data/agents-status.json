@@ -1,20 +1,24 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T07:39:00.582Z",
+  "updatedAt": "2026-07-07T07:43:03.103Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T07:31:26.061Z",
+      "lastRun": "2026-07-07T07:42:55.374Z",
       "ok": true,
-      "contactenVandaag": 0,
-      "lekkenEerst": 0,
-      "agentPrompt": "Outreach: geen hits — draai agent:leads en scan:leaks eerst",
-      "top3": []
+      "contactenVandaag": 15,
+      "lekkenEerst": 15,
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Database/datalek: phpMyAdmin mogelijk open op internet)",
+      "top3": [
+        "Reinaerde Remake Meubel: Database/datalek: phpMyAdmin mogelijk open op internet",
+        "Loodgieterskwartier: Database/datalek: Elasticsearch-indexen mogelijk zichtbaar",
+        "Klomp Elektrotechniek: Database/datalek: phpMyAdmin mogelijk open op internet"
+      ]
     },
     "manager": {
-      "lastRun": "2026-07-07T07:34:32.090Z",
-      "fase": "rust",
-      "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "mikeActie": "5 WhatsApps via /agents/"
+      "lastRun": "2026-07-07T07:43:03.102Z",
+      "fase": "verkopen",
+      "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Database/datalek: phpMyAdmin mogelijk open op internet)",
+      "mikeActie": "15 contacten wachten op /agents/"
     },
     "health-monitor": {
       "lastRun": "2026-07-07T07:31:25.463Z",
@@ -54,23 +58,41 @@
       "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced"
     },
     "klanten-lek": {
-      "lastRun": "2026-07-07T07:39:00.015Z",
+      "lastRun": "2026-07-07T07:40:22.139Z",
       "ok": true,
-      "gescand": 5,
-      "metLek": 30,
-      "agentPrompt": "30 echte lek(ken) — /leads/ database-export · outreach",
-      "grokPrompt": "agent outreach — 30 klanten met database-lek in klanten-lek-rapport"
+      "gescand": 80,
+      "metLek": 13,
+      "agentPrompt": "13 echte lek(ken) — /leads/ database-export · outreach",
+      "grokPrompt": "agent outreach — 13 klanten met database-lek in klanten-lek-rapport"
+    },
+    "vakscan-leaks": {
+      "lastRun": "2026-07-07T07:40:27.309Z",
+      "ok": true,
+      "leakHits": 31,
+      "queuePending": 0,
+      "agentPrompt": "31 lek(ken) — outreach agent"
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T07:34:32.090Z",
+    "updatedAt": "2026-07-07T07:43:03.102Z",
     "agent": "manager",
-    "fase": "rust",
-    "faseLabel": "Alles rustig",
-    "prioriteit": 1,
-    "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-    "mikeActie": "5 WhatsApps via /agents/",
-    "acties": [],
+    "fase": "verkopen",
+    "faseLabel": "Outreach klaar",
+    "prioriteit": 4,
+    "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Reinaerde Remake Meubel (Database/datalek: phpMyAdmin mogelijk open op internet)",
+    "mikeActie": "15 contacten wachten op /agents/",
+    "acties": [
+      {
+        "wie": "grok",
+        "actie": "Data-flow sync",
+        "script": "npm run agent:dataflow"
+      },
+      {
+        "wie": "mike",
+        "actie": "5 WhatsApps vandaag",
+        "script": "/actie/"
+      }
+    ],
     "cards": [
       {
         "id": "optimizer",
@@ -82,9 +104,9 @@
       {
         "id": "data-flow",
         "naam": "Data-flow",
-        "status": "ok",
-        "detail": "17 streams OK · queue 184 pending · 5 lekken",
-        "lastRun": "2026-07-07T07:34:31.966Z"
+        "status": "actie",
+        "detail": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+        "lastRun": "2026-07-07T07:39:00.582Z"
       },
       {
         "id": "health-monitor",
@@ -111,7 +133,7 @@
         "id": "lead-hunter",
         "naam": "Lead Hunter",
         "status": "ok",
-        "detail": "184 leads · 184 queue",
+        "detail": "184 leads · 0 queue",
         "lastRun": null
       },
       {
@@ -122,11 +144,18 @@
         "lastRun": null
       },
       {
+        "id": "klanten-lek",
+        "naam": "Klanten-lek",
+        "status": "ok",
+        "detail": "13 echte lek(ken) — /leads/ database-export · outreach",
+        "lastRun": "2026-07-07T07:40:22.139Z"
+      },
+      {
         "id": "vakscan-leaks",
         "naam": "VakScan Leaks",
         "status": "ok",
-        "detail": "5 lekken · 184 pending",
-        "lastRun": null
+        "detail": "31 lekken · 0 pending",
+        "lastRun": "2026-07-07T07:40:27.309Z"
       },
       {
         "id": "vakscan-full",
@@ -138,9 +167,9 @@
       {
         "id": "outreach",
         "naam": "Outreach",
-        "status": "actie",
-        "detail": "0 contacten",
-        "lastRun": "2026-07-07T07:31:26.061Z"
+        "status": "ok",
+        "detail": "15 contacten",
+        "lastRun": "2026-07-07T07:42:55.374Z"
       },
       {
         "id": "seo",
