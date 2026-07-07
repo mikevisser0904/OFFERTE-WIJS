@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { publicAssetUrl } from "@/lib/github-pages-base";
 
 type EchteKlant = {
   bedrijf: string;
@@ -23,16 +24,6 @@ type EchteKlant = {
   adminProof?: { adminType?: string; zichtbaar?: string };
 };
 
-function urlJson() {
-  const base = typeof window !== "undefined" && window.location.pathname.startsWith("/OFFERTE-WIJS") ? "/OFFERTE-WIJS" : "";
-  return `${typeof window !== "undefined" ? window.location.origin : ""}${base}/echte-klanten.json`;
-}
-
-function csvUrl() {
-  const base = typeof window !== "undefined" && window.location.pathname.startsWith("/OFFERTE-WIJS") ? "/OFFERTE-WIJS" : "";
-  return `${base}/vandaag-bellen.csv`;
-}
-
 export function EchteKlantenPanel() {
   const [klanten, setKlanten] = useState<EchteKlant[]>([]);
   const [meta, setMeta] = useState<{ totaal: number; metScanFeiten?: number; generatedAt: string } | null>(null);
@@ -41,7 +32,7 @@ export function EchteKlantenPanel() {
 
   const load = useCallback(async () => {
     try {
-      const r = await fetch(urlJson(), { cache: "no-store" });
+      const r = await fetch(publicAssetUrl("/echte-klanten.json"), { cache: "no-store" });
       if (!r.ok) return;
       const d = await r.json();
       setKlanten(d.klanten || []);
@@ -80,9 +71,13 @@ export function EchteKlantenPanel() {
           <p className="mt-1 text-xs text-rose-300/90">Niet inloggen. Wel: “uw voordeur staat open” + bewijs-URL.</p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <a href={csvUrl()} className="rounded-full border border-white/20 px-4 py-2 text-sm">
+          <Link
+            href="/vandaag-bellen.csv"
+            download="vandaag-bellen.csv"
+            className="rounded-full border border-white/20 px-4 py-2 text-sm"
+          >
             CSV
-          </a>
+          </Link>
           <Link href="/actie/" className="rounded-full bg-amber-500 px-5 py-2 text-sm font-bold text-black">
             Actie
           </Link>
