@@ -3,6 +3,16 @@
   "team": "Één taak = één agent · Manager stuurt aan",
   "agents": [
     {
+      "id": "optimizer",
+      "taak": "optimalisatie",
+      "naam": "Optimizer",
+      "rol": "Meet funnel, past veilig aan, Grok-wachtrij voor code-verbeteringen",
+      "skill": ".grok/skills/optimizer-agent/SKILL.md",
+      "script": "npm run agent:optimizer:apply",
+      "workflow": ".github/workflows/optimizer-agent.yml",
+      "trigger": ["optimizer", "optimaliseer", "verbeter automatisch"]
+    },
+    {
       "id": "manager",
       "taak": "orchestratie",
       "naam": "Manager",

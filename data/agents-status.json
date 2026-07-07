@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T07:31:26.537Z",
+  "updatedAt": "2026-07-07T07:33:30.703Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T07:31:26.061Z",
@@ -11,10 +11,10 @@
       "top3": []
     },
     "manager": {
-      "lastRun": "2026-07-07T07:31:26.537Z",
-      "fase": "prospectie",
-      "grokPrompt": "agent leads — weinig potentiële klanten in OSM, queue vullen",
-      "mikeActie": "Check /agents/ en /dashboard/"
+      "lastRun": "2026-07-07T07:33:30.702Z",
+      "fase": "rust",
+      "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
+      "mikeActie": "5 WhatsApps via /agents/"
     },
     "health-monitor": {
       "lastRun": "2026-07-07T07:31:25.463Z",
@@ -35,29 +35,37 @@
       "pending": 0,
       "eerstePending": null,
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
+    },
+    "optimizer": {
+      "lastRun": "2026-07-07T07:33:30.084Z",
+      "applyMode": true,
+      "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
+      "safeDone": 2,
+      "wachtrijPending": 0
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T07:31:26.537Z",
+    "updatedAt": "2026-07-07T07:33:30.702Z",
     "agent": "manager",
-    "fase": "prospectie",
-    "faseLabel": "Meer leads nodig",
-    "prioriteit": 6,
-    "grokPrompt": "agent leads — weinig potentiële klanten in OSM, queue vullen",
-    "mikeActie": "Check /agents/ en /dashboard/",
-    "acties": [
-      {
-        "wie": "grok",
-        "actie": "Lead Hunter (OSM)",
-        "script": "npm run agent:leads"
-      }
-    ],
+    "fase": "rust",
+    "faseLabel": "Alles rustig",
+    "prioriteit": 1,
+    "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
+    "mikeActie": "5 WhatsApps via /agents/",
+    "acties": [],
     "cards": [
+      {
+        "id": "optimizer",
+        "naam": "Optimizer",
+        "status": "ok",
+        "detail": "Grok-wachtrij 0 · laatste fixes 2",
+        "lastRun": "2026-07-07T07:33:30.084Z"
+      },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 251ms",
+        "detail": "OK 244ms",
         "lastRun": "2026-07-07T07:31:25.463Z"
       },
       {
@@ -77,8 +85,8 @@
       {
         "id": "lead-hunter",
         "naam": "Lead Hunter",
-        "status": "actie",
-        "detail": "0 leads · 1 queue",
+        "status": "ok",
+        "detail": "184 leads · 184 queue",
         "lastRun": null
       },
       {
@@ -91,8 +99,8 @@
       {
         "id": "vakscan-leaks",
         "naam": "VakScan Leaks",
-        "status": "ok",
-        "detail": "0 lekken · 1 pending",
+        "status": "actie",
+        "detail": "0 lekken · 184 pending",
         "lastRun": null
       },
       {

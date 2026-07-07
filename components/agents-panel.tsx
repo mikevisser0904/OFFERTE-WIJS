@@ -8,7 +8,9 @@ import {
   outreachVandaagUrl,
   potentieleKlantenUrl,
   managerStatusUrl,
+  optimizerStatusUrl,
   type AgentRegistryEntry,
+  type OptimizerStatus,
   type OutreachVandaag,
   type ManagerStatus,
 } from "@/lib/agents";
@@ -38,21 +40,24 @@ export function AgentsPanel() {
   const [outreach, setOutreach] = useState<OutreachVandaag | null>(null);
   const [leads, setLeads] = useState<LeadsPayload | null>(null);
   const [manager, setManager] = useState<ManagerStatus | null>(null);
+  const [optimizer, setOptimizer] = useState<OptimizerStatus | null>(null);
   const [copied, setCopied] = useState<string | null>(null);
 
   const load = useCallback(async () => {
-    const [reg, st, out, ld, mgr] = await Promise.all([
+    const [reg, st, out, ld, mgr, opt] = await Promise.all([
       fetch(agentsRegistryUrl()).then((r) => (r.ok ? r.json() : { agents: [] })),
       fetch(agentsStatusUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(outreachVandaagUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(potentieleKlantenUrl()).then((r) => (r.ok ? r.json() : null)),
       fetch(managerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
+      fetch(optimizerStatusUrl()).then((r) => (r.ok ? r.json() : null)),
     ]);
     setRegistry(reg.agents || []);
     setStatus(st);
     setOutreach(out);
     setLeads(ld);
     setManager(mgr);
+    setOptimizer(opt);
   }, []);
 
   useEffect(() => {
@@ -110,8 +115,22 @@ export function AgentsPanel() {
             </div>
           ))}
         </div>
+        {optimizer && (
+          <div className="mt-4 rounded-xl border border-emerald-400/20 bg-emerald-400/5 p-4">
+            <p className="text-sm font-semibold text-emerald-200">Optimizer (continu)</p>
+            <p className="mt-1 text-xs text-white/50">{optimizer.grokPrompt}</p>
+            <ul className="mt-2 space-y-1 text-xs text-white/45">
+              {(optimizer.uitgevoerd || []).slice(0, 4).map((u) => (
+                <li key={u.titel}>
+                  {u.titel}: <span className="text-white/70">{u.status}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-2 font-mono text-[10px] text-white/35">npm run agent:optimizer:apply · elke 6u in CI</p>
+          </div>
+        )}
         <pre className="mt-4 overflow-x-auto rounded-lg bg-black/40 p-3 text-xs text-white/50">
-          npm run agent:manager · npm run agent:manager:run
+          npm run agent:manager · npm run agent:optimizer:apply
         </pre>
       </section>
 

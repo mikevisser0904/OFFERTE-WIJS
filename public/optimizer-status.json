@@ -1,0 +1,32 @@
+{
+  "updatedAt": "2026-07-07T07:33:30.084Z",
+  "agent": "optimizer",
+  "applyMode": true,
+  "metrics": {
+    "pending": 185,
+    "leakCount": 0,
+    "outreachCount": 0,
+    "leadsTotaal": 184,
+    "hitRate": 0,
+    "avgMs": 244
+  },
+  "uitgevoerd": [
+    {
+      "id": "purge-demo-queue",
+      "titel": "Verwijder 1 demo-URL's uit queue",
+      "fn": "purgeDemoQueue",
+      "status": "ok",
+      "result": 1
+    },
+    {
+      "id": "sync-report-index",
+      "titel": "Rapport-index syncen",
+      "fn": "syncIndex",
+      "status": "ok",
+      "result": true
+    }
+  ],
+  "aanbevelingen": [],
+  "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
+  "pendingGrok": 0
+}

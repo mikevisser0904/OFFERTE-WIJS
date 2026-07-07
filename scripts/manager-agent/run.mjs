@@ -53,6 +53,8 @@ function collect() {
   const outreach = load(join(ROOT, "data/outreach-vandaag.json"), { vandaag: [] });
   const leads = load(join(ROOT, "data/potentiele-klanten.json"), { totaal: 0 });
   const wachtrij = load(join(ROOT, "data/maarten-wachtrij.json"), { ideeen: [] });
+  const optimizer = load(join(ROOT, "data/optimizer-status.json"), {});
+  const optWachtrij = load(join(ROOT, "data/optimizer-wachtrij.json"), { items: [] });
 
   const pendingMaarten = (wachtrij.ideeen || []).filter((i) => i.status === "pending").length;
   const queuePending = (queue.items || []).filter((i) => i.status === "pending").length;
@@ -81,6 +83,8 @@ function collect() {
     scanStale,
     outreachAge: hoursSince(outreach.generatedAt),
     leadsAge: hoursSince(leads.generatedAt),
+    optimizer,
+    optPending: (optWachtrij.items || []).filter((i) => i.status === "pending").length,
   };
 }
 
@@ -148,9 +152,26 @@ function decide(s) {
     }
   }
 
+  if (fase === "rust" && s.optPending > 0) {
+    const top = load(join(ROOT, "data/optimizer-wachtrij.json"), { items: [] }).items?.find(
+      (i) => i.status === "pending"
+    );
+    if (top) {
+      fase = "optimaliseer";
+      faseLabel = "Optimizer wachtrij";
+      prioriteit = 5;
+      grokPrompt = `optimizer wachtrij uitvoeren: ${top.actie} (${top.id})`;
+      mikeActie = "Grok bouwt optimalisatie — jij kunt /actie/ blijven doen.";
+      acties.push({ wie: "grok", actie: top.titel, script: top.script || "docs/VAKSCAN.md" });
+    }
+  }
+
   if (fase === "rust") {
-    grokPrompt = "manager OK — npm run agent:pipeline (Fase 1 groot plan) of /visie/ check";
-    mikeActie = "5 WhatsApps via /agents/ — groot plan: /visie/";
+    grokPrompt =
+      s.optimizer?.grokPrompt && !s.optimizer.grokPrompt.startsWith("optimizer: draai")
+        ? s.optimizer.grokPrompt
+        : grokPrompt;
+    mikeActie = mikeActie === "Check /agents/ en /dashboard/" ? "5 WhatsApps via /agents/" : mikeActie;
   }
 
   return { fase, faseLabel, prioriteit, grokPrompt, mikeActie, acties };
@@ -224,6 +245,10 @@ async function main() {
       if (a.id === "maarten-bouw") {
         ok = s.pendingMaarten === 0;
         detail = `${s.pendingMaarten} pending`;
+      }
+      if (a.id === "optimizer") {
+        ok = s.optPending < 5;
+        detail = `Grok-wachtrij ${s.optPending} · laatste fixes ${st.safeDone ?? 0}`;
       }
       return agentCard(a.id, a.naam, ok, detail, st.lastRun);
     });

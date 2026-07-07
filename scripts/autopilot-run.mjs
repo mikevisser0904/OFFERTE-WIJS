@@ -13,10 +13,11 @@ const WACHTRIJ = join(ROOT, "data/maarten-wachtrij.json");
 const AGENTS_STATUS = join(ROOT, "data/agents-status.json");
 const NTFY = "https://ntfy.sh/webklaar-mike";
 
-function runNode(script) {
-  const r = spawnSync("node", [join(ROOT, script)], {
+function runNode(script, args = []) {
+  const r = spawnSync("node", [join(ROOT, script), ...args], {
     cwd: ROOT,
     encoding: "utf8",
+    timeout: 900_000,
   });
   return { ok: r.status === 0, out: (r.stdout || "") + (r.stderr || "") };
 }
@@ -44,6 +45,7 @@ if (existsSync(WACHTRIJ)) {
   }
 }
 
+runNode("scripts/optimizer-agent/run.mjs", ["--apply"]);
 const managerRun = runNode("scripts/manager-agent/run.mjs");
 let agentHint = null;
 if (existsSync(AGENTS_STATUS)) {

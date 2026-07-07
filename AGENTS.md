@@ -155,6 +155,7 @@ Live hub: **/agents/** · Registry (bron): `data/agents-registry.json` (+ skill 
 
 | Agent | Taak | Commando |
 |-------|------|----------|
+| **Optimizer** | Continu meten + veilige fixes + Grok-wachtrij | `npm run agent:optimizer:apply` |
 | **Manager** | Orchestratie | `npm run agent:manager` |
 | **Health Monitor** | Site ping | `npm run agent:health` |
 | **Maarten Sync** | ntfy → wachtrij | `npm run agent:maarten-sync` |
@@ -173,7 +174,11 @@ Live hub: **/agents/** · Registry (bron): `data/agents-registry.json` (+ skill 
 ```bash
 npm run agent:pipeline    # leads → leaks → outreach → manager
 npm run agent:status      # health + sync + bouw-hint + outreach + manager
-npm run autopilot         # health + maarten-sync + bouw-hint + manager + ntfy
+npm run autopilot         # optimizer:apply + health + sync + manager + ntfy
+```
+
+**Optimizer** draait ook elke **6 uur** in CI (`.github/workflows/optimizer-agent.yml`).  
+Grok-taken: `data/optimizer-wachtrij.json` — trigger: **optimizer wachtrij**.
 ```
 
 Legacy: `npm run scan:leaks` = zelfde als `agent:vakscan-leaks`.

@@ -28,6 +28,8 @@
     "lead:osm": "node scripts/lead-hunter/osm-fetch.mjs",
     "agent:leads": "node scripts/lead-hunter/agent-run.mjs",
     "agent:outreach": "node scripts/outreach-agent/run.mjs",
+    "agent:optimizer": "node scripts/optimizer-agent/run.mjs",
+    "agent:optimizer:apply": "node scripts/optimizer-agent/run.mjs --apply",
     "agent:manager": "node scripts/manager-agent/run.mjs",
     "agent:manager:run": "node scripts/manager-agent/run.mjs --execute",
     "agent:pipeline": "npm run agent:leads && npm run agent:vakscan-leaks && npm run agent:outreach && npm run agent:manager",

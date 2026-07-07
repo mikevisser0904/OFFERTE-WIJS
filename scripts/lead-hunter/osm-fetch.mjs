@@ -141,11 +141,15 @@ function fetchCity(stad) {
     if (!url) continue;
     const bedrijf = naamFromTags(tags);
     if (!bedrijf) continue;
+    const telefoon = (tags.phone || tags["contact:phone"] || tags["contact:mobile"] || "").trim() || null;
+    const email = (tags.email || tags["contact:email"] || "").trim() || null;
     leads.push({
       bedrijf,
       plaats: plaatsFromTags(tags, stad.plaats),
       zoekstad: stad.plaats,
       url,
+      telefoon,
+      email,
       categorie: categorieFromTags(tags),
       prioriteit: "scan-eerst",
     });

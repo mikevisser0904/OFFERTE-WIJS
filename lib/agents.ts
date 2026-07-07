@@ -62,6 +62,18 @@ export function managerStatusUrl() {
   return publicUrl("/manager-status.json");
 }
 
+export function optimizerStatusUrl() {
+  return publicUrl("/optimizer-status.json");
+}
+
+export type OptimizerStatus = {
+  updatedAt: string;
+  grokPrompt: string;
+  metrics: Record<string, number>;
+  uitgevoerd: { titel: string; status: string }[];
+  pendingGrok?: number;
+};
+
 export type ManagerCard = {
   id: string;
   naam: string;
