@@ -13,6 +13,16 @@
       "trigger": ["optimizer", "optimaliseer", "verbeter automatisch"]
     },
     {
+      "id": "auto-verify",
+      "taak": "verificatie",
+      "naam": "Auto-verify",
+      "rol": "Hercontroleert lekken, admin-bewijs en toestemming; ververst berichten",
+      "skill": ".grok/skills/auto-verify/SKILL.md",
+      "script": "npm run agent:auto-verify",
+      "workflow": ".github/workflows/auto-verify.yml",
+      "trigger": ["auto verify", "verify:auto", "hercontroleer lekken"]
+    },
+    {
       "id": "data-flow",
       "taak": "data-pijplijn",
       "naam": "Data-flow",

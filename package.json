@@ -32,6 +32,8 @@
     "consent:bulk": "node scripts/security-scan/bulk-consent-register.mjs",
     "consent:scrub": "node scripts/security-scan/consent-scrub.mjs",
     "consent:activate": "node scripts/security-scan/consent-activate-owner.mjs",
+    "agent:auto-verify": "node scripts/auto-verify/run.mjs",
+    "verify:auto": "npm run agent:auto-verify",
     "lead:database": "node scripts/agents/klanten-lek/run.mjs",
     "scan:import": "node scripts/security-scan/import-queue.mjs",
     "lead:hunt": "node scripts/lead-hunter/run.mjs",

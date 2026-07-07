@@ -113,6 +113,15 @@
       "producent": "funnel.mjs"
     },
     {
+      "id": "auto-verify-status",
+      "naam": "Auto-verify status",
+      "bron": "data/auto-verify-status.json",
+      "publiek": "public/auto-verify-status.json",
+      "type": "json",
+      "canoniek": "data",
+      "producent": "auto-verify"
+    },
+    {
       "id": "potentiele-klanten",
       "naam": "Leads OSM",
       "bron": "data/potentiele-klanten.json",

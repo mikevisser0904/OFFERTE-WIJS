@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-07-07T08:23:23.188Z",
+  "updatedAt": "2026-07-07T08:26:05.528Z",
   "agent": "data-flow",
-  "healthy": true,
+  "healthy": false,
   "fixApplied": true,
   "summary": {
     "streams": 22,
     "ok": 22,
-    "drift": 0,
-    "synced": 0,
+    "drift": 1,
+    "synced": 1,
     "missing": 0,
     "warnings": 0
   },
@@ -22,10 +22,10 @@
       "id": "agents-registry",
       "naam": "Agent registry",
       "status": "ok",
-      "drift": false,
-      "synced": false,
+      "drift": true,
+      "synced": true,
       "issues": [],
-      "detail": "in sync"
+      "detail": "gesynchroniseerd data → public"
     },
     {
       "id": "agents-status",
@@ -217,6 +217,6 @@
       "detail": "public-only OK"
     }
   ],
-  "grokPrompt": "data-flow OK — alle streams gesynchroniseerd",
-  "agentPrompt": "22 streams OK · queue 0 pending · 1 lekken"
+  "grokPrompt": "agent dataflow --fix: 0 fout · 1 drift · 1 net gesynced",
+  "agentPrompt": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow"
 }

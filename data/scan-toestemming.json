@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T08:23:18.785Z",
+  "updatedAt": "2026-07-07T08:25:43.784Z",
   "uitleg": "individualConsent=true alleen na echte toestemming. auth-verify vereist scan-toestemming.local.json — geen klantdata-export.",
   "entries": [
     {
@@ -1387,7 +1387,7 @@
       "siteUrl": "https://www.voordeelgordijnen.nl/",
       "bedrijf": "Voordeelgordijnen",
       "consentDatum": "2026-07-07",
-      "consentRef": "Mike bevestigt schriftelijke/mail toestemming eigenaar voor passieve VakScan (2026-07-07)",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://www.voordeelgordijnen.nl/.env",
       "scope": [
         "passive-deep"
@@ -1395,7 +1395,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-07T08:21:20.781Z"
+      "mikeBevestigdOp": "2026-07-07T08:25:43.784Z"
     },
     {
       "siteUrl": "https://www.schreuderschilderwerken.nl/",

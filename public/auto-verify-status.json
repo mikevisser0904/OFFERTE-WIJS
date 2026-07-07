@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-07-07T08:26:06.001Z",
+  "agent": "auto-verify",
+  "summary": {
+    "leakHits": 1,
+    "leakVerified": 1,
+    "leakFailed": 0,
+    "consentChecked": 1,
+    "consentProofOk": 1
+  },
+  "leakRows": [
+    {
+      "url": "https://www.voordeelgordijnen.nl/",
+      "bedrijf": "Voordeelgordijnen",
+      "evidence": "https://www.voordeelgordijnen.nl/.env",
+      "dbOk": false,
+      "proofOk": true,
+      "status": "verified"
+    }
+  ],
+  "consentResults": [
+    {
+      "siteUrl": "https://www.voordeelgordijnen.nl/",
+      "bedrijf": "Voordeelgordijnen",
+      "passiveOk": true,
+      "authOk": null
+    }
+  ],
+  "steps": [
+    {
+      "id": "consent-scrub",
+      "ok": true
+    },
+    {
+      "id": "consent-activate",
+      "ok": true
+    },
+    {
+      "id": "verify-pma",
+      "ok": true
+    },
+    {
+      "id": "lead-berichten",
+      "ok": true
+    }
+  ],
+  "grokPrompt": "auto-verify: 1 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "1 verified · 1 consent OK · 0 failed recheck"
+}
