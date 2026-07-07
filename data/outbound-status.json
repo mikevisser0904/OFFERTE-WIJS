@@ -1,44 +1,44 @@
 {
-  "updatedAt": "2026-07-07T11:22:30.700Z",
+  "updatedAt": "2026-07-07T14:02:00.030Z",
   "agent": "outbound-auto",
-  "live": false,
+  "live": true,
   "gepland": 5,
   "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
-  "mislukt": 5,
+  "gesimuleerd": 5,
+  "mislukt": 0,
   "items": [
     {
       "bedrijf": "Firma Fred van Rijn",
-      "status": "failed",
+      "status": "simulated",
       "email": "info@firmavanrijn.nl",
       "phone": "31703211400"
     },
     {
       "bedrijf": "Textilia",
-      "status": "failed",
+      "status": "simulated",
       "email": "info@textilia-dordrecht.nl",
       "phone": "31639112809"
     },
     {
+      "bedrijf": "Bos Elektrotechniek",
+      "status": "simulated",
+      "email": "info@boselektrotechniek.nl",
+      "phone": "31520585539"
+    },
+    {
       "bedrijf": "Reinaerde Remake Meubel",
-      "status": "failed",
+      "status": "simulated",
       "email": "klantadvies@reinaerde.nl",
       "phone": "31623369577"
     },
     {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "status": "failed",
+      "status": "simulated",
       "email": "info@willemseelektrotechniek.nl",
       "phone": "31235739278"
-    },
-    {
-      "bedrijf": "Kroon interieurbouw",
-      "status": "failed",
-      "email": null,
-      "phone": "31950635027"
     }
   ],
-  "agentPrompt": "Outbound dry-run: 5 klaar — zet OUTBOUND_LIVE=1 + RESEND_API_KEY",
-  "grokPrompt": "outbound-auto dry-run — GitHub Secrets: RESEND_API_KEY, OUTBOUND_LIVE=1"
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+  "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }

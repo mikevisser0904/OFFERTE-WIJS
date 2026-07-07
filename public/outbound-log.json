@@ -104,6 +104,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-07T14:02:00.030Z",
+      "bedrijf": "Firma Fred van Rijn",
+      "url": "https://firmavanrijn.nl",
+      "host": "firmavanrijn.nl",
+      "email": "info@firmavanrijn.nl",
+      "phone": "31703211400",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-07T14:02:00.030Z",
+      "bedrijf": "Textilia",
+      "url": "https://www.textilia-dordrecht.nl",
+      "host": "textilia-dordrecht.nl",
+      "email": "info@textilia-dordrecht.nl",
+      "phone": "31639112809",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-07T14:02:00.030Z",
+      "bedrijf": "Bos Elektrotechniek",
+      "url": "https://www.boselektrotechniek.nl",
+      "host": "boselektrotechniek.nl",
+      "email": "info@boselektrotechniek.nl",
+      "phone": "31520585539",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-07T14:02:00.030Z",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "host": "reinaerde.nl",
+      "email": "klantadvies@reinaerde.nl",
+      "phone": "31623369577",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-07T14:02:00.030Z",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "url": "https://www.willemseelektrotechniek.nl",
+      "host": "willemseelektrotechniek.nl",
+      "email": "info@willemseelektrotechniek.nl",
+      "phone": "31235739278",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
