@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CopyBlock } from "@/components/copy-block";
 import {
@@ -30,8 +30,12 @@ import {
 const tabs = ["Setup", "Packages", "Berichten", "Profiel", "Marktplaats"] as const;
 type Tab = (typeof tabs)[number];
 
-export function FiverrGigPanel() {
-  const [tab, setTab] = useState<Tab>("Setup");
+export function FiverrGigPanel({ initialTab }: { initialTab?: Tab }) {
+  const [tab, setTab] = useState<Tab>(initialTab ?? "Setup");
+
+  useEffect(() => {
+    if (initialTab) setTab(initialTab);
+  }, [initialTab]);
 
   const faqText = fiverrFaqs.map((f) => `Q: ${f.q}\nA: ${f.a}`).join("\n\n");
   const extrasText = fiverrExtras.map((e) => `${e.name}: +$${e.priceUsd} — ${e.note}`).join("\n");
@@ -128,9 +132,13 @@ export function FiverrGigPanel() {
       {tab === "Profiel" && (
         <>
           <CopyBlock label="Seller bio" tekst={fiverrSellerProfile} />
-          <Link href="/marktplaats/" className="text-sm text-emerald-300 hover:underline">
-            Marktplaats + Malt listings →
-          </Link>
+          <button
+            type="button"
+            onClick={() => setTab("Marktplaats")}
+            className="text-sm text-emerald-300 hover:underline"
+          >
+            Marktplaats-tab →
+          </button>
         </>
       )}
 

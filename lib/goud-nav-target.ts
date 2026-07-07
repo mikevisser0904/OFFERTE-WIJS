@@ -11,8 +11,10 @@ export function goudTargetVoorHref(href: DashboardRoute | string): string | unde
     "/": "webshop",
     "/actie/": "actie",
     "/verkoop/": "verkoop",
-    "/fiverr/": "fiverr",
+    "/listings/": "listings",
+    "/fiverr/": "listings",
     "/marktplaats/": "listings",
+    "/tools/": "tools",
     "/ideeen/": "ideeen",
     "/configurator/": "configurator",
   };

@@ -1,5 +1,4 @@
 import { DashboardShell } from "@/components/dashboard-shell";
-import { ActiePanel } from "@/components/actie-panel";
 import { VandaagGeldPanel } from "@/components/vandaag-geld-panel";
 import { Spoed50Panel } from "@/components/spoed-50-panel";
 import Link from "next/link";
@@ -11,37 +10,22 @@ export default function ActiePage() {
       title="Vandaag geld"
       subtitle="5 WhatsApps · 1 gesprek · €299 Google Start is de snelste ja"
     >
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl space-y-10">
         <Spoed50Panel />
         <VandaagGeldPanel />
 
-        <p className="mt-10 text-xs font-semibold uppercase tracking-widest text-white/35">Extra</p>
-        <div className="mt-3">
-          <ActiePanel />
-        </div>
-
-        <section className="mt-10 grid gap-4 sm:grid-cols-3">
-          <Link
-            href="/demo/"
-            className="rounded-xl border border-white/8 bg-white/[0.02] p-4 hover:border-emerald-400/30"
-          >
-            <p className="font-bold">Demo-site</p>
-            <p className="mt-1 text-xs text-white/45">Wat klant krijgt</p>
-          </Link>
-          <Link
-            href="/webklaar/"
-            className="rounded-xl border border-white/8 bg-white/[0.02] p-4 hover:border-emerald-400/30"
-          >
-            <p className="font-bold">DoekoeWijs</p>
-            <p className="mt-1 text-xs text-white/45">Verkooppagina</p>
-          </Link>
-          <Link
-            href="/verkoop/"
-            className="rounded-xl border border-white/8 bg-white/[0.02] p-4 hover:border-emerald-400/30"
-          >
-            <p className="font-bold">Verkoopkit</p>
-            <p className="mt-1 text-xs text-white/45">Alle scripts</p>
-          </Link>
+        <section className="rounded-xl border border-white/8 p-5 text-sm text-white/55">
+          <p className="font-bold text-white/80">Meer copy</p>
+          <p className="mt-2">
+            Alle scripts en bezwaren:{" "}
+            <Link href="/verkoop/" className="text-emerald-300 hover:underline">
+              Verkoopkit →
+            </Link>
+            {" · "}
+            <Link href="/listings/" className="text-violet-300 hover:underline">
+              Fiverr + Marktplaats →
+            </Link>
+          </p>
         </section>
       </div>
     </DashboardShell>

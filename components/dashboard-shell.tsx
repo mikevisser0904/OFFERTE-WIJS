@@ -53,7 +53,7 @@ export function DashboardShell({
   title: string;
   subtitle?: string;
 }) {
-  const mobileNav = [...navVerkopen, ...navBeheer];
+  const mobileNav = [...navVerkopen, ...navBeheer, ...navTools];
 
   return (
     <div className="min-h-screen bg-[var(--site-bg)] text-white">

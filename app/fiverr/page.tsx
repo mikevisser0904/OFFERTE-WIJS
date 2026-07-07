@@ -1,19 +1,15 @@
 import { DashboardShell } from "@/components/dashboard-shell";
-import { FiverrGigPanel } from "@/components/fiverr-gig-panel";
+import { ListingsRedirect } from "@/components/listings-redirect";
 
 export const metadata = {
-  title: "Fiverr gig — DoekoeWijs",
-  description: "Copy-paste Fiverr gig setup — $199 starter package.",
+  title: "Fiverr — DoekoeWijs",
+  description: "Doorsturen naar Listings.",
 };
 
-export default function FiverrPage() {
+export default function FiverrAliasPage() {
   return (
-    <DashboardShell
-      active="/fiverr/"
-      title="Fiverr gig"
-      subtitle="Fiverr setup · Marktplaats-advertentie · packages · berichten — alles kopieerbaar"
-    >
-      <FiverrGigPanel />
+    <DashboardShell active="/listings/" title="Listings" subtitle="Fiverr-tab">
+      <ListingsRedirect />
     </DashboardShell>
   );
 }

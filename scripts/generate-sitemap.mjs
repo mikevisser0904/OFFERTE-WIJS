@@ -12,6 +12,7 @@ const staticPaths = [
   "bestellen/",
   "demo/",
   "webklaar/",
+  "listings/",
   "fiverr/",
   "marktplaats/",
   "land/",

@@ -31,7 +31,7 @@ export const vandaagHero = {
 export const vandaagStappen = [
   "Plak 5 nummers hieronder → 5× Verstuur (15 min)",
   "Deel status/LinkedIn met onderstaande tekst (5 min)",
-  "Marktplaats live vanaf /fiverr/ (15 min)",
+  "Marktplaats live vanaf /listings/ (15 min)",
   "Bij ja: 50% Tikkie → order:intake → Maarten bouwt",
 ] as const;
 
