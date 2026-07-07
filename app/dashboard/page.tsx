@@ -4,6 +4,7 @@ import { AutopilotPanel } from "@/components/autopilot-panel";
 import { DashboardVandaag } from "@/components/dashboard-vandaag";
 import { EchteKlantenPanel } from "@/components/echte-klanten-panel";
 import { RisicoPassiefPanel } from "@/components/risico-passief-panel";
+import { ToegangScanPanel } from "@/components/toegang-scan-panel";
 import { MaartenWachtrijPanel } from "@/components/maarten-wachtrij-panel";
 import { GoalTracker, GoalBreakdown, GoalMilestones } from "@/components/goal-tracker";
 import { doelWekelijks, hoofddoel } from "@/data/doel";
@@ -69,6 +70,7 @@ export default function DashboardPage() {
         </section>
 
         <EchteKlantenPanel />
+        <ToegangScanPanel />
         <RisicoPassiefPanel />
         <AutopilotPanel />
         <DashboardVandaag />

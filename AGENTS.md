@@ -13,6 +13,7 @@ Mike verkoopt, Maarten bouwt. Static Next.js export op GitHub Pages — **geen s
 ## VakScan → verkopen (default)
 
 - **Dashboard:** `/dashboard/` · `/actie/` · `/agents/` · `/leads/`
+- **Toegang (erin?):** `npm run scan:toegang` — open dashboard / klant-inlog / .env+toestemming; geen brute force
 - **Pipeline:** `npm run funnel:light` of `npm run lead:berichten` + `npm run agent:outreach`
 - **Regels:** passief scan, actionable phpMyAdmin, `adminProof.ok` voor schrik-tekst · `npm run test:vakscan-detect`
 - **Uitzetten lek-automaat:** `VAKSCAN_SALES=0` in optimizer; outreach-cron handmatig uit in workflow
