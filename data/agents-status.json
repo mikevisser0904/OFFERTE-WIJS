@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T22:09:02.777Z",
+  "updatedAt": "2026-07-07T23:14:05.635Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T14:36:17.943Z",
+      "lastRun": "2026-07-07T23:14:04.738Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -15,7 +15,7 @@
       ]
     },
     "manager": {
-      "lastRun": "2026-07-07T21:54:18.304Z",
+      "lastRun": "2026-07-07T23:14:05.635Z",
       "fase": "verkopen",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
@@ -41,10 +41,10 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-07T21:39:31.713Z",
+      "lastRun": "2026-07-07T23:14:05.347Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "data-flow": {
@@ -88,16 +88,16 @@
       "grokPrompt": "auto-verify: 7 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-07T22:09:02.383Z",
+      "lastRun": "2026-07-07T23:14:04.723Z",
       "ok": true,
-      "contactenVandaag": 10,
-      "metBewijs": 10,
-      "agentPrompt": "Verkoop-bewijs: 10 klanten met live bewijs — start Decor Gordijn (HTTP 200) · /dashboard/ + /agents/",
-      "grokPrompt": "agent verkoop-bewijs — Decor Gordijn: controle https://www.decorgordijn.nl/phpmyadmin/ · rapport ec27b9f2d9e9. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+      "contactenVandaag": 12,
+      "metBewijs": 19,
+      "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
+      "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
-        "Decor Gordijn · https://www.decorgordijn.nl/phpmyadmin/",
-        "De Pagter · https://depagter.info/phpmyadmin/",
-        "Pruis Schilderwerken · https://server-alfa.heroo.nl/phpMyAdmin/"
+        "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
+        "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
+        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
       ]
     },
     "seo": {
@@ -124,7 +124,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T21:54:18.304Z",
+    "updatedAt": "2026-07-07T23:14:05.635Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Verkoop-bewijs klaar",
@@ -143,22 +143,22 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-07T21:39:31.713Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-07-07T23:14:05.347Z"
       },
       {
         "id": "auto-verify",
         "naam": "Auto-verify",
         "status": "ok",
-        "detail": "15 verified · 15 consent OK · 0 failed recheck",
-        "lastRun": "2026-07-07T18:37:11.125Z"
+        "detail": "7 verified · 7 consent OK · 8 failed recheck",
+        "lastRun": "2026-07-07T22:09:02.777Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 15 lekken",
-        "lastRun": "2026-07-07T21:50:23.083Z"
+        "lastRun": "2026-07-07T22:09:02.770Z"
       },
       {
         "id": "health-monitor",
@@ -228,7 +228,7 @@
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-07T18:37:10.772Z"
+        "lastRun": "2026-07-07T23:14:04.723Z"
       },
       {
         "id": "outbound-auto",
@@ -242,7 +242,7 @@
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-07-07T14:36:17.943Z"
+        "lastRun": "2026-07-07T23:14:04.738Z"
       },
       {
         "id": "seo",
