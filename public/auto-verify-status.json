@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-07T10:40:46.271Z",
+  "updatedAt": "2026-07-07T11:30:42.144Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 15,
-    "leakVerified": 13,
-    "leakFailed": 2,
+    "leakVerified": 15,
+    "leakFailed": 0,
     "consentChecked": 15,
-    "consentProofOk": 13
+    "consentProofOk": 15
   },
   "leakRows": [
     {
@@ -77,9 +77,9 @@
       "url": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.ejvandermeer.nl",
@@ -93,9 +93,9 @@
       "url": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
@@ -152,7 +152,7 @@
     {
       "siteUrl": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -164,7 +164,7 @@
     {
       "siteUrl": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -236,10 +236,18 @@
       "ok": true
     },
     {
+      "id": "risico-passief",
+      "ok": true
+    },
+    {
       "id": "lead-berichten",
+      "ok": true
+    },
+    {
+      "id": "verkoop-bewijs",
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "13 verified · 13 consent OK · 2 failed recheck"
+  "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck"
 }

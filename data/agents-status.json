@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T11:25:18.215Z",
+  "updatedAt": "2026-07-07T11:30:42.145Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T11:03:46.627Z",
@@ -48,7 +48,7 @@
       "wachtrijPending": 1
     },
     "data-flow": {
-      "lastRun": "2026-07-07T11:22:36.012Z",
+      "lastRun": "2026-07-07T11:30:42.139Z",
       "ok": true,
       "healthy": true,
       "streams": 24,
@@ -80,24 +80,24 @@
       "agentPrompt": "Lead Hunter: 184 leads, 0 queue pending — npm run funnel voor outreach"
     },
     "auto-verify": {
-      "lastRun": "2026-07-07T10:40:46.272Z",
+      "lastRun": "2026-07-07T11:30:42.145Z",
       "ok": true,
-      "leakVerified": 13,
-      "consentProofOk": 13,
-      "agentPrompt": "13 verified · 13 consent OK · 2 failed recheck",
-      "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 15,
+      "consentProofOk": 15,
+      "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck",
+      "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-07T11:03:42.882Z",
+      "lastRun": "2026-07-07T11:30:41.802Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 16,
+      "metBewijs": 20,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
         "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
-        "Reinaerde Remake Meubel · https://s246.webhostingserver.nl/phpMyAdmin/"
+        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
       ]
     },
     "seo": {

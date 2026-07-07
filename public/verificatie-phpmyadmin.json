@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-07-07T10:38:45.095Z",
+  "verifiedAt": "2026-07-07T11:29:52.403Z",
   "totaal": 14,
-  "loginBereikbaar": 12,
-  "uniekeLoginUrls": 12,
-  "bevestigd": 4,
+  "loginBereikbaar": 14,
+  "uniekeLoginUrls": 14,
+  "bevestigd": 6,
   "hosting_redirect": 8,
   "false_positive": 0,
-  "onbekend": 2,
+  "onbekend": 0,
   "redirect_anders": 0,
   "results": [
     {
@@ -128,10 +128,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -156,10 +160,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://chargecars.nl/phpMyAdmin/",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
+      "http": 200,
+      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Reinaerde Remake Meubel",
