@@ -4,6 +4,7 @@ import { goudTargetVoorHref, isGoudNavItem } from "@/lib/goud-nav-target";
 
 const nav = [
   { href: "/dashboard/", label: "Dashboard", icon: "▦" },
+  { href: "/visie/", label: "Groot plan", icon: "✦" },
   { href: "/leads/", label: "Klanten", icon: "◈" },
   { href: "/scan/", label: "VakScan", icon: "⛨" },
   { href: "/agents/", label: "Agents", icon: "◇" },

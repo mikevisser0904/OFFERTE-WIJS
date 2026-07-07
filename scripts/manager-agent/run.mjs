@@ -149,8 +149,8 @@ function decide(s) {
   }
 
   if (fase === "rust") {
-    grokPrompt = "manager OK — monitor check of npm run agent:pipeline voor volgende ronde";
-    mikeActie = "Optioneel: 5 cold WhatsApps via /verkoop/";
+    grokPrompt = "manager OK — npm run agent:pipeline (Fase 1 groot plan) of /visie/ check";
+    mikeActie = "5 WhatsApps via /agents/ — groot plan: /visie/";
   }
 
   return { fase, faseLabel, prioriteit, grokPrompt, mikeActie, acties };

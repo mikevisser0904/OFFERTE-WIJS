@@ -9,6 +9,7 @@ const checks = [
   { name: "Monitor", path: "/monitor/" },
   { name: "VakScan", path: "/scan/" },
   { name: "Agents", path: "/agents/" },
+  { name: "Groot plan", path: "/visie/" },
   { name: "Bestellen", path: "/bestellen/" },
   { name: "Ideeën", path: "/ideeen/" },
   { name: "Diensten", path: "/diensten/" },

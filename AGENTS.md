@@ -177,3 +177,9 @@ npm run autopilot         # health + maarten-sync + bouw-hint + manager + ntfy
 ```
 
 Legacy: `npm run scan:leaks` = zelfde als `agent:vakscan-leaks`.
+
+## Groot plan (visie & fases)
+
+UI: **/visie/** · Data: `data/groot-plan.ts` · `GROOT-PLAN.md`
+
+Fase 1 = agent-funnel naar €10k. Bij "groots bouwen" / strategie: lees groot-plan, werk alleen aan **nu**-fase tenzij Mike vraagt om Fase 2+.
