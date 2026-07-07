@@ -177,6 +177,49 @@ export const seoLandingen: SeoLanding[] = [
     dienst: "vakman-site",
     stad: "Amersfoort",
   },
+  {
+    slug: "website-electrician-3-days",
+    title: "Electrician website in 3 days — from $199 | WebKlaar",
+    h1: "Professional electrician website — fast delivery",
+    metaDescription:
+      "5-page mobile website for electrical contractors. Template-based, live in 3 days. Portfolio demo available. Fixed price.",
+    keywords: ["electrician website", "electrical contractor web design", "small business website 3 days"],
+    intro: "Homeowners search on Google — if your electrical business looks outdated, they call the next result.",
+    paragraphs: [
+      "WebKlaar delivers a proven 5-page layout: services, service area, reviews, contact, and WhatsApp.",
+      "Fixed scope, 3-day turnaround after we receive your logo and copy. See our live demo before you buy.",
+      "Order via Fiverr or contact us — no long agency contracts.",
+    ],
+    dienst: "vakman-site",
+  },
+  {
+    slug: "website-plumber-small-business",
+    title: "Plumber website — 5 pages, mobile | WebKlaar",
+    h1: "Website for plumbing & heating businesses",
+    metaDescription:
+      "Modern plumber website: mobile-first, contact form, fast static hosting. Delivered in 3 business days.",
+    keywords: ["plumber website design", "heating engineer website", "local trade website"],
+    intro: "Emergency calls and quotes start online. A clear site pays for itself with one extra job.",
+    paragraphs: [
+      "We specialize in trade businesses — not generic templates that look like everyone else.",
+      "You bring texts and photos; we ship a polished site. Demo link on request.",
+    ],
+    dienst: "vakman-site",
+  },
+  {
+    slug: "small-business-website-fast",
+    title: "Small business website in 3 days — fixed price | WebKlaar",
+    h1: "Small business website — fixed price, fast",
+    metaDescription:
+      "Need a business website without a €5k agency? 5 pages, SEO basics, mobile. Live in 3 days.",
+    keywords: ["small business website fast", "affordable business website", "5 page website"],
+    intro: "You do not need a monthly agency retainer to look professional online.",
+    paragraphs: [
+      "WebKlaar: one product, clear delivery, portfolio you can click through today.",
+      "Ideal for local services, salons, contractors, and solo entrepreneurs.",
+    ],
+    dienst: "vakman-site",
+  },
 ];
 
 export function getSeoLanding(slug: string) {

@@ -10,6 +10,12 @@ Repo: `~/Developer/offerte-wijs` · Live: https://mikevisser0904.github.io/OFFER
 
 Mike verkoopt, Maarten bouwt. Static Next.js export op GitHub Pages — **geen server API routes**.
 
+## €0 verkopen (default — geen lek-outreach)
+
+- **Mike:** `docs/ZERO-START.md` · gig-tekst `docs/FIVERR.md`
+- **Order:** `npm run order:intake -- --bedrijf "…" --kanaal fiverr --prijs 199`
+- **Grok:** SEO-pool, geen `agent:outreach` cron; VakScan-sales alleen met `VAKSCAN_SALES=1`
+
 ## Maarten-wachtrij (ideeën doorvoeren)
 
 Maarten deelt ideeën via het formulier op `/ideeen/` of in de goudzoeker-agent. Ze komen binnen via ntfy en worden elke 5 min gesynchroniseerd naar:

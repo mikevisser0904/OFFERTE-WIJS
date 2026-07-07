@@ -121,11 +121,12 @@ function plan(a) {
     });
   }
 
-  if (a.leakCount > 0 && a.outreachAge > 8) {
+  const vakscanSales = process.env.VAKSCAN_SALES === "1";
+  if (vakscanSales && a.leakCount > 0 && a.outreachAge > 8) {
     safe.push({ id: "refresh-outreach", titel: "Outreach verversen (lekken wachten)", fn: "refreshOutreach" });
   }
 
-  if (a.pending > 10 && a.stats.lastBatchAt && hoursSince(a.stats.lastBatchAt) > 18) {
+  if (vakscanSales && a.pending > 10 && a.stats.lastBatchAt && hoursSince(a.stats.lastBatchAt) > 18) {
     safe.push({
       id: "run-leak-scan",
       titel: `VakScan leaks op ${a.pending} pending`,
@@ -137,7 +138,7 @@ function plan(a) {
   safe.push({ id: "consent-scrub", titel: "Toestemming opschonen (geen bulk/404)", fn: "consentScrub" });
   safe.push({ id: "sanitize-leak-hits", titel: "Leak-hits sanitizen (actionable-only)", fn: "sanitizeHits" });
 
-  if (a.leadsTotaal < 25 && a.leadsAge > 72) {
+  if (vakscanSales && a.leadsTotaal < 25 && a.leadsAge > 72) {
     safe.push({ id: "run-lead-hunter", titel: "Lead Hunter (weinig leads)", fn: "runLeads", zwaar: true });
   }
 

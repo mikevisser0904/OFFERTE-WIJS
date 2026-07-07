@@ -1,14 +1,15 @@
-name: Agent Outreach
+name: SEO weekly (build + sitemap)
 
-# Lek-outreach uit (€0 / Fiverr-strategie). Handmatig: workflow_dispatch + VAKSCAN_SALES=1
 on:
+  schedule:
+    - cron: "0 6 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  outreach:
+  seo:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,11 +18,12 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      - run: npm run agent:outreach
+      - run: node scripts/seo-add-from-pool.mjs
+      - run: GITHUB_PAGES=true npm run build
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/outreach-vandaag.json public/outreach-vandaag.json data/agents-status.json public/agents-status.json 2>/dev/null || true
-          git diff --staged --quiet || git commit -m "agent: outreach $(date -u +%Y-%m-%d)"
+          git add data/seo-landingen.ts data/seo-landing-pool.json
+          git diff --staged --quiet || git commit -m "seo: weekly pool + build $(date -u +%Y-%m-%d)"
           git pull --rebase origin main || true
           git push || true
