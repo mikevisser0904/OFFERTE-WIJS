@@ -1,0 +1,42 @@
+{
+  "versie": 1,
+  "team": "Mike verkoopt · Maarten bouwt · Agents automatiseren",
+  "agents": [
+    {
+      "id": "lead-hunter",
+      "naam": "Lead Hunter",
+      "rol": "Vindt vakbedrijven met website (OSM) → queue → VakScan",
+      "skill": ".grok/skills/lead-hunter/SKILL.md",
+      "script": "npm run agent:leads",
+      "workflow": ".github/workflows/lead-hunter.yml",
+      "trigger": ["potentiële klanten", "leads halen", "vul queue", "agent leads"]
+    },
+    {
+      "id": "outreach",
+      "naam": "Outreach",
+      "rol": "Prioriteert wie Mike vandaag belt/WhatsAppt (lekken eerst, dan warme scores)",
+      "skill": ".grok/skills/outreach-agent/SKILL.md",
+      "script": "npm run agent:outreach",
+      "workflow": ".github/workflows/outreach-agent.yml",
+      "trigger": ["wie bellen", "outreach", "verkoop vandaag", "agent outreach"]
+    },
+    {
+      "id": "vakscan",
+      "naam": "VakScan",
+      "rol": "Passieve security + database-lek checks op queue",
+      "skill": "AGENTS.md § VakScan",
+      "script": "npm run scan:leaks",
+      "workflow": ".github/workflows/scan-batch.yml",
+      "trigger": ["scan", "database lek", "vakscan"]
+    },
+    {
+      "id": "autopilot",
+      "naam": "Autopilot",
+      "rol": "Health, maarten-sync, KPI — coördineert prompts",
+      "skill": ".grok/skills/webklaar-monitor/SKILL.md",
+      "script": "npm run autopilot",
+      "workflow": ".github/workflows/autopilot.yml",
+      "trigger": ["monitor", "dashboard", "autopilot"]
+    }
+  ]
+}

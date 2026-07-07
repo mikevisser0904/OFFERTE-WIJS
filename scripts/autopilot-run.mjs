@@ -10,6 +10,7 @@ const ROOT = join(import.meta.dirname, "..");
 const DATA_STATUS = join(ROOT, "data/autopilot-status.json");
 const PUBLIC_STATUS = join(ROOT, "public/autopilot-status.json");
 const WACHTRIJ = join(ROOT, "data/maarten-wachtrij.json");
+const AGENTS_STATUS = join(ROOT, "data/agents-status.json");
 const NTFY = "https://ntfy.sh/webklaar-mike";
 
 function runNode(script) {
@@ -42,6 +43,22 @@ if (existsSync(WACHTRIJ)) {
   }
 }
 
+let agentHint = null;
+if (existsSync(AGENTS_STATUS)) {
+  try {
+    const a = JSON.parse(readFileSync(AGENTS_STATUS, "utf8"));
+    const outreach = a.agents?.outreach;
+    const lh = a.agents?.["lead-hunter"];
+    if (outreach?.contactenVandaag > 0 && outreach?.agentPrompt) {
+      agentHint = outreach.agentPrompt;
+    } else if ((lh?.queuePending ?? 0) > 20) {
+      agentHint = `Lead Hunter: ${lh.queuePending} pending — draai npm run scan:leaks en agent:outreach`;
+    }
+  } catch {
+    /* ignore */
+  }
+}
+
 const now = new Date().toISOString();
 const status = {
   versie: 1,
@@ -56,7 +73,8 @@ const status = {
   nextAgentPrompt:
     pending.length > 0
       ? `voer maarten wachtrij uit — ${pending.length} pending in OFFERTE-WIJS`
-      : "monitor check — geen pending ideeën",
+      : agentHint || "monitor check — of: npm run agent:pipeline voor leads + outreach",
+  agentHint,
   eerstePending: pending[0]
     ? { id: pending[0].id, tekst: pending[0].tekst?.slice(0, 120), euro: pending[0].euro }
     : null,

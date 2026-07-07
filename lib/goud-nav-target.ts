@@ -4,6 +4,7 @@ export function goudTargetVoorHref(href: DashboardRoute | string): string | unde
   const map: Record<string, string> = {
     "/dashboard/": "dashboard",
     "/scan/": "scan",
+    "/agents/": "agents",
     "/monitor/": "monitor",
     "/": "webshop",
     "/actie/": "actie",

@@ -133,3 +133,35 @@ Bulk leak-scan slaat **geen** rapport op voor schone sites (alleen `data/leak-hi
 4. Verkoop via **Website Veilig** (€299) + template `vakscan` in `data/verkoop.ts` → `/actie/`
 
 **Disclaimer** staat in elk rapport en op `/scan/`: alleen met toestemming eigenaar of als aangeboden gratis check.
+
+## Agent-team (Lead Hunter + Outreach)
+
+Live hub: **/agents/** · Registry: `data/agents-registry.json`
+
+| Agent | Doel | Commando | Grok-trigger |
+|-------|------|----------|--------------|
+| **Lead Hunter** | OSM vakbedrijven → `scan-queue` | `npm run agent:leads` | "agent leads", "potentiële klanten" |
+| **VakScan** | Leak-scan op queue | `npm run scan:leaks` | "vakscan", "database lek" |
+| **Outreach** | Wie Mike vandaag belt/WhatsAppt | `npm run agent:outreach` | "agent outreach", "wie bellen" |
+| **Autopilot** | Health + wachtrij + agent-hint | `npm run autopilot` | "monitor check" |
+
+**Volledige funnel (lokaal of op verzoek Mike):**
+
+```bash
+npm run agent:pipeline
+```
+
+Skills: `.grok/skills/lead-hunter/SKILL.md` · `.grok/skills/outreach-agent/SKILL.md`
+
+### Outreach-agent (tweede agent — sales)
+
+1. Lees `data/outreach-vandaag.json` na `npm run agent:outreach`
+2. Prioriteit: **lek-hits** → hoge VakScan-score → koude leads met demo
+3. Mike gebruikt `/agents/` of `/actie/` — jij pusht geen berichten zonder Mike
+4. GitHub Action: `.github/workflows/outreach-agent.yml` (dagelijks 07:00 UTC)
+
+### Lead Hunter-agent (prospectie)
+
+1. `node scripts/lead-hunter/osm-fetch.mjs` — echte bedrijven met `website` in OSM
+2. `agent-run.mjs` merged automatisch in queue
+3. Action: `.github/workflows/lead-hunter.yml` (maandag 06:00 UTC)

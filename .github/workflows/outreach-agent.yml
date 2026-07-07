@@ -1,0 +1,28 @@
+name: Agent Outreach
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  outreach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run agent:outreach
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/outreach-vandaag.json public/outreach-vandaag.json data/agents-status.json public/agents-status.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "agent: outreach $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main || true
+          git push || true
