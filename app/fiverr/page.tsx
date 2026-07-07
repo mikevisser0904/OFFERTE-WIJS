@@ -11,7 +11,7 @@ export default function FiverrPage() {
     <DashboardShell
       active="/fiverr/"
       title="Fiverr gig"
-      subtitle="Setup · packages · berichten · profiel — alles kopieerbaar"
+      subtitle="Fiverr setup · Marktplaats-advertentie · packages · berichten — alles kopieerbaar"
     >
       <FiverrGigPanel />
     </DashboardShell>

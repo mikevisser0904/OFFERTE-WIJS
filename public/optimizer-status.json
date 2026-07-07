@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-07-07T08:22:56.520Z",
+  "updatedAt": "2026-07-07T10:53:29.793Z",
   "agent": "optimizer",
   "applyMode": true,
   "metrics": {
     "pending": 0,
-    "leakCount": 1,
-    "outreachCount": 15,
+    "leakCount": 15,
+    "outreachCount": 6,
     "leadsTotaal": 184,
     "hitRate": 17.5,
-    "avgMs": 244
+    "avgMs": 372
   },
   "uitgevoerd": [
     {
@@ -23,7 +23,7 @@
       "titel": "Toestemming opschonen (geen bulk/404)",
       "fn": "consentScrub",
       "status": "ok",
-      "result": false
+      "result": true
     },
     {
       "id": "sanitize-leak-hits",

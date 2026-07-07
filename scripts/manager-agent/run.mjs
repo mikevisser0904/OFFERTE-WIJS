@@ -143,13 +143,21 @@ function decide(s) {
     mikeActie = `${s.leakCount} lek(ken): open /agents/ → WhatsApp → Website Veilig €299`;
     acties.push({ wie: "grok", actie: "Outreach verversen", script: "npm run agent:outreach" });
     acties.push({ wie: "mike", actie: "Bel/WhatsApp top 3 uit outreach", script: "/agents/" });
-  } else if (s.outreachCount > 0 && fase !== "bouw") {
+  } else if (s.outreachCount > 0 && fase !== "bouw" && process.env.VAKSCAN_SALES === "1") {
     fase = "verkopen";
     faseLabel = "Outreach klaar";
     prioriteit = Math.min(prioriteit, 4);
     grokPrompt = s.or?.agentPrompt || `Mike: ${s.outreachCount} contacten op /agents/ — begin met lekken/score`;
     mikeActie = `${s.outreachCount} contacten wachten op /agents/`;
     acties.push({ wie: "mike", actie: "5 WhatsApps vandaag", script: "/actie/" });
+  } else if (fase === "rust" && process.env.VAKSCAN_SALES !== "1") {
+    fase = "verkopen";
+    faseLabel = "€0 start — Fiverr & Marktplaats";
+    prioriteit = Math.min(prioriteit, 4);
+    grokPrompt = "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/";
+    mikeActie = "Plak gig op fiverr.com + Marktplaats-advertentie van /fiverr/ (bovenaan op de pagina)";
+    acties.push({ wie: "mike", actie: "Fiverr + Marktplaats live", script: "/fiverr/" });
+    acties.push({ wie: "mike", actie: "Warm netwerk (1 bericht)", script: "docs/ZERO-START.md" });
   }
 
   if (s.queuePending > 15 && s.scanStale > 20) {

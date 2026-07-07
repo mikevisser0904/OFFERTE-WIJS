@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-07-07T10:33:06.391Z",
+  "updatedAt": "2026-07-07T10:53:30.529Z",
   "agent": "manager",
   "fase": "verkopen",
-  "faseLabel": "Outreach klaar",
-  "prioriteit": 4,
-  "grokPrompt": "Outreach: 6 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
-  "mikeActie": "6 contacten wachten op /agents/",
+  "faseLabel": "€0 start — Fiverr & Marktplaats",
+  "prioriteit": 1,
+  "grokPrompt": "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/",
+  "mikeActie": "Plak gig op fiverr.com + Marktplaats-advertentie van /fiverr/ (bovenaan op de pagina)",
   "acties": [
     {
-      "wie": "grok",
-      "actie": "Data-flow sync",
-      "script": "npm run agent:dataflow"
+      "wie": "mike",
+      "actie": "Fiverr + Marktplaats live",
+      "script": "/fiverr/"
     },
     {
       "wie": "mike",
-      "actie": "5 WhatsApps vandaag",
-      "script": "/actie/"
+      "actie": "Warm netwerk (1 bericht)",
+      "script": "docs/ZERO-START.md"
     }
   ],
   "cards": [
@@ -24,42 +24,42 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 1 · laatste fixes 3",
-      "lastRun": "2026-07-07T08:22:56.520Z"
+      "lastRun": "2026-07-07T10:53:29.793Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
-      "detail": "1 verified · 1 consent OK · 0 failed recheck",
-      "lastRun": "2026-07-07T08:26:06.002Z"
+      "detail": "13 verified · 13 consent OK · 2 failed recheck",
+      "lastRun": "2026-07-07T10:40:46.272Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
-      "status": "actie",
-      "detail": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
-      "lastRun": "2026-07-07T08:26:05.529Z"
+      "status": "ok",
+      "detail": "23 streams OK · queue 0 pending · 15 lekken",
+      "lastRun": "2026-07-07T10:53:28.717Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 244ms",
-      "lastRun": "2026-07-07T07:31:25.463Z"
+      "detail": "OK 372ms",
+      "lastRun": "2026-07-07T10:53:28.556Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-07-07T07:31:25.997Z"
+      "lastRun": "2026-07-07T10:53:29.444Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-07-07T07:31:26.031Z"
+      "lastRun": "2026-07-07T10:53:29.483Z"
     },
     {
       "id": "lead-hunter",

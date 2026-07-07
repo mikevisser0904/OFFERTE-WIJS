@@ -1,14 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T10:33:06.392Z",
+  "updatedAt": "2026-07-07T10:53:30.544Z",
   "healthy": true,
-  "avgResponseMs": 354,
+  "avgResponseMs": 372,
   "pendingMaarten": 0,
   "wachtrijTotaal": 1,
-  "lastHealthCheck": "2026-07-07T06:51:57.191Z",
+  "lastHealthCheck": "2026-07-07T10:53:28.550Z",
   "healthOk": true,
   "syncOk": true,
-  "nextAgentPrompt": "Outreach: 6 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
-  "eerstePending": null,
-  "managerFase": "verkopen"
+  "managerOk": true,
+  "managerFase": "verkopen",
+  "nextAgentPrompt": "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/",
+  "agentHint": "Kleine verkoop-verbetering of docs/ZERO-START — Mike: Fiverr gig + Marktplaats op /fiverr/",
+  "mikeActie": "Plak gig op fiverr.com + Marktplaats-advertentie van /fiverr/ (bovenaan op de pagina)",
+  "eerstePending": null
 }

@@ -2,7 +2,12 @@ import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
 import { CopyBlock } from "@/components/copy-block";
 import { webklaar } from "@/data/diensten-online";
-import { fiverrGigTitle, marktplaatsAdvertentie } from "@/data/fiverr-gig";
+import {
+  fiverrGigTitle,
+  marktplaatsAdvertentie,
+  marktplaatsTekst,
+  marktplaatsTitel,
+} from "@/data/fiverr-gig";
 
 const maltProfiel = `WebKlaar — Websites voor vakmannen in 3 dagen
 
@@ -46,7 +51,9 @@ export default function MarktplaatsPage() {
             (tab Marktplaats). Fiverr: {fiverrGigTitle}
           </p>
         </section>
-        <CopyBlock label="Marktplaats (zelfde als /fiverr/ tab)" tekst={marktplaatsAdvertentie} />
+        <CopyBlock label="Marktplaats — titel" tekst={marktplaatsTitel} />
+        <CopyBlock label="Marktplaats — omschrijving" tekst={marktplaatsTekst} />
+        <CopyBlock label="Marktplaats — alles in één" tekst={marktplaatsAdvertentie} />
         <CopyBlock label="Malt profiel (Nederlands)" tekst={maltProfiel} />
 
         <section className="rounded-xl border border-white/8 p-5 text-sm text-white/55">

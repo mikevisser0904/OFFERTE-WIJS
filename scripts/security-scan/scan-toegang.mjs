@@ -12,8 +12,29 @@ import { fileURLToPath } from "url";
 import { detectPhpMyAdmin } from "./admin-panel-detect.mjs";
 import { hostKey, getActiveConsent, getLocalCredentials, consentIsVerifiable } from "./consent-registry.mjs";
 import { hitIsActionable } from "./leak-actionable.mjs";
+import { ADMIN_PANELS } from "./leak-probes.mjs";
 
 const ROOT = process.cwd();
+
+async function discoverPmaOnSite(siteUrl) {
+  let origin;
+  try {
+    origin = new URL(siteUrl.startsWith("http") ? siteUrl : `https://${siteUrl}`).origin;
+  } catch {
+    return [];
+  }
+  const found = [];
+  for (const panel of ADMIN_PANELS.slice(0, 6)) {
+    const url = `${origin}${panel.path}`;
+    try {
+      const { body, status } = await fetchHtml(url, 60_000);
+      if (status === 200 && detectPhpMyAdmin(body)) found.push(url);
+    } catch {
+      /* */
+    }
+  }
+  return found;
+}
 
 function parseEnvSecrets(text) {
   const out = {};
@@ -119,19 +140,25 @@ async function main() {
 
   for (const t of targets) {
     const consent = consentIsVerifiable(getActiveConsent(t.siteUrl)) ? getActiveConsent(t.siteUrl) : null;
+    let pmaUrl = t.pmaUrl || null;
+    if (!pmaUrl && consent) {
+      const discovered = await discoverPmaOnSite(t.siteUrl);
+      if (discovered[0]) pmaUrl = discovered[0];
+    }
+
     const row = {
       bedrijf: t.bedrijf,
       siteUrl: t.siteUrl,
       toestemming: !!consent,
-      pmaUrl: t.pmaUrl || null,
+      pmaUrl,
       erin: false,
       methode: null,
       detail: null,
     };
 
-    if (t.pmaUrl) {
+    if (pmaUrl) {
       try {
-        const { body } = await fetchHtml(t.pmaUrl);
+        const { body } = await fetchHtml(pmaUrl);
         if (dashboardOpen(body)) {
           row.erin = true;
           row.methode = "open_dashboard";
@@ -142,10 +169,10 @@ async function main() {
       }
     }
 
-    if (!row.erin && consent && t.pmaUrl) {
+    if (!row.erin && consent && pmaUrl) {
       const local = getLocalCredentials(t.siteUrl);
       if (local?.username && local?.password) {
-        const auth = await tryPmaLogin(local.loginUrl || t.pmaUrl, local.username, local.password);
+        const auth = await tryPmaLogin(local.loginUrl || pmaUrl, local.username, local.password);
         if (auth.erin) Object.assign(row, auth);
         else if (!row.methode) Object.assign(row, auth);
       }
@@ -156,14 +183,20 @@ async function main() {
         const { body, status } = await fetchHtml(t.envUrl, 32_000);
         if (status === 200) {
           const secrets = parseEnvSecrets(body);
-          if (secrets && t.pmaUrl) {
-            const auth = await tryPmaLogin(t.pmaUrl, secrets.user, secrets.pass);
+          if (secrets) {
             row.envGebruikt = true;
-            if (auth.erin) {
-              Object.assign(row, auth);
-              row.methode = "login_via_publieke_env";
-              row.detail = `${auth.detail} (credentials stonden in publieke ${t.envUrl})`;
-            } else if (!row.methode) {
+            const tryUrls = pmaUrl ? [pmaUrl] : await discoverPmaOnSite(t.siteUrl);
+            for (const u of tryUrls) {
+              const auth = await tryPmaLogin(u, secrets.user, secrets.pass);
+              if (auth.erin) {
+                row.pmaUrl = u;
+                Object.assign(row, auth);
+                row.methode = "login_via_publieke_env";
+                row.detail = `${auth.detail} (publieke ${t.envUrl})`;
+                break;
+              }
+            }
+            if (!row.erin && !row.methode && secrets) {
               row.methode = "env_gevonden_login_mislukt";
               row.detail = "DB-gegevens in .env maar phpMyAdmin-login geweigerd";
             }

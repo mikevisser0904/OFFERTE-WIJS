@@ -64,6 +64,25 @@ export function FiverrGigPanel() {
         </a>
       </section>
 
+      <section className="rounded-2xl border border-emerald-400/30 bg-emerald-400/[0.06] p-5">
+        <p className="text-xs font-semibold uppercase tracking-widest text-emerald-400">Marktplaats</p>
+        <p className="mt-1 text-sm text-white/55">
+          Diensten en Vakmensen → Websites. Plak titel en omschrijving apart, of alles-in-één.
+        </p>
+        <div className="mt-4 space-y-4">
+          <CopyBlock label="Titel" tekst={marktplaatsTitel} />
+          <CopyBlock label="Omschrijving" tekst={marktplaatsTekst} />
+          <CopyBlock label="Alles in één veld" tekst={marktplaatsAdvertentie} />
+        </div>
+        <button
+          type="button"
+          onClick={() => setTab("Marktplaats")}
+          className="mt-3 text-xs text-emerald-300/80 hover:text-emerald-200 hover:underline"
+        >
+          Meer in tab Marktplaats →
+        </button>
+      </section>
+
       {tab === "Setup" && (
         <>
           <section className="rounded-xl border border-white/10 p-4 text-sm text-white/70">
@@ -110,7 +129,7 @@ export function FiverrGigPanel() {
         <>
           <CopyBlock label="Seller bio" tekst={fiverrSellerProfile} />
           <Link href="/marktplaats/" className="text-sm text-emerald-300 hover:underline">
-            Malt profiel →
+            Marktplaats + Malt listings →
           </Link>
         </>
       )}
