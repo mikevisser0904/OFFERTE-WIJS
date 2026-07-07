@@ -124,7 +124,7 @@ ${regels || "• Ernstige beveiligingsproblemen gevonden."}
 Score: ${score}/100.`;
   }
 
-  const close = `Wij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u **live** zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?`;
+  const close = `Wij halen dit binnen 2 werkdagen van het internet (Website Veilig, €299 vast). In een belletje van 10 min deel ik mijn scherm en laat ik u LIVE zien wat er openstaat — zodat u het zelf ziet. Vandaag of morgen bellen?`;
 
   return `${intro}\n\n${kern}\n\n${close}`;
 }
