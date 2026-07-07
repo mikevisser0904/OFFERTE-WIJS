@@ -33,7 +33,8 @@ export async function haalAdminBewijs(evidenceUrl) {
     return { url: evidenceUrl, ok: false, error: String(e) };
   }
 
-  return parseAdminHtml(html, evidenceUrl, 200);
+  const parsed = parseAdminHtml(html, evidenceUrl, 200);
+  return { ...parsed, httpStatus: 200, gecontroleerdOp: new Date().toISOString() };
 }
 
 export function parseAdminHtml(html, url, httpStatus = 200) {
@@ -56,6 +57,7 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
     return {
       url,
       ok: true,
+      httpStatus,
       adminType: "phpMyAdmin",
       titel: title || "phpMyAdmin",
       verified: true,
@@ -76,6 +78,7 @@ export function parseAdminHtml(html, url, httpStatus = 200) {
     return {
       url,
       ok: true,
+      httpStatus,
       adminType: "Adminer",
       titel: title || "Adminer",
       zichtbaar: "Database-beheer (Adminer) is via de browser bereikbaar — inlogformulier voor de database.",

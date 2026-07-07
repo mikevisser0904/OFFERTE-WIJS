@@ -9,6 +9,78 @@ import { haalAdminBewijs } from "./admin-proof.mjs";
 import { getActiveConsent, hostKey, consentIsVerifiable } from "../security-scan/consent-registry.mjs";
 
 const root = process.cwd();
+const SITE_ORIGIN = "https://mikevisser0904.github.io/OFFERTE-WIJS";
+
+function rapportPubliekUrl(reportId) {
+  if (!reportId) return null;
+  return `${SITE_ORIGIN}/reports/${reportId}.json`;
+}
+
+function formatScanDatum(iso) {
+  if (!iso) return new Date().toLocaleDateString("nl-NL");
+  try {
+    return new Date(iso).toLocaleString("nl-NL", {
+      dateStyle: "short",
+      timeStyle: "short",
+    });
+  } catch {
+    return iso;
+  }
+}
+
+function bouwScanBewijs(rapport, proof, consentDeep) {
+  const reportId = rapport?.id ?? null;
+  const scanAt = rapport?.scannedAt ?? proof?.gecontroleerdOp ?? null;
+  const liveAt = proof?.gecontroleerdOp ?? consentDeep?.checkedAt ?? null;
+  const findings = uniekeFindings(rapport?.findings);
+  const evidenceUrls = findings
+    .filter((f) => f.evidence)
+    .slice(0, 4)
+    .map((f) => f.evidence);
+  return {
+    reportId,
+    scanAt,
+    liveCheckAt: liveAt,
+    methode: "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
+    rapportUrl: rapportPubliekUrl(reportId),
+    controleUrl: proof?.url || evidenceUrls[0] || null,
+    httpStatus: proof?.httpStatus ?? null,
+    adminType: proof?.adminType ?? null,
+    panelKind: proof?.panelKind ?? null,
+    paginaTitel: proof?.titel ?? null,
+    evidenceUrls,
+    risicoScore: rapport?.risicoScore ?? null,
+  };
+}
+
+function bewijsTekstBlok(bewijs) {
+  if (!bewijs?.controleUrl && !bewijs?.rapportUrl && !bewijs?.evidenceUrls?.length) return null;
+  const regels = [
+    "BEWIJS (geen gevoel — zelf nakijken):",
+    `• ${bewijs.methode}`,
+  ];
+  if (bewijs.scanAt) regels.push(`• Eerste scan: ${formatScanDatum(bewijs.scanAt)}`);
+  if (bewijs.liveCheckAt) {
+    regels.push(`• Live hercheck: ${formatScanDatum(bewijs.liveCheckAt)}`);
+  }
+  if (bewijs.httpStatus != null && bewijs.adminType) {
+    const kind = bewijs.panelKind ? `, type: ${bewijs.panelKind}` : "";
+    const titel = bewijs.paginaTitel ? `, titel pagina: „${bewijs.paginaTitel}"` : "";
+    regels.push(`• Server antwoordde HTTP ${bewijs.httpStatus} — ${bewijs.adminType}${kind}${titel}`);
+  }
+  if (bewijs.reportId && bewijs.rapportUrl) {
+    regels.push(`• Scanrapport (open JSON, zelfde feiten als onze tool): ${bewijs.rapportUrl}`);
+    regels.push(`  Referentie: ${bewijs.reportId}`);
+  }
+  if (bewijs.controleUrl) {
+    regels.push(`• Directe controle-URL uit de scan: ${bewijs.controleUrl}`);
+  }
+  for (const u of bewijs.evidenceUrls || []) {
+    if (u && u !== bewijs.controleUrl) regels.push(`• Extra pad uit rapport: ${u}`);
+  }
+  regels.push("• Dit is geen vermoeden: plak de controle-URL in uw browser — u ziet wat wij zagen.");
+  return regels.join("\n");
+}
 
 function loadUitgeslotenHosts() {
   const path = join(root, "data/scan-uitsluitingen.json");
@@ -147,7 +219,7 @@ function dbFeitenRegel(dbRow) {
   return parts.length ? parts.join("; ") : null;
 }
 
-function bouwBericht(klant, rapport, proof, consent, consentDeep, dbRow) {
+function bouwBericht(klant, rapport, proof, consent, consentDeep, dbRow, scanBewijs) {
   const naam = klant.bedrijf || "uw bedrijf";
   const score = rapport?.risicoScore ?? klant.score ?? "?";
   const site = klant.url.replace(/^https?:\/\//, "");
@@ -168,7 +240,9 @@ function bouwBericht(klant, rapport, proof, consent, consentDeep, dbRow) {
           ? "Ook met de door u verstrekte gegevens was extra verificatie nodig — het paneel blijft een risico."
           : null;
 
-    kern = `${toestemmingRegel ? `${toestemmingRegel}\n\n` : ""}${consent ? "" : "Ik heb NIET ingelogd op uw systemen zonder uw toestemming. "}Uw database-admin staat WEL open op internet — gecontroleerd op ${new Date().toLocaleDateString("nl-NL")}.
+    const bewijsBlok = bewijsTekstBlok(scanBewijs);
+    kern = `${toestemmingRegel ? `${toestemmingRegel}\n\n` : ""}${consent ? "" : "Ik heb NIET ingelogd op uw systemen zonder uw toestemming. "}Uw database-admin staat WEL open op internet — gecontroleerd op ${formatScanDatum(scanBewijs?.liveCheckAt || rapport?.scannedAt)}.
+${bewijsBlok ? `\n\n${bewijsBlok}\n` : ""}
 ${extraDash ? `\nExtra bevinding: ${extraDash}` : ""}
 ${extraAuth ? `\n${extraAuth}` : ""}
 ${dbFeitenRegel(dbRow) ? `\nWat we passief uit uw publieke site/config zagen (geen inlog op uw database): ${dbFeitenRegel(dbRow)}.` : ""}
@@ -187,9 +261,15 @@ Dit is hetzelfde scherm dat criminelen en bots automatisch zoeken. Vanaf hier is
 Risicoscore op uw site: ${score}/100.`;
   } else {
     const regels = (klant.schrikRegels || []).map((r) => `• ${r}`).join("\n");
+    const findingBullets = uniekeFindings(rapport?.findings)
+      .slice(0, 3)
+      .map((f) => `• ${f.klant || f.title}${f.evidence ? ` (${f.evidence})` : ""}`)
+      .join("\n");
+    const bewijsBlok = bewijsTekstBlok(scanBewijs);
     kern = `Check op ${site}:
 
-${regels || "• Ernstige beveiligingsproblemen gevonden."}
+${regels || findingBullets || "• Ernstige beveiligingsproblemen gevonden."}
+${bewijsBlok ? `\n\n${bewijsBlok}` : ""}
 
 Score: ${score}/100.`;
   }
@@ -199,10 +279,16 @@ Score: ${score}/100.`;
   return `${intro}\n\n${kern}\n\n${close}`;
 }
 
-function bouwSmsKort(klant, proof) {
+function bouwSmsKort(klant, proof, scanBewijs) {
   const naam = klant.bedrijf;
+  const ref = scanBewijs?.reportId ? ` Scanref ${scanBewijs.reportId}.` : "";
   if (proof?.ok && proof.url) {
-    return `Hoi, Mike (WebKlaar). ${naam}: uw database-beheer (${proof.adminType}) staat OPEN op internet — wij loggen niet in, maar dit scherm is voor iedereen bereikbaar: ${proof.url} — kunnen we dit vandaag dichten? €299. Bellen?`;
+    const http =
+      proof.httpStatus != null ? ` (HTTP ${proof.httpStatus}, live gecontroleerd)` : " (live gecontroleerd)";
+    return `Hoi, Mike (WebKlaar). ${naam}: uw database-beheer (${proof.adminType}) staat OPEN op internet${http} — wij loggen niet in: ${proof.url}.${ref} Zelf plakken in browser = zelfde beeld. €299 dichten? Bellen?`;
+  }
+  if (scanBewijs?.rapportUrl) {
+    return `Hoi, Mike (WebKlaar). ${naam}: VakScan vond concrete risico's op uw site.${ref} Rapport: ${scanBewijs.rapportUrl} — 10 min bellen? Website Veilig €299.`;
   }
   return `Hoi, Mike (WebKlaar). ${naam}: ernstig lek op uw website gevonden — 10 min bellen? Website Veilig €299.`;
 }
@@ -260,8 +346,9 @@ async function main() {
     const consentDeep = consent ? laadConsentDeep(k.url) : null;
     const dbRow =
       proof?.ok && dbExportMap.get(hostKey(k.url))?.panelUrl ? dbExportMap.get(hostKey(k.url)) : null;
-    const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof, consent, consentDeep, dbRow);
-    const verkoopKort = bouwSmsKort(k, proof);
+    const scanBewijs = bouwScanBewijs(rapport, proof, consentDeep);
+    const verkoopBericht = bouwBericht({ ...k, schrikRegels }, rapport, proof, consent, consentDeep, dbRow, scanBewijs);
+    const verkoopKort = bouwSmsKort(k, proof, scanBewijs);
     const wa = k.telefoonWa || (k.telefoon ? normalizeWa(k.telefoon) : null);
     const whatsappSchrik = wa ? `https://wa.me/${wa}?text=${encodeURIComponent(verkoopKort)}` : null;
 
@@ -295,6 +382,8 @@ async function main() {
       verkoopKort,
       whatsappSchrik,
       reportId: rapport?.id ?? null,
+      scanBewijs,
+      rapportUrl: scanBewijs.rapportUrl,
     });
   }
 

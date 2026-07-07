@@ -21,7 +21,29 @@ type EchteKlant = {
   verkoopKort?: string;
   whatsappSchrik?: string | null;
   bewijsUrl?: string | null;
-  adminProof?: { ok?: boolean; adminType?: string; zichtbaar?: string; url?: string };
+  reportId?: string | null;
+  rapportUrl?: string | null;
+  scanBewijs?: {
+    reportId?: string | null;
+    scanAt?: string | null;
+    liveCheckAt?: string | null;
+    methode?: string;
+    rapportUrl?: string | null;
+    controleUrl?: string | null;
+    httpStatus?: number | null;
+    adminType?: string | null;
+    panelKind?: string | null;
+    paginaTitel?: string | null;
+  };
+  adminProof?: {
+    ok?: boolean;
+    adminType?: string;
+    zichtbaar?: string;
+    url?: string;
+    httpStatus?: number;
+    titel?: string;
+    panelKind?: string;
+  };
   uitgesloten?: boolean;
   herstelBericht?: string;
 };
@@ -73,7 +95,9 @@ export function EchteKlantenPanel() {
           <p className="mt-1 text-sm text-white/55">
             Bericht + directe link naar hun open admin-inlog. Op bellen: scherm delen zodat zij het zelf zien.
           </p>
-          <p className="mt-1 text-xs text-rose-300/90">Niet inloggen. Wel: “uw voordeur staat open” + bewijs-URL.</p>
+          <p className="mt-1 text-xs text-rose-300/90">
+            Niet inloggen. Wel: live HTTP-check + scanrapport-link — klant kan alles zelf verifiëren (geen “lucht”).
+          </p>
         </div>
         <div className="flex flex-wrap gap-2">
           <a
@@ -127,9 +151,25 @@ export function EchteKlantenPanel() {
                   <span className="text-amber-300">score {k.risicoScore ?? k.score}</span>
                   {k.telefoon && <span className="font-mono text-emerald-300">{k.telefoon}</span>}
                 </div>
-                {k.bewijsUrl && (
-                  <a href={k.bewijsUrl} target="_blank" rel="noopener noreferrer" className="mt-1 block truncate text-xs text-amber-300 hover:underline">
-                    Bewijs: {k.bewijsUrl}
+                {(k.scanBewijs?.controleUrl || k.bewijsUrl) && (
+                  <a
+                    href={k.scanBewijs?.controleUrl || k.bewijsUrl!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block truncate text-xs text-amber-300 hover:underline"
+                  >
+                    Live URL: {k.scanBewijs?.controleUrl || k.bewijsUrl}
+                  </a>
+                )}
+                {(k.scanBewijs?.rapportUrl || k.rapportUrl) && (
+                  <a
+                    href={k.scanBewijs?.rapportUrl || k.rapportUrl!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block truncate text-xs text-sky-300 hover:underline"
+                  >
+                    Scanrapport {k.scanBewijs?.reportId || k.reportId}
+                    {k.scanBewijs?.httpStatus != null ? ` · HTTP ${k.scanBewijs.httpStatus}` : ""}
                   </a>
                 )}
               </button>
