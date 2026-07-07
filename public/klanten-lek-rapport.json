@@ -1,39 +1,40 @@
 {
-  "generatedAt": "2026-07-07T07:39:00.010Z",
+  "generatedAt": "2026-07-07T07:43:23.363Z",
   "agent": "klanten-lek",
-  "gescand": 5,
-  "metLek": 30,
+  "gescand": 1,
+  "metLek": 31,
   "disclaimer": "Passieve HTTP-checks alleen. Geen wachtwoorden opgeslagen. Gebruik voor Website Veilig €299 outreach met toestemming.",
   "klanten": [
     {
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "url": "https://firmavanrijn.nl",
-      "categorie": "zonwering",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:38:20.534Z",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:39:22.695Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
-      "reportId": "86dde731b1e4",
+      "reportId": "2f229b8f5c49",
       "database": {
         "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
         "heeftLek": true,
         "panels": [
           {
             "panel": "phpMyAdmin",
-            "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
-            "host": "s230.webhostingserver.nl"
+            "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+            "host": "s246.webhostingserver.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
-            "host": "s230.webhostingserver.nl"
+            "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+            "host": "s246.webhostingserver.nl"
           },
           {
             "panel": "phpMyAdmin",
-            "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
-            "host": "s230.webhostingserver.nl"
+            "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s246.webhostingserver.nl"
           }
         ],
         "credentials": null,
@@ -45,77 +46,22 @@
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://s230.webhostingserver.nl/phpMyAdmin/"
+          "url": "https://s246.webhostingserver.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://s230.webhostingserver.nl/phpMyAdmin/"
+          "url": "https://s246.webhostingserver.nl/phpMyAdmin/"
         },
         {
           "titel": "phpMyAdmin mogelijk open op internet",
           "type": "database",
           "ernst": "critical",
-          "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php"
+          "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php"
         }
-      ]
-    },
-    {
-      "bedrijf": "Amer Houttechniek",
-      "plaats": "Amersfoort",
-      "url": "https://www.amer-hout.nl",
-      "categorie": "kozijnen",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:38:06.907Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "dd78e57b812d",
-      "database": {
-        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
-            "host": "s205.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
-            "host": "s205.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php",
-            "host": "s205.webhostingserver.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s205.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s205.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php"
-        }
-      ]
+      ],
+      "bron": "leak-hits"
     },
     {
       "bedrijf": "Loodgieterskwartier",
@@ -332,6 +278,64 @@
       "bron": "leak-hits"
     },
     {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "url": "https://firmavanrijn.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:11.815Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "86dde731b1e4",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
+            "host": "s230.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
+            "host": "s230.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s230.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s230.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s230.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "url": "https://www.bwstyling.nl/",
@@ -534,6 +538,64 @@
           "type": "database",
           "ernst": "critical",
           "url": "https://chargecars.nl/phpMyAdmin/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Amer Houttechniek",
+      "plaats": "Amersfoort",
+      "url": "https://www.amer-hout.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:04.500Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "dd78e57b812d",
+      "database": {
+        "samenvatting": "3 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
+            "host": "s205.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
+            "host": "s205.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s205.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s205.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s205.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php"
         }
       ],
       "bron": "leak-hits"
@@ -1488,7 +1550,7 @@
       "url": "https://www.dreumel.nl",
       "categorie": "kozijnen",
       "score": 97,
-      "scannedAt": "2026-07-07T07:38:01.047Z",
+      "scannedAt": "2026-07-07T07:43:19.565Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -1524,10 +1586,11 @@
     {
       "bedrijf": "SA Elektro Experts",
       "plaats": "'s-Gravenhage",
-      "url": "https://saelektroexperts.nl",
-      "categorie": "elektricien",
-      "score": 97,
-      "scannedAt": "2026-07-07T07:38:57.132Z",
+      "url": "https://saelektroexperts.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:38:33.970Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -1557,41 +1620,6 @@
           "type": "database",
           "ernst": "critical",
           "url": "https://saelektroexperts.nl/"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Suntec zonwering",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.suntec-zonwering.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T07:37:46.264Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 40,
-      "reportId": "6888507d0d7c",
-      "database": {
-        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "Adminer",
-            "url": "https://www.suntec-zonwering.nl/adminer.php",
-            "host": "www.suntec-zonwering.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "Adminer mogelijk open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://www.suntec-zonwering.nl/adminer.php"
         }
       ],
       "bron": "leak-hits"
@@ -1735,6 +1763,42 @@
           "type": "database",
           "ernst": "critical",
           "url": "https://decorette.nl/"
+        }
+      ],
+      "bron": "leak-hits"
+    },
+    {
+      "bedrijf": "Suntec zonwering",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.suntec-zonwering.nl/",
+      "categorie": null,
+      "telefoon": null,
+      "score": null,
+      "scannedAt": "2026-07-07T07:37:46.264Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "6888507d0d7c",
+      "database": {
+        "samenvatting": "1 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "Adminer",
+            "url": "https://www.suntec-zonwering.nl/adminer.php",
+            "host": "www.suntec-zonwering.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "Adminer mogelijk open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://www.suntec-zonwering.nl/adminer.php"
         }
       ],
       "bron": "leak-hits"

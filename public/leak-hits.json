@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-07-07T07:39:59.584Z",
+  "updatedAt": "2026-07-07T07:43:19.564Z",
   "hits": [
+    {
+      "url": "https://www.dreumel.nl/",
+      "bedrijf": "Dreumel",
+      "plaats": "'s-Gravenhage",
+      "reportId": "02a3c62e62d4",
+      "scannedAt": "2026-07-07T07:43:17.982Z",
+      "risicoScore": 40,
+      "titles": [
+        "Elasticsearch-indexen mogelijk zichtbaar"
+      ],
+      "findings": [
+        {
+          "id": "elastic-indices",
+          "check": "database",
+          "severity": "critical",
+          "title": "Elasticsearch-indexen mogelijk zichtbaar",
+          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
+          "intern": "Passieve HTTP-check — geen poortscan.",
+          "evidence": "https://www.dreumel.nl/404"
+        }
+      ]
+    },
     {
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
       "bedrijf": "Reinaerde Remake Meubel",
@@ -668,28 +690,6 @@
           "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
           "intern": "Kritiek — Website Veilig + hosting review.",
           "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/index.php"
-        }
-      ]
-    },
-    {
-      "url": "https://www.dreumel.nl/",
-      "bedrijf": "Dreumel",
-      "plaats": "'s-Gravenhage",
-      "reportId": "02a3c62e62d4",
-      "scannedAt": "2026-07-07T07:37:59.092Z",
-      "risicoScore": 40,
-      "titles": [
-        "Elasticsearch-indexen mogelijk zichtbaar"
-      ],
-      "findings": [
-        {
-          "id": "elastic-indices",
-          "check": "database",
-          "severity": "critical",
-          "title": "Elasticsearch-indexen mogelijk zichtbaar",
-          "klant": "Bedrijfsdata kan via internet benaderbaar zijn.",
-          "intern": "Passieve HTTP-check — geen poortscan.",
-          "evidence": "https://www.dreumel.nl/404"
         }
       ]
     },

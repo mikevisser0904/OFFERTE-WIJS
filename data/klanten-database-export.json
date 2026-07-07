@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-07T07:39:00.010Z",
-  "totaalMetLek": 30,
+  "generatedAt": "2026-07-07T07:43:23.363Z",
+  "totaalMetLek": 31,
   "rijen": [
     {
       "bedrijf": "Dreumel",
@@ -19,25 +19,25 @@
       "reportId": "02a3c62e62d4"
     },
     {
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "url": "https://firmavanrijn.nl",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
       "heeftLek": true,
       "dbType": "phpMyAdmin",
-      "dbHost": "s230.webhostingserver.nl",
+      "dbHost": "s246.webhostingserver.nl",
       "dbName": null,
       "dbUser": null,
       "wachtwoordLek": false,
-      "panelUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "panelUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
       "risicoScore": 100,
-      "reportId": "86dde731b1e4"
+      "reportId": "2f229b8f5c49"
     },
     {
       "bedrijf": "SA Elektro Experts",
       "plaats": "'s-Gravenhage",
-      "url": "https://saelektroexperts.nl",
+      "url": "https://saelektroexperts.nl/",
       "heeftLek": true,
       "dbType": "Elasticsearch",
       "dbHost": "saelektroexperts.nl",
@@ -49,38 +49,6 @@
       "sqlTabelCount": 0,
       "risicoScore": 40,
       "reportId": "aab38445503e"
-    },
-    {
-      "bedrijf": "Suntec zonwering",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.suntec-zonwering.nl/",
-      "heeftLek": true,
-      "dbType": "Adminer",
-      "dbHost": "www.suntec-zonwering.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://www.suntec-zonwering.nl/adminer.php",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 40,
-      "reportId": "6888507d0d7c"
-    },
-    {
-      "bedrijf": "Amer Houttechniek",
-      "plaats": "Amersfoort",
-      "url": "https://www.amer-hout.nl",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "s205.webhostingserver.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 100,
-      "reportId": "dd78e57b812d"
     },
     {
       "bedrijf": "Loodgieterskwartier",
@@ -129,6 +97,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 100,
       "reportId": "6732bd8e5565"
+    },
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "url": "https://firmavanrijn.nl/",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "s230.webhostingserver.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "86dde731b1e4"
     },
     {
       "bedrijf": "Burggraeve Woonstyling",
@@ -209,6 +193,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 40,
       "reportId": "c2d3cc1f8cbf"
+    },
+    {
+      "bedrijf": "Amer Houttechniek",
+      "plaats": "Amersfoort",
+      "url": "https://www.amer-hout.nl/",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "s205.webhostingserver.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "dd78e57b812d"
     },
     {
       "bedrijf": "Schreuder Glas- en Schilderwerken",
@@ -321,6 +321,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 40,
       "reportId": "47cfe84cc8f4"
+    },
+    {
+      "bedrijf": "Suntec zonwering",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.suntec-zonwering.nl/",
+      "heeftLek": true,
+      "dbType": "Adminer",
+      "dbHost": "www.suntec-zonwering.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://www.suntec-zonwering.nl/adminer.php",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 40,
+      "reportId": "6888507d0d7c"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
