@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-07-07T18:36:16.406Z",
+  "verifiedAt": "2026-07-07T22:07:02.598Z",
   "totaal": 14,
-  "loginBereikbaar": 14,
-  "uniekeLoginUrls": 14,
-  "bevestigd": 6,
-  "hosting_redirect": 8,
+  "loginBereikbaar": 6,
+  "uniekeLoginUrls": 6,
+  "bevestigd": 4,
+  "hosting_redirect": 2,
   "false_positive": 0,
-  "onbekend": 0,
+  "onbekend": 8,
   "redirect_anders": 0,
   "results": [
     {
@@ -16,14 +16,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s205.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s205.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Firma Fred van Rijn",
@@ -32,14 +28,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s230.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Het Interieur",
@@ -48,14 +40,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s229.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Klomp Elektrotechniek",
@@ -80,14 +68,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s225.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s225.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Burggraeve Woonstyling",
@@ -128,14 +112,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
-      "http": 200,
-      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -160,14 +140,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://chargecars.nl/phpMyAdmin/",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
-      "http": 200,
-      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Reinaerde Remake Meubel",
@@ -176,14 +152,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s246.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Nuoveni",
@@ -224,14 +196,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s250.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     }
   ]
 }

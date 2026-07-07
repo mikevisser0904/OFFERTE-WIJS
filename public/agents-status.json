@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T21:54:18.304Z",
+  "updatedAt": "2026-07-07T22:09:02.777Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T14:36:17.943Z",
@@ -48,7 +48,7 @@
       "wachtrijPending": 2
     },
     "data-flow": {
-      "lastRun": "2026-07-07T21:50:23.083Z",
+      "lastRun": "2026-07-07T22:09:02.770Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -80,24 +80,24 @@
       "agentPrompt": "Lead Hunter: 184 leads, 0 queue pending — npm run funnel voor outreach"
     },
     "auto-verify": {
-      "lastRun": "2026-07-07T18:37:11.125Z",
+      "lastRun": "2026-07-07T22:09:02.777Z",
       "ok": true,
-      "leakVerified": 15,
-      "consentProofOk": 15,
-      "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck",
-      "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 7,
+      "consentProofOk": 7,
+      "agentPrompt": "7 verified · 7 consent OK · 8 failed recheck",
+      "grokPrompt": "auto-verify: 7 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-07T18:37:10.772Z",
+      "lastRun": "2026-07-07T22:09:02.383Z",
       "ok": true,
-      "contactenVandaag": 12,
-      "metBewijs": 20,
-      "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
-      "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+      "contactenVandaag": 10,
+      "metBewijs": 10,
+      "agentPrompt": "Verkoop-bewijs: 10 klanten met live bewijs — start Decor Gordijn (HTTP 200) · /dashboard/ + /agents/",
+      "grokPrompt": "agent verkoop-bewijs — Decor Gordijn: controle https://www.decorgordijn.nl/phpmyadmin/ · rapport ec27b9f2d9e9. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
-        "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
-        "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
-        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
+        "Decor Gordijn · https://www.decorgordijn.nl/phpmyadmin/",
+        "De Pagter · https://depagter.info/phpmyadmin/",
+        "Pruis Schilderwerken · https://server-alfa.heroo.nl/phpMyAdmin/"
       ]
     },
     "seo": {

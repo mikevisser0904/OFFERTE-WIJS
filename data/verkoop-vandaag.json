@@ -1,269 +1,10 @@
 {
-  "generatedAt": "2026-07-07T18:37:10.770Z",
+  "generatedAt": "2026-07-07T22:09:02.382Z",
   "agent": "verkoop-bewijs",
-  "bron": "2026-07-07T18:37:10.726Z",
-  "metAdminBewijs": 20,
-  "totaalMetBewijs": 20,
+  "bron": "2026-07-07T22:09:02.342Z",
+  "metAdminBewijs": 10,
+  "totaalMetBewijs": 10,
   "vandaag": [
-    {
-      "prioriteit": 0,
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "url": "https://firmavanrijn.nl",
-      "telefoon": "0703211400",
-      "email": "info@firmavanrijn.nl",
-      "risicoScore": 100,
-      "reportId": "86dde731b1e4",
-      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/86dde731b1e4.json",
-      "controleUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "scanBewijs": {
-        "reportId": "86dde731b1e4",
-        "scanAt": "2026-07-07T07:59:49.726Z",
-        "liveCheckAt": "2026-07-07T18:36:51.889Z",
-        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
-        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/86dde731b1e4.json",
-        "controleUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
-        "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
-        "evidenceUrls": [
-          "https://s230.webhostingserver.nl/phpMyAdmin/",
-          "https://s230.webhostingserver.nl/phpMyAdmin/index.php"
-        ],
-        "risicoScore": 100
-      },
-      "adminProof": {
-        "ok": true,
-        "adminType": "phpMyAdmin",
-        "httpStatus": 200,
-        "panelKind": "login"
-      },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Firma Fred van Rijn: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://s230.webhostingserver.nl/phpMyAdmin/ (niet ingelogd). Scanref 86dde731b1e4. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31703211400?text=Hoi%2C%20Mike%20(WebKlaar).%20Firma%20Fred%20van%20Rijn%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs230.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%2086dde731b1e4.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31703211400?text=Hoi%2C%20Mike%20(WebKlaar).%20Firma%20Fred%20van%20Rijn%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs230.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%2086dde731b1e4.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Firma Fred van Rijn.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:36:\n• phpMyAdmin reageert op: https://s230.webhostingserver.nl/phpMyAdmin/\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:59\n• Live hercheck: 07-07-2026, 18:36\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/86dde731b1e4.json\n  Referentie: 86dde731b1e4\n• Directe controle-URL uit de scan: https://s230.webhostingserver.nl/phpMyAdmin/\n• Extra pad uit rapport: https://s230.webhostingserver.nl/phpMyAdmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op s230.webhostingserver.nl (naam onbekend); beheerpaneel: https://s230.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://s230.webhostingserver.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://s230.webhostingserver.nl/phpMyAdmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/86dde731b1e4.json",
-      "heeftTelefoon": true,
-      "heeftConsent": true,
-      "grokTaak": "Verkoop-bewijs #1: Firma Fred van Rijn\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://s230.webhostingserver.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/86dde731b1e4.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
-    },
-    {
-      "prioriteit": 0,
-      "bedrijf": "Textilia",
-      "plaats": "Dordrecht",
-      "url": "https://www.textilia-dordrecht.nl",
-      "telefoon": "0639112809",
-      "email": "info@textilia-dordrecht.nl",
-      "risicoScore": 100,
-      "reportId": "2bf236f50a7b",
-      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2bf236f50a7b.json",
-      "controleUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "scanBewijs": {
-        "reportId": "2bf236f50a7b",
-        "scanAt": "2026-07-07T07:59:51.211Z",
-        "liveCheckAt": "2026-07-07T18:36:53.786Z",
-        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
-        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2bf236f50a7b.json",
-        "controleUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
-        "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
-        "evidenceUrls": [
-          "https://s225.webhostingserver.nl/phpMyAdmin/",
-          "https://s225.webhostingserver.nl/phpMyAdmin/index.php"
-        ],
-        "risicoScore": 100
-      },
-      "adminProof": {
-        "ok": true,
-        "adminType": "phpMyAdmin",
-        "httpStatus": 200,
-        "panelKind": "login"
-      },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Textilia: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://s225.webhostingserver.nl/phpMyAdmin/ (niet ingelogd). Scanref 2bf236f50a7b. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31639112809?text=Hoi%2C%20Mike%20(WebKlaar).%20Textilia%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs225.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%202bf236f50a7b.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31639112809?text=Hoi%2C%20Mike%20(WebKlaar).%20Textilia%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs225.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%202bf236f50a7b.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Textilia.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:36:\n• phpMyAdmin reageert op: https://s225.webhostingserver.nl/phpMyAdmin/\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:59\n• Live hercheck: 07-07-2026, 18:36\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2bf236f50a7b.json\n  Referentie: 2bf236f50a7b\n• Directe controle-URL uit de scan: https://s225.webhostingserver.nl/phpMyAdmin/\n• Extra pad uit rapport: https://s225.webhostingserver.nl/phpMyAdmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op s225.webhostingserver.nl (naam onbekend); beheerpaneel: https://s225.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://s225.webhostingserver.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://s225.webhostingserver.nl/phpMyAdmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2bf236f50a7b.json",
-      "heeftTelefoon": true,
-      "heeftConsent": true,
-      "grokTaak": "Verkoop-bewijs #2: Textilia\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://s225.webhostingserver.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2bf236f50a7b.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
-    },
-    {
-      "prioriteit": 0,
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "url": "https://www.boselektrotechniek.nl",
-      "telefoon": "0520585539",
-      "email": "info@boselektrotechniek.nl",
-      "risicoScore": 100,
-      "reportId": "e2b94249c285",
-      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/e2b94249c285.json",
-      "controleUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "scanBewijs": {
-        "reportId": "e2b94249c285",
-        "scanAt": "2026-07-07T07:59:55.640Z",
-        "liveCheckAt": "2026-07-07T18:36:58.327Z",
-        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
-        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/e2b94249c285.json",
-        "controleUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-        "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
-        "evidenceUrls": [
-          "https://www.boselektrotechniek.nl/phpMyAdmin/"
-        ],
-        "risicoScore": 100
-      },
-      "adminProof": {
-        "ok": true,
-        "adminType": "phpMyAdmin",
-        "httpStatus": 200,
-        "panelKind": "login"
-      },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Bos Elektrotechniek: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://www.boselektrotechniek.nl/phpMyAdmin/ (niet ingelogd). Scanref e2b94249c285. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31520585539?text=Hoi%2C%20Mike%20(WebKlaar).%20Bos%20Elektrotechniek%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.boselektrotechniek.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%20e2b94249c285.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31520585539?text=Hoi%2C%20Mike%20(WebKlaar).%20Bos%20Elektrotechniek%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.boselektrotechniek.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%20e2b94249c285.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Bos Elektrotechniek.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:36:\n• phpMyAdmin reageert op: https://www.boselektrotechniek.nl/phpMyAdmin/\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:59\n• Live hercheck: 07-07-2026, 18:36\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/e2b94249c285.json\n  Referentie: e2b94249c285\n• Directe controle-URL uit de scan: https://www.boselektrotechniek.nl/phpMyAdmin/\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op www.boselektrotechniek.nl (naam onbekend); beheerpaneel: https://www.boselektrotechniek.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://www.boselektrotechniek.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://www.boselektrotechniek.nl/phpMyAdmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/e2b94249c285.json",
-      "heeftTelefoon": true,
-      "heeftConsent": true,
-      "grokTaak": "Verkoop-bewijs #3: Bos Elektrotechniek\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://www.boselektrotechniek.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/e2b94249c285.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
-    },
-    {
-      "prioriteit": 0,
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "telefoon": "0623369577",
-      "email": "klantadvies@reinaerde.nl",
-      "risicoScore": 100,
-      "reportId": "2f229b8f5c49",
-      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2f229b8f5c49.json",
-      "controleUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "scanBewijs": {
-        "reportId": "2f229b8f5c49",
-        "scanAt": "2026-07-07T08:00:02.653Z",
-        "liveCheckAt": "2026-07-07T18:37:01.731Z",
-        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
-        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2f229b8f5c49.json",
-        "controleUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
-        "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
-        "evidenceUrls": [
-          "https://s246.webhostingserver.nl/phpMyAdmin/",
-          "https://s246.webhostingserver.nl/phpMyAdmin/index.php"
-        ],
-        "risicoScore": 100
-      },
-      "adminProof": {
-        "ok": true,
-        "adminType": "phpMyAdmin",
-        "httpStatus": 200,
-        "panelKind": "login"
-      },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Reinaerde Remake Meubel: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://s246.webhostingserver.nl/phpMyAdmin/ (niet ingelogd). Scanref 2f229b8f5c49. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31623369577?text=Hoi%2C%20Mike%20(WebKlaar).%20Reinaerde%20Remake%20Meubel%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs246.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%202f229b8f5c49.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31623369577?text=Hoi%2C%20Mike%20(WebKlaar).%20Reinaerde%20Remake%20Meubel%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs246.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%202f229b8f5c49.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Reinaerde Remake Meubel.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:37:\n• phpMyAdmin reageert op: https://s246.webhostingserver.nl/phpMyAdmin/\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 08:00\n• Live hercheck: 07-07-2026, 18:37\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2f229b8f5c49.json\n  Referentie: 2f229b8f5c49\n• Directe controle-URL uit de scan: https://s246.webhostingserver.nl/phpMyAdmin/\n• Extra pad uit rapport: https://s246.webhostingserver.nl/phpMyAdmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op s246.webhostingserver.nl (naam onbekend); beheerpaneel: https://s246.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://s246.webhostingserver.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://s246.webhostingserver.nl/phpMyAdmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2f229b8f5c49.json",
-      "heeftTelefoon": true,
-      "heeftConsent": true,
-      "grokTaak": "Verkoop-bewijs #4: Reinaerde Remake Meubel\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://s246.webhostingserver.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2f229b8f5c49.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
-    },
-    {
-      "prioriteit": 0,
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "url": "https://www.willemseelektrotechniek.nl",
-      "telefoon": "0235739278",
-      "email": "info@willemseelektrotechniek.nl",
-      "risicoScore": 100,
-      "reportId": "fe9d43611024",
-      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/fe9d43611024.json",
-      "controleUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "scanBewijs": {
-        "reportId": "fe9d43611024",
-        "scanAt": "2026-07-07T08:00:16.248Z",
-        "liveCheckAt": "2026-07-07T18:37:02.952Z",
-        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
-        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/fe9d43611024.json",
-        "controleUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
-        "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
-        "evidenceUrls": [
-          "https://s250.webhostingserver.nl/phpMyAdmin/",
-          "https://s250.webhostingserver.nl/phpMyAdmin/index.php"
-        ],
-        "risicoScore": 100
-      },
-      "adminProof": {
-        "ok": true,
-        "adminType": "phpMyAdmin",
-        "httpStatus": 200,
-        "panelKind": "login"
-      },
-      "verkoopKort": "Hoi, Mike (WebKlaar). H. Willemse Elektrotechniek B.V.: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://s250.webhostingserver.nl/phpMyAdmin/ (niet ingelogd). Scanref fe9d43611024. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31235739278?text=Hoi%2C%20Mike%20(WebKlaar).%20H.%20Willemse%20Elektrotechniek%20B.V.%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs250.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%20fe9d43611024.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31235739278?text=Hoi%2C%20Mike%20(WebKlaar).%20H.%20Willemse%20Elektrotechniek%20B.V.%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fs250.webhostingserver.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%20fe9d43611024.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals H. Willemse Elektrotechniek B.V..\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:37:\n• phpMyAdmin reageert op: https://s250.webhostingserver.nl/phpMyAdmin/\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 08:00\n• Live hercheck: 07-07-2026, 18:37\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/fe9d43611024.json\n  Referentie: fe9d43611024\n• Directe controle-URL uit de scan: https://s250.webhostingserver.nl/phpMyAdmin/\n• Extra pad uit rapport: https://s250.webhostingserver.nl/phpMyAdmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op s250.webhostingserver.nl (naam onbekend); beheerpaneel: https://s250.webhostingserver.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://s250.webhostingserver.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://s250.webhostingserver.nl/phpMyAdmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/fe9d43611024.json",
-      "heeftTelefoon": true,
-      "heeftConsent": true,
-      "grokTaak": "Verkoop-bewijs #5: H. Willemse Elektrotechniek B.V.\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://s250.webhostingserver.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/fe9d43611024.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
-    },
-    {
-      "prioriteit": 0,
-      "bedrijf": "Kroon interieurbouw",
-      "plaats": "De Meern",
-      "url": "https://www.kroon-interieurbouw.nl",
-      "telefoon": "0950635027",
-      "email": null,
-      "risicoScore": 100,
-      "reportId": "d0419394d0db",
-      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d0419394d0db.json",
-      "controleUrl": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
-      "scanBewijs": {
-        "reportId": "d0419394d0db",
-        "scanAt": "2026-07-07T07:44:42.108Z",
-        "liveCheckAt": "2026-07-07T18:36:53.309Z",
-        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
-        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d0419394d0db.json",
-        "controleUrl": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
-        "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
-        "evidenceUrls": [
-          "https://www.kroon-interieurbouw.nl/phpmyadmin/",
-          "https://www.kroon-interieurbouw.nl/phpMyAdmin/",
-          "https://www.kroon-interieurbouw.nl/pma/",
-          "https://www.kroon-interieurbouw.nl/phpmyadmin/index.php"
-        ],
-        "risicoScore": 100
-      },
-      "adminProof": {
-        "ok": true,
-        "adminType": "phpMyAdmin",
-        "httpStatus": 200,
-        "panelKind": "login"
-      },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Kroon interieurbouw: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://www.kroon-interieurbouw.nl/phpmyadmin/ (niet ingelogd). Scanref d0419394d0db. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Kroon%20interieurbouw%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.kroon-interieurbouw.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20d0419394d0db.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Kroon%20interieurbouw%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.kroon-interieurbouw.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20d0419394d0db.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Kroon interieurbouw.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:36:\n• phpMyAdmin reageert op: https://www.kroon-interieurbouw.nl/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:44\n• Live hercheck: 07-07-2026, 18:36\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d0419394d0db.json\n  Referentie: d0419394d0db\n• Directe controle-URL uit de scan: https://www.kroon-interieurbouw.nl/phpmyadmin/\n• Extra pad uit rapport: https://www.kroon-interieurbouw.nl/phpMyAdmin/\n• Extra pad uit rapport: https://www.kroon-interieurbouw.nl/pma/\n• Extra pad uit rapport: https://www.kroon-interieurbouw.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op www.kroon-interieurbouw.nl (naam onbekend); beheerpaneel: https://www.kroon-interieurbouw.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://www.kroon-interieurbouw.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://www.kroon-interieurbouw.nl/phpmyadmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d0419394d0db.json",
-      "heeftTelefoon": true,
-      "heeftConsent": false,
-      "grokTaak": "Verkoop-bewijs #6: Kroon interieurbouw\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://www.kroon-interieurbouw.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d0419394d0db.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
-    },
     {
       "prioriteit": 0,
       "bedrijf": "Decor Gordijn",
@@ -278,14 +19,14 @@
       "scanBewijs": {
         "reportId": "ec27b9f2d9e9",
         "scanAt": "2026-07-07T07:36:53.337Z",
-        "liveCheckAt": "2026-07-07T18:36:57.754Z",
+        "liveCheckAt": "2026-07-07T22:08:23.725Z",
         "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
         "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json",
         "controleUrl": "https://www.decorgordijn.nl/phpmyadmin/",
         "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "One moment, please...",
         "evidenceUrls": [
           "https://www.decorgordijn.nl/phpmyadmin/",
           "https://www.decorgordijn.nl/phpMyAdmin/",
@@ -296,60 +37,18 @@
       },
       "adminProof": {
         "ok": true,
-        "adminType": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
         "httpStatus": 200,
-        "panelKind": "login"
+        "panelKind": null
       },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Decor Gordijn: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://www.decorgordijn.nl/phpmyadmin/ (niet ingelogd). Scanref ec27b9f2d9e9. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Decor%20Gordijn%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.decorgordijn.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20ec27b9f2d9e9.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Decor%20Gordijn%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.decorgordijn.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20ec27b9f2d9e9.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Decor Gordijn.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:36:\n• phpMyAdmin reageert op: https://www.decorgordijn.nl/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:36\n• Live hercheck: 07-07-2026, 18:36\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json\n  Referentie: ec27b9f2d9e9\n• Directe controle-URL uit de scan: https://www.decorgordijn.nl/phpmyadmin/\n• Extra pad uit rapport: https://www.decorgordijn.nl/phpMyAdmin/\n• Extra pad uit rapport: https://www.decorgordijn.nl/pma/\n• Extra pad uit rapport: https://www.decorgordijn.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op www.decorgordijn.nl (naam onbekend); beheerpaneel: https://www.decorgordijn.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://www.decorgordijn.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://www.decorgordijn.nl/phpmyadmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Decor Gordijn: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://www.decorgordijn.nl/phpmyadmin/ (niet ingelogd). Scanref ec27b9f2d9e9. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Decor%20Gordijn%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fwww.decorgordijn.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20ec27b9f2d9e9.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Decor%20Gordijn%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fwww.decorgordijn.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20ec27b9f2d9e9.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Decor Gordijn.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://www.decorgordijn.nl/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:36\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „One moment, please...\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json\n  Referentie: ec27b9f2d9e9\n• Directe controle-URL uit de scan: https://www.decorgordijn.nl/phpmyadmin/\n• Extra pad uit rapport: https://www.decorgordijn.nl/phpMyAdmin/\n• Extra pad uit rapport: https://www.decorgordijn.nl/pma/\n• Extra pad uit rapport: https://www.decorgordijn.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op www.decorgordijn.nl (naam onbekend); beheerpaneel: https://www.decorgordijn.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://www.decorgordijn.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://www.decorgordijn.nl/phpmyadmin/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json",
       "heeftTelefoon": true,
       "heeftConsent": false,
-      "grokTaak": "Verkoop-bewijs #7: Decor Gordijn\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://www.decorgordijn.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
-    },
-    {
-      "prioriteit": 0,
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl",
-      "telefoon": "0653373931",
-      "email": "info@rioolservice-pvanadrichem.nl",
-      "risicoScore": 100,
-      "reportId": "cb76ce138bc5",
-      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/cb76ce138bc5.json",
-      "controleUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "scanBewijs": {
-        "reportId": "cb76ce138bc5",
-        "scanAt": "2026-07-07T07:44:51.602Z",
-        "liveCheckAt": "2026-07-07T18:37:00.767Z",
-        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
-        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/cb76ce138bc5.json",
-        "controleUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-        "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
-        "evidenceUrls": [
-          "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
-        ],
-        "risicoScore": 100
-      },
-      "adminProof": {
-        "ok": true,
-        "adminType": "phpMyAdmin",
-        "httpStatus": 200,
-        "panelKind": "login"
-      },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Rioolservice P. van Adrichem: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://rioolservice-pvanadrichem.nl/phpMyAdmin/ (niet ingelogd). Scanref cb76ce138bc5. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31653373931?text=Hoi%2C%20Mike%20(WebKlaar).%20Rioolservice%20P.%20van%20Adrichem%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Frioolservice-pvanadrichem.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%20cb76ce138bc5.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31653373931?text=Hoi%2C%20Mike%20(WebKlaar).%20Rioolservice%20P.%20van%20Adrichem%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Frioolservice-pvanadrichem.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%20cb76ce138bc5.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Rioolservice P. van Adrichem.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:37:\n• phpMyAdmin reageert op: https://rioolservice-pvanadrichem.nl/phpMyAdmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:44\n• Live hercheck: 07-07-2026, 18:37\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/cb76ce138bc5.json\n  Referentie: cb76ce138bc5\n• Directe controle-URL uit de scan: https://rioolservice-pvanadrichem.nl/phpMyAdmin/\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op rioolservice-pvanadrichem.nl (naam onbekend); beheerpaneel: https://rioolservice-pvanadrichem.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://rioolservice-pvanadrichem.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://rioolservice-pvanadrichem.nl/phpMyAdmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/cb76ce138bc5.json",
-      "heeftTelefoon": true,
-      "heeftConsent": false,
-      "grokTaak": "Verkoop-bewijs #8: Rioolservice P. van Adrichem\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://rioolservice-pvanadrichem.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/cb76ce138bc5.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+      "grokTaak": "Verkoop-bewijs #1: Decor Gordijn\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://www.decorgordijn.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
     },
     {
       "prioriteit": 0,
@@ -365,14 +64,14 @@
       "scanBewijs": {
         "reportId": "679c884eb23e",
         "scanAt": "2026-07-07T07:48:08.755Z",
-        "liveCheckAt": "2026-07-07T18:37:02.475Z",
+        "liveCheckAt": "2026-07-07T22:08:45.891Z",
         "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
         "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json",
         "controleUrl": "https://depagter.info/phpmyadmin/",
         "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "One moment, please...",
         "evidenceUrls": [
           "https://depagter.info/phpmyadmin/",
           "https://depagter.info/phpMyAdmin/",
@@ -383,18 +82,18 @@
       },
       "adminProof": {
         "ok": true,
-        "adminType": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
         "httpStatus": 200,
-        "panelKind": "login"
+        "panelKind": null
       },
-      "verkoopKort": "Hoi, Mike (WebKlaar). De Pagter: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://depagter.info/phpmyadmin/ (niet ingelogd). Scanref 679c884eb23e. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20De%20Pagter%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fdepagter.info%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20679c884eb23e.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20De%20Pagter%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fdepagter.info%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20679c884eb23e.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals De Pagter.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:37:\n• phpMyAdmin reageert op: https://depagter.info/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:48\n• Live hercheck: 07-07-2026, 18:37\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json\n  Referentie: 679c884eb23e\n• Directe controle-URL uit de scan: https://depagter.info/phpmyadmin/\n• Extra pad uit rapport: https://depagter.info/phpMyAdmin/\n• Extra pad uit rapport: https://depagter.info/pma/\n• Extra pad uit rapport: https://depagter.info/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op depagter.info (naam onbekend); beheerpaneel: https://depagter.info/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://depagter.info/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://depagter.info/phpmyadmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json",
+      "verkoopKort": "Hoi, Mike (WebKlaar). De Pagter: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://depagter.info/phpmyadmin/ (niet ingelogd). Scanref 679c884eb23e. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20De%20Pagter%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fdepagter.info%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20679c884eb23e.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20De%20Pagter%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fdepagter.info%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%20679c884eb23e.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals De Pagter.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://depagter.info/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:48\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „One moment, please...\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json\n  Referentie: 679c884eb23e\n• Directe controle-URL uit de scan: https://depagter.info/phpmyadmin/\n• Extra pad uit rapport: https://depagter.info/phpMyAdmin/\n• Extra pad uit rapport: https://depagter.info/pma/\n• Extra pad uit rapport: https://depagter.info/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op depagter.info (naam onbekend); beheerpaneel: https://depagter.info/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://depagter.info/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://depagter.info/phpmyadmin/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json",
       "heeftTelefoon": true,
       "heeftConsent": false,
-      "grokTaak": "Verkoop-bewijs #9: De Pagter\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://depagter.info/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+      "grokTaak": "Verkoop-bewijs #2: De Pagter\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://depagter.info/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
     },
     {
       "prioriteit": 0,
@@ -410,14 +109,14 @@
       "scanBewijs": {
         "reportId": "13c475feed67",
         "scanAt": "2026-07-07T07:44:59.370Z",
-        "liveCheckAt": "2026-07-07T18:37:03.616Z",
+        "liveCheckAt": "2026-07-07T22:08:46.584Z",
         "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
         "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json",
         "controleUrl": "https://server-alfa.heroo.nl/phpMyAdmin/",
         "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "One moment, please...",
         "evidenceUrls": [
           "https://server-alfa.heroo.nl/phpMyAdmin/",
           "https://server-alfa.heroo.nl/phpMyAdmin/index.php"
@@ -426,18 +125,18 @@
       },
       "adminProof": {
         "ok": true,
-        "adminType": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
         "httpStatus": 200,
-        "panelKind": "login"
+        "panelKind": null
       },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Pruis Schilderwerken: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://server-alfa.heroo.nl/phpMyAdmin/ (niet ingelogd). Scanref 13c475feed67. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Pruis%20Schilderwerken%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fserver-alfa.heroo.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%2013c475feed67.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Pruis%20Schilderwerken%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fserver-alfa.heroo.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%2013c475feed67.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Pruis Schilderwerken.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:37:\n• phpMyAdmin reageert op: https://server-alfa.heroo.nl/phpMyAdmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:44\n• Live hercheck: 07-07-2026, 18:37\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json\n  Referentie: 13c475feed67\n• Directe controle-URL uit de scan: https://server-alfa.heroo.nl/phpMyAdmin/\n• Extra pad uit rapport: https://server-alfa.heroo.nl/phpMyAdmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op server-alfa.heroo.nl (naam onbekend); beheerpaneel: https://server-alfa.heroo.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://server-alfa.heroo.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://server-alfa.heroo.nl/phpMyAdmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Pruis Schilderwerken: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://server-alfa.heroo.nl/phpMyAdmin/ (niet ingelogd). Scanref 13c475feed67. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Pruis%20Schilderwerken%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fserver-alfa.heroo.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%2013c475feed67.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Pruis%20Schilderwerken%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fserver-alfa.heroo.nl%2FphpMyAdmin%2F%20(niet%20ingelogd).%20Scanref%2013c475feed67.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Pruis Schilderwerken.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://server-alfa.heroo.nl/phpMyAdmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:44\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „One moment, please...\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json\n  Referentie: 13c475feed67\n• Directe controle-URL uit de scan: https://server-alfa.heroo.nl/phpMyAdmin/\n• Extra pad uit rapport: https://server-alfa.heroo.nl/phpMyAdmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op server-alfa.heroo.nl (naam onbekend); beheerpaneel: https://server-alfa.heroo.nl/phpMyAdmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://server-alfa.heroo.nl/phpMyAdmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://server-alfa.heroo.nl/phpMyAdmin/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json",
       "heeftTelefoon": true,
       "heeftConsent": false,
-      "grokTaak": "Verkoop-bewijs #10: Pruis Schilderwerken\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://server-alfa.heroo.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+      "grokTaak": "Verkoop-bewijs #3: Pruis Schilderwerken\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://server-alfa.heroo.nl/phpMyAdmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
     },
     {
       "prioriteit": 0,
@@ -453,14 +152,14 @@
       "scanBewijs": {
         "reportId": "7d32e5ce9787",
         "scanAt": "2026-07-07T07:45:07.897Z",
-        "liveCheckAt": "2026-07-07T18:37:04.340Z",
+        "liveCheckAt": "2026-07-07T22:08:47.174Z",
         "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
         "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json",
         "controleUrl": "https://verzijlbv.nl/phpmyadmin/",
         "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "One moment, please...",
         "evidenceUrls": [
           "https://verzijlbv.nl/phpmyadmin/",
           "https://verzijlbv.nl/phpMyAdmin/",
@@ -470,18 +169,18 @@
       },
       "adminProof": {
         "ok": true,
-        "adminType": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
         "httpStatus": 200,
-        "panelKind": "login"
+        "panelKind": null
       },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Verzijl De Woonprofessionals: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://verzijlbv.nl/phpmyadmin/ (niet ingelogd). Scanref 7d32e5ce9787. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Verzijl%20De%20Woonprofessionals%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fverzijlbv.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%207d32e5ce9787.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Verzijl%20De%20Woonprofessionals%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fverzijlbv.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%207d32e5ce9787.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Verzijl De Woonprofessionals.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:37:\n• phpMyAdmin reageert op: https://verzijlbv.nl/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:45\n• Live hercheck: 07-07-2026, 18:37\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json\n  Referentie: 7d32e5ce9787\n• Directe controle-URL uit de scan: https://verzijlbv.nl/phpmyadmin/\n• Extra pad uit rapport: https://verzijlbv.nl/phpMyAdmin/\n• Extra pad uit rapport: https://verzijlbv.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op verzijlbv.nl (naam onbekend); beheerpaneel: https://verzijlbv.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://verzijlbv.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://verzijlbv.nl/phpmyadmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json",
+      "verkoopKort": "Hoi, Mike (WebKlaar). Verzijl De Woonprofessionals: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://verzijlbv.nl/phpmyadmin/ (niet ingelogd). Scanref 7d32e5ce9787. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Verzijl%20De%20Woonprofessionals%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fverzijlbv.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%207d32e5ce9787.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Verzijl%20De%20Woonprofessionals%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fverzijlbv.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%207d32e5ce9787.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Verzijl De Woonprofessionals.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://verzijlbv.nl/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:45\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „One moment, please...\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json\n  Referentie: 7d32e5ce9787\n• Directe controle-URL uit de scan: https://verzijlbv.nl/phpmyadmin/\n• Extra pad uit rapport: https://verzijlbv.nl/phpMyAdmin/\n• Extra pad uit rapport: https://verzijlbv.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op verzijlbv.nl (naam onbekend); beheerpaneel: https://verzijlbv.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://verzijlbv.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://verzijlbv.nl/phpmyadmin/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json",
       "heeftTelefoon": true,
       "heeftConsent": false,
-      "grokTaak": "Verkoop-bewijs #11: Verzijl De Woonprofessionals\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://verzijlbv.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+      "grokTaak": "Verkoop-bewijs #4: Verzijl De Woonprofessionals\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://verzijlbv.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
     },
     {
       "prioriteit": 0,
@@ -497,14 +196,14 @@
       "scanBewijs": {
         "reportId": "6732bd8e5565",
         "scanAt": "2026-07-07T07:45:09.268Z",
-        "liveCheckAt": "2026-07-07T18:37:05.139Z",
+        "liveCheckAt": "2026-07-07T22:08:47.909Z",
         "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
         "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json",
         "controleUrl": "https://finish-profiles.nl/phpmyadmin/",
         "httpStatus": 200,
-        "adminType": "phpMyAdmin",
-        "panelKind": "login",
-        "paginaTitel": "phpMyAdmin",
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "One moment, please...",
         "evidenceUrls": [
           "https://finish-profiles.nl/phpmyadmin/",
           "https://finish-profiles.nl/phpMyAdmin/",
@@ -515,22 +214,233 @@
       },
       "adminProof": {
         "ok": true,
+        "adminType": "Onbekend paneel",
+        "httpStatus": 200,
+        "panelKind": null
+      },
+      "verkoopKort": "Hoi, Mike (WebKlaar). Finish Profiles: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://finish-profiles.nl/phpmyadmin/ (niet ingelogd). Scanref 6732bd8e5565. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Finish%20Profiles%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Ffinish-profiles.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%206732bd8e5565.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Finish%20Profiles%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Ffinish-profiles.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%206732bd8e5565.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Finish Profiles.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://finish-profiles.nl/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:45\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „One moment, please...\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json\n  Referentie: 6732bd8e5565\n• Directe controle-URL uit de scan: https://finish-profiles.nl/phpmyadmin/\n• Extra pad uit rapport: https://finish-profiles.nl/phpMyAdmin/\n• Extra pad uit rapport: https://finish-profiles.nl/pma/\n• Extra pad uit rapport: https://finish-profiles.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op finish-profiles.nl (naam onbekend); beheerpaneel: https://finish-profiles.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://finish-profiles.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://finish-profiles.nl/phpmyadmin/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json",
+      "heeftTelefoon": true,
+      "heeftConsent": false,
+      "grokTaak": "Verkoop-bewijs #5: Finish Profiles\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://finish-profiles.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+    },
+    {
+      "prioriteit": 0,
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "url": "https://www.ejvandermeer.nl",
+      "telefoon": "0631514170",
+      "email": "info@ejvandermeer.nl",
+      "risicoScore": 80,
+      "reportId": "5424b2313def",
+      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/5424b2313def.json",
+      "controleUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "scanBewijs": {
+        "reportId": "5424b2313def",
+        "scanAt": "2026-07-07T07:59:57.719Z",
+        "liveCheckAt": "2026-07-07T22:08:48.481Z",
+        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
+        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/5424b2313def.json",
+        "controleUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
+        "httpStatus": 200,
+        "adminType": "phpMyAdmin",
+        "panelKind": "login",
+        "paginaTitel": "phpMyAdmin",
+        "evidenceUrls": [
+          "https://www.ejvandermeer.nl/phpmyadmin/",
+          "https://www.ejvandermeer.nl/phpmyadmin/index.php"
+        ],
+        "risicoScore": 80
+      },
+      "adminProof": {
+        "ok": true,
         "adminType": "phpMyAdmin",
         "httpStatus": 200,
         "panelKind": "login"
       },
-      "verkoopKort": "Hoi, Mike (WebKlaar). Finish Profiles: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://finish-profiles.nl/phpmyadmin/ (niet ingelogd). Scanref 6732bd8e5565. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
-      "whatsappSchrik": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Finish%20Profiles%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Ffinish-profiles.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%206732bd8e5565.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "whatsappUrl": "https://wa.me/31950635027?text=Hoi%2C%20Mike%20(WebKlaar).%20Finish%20Profiles%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Ffinish-profiles.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%206732bd8e5565.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
-      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Finish Profiles.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 18:37:\n• phpMyAdmin reageert op: https://finish-profiles.nl/phpmyadmin/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:45\n• Live hercheck: 07-07-2026, 18:37\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json\n  Referentie: 6732bd8e5565\n• Directe controle-URL uit de scan: https://finish-profiles.nl/phpmyadmin/\n• Extra pad uit rapport: https://finish-profiles.nl/phpMyAdmin/\n• Extra pad uit rapport: https://finish-profiles.nl/pma/\n• Extra pad uit rapport: https://finish-profiles.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op finish-profiles.nl (naam onbekend); beheerpaneel: https://finish-profiles.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://finish-profiles.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
-      "belScript": "1. Niet ingelogd — passieve check op https://finish-profiles.nl/phpmyadmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json",
+      "verkoopKort": "Hoi, Mike (WebKlaar). van der Meer Elektrotechniek BV: passieve check (HTTP 200, live gecontroleerd) — phpMyAdmin op https://www.ejvandermeer.nl/phpmyadmin/ (niet ingelogd). Scanref 5424b2313def. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31631514170?text=Hoi%2C%20Mike%20(WebKlaar).%20van%20der%20Meer%20Elektrotechniek%20BV%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.ejvandermeer.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%205424b2313def.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31631514170?text=Hoi%2C%20Mike%20(WebKlaar).%20van%20der%20Meer%20Elektrotechniek%20BV%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20phpMyAdmin%20op%20https%3A%2F%2Fwww.ejvandermeer.nl%2Fphpmyadmin%2F%20(niet%20ingelogd).%20Scanref%205424b2313def.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals van der Meer Elektrotechniek BV.\n\nMet uw schriftelijke toestemming (2026-07-07, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• phpMyAdmin reageert op: https://www.ejvandermeer.nl/phpmyadmin/\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:59\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/5424b2313def.json\n  Referentie: 5424b2313def\n• Directe controle-URL uit de scan: https://www.ejvandermeer.nl/phpmyadmin/\n• Extra pad uit rapport: https://www.ejvandermeer.nl/phpmyadmin/index.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database phpMyAdmin op www.ejvandermeer.nl (naam onbekend); beheerpaneel: https://www.ejvandermeer.nl/phpmyadmin/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://www.ejvandermeer.nl/phpmyadmin/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nphpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.\n\nVakScan-weging: 80/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://www.ejvandermeer.nl/phpmyadmin/\n2. Live: HTTP 200, phpMyAdmin (login)\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/5424b2313def.json",
+      "heeftTelefoon": true,
+      "heeftConsent": true,
+      "grokTaak": "Verkoop-bewijs #6: van der Meer Elektrotechniek BV\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://www.ejvandermeer.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/5424b2313def.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+    },
+    {
+      "prioriteit": 0,
+      "bedrijf": "SA Elektro Experts",
+      "plaats": "'s-Gravenhage",
+      "url": "https://saelektroexperts.nl",
+      "telefoon": "0707503681",
+      "email": "info@saelektroexperts.nl",
+      "risicoScore": 40,
+      "reportId": "aab38445503e",
+      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/aab38445503e.json",
+      "controleUrl": "https://saelektroexperts.nl/",
+      "scanBewijs": {
+        "reportId": "aab38445503e",
+        "scanAt": "2026-07-07T07:44:37.476Z",
+        "liveCheckAt": "2026-07-07T22:08:50.295Z",
+        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
+        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/aab38445503e.json",
+        "controleUrl": "https://saelektroexperts.nl/",
+        "httpStatus": 200,
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "SA Elektro Experts – Lokale elektricien met 24/7 Service.",
+        "evidenceUrls": [
+          "https://saelektroexperts.nl/"
+        ],
+        "risicoScore": 40
+      },
+      "adminProof": {
+        "ok": true,
+        "adminType": "Onbekend paneel",
+        "httpStatus": 200,
+        "panelKind": null
+      },
+      "verkoopKort": "Hoi, Mike (WebKlaar). SA Elektro Experts: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://saelektroexperts.nl/ (niet ingelogd). Scanref aab38445503e. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20(WebKlaar).%20SA%20Elektro%20Experts%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fsaelektroexperts.nl%2F%20(niet%20ingelogd).%20Scanref%20aab38445503e.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20(WebKlaar).%20SA%20Elektro%20Experts%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Fsaelektroexperts.nl%2F%20(niet%20ingelogd).%20Scanref%20aab38445503e.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals SA Elektro Experts.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://saelektroexperts.nl/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:44\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „SA Elektro Experts – Lokale elektricien met 24/7 Service.\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/aab38445503e.json\n  Referentie: aab38445503e\n• Directe controle-URL uit de scan: https://saelektroexperts.nl/\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database Elasticsearch op saelektroexperts.nl (naam onbekend); beheerpaneel: https://saelektroexperts.nl/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://saelektroexperts.nl/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 40/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://saelektroexperts.nl/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/aab38445503e.json",
       "heeftTelefoon": true,
       "heeftConsent": false,
-      "grokTaak": "Verkoop-bewijs #12: Finish Profiles\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://finish-profiles.nl/phpmyadmin/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+      "grokTaak": "Verkoop-bewijs #7: SA Elektro Experts\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://saelektroexperts.nl/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/aab38445503e.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+    },
+    {
+      "prioriteit": 0,
+      "bedrijf": "Suntec zonwering",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.suntec-zonwering.nl",
+      "telefoon": "0715802342",
+      "email": "info@suntec-zonwering.nl",
+      "risicoScore": 40,
+      "reportId": "6888507d0d7c",
+      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6888507d0d7c.json",
+      "controleUrl": "https://www.suntec-zonwering.nl/adminer.php",
+      "scanBewijs": {
+        "reportId": "6888507d0d7c",
+        "scanAt": "2026-07-07T07:59:42.286Z",
+        "liveCheckAt": "2026-07-07T22:08:51.339Z",
+        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
+        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6888507d0d7c.json",
+        "controleUrl": "https://www.suntec-zonwering.nl/adminer.php",
+        "httpStatus": 200,
+        "adminType": "Adminer",
+        "panelKind": null,
+        "paginaTitel": "Login - Adminer",
+        "evidenceUrls": [
+          "https://www.suntec-zonwering.nl/adminer.php"
+        ],
+        "risicoScore": 40
+      },
+      "adminProof": {
+        "ok": true,
+        "adminType": "Adminer",
+        "httpStatus": 200,
+        "panelKind": null
+      },
+      "verkoopKort": "Hoi, Mike (WebKlaar). Suntec zonwering: passieve check (HTTP 200, live gecontroleerd) — Adminer op https://www.suntec-zonwering.nl/adminer.php (niet ingelogd). Scanref 6888507d0d7c. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31715802342?text=Hoi%2C%20Mike%20(WebKlaar).%20Suntec%20zonwering%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Adminer%20op%20https%3A%2F%2Fwww.suntec-zonwering.nl%2Fadminer.php%20(niet%20ingelogd).%20Scanref%206888507d0d7c.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31715802342?text=Hoi%2C%20Mike%20(WebKlaar).%20Suntec%20zonwering%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Adminer%20op%20https%3A%2F%2Fwww.suntec-zonwering.nl%2Fadminer.php%20(niet%20ingelogd).%20Scanref%206888507d0d7c.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Suntec zonwering.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Adminer reageert op: https://www.suntec-zonwering.nl/adminer.php\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:59\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Adminer, titel pagina: „Login - Adminer\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6888507d0d7c.json\n  Referentie: 6888507d0d7c\n• Directe controle-URL uit de scan: https://www.suntec-zonwering.nl/adminer.php\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database Adminer op www.suntec-zonwering.nl (naam onbekend); beheerpaneel: https://www.suntec-zonwering.nl/adminer.php.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://www.suntec-zonwering.nl/adminer.php\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nAdminer-inlogpagina voor database-beheer, bereikbaar via deze URL.\n\nKort uitgelegd:\nDatabase-beheer is via het internet bereikbaar; gebruikelijk is extra afscherming (hosting/VPN).\n\nVakScan-weging: 40/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://www.suntec-zonwering.nl/adminer.php\n2. Live: HTTP 200, Adminer\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6888507d0d7c.json",
+      "heeftTelefoon": true,
+      "heeftConsent": false,
+      "grokTaak": "Verkoop-bewijs #8: Suntec zonwering\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://www.suntec-zonwering.nl/adminer.php\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6888507d0d7c.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+    },
+    {
+      "prioriteit": 0,
+      "bedrijf": "Loodgieterskwartier",
+      "plaats": "Rijswijk",
+      "url": "https://loodgieterskwartier.nl",
+      "telefoon": "0852125588",
+      "email": "info@loodgieterskwartier.nl",
+      "risicoScore": 40,
+      "reportId": "d55c372ed7e5",
+      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d55c372ed7e5.json",
+      "controleUrl": "https://loodgieterskwartier.nl/",
+      "scanBewijs": {
+        "reportId": "d55c372ed7e5",
+        "scanAt": "2026-07-07T08:00:05.884Z",
+        "liveCheckAt": "2026-07-07T22:08:52.289Z",
+        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
+        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d55c372ed7e5.json",
+        "controleUrl": "https://loodgieterskwartier.nl/",
+        "httpStatus": 200,
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "Loodgieter - 24/7 spoedservice: 085 212 55 88 - [Gratis] Offerte 24u",
+        "evidenceUrls": [
+          "https://loodgieterskwartier.nl/"
+        ],
+        "risicoScore": 40
+      },
+      "adminProof": {
+        "ok": true,
+        "adminType": "Onbekend paneel",
+        "httpStatus": 200,
+        "panelKind": null
+      },
+      "verkoopKort": "Hoi, Mike (WebKlaar). Loodgieterskwartier: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://loodgieterskwartier.nl/ (niet ingelogd). Scanref d55c372ed7e5. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": "https://wa.me/31852125588?text=Hoi%2C%20Mike%20(WebKlaar).%20Loodgieterskwartier%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Floodgieterskwartier.nl%2F%20(niet%20ingelogd).%20Scanref%20d55c372ed7e5.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "whatsappUrl": "https://wa.me/31852125588?text=Hoi%2C%20Mike%20(WebKlaar).%20Loodgieterskwartier%3A%20passieve%20check%20(HTTP%20200%2C%20live%20gecontroleerd)%20%E2%80%94%20Onbekend%20paneel%20op%20https%3A%2F%2Floodgieterskwartier.nl%2F%20(niet%20ingelogd).%20Scanref%20d55c372ed7e5.%20Zelf%20openen%20%3D%20zelfde%20pagina.%20Kort%20bellen%20over%20afschermen%3F%20Website%20Veilig%20%E2%82%AC299.",
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Loodgieterskwartier.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://loodgieterskwartier.nl/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 08:00\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „Loodgieter - 24/7 spoedservice: 085 212 55 88 - [Gratis] Offerte 24u\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d55c372ed7e5.json\n  Referentie: d55c372ed7e5\n• Directe controle-URL uit de scan: https://loodgieterskwartier.nl/\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database Elasticsearch op loodgieterskwartier.nl (naam onbekend); beheerpaneel: https://loodgieterskwartier.nl/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://loodgieterskwartier.nl/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 40/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://loodgieterskwartier.nl/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d55c372ed7e5.json",
+      "heeftTelefoon": true,
+      "heeftConsent": false,
+      "grokTaak": "Verkoop-bewijs #9: Loodgieterskwartier\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://loodgieterskwartier.nl/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d55c372ed7e5.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
+    },
+    {
+      "prioriteit": 0,
+      "bedrijf": "Decorette",
+      "plaats": "Nieuw-Vennep",
+      "url": "https://decorette.nl/winkels/nieuw-vennep",
+      "telefoon": null,
+      "email": "geri@doubleweb.nl",
+      "risicoScore": 40,
+      "reportId": "47cfe84cc8f4",
+      "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/47cfe84cc8f4.json",
+      "controleUrl": "https://decorette.nl/",
+      "scanBewijs": {
+        "reportId": "47cfe84cc8f4",
+        "scanAt": "2026-07-07T07:44:55.505Z",
+        "liveCheckAt": "2026-07-07T22:08:51.491Z",
+        "methode": "Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)",
+        "rapportUrl": "https://mikevisser0904.github.io/OFFERTE-WIJS/reports/47cfe84cc8f4.json",
+        "controleUrl": "https://decorette.nl/",
+        "httpStatus": 200,
+        "adminType": "Onbekend paneel",
+        "panelKind": null,
+        "paginaTitel": "One moment, please...",
+        "evidenceUrls": [
+          "https://decorette.nl/"
+        ],
+        "risicoScore": 40
+      },
+      "adminProof": {
+        "ok": true,
+        "adminType": "Onbekend paneel",
+        "httpStatus": 200,
+        "panelKind": null
+      },
+      "verkoopKort": "Hoi, Mike (WebKlaar). Decorette: passieve check (HTTP 200, live gecontroleerd) — Onbekend paneel op https://decorette.nl/ (niet ingelogd). Scanref 47cfe84cc8f4. Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.",
+      "whatsappSchrik": null,
+      "whatsappUrl": null,
+      "verkoopBericht": "Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals Decorette.\n\nFEIT (passieve check, geen inlog) — 07-07-2026, 22:08:\n• Onbekend paneel reageert op: https://decorette.nl/\n• Wij hebben niet ingelogd zonder uw toestemming.\n\n\nBEWIJS (meetbaar — zelf nakijken):\n• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)\n• Eerste scan: 07-07-2026, 07:44\n• Live hercheck: 07-07-2026, 22:08\n• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „One moment, please...\"\n• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/47cfe84cc8f4.json\n  Referentie: 47cfe84cc8f4\n• Directe controle-URL uit de scan: https://decorette.nl/\n• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.\n\n\n\n\nUit publieke site/config (geen database-inlog): database Elasticsearch op decorette.nl (naam onbekend); beheerpaneel: https://decorette.nl/.\n\nZELF NAKIJKEN — plak in uw browser:\nhttps://decorette.nl/\n\nWat op die pagina staat (zonder wachtwoord in te vullen):\nTechnische of beheerpagina reageert op deze URL.\n\nKort uitgelegd:\nDit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.\n\nVakScan-weging: 40/100 (interne prioriteitsscore, geen officieel certificaat).\n\nAanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?",
+      "belScript": "1. Niet ingelogd — passieve check op https://decorette.nl/\n2. Live: HTTP 200, Onbekend paneel\n3. Scanrapport tonen: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/47cfe84cc8f4.json",
+      "heeftTelefoon": false,
+      "heeftConsent": false,
+      "grokTaak": "Verkoop-bewijs #10: Decorette\nDoel: feit eerst (URL + rapport) — geen angstpraat, geen \"u bent gehackt\".\nLaat klant deze URL openen: https://decorette.nl/\nOptioneel scanrapport JSON: https://mikevisser0904.github.io/OFFERTE-WIJS/reports/47cfe84cc8f4.json\nGebruik verkoopKort voor WhatsApp; volledig bericht heeft BEWIJS-blok.\nAanbod: Website Veilig €299 — 2 werkdagen, scherm delen in belletje.\nDocs: docs/BEWIJS-AAN-KLANT.md"
     }
   ],
-  "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
-  "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+  "agentPrompt": "Verkoop-bewijs: 10 klanten met live bewijs — start Decor Gordijn (HTTP 200) · /dashboard/ + /agents/",
+  "grokPrompt": "agent verkoop-bewijs — Decor Gordijn: controle https://www.decorgordijn.nl/phpmyadmin/ · rapport ec27b9f2d9e9. Mike belt met BEWIJS-blok, geen inbraak-claims.",
   "ethisch": "Feit eerst, geen angstpraat. Nooit inloggen zonder toestemming. Nooit 'wij zitten in uw database' — wel: meetbare URL + wat de klant zelf ziet. Klant verifieert zelf.",
   "docs": "docs/BEWIJS-AAN-KLANT.md"
 }
