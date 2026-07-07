@@ -1,32 +1,32 @@
 {
-  "updatedAt": "2026-07-07T07:33:30.084Z",
+  "updatedAt": "2026-07-07T08:00:56.458Z",
   "agent": "optimizer",
-  "applyMode": true,
+  "applyMode": false,
   "metrics": {
-    "pending": 185,
-    "leakCount": 0,
-    "outreachCount": 0,
+    "pending": 0,
+    "leakCount": 37,
+    "outreachCount": 15,
     "leadsTotaal": 184,
-    "hitRate": 0,
+    "hitRate": 17.5,
     "avgMs": 244
   },
   "uitgevoerd": [
     {
-      "id": "purge-demo-queue",
-      "titel": "Verwijder 1 demo-URL's uit queue",
-      "fn": "purgeDemoQueue",
-      "status": "ok",
-      "result": 1
-    },
-    {
       "id": "sync-report-index",
       "titel": "Rapport-index syncen",
       "fn": "syncIndex",
-      "status": "ok",
-      "result": true
+      "status": "voorgesteld"
     }
   ],
-  "aanbevelingen": [],
-  "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-  "pendingGrok": 0
+  "aanbevelingen": [
+    {
+      "id": "mike-actie",
+      "prioriteit": 3,
+      "type": "mike",
+      "titel": "Outreach klaar, geen contacten KPI",
+      "actie": "5 WhatsApps via /actie/ vandaag"
+    }
+  ],
+  "grokPrompt": "optimizer: draai npm run agent:optimizer:apply voor auto-fix",
+  "pendingGrok": 1
 }

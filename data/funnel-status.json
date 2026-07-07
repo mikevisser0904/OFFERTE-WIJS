@@ -1,8 +1,37 @@
 {
-  "startedAt": "2026-07-07T08:00:00.000Z",
-  "finishedAt": "2026-07-07T08:00:00.000Z",
-  "mode": "pending",
-  "steps": [],
+  "startedAt": "2026-07-07T07:47:14.257Z",
+  "finishedAt": "2026-07-07T08:00:57.024Z",
+  "mode": "light",
+  "steps": [
+    {
+      "id": "dataflow",
+      "ok": true
+    },
+    {
+      "id": "leads",
+      "ok": true
+    },
+    {
+      "id": "score",
+      "ok": true
+    },
+    {
+      "id": "outreach",
+      "ok": true
+    },
+    {
+      "id": "optimizer",
+      "ok": true
+    },
+    {
+      "id": "dataflow2",
+      "ok": true
+    },
+    {
+      "id": "manager",
+      "ok": true
+    }
+  ],
   "ok": true,
-  "next": "Mike: /dashboard/ (top vandaag) · /agents/ (outreach) · npm run funnel"
+  "next": "Mike: /dashboard/ (top vandaag) · /agents/ (outreach) · /actie/"
 }

@@ -1,5 +1,1975 @@
 {
-  "updatedAt": "2026-07-07T00:00:00.000Z",
+  "updatedAt": "2026-07-07T07:59:37.694Z",
   "uitleg": "Schriftelijke toestemming per site. scope: passive-deep (GET), auth-verify (alleen met scan-toestemming.local.json). status: active | revoked",
-  "entries": []
+  "entries": [
+    {
+      "siteUrl": "https://www.dreumel.nl",
+      "bedrijf": "Dreumel",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.dreumel.nl/404",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://firmavanrijn.nl",
+      "bedrijf": "Firma Fred van Rijn",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://saelektroexperts.nl",
+      "bedrijf": "SA Elektro Experts",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://saelektroexperts.nl/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.suntec-zonwering.nl",
+      "bedrijf": "Suntec zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.suntec-zonwering.nl/adminer.php",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.amer-hout.nl",
+      "bedrijf": "Amer Houttechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.ambiance-zonwering.nl/heko-becewe",
+      "bedrijf": "Ambiance Heko-Becewe",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.ambiance-zonwering.nl/phpmyadmin/index.php",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.kroon-interieurbouw.nl",
+      "bedrijf": "Kroon interieurbouw",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.kroon-interieurbouw.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.textilia-dordrecht.nl",
+      "bedrijf": "Textilia",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.decorgordijn.nl",
+      "bedrijf": "Decor Gordijn",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.decorgordijn.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.boselektrotechniek.nl",
+      "bedrijf": "Bos Elektrotechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.ejvandermeer.nl",
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://rioolservice-pvanadrichem.nl",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://decorette.nl/winkels/nieuw-vennep",
+      "bedrijf": "Decorette",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://decorette.nl/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://chargecars.nl",
+      "bedrijf": "ChargeCars",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://chargecars.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://loodgieterskwartier.nl",
+      "bedrijf": "Loodgieterskwartier",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://loodgieterskwartier.nl/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://depagter.info",
+      "bedrijf": "De Pagter",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://depagter.info/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.willemseelektrotechniek.nl",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://pruisschilderwerken.nl",
+      "bedrijf": "Pruis Schilderwerken",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://server-alfa.heroo.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://mksschilderwerken.nl",
+      "bedrijf": "Mks schilderwerken",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://mksschilderwerken.nl/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://verzijlbv.nl",
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://verzijlbv.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.finish-profiles.nl",
+      "bedrijf": "Finish Profiles",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://finish-profiles.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://timmerbedrijf-frank.nl",
+      "bedrijf": "Timmerbedrijf Simon Frank & Zn.",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://www.rinusvanstein.nl",
+      "bedrijf": "Rinus van Stein",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://atelierzuidinga.nl",
+      "bedrijf": "Atelier Zuidinga",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://bovenkamerutrecht.nl",
+      "bedrijf": "De Bovenkamer",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://ericvaneijk.nl",
+      "bedrijf": "Leidekkersbedrijf van Eijk",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://vanbeek-schilders.nl",
+      "bedrijf": "Van Beek Schilders",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.buitelaarzonwering.nl",
+      "bedrijf": "A. Buitelaar Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.atelieraw.nl",
+      "bedrijf": "Atelier-AW",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.l-groep.nl",
+      "bedrijf": "L-Groep totaalonderhoud",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.bectro.nl",
+      "bedrijf": "Bectro",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.delektro.nl",
+      "bedrijf": "Delektro",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://designbekleding.nl",
+      "bedrijf": "Designbekleding",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://elitairklimaat.nl",
+      "bedrijf": "Elitair Klimaattechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://houtindustrie-amersfoort.nl",
+      "bedrijf": "Houtindustrie Amersfoort",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.i-kozijn.nl",
+      "bedrijf": "i-Kozijn",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://mirva.nl",
+      "bedrijf": "MIRvA",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.amstellandkozijnen.nl",
+      "bedrijf": "Amstelland Kozijnen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.lambertusvandenbroek.nl",
+      "bedrijf": "Lambertus van den Broek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.schipperkozijnen.nl/showrooms/amstelveen",
+      "bedrijf": "Schipper Kozijnen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.bruens-electrotechniek.nl",
+      "bedrijf": "Bruens Electrotechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.evimvloeren.nl",
+      "bedrijf": "Evimvloeren",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.kilim-tapijt-vinyl.nl",
+      "bedrijf": "Kilim Tapijt & Vinyl",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://klimaatservicenoordholland.nl",
+      "bedrijf": "Klimaatservice Noordholland",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.knookmetaal.nl/producten/knook-deuren-en-kozijnen",
+      "bedrijf": "Knook Deuren en Kozijnen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.protectsun.nl",
+      "bedrijf": "Protectsun",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://brandsen-installatietechniek.nl",
+      "bedrijf": "Brandsen Installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.energyshift.nl",
+      "bedrijf": "Enery Shift",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.zonenscherm.nl/site/zon-en-scherm-berkel-en-rodenrijs",
+      "bedrijf": "Zon en Scherm Berkel en Rodenrijs",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.vandenhoogen.nl",
+      "bedrijf": "Van den Hoogen engineering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.eraduszonwering.nl",
+      "bedrijf": "Eradus Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.groenewegendelft.nl",
+      "bedrijf": "Groenewegen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.delamellengigant.nl",
+      "bedrijf": "De Lamellengigant",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.woningtextielhuis.nl",
+      "bedrijf": "Woningtextielhuis",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://joostwonen.nl",
+      "bedrijf": "Joost Wonen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.vanleeuwenelektrotechniek.nl",
+      "bedrijf": "Van Leeuwen Elektrotechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.kiwatt.nl",
+      "bedrijf": "Kiwatt",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.marcelvittali.nl",
+      "bedrijf": "Marcel Vittali",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.mesuttimmerfabriek.nl",
+      "bedrijf": "Mesut Timmerfabriek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.woonbasis.nl",
+      "bedrijf": "Woonbasis",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.efzon.com",
+      "bedrijf": "Efzon Doseer- en Installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.quadraatbouw.nl",
+      "bedrijf": "Quadraat Bouw",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.randstadzonweringen.nl",
+      "bedrijf": "Randstad Zonweringen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://stb.eu",
+      "bedrijf": "STB",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://evanbaareninstallatietechniek.nl",
+      "bedrijf": "Van Baaren Installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://terberg.eu",
+      "bedrijf": "Terberg Totaal Installaties",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://ventanazonwering.nl",
+      "bedrijf": "Ventana Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://deschrijn.nl",
+      "bedrijf": "De Schrijn",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.timmerfabriekverhagen.nl",
+      "bedrijf": "Timmerfabriek Verhagen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.woordesbouw.nl",
+      "bedrijf": "Woordes Bouw- & Timmerwerken",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://zandschulpzonwering.nl/showrooms/zonwering-leusden",
+      "bedrijf": "Zandschulp Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://zensmaatwerk.nl",
+      "bedrijf": "ZENS Maatwerk",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.voorbergzonwering.nl",
+      "bedrijf": "Voorberg zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.rojas-colorsathome.nl",
+      "bedrijf": "Rojas Zonwering & Interieur",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.coolairnederland.nl",
+      "bedrijf": "CoolAir Nederland",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://koelmy.nl",
+      "bedrijf": "Koel-My",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.mazurel.nl",
+      "bedrijf": "Mazurel Installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.opthoog.nl/contact/vestigingen/purmerend",
+      "bedrijf": "Ramenfabriek op 't Hoog",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.decosier.nl",
+      "bedrijf": "Decosier",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://degierwonen.nl",
+      "bedrijf": "De Gier",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://harmonygordijnen.nl",
+      "bedrijf": "Harmony Gordijnen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://lohmannbv.nl",
+      "bedrijf": "Lohmann",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://tulay.nl",
+      "bedrijf": "Tulay",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://luxuryhomeraamdecoratie.nl",
+      "bedrijf": "Luxury Home",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.merwede-tapijten.nl",
+      "bedrijf": "Merwede tapijten",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://amnaaiwinkel.nl",
+      "bedrijf": "Ambachtelijke Naaiwinkel",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://arenagordijnenland.nl",
+      "bedrijf": "Arena Gordijnenland",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.dekroonzonwering.nl",
+      "bedrijf": "De Kroon Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://loodgietersbedrijfutrecht.nl",
+      "bedrijf": "Loodgietersbedrijf Utrecht",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://louvendahome.nl",
+      "bedrijf": "Louvenda Home",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://simainstallatie.nl",
+      "bedrijf": "Sima Installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://koekenreinders.nl",
+      "bedrijf": "Koek & Reinders",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.achterbergschilders.nl",
+      "bedrijf": "Achterberg Schilders & Onderhoud",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.hjslierings.nl",
+      "bedrijf": "H.J. Slierings",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.bosgroep.com",
+      "bedrijf": "BOS Groep Techniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.jkuijper.nl",
+      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://rvwschilderwerken.nl",
+      "bedrijf": "RvW Schilderwerken",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://cm-schilders.com",
+      "bedrijf": "C&M Schilders",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://vdnat.nl",
+      "bedrijf": "Van der Nat Glas- en Schilderwerken",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://kevindegraaf.nl",
+      "bedrijf": "Schildersbedrijf K. de Graaf",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://meerschilder.nl",
+      "bedrijf": "Schildersbedrijf van der Meer",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.quickpaint.nl",
+      "bedrijf": "Quick Paint",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.vanlochem.nl",
+      "bedrijf": "Van Lochem Schildersbedrijven",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.kuytschilders.nl",
+      "bedrijf": "Kuyt Schilders B.V. Schilderwerk",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.schilderleenmeurs.nl",
+      "bedrijf": "Leen Meurs",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://wooncentrumubokok.nl",
+      "bedrijf": "Wooncentrum Ubo Kok",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.ebd-purmerend.nl",
+      "bedrijf": "EBD Techniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://nuoveni.nl/",
+      "bedrijf": "Nuoveni",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://nuoveni.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.wonnink.nl/",
+      "bedrijf": "Wonnink Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.wonnink.nl/_cat/indices?v",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://klompelektrotechniek.nl/",
+      "bedrijf": "Klomp Elektrotechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://vogelaarschilder.nl/",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.bwstyling.nl/",
+      "bedrijf": "Burggraeve Woonstyling",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.jwfborn.nl/",
+      "bedrijf": "Loodgietersbedrijf J.W.F. Born",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.jwfborn.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.voordeelgordijnen.nl/",
+      "bedrijf": "Voordeelgordijnen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.voordeelgordijnen.nl/.env",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.schreuderschilderwerken.nl/",
+      "bedrijf": "Schreuder Glas- en Schilderwerken",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.schreuderschilderwerken.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.blygold.nl/",
+      "bedrijf": "Blygold",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://www.blygold.nl/phpmyadmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.keyzerbv.nl/",
+      "bedrijf": "Installatiebedrijf Keyzer",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://keyzerbv.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://vanwichenbv.nl/",
+      "bedrijf": "T.B. van Wichen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": "https://vanwichenbv.nl/phpMyAdmin/",
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.alx.nl",
+      "bedrijf": "ALX Elektra",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.bonarius.com",
+      "bedrijf": "Bonarius Zuid-Holland",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://hbcwooncomfort.nl",
+      "bedrijf": "HBC Wooncomfort",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://oranjegordijn.nl",
+      "bedrijf": "Oranjegordijn",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.kreeft-wissen.nl",
+      "bedrijf": "Kreeft & van Wissen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://loodgietersbedrijfgoossensen.nl",
+      "bedrijf": "Goossensen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://vanolstschilders.nl",
+      "bedrijf": "Van Olst Schilders",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.blossompaardencoaching.nl",
+      "bedrijf": "Blossom Paardencoaching",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.facebook.com/gordijnenhuis.madina",
+      "bedrijf": "Gordijnenhuis Madina",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://ideaalgordijin.com",
+      "bedrijf": "Ideaal Gordijnen Specialisten",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://louwenhoutbewerking.nl",
+      "bedrijf": "Louwen Houtbewerking",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.vivante-bekenkamp.nl",
+      "bedrijf": "Vivante Bekenkamp",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://www.aadelektrotechniek.nl",
+      "bedrijf": "AAD Elektrotechniek & Onderhoudsbedrijf",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://onnink-bv.nl",
+      "bedrijf": "Onnink",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.ehi-stolle.nl",
+      "bedrijf": "Ehi Stolle",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.kokall.nl",
+      "bedrijf": "Kokall",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://www.meerhouthandel.nl",
+      "bedrijf": "Algemene Houthandel & Timmerfabriek van der Meer",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://mastrinterieurspecialisten.nl",
+      "bedrijf": "Mastr Interieurspecialisten",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.smit-interieur.nl",
+      "bedrijf": "Smit Wonen in Sfeer",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://drechtseloodgieter.nl",
+      "bedrijf": "Drechtse Loodgieter",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://www.vantaarling.nl",
+      "bedrijf": "Fa. van Taarling",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.vinkesteyn.nl",
+      "bedrijf": "Vinkesteyn",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.bvrzonwering.nl",
+      "bedrijf": "BVR Wooncomfort",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.vanrennes.nl",
+      "bedrijf": "Van Rennes Elektro- & Installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://woonspecialist.nl/winkels/bekenkamp-laren",
+      "bedrijf": "Bekenkamp",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://vanmuiden.nl",
+      "bedrijf": "Glas- en Schilderwerken van Muiden",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.fonteinelektrotechniek.nl",
+      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.lameko.nl",
+      "bedrijf": "Lameko zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://www.ozbaygordijnen.nl",
+      "bedrijf": "Ozbay Gordijnen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.maatdakkapellen.nl",
+      "bedrijf": "Maat Dakkapellen",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.groepenkastcompleet.nl",
+      "bedrijf": "GroepenkastCompleet",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.joostenbartschilderwerken.nl",
+      "bedrijf": "Joost & Bart Schilderwerken",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.rioolservicewaterland.nl",
+      "bedrijf": "Bert Witsel Rioolservice Waterland",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.ds-service.nl",
+      "bedrijf": "D.S. Service",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://denhil.nl",
+      "bedrijf": "Denhil Kozijn en Geveltechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://engberts.nu",
+      "bedrijf": "Engberts Elektrotechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://ivgelectrogroep.nl",
+      "bedrijf": "IVG Electro Groep",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.loodgieterkatuin.nl",
+      "bedrijf": "Katuin",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://rizzyco.wixsite.com/revobv-2",
+      "bedrijf": "REVO",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://renelek.nl",
+      "bedrijf": "Schilder en Wandafwerkingsbedrijf Rene Lek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.starkozijnkatwijk.nl",
+      "bedrijf": "Starkozijn Katwijk",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.bastasol.nl",
+      "bedrijf": "Bastasol Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://wimdejong.klussenier.nl",
+      "bedrijf": "De Klussenier",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://installatiebedrijfvis.nl",
+      "bedrijf": "Installatiebedrijf Vis",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://lugthart.nl",
+      "bedrijf": "Lugthart",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://plantservices.nl",
+      "bedrijf": "Plant services",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "http://www.stoffenhuisbestevaer.nl",
+      "bedrijf": "Stoffenhuis Bestevaer",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.woninginrichting-aanhuis.nl/winkels/spijkenisse",
+      "bedrijf": "Woninginrichting-Aanhuis.nl",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.etech.nu",
+      "bedrijf": "etech soest",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://hennink.info",
+      "bedrijf": "Hennink Installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.kracht.nl",
+      "bedrijf": "I.B. Kracht",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.zonwering.nl/verkooppunten/rolluiken-voorburg",
+      "bedrijf": "JCM Styles",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://installatiebedrijfrobberts.nl",
+      "bedrijf": "Loodgietersbedrijf Robberts",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.eyelux.nl",
+      "bedrijf": "Eyelux Zonwering",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://perezvoorschoten.nl",
+      "bedrijf": "Wolters Perez",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.jonkerbv.eu",
+      "bedrijf": "Installatiebureau Jonker BV",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://www.plompinstallatietechniek.nl",
+      "bedrijf": "Plomp installatietechniek",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    },
+    {
+      "siteUrl": "https://aluku.nl",
+      "bedrijf": "Aluku",
+      "consentDatum": "2026-07-07",
+      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "evidenceUrl": null,
+      "scope": [
+        "passive-deep"
+      ],
+      "status": "active"
+    }
+  ]
 }
