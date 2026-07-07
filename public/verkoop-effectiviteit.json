@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-07-07T11:22:31.429Z",
+  "generatedAt": "2026-07-07T14:36:18.588Z",
   "agent": "verkoop-effectiviteit",
   "totaalScore": 75,
   "label": "Klaar om te verkopen",
   "dimensies": {
     "tekstKwaliteit": {
       "score": 80,
-      "berichten": 16,
+      "berichten": 20,
       "angstHits": 0
     },
     "pipeline": {
-      "score": 78,
+      "score": 77,
       "verkoopVandaag": 12,
       "outreachVandaag": 15,
-      "metTelefoon": 14
+      "metTelefoon": 17
     },
     "bewijsDekking": {
-      "score": 79,
-      "metAdminBewijs": 16,
-      "metControleUrl": 16,
-      "metRapportUrl": 16
+      "score": 80,
+      "metAdminBewijs": 20,
+      "metControleUrl": 20,
+      "metRapportUrl": 20
     },
     "outbound": {
       "contactenDezeWeek": 0,
@@ -113,5 +113,5 @@
     "Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
   ],
   "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/",
-  "agentPrompt": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week"
+  "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week"
 }

@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T14:23:19.042Z",
+  "updatedAt": "2026-07-07T14:36:18.589Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T11:03:46.627Z",
+      "lastRun": "2026-07-07T14:36:17.943Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -11,7 +11,7 @@
       "top3": [
         "Firma Fred van Rijn: Live bewijs: phpMyAdmin HTTP 200",
         "Textilia: Live bewijs: phpMyAdmin HTTP 200",
-        "Reinaerde Remake Meubel: Live bewijs: phpMyAdmin HTTP 200"
+        "Bos Elektrotechniek: Live bewijs: phpMyAdmin HTTP 200"
       ]
     },
     "manager": {
@@ -88,16 +88,16 @@
       "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-07T11:03:42.882Z",
+      "lastRun": "2026-07-07T14:36:17.900Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 16,
+      "metBewijs": 20,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
         "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
-        "Reinaerde Remake Meubel · https://s246.webhostingserver.nl/phpMyAdmin/"
+        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
       ]
     },
     "seo": {
@@ -108,11 +108,19 @@
       "agentPrompt": "SEO sitemap bijgewerkt"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-07-07T11:18:50.865Z",
+      "lastRun": "2026-07-07T14:36:18.589Z",
       "ok": true,
       "totaalScore": 75,
-      "agentPrompt": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week",
+      "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
+    },
+    "outbound-auto": {
+      "lastRun": "2026-07-07T14:36:18.260Z",
+      "ok": true,
+      "live": true,
+      "verzonden": 0,
+      "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+      "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
     }
   },
   "manager": {
