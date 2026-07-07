@@ -58,6 +58,7 @@
     "test:effectiviteit": "node scripts/verkoop-effectiviteit/run.mjs",
     "agent:verkoop-bewijs": "node scripts/verkoop-bewijs-agent/run.mjs",
     "agent:verkoop-bewijs:worktree": "node scripts/agent-worktree-verkoop.mjs",
+    "agent:outbound-auto": "node scripts/outbound-agent/run.mjs",
     "agent:outreach": "node scripts/outreach-agent/run.mjs",
     "agent:optimizer": "node scripts/optimizer-agent/run.mjs",
     "agent:optimizer:apply": "node scripts/optimizer-agent/run.mjs --apply",

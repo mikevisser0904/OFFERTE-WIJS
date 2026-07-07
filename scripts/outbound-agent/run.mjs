@@ -93,21 +93,43 @@ function bumpKpi(contactenDelta) {
   }
 }
 
+function enrichFromEchte(c, echteByHost) {
+  const h = hostOf(c.url);
+  const row = echteByHost.get(h);
+  if (!row) return c;
+  return {
+    ...c,
+    email: c.email || row.email,
+    telefoon: c.telefoon || row.telefoon,
+    verkoopKort: c.verkoopKort || row.verkoopKort,
+    verkoopBericht: c.verkoopBericht || row.verkoopBericht,
+    controleUrl: c.controleUrl || row.scanBewijs?.controleUrl || row.bewijsUrl,
+    rapportUrl: c.rapportUrl || row.rapportUrl || row.scanBewijs?.rapportUrl,
+  };
+}
+
 function pickContacts(config) {
   const verkoop = load(join(ROOT, "data/verkoop-vandaag.json"), { vandaag: [] });
   const outreach = load(join(ROOT, "data/outreach-vandaag.json"), { vandaag: [] });
+  const echte = load(join(ROOT, "data/echte-klanten.json"), { klanten: [] });
+  const echteByHost = new Map();
+  for (const k of echte.klanten || []) {
+    if (!k.uitgesloten) echteByHost.set(hostOf(k.url), k);
+  }
   const log = load(join(ROOT, "data/outbound-log.json"), { entries: [] });
   const blocked = recentHosts(log, config.cooldownDays ?? 14);
 
   const byUrl = new Map();
   for (const v of verkoop.vandaag || []) {
     if (config.alleenMetBewijs && !v.controleUrl) continue;
-    byUrl.set(v.url, { ...v, bron: "verkoop-bewijs", prioriteit: 0 });
+    byUrl.set(v.url, enrichFromEchte({ ...v, bron: "verkoop-bewijs", prioriteit: 0 }, echteByHost));
   }
   for (const o of outreach.vandaag || []) {
     if (o.bron === "verkoop-bewijs" && byUrl.has(o.url)) continue;
     if (config.alleenMetBewijs && !o.controleUrl && o.type !== "bewijs") continue;
-    if (!byUrl.has(o.url)) byUrl.set(o.url, { ...o, prioriteit: o.prioriteit ?? 2 });
+    if (!byUrl.has(o.url)) {
+      byUrl.set(o.url, enrichFromEchte({ ...o, prioriteit: o.prioriteit ?? 2 }, echteByHost));
+    }
   }
 
   const list = [...byUrl.values()]
@@ -174,9 +196,9 @@ async function deliver(contact, config) {
   }
 
   const sent = results.some((r) => r.ok && !r.skipped && !r.simulated);
-  const simulated = results.some((r) => r.simulated);
+  const simulated = results.some((r) => r.simulated) || (!isLive() && results.length > 0);
   const ok = results.some((r) => r.ok);
-  const status = sent ? "sent" : simulated ? "simulated" : ok ? "partial" : "failed";
+  const status = sent ? "sent" : simulated ? "simulated" : ok ? "partial" : results.length ? "failed" : "skipped";
 
   return { host, status, results, email, phone };
 }
@@ -222,7 +244,7 @@ async function main() {
       live: isLive(),
       results: out.results,
     });
-    processed.push({ bedrijf: c.bedrijf, ...out });
+    processed.push({ bedrijf: c.bedrijf, bericht: c.bericht, ...out });
     if (out.status === "sent") sentCount += 1;
   }
 

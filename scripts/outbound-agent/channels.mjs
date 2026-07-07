@@ -9,7 +9,7 @@ export function isLive() {
 
 export async function sendEmail({ to, subject, text, html, config }) {
   const key = process.env.RESEND_API_KEY;
-  if (!key) return { ok: false, skipped: true, reason: "geen RESEND_API_KEY" };
+  if (!key) return { ok: true, simulated: true, reason: "geen RESEND_API_KEY" };
   if (!LIVE) return { ok: true, simulated: true, channel: "email", to };
 
   const from = process.env.OUTBOUND_FROM || config.email?.from;

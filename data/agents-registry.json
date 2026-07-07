@@ -143,6 +143,16 @@
       "trigger": ["verkoop bewijs", "agent verkoop", "geen lucht", "bewijs aan klant"]
     },
     {
+      "id": "outbound-auto",
+      "taak": "verkoop",
+      "naam": "Outbound auto",
+      "rol": "Volledig geautomatiseerde outbound: e-mail (Resend), webhook, WA-template, queue + KPI",
+      "skill": ".grok/skills/verkoop-bewijs-agent/SKILL.md",
+      "script": "npm run agent:outbound-auto",
+      "workflow": ".github/workflows/outbound-autopilot.yml",
+      "trigger": ["outbound auto", "automatiseer outbound", "agent outbound-auto"]
+    },
+    {
       "id": "outreach",
       "taak": "verkoop",
       "naam": "Outreach",

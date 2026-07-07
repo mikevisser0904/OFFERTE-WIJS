@@ -3,6 +3,7 @@ import { DashboardShell } from "@/components/dashboard-shell";
 import { MaartenWachtrijPanel } from "@/components/maarten-wachtrij-panel";
 import { MonitorPanel } from "@/components/monitor-panel";
 import { VerkoopEffectiviteitPanel } from "@/components/verkoop-effectiviteit-panel";
+import { OutboundStatusPanel } from "@/components/outbound-status-panel";
 import { IntegrationsPanel } from "@/components/integrations-panel";
 import { monitorUitleg } from "@/data/monitoring";
 
@@ -42,6 +43,9 @@ export default function MonitorPage() {
         <IntegrationsPanel />
         <div className="mt-10">
           <VerkoopEffectiviteitPanel />
+        </div>
+        <div className="mt-10">
+          <OutboundStatusPanel />
         </div>
         <div className="mt-10">
           <MonitorPanel />

@@ -15,11 +15,12 @@ const AGENTS_STATUS = join(ROOT, "data/agents-status.json");
 const MANAGER_STATUS = join(ROOT, "data/manager-status.json");
 const NTFY = "https://ntfy.sh/webklaar-mike";
 
-function runNode(script, args = []) {
+function runNode(script, args = [], extraEnv = {}) {
   const r = spawnSync("node", [join(ROOT, script), ...args], {
     cwd: ROOT,
     encoding: "utf8",
     timeout: 900_000,
+    env: { ...process.env, ...extraEnv },
   });
   return { ok: r.status === 0, out: (r.stdout || "") + (r.stderr || "") };
 }
@@ -58,6 +59,12 @@ if (measureOnly) {
 }
 
 const managerRun = runNode("scripts/manager-agent/run.mjs");
+
+if (process.env.OUTBOUND_IN_AUTOPILOT === "1" && process.env.VAKSCAN_SALES !== "0") {
+  runNode("scripts/outbound-agent/run.mjs", [], {
+    SKIP_VERKOOP_PIPELINE: process.env.OUTBOUND_SKIP_PIPELINE || "1",
+  });
+}
 
 let managerGrok = null;
 let managerFase = null;
