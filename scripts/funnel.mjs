@@ -53,7 +53,8 @@ steps.push({
 });
 steps.push({ id: "sanitize-hits", ok: step("3c Sanitize leak-hits", "npm", ["run", "scan:sanitize-hits"]) });
 steps.push({ id: "consent-scrub", ok: step("3d Consent scrub", "npm", ["run", "consent:scrub"]) });
-steps.push({ id: "auto-verify", ok: step("3e Auto-verify", "npm", ["run", "agent:auto-verify"]) });
+steps.push({ id: "risico-passief", ok: step("3e Risico passief", "npm", ["run", "scan:risico-passief"]) });
+steps.push({ id: "auto-verify", ok: step("3f Auto-verify", "npm", ["run", "agent:auto-verify"]) });
 
 steps.push({ id: "score", ok: step("4 Lead score refresh", "node", ["scripts/lead-hunter/enrich-score.mjs"]) });
 steps.push({ id: "contact", ok: step("4b Contact + verkooptekst", "node", ["scripts/lead-hunter/grab-contact.mjs"]) });

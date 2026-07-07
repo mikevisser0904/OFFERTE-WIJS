@@ -90,6 +90,7 @@ async function main() {
   }
 
   steps.push({ id: "verify-pma", ...runNode("scripts/security-scan/verify-phpmyadmin.mjs") });
+  steps.push({ id: "risico-passief", ...runNode("scripts/security-scan/risico-passief.mjs") });
 
   const hits = load(join(ROOT, "data/leak-hits.json"), { hits: [] }).hits || [];
   const leakRows = await verifyLeakHits(hits);
