@@ -1,7 +1,8 @@
 name: Agent Outreach
 
-# Lek-outreach uit (€0 / Fiverr-strategie). Handmatig: workflow_dispatch + VAKSCAN_SALES=1
 on:
+  schedule:
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
 permissions:

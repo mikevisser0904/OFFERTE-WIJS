@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-07T10:21:25.195Z",
+  "updatedAt": "2026-07-07T10:33:06.391Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T10:21:25.195Z",
+      "lastRun": "2026-07-07T10:33:05.829Z",
       "ok": true,
       "contactenVandaag": 6,
       "lekkenEerst": 6,
@@ -15,11 +15,10 @@
       ]
     },
     "manager": {
-      "lastRun": "2026-07-07T08:08:57.220Z",
+      "lastRun": "2026-07-07T10:33:06.391Z",
       "fase": "verkopen",
-      "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
-      "mikeActie": "15 contacten wachten op /agents/",
-      "optimizerHint": "optimizer: metrics bijgewerkt — manager check"
+      "grokPrompt": "Outreach: 6 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
+      "mikeActie": "6 contacten wachten op /agents/"
     },
     "health-monitor": {
       "lastRun": "2026-07-07T07:31:25.463Z",
@@ -90,14 +89,19 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-07T08:08:57.220Z",
+    "updatedAt": "2026-07-07T10:33:06.391Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Outreach klaar",
-    "prioriteit": 1,
-    "grokPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (De admin-voordeur van uw database is publiek bereikbaar — wij hebben niet ingelogd, maar iedereen kan dit scherm openen.)",
-    "mikeActie": "15 contacten wachten op /agents/",
+    "prioriteit": 4,
+    "grokPrompt": "Outreach: 6 contacten klaar op /agents/ — begin met Bos Elektrotechniek (phpMyAdmin-login op eigen domein (https://www.boselektrotechniek.nl/phpMyAdmin/))",
+    "mikeActie": "6 contacten wachten op /agents/",
     "acties": [
+      {
+        "wie": "grok",
+        "actie": "Data-flow sync",
+        "script": "npm run agent:dataflow"
+      },
       {
         "wie": "mike",
         "actie": "5 WhatsApps vandaag",
@@ -109,15 +113,22 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 1 · laatste fixes 1",
-        "lastRun": "2026-07-07T08:08:49.924Z"
+        "detail": "Grok-wachtrij 1 · laatste fixes 3",
+        "lastRun": "2026-07-07T08:22:56.520Z"
+      },
+      {
+        "id": "auto-verify",
+        "naam": "Auto-verify",
+        "status": "ok",
+        "detail": "1 verified · 1 consent OK · 0 failed recheck",
+        "lastRun": "2026-07-07T08:26:06.002Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
-        "status": "ok",
-        "detail": "22 streams OK · queue 0 pending · 37 lekken",
-        "lastRun": "2026-07-07T08:00:56.530Z"
+        "status": "actie",
+        "detail": "Data-flow: 1 sync · 1 actie — npm run agent:dataflow",
+        "lastRun": "2026-07-07T08:26:05.529Z"
       },
       {
         "id": "health-monitor",
@@ -165,7 +176,7 @@
         "id": "vakscan-leaks",
         "naam": "VakScan Leaks",
         "status": "ok",
-        "detail": "37 lekken · 0 pending",
+        "detail": "15 lekken · 0 pending",
         "lastRun": "2026-07-07T07:40:27.309Z"
       },
       {
@@ -179,8 +190,8 @@
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
-        "detail": "15 contacten",
-        "lastRun": "2026-07-07T08:07:55.899Z"
+        "detail": "6 contacten",
+        "lastRun": "2026-07-07T10:33:05.829Z"
       },
       {
         "id": "seo",
@@ -203,7 +214,6 @@
         "detail": "Eén keten: dataflow → leads → scan → outreach → manager",
         "lastRun": null
       }
-    ],
-    "optimizerHint": "optimizer: metrics bijgewerkt — manager check"
+    ]
   }
 }

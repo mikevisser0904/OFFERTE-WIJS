@@ -10,11 +10,14 @@ Repo: `~/Developer/offerte-wijs` · Live: https://mikevisser0904.github.io/OFFER
 
 Mike verkoopt, Maarten bouwt. Static Next.js export op GitHub Pages — **geen server API routes**.
 
-## €0 verkopen (default — geen lek-outreach)
+## VakScan → verkopen (default)
 
-- **Mike:** `docs/ZERO-START.md` · gig-tekst `docs/FIVERR.md`
-- **Order:** `npm run order:intake -- --bedrijf "…" --kanaal fiverr --prijs 199`
-- **Grok:** SEO-pool, geen `agent:outreach` cron; VakScan-sales alleen met `VAKSCAN_SALES=1`
+- **Dashboard:** `/dashboard/` · `/actie/` · `/agents/` · `/leads/`
+- **Pipeline:** `npm run funnel:light` of `npm run lead:berichten` + `npm run agent:outreach`
+- **Regels:** passief scan, actionable phpMyAdmin, `adminProof.ok` voor schrik-tekst · `npm run test:vakscan-detect`
+- **Uitzetten lek-automaat:** `VAKSCAN_SALES=0` in optimizer; outreach-cron handmatig uit in workflow
+
+Optioneel Fiverr/Marktplaats: `docs/ZERO-START.md` (niet primair).
 
 ## Maarten-wachtrij (ideeën doorvoeren)
 

@@ -99,11 +99,11 @@ const status = {
   nextAgentPrompt:
     pending.length > 0
       ? `voer maarten wachtrij uit — ${pending.length} pending in OFFERTE-WIJS`
-      : agentHint || "SEO deploy + docs/ZERO-START — geen lek-outreach",
+      : agentHint || "npm run funnel:light of outreach — VakScan → /actie/",
   agentHint,
   mikeActie:
     managerMike ||
-    (pending.length > 0 ? "Maarten: order leveren" : "Fiverr/Marktplaats — docs/ZERO-START.md"),
+    (pending.length > 0 ? "Maarten eerst" : "VakScan-verkoop: /actie/ · /dashboard/"),
   eerstePending: pending[0]
     ? { id: pending[0].id, tekst: pending[0].tekst?.slice(0, 120), euro: pending[0].euro }
     : null,
