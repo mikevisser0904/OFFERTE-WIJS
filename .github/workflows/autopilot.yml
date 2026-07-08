@@ -25,7 +25,8 @@ jobs:
         id: run
         env:
           OUTBOUND_IN_AUTOPILOT: "1"
-          VAKSCAN_SALES: "1"
+          VAKSCAN_SALES: "0"
+          SKIP_VERKOOP_PIPELINE: "1"
           OUTBOUND_LIVE: ${{ secrets.OUTBOUND_LIVE }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           OUTBOUND_FROM: ${{ secrets.OUTBOUND_FROM }}

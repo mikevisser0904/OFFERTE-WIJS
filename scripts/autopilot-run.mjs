@@ -60,9 +60,10 @@ if (measureOnly) {
 
 const managerRun = runNode("scripts/manager-agent/run.mjs");
 
-if (process.env.OUTBOUND_IN_AUTOPILOT === "1" && process.env.VAKSCAN_SALES !== "0") {
+if (process.env.OUTBOUND_IN_AUTOPILOT === "1") {
   runNode("scripts/outbound-agent/run.mjs", [], {
     SKIP_VERKOOP_PIPELINE: process.env.OUTBOUND_SKIP_PIPELINE || "1",
+    VAKSCAN_SALES: process.env.VAKSCAN_SALES || "0",
   });
 }
 

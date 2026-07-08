@@ -45,7 +45,29 @@ function normPhoneWa(tel) {
   return `31${d}`;
 }
 
-function emailBody(contact) {
+const SITE = process.env.OUTBOUND_SITE_URL || "https://mikevisser0904.github.io/OFFERTE-WIJS/";
+
+function emailBodyInternet(contact) {
+  return `Beste ${contact.bedrijf},
+
+Ik ben Mike van DoekoeWijs. Wij helpen zzp en mkb met online zichtbaarheid — vaste prijs, geen bureau-uurtje.
+
+• Google Start €299 — profiel + landingspagina (2 dagen)
+• SEO Starter €199 — Search Console + landings
+• Websites vanaf €349
+
+2-min rondleiding: ${SITE}show/
+Direct starten: ${SITE}start/
+Alle pakketten: ${SITE}diensten/
+
+Interesse? Eén regel terug is genoeg — geen verplichting.
+
+Groet,
+Mike van DoekoeWijs
+${process.env.OUTBOUND_REPLY_PHONE ? `Tel: ${process.env.OUTBOUND_REPLY_PHONE}` : "06 - 27 36 21 42"}`.trim();
+}
+
+function emailBodyVakscan(contact) {
   const kort = contact.bericht || contact.verkoopKort || "";
   const url = contact.controleUrl || contact.url;
   const rapport = contact.rapportUrl || "";
@@ -60,6 +82,13 @@ Aanbod: Website Veilig €299 (vast) — beheer-URL afschermen, doorgaans binnen
 Groet,
 Mike van DoekoeWijs
 ${process.env.OUTBOUND_REPLY_PHONE ? `Tel: ${process.env.OUTBOUND_REPLY_PHONE}` : ""}`.trim();
+}
+
+function emailBody(contact, config) {
+  if (config.modus === "internetdiensten" || process.env.VAKSCAN_SALES === "0") {
+    return emailBodyInternet(contact);
+  }
+  return emailBodyVakscan(contact);
 }
 
 function recentHosts(log, days) {
@@ -140,6 +169,27 @@ function pickContacts(config) {
   return list.slice(0, config.maxPerRun ?? 5);
 }
 
+function pickContactsInternet(config) {
+  const echte = load(join(ROOT, "data/echte-klanten.json"), { klanten: [] });
+  const log = load(join(ROOT, "data/outbound-log.json"), { entries: [] });
+  const blocked = recentHosts(log, config.cooldownDays ?? 14);
+
+  const list = (echte.klanten || [])
+    .filter((k) => !k.uitgesloten && normEmail(k.email))
+    .filter((k) => !blocked.has(hostOf(k.url)))
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    .map((k) => ({
+      bedrijf: k.bedrijf,
+      url: k.url,
+      email: k.email,
+      telefoon: k.telefoon,
+      prioriteit: 1,
+      bron: "internet-echte-klanten",
+    }));
+
+  return list.slice(0, config.maxPerRun ?? 5);
+}
+
 async function deliver(contact, config) {
   const host = hostOf(contact.url);
   const email = normEmail(contact.email);
@@ -156,7 +206,7 @@ async function deliver(contact, config) {
       await sendEmail({
         to: email,
         subject,
-        text: emailBody(contact),
+        text: emailBody(contact, config),
         config,
       }),
     );
@@ -211,7 +261,12 @@ async function main() {
     process.exit(0);
   }
 
-  if (process.env.SKIP_VERKOOP_PIPELINE !== "1") {
+  const internetModus =
+    config.modus === "internetdiensten" || process.env.VAKSCAN_SALES === "0";
+  const skipPipeline =
+    process.env.SKIP_VERKOOP_PIPELINE === "1" || internetModus;
+
+  if (!skipPipeline) {
     spawnSync("node", ["scripts/verkoop-bewijs-agent/run.mjs", "--from-outreach"], {
       cwd: ROOT,
       stdio: "inherit",
@@ -225,7 +280,7 @@ async function main() {
     });
   }
 
-  const contacts = pickContacts(config);
+  const contacts = internetModus ? pickContactsInternet(config) : pickContacts(config);
   const log = load(join(ROOT, "data/outbound-log.json"), { entries: [] });
   const runAt = new Date().toISOString();
   const processed = [];

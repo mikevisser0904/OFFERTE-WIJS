@@ -26,7 +26,8 @@ jobs:
           OUTBOUND_WEBHOOK_URL: ${{ secrets.OUTBOUND_WEBHOOK_URL }}
           WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
           WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
-          VAKSCAN_SALES: "1"
+          VAKSCAN_SALES: "0"
+          SKIP_VERKOOP_PIPELINE: "1"
         run: npm run agent:outbound-auto
       - run: |
           git config user.name "github-actions[bot]"

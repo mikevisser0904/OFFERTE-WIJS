@@ -1,13 +1,14 @@
 {
   "enabled": true,
+  "modus": "internetdiensten",
   "maxPerRun": 5,
   "cooldownDays": 14,
-  "alleenMetBewijs": true,
+  "alleenMetBewijs": false,
   "kanalen": ["email", "webhook", "ntfy"],
   "email": {
-    "from": "Mike van WebKlaar <onboarding@resend.dev>",
+    "from": "Mike van DoekoeWijs <onboarding@resend.dev>",
     "replyTo": "mikevisser0904@gmail.com",
-    "onderwerp": "Korte meting op uw website — {bedrijf}"
+    "onderwerp": "Online zichtbaarheid vaste prijs — {bedrijf}"
   },
   "webhook": {
     "enabled": true,
@@ -22,5 +23,5 @@
     "templateName": "webklaar_veiligheid",
     "language": "nl"
   },
-  "notitie": "Echte verzending: OUTBOUND_LIVE=1 + RESEND_API_KEY (GitHub Secret). Zonder keys = dry-run + queue."
+  "notitie": "internetdiensten — geen lek-mail. LIVE: OUTBOUND_LIVE=1 + RESEND_API_KEY. Actions: VAKSCAN_SALES=0."
 }

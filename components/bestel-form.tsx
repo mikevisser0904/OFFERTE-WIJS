@@ -79,7 +79,14 @@ Ik ga akkoord met: ${betalingStandaard}`;
             Verstuur via e-mail →
           </a>
         </div>
-        <p className="mt-6 text-xs text-slate-500">
+        <p className="mt-4 rounded-lg bg-white px-4 py-3 text-sm text-slate-700">
+          <strong>Volgende stap:</strong> na bevestiging stuurt Mike een Tikkie voor{" "}
+          {gekozen.slug === "spoed-hulp"
+            ? `€${gekozen.prijsNum} (volledig vooraf)`
+            : `ca. 50% (≈€${Math.round(gekozen.prijsNum / 2)})`}{" "}
+          — rest bij oplevering.
+        </p>
+        <p className="mt-4 text-xs text-slate-500">
           Gaat naar {webklaar.telefoonDisplay} en {webklaar.email}
         </p>
       </div>

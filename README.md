@@ -19,6 +19,7 @@ Mike + Maarten · live op GitHub Pages.
 
 - `docs/PRODUCTEN-ANALYSE.md` — alle producten + slagingskans
 - `docs/SLAGINGSKANS.md` — korte termijn verkoop
+- `docs/AUTO-VERKOOP.md` — automatiseren + week 0 checklist
 - `docs/ZERO-START.md` — €0 opstart
 - `docs/FIVERR.md` — listings / Fiverr
 
