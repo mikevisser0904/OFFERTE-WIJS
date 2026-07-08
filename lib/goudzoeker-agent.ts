@@ -83,7 +83,7 @@ function kpiSamenvatting(ctx: AgentContext): string {
     `Week ${slagings.week}/12 · Slagingskans ${slagings.totaal}% (${slagings.label})`,
     `Omzet: €${kpi.omzet} (verwacht €${omzetDoel})`,
     `Contacten deze week: ${kpi.contactenDezeWeek}/5`,
-    `Bestellingen: ${kpi.bestellingen} · Sites geleverd: ${kpi.sitesGeleverd}/6`,
+    `Bestellingen: ${kpi.bestellingen} · Opdrachten geleverd: ${kpi.sitesGeleverd}/8`,
     `Reacties: ${kpi.reacties}/${kpi.contactenDezeWeek || "—"}`,
   ].join("\n");
 }

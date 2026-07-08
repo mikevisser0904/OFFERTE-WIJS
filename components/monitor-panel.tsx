@@ -7,9 +7,11 @@ import {
   monitorUitleg,
   type KpiInput,
 } from "@/data/monitoring";
+import Link from "next/link";
 import { hoofddoel } from "@/data/doel";
 import { SITE_URL } from "@/lib/seo";
 import { laadKpiMetMeta, slaKpi } from "@/lib/goudzoeker";
+import { MonitorDienstenLadder } from "@/components/monitor-diensten-ladder";
 
 type HealthStatus = {
   checkedAt: string;
@@ -52,7 +54,7 @@ export function MonitorPanel() {
     const blob = new Blob([JSON.stringify(kpi, null, 2)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = `webklaar-monitor-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `doekoewijs-monitor-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
   }
 
@@ -128,6 +130,8 @@ export function MonitorPanel() {
         </section>
       )}
 
+      <MonitorDienstenLadder />
+
       {result.acties.length > 0 && (
         <section className="rounded-2xl border border-rose-400/20 bg-rose-400/5 p-6">
           <h2 className="font-bold text-rose-300">Actie nu</h2>
@@ -136,6 +140,9 @@ export function MonitorPanel() {
               <li key={a}>→ {a}</li>
             ))}
           </ul>
+          <Link href="/actie/" className="mt-4 inline-block text-sm font-semibold text-emerald-300 hover:underline">
+            Naar /actie/ →
+          </Link>
         </section>
       )}
 
@@ -147,7 +154,7 @@ export function MonitorPanel() {
               ["omzet", "Omzet totaal (€)", "number"],
               ["bestellingen", "Bestellingen", "number"],
               ["contactenDezeWeek", "Contacten deze week", "number"],
-              ["sitesGeleverd", "Sites geleverd", "number"],
+              ["sitesGeleverd", "Opdrachten geleverd (alle diensten)", "number"],
               ["reacties", "Reacties op contacten", "number"],
               ["startDatum", "Startdatum", "date"],
             ] as const
