@@ -1104,6 +1104,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-08T20:53:48.108Z",
+      "bedrijf": "Loodgieterskwartier",
+      "url": "https://loodgieterskwartier.nl",
+      "host": "loodgieterskwartier.nl",
+      "email": "info@loodgieterskwartier.nl",
+      "phone": "31852125588",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T20:53:48.108Z",
+      "bedrijf": "Timmerbedrijf Simon Frank & Zn.",
+      "url": "http://timmerbedrijf-frank.nl",
+      "host": "timmerbedrijf-frank.nl",
+      "email": "websites@klaver.org",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T20:53:48.108Z",
+      "bedrijf": "Rinus van Stein",
+      "url": "http://www.rinusvanstein.nl",
+      "host": "rinusvanstein.nl",
+      "email": "info@rinusvanstein.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T20:53:48.108Z",
+      "bedrijf": "De Bovenkamer",
+      "url": "http://bovenkamerutrecht.nl",
+      "host": "bovenkamerutrecht.nl",
+      "email": "info@bovenkamerutrecht.nl",
+      "phone": "31302072769",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T20:53:48.108Z",
+      "bedrijf": "A. Buitelaar Zonwering",
+      "url": "https://www.buitelaarzonwering.nl",
+      "host": "buitelaarzonwering.nl",
+      "email": "buitelaarzonwering@casema.nl",
+      "phone": "31536685999",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }

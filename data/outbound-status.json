@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T17:16:15.855Z",
+  "updatedAt": "2026-07-08T20:53:48.108Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -9,34 +9,34 @@
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "van der Meer Elektrotechniek BV",
+      "bedrijf": "Loodgieterskwartier",
       "status": "simulated",
-      "email": "info@ejvandermeer.nl",
-      "phone": "31631514170"
+      "email": "info@loodgieterskwartier.nl",
+      "phone": "31852125588"
     },
     {
-      "bedrijf": "Dreumel",
+      "bedrijf": "Timmerbedrijf Simon Frank & Zn.",
       "status": "simulated",
-      "email": "info@dreumel.nl",
-      "phone": "31703864484"
-    },
-    {
-      "bedrijf": "SA Elektro Experts",
-      "status": "simulated",
-      "email": "info@saelektroexperts.nl",
-      "phone": "31707503681"
-    },
-    {
-      "bedrijf": "Suntec zonwering",
-      "status": "simulated",
-      "email": "info@suntec-zonwering.nl",
-      "phone": "31715802342"
-    },
-    {
-      "bedrijf": "Decorette",
-      "status": "simulated",
-      "email": "geri@doubleweb.nl",
+      "email": "websites@klaver.org",
       "phone": null
+    },
+    {
+      "bedrijf": "Rinus van Stein",
+      "status": "simulated",
+      "email": "info@rinusvanstein.nl",
+      "phone": null
+    },
+    {
+      "bedrijf": "De Bovenkamer",
+      "status": "simulated",
+      "email": "info@bovenkamerutrecht.nl",
+      "phone": "31302072769"
+    },
+    {
+      "bedrijf": "A. Buitelaar Zonwering",
+      "status": "simulated",
+      "email": "buitelaarzonwering@casema.nl",
+      "phone": "31536685999"
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
