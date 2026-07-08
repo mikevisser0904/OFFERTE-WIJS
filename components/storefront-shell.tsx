@@ -6,6 +6,7 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/diensten/", label: "Diensten" },
   { href: "/demo/", label: "Demo" },
+  { href: "/show/", label: "Show" },
   { href: "/bestellen/", label: "Bestellen" },
 ] as const;
 
@@ -77,6 +78,11 @@ export function StorefrontShell({
                 <li>
                   <Link href="/start/" className="hover:text-emerald-600">
                     Google Start €299
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/show/" className="hover:text-emerald-600">
+                    2-min show / demo
                   </Link>
                 </li>
                 <li>

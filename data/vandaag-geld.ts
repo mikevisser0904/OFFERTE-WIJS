@@ -18,7 +18,8 @@ export const vandaagLinks = {
   googleStart: `${webklaar.url}bestellen/?dienst=google-start`,
   vakmanSite: `${webklaar.url}bestellen/?dienst=vakman-site`,
   actie: `${webklaar.url}actie/`,
-  fiverr: `${webklaar.url}fiverr/`,
+  show: `${webklaar.url}show/`,
+  listings: `${webklaar.url}listings/`,
 } as const;
 
 /** Snelste deal vandaag (klein bedrag, korte levertijd) */
@@ -53,9 +54,10 @@ Google Start €299 of volledige site €899. Zin in 10 min bellen vandaag? Geen
   },
   "warm-demo": {
     label: "Warm — met bestel-link",
-    tekst: `Hoi [NAAM], Mike (WebKlaar).
+    tekst: `Hoi [NAAM], Mike (${webklaar.naam}).
 
-Korte demo van wat wij voor vakmannen bouwen: ${vandaagLinks.demo}
+Korte demo: ${vandaagLinks.demo}
+2-min rondleiding: ${vandaagLinks.show}
 
 Vaste prijs, jij levert logo + teksten, wij live in dagen.
 
@@ -77,9 +79,10 @@ Bestellen: ${vandaagLinks.bestellen}`,
   },
 };
 
-export const vandaagDeelStatus = `WebKlaar — websites voor vakmannen, vaste prijs, live in dagen.
+export const vandaagDeelStatus = `${webklaar.naam} — websites voor vakmannen, vaste prijs, live in dagen.
 
 Demo: ${vandaagLinks.demo}
+Rondleiding: ${vandaagLinks.show}
 Aanvragen: ${vandaagLinks.start}
 
 Even delen voor wie een installateur/zzp'er kent`;
