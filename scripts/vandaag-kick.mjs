@@ -2,16 +2,17 @@
 /** Stuurt Mike een urgente ntfy — open /actie/ en stuur 5 WhatsApps */
 const NTFY = process.env.VAKSCAN_NTFY_TOPIC || "webklaar-mike";
 const url = "https://mikevisser0904.github.io/OFFERTE-WIJS/actie/";
-const start = "https://mikevisser0904.github.io/OFFERTE-WIJS/start/";
+const diensten = "https://mikevisser0904.github.io/OFFERTE-WIJS/diensten/";
+const show = "https://mikevisser0904.github.io/OFFERTE-WIJS/show/";
 
 const body = [
-  "Vandaag geld — jouw enige job nu:",
+  "Vandaag geld — internetdiensten:",
   "1. Open " + url,
-  "2. Plak 5 nummers (warm netwerk)",
-  "3. 5× Verstuur → teller naar 5/5",
-  "4. Deel status-knop op de pagina",
-  "Deel naar klanten: " + start,
-  "Snelste deal: Google Start €299",
+  "2. Kies bericht (internet-menu) + 5 nummers",
+  "3. 5x Verstuur -> 5/5",
+  "Deel: " + show,
+  "Catalogus: " + diensten,
+  "Snel: Spoed 50 | Listings 149 | SEO 199 | Google 299",
 ].join("\n");
 
 const r = await fetch(`https://ntfy.sh/${NTFY}`, {

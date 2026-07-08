@@ -95,17 +95,26 @@ export function VandaagGeldPanel() {
           {sent}/{VANDAAG_DOEL.whatsapps} WhatsApps → min. {VANDAAG_DOEL.gesprekken} gesprek
         </h2>
         <p className="mt-2 text-sm text-white/60">
-          Snelste order: <strong className="text-emerald-300">{vandaagHero.titel}</strong> — {vandaagHero.sub}
+          Instap: <strong className="text-emerald-300">{vandaagHero.titel}</strong> — {vandaagHero.sub}
         </p>
-        <CopyBlock label="Deel aan klant (korte link)" tekst={vandaagLinks.start} />
+        <p className="mt-1 text-xs text-white/45">{vandaagHero.alternatief}</p>
+        <CopyBlock label="Deel catalogus (alle diensten)" tekst={vandaagLinks.diensten} />
         <div className="mt-4 flex flex-wrap gap-2">
           <a
-            href={vandaagLinks.start}
+            href={vandaagLinks.diensten}
             target="_blank"
             rel="noreferrer"
             className="rounded-full bg-white px-5 py-2 text-sm font-bold text-slate-900 hover:bg-white/90"
           >
-            Open /start/ (€299) →
+            /diensten/ →
+          </a>
+          <a
+            href={vandaagLinks.start}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-white/25 px-5 py-2 text-sm font-bold text-white hover:bg-white/10"
+          >
+            Google Start €299 →
           </a>
           <a
             href={`tel:${merk.telefoon.replace(/\s/g, "")}`}

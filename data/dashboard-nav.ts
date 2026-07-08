@@ -17,7 +17,7 @@ export const navBeheer: NavItem[] = [
 export const navTools: NavItem[] = [{ href: "/tools/", label: "Tools", icon: "⚙" }];
 
 export const dashboardQuickLinks = [
-  { href: "/actie/", label: "Vandaag geld", sub: "WhatsApp + warm netwerk", accent: "amber" as const },
+  { href: "/actie/", label: "Vandaag geld", sub: "Internetdiensten + WhatsApp", accent: "amber" as const },
   { href: "/spoed/", label: "Spoed €50", sub: "1 uur hulp", accent: "amber" as const },
   { href: "/start/", label: "Google Start", sub: "€299 klantlink", accent: "emerald" as const },
   { href: "/show/", label: "Show", sub: "2-min rondleiding", accent: "violet" as const },
@@ -27,4 +27,4 @@ export const dashboardQuickLinks = [
 ] as const;
 
 export const defaultMikeActie =
-  "Werkblad: /actie/ (warm netwerk) · /listings/ · klantlink /start/";
+  "Werkblad: /actie/ (dienstenmenu) · SEO €199 / Google €299 · /show/ delen";
