@@ -43,9 +43,15 @@ export function DashboardVandaag() {
             Slagingskans {result.totaal}% — {result.label}
           </h2>
           <p className="mt-1 text-sm text-white/55">
-            Doel {hoofddoel.label} · KPI&apos;s bijwerken op de monitor.
+            {hoofddoel.realistisch.slice(0, 72)}…
           </p>
         </div>
+        <Link
+          href="/actie/"
+          className="rounded-full border border-white/15 px-4 py-2 text-xs font-medium text-white/70 hover:text-white"
+        >
+          Actie
+        </Link>
         <Link
           href="/monitor/"
           className="shrink-0 rounded-full bg-white px-6 py-2.5 text-sm font-bold text-slate-900 hover:bg-white/90"

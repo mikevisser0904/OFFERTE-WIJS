@@ -80,7 +80,7 @@ async function fetchText(url) {
     const res = await fetch(url, {
       signal: controller.signal,
       redirect: "follow",
-      headers: { "User-Agent": "WebKlaar-Contact/1.0", Accept: "text/html" },
+      headers: { "User-Agent": "DoekoeWijs-Contact/1.0", Accept: "text/html" },
     });
     if (!res.ok) return "";
     const buf = await res.arrayBuffer();
@@ -143,7 +143,7 @@ async function pool(items, fn) {
 }
 
 function whatsappVoor(klant) {
-  const msg = `Hoi, Mike van WebKlaar. Ik keek even naar uw website — er zijn 1–2 punten qua veiligheid/online vindbaarheid die we snel kunnen fixen (vaste prijs). Heeft u 10 min deze week?`;
+  const msg = `Hoi, Mike van DoekoeWijs. Ik keek even naar uw website — er zijn 1–2 punten qua veiligheid/online vindbaarheid die we snel kunnen fixen (vaste prijs). Heeft u 10 min deze week?`;
   if (!klant.telefoonWa) return null;
   return `https://wa.me/${klant.telefoonWa}?text=${encodeURIComponent(msg)}`;
 }

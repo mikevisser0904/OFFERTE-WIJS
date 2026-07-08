@@ -3,7 +3,7 @@ import { ScanPanel } from "@/components/scan-panel";
 
 export const metadata = {
   title: "VakScan — DoekoeWijs",
-  description: "Passieve veiligheidscheck voor vakman-websites — rapport en verkooptekst.",
+  description: "VakScan op pauze voor verkoop — alleen met toestemming, achtergrond-tool.",
 };
 
 export default function ScanPage() {
@@ -11,7 +11,7 @@ export default function ScanPage() {
     <DashboardShell
       active="/scan/"
       title="VakScan"
-      subtitle="Gratis check → rapport → WhatsApp met aanbod Website Veilig"
+      subtitle="Gepauzeerd op actie — alleen lokaal met toestemming · verkoop via /actie/ en /diensten/"
     >
       <ScanPanel />
     </DashboardShell>

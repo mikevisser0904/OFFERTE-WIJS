@@ -18,7 +18,7 @@ Programming & Tech → Website Development → Business / WordPress (kies wat pa
 
 ## Gig description (EN)
 
-Hi — I'm Mike, WebKlaar (EU). I build **fast, mobile-first business websites** for trades and local businesses using a proven template (Next.js static — fast & secure).
+Hi — I'm Mike, DoekoeWijs (EU). I build **fast, mobile-first business websites** for trades and local businesses using a proven template (Next.js static — fast & secure).
 
 **You get:**
 - Up to **5 pages** (Home, Services, About, Projects/Gallery, Contact)
@@ -72,7 +72,7 @@ Per package above. New pages = upgrade or custom offer.
 
 Website laten maken zonder maanden wachten of duizenden euro’s bureau?
 
-WebKlaar bouwt een **moderne mobiele website** (5 pagina’s: home, diensten, over ons, projecten, contact) op basis van een bewezen template.
+DoekoeWijs bouwt een **moderne mobiele website** (5 pagina’s: home, diensten, over ons, projecten, contact) op basis van een bewezen template.
 
 - Vaste prijs vanaf **€349** (eenmalig, geen abonnement verplicht)
 - Live binnen **3 werkdagen** na uw teksten/logo

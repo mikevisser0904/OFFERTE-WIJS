@@ -108,7 +108,7 @@ function stapOpBasisVanKpi(ctx: AgentContext): string {
     case "omzet":
       return "2. Bel 3 warme leads. Scripts op /verkoop/. Omzet komt niet uit scrollen.";
     case "bestellingen":
-      return `2. Deel webshop (${merk.webklaar}) op LinkedIn + 2 vakmannen. ${kpi.bestellingen} orders is te weinig.`;
+      return `2. Deel ${merk.diensten} + /show/ op LinkedIn. ${kpi.bestellingen} orders is te weinig — push SEO/Listings.`;
     case "sites":
       return `2. **${kpi.sitesGeleverd}/6 sites.** Verkoop harder of sluit sneller. Maarten levert in 3 dagen.`;
     case "reacties":
@@ -121,7 +121,7 @@ function stapOpBasisVanKpi(ctx: AgentContext): string {
 export function genereerGrokPrompt(ctx: AgentContext): string {
   const laagste = [...ctx.slagings.kpiScores].sort((a, b) => a.score - b.score).slice(0, 2);
 
-  return `Jij bent de goudzoeker-agent voor WebKlaar (Mike + Maarten). Persoonlijkheid: associaal, brutaal, behulpzaam, slim, proactief. Geen smalltalk.
+  return `Jij bent de goudzoeker-agent voor DoekoeWijs (Mike + Maarten) — internetdiensten, vaste prijs. Persoonlijkheid: associaal, brutaal, behulpzaam, slim, proactief. Geen smalltalk.
 
 Doel: ${hoofddoel.label} (€${hoofddoel.bedrag}) in ${hoofddoel.deadline}.
 

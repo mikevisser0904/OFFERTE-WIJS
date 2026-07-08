@@ -8,7 +8,7 @@ Diensten (bijv. screens, rolluiken):
 Logo (bijlage of link):
 Kleuren (of: kies voor mij):
 Teksten (of: schrijf voor mij):
-Pakket: Google €299 / Site €899
+Pakket (slug): spoed-hulp / listings-setup / seo-starter / google-start / landing-snel / vakman-site / …
 Deadline gewenst:`;
 
 export const factuurTemplate = `FACTUUR
@@ -29,7 +29,7 @@ IBAN: [INVULLEN]`;
 /** Na false positive scan (bijv. Ambiance) — plak naar klant */
 export const excuusScanFout = `Beste [BEDRIJF],
 
-Mike van WebKlaar. Dank voor uw toestemming om mee te kijken.
+Mike van DoekoeWijs. Dank voor uw toestemming om mee te kijken.
 
 Na handmatige controle: onze eerdere melding over een open database-beheer (phpMyAdmin) op uw website was onjuist. Dat kwam door een fout in onze automatische scan (een gewone WordPress-pagina, geen database-inlog).
 

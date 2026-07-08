@@ -224,7 +224,7 @@ function bouwBericht(klant, rapport, proof, consent, consentDeep, dbRow, scanBew
   const score = rapport?.risicoScore ?? klant.score ?? "?";
   const site = klant.url.replace(/^https?:\/\//, "");
 
-  const intro = `Hoi, Mike van WebKlaar — ik werk met vakbedrijven zoals ${naam}.`;
+  const intro = `Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals ${naam}.`;
 
   const toestemmingRegel = consent
     ? `Met uw schriftelijke toestemming (${consent.consentDatum || "geregistreerd"}, ref: ${consent.consentRef || "akkoord eigenaar"}) hebben we extra gecontroleerd.`
@@ -286,12 +286,12 @@ function bouwSmsKort(klant, proof, scanBewijs) {
   if (proof?.ok && proof.url) {
     const http =
       proof.httpStatus != null ? ` (HTTP ${proof.httpStatus}, live gecontroleerd)` : " (live gecontroleerd)";
-    return `Hoi, Mike (WebKlaar). ${naam}: passieve check${http} — ${proof.adminType} op ${proof.url} (niet ingelogd).${ref} Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.`;
+    return `Hoi, Mike (DoekoeWijs). ${naam}: passieve check${http} — ${proof.adminType} op ${proof.url} (niet ingelogd).${ref} Zelf openen = zelfde pagina. Kort bellen over afschermen? Website Veilig €299.`;
   }
   if (scanBewijs?.rapportUrl) {
-    return `Hoi, Mike (WebKlaar). ${naam}: VakScan: bevindingen met URL’s in rapport.${ref} ${scanBewijs.rapportUrl} — 10 min uitleg? Website Veilig €299.`;
+    return `Hoi, Mike (DoekoeWijs). ${naam}: VakScan: bevindingen met URL’s in rapport.${ref} ${scanBewijs.rapportUrl} — 10 min uitleg? Website Veilig €299.`;
   }
-  return `Hoi, Mike (WebKlaar). ${naam}: VakScan vond punten op uw site — 10 min bellen? Website Veilig €299.`;
+  return `Hoi, Mike (DoekoeWijs). ${naam}: VakScan vond punten op uw site — 10 min bellen? Website Veilig €299.`;
 }
 
 async function main() {
@@ -321,7 +321,7 @@ async function main() {
         whatsappSchrik: null,
         herstelBericht:
           k.herstelBericht ||
-          `Beste ${k.bedrijf},\n\nMike van WebKlaar. Excuses: onze eerdere melding over een open database op uw site was onjuist (fout in de automatische scan). Wij hebben niet ingelogd en geen data uit uw database gehaald.\n\nVriendelijke groet,\nMike`,
+          `Beste ${k.bedrijf},\n\nMike van DoekoeWijs. Excuses: onze eerdere melding over een open database op uw site was onjuist (fout in de automatische scan). Wij hebben niet ingelogd en geen data uit uw database gehaald.\n\nVriendelijke groet,\nMike`,
       });
       continue;
     }

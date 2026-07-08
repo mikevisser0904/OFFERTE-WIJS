@@ -1,16 +1,18 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
-import { webklaar } from "@/data/diensten-online";
+import { getDienst, webklaar } from "@/data/diensten-online";
 import { pageMetadata } from "@/lib/seo";
 import { vandaagLinks } from "@/data/vandaag-geld";
+
+const google = getDienst("google-start")!;
 
 export const metadata: Metadata = pageMetadata({
   title: "Google Start €299 — online in 2 dagen",
   description:
-    "Google Business + one-pager + WhatsApp voor vakmannen. Vaste prijs €299. DoekoeWijs — direct aanvragen.",
+    "Google Business + one-pager + WhatsApp. Onderdeel van DoekoeWijs internetdiensten. Vaste prijs €299.",
   path: "/start",
-  keywords: ["google business vakman", "website zzp snel", "google start pakket"],
+  keywords: ["google business", "google start pakket", "online zichtbaarheid zzp"],
 });
 
 const waIntro = `Hoi Mike, ik wil het Google Start pakket (€299). Bedrijf: `;
@@ -20,11 +22,10 @@ export default function StartPage() {
     <StorefrontShell>
       <section className="bg-gradient-to-b from-emerald-600 to-emerald-700 px-6 py-16 text-white sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-bold uppercase tracking-widest text-emerald-100">Vaste prijs</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-emerald-100">Internetdienst · vaste prijs</p>
           <h1 className="mt-4 text-4xl font-bold sm:text-5xl">Google Start — €299</h1>
-          <p className="mt-4 text-lg text-emerald-50">
-            Google-profiel + one-pager + WhatsApp-knop. Live in <strong>2 werkdagen</strong> na uw gegevens.
-          </p>
+          <p className="mt-4 text-lg text-emerald-50">{google.korteOms}</p>
+          <p className="mt-2 text-sm text-emerald-100/90">Live in {google.levertijd}</p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link
               href="/bestellen/?dienst=google-start"
@@ -44,25 +45,38 @@ export default function StartPage() {
 
       <section className="mx-auto max-w-2xl px-6 py-14">
         <ul className="space-y-4 text-slate-700">
-          {[
-            "Google Business volledig ingericht",
-            "One-pager met telefoon & WhatsApp",
-            "Review-template voor klanten",
-            "Geen abonnement — eenmalig €299",
-          ].map((b) => (
+          {google.bullets.map((b) => (
             <li key={b} className="flex gap-3 text-lg">
               <span className="text-emerald-600">✓</span>
               {b}
             </li>
           ))}
         </ul>
-        <p className="mt-10 text-center text-sm text-slate-500">
-          Demo volledige site:{" "}
+        <div className="mt-10 rounded-xl border border-amber-100 bg-amber-50 p-5 text-sm text-amber-950">
+          <p className="font-semibold">Kleinere stap?</p>
+          <p className="mt-1">
+            <Link href="/diensten/seo-starter/" className="font-medium text-emerald-700 hover:underline">
+              SEO Starter €199
+            </Link>
+            {" · "}
+            <Link href="/diensten/listings-setup/" className="font-medium text-emerald-700 hover:underline">
+              Listings €149
+            </Link>
+          </p>
+          <Link href="/diensten/" className="mt-3 inline-block font-medium text-emerald-700 hover:underline">
+            Alle internetdiensten →
+          </Link>
+        </div>
+        <p className="mt-8 text-center text-sm text-slate-500">
+          Voorbeeld site:{" "}
           <Link href="/demo/" className="font-medium text-emerald-600 hover:underline">
-            bekijk voorbeeld
+            De Zonmeester demo
+          </Link>
+          {" · "}
+          <Link href={vandaagLinks.show} className="font-medium text-emerald-600 hover:underline">
+            Show
           </Link>
         </p>
-        <p className="mt-6 text-center font-mono text-xs text-slate-400">{vandaagLinks.googleStart}</p>
       </section>
     </StorefrontShell>
   );

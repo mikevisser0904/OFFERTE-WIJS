@@ -30,7 +30,7 @@ export async function fetchSafe(url, { method = "GET", timeoutMs = DEFAULT_TIMEO
       redirect: "follow",
       signal: controller.signal,
       headers: {
-        "User-Agent": "VakScan/1.0 (WebKlaar passieve veiligheidscheck)",
+        "User-Agent": "VakScan/1.0 (DoekoeWijs passieve veiligheidscheck)",
         Accept: "text/html,application/json,text/plain,*/*",
       },
     });

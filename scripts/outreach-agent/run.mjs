@@ -29,7 +29,7 @@ function load(path, fallback) {
 
 function whatsappLek(bedrijf, titel) {
   const naam = bedrijf || "uw bedrijf";
-  return `Hoi! Mike van WebKlaar. Gratis passieve veiligheidscheck op uw site: ${titel}. Feiten + link zelf nakijken. Oplossen vaak binnen 2 dagen (Website Veilig €299). Kort belletje? Geen verplichting.`;
+  return `Hoi! Mike van DoekoeWijs. Gratis passieve veiligheidscheck op uw site: ${titel}. Feiten + link zelf nakijken. Oplossen vaak binnen 2 dagen (Website Veilig €299). Kort belletje? Geen verplichting.`;
 }
 
 function whatsappKoud(bedrijf) {

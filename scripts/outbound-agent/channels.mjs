@@ -36,7 +36,7 @@ export async function sendWebhook(url, payload) {
 
   const res = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json", "User-Agent": "WebKlaar-Outbound/1" },
+    headers: { "Content-Type": "application/json", "User-Agent": "DoekoeWijs-Outbound/1" },
     body: JSON.stringify(payload),
   });
   return { ok: res.ok, channel: "webhook", status: res.status };

@@ -24,7 +24,7 @@ async function probeUrl(url) {
       method: "GET",
       redirect: "follow",
       signal: controller.signal,
-      headers: { "User-Agent": "WebKlaar-LeadScore/1.0" },
+      headers: { "User-Agent": "DoekoeWijs-LeadScore/1.0" },
     });
     const final = res.url || url;
     return {
@@ -108,7 +108,7 @@ function scoreOne(lead, probe, leakUrls) {
   else if (PRIORITY_CATS.has(lead.categorie)) aanbod = "Vakman Site €899";
 
   const whatsapp = normalizePhone(lead.telefoon);
-  const msg = `Hoi, Mike van WebKlaar. Gratis veiligheidscheck op uw site — kort puntje om te verbeteren. 10 min bellen?`;
+  const msg = `Hoi, Mike van DoekoeWijs. Gratis veiligheidscheck op uw site — kort puntje om te verbeteren. 10 min bellen?`;
   const whatsappUrl = whatsapp ? `https://wa.me/${whatsapp}?text=${encodeURIComponent(msg)}` : null;
 
   return {

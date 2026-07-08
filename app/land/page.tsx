@@ -7,9 +7,9 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Websites per regio en vak — overzicht",
   description:
-    "SEO-landingspagina's voor vakmannen per stad en branche. DoekoeWijs vaste prijs, online bestellen.",
+    "SEO-landingspagina's per stad en branche. DoekoeWijs: Google Start, SEO, websites — vaste prijs.",
   path: "/land",
-  keywords: ["website vakman", "website per stad", "webklaar regio"],
+  keywords: ["internetdiensten", "website per stad", "seo starter", "google start"],
 });
 
 export default function LandIndexPage() {
@@ -18,9 +18,9 @@ export default function LandIndexPage() {
   return (
     <StorefrontShell>
       <div className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="text-3xl font-bold">Websites per regio & vak</h1>
+        <h1 className="text-3xl font-bold">Landingspagina&apos;s — regio & diensten</h1>
         <p className="mt-3 text-slate-600">
-          Vaste prijs, live in dagen. Kies je pagina voor meer info of bestel direct.
+          Traffic naar Google Start, SEO Starter en websites. Vaste prijs, online bestellen.
         </p>
         <ul className="mt-10 space-y-3">
           {sorted.map((l) => (

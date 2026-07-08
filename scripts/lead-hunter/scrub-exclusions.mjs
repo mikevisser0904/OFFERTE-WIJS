@@ -67,7 +67,7 @@ function main() {
     k.whatsappSchrik = null;
     k.scanToestemming = null;
     k.consentDeep = null;
-    k.herstelBericht = `Beste ${k.bedrijf},\n\nMike van WebKlaar. U gaf toestemming voor een check — dank daarvoor. Na handmatige controle blijkt: de eerdere melding over een open database-beheer (phpMyAdmin) op uw site was onjuist. Het betrof een fout in onze automatische scan (WordPress-pagina, geen database).\n\nExcuses voor de zorg en de tijd. Wij hebben niets ingelogd en geen gegevens uit uw database gehaald. Als u wilt, stuur ik u kort schriftelijk wat wij wél en niet hebben gedaan.\n\nVriendelijke groet,\nMike`;
+    k.herstelBericht = `Beste ${k.bedrijf},\n\nMike van DoekoeWijs. U gaf toestemming voor een check — dank daarvoor. Na handmatige controle blijkt: de eerdere melding over een open database-beheer (phpMyAdmin) op uw site was onjuist. Het betrof een fout in onze automatische scan (WordPress-pagina, geen database).\n\nExcuses voor de zorg en de tijd. Wij hebben niets ingelogd en geen gegevens uit uw database gehaald. Als u wilt, stuur ik u kort schriftelijk wat wij wél en niet hebben gedaan.\n\nVriendelijke groet,\nMike`;
     patched++;
   }
   echte.generatedAt = new Date().toISOString();

@@ -1,25 +1,31 @@
+import Link from "next/link";
 import { absoluteUrl } from "@/lib/seo";
+import { diensten, webklaar } from "@/data/diensten-online";
 
 const faqs = [
   {
-    q: "Wat kost een website voor een vakman?",
-    a: "Een volledige Vakman Website kost €899 eenmalig, inclusief 1 jaar hosting. Google Start pakket is €299.",
+    q: "Wat zijn internetdiensten bij DoekoeWijs?",
+    a: "Vaste-prijs pakketten: online zichtbaarheid (SEO, Google, listings), websites, automatisering, AI en onderhoud — van €50 spoed tot €899 site.",
   },
   {
-    q: "Hoe snel is mijn website live?",
-    a: "Google Start in 2 werkdagen, volledige website in 3 werkdagen na aanlevering van logo en teksten.",
+    q: "Wat kost een website of Google-pakket?",
+    a: "SEO Starter €199, Google Start €299, Landing Snel €349, Vakman Website €899. Alle prijzen op de dienstenpagina.",
   },
   {
-    q: "Voor welke bedrijven is DoekoeWijs bedoeld?",
-    a: "Installateurs, zonwering, kozijnen, zzp'ers en andere vakbedrijven die online gevonden willen worden.",
+    q: "Hoe snel is levering?",
+    a: "Spoed €50 vaak vandaag (1 uur). Google Start en SEO Starter in 2–3 werkdagen. Volledige site in 3 werkdagen na uw content.",
+  },
+  {
+    q: "Voor wie is DoekoeWijs?",
+    a: "ZZP en mkb — installateurs en vakbedrijven zijn onze specialiteit, hetzelfde tempo geldt voor elk bedrijf.",
   },
   {
     q: "Hoe bestel ik?",
-    a: "Online via het bestelformulier. U betaalt bij oplevering — geen vooruitbetaling verplicht.",
+    a: "Online via het bestelformulier per dienst. Betaling bij oplevering (of 50/50 in overleg).",
   },
   {
     q: "Is hosting inbegrepen?",
-    a: "Ja, bij de Vakman Website is 1 jaar hosting inbegrepen. Daarna optioneel €25/maand of verhuizing.",
+    a: "Bij de Vakman Website: 1 jaar hosting inbegrepen. Onderhoud optioneel €49/maand.",
   },
 ];
 
@@ -33,6 +39,10 @@ export function FaqSchema() {
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
   };
+
+  const instap = diensten.filter((d) =>
+    ["spoed-hulp", "seo-starter", "google-start", "listings-setup"].includes(d.slug)
+  );
 
   return (
     <>
@@ -51,11 +61,28 @@ export function FaqSchema() {
               </div>
             ))}
           </div>
+          <div className="mt-8 rounded-xl border border-emerald-100 bg-white p-5">
+            <p className="text-sm font-semibold text-slate-800">Instap-pakketten</p>
+            <ul className="mt-3 space-y-2 text-sm text-slate-600">
+              {instap.map((d) => (
+                <li key={d.slug}>
+                  <Link href={`/diensten/${d.slug}/`} className="text-emerald-600 hover:underline">
+                    {d.naam} {d.prijs}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           <p className="mt-8 text-sm text-slate-500">
+            <Link href="/diensten/" className="text-emerald-600 hover:underline">
+              Alle {diensten.length} diensten →
+            </Link>
+            {" · "}
             <a href={absoluteUrl("/bestellen/")} className="text-emerald-600 hover:underline">
-              Bestelformulier →
+              Bestellen
             </a>
           </p>
+          <p className="mt-2 text-xs text-slate-400">{webklaar.tagline}</p>
         </div>
       </section>
     </>

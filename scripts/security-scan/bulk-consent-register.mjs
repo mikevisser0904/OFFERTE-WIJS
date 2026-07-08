@@ -11,7 +11,7 @@ import { hostKey } from "./consent-registry.mjs";
 const root = process.cwd();
 const CONSENT_REF =
   process.env.CONSENT_REF ||
-  "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)";
+  "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/DoekoeWijs (geregistreerd door Mike)";
 const CONSENT_DATUM = process.env.CONSENT_DATUM || new Date().toISOString().slice(0, 10);
 
 function load(path, fb) {

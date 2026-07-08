@@ -106,7 +106,7 @@ function overpassFetch(query) {
           "-m",
           "120",
           "-A",
-          "WebKlaar-LeadHunter/1.0",
+          "DoekoeWijs-LeadHunter/1.0",
           "-X",
           "POST",
           endpoint,

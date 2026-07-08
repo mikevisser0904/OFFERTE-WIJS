@@ -3,7 +3,7 @@ import { GrootPlanPanel } from "@/components/groot-plan-panel";
 
 export const metadata = {
   title: "Groot plan — DoekoeWijs",
-  description: "Visie en fases: VakScan + agent-machine voor heel Nederland.",
+  description: "Internetdiensten eerst, agents op de achtergrond — traffic, actie, opdrachten.",
 };
 
 export default function VisiePage() {
@@ -11,7 +11,7 @@ export default function VisiePage() {
     <DashboardShell
       active="/visie/"
       title="Groot plan"
-      subtitle="Van €10k naar VakScan-product en schaal — agents zijn de motor"
+      subtitle="DoekoeWijs internetdiensten + autopilot — VakScan later"
     >
       <GrootPlanPanel />
     </DashboardShell>

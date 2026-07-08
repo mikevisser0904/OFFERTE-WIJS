@@ -16,23 +16,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "DoekoeWijs — Websites voor vakmannen | Online bestellen",
+    default: "DoekoeWijs — Internetdiensten | Online bestellen",
     template: "%s | DoekoeWijs",
   },
   description:
-    "Website vakman €899, Google Start €299, digitale opruiming, Excel & AI. Vaste prijs, live in 3 dagen. Online bestellen.",
+    "Internetdiensten: SEO €199, Google Start €299, websites, listings, Excel & AI. Vaste prijs voor zzp en mkb. Online bestellen.",
   keywords: [
+    "internetdiensten zzp",
+    "seo starter",
+    "google business",
+    "website laten maken",
     "website vakman",
-    "website installateur",
-    "website zonwering",
-    "google business vakman",
-    "goedkope website zzp",
-    "website laten maken snel",
+    "excel automatisering",
   ],
   manifest: "/site.webmanifest",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "DoekoeWijs — Websites voor vakmannen",
+    title: "DoekoeWijs — Internetdiensten",
     description: "Online bestellen. Vaste prijs. Meer doekoe.",
     url: "/",
     siteName: "DoekoeWijs",

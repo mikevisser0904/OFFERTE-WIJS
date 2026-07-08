@@ -4,7 +4,7 @@ import { LeadsPanel } from "@/components/leads-panel";
 
 export const metadata = {
   title: "Potentiële klanten — DoekoeWijs",
-  description: "OSM vakman-leads voor VakScan en verkoop.",
+  description: "Warme lijsten voor actie en verkoop — Google Start, SEO, websites.",
 };
 
 export default function LeadsPage() {
@@ -12,7 +12,7 @@ export default function LeadsPage() {
     <DashboardShell
       active="/leads/"
       title="Potentiële klanten"
-      subtitle="Echte vakbedrijven met website — scan → bel → Website Veilig / Vakman Site"
+      subtitle="Warm netwerk + OSM — bel/WhatsApp met internet-menu (Spoed, Listings, Google Start)"
     >
       <EchteKlantenPanel />
       <div className="mt-10">

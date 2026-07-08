@@ -45,9 +45,9 @@ Betaling: **Tikkie vooraf** of contant — dan start ik.
 Direct appen met "SPOED": ${webklaar.telefoonDisplay}
 Of: ${spoed50.url}
 
-Mike / WebKlaar`;
+Mike / DoekoeWijs`;
 
-export const whatsappSpoed50 = `Hoi! Mike (WebKlaar).
+export const whatsappSpoed50 = `Hoi! Mike (DoekoeWijs).
 
 Spoed digitale hulp: **€50 = 1 uur** vandaag.
 PC traag, mail, kleine site-fix, Google-check, Excel — kies 1 probleem.

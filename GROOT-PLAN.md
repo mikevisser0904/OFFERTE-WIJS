@@ -1,18 +1,17 @@
-# Groot plan — WebKlaar + VakScan
+# Groot plan — DoekoeWijs
 
-**Mike verkoopt · Maarten bouwt · Agents schalen**
+**Mike verkoopt · Maarten bouwt · Agents op achtergrond**
 
 ## Visie
 
-Een **automatische funnel** voor Nederlandse vakbedrijven:
+**Internetdiensten** met vaste prijs: actie, listings, warm netwerk, SEO-traffic.
 
-1. **Lead Hunter** vindt sites (OSM, later Maps/API).
-2. **VakScan** vindt lekken (passief, legaal, rapport in NL).
-3. **Outreach** zegt wie Mike belt.
-4. **Website Veilig / Vakman Site** = omzet.
-5. **Manager** houdt alles in de gaten.
+1. **Catalogus + show/demo** — vertrouwen en bestellen.
+2. **Actie / monitor** — wat vandaag verkopen (Spoed, Listings, Google, SEO).
+3. **Traffic** — landings, funnel, IndexNow.
+4. **Tools** — leads, VakScan (verkoop gepauzeerd), agents.
 
-North star: **1000 vakman-sites per jaar** veiliger en moderner.
+North star: **8+ opdrachten/maand** via warm netwerk + SEO. VakScan blijft in repo voor later.
 
 ## Fase 1 (NU) — De verkoopmachine
 

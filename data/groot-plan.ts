@@ -12,11 +12,11 @@ export type GrootFase = {
 };
 
 export const visie = {
-  naam: "WebKlaar + VakScan",
+  naam: "DoekoeWijs internetdiensten",
   elevator:
-    "Automatische machine voor vakmannen: vind klanten, scan hun site op lekken, verkoop fix — agents doen het zware werk, Mike sluit, Maarten bouwt.",
-  northStar: "1000 vakman-sites veilig + modern per jaar (NL)",
-  nu: "Fase 1 — agent-funnel live op GitHub Pages",
+    "Vaste-prijs shop voor zzp/mkb: SEO, Google, websites, listings. Actie + listings voor geld vandaag; traffic en autopilot op de achtergrond. VakScan blijft in repo, verkoop daarop gepauzeerd.",
+  northStar: "8+ opdrachten geleverd per maand via warm netwerk + SEO",
+  nu: "Fase 1 — catalogus, actie, monitor, show/demo live",
 };
 
 export const fases: GrootFase[] = [
@@ -24,7 +24,7 @@ export const fases: GrootFase[] = [
     id: "f1-machine",
     fase: 1,
     titel: "De verkoopmachine",
-    tagline: "Leads → VakScan → Outreach → €299–€899",
+    tagline: "Actie + listings + SEO → Spoed €50 t/m Vakman €899",
     doelOmzet: "€10.000 (eerste rug)",
     status: "nu",
     metrics: [
@@ -40,7 +40,7 @@ export const fases: GrootFase[] = [
       "Mike: 30 min/dag op /agents/ + /actie/",
       "Maarten: template + fix-pakket in 2 dagen",
     ],
-    product: "WebKlaar webshop + VakScan rapport",
+    product: "DoekoeWijs webshop + VakScan rapport",
   },
   {
     id: "f2-vakscan-product",
@@ -56,7 +56,7 @@ export const fases: GrootFase[] = [
     ],
     agents: ["vakscan-full", "seo", "outreach", "kpi"],
     mijlpalen: [
-      "Merk 'VakScan' los van WebKlaar op landings",
+      "Merk 'VakScan' los van DoekoeWijs op landings",
       "Rapport-PDF + klant-portal (static)",
       "Onderhoud €49/mnd koppelen aan her-scan",
     ],
@@ -80,7 +80,7 @@ export const fases: GrootFase[] = [
       "Referral €50 in product",
       "Optioneel: lokale reseller (jij scant, zij verkopen)",
     ],
-    product: "WebKlaar franchise-light",
+    product: "DoekoeWijs franchise-light",
   },
   {
     id: "f4-platform",
@@ -99,7 +99,7 @@ export const fases: GrootFase[] = [
       "VakScan API + facturatie",
       "Compliance: alleen opt-in scans",
     ],
-    product: "VakScan API + WebKlaar agency",
+    product: "VakScan API + DoekoeWijs agency",
   },
 ];
 

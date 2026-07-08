@@ -63,7 +63,7 @@ function maakEntry(stad, vak) {
     : `Website voor ${vak.label} in ${stad}`;
   return {
     slug,
-    title: `${h1} — vaste prijs | WebKlaar`,
+    title: `${h1} — vaste prijs | DoekoeWijs`,
     h1,
     metaDescription: vak.google
       ? `Google Business + one-pager voor ${vak.label} in ${stad}. €299, live in 2 dagen. Bestel online.`
@@ -73,7 +73,7 @@ function maakEntry(stad, vak) {
       : [`website ${vak.label} ${stad}`, `website laten maken ${stad}`],
     intro: `${stad}: klanten zoeken op Google — een verouderde of ontbrekende site kost aanvragen.`,
     paragraphs: [
-      `WebKlaar levert vaste-prijs pakketten voor ${vak.label} in ${stad} en omgeving.`,
+      `DoekoeWijs levert vaste-prijs pakketten voor ${vak.label} in ${stad} en omgeving.`,
       vak.google
         ? "Google Start €299: profiel, one-pager, WhatsApp. Geen bureau-tarieven."
         : "Vakman Website €899: 5 pagina's, demo beschikbaar, hosting 1 jaar inbegrepen.",

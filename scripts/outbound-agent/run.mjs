@@ -58,7 +58,7 @@ ${rapport ? `Scanrapport: ${rapport}\n` : ""}
 Aanbod: Website Veilig €299 (vast) — beheer-URL afschermen, doorgaans binnen 2 werkdagen.
 
 Groet,
-Mike van WebKlaar
+Mike van DoekoeWijs
 ${process.env.OUTBOUND_REPLY_PHONE ? `Tel: ${process.env.OUTBOUND_REPLY_PHONE}` : ""}`.trim();
 }
 

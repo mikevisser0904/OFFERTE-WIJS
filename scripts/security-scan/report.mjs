@@ -54,7 +54,7 @@ export function aanbevolenDienst(findings, score) {
 export function whatsappZin(report) {
   const naam = report.bedrijf || "uw bedrijf";
   const top = (report.klantBullets[0] || "een paar beveiligingspunten").replace(/\.\s*$/, "");
-  return `Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van ${naam} gedaan. Belangrijkste punt: ${top}. Ik kan dit voor u oplossen met ons ${report.verkoop.dienst} (${report.verkoop.prijs}). Zin in een kort belletje?`;
+  return `Hoi! Mike van DoekoeWijs — ik heb even een gratis veiligheidscheck op de site van ${naam} gedaan. Belangrijkste punt: ${top}. Ik kan dit voor u oplossen met ons ${report.verkoop.dienst} (${report.verkoop.prijs}). Zin in een kort belletje?`;
 }
 
 const DISCLAIMER =
