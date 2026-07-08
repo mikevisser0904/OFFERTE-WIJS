@@ -994,6 +994,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-08T17:16:15.855Z",
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "url": "https://www.ejvandermeer.nl",
+      "host": "ejvandermeer.nl",
+      "email": "info@ejvandermeer.nl",
+      "phone": "31631514170",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T17:16:15.855Z",
+      "bedrijf": "Dreumel",
+      "url": "https://www.dreumel.nl",
+      "host": "dreumel.nl",
+      "email": "info@dreumel.nl",
+      "phone": "31703864484",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T17:16:15.855Z",
+      "bedrijf": "SA Elektro Experts",
+      "url": "https://saelektroexperts.nl",
+      "host": "saelektroexperts.nl",
+      "email": "info@saelektroexperts.nl",
+      "phone": "31707503681",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T17:16:15.855Z",
+      "bedrijf": "Suntec zonwering",
+      "url": "https://www.suntec-zonwering.nl",
+      "host": "suntec-zonwering.nl",
+      "email": "info@suntec-zonwering.nl",
+      "phone": "31715802342",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T17:16:15.855Z",
+      "bedrijf": "Decorette",
+      "url": "https://decorette.nl/winkels/nieuw-vennep",
+      "host": "decorette.nl",
+      "email": "geri@doubleweb.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }

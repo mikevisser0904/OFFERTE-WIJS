@@ -1,42 +1,42 @@
 {
-  "updatedAt": "2026-07-08T14:09:43.655Z",
+  "updatedAt": "2026-07-08T17:16:15.855Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
   "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
-  "mislukt": 5,
+  "gesimuleerd": 5,
+  "mislukt": 0,
   "items": [
     {
-      "bedrijf": "Kroon interieurbouw",
-      "status": "failed",
-      "email": null,
-      "phone": "31950635027"
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "status": "simulated",
+      "email": "info@ejvandermeer.nl",
+      "phone": "31631514170"
     },
     {
-      "bedrijf": "Decor Gordijn",
-      "status": "failed",
-      "email": null,
-      "phone": "31950635027"
+      "bedrijf": "Dreumel",
+      "status": "simulated",
+      "email": "info@dreumel.nl",
+      "phone": "31703864484"
     },
     {
-      "bedrijf": "De Pagter",
-      "status": "failed",
-      "email": null,
-      "phone": "31950635027"
+      "bedrijf": "SA Elektro Experts",
+      "status": "simulated",
+      "email": "info@saelektroexperts.nl",
+      "phone": "31707503681"
     },
     {
-      "bedrijf": "Pruis Schilderwerken",
-      "status": "failed",
-      "email": null,
-      "phone": "31950635027"
+      "bedrijf": "Suntec zonwering",
+      "status": "simulated",
+      "email": "info@suntec-zonwering.nl",
+      "phone": "31715802342"
     },
     {
-      "bedrijf": "Verzijl De Woonprofessionals",
-      "status": "failed",
-      "email": null,
-      "phone": "31950635027"
+      "bedrijf": "Decorette",
+      "status": "simulated",
+      "email": "geri@doubleweb.nl",
+      "phone": null
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
