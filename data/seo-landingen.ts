@@ -14,7 +14,7 @@ export const seoLandingen: SeoLanding[] = [
   {
     slug: "website-vakman-utrecht",
     title: "Website voor vakman in Utrecht — €899 | DoekoeWijs",
-    h1: "Website voor vakmannen in Utrecht",
+    h1: "Website voor zzp en vakbedrijven in Utrecht",
     metaDescription:
       "Professionele website voor installateurs en vakbedrijven in Utrecht. Live in 3 dagen, vaste prijs €899. Inclusief hosting. Bestel online.",
     keywords: ["website vakman utrecht", "website installateur utrecht", "goedkope website utrecht"],
@@ -87,7 +87,7 @@ export const seoLandingen: SeoLanding[] = [
   {
     slug: "website-vakman-amsterdam",
     title: "Website vakman Amsterdam — €899 | DoekoeWijs",
-    h1: "Website voor vakmannen in Amsterdam",
+    h1: "Website voor zzp en vakbedrijven in Amsterdam",
     metaDescription: "Website voor Amsterdamse vakbedrijven. Live in 3 dagen. €899 vast. Bestel online bij DoekoeWijs.",
     keywords: ["website vakman amsterdam", "website laten maken amsterdam zzp"],
     intro: "Amsterdamse vakbedrijven concurreren online — een verouderde site kost u klanten.",
@@ -101,7 +101,7 @@ export const seoLandingen: SeoLanding[] = [
   {
     slug: "website-vakman-rotterdam",
     title: "Website vakman Rotterdam — €899 | DoekoeWijs",
-    h1: "Website voor vakmannen in Rotterdam",
+    h1: "Website voor zzp en vakbedrijven in Rotterdam",
     metaDescription: "Professionele website voor vakbedrijven in Rotterdam. €899, 3 dagen live. Demo + bestellen.",
     keywords: ["website vakman rotterdam", "website rotterdam zzp"],
     intro: "Rotterdamse installateurs en vakmannen: uw site is uw eerste indruk.",
@@ -141,7 +141,7 @@ export const seoLandingen: SeoLanding[] = [
   {
     slug: "website-vakman-den-haag",
     title: "Website vakman Den Haag — €899 | DoekoeWijs",
-    h1: "Website voor vakmannen in Den Haag",
+    h1: "Website voor zzp en vakbedrijven in Den Haag",
     metaDescription: "Website voor Haagse vakbedrijven. €899, mobiel, WhatsApp. DoekoeWijs — online bestellen.",
     keywords: ["website vakman den haag", "website den haag zzp"],
     intro: "Vakbedrijven in Den Haag en omgeving: word beter gevonden op Google.",
@@ -154,7 +154,7 @@ export const seoLandingen: SeoLanding[] = [
   {
     slug: "website-vakman-haarlem",
     title: "Website vakman Haarlem — €899 | DoekoeWijs",
-    h1: "Website voor vakmannen in Haarlem",
+    h1: "Website voor zzp en vakbedrijven in Haarlem",
     metaDescription: "Website laten maken in Haarlem voor installateurs en vakbedrijven. €899 vast. DoekoeWijs.",
     keywords: ["website vakman haarlem", "website haarlem"],
     intro: "Haarlem en regio: moderne site nodig? Wij leveren in dagen.",
@@ -167,7 +167,7 @@ export const seoLandingen: SeoLanding[] = [
   {
     slug: "website-vakman-amersfoort",
     title: "Website vakman Amersfoort — €899 | DoekoeWijs",
-    h1: "Website voor vakmannen in Amersfoort",
+    h1: "Website voor zzp en vakbedrijven in Amersfoort",
     metaDescription: "Vakman website Amersfoort. €899, 3 dagen, hosting inbegrepen. DoekoeWijs.",
     keywords: ["website vakman amersfoort", "website amersfoort zzp"],
     intro: "Amersfoortse vakmannen: uw concurrent heeft al een betere site.",

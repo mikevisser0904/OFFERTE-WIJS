@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
-import { categorieMeta, dienstenByCategorie, webklaar } from "@/data/diensten-online";
+import { betalingStandaard, categorieMeta, dienstenByCategorie, webklaar } from "@/data/diensten-online";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -32,6 +32,12 @@ export default function DoekoeWijsPage() {
               Vakman-demo
             </Link>
           </div>
+          <ul className="mx-auto mt-10 flex max-w-xl flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-600">
+            {webklaar.usps.map((u) => (
+              <li key={u}>✓ {u}</li>
+            ))}
+          </ul>
+          <p className="mx-auto mt-6 max-w-lg text-sm text-slate-500">{betalingStandaard}</p>
         </div>
       </section>
 

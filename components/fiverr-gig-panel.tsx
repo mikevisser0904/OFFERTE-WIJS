@@ -43,6 +43,21 @@ export function FiverrGigPanel({ initialTab }: { initialTab?: Tab }) {
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
+      <section className="rounded-2xl border border-violet-400/30 bg-violet-400/10 p-5 text-sm text-white/75">
+        <p className="font-bold text-violet-200">Verkoop Listings Setup (€149) aan je netwerk</p>
+        <p className="mt-2">
+          Jij gebruikt deze pagina voor eigen Fiverr/Marktplaats. Dezelfde teksten kun je als product verkopen:{" "}
+          <Link href="/diensten/listings-setup/" className="font-semibold text-emerald-300 hover:underline">
+            Listings Setup →
+          </Link>
+        </p>
+        <Link
+          href="/bestellen/?dienst=listings-setup"
+          className="mt-3 inline-block text-xs font-bold text-white/90 hover:text-white"
+        >
+          Bestel-link voor klant →
+        </Link>
+      </section>
       <div className="flex flex-wrap gap-2">
         {tabs.map((t) => (
           <button

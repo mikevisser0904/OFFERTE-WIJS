@@ -133,7 +133,9 @@ Listings Setup €149 — Fiverr + Marktplaats teksten
 Google Start €299 — profiel + one-pager
 Landing Snel €349 — 1 campagnepagina
 Spoed hulp €50 — 1 uur vandaag
+Content Refresh €149 · Digitale Opruiming €249
 AI Snelstart €199 · Excel €499 · Onderhoud €49/mnd
+Website Veilig €299 — alleen op verzoek
 
 Bestellen: ${verkoopLinks.bestellen}
 Vragen: app/bel ${merk.telefoon}`,

@@ -20,9 +20,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const d = getDienst(slug);
   if (!d) return { title: "Dienst niet gevonden" };
+  const meta = getDienstMeta(slug);
   return pageMetadata({
     title: `${d.naam} ${d.prijs} — online bestellen`,
-    description: `${d.beschrijving} Bestel online. ${d.levertijd}.`,
+    description: `${meta?.pitch1Regel ?? d.korteOms} ${d.levertijd}. Bestel bij DoekoeWijs.`,
     path: `/diensten/${slug}`,
     keywords: [d.naam, d.korteOms, "DoekoeWijs", "internetdiensten"],
   });

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { brand } from "@/data/brand";
 import { demo } from "@/data/demo-site";
+import { actieQuickDiensten } from "@/data/dienst-meta";
 import { webklaar, diensten } from "@/data/diensten-online";
 import { seoLandingen } from "@/data/seo-landingen";
 import { pageMetadata } from "@/lib/seo";
@@ -50,7 +51,7 @@ const highlights = [
 ] as const;
 
 export default function ShowPage() {
-  const top = [...diensten.filter((d) => d.populair), ...diensten.filter((d) => !d.populair)].slice(0, 4);
+  const top = actieQuickDiensten().map((x) => x.dienst).slice(0, 8);
 
   return (
     <StorefrontShell>

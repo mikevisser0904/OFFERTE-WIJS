@@ -22,7 +22,7 @@ Bedrag: €[PRIJS] excl. BTW
 BTW 21%: €[BTW]
 Totaal: €[TOTAAL]
 
-Betaling: binnen 14 dagen na oplevering
+Betaling: 50% vooraf (Tikkie), rest bij oplevering — spoed €50 volledig vooraf
 IBAN: [INVULLEN]`;
 
 /** Bellen na schriftelijke toestemming voor diepere VakScan */

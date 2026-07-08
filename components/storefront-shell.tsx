@@ -4,9 +4,10 @@ import { BrandLogo } from "@/components/brand-logo";
 
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/diensten/", label: "Internetdiensten" },
-  { href: "/demo/", label: "Demo" },
+  { href: "/diensten/", label: "Diensten" },
   { href: "/show/", label: "Show" },
+  { href: "/demo/", label: "Demo" },
+  { href: "/start/", label: "€299" },
   { href: "/bestellen/", label: "Bestellen" },
 ] as const;
 
@@ -142,10 +143,16 @@ export function StorefrontShell({
             Bel
           </a>
           <Link
+            href="/diensten/"
+            className="flex-1 rounded-full border border-emerald-600 py-3 text-center text-sm font-bold text-emerald-700"
+          >
+            Diensten
+          </Link>
+          <Link
             href="/start/"
             className="flex-[2] rounded-full bg-emerald-600 py-3 text-center text-sm font-bold text-white"
           >
-            Google Start €299 →
+            Google €299
           </Link>
         </div>
       )}

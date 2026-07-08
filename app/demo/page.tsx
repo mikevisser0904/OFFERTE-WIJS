@@ -4,9 +4,9 @@ import { demo } from "@/data/demo-site";
 import { pageMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Demo website vakman — voorbeeld zonwering",
+  title: "Demo website — voorbeeld zonwering (Vakman €899)",
   description:
-    "Professionele vakman-site: diensten, reviews, FAQ en WhatsApp-offerte. Zo leveren DoekoeWijs voor uw klant.",
+    "Professionele bedrijfssite: diensten, reviews, FAQ en WhatsApp. Portfolio voor DoekoeWijs Vakman Website €899.",
   path: "/demo",
   keywords: ["demo website vakman", "voorbeeld website zonwering", "website installateur voorbeeld"],
 });

@@ -6,6 +6,7 @@ export const navVerkopen: NavItem[] = [
   { href: "/actie/", label: "Actie", icon: "→" },
   { href: "/listings/", label: "Listings", icon: "⊕" },
   { href: "/verkoop/", label: "Verkoop", icon: "€" },
+  { href: "/diensten/", label: "Catalogus", icon: "◇" },
   { href: "/", label: "Webshop", icon: "🛒" },
 ];
 
@@ -24,6 +25,8 @@ export const dashboardQuickLinks = [
   { href: "/listings/", label: "Listings", sub: "Fiverr + Marktplaats", accent: "violet" as const },
   { href: "/", label: "Webshop", sub: "Bestellingen", accent: "emerald" as const },
   { href: "/monitor/", label: "KPI", sub: "Slagingskans", accent: "sky" as const },
+  { href: "/diensten/", label: "Catalogus", sub: "12 producten live", accent: "emerald" as const },
+  { href: "/verkoop/", label: "Productmatrix", sub: "Pitch per SKU", accent: "violet" as const },
 ] as const;
 
 export const defaultMikeActie =

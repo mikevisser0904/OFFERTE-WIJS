@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
-import { focusAchtergrond, focusLaagUi } from "@/data/site-focus";
+import { focusAchtergrond, focusHoog, focusLaagUi } from "@/data/site-focus";
 
 const toolLinks = [
   {
@@ -33,15 +33,18 @@ export default function ToolsPage() {
       subtitle="Achtergrond · scripts blijven in repo — UI alleen als je het nodig hebt"
     >
       <div className="mx-auto max-w-3xl space-y-8">
-        <section className="rounded-2xl border border-amber-400/25 bg-amber-400/5 p-5 text-sm text-white/65">
-          <p className="font-bold text-amber-200">Dagelijks geld zit op Actie + Listings</p>
-          <p className="mt-2">
-            Deze pagina is voor leads, scans en agents. Traffic/SEO draait via GitHub Actions (
-            <code className="text-white/55">traffic-daily</code>, <code className="text-white/55">funnel</code>).
-          </p>
-          <Link href="/actie/" className="mt-4 inline-flex rounded-full bg-emerald-400 px-5 py-2 text-sm font-bold text-slate-900">
-            Naar actie →
-          </Link>
+        <section className="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5 text-sm text-white/65">
+          <p className="font-bold text-emerald-200">Dagelijks geld — niet hier</p>
+          <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            {focusHoog.slice(0, 6).map((f) => (
+              <li key={f.href}>
+                <Link href={f.href} className="font-medium text-emerald-300 hover:underline">
+                  {f.label}
+                </Link>
+                <span className="text-white/40"> — {f.waarom}</span>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <div className="grid gap-4 sm:grid-cols-3">

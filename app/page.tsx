@@ -52,7 +52,12 @@ export default function StoreHomePage() {
           <p className="mt-6 max-w-2xl text-lg text-slate-600">{webklaar.sub}</p>
           <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm text-amber-950 sm:flex sm:items-center sm:justify-between sm:gap-4">
             <p>
-              <strong>Meest gekozen:</strong> Google Start €299 · SEO Starter €199 · Landing Snel €349
+              <strong>Meest gekozen:</strong>{" "}
+              <Link href="/spoed/" className="underline hover:text-amber-900">
+                Spoed €50
+              </Link>
+              {" · "}
+              Listings €149 · SEO €199 · Google €299
             </p>
             <Link
               href="/diensten/"

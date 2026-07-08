@@ -1,16 +1,19 @@
 import Link from "next/link";
 import type { OnlineDienst } from "@/data/diensten-online";
+import { getDienstMeta } from "@/data/dienst-meta";
 
 export function DienstCard({ d, compact }: { d: OnlineDienst; compact?: boolean }) {
+  const meta = getDienstMeta(d.slug);
+  const snel = meta && meta.korteTermijn >= 4;
   return (
     <article
       className={`relative rounded-2xl border p-6 transition hover:shadow-md ${
         d.populair ? "border-emerald-300 bg-emerald-50/50" : "border-slate-100 bg-white"
       }`}
     >
-      {d.populair && (
+      {(d.populair || snel) && (
         <span className="absolute -top-2 right-4 rounded-full bg-emerald-600 px-3 py-0.5 text-xs font-bold text-white">
-          Populair
+          {snel && !d.populair ? "Snel verkopen" : d.populair ? "Populair" : "Snel verkopen"}
         </span>
       )}
       <p className="text-2xl font-bold text-emerald-600">{d.prijs}</p>

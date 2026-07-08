@@ -20,7 +20,7 @@ export default function MonitorPage() {
             href="/verkoop/"
             className="rounded-full border border-amber-400/40 px-5 py-2 text-sm text-amber-200"
           >
-            Verkoopkit →
+            Productmatrix →
           </Link>
           <Link
             href="/diensten/"

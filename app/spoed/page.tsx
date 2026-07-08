@@ -75,12 +75,20 @@ export default function SpoedPage() {
           </a>
         </div>
 
-        <p className="mt-8 text-center text-sm text-slate-400">
-          Groter project?{" "}
-          <Link href="/start/" className="text-emerald-600 hover:underline">
-            Google Start €299
-          </Link>
-        </p>
+        <div className="mt-10 rounded-2xl border border-emerald-100 bg-emerald-50 p-6 text-center text-sm text-slate-700">
+          <p className="font-semibold text-slate-900">Na de spoed — structureel</p>
+          <p className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-2">
+            <Link href="/start/" className="font-medium text-emerald-700 hover:underline">
+              Google Start €299
+            </Link>
+            <Link href="/diensten/seo-starter/" className="font-medium text-emerald-700 hover:underline">
+              SEO €199
+            </Link>
+            <Link href="/diensten/" className="font-medium text-emerald-700 hover:underline">
+              Alle diensten
+            </Link>
+          </p>
+        </div>
       </section>
     </StorefrontShell>
   );

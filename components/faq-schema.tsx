@@ -27,6 +27,14 @@ const faqs = [
     q: "Is hosting inbegrepen?",
     a: "Bij de Vakman Website: 1 jaar hosting inbegrepen. Onderhoud optioneel €49/maand.",
   },
+  {
+    q: "Wat is het snelst te bestellen?",
+    a: "Spoed €50 (vandaag), Listings €149, SEO €199 en Google Start €299 — zie ‘Kies je tempo’ op de homepage.",
+  },
+  {
+    q: "Werken jullie alleen voor vakmannen?",
+    a: "Nee — zzp en mkb in heel Nederland. Vakbedrijven zijn onze specialiteit; hetzelfde tempo en prijzen gelden voor elk bedrijf.",
+  },
 ];
 
 export function FaqSchema() {

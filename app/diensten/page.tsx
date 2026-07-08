@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { DienstCard } from "@/components/internet-diensten-grid";
 import { betalingStandaard, dienstenByCategorie, webklaar } from "@/data/diensten-online";
+import { DienstenTierOverview } from "@/components/diensten-tier-overview";
 import { actieQuickDiensten } from "@/data/dienst-meta";
 import { pageMetadata } from "@/lib/seo";
 
@@ -28,8 +29,26 @@ export default function DienstenPage() {
         <p className="mt-2 text-sm text-slate-600">{betalingStandaard}</p>
 
         <div className="mt-8 flex flex-wrap gap-2">
+          <Link
+            href="#tier-vandaag"
+            className="rounded-full bg-amber-100 px-4 py-1.5 text-sm font-medium text-amber-900 hover:bg-amber-200"
+          >
+            Vandaag
+          </Link>
+          <Link
+            href="#tier-deze-week"
+            className="rounded-full bg-emerald-100 px-4 py-1.5 text-sm font-medium text-emerald-900 hover:bg-emerald-200"
+          >
+            Deze week
+          </Link>
+          <Link
+            href="#tier-project"
+            className="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-800 hover:bg-slate-200"
+          >
+            Project
+          </Link>
           {actieQuickDiensten()
-            .slice(0, 6)
+            .slice(0, 4)
             .map(({ dienst }) => (
               <Link
                 key={dienst.slug}
@@ -40,6 +59,11 @@ export default function DienstenPage() {
               </Link>
             ))}
         </div>
+
+        <DienstenTierOverview />
+
+        <h2 className="mt-16 text-2xl font-bold text-slate-900">Per categorie</h2>
+        <p className="mt-1 text-sm text-slate-500">Technische indeling — zelfde prijzen als hierboven.</p>
 
         {groups.map((g) => (
           <section key={g.categorie} id={g.categorie} className="scroll-mt-24 mt-14 first:mt-12">

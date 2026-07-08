@@ -15,8 +15,11 @@ export function DemoVakmanSite() {
         <span className="mx-2 text-amber-700/60">·</span>
         Zo ziet de site van uw klant eruit
         <span className="mx-2 hidden text-amber-700/60 sm:inline">·</span>
-        <Link href="/bestellen/" className="font-semibold text-emerald-700 underline-offset-2 hover:underline">
-          Eigen site bestellen →
+        <Link
+          href="/bestellen/?dienst=vakman-site"
+          className="font-semibold text-emerald-700 underline-offset-2 hover:underline"
+        >
+          Vakman site €899 bestellen →
         </Link>
         <span className="mx-2 hidden text-amber-700/60 md:inline">·</span>
         <Link href="/show/" className="hidden font-medium text-amber-800/80 hover:underline md:inline">

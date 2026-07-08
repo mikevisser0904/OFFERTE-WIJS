@@ -1,50 +1,40 @@
-# OfferteWijs
+# DoekoeWijs (OFFERTE-WIJS)
 
-**Offerte in 2 minuten** — voor vakbedrijven. Eerste samenwerkingsproject na ZonComfort.
+**Internetdiensten** voor zzp en mkb — vaste prijs, online bestellen.  
+Mike + Maarten · live op GitHub Pages.
 
-Mike (mikevisser0904) + Maarten (opdevlugt-tech).
+## Live
 
-## Start
+| Wat | URL |
+|-----|-----|
+| Webshop | https://mikevisser0904.github.io/OFFERTE-WIJS/ |
+| Diensten (12 SKU) | …/diensten/ |
+| Actie (verkoop vandaag) | …/actie/ |
+| Show | …/show/ |
+| Demo | …/demo/ |
+| Werkblad | …/dashboard/ |
+| Monitor KPI | …/monitor/ |
+
+## Docs
+
+- `docs/PRODUCTEN-ANALYSE.md` — alle producten + slagingskans
+- `docs/SLAGINGSKANS.md` — korte termijn verkoop
+- `docs/ZERO-START.md` — €0 opstart
+- `docs/FIVERR.md` — listings / Fiverr
+
+## Lokaal
 
 ```bash
-git clone https://github.com/mikevisser0904/OFFERTE-WIJS.git
-cd OFFERTE-WIJS
 npm install
 npm run dev
 ```
 
-→ http://localhost:3000
-
-**Live webshop:** https://mikevisser0904.github.io/OFFERTE-WIJS/
-
-**Team dashboard:** https://mikevisser0904.github.io/OFFERTE-WIJS/dashboard/
-
-**Monitor (KPI + health):** https://mikevisser0904.github.io/OFFERTE-WIJS/monitor/
-
-**Ideeën:** https://mikevisser0904.github.io/OFFERTE-WIJS/ideeen/
-
-## Samenwerken
-
-Zelfde flow als MIKE-AND-MAARTEN:
+GitHub Pages build:
 
 ```bash
-git pull
-# ... werk ...
-git commit -m "Beschrijving"
-git push
+GITHUB_PAGES=true npm run build
 ```
-
-Meer ideeën: zie **`INSPIRATIE.md`**.
 
 ## Stack
 
-- Next.js 16 + TypeScript + Tailwind
-- Later: PDF export, multi-tenant branding
-
-## MVP roadmap
-
-- [ ] Landing + probleem/uitleg
-- [ ] Configurator (hergebruik ZonComfort-logica)
-- [ ] Offerte-overzicht
-- [ ] PDF of deelbare link
-- [ ] Eerste test met écht zonweringbedrijf
+Next.js 16 · static export · `basePath` `/OFFERTE-WIJS`
