@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-08T14:53:53.452Z",
+  "updatedAt": "2026-07-08T14:56:36.137Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-08T14:09:43.370Z",
@@ -15,7 +15,7 @@
       ]
     },
     "manager": {
-      "lastRun": "2026-07-08T14:40:30.156Z",
+      "lastRun": "2026-07-08T14:56:36.137Z",
       "fase": "verkopen",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
@@ -124,7 +124,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-08T14:40:30.156Z",
+    "updatedAt": "2026-07-08T14:56:36.137Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Verkoop-bewijs klaar",
@@ -158,13 +158,13 @@
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 15 lekken",
-        "lastRun": "2026-07-08T13:24:49.182Z"
+        "lastRun": "2026-07-08T14:53:53.452Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 176ms",
+        "detail": "OK 125ms",
         "lastRun": "2026-07-08T13:24:49.127Z"
       },
       {
