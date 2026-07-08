@@ -69,8 +69,23 @@ export function MonitorPanel() {
     rose: "text-rose-300 border-rose-400/30 bg-rose-400/10",
   };
 
+  const week1Start =
+    kpi.contactenDezeWeek === 0 &&
+    kpi.omzet === 0 &&
+    kpi.bestellingen === 0 &&
+    result.week <= 2;
+
   return (
     <div className="space-y-8">
+      {week1Start && (
+        <section className="rounded-2xl border border-sky-400/25 bg-sky-400/5 p-5 text-sm text-white/70">
+          <p className="font-bold text-sky-200">Nog niet gestart?</p>
+          <p className="mt-2">{monitorUitleg.week1Hint}</p>
+          <Link href="/actie/" className="mt-3 inline-block font-semibold text-emerald-300 hover:underline">
+            Naar actie →
+          </Link>
+        </section>
+      )}
       <section className={`rounded-2xl border p-8 ${kleurMap[result.kleur]}`}>
         <p className="text-xs font-semibold uppercase tracking-widest opacity-70">
           Slagingskans · week {result.week}/{12}

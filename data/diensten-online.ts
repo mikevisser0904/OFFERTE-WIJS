@@ -62,9 +62,13 @@ export const webklaar = {
     "Vaste prijs — geen uurtje-factuurtje",
     "Live in 1–7 dagen (per pakket)",
     "AI-ondersteund bouwen, menselijke oplevering",
-    "Betaling bij oplevering",
+    "50% vooraf (Tikkie), rest bij oplevering",
   ],
 };
+
+/** Eén lijn voor bestellen, FAQ en actie */
+export const betalingStandaard =
+  "50% vooraf (Tikkie), rest bij oplevering. Spoed €50: volledig vooraf.";
 
 export const diensten: OnlineDienst[] = [
   {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { absoluteUrl } from "@/lib/seo";
-import { diensten, webklaar } from "@/data/diensten-online";
+import { betalingStandaard, diensten, webklaar } from "@/data/diensten-online";
 
 const faqs = [
   {
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "Hoe bestel ik?",
-    a: "Online via het bestelformulier per dienst. Betaling bij oplevering (of 50/50 in overleg).",
+    a: `Online via het bestelformulier per dienst. ${betalingStandaard}`,
   },
   {
     q: "Is hosting inbegrepen?",

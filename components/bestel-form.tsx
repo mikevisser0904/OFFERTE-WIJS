@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { diensten, webklaar } from "@/data/diensten-online";
+import { betalingStandaard, diensten, webklaar } from "@/data/diensten-online";
 import { notifyNtfy, recordBestelling } from "@/lib/kpi-autobump";
 
 export function BestelForm({ preselect }: { preselect?: string }) {
@@ -33,7 +33,7 @@ Tel: ${tel}
 E-mail: ${email}
 ${opmerking ? `Opmerking: ${opmerking}` : ""}
 
-Ik ga akkoord met betaling bij oplevering.`;
+Ik ga akkoord met: ${betalingStandaard}`;
   }
 
   function plaatsBestelling() {
@@ -171,7 +171,7 @@ Ik ga akkoord met betaling bij oplevering.`;
           <strong>{gekozen.naam}</strong> — {gekozen.prijs}
         </p>
         <p className="mt-1">Levertijd: {gekozen.levertijd}</p>
-        <p className="mt-2 text-xs">Betaling bij oplevering. Geen verborgen kosten.</p>
+        <p className="mt-2 text-xs">{betalingStandaard} Geen verborgen kosten.</p>
       </div>
 
       <button

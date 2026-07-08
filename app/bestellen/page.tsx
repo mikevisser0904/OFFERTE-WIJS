@@ -5,11 +5,11 @@ import { BestelPageClient } from "@/components/bestel-page-client";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Bestellen — website of digitaal pakket",
+  title: "Bestellen — DoekoeWijs internetdiensten",
   description:
-    "Bestel Vakman Website €899, Google Start €299 of andere diensten. Vaste prijs, betaling bij oplevering.",
+    "Bestel Google Start €299, SEO €199, websites en meer. Vaste prijs — 50% vooraf (Tikkie), rest bij oplevering.",
   path: "/bestellen",
-  keywords: ["webklaar bestellen", "website bestellen", "website offerte"],
+  keywords: ["DoekoeWijs bestellen", "Google Start bestellen", "website bestellen"],
 });
 
 export default function BestellenPage() {

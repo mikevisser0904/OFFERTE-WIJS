@@ -197,4 +197,6 @@ export const monitorUitleg = {
   titel: "Slagingskans · internetdiensten",
   sub: `${hoofddoel.label} (${hoofddoel.deadline}) — KPI's gekoppeld aan /diensten/ catalogus`,
   opslag: "Data lokaal in je browser. Export → npm run kpi:snapshot — team op GitHub Pages.",
+  week1Hint:
+    "Week 1: 0% is normaal zolang je nog geen contacten logt. Na 5× /actie/ vul je hier contacten deze week — dan klopt de score.",
 };
