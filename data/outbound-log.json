@@ -474,6 +474,91 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-08T01:22:08.550Z",
+      "bedrijf": "Decor Gordijn",
+      "url": "https://www.decorgordijn.nl",
+      "host": "decorgordijn.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T01:22:08.550Z",
+      "bedrijf": "De Pagter",
+      "url": "https://depagter.info",
+      "host": "depagter.info",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T01:22:08.550Z",
+      "bedrijf": "Pruis Schilderwerken",
+      "url": "https://pruisschilderwerken.nl",
+      "host": "pruisschilderwerken.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T01:22:08.550Z",
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "url": "https://verzijlbv.nl",
+      "host": "verzijlbv.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T01:22:08.550Z",
+      "bedrijf": "Finish Profiles",
+      "url": "https://www.finish-profiles.nl",
+      "host": "finish-profiles.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }

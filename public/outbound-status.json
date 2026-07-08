@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T21:13:18.200Z",
+  "updatedAt": "2026-07-08T01:22:08.550Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -8,12 +8,6 @@
   "gesimuleerd": 0,
   "mislukt": 5,
   "items": [
-    {
-      "bedrijf": "Kroon interieurbouw",
-      "status": "failed",
-      "email": null,
-      "phone": "31950635027"
-    },
     {
       "bedrijf": "Decor Gordijn",
       "status": "failed",
@@ -34,6 +28,12 @@
     },
     {
       "bedrijf": "Verzijl De Woonprofessionals",
+      "status": "failed",
+      "email": null,
+      "phone": "31950635027"
+    },
+    {
+      "bedrijf": "Finish Profiles",
       "status": "failed",
       "email": null,
       "phone": "31950635027"
