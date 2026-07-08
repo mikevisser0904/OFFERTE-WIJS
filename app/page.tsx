@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { SeoJsonLd } from "@/components/seo-json-ld";
 import { FaqSchema } from "@/components/faq-schema";
+import { HomeHeroProducten } from "@/components/home-hero-producten";
 import { HomeTempoTier } from "@/components/home-tempo-tier";
 import { DienstCard } from "@/components/internet-diensten-grid";
-import { betalingStandaard, categorieMeta, diensten, dienstenByCategorie, webklaar } from "@/data/diensten-online";
+import { betalingStandaard, categorieMeta, dienstenByCategorie, webklaar } from "@/data/diensten-online";
 import { seoLandingen } from "@/data/seo-landingen";
 import { pageMetadata } from "@/lib/seo";
 
@@ -33,8 +34,6 @@ const topPerCategorie = dienstenByCategorie()
   .filter((g) => g.items.length > 0);
 
 export default function StoreHomePage() {
-  const highlights = diensten.filter((d) => d.populair);
-
   return (
     <StorefrontShell>
       <SeoJsonLd />
@@ -49,48 +48,25 @@ export default function StoreHomePage() {
             <br />
             <span className="text-emerald-600">vaste prijs, snel live.</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-slate-600">{webklaar.sub}</p>
-          <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm text-amber-950 sm:flex sm:items-center sm:justify-between sm:gap-4">
-            <p>
-              <strong>Meest gekozen:</strong>{" "}
-              <Link href="/spoed/" className="underline hover:text-amber-900">
-                Spoed €50
-              </Link>
-              {" · "}
-              Listings €149 · SEO €199 · Google €299
-            </p>
-            <Link
-              href="/diensten/"
-              className="mt-3 inline-flex shrink-0 rounded-full bg-amber-600 px-5 py-2 font-bold text-white hover:bg-amber-500 sm:mt-0"
-            >
-              Alle diensten →
-            </Link>
-          </div>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/bestellen/?dienst=google-start"
-              className="rounded-full bg-emerald-600 px-8 py-4 text-base font-bold text-white shadow-lg shadow-emerald-600/20 hover:bg-emerald-500"
-            >
-              Bestel Google Start →
-            </Link>
-            <Link
-              href="/show/"
-              className="rounded-full border border-slate-200 bg-white px-8 py-4 text-base font-semibold text-slate-700 hover:bg-slate-50"
-            >
-              2-min show
-            </Link>
-            <Link
-              href="/demo/"
-              className="rounded-full border border-emerald-200 px-8 py-4 text-base font-semibold text-emerald-700 hover:bg-emerald-50"
-            >
-              Vakman-demo
-            </Link>
-          </div>
-          <div className="mt-12 flex flex-wrap gap-6 text-sm text-slate-500">
+          <p className="mt-6 max-w-2xl text-lg text-slate-600">
+            Drie vaste pakketten voor zzp en mkb — kies wat bij je situatie past. Geen bureau-offerte zonder prijs.
+          </p>
+          <HomeHeroProducten />
+          <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-500">
             {webklaar.usps.map((u) => (
               <span key={u}>✓ {u}</span>
             ))}
           </div>
+          <p className="mt-4 text-center text-sm text-slate-500">
+            Vandaag vast?{" "}
+            <Link href="/spoed/" className="font-semibold text-amber-700 hover:underline">
+              Spoed hulp €50
+            </Link>
+            {" · "}
+            <Link href="/diensten/listings-setup/" className="font-semibold text-emerald-700 hover:underline">
+              Listings €149
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -111,19 +87,6 @@ export default function StoreHomePage() {
               </Link>
             ))}
         </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        <h2 className="text-2xl font-bold">Populaire pakketten</h2>
-        <p className="mt-2 text-slate-500">Direct te bestellen — wij leveren wat op de pagina staat.</p>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {highlights.map((d) => (
-            <DienstCard key={d.slug} d={d} />
-          ))}
-        </div>
-        <Link href="/diensten/" className="mt-8 inline-block text-sm font-semibold text-emerald-700 hover:underline">
-          Volledige dienstencatalogus →
-        </Link>
       </section>
 
       {topPerCategorie.map((g) => (

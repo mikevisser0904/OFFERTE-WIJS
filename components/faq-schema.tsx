@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Wat is het snelst te bestellen?",
-    a: "Spoed €50 (vandaag), Listings €149, SEO €199 en Google Start €299 — zie ‘Kies je tempo’ op de homepage.",
+    a: "Op de homepage: Google Start €299, SEO Starter €199 of Vakman Website €899. Spoed €50 en Listings €149 staan eronder als snelle opties.",
   },
   {
     q: "Werken jullie alleen voor vakmannen?",
