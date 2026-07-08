@@ -1,17 +1,17 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-08T14:56:36.138Z",
+  "updatedAt": "2026-07-08T15:43:25.335Z",
   "healthy": true,
-  "avgResponseMs": 114,
+  "avgResponseMs": 894,
   "pendingMaarten": 0,
   "wachtrijTotaal": 1,
-  "lastHealthCheck": "2026-07-08T13:24:49.109Z",
+  "lastHealthCheck": "2026-07-08T15:43:23.993Z",
   "healthOk": true,
   "syncOk": true,
   "managerOk": true,
   "managerFase": "verkopen",
-  "nextAgentPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
-  "agentHint": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
-  "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen",
+  "nextAgentPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
+  "agentHint": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
+  "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel.",
   "eerstePending": null
 }

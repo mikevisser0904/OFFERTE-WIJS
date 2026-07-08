@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-08T15:00:59.691Z",
+  "updatedAt": "2026-07-08T15:43:25.322Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-08T14:09:43.370Z",
+      "lastRun": "2026-07-07T11:03:46.627Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -11,44 +11,44 @@
       "top3": [
         "Firma Fred van Rijn: Live bewijs: phpMyAdmin HTTP 200",
         "Textilia: Live bewijs: phpMyAdmin HTTP 200",
-        "Bos Elektrotechniek: Live bewijs: phpMyAdmin HTTP 200"
+        "Reinaerde Remake Meubel: Live bewijs: phpMyAdmin HTTP 200"
       ]
     },
     "manager": {
-      "lastRun": "2026-07-08T14:56:36.137Z",
+      "lastRun": "2026-07-08T15:43:25.321Z",
       "fase": "verkopen",
-      "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
-      "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen"
+      "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
+      "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
     },
     "health-monitor": {
-      "lastRun": "2026-07-08T13:24:49.127Z",
+      "lastRun": "2026-07-08T15:43:23.997Z",
       "ok": true,
       "healthy": true,
-      "avgResponseMs": 114,
+      "avgResponseMs": 894,
       "agentPrompt": "health OK"
     },
     "maarten-sync": {
-      "lastRun": "2026-07-08T13:24:49.675Z",
+      "lastRun": "2026-07-08T15:43:24.591Z",
       "ok": true,
       "pending": 0,
       "agentPrompt": "maarten-sync OK, geen nieuwe pending"
     },
     "maarten-bouw": {
-      "lastRun": "2026-07-08T13:24:49.708Z",
+      "lastRun": "2026-07-08T15:43:24.619Z",
       "ok": true,
       "pending": 0,
       "eerstePending": null,
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-08T14:40:29.565Z",
+      "lastRun": "2026-07-08T15:43:24.933Z",
       "applyMode": true,
-      "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
+      "grokPrompt": "optimizer: Gem. 894ms — images, static chunks, health checks verminderen",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "data-flow": {
-      "lastRun": "2026-07-08T15:00:59.683Z",
+      "lastRun": "2026-07-08T15:43:24.037Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -80,24 +80,24 @@
       "agentPrompt": "Lead Hunter: 184 leads, 0 queue pending — npm run funnel voor outreach"
     },
     "auto-verify": {
-      "lastRun": "2026-07-08T15:00:59.691Z",
+      "lastRun": "2026-07-07T10:40:46.272Z",
       "ok": true,
-      "leakVerified": 15,
-      "consentProofOk": 15,
-      "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck",
-      "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 13,
+      "consentProofOk": 13,
+      "agentPrompt": "13 verified · 13 consent OK · 2 failed recheck",
+      "grokPrompt": "auto-verify: 13 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-08T15:00:59.396Z",
+      "lastRun": "2026-07-07T11:03:42.882Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 20,
+      "metBewijs": 16,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
         "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
-        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
+        "Reinaerde Remake Meubel · https://s246.webhostingserver.nl/phpMyAdmin/"
       ]
     },
     "seo": {
@@ -108,34 +108,36 @@
       "agentPrompt": "SEO sitemap bijgewerkt"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-07-08T14:09:43.935Z",
+      "lastRun": "2026-07-07T11:18:50.865Z",
       "ok": true,
       "totaalScore": 75,
-      "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
+      "agentPrompt": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week",
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
-    },
-    "outbound-auto": {
-      "lastRun": "2026-07-08T14:09:43.657Z",
-      "ok": true,
-      "live": true,
-      "verzonden": 0,
-      "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
-      "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
     }
   },
   "manager": {
-    "updatedAt": "2026-07-08T14:56:36.137Z",
+    "updatedAt": "2026-07-08T15:43:25.321Z",
     "agent": "manager",
     "fase": "verkopen",
-    "faseLabel": "Verkoop-bewijs klaar",
+    "faseLabel": "Vandaag geld — warm netwerk",
     "prioriteit": 1,
-    "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
-    "mikeActie": "12 bewijs-klanten: /dashboard/ → controle-URL + rapport tonen",
+    "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
+    "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel.",
     "acties": [
       {
+        "wie": "grok",
+        "actie": "Verkoop-bewijs verversen",
+        "script": "npm run agent:verkoop-bewijs"
+      },
+      {
         "wie": "mike",
-        "actie": "5 contacten met bewijs",
-        "script": "/dashboard/"
+        "actie": "5 WhatsApps vandaag",
+        "script": "/actie/"
+      },
+      {
+        "wie": "mike",
+        "actie": "Marktplaats + status-deel",
+        "script": "/listings/"
       }
     ],
     "cards": [
@@ -144,42 +146,42 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-08T14:40:29.565Z"
+        "lastRun": "2026-07-08T15:43:24.933Z"
       },
       {
         "id": "auto-verify",
         "naam": "Auto-verify",
         "status": "ok",
-        "detail": "15 verified · 15 consent OK · 0 failed recheck",
-        "lastRun": "2026-07-08T10:49:30.593Z"
+        "detail": "13 verified · 13 consent OK · 2 failed recheck",
+        "lastRun": "2026-07-07T10:40:46.272Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 15 lekken",
-        "lastRun": "2026-07-08T14:53:53.452Z"
+        "lastRun": "2026-07-08T15:43:24.037Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 125ms",
-        "lastRun": "2026-07-08T13:24:49.127Z"
+        "detail": "OK 894ms",
+        "lastRun": "2026-07-08T15:43:23.997Z"
       },
       {
         "id": "maarten-sync",
         "naam": "Maarten Sync",
         "status": "ok",
         "detail": "maarten-sync OK, geen nieuwe pending",
-        "lastRun": "2026-07-08T13:24:49.675Z"
+        "lastRun": "2026-07-08T15:43:24.591Z"
       },
       {
         "id": "maarten-bouw",
         "naam": "Maarten Bouw",
         "status": "ok",
         "detail": "0 pending",
-        "lastRun": "2026-07-08T13:24:49.708Z"
+        "lastRun": "2026-07-08T15:43:24.619Z"
       },
       {
         "id": "lead-hunter",
@@ -220,29 +222,29 @@
         "id": "verkoop-effectiviteit",
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
-        "detail": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
-        "lastRun": "2026-07-08T14:09:43.935Z"
+        "detail": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week",
+        "lastRun": "2026-07-07T11:18:50.865Z"
       },
       {
         "id": "verkoop-bewijs",
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-08T14:09:43.322Z"
+        "lastRun": "2026-07-07T11:03:42.882Z"
       },
       {
         "id": "outbound-auto",
         "naam": "Outbound auto",
         "status": "ok",
-        "detail": "Outbound LIVE: 0 verzonden · 5 verwerkt",
-        "lastRun": "2026-07-08T14:09:43.657Z"
+        "detail": "Volledig geautomatiseerde outbound: e-mail (Resend), webhook",
+        "lastRun": null
       },
       {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-07-08T14:09:43.370Z"
+        "lastRun": "2026-07-07T11:03:46.627Z"
       },
       {
         "id": "seo",

@@ -11,6 +11,7 @@ export const focusHoog = [
   { href: "/start/", label: "Google Start", waarom: "€299 klantlink" },
   { href: "/spoed/", label: "Spoed €50", waarom: "Snelle hulp, warm netwerk" },
   { href: "/", label: "Webshop", waarom: "Bestellen live" },
+  { href: "/show/", label: "Show", waarom: "2-min demo voor iemand laten zien" },
   { href: "/monitor/", label: "Monitor", waarom: "KPI + GSC" },
   { href: "/ideeen/", label: "Ideeën", waarom: "Mike + Maarten backlog" },
 ] as const;

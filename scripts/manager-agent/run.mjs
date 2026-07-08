@@ -135,7 +135,7 @@ function decide(s) {
   }
 
   const klantenLek = load(join(ROOT, "data/klanten-lek-rapport.json"), { metLek: 0 });
-  if (klantenLek.metLek > 0 && s.outreachCount === 0) {
+  if (klantenLek.metLek > 0 && s.outreachCount === 0 && process.env.VAKSCAN_SALES === "1") {
     acties.push({ wie: "grok", actie: "Outreach na klanten-lek", script: "npm run agent:outreach" });
   }
 
@@ -143,7 +143,7 @@ function decide(s) {
     acties.push({ wie: "grok", actie: "Verkoop-bewijs verversen", script: "npm run agent:verkoop-bewijs" });
   }
 
-  if (s.leakCount > 0 && s.outreachAge > 12) {
+  if (s.leakCount > 0 && s.outreachAge > 12 && process.env.VAKSCAN_SALES === "1") {
     fase = "verkopen";
     faseLabel = "Lekken — verkopen!";
     prioriteit = Math.min(prioriteit, 3);
@@ -151,7 +151,7 @@ function decide(s) {
     mikeActie = `${s.leakCount} lek(ken): /dashboard/ bewijs → /agents/ WhatsApp → €299`;
     acties.push({ wie: "grok", actie: "Verkoop-bewijs + outreach", script: "npm run agent:outreach" });
     acties.push({ wie: "mike", actie: "Bel top 3 met BEWIJS-blok", script: "/agents/" });
-  } else if (s.verkoopBewijsCount > 0 && fase !== "bouw" && process.env.VAKSCAN_SALES !== "0") {
+  } else if (s.verkoopBewijsCount > 0 && fase !== "bouw" && process.env.VAKSCAN_SALES === "1") {
     fase = "verkopen";
     faseLabel = "Verkoop-bewijs klaar";
     prioriteit = Math.min(prioriteit, 3);
@@ -172,7 +172,7 @@ function decide(s) {
     grokPrompt = "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan";
     mikeActie = "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel.";
     acties.push({ wie: "mike", actie: "5 WhatsApps vandaag", script: "/actie/" });
-    acties.push({ wie: "mike", actie: "Marktplaats + status-deel", script: "/fiverr/" });
+    acties.push({ wie: "mike", actie: "Marktplaats + status-deel", script: "/listings/" });
   }
 
   if (s.queuePending > 15 && s.scanStale > 20) {

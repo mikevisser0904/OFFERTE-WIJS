@@ -11,6 +11,7 @@ const staticPaths = [
   "diensten/",
   "bestellen/",
   "demo/",
+  "show/",
   "webklaar/",
   "listings/",
   "fiverr/",

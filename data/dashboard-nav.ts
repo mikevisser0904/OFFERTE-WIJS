@@ -20,6 +20,7 @@ export const dashboardQuickLinks = [
   { href: "/actie/", label: "Vandaag geld", sub: "WhatsApp + warm netwerk", accent: "amber" as const },
   { href: "/spoed/", label: "Spoed €50", sub: "1 uur hulp", accent: "amber" as const },
   { href: "/start/", label: "Google Start", sub: "€299 klantlink", accent: "emerald" as const },
+  { href: "/show/", label: "Show", sub: "2-min rondleiding", accent: "violet" as const },
   { href: "/listings/", label: "Listings", sub: "Fiverr + Marktplaats", accent: "violet" as const },
   { href: "/", label: "Webshop", sub: "Bestellingen", accent: "emerald" as const },
   { href: "/monitor/", label: "KPI", sub: "Slagingskans", accent: "sky" as const },
