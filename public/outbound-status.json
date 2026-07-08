@@ -1,13 +1,19 @@
 {
-  "updatedAt": "2026-07-08T10:04:22.418Z",
+  "updatedAt": "2026-07-08T13:24:50.445Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
   "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 1,
-  "mislukt": 4,
+  "gesimuleerd": 0,
+  "mislukt": 5,
   "items": [
+    {
+      "bedrijf": "Kroon interieurbouw",
+      "status": "failed",
+      "email": null,
+      "phone": "31950635027"
+    },
     {
       "bedrijf": "Decor Gordijn",
       "status": "failed",
@@ -31,12 +37,6 @@
       "status": "failed",
       "email": null,
       "phone": "31950635027"
-    },
-    {
-      "bedrijf": "ChargeCars",
-      "status": "simulated",
-      "email": "info@chargecars.nl",
-      "phone": null
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
