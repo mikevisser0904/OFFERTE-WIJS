@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-08T13:24:50.635Z",
+  "updatedAt": "2026-07-08T14:09:43.935Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-08T09:26:20.148Z",
+      "lastRun": "2026-07-08T14:09:43.370Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -88,7 +88,7 @@
       "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-08T10:49:30.428Z",
+      "lastRun": "2026-07-08T14:09:43.322Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 20,
@@ -108,14 +108,14 @@
       "agentPrompt": "SEO sitemap bijgewerkt"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-07-08T13:24:50.635Z",
+      "lastRun": "2026-07-08T14:09:43.935Z",
       "ok": true,
       "totaalScore": 75,
       "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "outbound-auto": {
-      "lastRun": "2026-07-08T13:24:50.447Z",
+      "lastRun": "2026-07-08T14:09:43.657Z",
       "ok": true,
       "live": true,
       "verzonden": 0,
