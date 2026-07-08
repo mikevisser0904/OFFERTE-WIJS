@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-08T21:49:08.188Z",
+  "updatedAt": "2026-07-08T23:22:19.647Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T11:03:46.627Z",
+      "lastRun": "2026-07-08T23:22:18.954Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -11,11 +11,11 @@
       "top3": [
         "Firma Fred van Rijn: Live bewijs: phpMyAdmin HTTP 200",
         "Textilia: Live bewijs: phpMyAdmin HTTP 200",
-        "Reinaerde Remake Meubel: Live bewijs: phpMyAdmin HTTP 200"
+        "Bos Elektrotechniek: Live bewijs: phpMyAdmin HTTP 200"
       ]
     },
     "manager": {
-      "lastRun": "2026-07-08T21:42:44.633Z",
+      "lastRun": "2026-07-08T23:22:19.646Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -41,10 +41,10 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-08T21:22:07.689Z",
+      "lastRun": "2026-07-08T23:22:19.386Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "data-flow": {
@@ -88,7 +88,7 @@
       "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-08T21:49:07.753Z",
+      "lastRun": "2026-07-08T23:22:18.940Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 20,
@@ -124,7 +124,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-08T21:42:44.633Z",
+    "updatedAt": "2026-07-08T23:22:19.646Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -148,22 +148,22 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-08T21:22:07.689Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-07-08T23:22:19.386Z"
       },
       {
         "id": "auto-verify",
         "naam": "Auto-verify",
         "status": "ok",
         "detail": "15 verified · 15 consent OK · 0 failed recheck",
-        "lastRun": "2026-07-08T18:07:36.201Z"
+        "lastRun": "2026-07-08T21:49:08.188Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 15 lekken",
-        "lastRun": "2026-07-08T21:37:55.692Z"
+        "lastRun": "2026-07-08T21:49:08.180Z"
       },
       {
         "id": "health-monitor",
@@ -233,7 +233,7 @@
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-08T18:07:35.722Z"
+        "lastRun": "2026-07-08T23:22:18.940Z"
       },
       {
         "id": "outbound-auto",
@@ -247,7 +247,7 @@
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-07-07T11:03:46.627Z"
+        "lastRun": "2026-07-08T23:22:18.954Z"
       },
       {
         "id": "seo",
