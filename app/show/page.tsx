@@ -4,7 +4,7 @@ import { StorefrontShell } from "@/components/storefront-shell";
 import { brand } from "@/data/brand";
 import { demo } from "@/data/demo-site";
 import { actieQuickDiensten } from "@/data/dienst-meta";
-import { webklaar, diensten } from "@/data/diensten-online";
+import { webklaar } from "@/data/diensten-online";
 import { seoLandingen } from "@/data/seo-landingen";
 import { pageMetadata } from "@/lib/seo";
 
