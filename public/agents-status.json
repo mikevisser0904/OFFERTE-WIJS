@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-08T03:55:04.174Z",
+  "updatedAt": "2026-07-08T03:59:44.588Z",
   "agents": {
     "outreach": {
       "lastRun": "2026-07-07T23:14:04.738Z",
@@ -48,7 +48,7 @@
       "wachtrijPending": 2
     },
     "data-flow": {
-      "lastRun": "2026-07-08T03:52:26.100Z",
+      "lastRun": "2026-07-08T03:59:44.581Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -80,18 +80,18 @@
       "agentPrompt": "Lead Hunter: 184 leads, 0 queue pending — npm run funnel voor outreach"
     },
     "auto-verify": {
-      "lastRun": "2026-07-07T22:09:02.777Z",
+      "lastRun": "2026-07-08T03:59:44.588Z",
       "ok": true,
-      "leakVerified": 7,
-      "consentProofOk": 7,
-      "agentPrompt": "7 verified · 7 consent OK · 8 failed recheck",
-      "grokPrompt": "auto-verify: 7 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 15,
+      "consentProofOk": 15,
+      "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck",
+      "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-07T23:14:04.723Z",
+      "lastRun": "2026-07-08T03:59:44.404Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 19,
+      "metBewijs": 20,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
