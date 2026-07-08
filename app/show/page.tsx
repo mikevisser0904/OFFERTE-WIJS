@@ -31,7 +31,7 @@ const tourStappen = [
 const highlights = [
   {
     titel: "Webshop + vaste prijs",
-    sub: "Google Start €299 · Vakman-site €899 · direct bestellen",
+    sub: "12 internetdiensten · €50–€899 · direct bestellen",
     href: "/bestellen/",
     cta: "Bestelflow",
   },
@@ -50,7 +50,7 @@ const highlights = [
 ] as const;
 
 export default function ShowPage() {
-  const top = diensten.filter((d) => d.categorie === "website").slice(0, 3);
+  const top = [...diensten.filter((d) => d.populair), ...diensten.filter((d) => !d.populair)].slice(0, 4);
 
   return (
     <StorefrontShell>

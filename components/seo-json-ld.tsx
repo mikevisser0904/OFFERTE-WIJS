@@ -36,11 +36,11 @@ export function SeoJsonLd() {
         url: webklaar.url,
         telephone: webklaar.telefoon,
         email: webklaar.email,
-        priceRange: "€199–€899",
+        priceRange: "€50–€899",
         areaServed: { "@type": "Country", name: "Nederland" },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "DoekoeWijs diensten",
+          name: "DoekoeWijs internetdiensten",
           itemListElement: diensten.map((d) => ({
             "@type": "Offer",
             url: absoluteUrl(`/diensten/${d.slug}`),

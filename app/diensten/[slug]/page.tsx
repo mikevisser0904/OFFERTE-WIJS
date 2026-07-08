@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { StorefrontShell } from "@/components/storefront-shell";
-import { diensten, getDienst } from "@/data/diensten-online";
+import { categorieMeta, diensten, getDienst } from "@/data/diensten-online";
 import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -21,7 +21,7 @@ export async function generateMetadata({
     title: `${d.naam} ${d.prijs} — online bestellen`,
     description: `${d.beschrijving} Bestel online. ${d.levertijd}.`,
     path: `/diensten/${slug}`,
-    keywords: [d.naam, d.korteOms, "webklaar"],
+    keywords: [d.naam, d.korteOms, "DoekoeWijs", "internetdiensten"],
   });
 }
 
@@ -42,8 +42,14 @@ export default async function DienstDetailPage({
         </Link>
         <p className="mt-6 text-4xl font-bold text-emerald-600">{d.prijs}</p>
         <h1 className="mt-2 text-3xl font-bold">{d.naam}</h1>
-        <p className="mt-2 text-slate-500">{d.levertijd}</p>
+        <p className="mt-2 text-slate-500">
+          {d.levertijd} · {categorieMeta[d.categorie].label}
+        </p>
         <p className="mt-6 text-lg text-slate-700">{d.beschrijving}</p>
+        <p className="mt-4 rounded-xl border border-emerald-100 bg-emerald-50/80 p-4 text-sm text-slate-700">
+          <strong className="text-emerald-900">Wat u krijgt: </strong>
+          {d.levering}
+        </p>
 
         <ul className="mt-8 space-y-2">
           {d.bullets.map((b) => (
@@ -57,12 +63,21 @@ export default async function DienstDetailPage({
           <strong>Voor wie:</strong> {d.voorWie}
         </p>
 
-        <Link
-          href={`/bestellen/?dienst=${d.slug}`}
-          className="mt-10 inline-flex rounded-full bg-emerald-600 px-10 py-4 text-lg font-bold text-white hover:bg-emerald-500"
-        >
-          Bestel {d.naam} →
-        </Link>
+        {d.slug === "spoed-hulp" ? (
+          <Link
+            href="/spoed/"
+            className="mt-10 inline-flex rounded-full bg-amber-600 px-10 py-4 text-lg font-bold text-white hover:bg-amber-500"
+          >
+            Naar spoed-pagina →
+          </Link>
+        ) : (
+          <Link
+            href={`/bestellen/?dienst=${d.slug}`}
+            className="mt-10 inline-flex rounded-full bg-emerald-600 px-10 py-4 text-lg font-bold text-white hover:bg-emerald-500"
+          >
+            Bestel {d.naam} →
+          </Link>
+        )}
       </div>
     </StorefrontShell>
   );

@@ -19,7 +19,7 @@ export type VerkoopBericht = {
 
 export const merk = {
   naam: "DoekoeWijs",
-  tagline: "Meer doekoe — vaste prijs, live in 3 dagen",
+  tagline: "Internetdiensten — vaste prijs, snel live",
   wie: "Mike Visser + Maarten (opdevlugt-tech)",
   contact: "Mike belt/app — Maarten bouwt",
   telefoon: "0627362142",

@@ -4,7 +4,7 @@ import { BrandLogo } from "@/components/brand-logo";
 
 const nav = [
   { href: "/", label: "Home" },
-  { href: "/diensten/", label: "Diensten" },
+  { href: "/diensten/", label: "Internetdiensten" },
   { href: "/demo/", label: "Demo" },
   { href: "/show/", label: "Show" },
   { href: "/bestellen/", label: "Bestellen" },
@@ -66,8 +66,18 @@ export function StorefrontShell({
                   </Link>
                 </li>
                 <li>
+                  <Link href="/diensten/seo-starter/" className="hover:text-emerald-600">
+                    SEO Starter €199
+                  </Link>
+                </li>
+                <li>
                   <Link href="/diensten/google-start/" className="hover:text-emerald-600">
                     Google Start €299
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/diensten/listings-setup/" className="hover:text-emerald-600">
+                    Listings Setup €149
                   </Link>
                 </li>
                 <li>
