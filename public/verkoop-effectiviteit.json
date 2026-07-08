@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-07-07T14:36:18.588Z",
+  "generatedAt": "2026-07-08T09:26:20.378Z",
   "agent": "verkoop-effectiviteit",
   "totaalScore": 75,
   "label": "Klaar om te verkopen",
   "dimensies": {
     "tekstKwaliteit": {
       "score": 80,
-      "berichten": 20,
+      "berichten": 18,
       "angstHits": 0
     },
     "pipeline": {
-      "score": 77,
+      "score": 76,
       "verkoopVandaag": 12,
       "outreachVandaag": 15,
-      "metTelefoon": 17
+      "metTelefoon": 15
     },
     "bewijsDekking": {
-      "score": 80,
-      "metAdminBewijs": 20,
-      "metControleUrl": 20,
-      "metRapportUrl": 20
+      "score": 79,
+      "metAdminBewijs": 18,
+      "metControleUrl": 18,
+      "metRapportUrl": 18
     },
     "outbound": {
       "contactenDezeWeek": 0,
@@ -55,11 +55,11 @@
         }
       },
       {
-        "bedrijf": "Kroon interieurbouw",
-        "url": "https://www.kroon-interieurbouw.nl",
+        "bedrijf": "Textilia",
+        "url": "https://www.textilia-dordrecht.nl",
         "score": 80,
         "angst": 0,
-        "feit": 6,
+        "feit": 5,
         "kort": {
           "score": 66,
           "angst": 0,
@@ -93,11 +93,11 @@
         }
       },
       {
-        "bedrijf": "Kroon interieurbouw",
-        "url": "https://www.kroon-interieurbouw.nl",
+        "bedrijf": "Textilia",
+        "url": "https://www.textilia-dordrecht.nl",
         "score": 80,
         "angst": 0,
-        "feit": 6,
+        "feit": 5,
         "kort": {
           "score": 66,
           "angst": 0,
@@ -113,5 +113,5 @@
     "Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
   ],
   "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/",
-  "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week"
+  "agentPrompt": "Verkoop-effectiviteit 75% · 18 bewijs · 0 contacten deze week"
 }

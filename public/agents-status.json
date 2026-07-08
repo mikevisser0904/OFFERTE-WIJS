@@ -1,9 +1,9 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-08T07:15:06.336Z",
+  "updatedAt": "2026-07-08T09:26:20.379Z",
   "agents": {
     "outreach": {
-      "lastRun": "2026-07-07T23:14:04.738Z",
+      "lastRun": "2026-07-08T09:26:20.148Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -88,10 +88,10 @@
       "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-08T07:15:05.941Z",
+      "lastRun": "2026-07-08T09:26:20.106Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 19,
+      "metBewijs": 18,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
@@ -108,14 +108,14 @@
       "agentPrompt": "SEO sitemap bijgewerkt"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-07-08T06:20:31.145Z",
+      "lastRun": "2026-07-08T09:26:20.379Z",
       "ok": true,
       "totaalScore": 75,
-      "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
+      "agentPrompt": "Verkoop-effectiviteit 75% · 18 bewijs · 0 contacten deze week",
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "outbound-auto": {
-      "lastRun": "2026-07-08T06:20:30.815Z",
+      "lastRun": "2026-07-08T09:26:20.250Z",
       "ok": true,
       "live": true,
       "verzonden": 0,
