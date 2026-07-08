@@ -559,6 +559,91 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-08T06:20:30.813Z",
+      "bedrijf": "Kroon interieurbouw",
+      "url": "https://www.kroon-interieurbouw.nl",
+      "host": "kroon-interieurbouw.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T06:20:30.813Z",
+      "bedrijf": "Decor Gordijn",
+      "url": "https://www.decorgordijn.nl",
+      "host": "decorgordijn.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T06:20:30.813Z",
+      "bedrijf": "De Pagter",
+      "url": "https://depagter.info",
+      "host": "depagter.info",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T06:20:30.813Z",
+      "bedrijf": "Pruis Schilderwerken",
+      "url": "https://pruisschilderwerken.nl",
+      "host": "pruisschilderwerken.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-08T06:20:30.813Z",
+      "bedrijf": "Verzijl De Woonprofessionals",
+      "url": "https://verzijlbv.nl",
+      "host": "verzijlbv.nl",
+      "email": null,
+      "phone": "31950635027",
+      "status": "failed",
+      "live": true,
+      "results": [
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
