@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard-shell";
 import { CopyBlock } from "@/components/copy-block";
+import { VerkoopProductMatrix } from "@/components/verkoop-product-matrix";
 import { categorieMeta } from "@/data/diensten-online";
 import {
   belScript,
@@ -54,6 +55,8 @@ export default function VerkoopPage() {
           </div>
           <CopyBlock label="Deel link (catalogus)" tekst={verkoopLinks.diensten} />
         </section>
+
+        <VerkoopProductMatrix />
 
         {verkoopCatalogus.map((g) => (
           <section key={g.categorie}>

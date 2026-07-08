@@ -48,4 +48,4 @@ Zie `betalingStandaard` in `data/diensten-online.ts`.
 - `public/verkoop-effectiviteit.json` — copy/pipeline score (uitvoering = contacten)  
 - `public/gsc-status.json` — property verifiëren voor SEO-data  
 
-Volledige analyse: Grok-plan `SLAGINGSKANS` (2026-07-08) of vraag opnieuw “analyse slagingskans”.
+**Per product (diep):** `docs/PRODUCTEN-ANALYSE.md` — alle 12 SKU’s, scores, site-paden, Mike-acties.

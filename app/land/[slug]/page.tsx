@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { LandingJsonLd } from "@/components/landing-json-ld";
+import { betalingStandaard, getDienst } from "@/data/diensten-online";
 import { seoLandingen, getSeoLanding } from "@/data/seo-landingen";
 import { pageMetadata, absoluteUrl } from "@/lib/seo";
 
@@ -60,22 +61,47 @@ export default async function SeoLandingPage({
         <section className="mt-10 rounded-2xl border border-emerald-100 bg-emerald-50 p-8">
           <h2 className="text-xl font-bold text-slate-900">Direct bestellen</h2>
           <p className="mt-2 text-slate-600">
-            Vaste prijs, geen verrassingen. Live in 2–3 werkdagen.
+            Vaste prijs voor zzp en mkb — ook vakbedrijven. {betalingStandaard}
           </p>
-          <div className="mt-6 flex flex-wrap gap-4">
-            <Link
-              href={land.dienst === "google-start" ? "/start/" : `/bestellen/?dienst=${land.dienst}`}
-              className="rounded-full bg-emerald-600 px-8 py-3 font-bold text-white hover:bg-emerald-500"
-            >
-              {land.dienst === "google-start" ? "Google Start €299 →" : "Bestel nu →"}
-            </Link>
-            <Link
-              href="/demo/"
-              className="rounded-full border border-emerald-200 px-8 py-3 font-semibold text-emerald-800 hover:bg-emerald-100"
-            >
-              Bekijk demo
-            </Link>
-          </div>
+          {(() => {
+            const hoofd = getDienst(land.dienst);
+            const alt =
+              land.dienst === "vakman-site"
+                ? getDienst("google-start")
+                : getDienst("seo-starter");
+            return (
+              <div className="mt-6 space-y-4">
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    href={land.dienst === "google-start" ? "/start/" : `/bestellen/?dienst=${land.dienst}`}
+                    className="rounded-full bg-emerald-600 px-8 py-3 font-bold text-white hover:bg-emerald-500"
+                  >
+                    {hoofd ? `${hoofd.naam} ${hoofd.prijs} →` : "Bestel nu →"}
+                  </Link>
+                  <Link
+                    href="/demo/"
+                    className="rounded-full border border-emerald-200 px-8 py-3 font-semibold text-emerald-800 hover:bg-emerald-100"
+                  >
+                    Bekijk demo
+                  </Link>
+                  <Link
+                    href="/show/"
+                    className="rounded-full border border-slate-200 px-8 py-3 font-semibold text-slate-700 hover:bg-white"
+                  >
+                    2-min show
+                  </Link>
+                </div>
+                {alt && (
+                  <p className="text-sm text-slate-600">
+                    Kleinere stap:{" "}
+                    <Link href={`/diensten/${alt.slug}/`} className="font-semibold text-emerald-700 hover:underline">
+                      {alt.naam} {alt.prijs}
+                    </Link>
+                  </p>
+                )}
+              </div>
+            );
+          })()}
         </section>
 
         <section className="mt-12">

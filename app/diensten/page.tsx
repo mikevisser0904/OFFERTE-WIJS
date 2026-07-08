@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { DienstCard } from "@/components/internet-diensten-grid";
-import { dienstenByCategorie, webklaar } from "@/data/diensten-online";
+import { betalingStandaard, dienstenByCategorie, webklaar } from "@/data/diensten-online";
+import { actieQuickDiensten } from "@/data/dienst-meta";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -24,6 +25,21 @@ export default function DienstenPage() {
         <p className="mt-4 text-sm text-slate-500">
           Alles hieronder is een product dat we nu leveren — geen vrijblijvende &quot;offerte op maat&quot; zonder prijs.
         </p>
+        <p className="mt-2 text-sm text-slate-600">{betalingStandaard}</p>
+
+        <div className="mt-8 flex flex-wrap gap-2">
+          {actieQuickDiensten()
+            .slice(0, 6)
+            .map(({ dienst }) => (
+              <Link
+                key={dienst.slug}
+                href={`/diensten/${dienst.slug}/`}
+                className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-800 hover:bg-emerald-100"
+              >
+                {dienst.naam} {dienst.prijs}
+              </Link>
+            ))}
+        </div>
 
         {groups.map((g) => (
           <section key={g.categorie} id={g.categorie} className="scroll-mt-24 mt-14 first:mt-12">

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { actieTopDiensten, vandaagLinks } from "@/data/vandaag-geld";
+import { getDienstMeta } from "@/data/dienst-meta";
+import { actieTopDiensten, vandaagLinks, whatsappShareUrl } from "@/data/vandaag-geld";
 
 export function ActieDienstenQuick() {
   return (
@@ -7,20 +8,36 @@ export function ActieDienstenQuick() {
       <p className="text-xs font-bold uppercase tracking-widest text-violet-300">Vandaag verkopen</p>
       <p className="mt-1 text-sm text-white/55">Klik → bestelformulier met dienst vooringevuld</p>
       <ul className="mt-4 space-y-2">
-        {actieTopDiensten.map(({ dienst, pitch }) => (
-          <li key={dienst.slug}>
-            <Link
-              href={`/bestellen/?dienst=${dienst.slug}`}
-              className="flex flex-wrap items-baseline justify-between gap-2 rounded-xl border border-white/10 bg-black/20 px-4 py-3 transition hover:border-violet-400/40"
-            >
-              <span className="font-semibold text-white">
-                {dienst.naam}{" "}
-                <span className="font-mono text-emerald-300">{dienst.prijs}</span>
-              </span>
-              <span className="text-xs text-white/45">{pitch}</span>
-            </Link>
-          </li>
-        ))}
+        {actieTopDiensten.map(({ dienst, pitch }) => {
+          const meta = getDienstMeta(dienst.slug);
+          const wa = meta?.pitchWhatsApp
+            ? whatsappShareUrl(meta.pitchWhatsApp.replace("[NAAM]", "…"))
+            : null;
+          return (
+            <li key={dienst.slug} className="rounded-xl border border-white/10 bg-black/20 overflow-hidden">
+              <Link
+                href={`/bestellen/?dienst=${dienst.slug}`}
+                className="flex flex-wrap items-baseline justify-between gap-2 px-4 py-3 transition hover:bg-white/5"
+              >
+                <span className="font-semibold text-white">
+                  {dienst.naam}{" "}
+                  <span className="font-mono text-emerald-300">{dienst.prijs}</span>
+                </span>
+                <span className="text-xs text-white/45">{pitch}</span>
+              </Link>
+              {wa && (
+                <a
+                  href={wa}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border-t border-white/10 px-4 py-2 text-xs font-medium text-violet-300 hover:bg-violet-400/10"
+                >
+                  Kopieer pitch → WhatsApp
+                </a>
+              )}
+            </li>
+          );
+        })}
       </ul>
       <div className="mt-4 flex flex-wrap gap-2">
         <Link

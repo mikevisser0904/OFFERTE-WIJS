@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
 import { SeoJsonLd } from "@/components/seo-json-ld";
 import { FaqSchema } from "@/components/faq-schema";
+import { HomeTempoTier } from "@/components/home-tempo-tier";
 import { DienstCard } from "@/components/internet-diensten-grid";
-import { categorieMeta, diensten, dienstenByCategorie, webklaar } from "@/data/diensten-online";
+import { betalingStandaard, categorieMeta, diensten, dienstenByCategorie, webklaar } from "@/data/diensten-online";
 import { seoLandingen } from "@/data/seo-landingen";
 import { pageMetadata } from "@/lib/seo";
 
@@ -88,7 +89,9 @@ export default function StoreHomePage() {
         </div>
       </section>
 
-      <section className="border-y border-slate-100 bg-white px-6 py-10">
+      <HomeTempoTier />
+
+      <section className="border-b border-slate-100 bg-slate-50/50 px-6 py-10">
         <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-4 sm:gap-8">
           {(Object.keys(categorieMeta) as (keyof typeof categorieMeta)[])
             .sort((a, b) => categorieMeta[a].volgorde - categorieMeta[b].volgorde)
@@ -156,9 +159,9 @@ export default function StoreHomePage() {
           <h2 className="text-2xl font-bold">Zo werkt bestellen</h2>
           <ol className="mx-auto mt-10 grid max-w-3xl gap-8 text-left sm:grid-cols-3">
             {[
-              { stap: "1", tekst: "Kies internetdienst + formulier" },
-              { stap: "2", tekst: "Contact binnen 24u — scope vast" },
-              { stap: "3", tekst: "Levering binnen de afgesproken dagen" },
+              { stap: "1", tekst: "Kies dienst + formulier (WhatsApp/mail)" },
+              { stap: "2", tekst: betalingStandaard },
+              { stap: "3", tekst: "Levering binnen de afgesproken dagen op de productpagina" },
             ].map((s) => (
               <li key={s.stap}>
                 <span className="text-3xl font-bold text-emerald-400">{s.stap}</span>

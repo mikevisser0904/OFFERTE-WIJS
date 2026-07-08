@@ -47,7 +47,7 @@ export const seoLandingen: SeoLanding[] = [
     title: "Website installateur laten maken — 3 dagen live | DoekoeWijs",
     h1: "Website laten maken voor installateurs",
     metaDescription:
-      "Installateur website €899. Snel, professioneel, mobiel. Geen maandelijkse bureaukosten. Betaling bij oplevering.",
+      "Installateur website €899. Snel, professioneel, mobiel. Geen maandelijkse bureaukosten. 50% vooraf, rest bij oplevering.",
     keywords: ["website installateur", "installateur website kosten", "website laten maken installateur"],
     intro: "Installateurs hebben geen tijd voor websites — maar wel behoefte aan meer klussen.",
     paragraphs: [

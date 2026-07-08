@@ -127,6 +127,7 @@ export const diensten: OnlineDienst[] = [
       "15 min loop-through met Mike",
     ],
     voorWie: "Freelancer of bureau dat snel extra kanalen wil",
+    populair: true,
     categorie: "zichtbaarheid",
     levering: "Copy uit ons listings-systeem + call",
   },

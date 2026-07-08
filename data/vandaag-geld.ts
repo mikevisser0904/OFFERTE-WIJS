@@ -1,5 +1,6 @@
+import { actieQuickDiensten } from "@/data/dienst-meta";
 import { merk } from "@/data/verkoop";
-import { diensten, webklaar, type OnlineDienst } from "@/data/diensten-online";
+import { webklaar } from "@/data/diensten-online";
 
 /** Lek-outreach op /actie/ — uit tenzij je bewust VakScan-verkoop doet */
 export const LEK_OUTREACH_OP_ACTIE = false;
@@ -26,28 +27,11 @@ export const vandaagLinks = {
   listings: `${webklaar.url}listings/`,
 } as const;
 
-/** Vandaag pushen — laagste drempel eerst */
-export const actieTopDiensten: { dienst: OnlineDienst; pitch: string }[] = [
-  "spoed-hulp",
-  "listings-setup",
-  "seo-starter",
-  "google-start",
-  "landing-snel",
-  "ai-snelstart",
-]
-  .map((slug) => diensten.find((d) => d.slug === slug))
-  .filter((d): d is OnlineDienst => Boolean(d))
-  .map((dienst) => ({
-    dienst,
-    pitch:
-      dienst.slug === "spoed-hulp"
-        ? "Vandaag 1 uur — warm netwerk"
-        : dienst.slug === "listings-setup"
-          ? "Zelfde copy als /listings/"
-          : dienst.slug === "seo-starter"
-            ? "Jullie eigen SEO-pipeline"
-            : dienst.korteOms,
-  }));
+/** Vandaag pushen — volgorde uit dienst-meta (actiePrioriteit) */
+export const actieTopDiensten = actieQuickDiensten().map(({ dienst, meta }) => ({
+  dienst,
+  pitch: meta.pitch1Regel,
+}));
 
 export const vandaagHero = {
   titel: "Google Start — €299",

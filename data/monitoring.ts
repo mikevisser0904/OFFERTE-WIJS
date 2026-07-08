@@ -49,6 +49,7 @@ const OPDRACHTEN_DOEL = 8;
 export const monitorVerkoopLadder = [
   { slug: "spoed-hulp", label: "Spoed €50", instap: true },
   { slug: "listings-setup", label: "Listings €149", instap: true },
+  { slug: "content-refresh", label: "Content €149", instap: true },
   { slug: "seo-starter", label: "SEO Starter €199", instap: true },
   { slug: "google-start", label: "Google Start €299", instap: true },
   { slug: "landing-snel", label: "Landing €349", instap: false },

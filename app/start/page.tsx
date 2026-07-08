@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { StorefrontShell } from "@/components/storefront-shell";
-import { getDienst, webklaar } from "@/data/diensten-online";
+import { betalingStandaard, getDienst, webklaar } from "@/data/diensten-online";
 import { pageMetadata } from "@/lib/seo";
 import { vandaagLinks } from "@/data/vandaag-geld";
 
@@ -52,6 +52,7 @@ export default function StartPage() {
             </li>
           ))}
         </ul>
+        <p className="mt-8 text-sm text-slate-600">{betalingStandaard}</p>
         <div className="mt-10 rounded-xl border border-amber-100 bg-amber-50 p-5 text-sm text-amber-950">
           <p className="font-semibold">Kleinere stap?</p>
           <p className="mt-1">
