@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T20:53:48.108Z",
+  "updatedAt": "2026-07-09T01:30:39.547Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -9,34 +9,34 @@
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "Loodgieterskwartier",
+      "bedrijf": "Atelier-AW",
       "status": "simulated",
-      "email": "info@loodgieterskwartier.nl",
-      "phone": "31852125588"
+      "email": "aw@atelieraw.nl",
+      "phone": "31618732101"
     },
     {
-      "bedrijf": "Timmerbedrijf Simon Frank & Zn.",
+      "bedrijf": "Bectro",
       "status": "simulated",
-      "email": "websites@klaver.org",
+      "email": "info@bectro.nl",
       "phone": null
     },
     {
-      "bedrijf": "Rinus van Stein",
+      "bedrijf": "Delektro",
       "status": "simulated",
-      "email": "info@rinusvanstein.nl",
-      "phone": null
+      "email": "info@delektro.nl",
+      "phone": "31827190372"
     },
     {
-      "bedrijf": "De Bovenkamer",
+      "bedrijf": "Houtindustrie Amersfoort",
       "status": "simulated",
-      "email": "info@bovenkamerutrecht.nl",
-      "phone": "31302072769"
+      "email": "info@houtindustrie-amersfoort.nl",
+      "phone": "31334612241"
     },
     {
-      "bedrijf": "A. Buitelaar Zonwering",
+      "bedrijf": "i-Kozijn",
       "status": "simulated",
-      "email": "buitelaarzonwering@casema.nl",
-      "phone": "31536685999"
+      "email": "info@i-kozijn.nl",
+      "phone": "31332850793"
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
