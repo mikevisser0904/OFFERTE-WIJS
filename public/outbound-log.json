@@ -1544,6 +1544,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-09T14:24:42.109Z",
+      "bedrijf": "Mesut Timmerfabriek",
+      "url": "https://www.mesuttimmerfabriek.nl",
+      "host": "mesuttimmerfabriek.nl",
+      "email": "info@mesuttimmerfabriek.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T14:24:42.109Z",
+      "bedrijf": "STB",
+      "url": "https://stb.eu",
+      "host": "stb.eu",
+      "email": "info@stb.eu",
+      "phone": "31487776258",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T14:24:42.109Z",
+      "bedrijf": "Ventana Zonwering",
+      "url": "https://ventanazonwering.nl",
+      "host": "ventanazonwering.nl",
+      "email": "info@ventana.nl",
+      "phone": "31306006560",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T14:24:42.109Z",
+      "bedrijf": "De Schrijn",
+      "url": "https://deschrijn.nl",
+      "host": "deschrijn.nl",
+      "email": "info@deschrijn.nl",
+      "phone": "31343562829",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T14:24:42.109Z",
+      "bedrijf": "Timmerfabriek Verhagen",
+      "url": "https://www.timmerfabriekverhagen.nl",
+      "host": "timmerfabriekverhagen.nl",
+      "email": "info@timmerfabriekverhagen.nl",
+      "phone": "31846899000",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }

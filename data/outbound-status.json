@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T10:25:56.400Z",
+  "updatedAt": "2026-07-09T14:24:42.109Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -9,34 +9,34 @@
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "Van den Hoogen engineering",
+      "bedrijf": "Mesut Timmerfabriek",
       "status": "simulated",
-      "email": "info@vandenhoogen.nl",
-      "phone": "31332055000"
-    },
-    {
-      "bedrijf": "Groenewegen",
-      "status": "simulated",
-      "email": "info@groenewegendelft.nl",
-      "phone": "31152612150"
-    },
-    {
-      "bedrijf": "De Lamellengigant",
-      "status": "simulated",
-      "email": "info@delamellengigant.nl",
-      "phone": "31703631123"
-    },
-    {
-      "bedrijf": "Woningtextielhuis",
-      "status": "simulated",
-      "email": "og-c@h.webp",
+      "email": "info@mesuttimmerfabriek.nl",
       "phone": null
     },
     {
-      "bedrijf": "Kiwatt",
+      "bedrijf": "STB",
       "status": "simulated",
-      "email": "info@kiwatt.nl",
-      "phone": null
+      "email": "info@stb.eu",
+      "phone": "31487776258"
+    },
+    {
+      "bedrijf": "Ventana Zonwering",
+      "status": "simulated",
+      "email": "info@ventana.nl",
+      "phone": "31306006560"
+    },
+    {
+      "bedrijf": "De Schrijn",
+      "status": "simulated",
+      "email": "info@deschrijn.nl",
+      "phone": "31343562829"
+    },
+    {
+      "bedrijf": "Timmerfabriek Verhagen",
+      "status": "simulated",
+      "email": "info@timmerfabriekverhagen.nl",
+      "phone": "31846899000"
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
