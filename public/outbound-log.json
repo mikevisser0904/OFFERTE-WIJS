@@ -1324,6 +1324,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-09T07:27:09.658Z",
+      "bedrijf": "MIRvA",
+      "url": "https://mirva.nl",
+      "host": "mirva.nl",
+      "email": "info@mirva.nl",
+      "phone": "31332587699",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T07:27:09.658Z",
+      "bedrijf": "Amstelland Kozijnen",
+      "url": "https://www.amstellandkozijnen.nl",
+      "host": "amstellandkozijnen.nl",
+      "email": "info@amstellandkozijnen.nl",
+      "phone": "31206405166",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T07:27:09.658Z",
+      "bedrijf": "Schipper Kozijnen",
+      "url": "https://www.schipperkozijnen.nl/showrooms/amstelveen",
+      "host": "schipperkozijnen.nl",
+      "email": "klantenservice@schipperkozijnen.nl",
+      "phone": "31857921200",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T07:27:09.658Z",
+      "bedrijf": "Bruens Electrotechniek",
+      "url": "https://www.bruens-electrotechniek.nl",
+      "host": "bruens-electrotechniek.nl",
+      "email": "info@bruens-electrotechniek.nl",
+      "phone": "31206326824",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T07:27:09.658Z",
+      "bedrijf": "Knook Deuren en Kozijnen",
+      "url": "https://www.knookmetaal.nl/producten/knook-deuren-en-kozijnen",
+      "host": "knookmetaal.nl",
+      "email": "info@knookmetaal.nl",
+      "phone": "31628263742",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
