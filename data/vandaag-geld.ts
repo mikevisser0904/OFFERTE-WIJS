@@ -160,4 +160,4 @@ export const vandaagBel15sec = `${webklaar.naam} — internetdiensten vaste prij
 
 /** Voor manager / default actie op werkblad */
 export const actieSamenvatting =
-  "/actie/ → internet-menu · top: Spoed €50, Listings €149, SEO €199, Google €299";
+  "/actie/ → internet-menu · top: Spoed €50, Listings €149, SEO €199, Google €299 · na verstuur: /monitor/ contacten +1";
