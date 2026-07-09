@@ -1434,6 +1434,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-09T10:25:56.400Z",
+      "bedrijf": "Van den Hoogen engineering",
+      "url": "https://www.vandenhoogen.nl",
+      "host": "vandenhoogen.nl",
+      "email": "info@vandenhoogen.nl",
+      "phone": "31332055000",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T10:25:56.400Z",
+      "bedrijf": "Groenewegen",
+      "url": "https://www.groenewegendelft.nl",
+      "host": "groenewegendelft.nl",
+      "email": "info@groenewegendelft.nl",
+      "phone": "31152612150",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T10:25:56.400Z",
+      "bedrijf": "De Lamellengigant",
+      "url": "https://www.delamellengigant.nl",
+      "host": "delamellengigant.nl",
+      "email": "info@delamellengigant.nl",
+      "phone": "31703631123",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T10:25:56.400Z",
+      "bedrijf": "Woningtextielhuis",
+      "url": "https://www.woningtextielhuis.nl",
+      "host": "woningtextielhuis.nl",
+      "email": "og-c@h.webp",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-09T10:25:56.400Z",
+      "bedrijf": "Kiwatt",
+      "url": "https://www.kiwatt.nl",
+      "host": "kiwatt.nl",
+      "email": "info@kiwatt.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
