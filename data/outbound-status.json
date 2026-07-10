@@ -1,44 +1,32 @@
 {
-  "updatedAt": "2026-07-10T07:25:05.178Z",
+  "updatedAt": "2026-07-10T10:24:29.805Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 5,
-  "verwerkt": 5,
+  "gepland": 3,
+  "verwerkt": 3,
   "verzonden": 0,
-  "gesimuleerd": 5,
+  "gesimuleerd": 3,
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "RvW Schilderwerken",
+      "bedrijf": "Kuyt Schilders B.V. Schilderwerk",
       "status": "simulated",
-      "email": "info@rvwschilderwerken.nl",
-      "phone": "31610267375"
+      "email": "info@kuytschilders.nl",
+      "phone": "31705114312"
     },
     {
-      "bedrijf": "C&M Schilders",
+      "bedrijf": "Wooncentrum Ubo Kok",
       "status": "simulated",
-      "email": "christiaan@cm-schilders.com",
+      "email": "info@ubokok.nl",
       "phone": null
     },
     {
-      "bedrijf": "Schildersbedrijf K. de Graaf",
+      "bedrijf": "EBD Techniek",
       "status": "simulated",
-      "email": "info@kevindegraaf.nl",
-      "phone": "31299841337"
-    },
-    {
-      "bedrijf": "Schildersbedrijf van der Meer",
-      "status": "simulated",
-      "email": "info@meerschilder.nl",
-      "phone": "31651642971"
-    },
-    {
-      "bedrijf": "Quick Paint",
-      "status": "simulated",
-      "email": "info@quickpaint.nl",
-      "phone": "31104125484"
+      "email": "info@ebd-purmerend.nl",
+      "phone": null
     }
   ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 3 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }

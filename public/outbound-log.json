@@ -2204,6 +2204,72 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-10T10:24:29.805Z",
+      "bedrijf": "Kuyt Schilders B.V. Schilderwerk",
+      "url": "https://www.kuytschilders.nl",
+      "host": "kuytschilders.nl",
+      "email": "info@kuytschilders.nl",
+      "phone": "31705114312",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T10:24:29.805Z",
+      "bedrijf": "Wooncentrum Ubo Kok",
+      "url": "https://wooncentrumubokok.nl",
+      "host": "wooncentrumubokok.nl",
+      "email": "info@ubokok.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T10:24:29.805Z",
+      "bedrijf": "EBD Techniek",
+      "url": "https://www.ebd-purmerend.nl",
+      "host": "ebd-purmerend.nl",
+      "email": "info@ebd-purmerend.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
