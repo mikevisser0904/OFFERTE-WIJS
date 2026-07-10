@@ -1984,6 +1984,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-10T01:27:55.605Z",
+      "bedrijf": "Louvenda Home",
+      "url": "https://louvendahome.nl",
+      "host": "louvendahome.nl",
+      "email": "eproductions_zakelijk@hotmail.com",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T01:27:55.605Z",
+      "bedrijf": "Sima Installatietechniek",
+      "url": "https://simainstallatie.nl",
+      "host": "simainstallatie.nl",
+      "email": "info@simainstallatie.nl",
+      "phone": "31703873355",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T01:27:55.605Z",
+      "bedrijf": "Achterberg Schilders & Onderhoud",
+      "url": "https://www.achterbergschilders.nl",
+      "host": "achterbergschilders.nl",
+      "email": "info@achterbergschilders.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T01:27:55.605Z",
+      "bedrijf": "BOS Groep Techniek",
+      "url": "https://www.bosgroep.com",
+      "host": "bosgroep.com",
+      "email": "bos-icon-ecosysteem@3x.png",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T01:27:55.605Z",
+      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
+      "url": "https://www.jkuijper.nl",
+      "host": "jkuijper.nl",
+      "email": "info@jkuijper.nl",
+      "phone": "31708873112",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }

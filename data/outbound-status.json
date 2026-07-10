@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T21:09:28.142Z",
+  "updatedAt": "2026-07-10T01:27:55.605Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -9,34 +9,34 @@
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "Tulay",
+      "bedrijf": "Louvenda Home",
       "status": "simulated",
-      "email": "info@tulay.nl",
-      "phone": "31102420088"
-    },
-    {
-      "bedrijf": "Merwede tapijten",
-      "status": "simulated",
-      "email": "og-c@h.webp",
+      "email": "eproductions_zakelijk@hotmail.com",
       "phone": null
     },
     {
-      "bedrijf": "Arena Gordijnenland",
+      "bedrijf": "Sima Installatietechniek",
       "status": "simulated",
-      "email": "arenagordijnenland@live.nl",
-      "phone": "31984774797"
+      "email": "info@simainstallatie.nl",
+      "phone": "31703873355"
     },
     {
-      "bedrijf": "De Kroon Zonwering",
+      "bedrijf": "Achterberg Schilders & Onderhoud",
       "status": "simulated",
-      "email": "contact@dekroonzonwering.nl",
-      "phone": "31302440149"
+      "email": "info@achterbergschilders.nl",
+      "phone": null
     },
     {
-      "bedrijf": "Loodgietersbedrijf Utrecht",
+      "bedrijf": "BOS Groep Techniek",
       "status": "simulated",
-      "email": "info@loodgietersbedrijfutrecht.nl",
-      "phone": "31673562002"
+      "email": "bos-icon-ecosysteem@3x.png",
+      "phone": null
+    },
+    {
+      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
+      "status": "simulated",
+      "email": "info@jkuijper.nl",
+      "phone": "31708873112"
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
