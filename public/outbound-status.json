@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T01:27:55.605Z",
+  "updatedAt": "2026-07-10T07:25:05.178Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -9,34 +9,34 @@
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "Louvenda Home",
+      "bedrijf": "RvW Schilderwerken",
       "status": "simulated",
-      "email": "eproductions_zakelijk@hotmail.com",
+      "email": "info@rvwschilderwerken.nl",
+      "phone": "31610267375"
+    },
+    {
+      "bedrijf": "C&M Schilders",
+      "status": "simulated",
+      "email": "christiaan@cm-schilders.com",
       "phone": null
     },
     {
-      "bedrijf": "Sima Installatietechniek",
+      "bedrijf": "Schildersbedrijf K. de Graaf",
       "status": "simulated",
-      "email": "info@simainstallatie.nl",
-      "phone": "31703873355"
+      "email": "info@kevindegraaf.nl",
+      "phone": "31299841337"
     },
     {
-      "bedrijf": "Achterberg Schilders & Onderhoud",
+      "bedrijf": "Schildersbedrijf van der Meer",
       "status": "simulated",
-      "email": "info@achterbergschilders.nl",
-      "phone": null
+      "email": "info@meerschilder.nl",
+      "phone": "31651642971"
     },
     {
-      "bedrijf": "BOS Groep Techniek",
+      "bedrijf": "Quick Paint",
       "status": "simulated",
-      "email": "bos-icon-ecosysteem@3x.png",
-      "phone": null
-    },
-    {
-      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
-      "status": "simulated",
-      "email": "info@jkuijper.nl",
-      "phone": "31708873112"
+      "email": "info@quickpaint.nl",
+      "phone": "31104125484"
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",

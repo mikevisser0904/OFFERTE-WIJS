@@ -2094,6 +2094,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-10T07:25:05.178Z",
+      "bedrijf": "RvW Schilderwerken",
+      "url": "https://rvwschilderwerken.nl",
+      "host": "rvwschilderwerken.nl",
+      "email": "info@rvwschilderwerken.nl",
+      "phone": "31610267375",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T07:25:05.178Z",
+      "bedrijf": "C&M Schilders",
+      "url": "https://cm-schilders.com",
+      "host": "cm-schilders.com",
+      "email": "christiaan@cm-schilders.com",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T07:25:05.178Z",
+      "bedrijf": "Schildersbedrijf K. de Graaf",
+      "url": "https://kevindegraaf.nl",
+      "host": "kevindegraaf.nl",
+      "email": "info@kevindegraaf.nl",
+      "phone": "31299841337",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T07:25:05.178Z",
+      "bedrijf": "Schildersbedrijf van der Meer",
+      "url": "https://meerschilder.nl",
+      "host": "meerschilder.nl",
+      "email": "info@meerschilder.nl",
+      "phone": "31651642971",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-10T07:25:05.178Z",
+      "bedrijf": "Quick Paint",
+      "url": "https://www.quickpaint.nl",
+      "host": "quickpaint.nl",
+      "email": "info@quickpaint.nl",
+      "phone": "31104125484",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
