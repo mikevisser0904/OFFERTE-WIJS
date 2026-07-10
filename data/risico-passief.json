@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-10T18:12:10.668Z",
+  "updatedAt": "2026-07-10T21:41:11.642Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 26,
     "kritiek": 0,
-    "hoog": 25
+    "hoog": 26
   },
   "resultaten": [
     {
@@ -287,8 +287,11 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "klantUrl": "https://www.willemseelektrotechniek.nl",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
     }
   ]
 }
