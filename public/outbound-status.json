@@ -1,32 +1,13 @@
 {
-  "updatedAt": "2026-07-10T10:24:29.805Z",
+  "updatedAt": "2026-07-10T10:42:24.169Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 3,
-  "verwerkt": 3,
+  "gepland": 0,
+  "verwerkt": 0,
   "verzonden": 0,
-  "gesimuleerd": 3,
+  "gesimuleerd": 0,
   "mislukt": 0,
-  "items": [
-    {
-      "bedrijf": "Kuyt Schilders B.V. Schilderwerk",
-      "status": "simulated",
-      "email": "info@kuytschilders.nl",
-      "phone": "31705114312"
-    },
-    {
-      "bedrijf": "Wooncentrum Ubo Kok",
-      "status": "simulated",
-      "email": "info@ubokok.nl",
-      "phone": null
-    },
-    {
-      "bedrijf": "EBD Techniek",
-      "status": "simulated",
-      "email": "info@ebd-purmerend.nl",
-      "phone": null
-    }
-  ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 3 verwerkt",
+  "items": [],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
