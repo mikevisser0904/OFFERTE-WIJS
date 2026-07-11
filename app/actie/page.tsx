@@ -16,7 +16,10 @@ export default function ActiePage() {
         <section className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-4 py-3 text-sm">
           <p className="text-white/85">
             <span className="font-semibold text-emerald-200">Dagdoel:</span> {VANDAAG_DOEL.whatsapps} WhatsApps · min. €
-            {VANDAAG_DOEL.euroMin} deal
+            {VANDAAG_DOEL.euroMin} deal · instap:{" "}
+            <Link href="/bestellen/?dienst=listings-setup" className="text-emerald-200 underline hover:text-white">
+              Listings €149
+            </Link>
           </p>
           <Link href="/monitor/" className="font-medium text-emerald-300 hover:underline">
             KPI bijwerken →

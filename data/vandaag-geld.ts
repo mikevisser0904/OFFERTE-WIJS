@@ -55,11 +55,13 @@ export const vandaagBerichten: Record<VandaagBerichtId, { label: string; tekst: 
     tekst: `Hoi [NAAM], Mike (${webklaar.naam}).
 
 Internetdiensten met vaste prijs — geen bureau-uurtje:
+• Listings €149 — Fiverr + Marktplaats (vaak deze week live)
 • Spoed hulp €50 (1 uur, vandaag)
 • SEO Starter €199 · Google Start €299
 • Website / landing vanaf €349
 
 Overzicht: ${vandaagLinks.diensten}
+Listings direct: ${vandaagLinks.listingsSetup}
 Zin in 10 min bellen?`,
   },
   "warm-demo": {
