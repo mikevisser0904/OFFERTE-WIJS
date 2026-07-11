@@ -1,13 +1,220 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-11T11:36:59.131Z",
+  "updatedAt": "2026-07-11T12:46:34.261Z",
   "agents": {
     "health-monitor": {
-      "lastRun": "2026-07-11T11:36:59.131Z",
+      "lastRun": "2026-07-11T12:46:33.301Z",
       "ok": true,
       "healthy": true,
-      "avgResponseMs": 265,
+      "avgResponseMs": 66,
       "agentPrompt": "health OK"
+    },
+    "data-flow": {
+      "lastRun": "2026-07-11T12:46:33.362Z",
+      "ok": true,
+      "healthy": true,
+      "streams": 25,
+      "drift": 0,
+      "synced": 0,
+      "agentPrompt": "25 streams OK · queue 0 pending · 15 lekken",
+      "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
+    },
+    "maarten-sync": {
+      "lastRun": "2026-07-11T12:46:33.668Z",
+      "ok": true,
+      "pending": 0,
+      "agentPrompt": "maarten-sync OK, geen nieuwe pending"
+    },
+    "maarten-bouw": {
+      "lastRun": "2026-07-11T12:46:33.698Z",
+      "ok": true,
+      "pending": 0,
+      "eerstePending": null,
+      "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
+    },
+    "optimizer": {
+      "lastRun": "2026-07-11T12:46:34.040Z",
+      "applyMode": true,
+      "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
+      "safeDone": 3,
+      "wachtrijPending": 2
+    },
+    "manager": {
+      "lastRun": "2026-07-11T12:46:34.165Z",
+      "fase": "verkopen",
+      "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
+      "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
+    },
+    "outbound-auto": {
+      "lastRun": "2026-07-11T12:46:34.227Z",
+      "ok": true,
+      "live": true,
+      "verzonden": 0,
+      "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+      "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
+    },
+    "verkoop-effectiviteit": {
+      "lastRun": "2026-07-11T12:46:34.261Z",
+      "ok": true,
+      "totaalScore": 75,
+      "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
+      "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     }
+  },
+  "manager": {
+    "updatedAt": "2026-07-11T12:46:34.165Z",
+    "agent": "manager",
+    "fase": "verkopen",
+    "faseLabel": "Vandaag geld — warm netwerk",
+    "prioriteit": 1,
+    "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
+    "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel.",
+    "acties": [
+      {
+        "wie": "mike",
+        "actie": "5 WhatsApps vandaag",
+        "script": "/actie/"
+      },
+      {
+        "wie": "mike",
+        "actie": "Marktplaats + status-deel",
+        "script": "/listings/"
+      }
+    ],
+    "cards": [
+      {
+        "id": "optimizer",
+        "naam": "Optimizer",
+        "status": "ok",
+        "detail": "Grok-wachtrij 2 · laatste fixes 3",
+        "lastRun": "2026-07-11T12:46:34.040Z"
+      },
+      {
+        "id": "auto-verify",
+        "naam": "Auto-verify",
+        "status": "ok",
+        "detail": "Hercontroleert lekken, admin-bewijs en toestemming; ververst",
+        "lastRun": null
+      },
+      {
+        "id": "data-flow",
+        "naam": "Data-flow",
+        "status": "ok",
+        "detail": "25 streams OK · queue 0 pending · 15 lekken",
+        "lastRun": "2026-07-11T12:46:33.362Z"
+      },
+      {
+        "id": "health-monitor",
+        "naam": "Health Monitor",
+        "status": "ok",
+        "detail": "OK 66ms",
+        "lastRun": "2026-07-11T12:46:33.301Z"
+      },
+      {
+        "id": "maarten-sync",
+        "naam": "Maarten Sync",
+        "status": "ok",
+        "detail": "maarten-sync OK, geen nieuwe pending",
+        "lastRun": "2026-07-11T12:46:33.668Z"
+      },
+      {
+        "id": "maarten-bouw",
+        "naam": "Maarten Bouw",
+        "status": "ok",
+        "detail": "0 pending",
+        "lastRun": "2026-07-11T12:46:33.698Z"
+      },
+      {
+        "id": "lead-hunter",
+        "naam": "Lead Hunter",
+        "status": "ok",
+        "detail": "184 leads · 0 queue",
+        "lastRun": null
+      },
+      {
+        "id": "vakscan-import",
+        "naam": "VakScan Import",
+        "status": "ok",
+        "detail": "URL-lijst → scan-queue.json",
+        "lastRun": null
+      },
+      {
+        "id": "klanten-lek",
+        "naam": "Klanten-lek",
+        "status": "ok",
+        "detail": "Potentiële klanten → echte datalek + database-profiel (host,",
+        "lastRun": null
+      },
+      {
+        "id": "vakscan-leaks",
+        "naam": "VakScan Leaks",
+        "status": "ok",
+        "detail": "15 lekken · 0 pending",
+        "lastRun": null
+      },
+      {
+        "id": "vakscan-full",
+        "naam": "VakScan Full",
+        "status": "ok",
+        "detail": "Volledige veiligheidscheck (HTTPS, headers, CMS)",
+        "lastRun": null
+      },
+      {
+        "id": "verkoop-effectiviteit",
+        "naam": "Verkoop-effectiviteit",
+        "status": "ok",
+        "detail": "Test tekst (feit vs angst), pipeline, bewijs — score + aanbe",
+        "lastRun": null
+      },
+      {
+        "id": "verkoop-bewijs",
+        "naam": "Verkoop-bewijs",
+        "status": "ok",
+        "detail": "12 met live bewijs",
+        "lastRun": null
+      },
+      {
+        "id": "outbound-auto",
+        "naam": "Outbound auto",
+        "status": "ok",
+        "detail": "Volledig geautomatiseerde outbound: e-mail (Resend), webhook",
+        "lastRun": null
+      },
+      {
+        "id": "outreach",
+        "naam": "Outreach",
+        "status": "ok",
+        "detail": "15 contacten",
+        "lastRun": null
+      },
+      {
+        "id": "seo",
+        "naam": "SEO",
+        "status": "ok",
+        "detail": "Sitemap + IndexNow na wijzigingen",
+        "lastRun": null
+      },
+      {
+        "id": "traffic",
+        "naam": "Traffic",
+        "status": "ok",
+        "detail": "SEO-pool, landings, IndexNow — organisch verkeer zonder outr",
+        "lastRun": null
+      },
+      {
+        "id": "kpi",
+        "naam": "KPI",
+        "status": "ok",
+        "detail": "Team KPI snapshot naar repo",
+        "lastRun": null
+      },
+      {
+        "id": "funnel",
+        "naam": "Funnel",
+        "status": "ok",
+        "detail": "Eén keten: dataflow → leads → scan → outreach → manager",
+        "lastRun": null
+      }
+    ]
   }
 }
