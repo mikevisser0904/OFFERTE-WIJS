@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-11T17:41:02.808Z",
+  "updatedAt": "2026-07-11T19:30:06.387Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-07-11T16:40:11.652Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-11T17:13:40.067Z",
+      "lastRun": "2026-07-11T19:30:05.815Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-07-11T17:30:44.297Z",
+      "lastRun": "2026-07-11T19:30:06.387Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -61,10 +61,10 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-11T17:41:02.560Z",
+      "lastRun": "2026-07-11T19:30:04.656Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 19,
+      "metBewijs": 20,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
@@ -80,10 +80,22 @@
       "consentProofOk": 15,
       "agentPrompt": "15 verified · 15 consent OK · 0 failed recheck",
       "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+    },
+    "outreach": {
+      "lastRun": "2026-07-11T19:30:04.771Z",
+      "ok": true,
+      "contactenVandaag": 15,
+      "lekkenEerst": 3,
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (Live bewijs: phpMyAdmin HTTP 200)",
+      "top3": [
+        "Firma Fred van Rijn: Live bewijs: phpMyAdmin HTTP 200",
+        "Textilia: Live bewijs: phpMyAdmin HTTP 200",
+        "Bos Elektrotechniek: Live bewijs: phpMyAdmin HTTP 200"
+      ]
     }
   },
   "manager": {
-    "updatedAt": "2026-07-11T17:30:44.297Z",
+    "updatedAt": "2026-07-11T19:30:06.387Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -107,22 +119,22 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-11T17:13:40.067Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-07-11T19:30:05.815Z"
       },
       {
         "id": "auto-verify",
         "naam": "Auto-verify",
         "status": "ok",
         "detail": "15 verified · 15 consent OK · 0 failed recheck",
-        "lastRun": "2026-07-11T14:10:10.397Z"
+        "lastRun": "2026-07-11T17:41:02.808Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 15 lekken",
-        "lastRun": "2026-07-11T17:28:29.992Z"
+        "lastRun": "2026-07-11T17:41:02.801Z"
       },
       {
         "id": "health-monitor",
@@ -192,7 +204,7 @@
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-11T14:10:10.095Z"
+        "lastRun": "2026-07-11T19:30:04.656Z"
       },
       {
         "id": "outbound-auto",
@@ -206,7 +218,7 @@
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": null
+        "lastRun": "2026-07-11T19:30:04.771Z"
       },
       {
         "id": "seo",
