@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T05:41:28.803Z",
+  "generatedAt": "2026-07-12T05:58:46.581Z",
   "instructie": "Werk deze lijst af vandaag: bel-nu eerst, dan whatsapp met telefoon, rest na VakScan.",
   "top": [
     {
@@ -100,26 +100,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31105928105?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "url": "https://chargecars.nl",
-      "telefoon": "+31 85 130 6433",
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 100,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "sterke niche: elektricien",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31851306433?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
@@ -239,25 +219,6 @@
       "actie": "bel-nu"
     },
     {
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "url": "https://www.boselektrotechniek.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 97,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "bel-nu"
-    },
-    {
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
@@ -330,6 +291,27 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "url": "https://chargecars.nl",
+      "telefoon": "+31 85 130 6433",
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 84,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "sterke niche: elektricien",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31851306433?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
@@ -482,6 +464,25 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31299709009?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "Knook Deuren en Kozijnen",
+      "plaats": "Amsterdam",
+      "url": "https://www.knookmetaal.nl/producten/knook-deuren-en-kozijnen",
+      "telefoon": "+31 299 648 131",
+      "email": "info@knookmetaal.nl",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: kozijnen",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31299648131?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     }
   ]
