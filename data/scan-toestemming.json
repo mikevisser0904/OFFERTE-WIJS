@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T11:27:18.311Z",
+  "updatedAt": "2026-07-13T11:42:11.160Z",
   "uitleg": "individualConsent=true alleen na echte toestemming. auth-verify vereist scan-toestemming.local.json — geen klantdata-export.",
   "entries": [
     {
@@ -39,7 +39,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://saelektroexperts.nl",
@@ -77,7 +77,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.kroon-interieurbouw.nl",
@@ -103,7 +103,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.decorgordijn.nl",
@@ -129,7 +129,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.ejvandermeer.nl",
@@ -143,19 +143,21 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
-      "siteUrl": "https://rioolservice-pvanadrichem.nl",
+      "siteUrl": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
-      "consentDatum": "2026-07-07",
-      "consentRef": "Schriftelijke bundeltoestemming — eigenaar akkoord gratis VakScan/WebKlaar (geregistreerd door Mike)",
+      "consentDatum": "2026-07-13",
+      "consentRef": "Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)",
       "evidenceUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "scope": [
         "passive-deep"
       ],
-      "status": "revoked",
-      "revokedReden": "bulk-toestemming — vervang door echte schriftelijke ref van klant"
+      "status": "active",
+      "individualConsent": true,
+      "bulkGenerated": false,
+      "mikeBevestigdOp": "2026-07-13T11:42:11.159Z"
     },
     {
       "siteUrl": "https://decorette.nl/winkels/nieuw-vennep",
@@ -181,7 +183,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://loodgieterskwartier.nl",
@@ -207,7 +209,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://depagter.info",
@@ -233,7 +235,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://pruisschilderwerken.nl",
@@ -1327,7 +1329,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://nuoveni.nl",
@@ -1341,7 +1343,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.wonnink.nl/",
@@ -1367,7 +1369,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://vogelaarschilder.nl",
@@ -1381,7 +1383,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.bwstyling.nl",
@@ -1395,7 +1397,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.jwfborn.nl/",
@@ -1421,7 +1423,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.schreuderschilderwerken.nl/",
@@ -1447,7 +1449,7 @@
       "status": "active",
       "individualConsent": true,
       "bulkGenerated": false,
-      "mikeBevestigdOp": "2026-07-13T07:52:21.243Z"
+      "mikeBevestigdOp": "2026-07-13T11:42:11.160Z"
     },
     {
       "siteUrl": "https://www.blygold.nl/",
