@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-13T07:53:41.248Z",
+  "updatedAt": "2026-07-13T08:23:44.945Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-07-13T06:42:56.731Z",
@@ -10,13 +10,13 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-07-13T07:53:41.241Z",
+      "lastRun": "2026-07-13T08:23:34.279Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
       "drift": 0,
       "synced": 0,
-      "agentPrompt": "25 streams OK · queue 0 pending · 15 lekken",
+      "agentPrompt": "25 streams OK · queue 0 pending · 29 lekken",
       "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "maarten-sync": {
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-13T07:53:41.064Z",
+      "lastRun": "2026-07-13T08:23:44.930Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 20,
@@ -82,7 +82,7 @@
       "grokPrompt": "auto-verify: 15 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-07-13T07:35:28.741Z",
+      "lastRun": "2026-07-13T08:23:44.945Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -92,6 +92,14 @@
         "Textilia: Live bewijs: phpMyAdmin HTTP 200",
         "Bos Elektrotechniek: Live bewijs: phpMyAdmin HTTP 200"
       ]
+    },
+    "klanten-lek": {
+      "lastRun": "2026-07-13T08:23:34.040Z",
+      "ok": true,
+      "gescand": 60,
+      "metLek": 16,
+      "agentPrompt": "16 echte lek(ken) — /leads/ database-export · outreach",
+      "grokPrompt": "agent outreach — 16 klanten met database-lek in klanten-lek-rapport"
     }
   },
   "manager": {

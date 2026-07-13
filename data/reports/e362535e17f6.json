@@ -3,7 +3,7 @@
   "url": "https://www.voordeelgordijnen.nl/",
   "bedrijf": "Voordeelgordijnen",
   "plaats": "Amsterdam",
-  "scannedAt": "2026-07-07T07:59:47.233Z",
+  "scannedAt": "2026-07-13T08:21:26.952Z",
   "risicoScore": 40,
   "niveau": "hoog",
   "niveauLabel": "Hoog",
@@ -26,9 +26,10 @@
     "slug": "website-veilig",
     "prijs": "€299",
     "prijsNum": 299,
-    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Voordeelgordijnen gedaan. Belangrijkste punt: Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+    "whatsapp": "Hoi! Mike van DoekoeWijs — ik heb even een gratis veiligheidscheck op de site van Voordeelgordijnen gedaan. Belangrijkste punt: Gevoelige gegevens (o.a. database-wachtwoorden) kunnen op internet liggen. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
   },
   "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck.",
   "scanMode": "leaks",
-  "leakHit": true
+  "leakHit": true,
+  "actionableLeak": true
 }

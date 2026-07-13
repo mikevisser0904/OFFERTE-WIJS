@@ -3,42 +3,51 @@
   "url": "https://firmavanrijn.nl/",
   "bedrijf": "Firma Fred van Rijn",
   "plaats": "'s-Gravenhage",
-  "scannedAt": "2026-07-07T07:59:49.726Z",
+  "scannedAt": "2026-07-13T08:21:41.682Z",
   "risicoScore": 100,
   "niveau": "kritiek",
   "niveauLabel": "Kritiek",
   "klantBullets": [
-    "Database-beheer is vindbaar — data kan gestolen worden.",
-    "Database-beheer is vindbaar — data kan gestolen worden.",
-    "Database-beheer is vindbaar — data kan gestolen worden."
+    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog."
   ],
   "findings": [
     {
       "id": "db-admin-_phpmyadmin_",
       "check": "database",
       "severity": "critical",
-      "title": "phpMyAdmin mogelijk open op internet",
-      "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
-      "intern": "Kritiek — Website Veilig + hosting review.",
-      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/"
+      "title": "phpMyAdmin inlog open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "verified": true,
+      "panelConfidence": "high",
+      "panelKind": "login"
     },
     {
       "id": "db-admin-_phpMyAdmin_",
       "check": "database",
       "severity": "critical",
-      "title": "phpMyAdmin mogelijk open op internet",
-      "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
-      "intern": "Kritiek — Website Veilig + hosting review.",
-      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/"
+      "title": "phpMyAdmin inlog open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "verified": true,
+      "panelConfidence": "high",
+      "panelKind": "login"
     },
     {
       "id": "db-admin-_phpmyadmin_index.php",
       "check": "database",
       "severity": "critical",
-      "title": "phpMyAdmin mogelijk open op internet",
-      "klant": "Database-beheer is vindbaar — data kan gestolen worden.",
-      "intern": "Kritiek — Website Veilig + hosting review.",
-      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/index.php"
+      "title": "phpMyAdmin inlog open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
+      "verified": true,
+      "panelConfidence": "high",
+      "panelKind": "login"
     }
   ],
   "verkoop": {
@@ -46,9 +55,10 @@
     "slug": "website-veilig",
     "prijs": "€299",
     "prijsNum": 299,
-    "whatsapp": "Hoi! Mike van WebKlaar — ik heb even een gratis veiligheidscheck op de site van Firma Fred van Rijn gedaan. Belangrijkste punt: Database-beheer is vindbaar — data kan gestolen worden. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
+    "whatsapp": "Hoi! Mike van DoekoeWijs — ik heb even een gratis veiligheidscheck op de site van Firma Fred van Rijn gedaan. Belangrijkste punt: Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog. Ik kan dit voor u oplossen met ons Website Veilig (€299). Zin in een kort belletje?"
   },
   "disclaimer": "Deze scan is passief (publiek zichtbare pagina's en bekende misconfiguratie-paden). Geen inlog, geen poortscan. Alleen gebruiken met toestemming van de eigenaar of als onderdeel van een door u aangeboden gratis veiligheidscheck.",
   "scanMode": "leaks",
-  "leakHit": true
+  "leakHit": true,
+  "actionableLeak": true
 }
