@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-13T18:23:17.904Z",
+  "updatedAt": "2026-07-13T19:45:59.102Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-07-13T17:47:23.893Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-13T18:05:14.068Z",
+      "lastRun": "2026-07-13T19:45:58.756Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 4,
+      "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-07-13T18:16:58.725Z",
+      "lastRun": "2026-07-13T19:45:59.101Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-13T18:16:58.725Z",
+    "updatedAt": "2026-07-13T19:45:59.101Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -134,22 +134,22 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 4",
-        "lastRun": "2026-07-13T18:05:14.068Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 3",
+        "lastRun": "2026-07-13T19:45:58.756Z"
       },
       {
         "id": "auto-verify",
         "naam": "Auto-verify",
         "status": "ok",
         "detail": "29 verified · 16 consent OK · 0 failed recheck",
-        "lastRun": "2026-07-13T15:36:27.141Z"
+        "lastRun": "2026-07-13T18:23:17.904Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 29 lekken",
-        "lastRun": "2026-07-13T18:16:12.614Z"
+        "lastRun": "2026-07-13T18:23:17.897Z"
       },
       {
         "id": "health-monitor",
@@ -219,7 +219,7 @@
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-13T18:05:13.543Z"
+        "lastRun": "2026-07-13T18:23:17.558Z"
       },
       {
         "id": "outbound-auto",
