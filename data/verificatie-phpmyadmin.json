@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-07-14T14:29:23.012Z",
+  "verifiedAt": "2026-07-14T17:46:59.892Z",
   "totaal": 27,
-  "loginBereikbaar": 26,
-  "uniekeLoginUrls": 14,
-  "bevestigd": 12,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 15,
+  "bevestigd": 13,
   "hosting_redirect": 14,
   "false_positive": 0,
-  "onbekend": 1,
+  "onbekend": 0,
   "redirect_anders": 0,
   "results": [
     {
@@ -16,10 +16,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
