@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T05:30:21.482Z",
+  "generatedAt": "2026-07-15T05:31:24.975Z",
   "instructie": "Werk deze lijst af vandaag: bel-nu eerst, dan whatsapp met telefoon, rest na VakScan.",
   "top": [
     {
@@ -61,6 +61,26 @@
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31203638567?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "AAD Elektrotechniek & Onderhoudsbedrijf",
+      "plaats": "Barendrecht",
+      "url": "http://www.aadelektrotechniek.nl",
+      "telefoon": "+31 180 531 995",
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 100,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend",
+        "geen goede HTTPS"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31180531995?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -463,25 +483,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31204418195?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "Klimaatservice Noordholland",
-      "plaats": "Amsterdam",
-      "url": "https://klimaatservicenoordholland.nl",
-      "telefoon": "+31 299 709 009",
-      "email": "info@klimaatservice-nh.nl",
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 82,
-      "redenen": [
-        "sterke niche: installateur",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31299709009?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     }
   ]
