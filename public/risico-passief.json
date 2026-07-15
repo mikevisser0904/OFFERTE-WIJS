@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-15T03:49:47.850Z",
+  "updatedAt": "2026-07-15T07:00:21.264Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 27
+    "hoog": 26
   },
   "resultaten": [
     {
@@ -53,17 +53,6 @@
     },
     {
       "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
@@ -303,6 +292,14 @@
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
       "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
       "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
