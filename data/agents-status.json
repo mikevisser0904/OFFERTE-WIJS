@@ -1,16 +1,16 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-16T09:14:18.352Z",
+  "updatedAt": "2026-07-16T09:52:51.951Z",
   "agents": {
     "health-monitor": {
-      "lastRun": "2026-07-16T06:08:21.205Z",
+      "lastRun": "2026-07-16T09:52:50.794Z",
       "ok": true,
       "healthy": true,
-      "avgResponseMs": 78,
+      "avgResponseMs": 158,
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-07-16T07:10:50.653Z",
+      "lastRun": "2026-07-16T09:52:50.849Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -20,33 +20,33 @@
       "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "maarten-sync": {
-      "lastRun": "2026-07-16T06:08:21.551Z",
+      "lastRun": "2026-07-16T09:52:51.227Z",
       "ok": true,
       "pending": 0,
       "agentPrompt": "maarten-sync OK, geen nieuwe pending"
     },
     "maarten-bouw": {
-      "lastRun": "2026-07-16T06:08:21.593Z",
+      "lastRun": "2026-07-16T09:52:51.262Z",
       "ok": true,
       "pending": 0,
       "eerstePending": null,
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-16T06:29:45.393Z",
+      "lastRun": "2026-07-16T09:52:51.634Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-07-16T07:01:44.941Z",
+      "lastRun": "2026-07-16T09:52:51.843Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
     },
     "outbound-auto": {
-      "lastRun": "2026-07-16T09:14:18.318Z",
+      "lastRun": "2026-07-16T09:52:51.914Z",
       "ok": true,
       "live": true,
       "verzonden": 0,
@@ -54,7 +54,7 @@
       "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-07-16T09:14:18.352Z",
+      "lastRun": "2026-07-16T09:52:51.951Z",
       "ok": true,
       "totaalScore": 75,
       "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-16T07:01:44.941Z",
+    "updatedAt": "2026-07-16T09:52:51.843Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -135,42 +135,42 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-16T06:29:45.393Z"
+        "lastRun": "2026-07-16T09:52:51.634Z"
       },
       {
         "id": "auto-verify",
         "naam": "Auto-verify",
         "status": "ok",
         "detail": "29 verified · 16 consent OK · 0 failed recheck",
-        "lastRun": "2026-07-16T03:53:28.100Z"
+        "lastRun": "2026-07-16T07:10:50.657Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 29 lekken",
-        "lastRun": "2026-07-16T06:40:09.995Z"
+        "lastRun": "2026-07-16T09:52:50.849Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 205ms",
-        "lastRun": "2026-07-16T06:08:21.205Z"
+        "detail": "OK 158ms",
+        "lastRun": "2026-07-16T09:52:50.794Z"
       },
       {
         "id": "maarten-sync",
         "naam": "Maarten Sync",
         "status": "ok",
         "detail": "maarten-sync OK, geen nieuwe pending",
-        "lastRun": "2026-07-16T06:08:21.551Z"
+        "lastRun": "2026-07-16T09:52:51.227Z"
       },
       {
         "id": "maarten-bouw",
         "naam": "Maarten Bouw",
         "status": "ok",
         "detail": "0 pending",
-        "lastRun": "2026-07-16T06:08:21.593Z"
+        "lastRun": "2026-07-16T09:52:51.262Z"
       },
       {
         "id": "lead-hunter",
@@ -212,21 +212,21 @@
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
         "detail": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
-        "lastRun": "2026-07-16T06:08:22.206Z"
+        "lastRun": "2026-07-16T09:14:18.352Z"
       },
       {
         "id": "verkoop-bewijs",
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-16T03:53:27.667Z"
+        "lastRun": "2026-07-16T07:10:50.217Z"
       },
       {
         "id": "outbound-auto",
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-07-16T06:08:22.170Z"
+        "lastRun": "2026-07-16T09:14:18.318Z"
       },
       {
         "id": "outreach",
