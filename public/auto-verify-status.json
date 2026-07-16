@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T17:52:20.508Z",
+  "updatedAt": "2026-07-16T21:45:44.605Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -13,7 +13,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
@@ -22,7 +22,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
