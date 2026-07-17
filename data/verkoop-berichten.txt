@@ -3,14 +3,14 @@ Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Firma Fred van Rijn.
 
 Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:09:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://s230.webhostingserver.nl/phpMyAdmin/
 
 
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 13-07-2026, 08:21
-• Live hercheck: 17-07-2026, 10:09
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/86dde731b1e4.json
   Referentie: 86dde731b1e4
@@ -43,14 +43,14 @@ Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Amer Houttechniek.
 
 Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:09:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://s205.webhostingserver.nl/phpMyAdmin/
 
 
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 13-07-2026, 08:21
-• Live hercheck: 17-07-2026, 10:09
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/dd78e57b812d.json
   Referentie: dd78e57b812d
@@ -78,19 +78,59 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 
 ---
 
+=== Kroon interieurbouw | 0950635027 ===
+Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Kroon interieurbouw.
+
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
+• phpMyAdmin reageert op: https://www.kroon-interieurbouw.nl/phpmyadmin/
+• Wij hebben niet ingelogd zonder uw toestemming.
+
+
+BEWIJS (meetbaar — zelf nakijken):
+• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
+• Eerste scan: 07-07-2026, 07:44
+• Live hercheck: 17-07-2026, 10:27
+• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
+• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d0419394d0db.json
+  Referentie: d0419394d0db
+• Directe controle-URL uit de scan: https://www.kroon-interieurbouw.nl/phpmyadmin/
+• Extra pad uit rapport: https://www.kroon-interieurbouw.nl/phpMyAdmin/
+• Extra pad uit rapport: https://www.kroon-interieurbouw.nl/pma/
+• Extra pad uit rapport: https://www.kroon-interieurbouw.nl/phpmyadmin/index.php
+• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.
+
+
+
+
+
+ZELF NAKIJKEN — plak in uw browser:
+https://www.kroon-interieurbouw.nl/phpmyadmin/
+
+Wat op die pagina staat (zonder wachtwoord in te vullen):
+phpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.
+
+Kort uitgelegd:
+Database-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.
+
+VakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).
+
+Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?
+
+---
+
 === Textilia | 0639112809 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Textilia.
 
 Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:09:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://s225.webhostingserver.nl/phpMyAdmin/
 
 
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 13-07-2026, 08:21
-• Live hercheck: 17-07-2026, 10:09
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2bf236f50a7b.json
   Referentie: 2bf236f50a7b
@@ -121,7 +161,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === Decor Gordijn | 0950635027 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Decor Gordijn.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://www.decorgordijn.nl/phpmyadmin/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -129,7 +169,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:36
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/ec27b9f2d9e9.json
   Referentie: ec27b9f2d9e9
@@ -158,19 +198,58 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 
 ---
 
+=== Bos Elektrotechniek | 0520585539 ===
+Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Bos Elektrotechniek.
+
+Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
+
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
+• phpMyAdmin reageert op: https://www.boselektrotechniek.nl/phpMyAdmin/
+
+
+BEWIJS (meetbaar — zelf nakijken):
+• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
+• Eerste scan: 13-07-2026, 08:21
+• Live hercheck: 17-07-2026, 10:27
+• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
+• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/e2b94249c285.json
+  Referentie: e2b94249c285
+• Directe controle-URL uit de scan: https://www.boselektrotechniek.nl/phpMyAdmin/
+• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.
+
+
+
+
+Uit publieke site/config (geen database-inlog): database phpMyAdmin op www.boselektrotechniek.nl (naam onbekend); beheerpaneel: https://www.boselektrotechniek.nl/phpMyAdmin/.
+
+ZELF NAKIJKEN — plak in uw browser:
+https://www.boselektrotechniek.nl/phpMyAdmin/
+
+Wat op die pagina staat (zonder wachtwoord in te vullen):
+phpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.
+
+Kort uitgelegd:
+Database-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.
+
+VakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).
+
+Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?
+
+---
+
 === Rioolservice P. van Adrichem | 0653373931 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Rioolservice P. van Adrichem.
 
 Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://rioolservice-pvanadrichem.nl/phpMyAdmin/
 
 
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 13-07-2026, 08:22
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/cb76ce138bc5.json
   Referentie: cb76ce138bc5
@@ -197,19 +276,58 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 
 ---
 
+=== ChargeCars | info@chargecars.nl ===
+Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals ChargeCars.
+
+Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
+
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
+• phpMyAdmin reageert op: https://chargecars.nl/phpMyAdmin/
+
+
+BEWIJS (meetbaar — zelf nakijken):
+• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
+• Eerste scan: 13-07-2026, 08:21
+• Live hercheck: 17-07-2026, 10:27
+• Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
+• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d3536446812f.json
+  Referentie: d3536446812f
+• Directe controle-URL uit de scan: https://chargecars.nl/phpMyAdmin/
+• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.
+
+
+
+
+Uit publieke site/config (geen database-inlog): database phpMyAdmin op chargecars.nl (naam onbekend); beheerpaneel: https://chargecars.nl/phpMyAdmin/.
+
+ZELF NAKIJKEN — plak in uw browser:
+https://chargecars.nl/phpMyAdmin/
+
+Wat op die pagina staat (zonder wachtwoord in te vullen):
+phpMyAdmin-inlogpagina: velden voor gebruikersnaam en wachtwoord, bereikbaar via deze publieke URL.
+
+Kort uitgelegd:
+Database-beheer is via het internet bereikbaar; gebruikelijk is toegang alleen via hostingpanel, VPN of IP-beperking.
+
+VakScan-weging: 100/100 (interne prioriteitsscore, geen officieel certificaat).
+
+Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?
+
+---
+
 === Reinaerde Remake Meubel | 0623369577 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Reinaerde Remake Meubel.
 
 Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://s246.webhostingserver.nl/phpMyAdmin/
 
 
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 13-07-2026, 08:21
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/2f229b8f5c49.json
   Referentie: 2f229b8f5c49
@@ -240,7 +358,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === De Pagter | 0950635027 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals De Pagter.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://depagter.info/phpmyadmin/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -248,7 +366,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:48
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/679c884eb23e.json
   Referentie: 679c884eb23e
@@ -282,14 +400,14 @@ Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals H. Willemse Elektrot
 
 Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://s250.webhostingserver.nl/phpMyAdmin/
 
 
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 13-07-2026, 08:21
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/fe9d43611024.json
   Referentie: fe9d43611024
@@ -320,7 +438,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === Pruis Schilderwerken | 0950635027 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Pruis Schilderwerken.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://server-alfa.heroo.nl/phpMyAdmin/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -328,7 +446,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:44
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/13c475feed67.json
   Referentie: 13c475feed67
@@ -358,7 +476,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === Verzijl De Woonprofessionals | 0950635027 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Verzijl De Woonprofessionals.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://verzijlbv.nl/phpmyadmin/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -366,7 +484,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:45
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/7d32e5ce9787.json
   Referentie: 7d32e5ce9787
@@ -397,7 +515,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === Finish Profiles | 0950635027 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Finish Profiles.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://finish-profiles.nl/phpmyadmin/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -405,7 +523,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:45
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6732bd8e5565.json
   Referentie: 6732bd8e5565
@@ -439,14 +557,14 @@ Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals van der Meer Elektro
 
 Met uw schriftelijke toestemming (2026-07-17, ref: Mike — toestemming eigenaar voor passieve VakScan + verificatie (auto-verify)) hebben we extra gecontroleerd.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • phpMyAdmin reageert op: https://www.ejvandermeer.nl/phpmyadmin/
 
 
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 13-07-2026, 08:21
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — phpMyAdmin, type: login, titel pagina: „phpMyAdmin"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/5424b2313def.json
   Referentie: 5424b2313def
@@ -477,7 +595,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === SA Elektro Experts | 0707503681 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals SA Elektro Experts.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • Onbekend paneel reageert op: https://saelektroexperts.nl/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -485,7 +603,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:44
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „SA Elektro Experts – Lokale elektricien met 24/7 Service."
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/aab38445503e.json
   Referentie: aab38445503e
@@ -514,7 +632,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === Suntec zonwering | 0715802342 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Suntec zonwering.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • Adminer reageert op: https://www.suntec-zonwering.nl/adminer.php
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -522,7 +640,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:59
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — Adminer, titel pagina: „Login - Adminer"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/6888507d0d7c.json
   Referentie: 6888507d0d7c
@@ -551,7 +669,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === Decorette | geri@doubleweb.nl ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Decorette.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • Onbekend paneel reageert op: https://decorette.nl/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -559,7 +677,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 07:44
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „Woonwinkel voor complete interieuroplossing | Decorette"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/47cfe84cc8f4.json
   Referentie: 47cfe84cc8f4
@@ -588,7 +706,7 @@ Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans b
 === Loodgieterskwartier | 0852125588 ===
 Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Loodgieterskwartier.
 
-FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
 • Onbekend paneel reageert op: https://loodgieterskwartier.nl/
 • Wij hebben niet ingelogd zonder uw toestemming.
 
@@ -596,7 +714,7 @@ FEIT (passieve check, geen inlog) — 17-07-2026, 10:10:
 BEWIJS (meetbaar — zelf nakijken):
 • Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
 • Eerste scan: 07-07-2026, 08:00
-• Live hercheck: 17-07-2026, 10:10
+• Live hercheck: 17-07-2026, 10:27
 • Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „Loodgieter - 24/7 spoedservice: 085 212 55 88 - [Gratis] Offerte 24u"
 • Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/d55c372ed7e5.json
   Referentie: d55c372ed7e5
@@ -609,6 +727,43 @@ BEWIJS (meetbaar — zelf nakijken):
 
 ZELF NAKIJKEN — plak in uw browser:
 https://loodgieterskwartier.nl/
+
+Wat op die pagina staat (zonder wachtwoord in te vullen):
+Technische of beheerpagina reageert op deze URL.
+
+Kort uitgelegd:
+Dit type pagina hoort doorgaans niet publiek op internet; beperkte toegang is gebruikelijk.
+
+VakScan-weging: 40/100 (interne prioriteitsscore, geen officieel certificaat).
+
+Aanbod: Website Veilig €299 (vast) — we schermen dit type beheer doorgaans binnen 2 werkdagen af (hosting/pad/toegang). 10 min belletje? Ik laat dezelfde URL zien die u zelf kunt openen. Vandaag of morgen past?
+
+---
+
+=== Mks schilderwerken | 0950635027 ===
+Hoi, Mike van DoekoeWijs — ik werk met vakbedrijven zoals Mks schilderwerken.
+
+FEIT (passieve check, geen inlog) — 17-07-2026, 10:27:
+• Onbekend paneel reageert op: https://mksschilderwerken.nl/
+• Wij hebben niet ingelogd zonder uw toestemming.
+
+
+BEWIJS (meetbaar — zelf nakijken):
+• Passieve VakScan: HTTP GET op publieke URL's (geen inlog, geen poortscan)
+• Eerste scan: 07-07-2026, 07:36
+• Live hercheck: 17-07-2026, 10:27
+• Server antwoordde HTTP 200 — Onbekend paneel, titel pagina: „MKS Schilderwerken, de binnenschilder uit Houten"
+• Scanrapport (open JSON, zelfde feiten als onze tool): https://mikevisser0904.github.io/OFFERTE-WIJS/reports/940bd317871f.json
+  Referentie: 940bd317871f
+• Directe controle-URL uit de scan: https://mksschilderwerken.nl/
+• Zelfde check: plak de controle-URL in uw browser — u ziet dezelfde pagina als onze meting.
+
+
+
+
+
+ZELF NAKIJKEN — plak in uw browser:
+https://mksschilderwerken.nl/
 
 Wat op die pagina staat (zonder wachtwoord in te vullen):
 Technische of beheerpagina reageert op deze URL.
