@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T14:08:08.348Z",
+  "updatedAt": "2026-07-18T17:41:00.926Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
@@ -30,17 +30,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://tafelboom.nl/phpMyAdmin/",
       "bedrijf": "Tafelboom",
       "plaats": "Utrecht",
@@ -53,6 +42,17 @@
     },
     {
       "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
@@ -294,10 +294,10 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     }
