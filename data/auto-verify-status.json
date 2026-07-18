@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-18T10:05:53.537Z",
+  "updatedAt": "2026-07-18T14:08:44.677Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
     "leakVerified": 29,
     "leakFailed": 0,
     "consentChecked": 16,
-    "consentProofOk": 16
+    "consentProofOk": 15
   },
   "leakRows": [
     {
@@ -330,7 +330,7 @@
     {
       "siteUrl": "https://www.voordeelgordijnen.nl",
       "bedrijf": "Voordeelgordijnen",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -367,5 +367,5 @@
     }
   ],
   "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 16 consent OK · 0 failed recheck"
+  "agentPrompt": "29 verified · 15 consent OK · 0 failed recheck"
 }
