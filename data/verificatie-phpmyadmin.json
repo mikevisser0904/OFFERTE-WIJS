@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-07-18T17:40:50.688Z",
+  "verifiedAt": "2026-07-18T21:38:34.748Z",
   "totaal": 27,
-  "loginBereikbaar": 27,
-  "uniekeLoginUrls": 15,
-  "bevestigd": 13,
+  "loginBereikbaar": 22,
+  "uniekeLoginUrls": 12,
+  "bevestigd": 8,
   "hosting_redirect": 14,
   "false_positive": 0,
-  "onbekend": 0,
+  "onbekend": 5,
   "redirect_anders": 0,
   "results": [
     {
@@ -16,14 +16,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
@@ -128,14 +124,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
-      "http": 200,
-      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Firma Fred van Rijn",
@@ -192,14 +184,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://chargecars.nl/phpMyAdmin/",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
-      "http": 200,
-      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -352,14 +340,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
-      "http": 200,
-      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -384,14 +368,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://chargecars.nl/phpMyAdmin/",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
-      "http": 200,
-      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Nuoveni",

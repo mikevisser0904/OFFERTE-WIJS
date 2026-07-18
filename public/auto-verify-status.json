@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-07-18T17:41:44.590Z",
+  "updatedAt": "2026-07-18T21:40:50.370Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
-    "leakVerified": 29,
-    "leakFailed": 0,
+    "leakVerified": 25,
+    "leakFailed": 4,
     "consentChecked": 16,
-    "consentProofOk": 16
+    "consentProofOk": 14
   },
   "leakRows": [
     {
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -69,9 +69,9 @@
       "url": "https://www.boselektrotechniek.nl/",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://firmavanrijn.nl/",
@@ -101,9 +101,9 @@
       "url": "https://chargecars.nl/",
       "bedrijf": "ChargeCars",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.ejvandermeer.nl/",
@@ -197,9 +197,9 @@
       "url": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.ejvandermeer.nl",
@@ -213,9 +213,9 @@
       "url": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://nuoveni.nl",
@@ -264,7 +264,7 @@
     {
       "siteUrl": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -282,7 +282,7 @@
     {
       "siteUrl": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -366,6 +366,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 16 consent OK · 0 failed recheck"
+  "grokPrompt": "auto-verify: 25 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "25 verified · 14 consent OK · 4 failed recheck"
 }

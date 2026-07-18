@@ -1,17 +1,7 @@
 {
-  "updatedAt": "2026-07-18T17:40:50.688Z",
+  "updatedAt": "2026-07-18T21:38:34.748Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
-    {
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
-      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
     {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
@@ -23,30 +13,10 @@
       "http": 200
     },
     {
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "klantUrl": "https://chargecars.nl/",
-      "loginUrl": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
       "loginUrl": "https://nuoveni.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -157,16 +127,6 @@
   ],
   "alleLoginUrls": [
     {
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
-      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
@@ -177,30 +137,10 @@
       "http": 200
     },
     {
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "klantUrl": "https://chargecars.nl/",
-      "loginUrl": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
       "loginUrl": "https://nuoveni.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
