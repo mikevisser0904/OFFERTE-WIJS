@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T13:45:19.139Z",
+  "updatedAt": "2026-07-18T15:12:14.031Z",
   "agent": "optimizer",
   "applyMode": true,
   "metrics": {
@@ -8,9 +8,16 @@
     "outreachCount": 15,
     "leadsTotaal": 184,
     "hitRate": 17.5,
-    "avgMs": 1265
+    "avgMs": 186
   },
   "uitgevoerd": [
+    {
+      "id": "refresh-outreach",
+      "titel": "Outreach verversen (lekken wachten)",
+      "fn": "refreshOutreach",
+      "status": "ok",
+      "result": true
+    },
     {
       "id": "sync-report-index",
       "titel": "Rapport-index syncen",
@@ -35,13 +42,6 @@
   ],
   "aanbevelingen": [
     {
-      "id": "perf-pages",
-      "prioriteit": 5,
-      "type": "grok",
-      "titel": "Trage GitHub Pages",
-      "actie": "Gem. 1265ms — images, static chunks, health checks verminderen"
-    },
-    {
       "id": "mike-actie",
       "prioriteit": 3,
       "type": "mike",
@@ -49,6 +49,6 @@
       "actie": "5 WhatsApps via /actie/ vandaag"
     }
   ],
-  "grokPrompt": "optimizer: Gem. 1265ms — images, static chunks, health checks verminderen",
+  "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
   "pendingGrok": 2
 }
