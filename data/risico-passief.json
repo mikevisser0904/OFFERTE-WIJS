@@ -1,12 +1,23 @@
 {
-  "updatedAt": "2026-07-18T21:38:52.643Z",
+  "updatedAt": "2026-07-19T04:07:38.022Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 24
+    "hoog": 27
   },
   "resultaten": [
+    {
+      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
     {
       "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
@@ -151,6 +162,17 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Firma Fred van Rijn",
       "plaats": "'s-Gravenhage",
@@ -217,6 +239,17 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://chargecars.nl/phpMyAdmin/",
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "klantUrl": "https://chargecars.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://www.ejvandermeer.nl/phpmyadmin/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
@@ -270,31 +303,6 @@
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
       "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
       "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "http": 200,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
-    },
-    {
-      "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://chargecars.nl/phpMyAdmin/",
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "klantUrl": "https://chargecars.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
     }
   ]
 }
