@@ -1,16 +1,16 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-19T15:29:27.642Z",
+  "updatedAt": "2026-07-19T16:41:40.014Z",
   "agents": {
     "health-monitor": {
-      "lastRun": "2026-07-19T12:45:43.950Z",
+      "lastRun": "2026-07-19T16:41:38.969Z",
       "ok": true,
       "healthy": true,
-      "avgResponseMs": 103,
+      "avgResponseMs": 70,
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-07-19T15:29:27.642Z",
+      "lastRun": "2026-07-19T16:41:39.022Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -20,33 +20,33 @@
       "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "maarten-sync": {
-      "lastRun": "2026-07-19T12:45:44.459Z",
+      "lastRun": "2026-07-19T16:41:39.371Z",
       "ok": true,
       "pending": 0,
       "agentPrompt": "maarten-sync OK, geen nieuwe pending"
     },
     "maarten-bouw": {
-      "lastRun": "2026-07-19T12:45:44.491Z",
+      "lastRun": "2026-07-19T16:41:39.407Z",
       "ok": true,
       "pending": 0,
       "eerstePending": null,
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-19T15:12:49.338Z",
+      "lastRun": "2026-07-19T16:41:39.772Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-07-19T15:12:49.952Z",
+      "lastRun": "2026-07-19T16:41:39.907Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
     },
     "outbound-auto": {
-      "lastRun": "2026-07-19T12:45:45.047Z",
+      "lastRun": "2026-07-19T16:41:39.978Z",
       "ok": true,
       "live": true,
       "verzonden": 0,
@@ -54,10 +54,10 @@
       "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-07-19T12:45:45.083Z",
+      "lastRun": "2026-07-19T16:41:40.014Z",
       "ok": true,
       "totaalScore": 75,
-      "agentPrompt": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
+      "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-19T15:12:49.952Z",
+    "updatedAt": "2026-07-19T16:41:39.907Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -135,7 +135,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-19T15:12:49.338Z"
+        "lastRun": "2026-07-19T16:41:39.772Z"
       },
       {
         "id": "auto-verify",
@@ -149,28 +149,28 @@
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 29 lekken",
-        "lastRun": "2026-07-19T14:12:07.429Z"
+        "lastRun": "2026-07-19T16:41:39.022Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 152ms",
-        "lastRun": "2026-07-19T12:45:43.950Z"
+        "detail": "OK 70ms",
+        "lastRun": "2026-07-19T16:41:38.969Z"
       },
       {
         "id": "maarten-sync",
         "naam": "Maarten Sync",
         "status": "ok",
         "detail": "maarten-sync OK, geen nieuwe pending",
-        "lastRun": "2026-07-19T12:45:44.459Z"
+        "lastRun": "2026-07-19T16:41:39.371Z"
       },
       {
         "id": "maarten-bouw",
         "naam": "Maarten Bouw",
         "status": "ok",
         "detail": "0 pending",
-        "lastRun": "2026-07-19T12:45:44.491Z"
+        "lastRun": "2026-07-19T16:41:39.407Z"
       },
       {
         "id": "lead-hunter",
