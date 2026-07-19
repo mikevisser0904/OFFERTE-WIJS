@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-19T01:21:05.202Z",
+  "updatedAt": "2026-07-19T03:50:01.402Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-07-19T01:21:04.335Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-19T01:21:04.973Z",
+      "lastRun": "2026-07-19T03:50:01.145Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-07-19T01:21:05.101Z",
+      "lastRun": "2026-07-19T03:50:01.401Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -61,16 +61,16 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-18T21:40:50.018Z",
+      "lastRun": "2026-07-19T03:50:00.645Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 16,
+      "metBewijs": 20,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
         "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
-        "Rioolservice P. van Adrichem · https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
       ]
     },
     "auto-verify": {
@@ -82,7 +82,7 @@
       "grokPrompt": "auto-verify: 25 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-07-18T15:12:13.367Z",
+      "lastRun": "2026-07-19T03:50:00.659Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-19T01:21:05.101Z",
+    "updatedAt": "2026-07-19T03:50:01.401Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -134,8 +134,8 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-19T01:21:04.973Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-07-19T03:50:01.145Z"
       },
       {
         "id": "auto-verify",
@@ -155,7 +155,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 64ms",
+        "detail": "OK 204ms",
         "lastRun": "2026-07-19T01:21:04.335Z"
       },
       {
@@ -211,29 +211,29 @@
         "id": "verkoop-effectiviteit",
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
-        "detail": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
-        "lastRun": "2026-07-18T20:35:25.880Z"
+        "detail": "Verkoop-effectiviteit 75% · 16 bewijs · 0 contacten deze week",
+        "lastRun": "2026-07-19T01:21:05.202Z"
       },
       {
         "id": "verkoop-bewijs",
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-18T21:40:50.018Z"
+        "lastRun": "2026-07-19T03:50:00.645Z"
       },
       {
         "id": "outbound-auto",
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-07-18T20:35:25.846Z"
+        "lastRun": "2026-07-19T01:21:05.168Z"
       },
       {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-07-18T15:12:13.367Z"
+        "lastRun": "2026-07-19T03:50:00.659Z"
       },
       {
         "id": "seo",
