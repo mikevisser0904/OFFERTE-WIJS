@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-13T09:51:32.954Z",
+  "generatedAt": "2026-07-20T05:46:50.390Z",
   "bron": "osm",
-  "totaal": 184,
+  "totaal": 185,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 38
+      "count": 36
     },
     {
       "plaats": "Amersfoort",
@@ -21,7 +21,7 @@
     },
     {
       "plaats": "Den Haag",
-      "count": 16
+      "count": 18
     },
     {
       "plaats": "Haarlem",
@@ -1682,6 +1682,15 @@
       "url": "https://aluku.nl",
       "telefoon": null,
       "email": "info@aluku.nl",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Timmeratelier Houtekiet",
+      "plaats": "'s-Gravenhage",
+      "url": "https://houtekiettimmeratelier.nl/contact",
+      "telefoon": null,
+      "email": null,
       "categorie": "kozijnen",
       "prioriteit": "scan-eerst"
     }
