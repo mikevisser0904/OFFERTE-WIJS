@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-19T21:34:27.498Z",
+  "updatedAt": "2026-07-20T04:27:23.220Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 27
+    "hoog": 26
   },
   "resultaten": [
     {
@@ -298,11 +298,8 @@
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
       "klantUrl": "https://klompelektrotechniek.nl",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
