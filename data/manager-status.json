@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T04:22:18.409Z",
+  "updatedAt": "2026-07-20T06:36:39.121Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -24,48 +24,48 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-07-20T04:00:10.908Z"
+      "lastRun": "2026-07-20T06:36:38.809Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
       "detail": "29 verified · 16 consent OK · 0 failed recheck",
-      "lastRun": "2026-07-19T21:35:17.895Z"
+      "lastRun": "2026-07-20T04:28:07.250Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 29 lekken",
-      "lastRun": "2026-07-20T04:12:09.424Z"
+      "lastRun": "2026-07-20T06:36:38.019Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 70ms",
-      "lastRun": "2026-07-20T01:24:34.397Z"
+      "detail": "OK 185ms",
+      "lastRun": "2026-07-20T06:36:37.957Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-07-20T01:24:35.260Z"
+      "lastRun": "2026-07-20T06:36:38.411Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-07-20T01:24:35.293Z"
+      "lastRun": "2026-07-20T06:36:38.453Z"
     },
     {
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "status": "ok",
-      "detail": "184 leads · 0 queue",
+      "detail": "185 leads · 0 queue",
       "lastRun": "2026-07-13T09:52:32.506Z"
     },
     {
@@ -108,7 +108,7 @@
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-07-19T23:08:25.626Z"
+      "lastRun": "2026-07-20T04:28:06.943Z"
     },
     {
       "id": "outbound-auto",
@@ -157,7 +157,7 @@
     "leakCount": 29,
     "queuePending": 0,
     "outreachCount": 15,
-    "leadsTotaal": 184,
+    "leadsTotaal": 185,
     "pendingMaarten": 0
   }
 }
