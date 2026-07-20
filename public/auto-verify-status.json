@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T07:46:43.199Z",
+  "updatedAt": "2026-07-20T11:28:51.716Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -10,25 +10,17 @@
   },
   "leakRows": [
     {
+      "url": "https://vogelaarschilder.nl/",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://www.willemseelektrotechniek.nl/",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -42,9 +34,17 @@
       "status": "verified"
     },
     {
-      "url": "https://vogelaarschilder.nl/",
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "url": "https://www.willemseelektrotechniek.nl/",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.boselektrotechniek.nl/",
+      "bedrijf": "Bos Elektrotechniek",
+      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -66,9 +66,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.boselektrotechniek.nl/",
-      "bedrijf": "Bos Elektrotechniek",
-      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
