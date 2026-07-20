@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T08:23:34.039Z",
+  "generatedAt": "2026-07-20T08:13:39.203Z",
   "totaalMetLek": 16,
   "rijen": [
     {
@@ -211,22 +211,6 @@
       "reportId": "fe9d43611024"
     },
     {
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "url": "https://vogelaarschilder.nl",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "hosting102.resellerdns.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 80,
-      "reportId": "d8987ac955c8"
-    },
-    {
       "bedrijf": "Rioolservice P. van Adrichem",
       "plaats": "Moordrecht",
       "url": "https://rioolservice-pvanadrichem.nl",
@@ -241,6 +225,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 100,
       "reportId": "cb76ce138bc5"
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "url": "https://vogelaarschilder.nl",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "hosting102.resellerdns.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 80,
+      "reportId": "d8987ac955c8"
     },
     {
       "bedrijf": "Klomp Elektrotechniek",

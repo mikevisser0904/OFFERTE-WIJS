@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-20T07:46:43.200Z",
+  "updatedAt": "2026-07-20T08:13:51.157Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-07-20T06:36:37.957Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-07-20T07:46:43.193Z",
+      "lastRun": "2026-07-20T08:13:39.617Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-20T07:46:43.030Z",
+      "lastRun": "2026-07-20T08:13:51.141Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 20,
@@ -82,7 +82,7 @@
       "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-07-20T07:26:14.129Z",
+      "lastRun": "2026-07-20T08:13:51.157Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -94,7 +94,7 @@
       ]
     },
     "klanten-lek": {
-      "lastRun": "2026-07-13T08:23:34.040Z",
+      "lastRun": "2026-07-20T08:13:39.204Z",
       "ok": true,
       "gescand": 60,
       "metLek": 16,
