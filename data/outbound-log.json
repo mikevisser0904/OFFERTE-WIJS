@@ -2380,6 +2380,28 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-21T20:56:29.639Z",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "url": "https://www.willemseelektrotechniek.nl",
+      "host": "willemseelektrotechniek.nl",
+      "email": "info@willemseelektrotechniek.nl",
+      "phone": "31235739278",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
