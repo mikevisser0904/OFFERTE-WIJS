@@ -1,13 +1,44 @@
 {
-  "updatedAt": "2026-07-21T13:51:04.243Z",
+  "updatedAt": "2026-07-21T17:04:51.913Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 5,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "status": "simulated",
+      "email": "info@firmavanrijn.nl",
+      "phone": "31703211400"
+    },
+    {
+      "bedrijf": "Textilia",
+      "status": "simulated",
+      "email": "info@textilia-dordrecht.nl",
+      "phone": "31639112809"
+    },
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "status": "simulated",
+      "email": "info@boselektrotechniek.nl",
+      "phone": "31520585539"
+    },
+    {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "status": "simulated",
+      "email": "info@rioolservice-pvanadrichem.nl",
+      "phone": "31653373931"
+    },
+    {
+      "bedrijf": "Reinaerde Remake Meubel",
+      "status": "simulated",
+      "email": "klantadvies@reinaerde.nl",
+      "phone": "31623369577"
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }

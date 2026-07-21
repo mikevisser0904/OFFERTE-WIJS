@@ -2270,6 +2270,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-21T17:04:51.913Z",
+      "bedrijf": "Firma Fred van Rijn",
+      "url": "https://firmavanrijn.nl",
+      "host": "firmavanrijn.nl",
+      "email": "info@firmavanrijn.nl",
+      "phone": "31703211400",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-21T17:04:51.913Z",
+      "bedrijf": "Textilia",
+      "url": "https://www.textilia-dordrecht.nl",
+      "host": "textilia-dordrecht.nl",
+      "email": "info@textilia-dordrecht.nl",
+      "phone": "31639112809",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-21T17:04:51.913Z",
+      "bedrijf": "Bos Elektrotechniek",
+      "url": "https://www.boselektrotechniek.nl",
+      "host": "boselektrotechniek.nl",
+      "email": "info@boselektrotechniek.nl",
+      "phone": "31520585539",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-21T17:04:51.913Z",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "url": "https://rioolservice-pvanadrichem.nl",
+      "host": "rioolservice-pvanadrichem.nl",
+      "email": "info@rioolservice-pvanadrichem.nl",
+      "phone": "31653373931",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-21T17:04:51.913Z",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "host": "reinaerde.nl",
+      "email": "klantadvies@reinaerde.nl",
+      "phone": "31623369577",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
