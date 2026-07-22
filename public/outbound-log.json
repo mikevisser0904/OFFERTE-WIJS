@@ -2424,6 +2424,28 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-22T10:11:51.002Z",
+      "bedrijf": "ChargeCars",
+      "url": "https://chargecars.nl",
+      "host": "chargecars.nl",
+      "email": "info@chargecars.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
