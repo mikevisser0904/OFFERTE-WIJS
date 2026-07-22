@@ -1,20 +1,13 @@
 {
-  "updatedAt": "2026-07-21T20:56:29.639Z",
+  "updatedAt": "2026-07-22T01:19:41.163Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 1,
-  "verwerkt": 1,
+  "gepland": 0,
+  "verwerkt": 0,
   "verzonden": 0,
-  "gesimuleerd": 1,
+  "gesimuleerd": 0,
   "mislukt": 0,
-  "items": [
-    {
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "status": "simulated",
-      "email": "info@willemseelektrotechniek.nl",
-      "phone": "31235739278"
-    }
-  ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 1 verwerkt",
+  "items": [],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
