@@ -1,13 +1,20 @@
 {
-  "updatedAt": "2026-07-22T06:19:30.967Z",
+  "updatedAt": "2026-07-22T09:26:38.518Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 1,
+  "verwerkt": 1,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 1,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Amer Houttechniek",
+      "status": "simulated",
+      "email": "info@amer-hout.nl",
+      "phone": null
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 1 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
