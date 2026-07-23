@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T05:50:13.105Z",
+  "generatedAt": "2026-07-23T05:53:51.475Z",
   "instructie": "Werk deze lijst af vandaag: bel-nu eerst, dan whatsapp met telefoon, rest na VakScan.",
   "top": [
     {
@@ -41,26 +41,6 @@
       "heeftHttps": false,
       "whatsappUrl": "https://wa.me/31356024987?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "Voordeelgordijnen",
-      "plaats": "Amsterdam",
-      "url": "https://www.voordeelgordijnen.nl",
-      "telefoon": "+31 20 3638567",
-      "email": "info@voordeelgordijnen.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 100,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "sterke niche: zonwering",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31203638567?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "bel-nu"
     },
     {
       "bedrijf": "AAD Elektrotechniek & Onderhoudsbedrijf",
@@ -332,6 +312,27 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Voordeelgordijnen",
+      "plaats": "Amsterdam",
+      "url": "https://www.voordeelgordijnen.nl",
+      "telefoon": "+31 20 3638567",
+      "email": "info@voordeelgordijnen.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 92,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "sterke niche: zonwering",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31203638567?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
