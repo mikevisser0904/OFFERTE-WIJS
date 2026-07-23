@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T10:09:26.078Z",
+  "updatedAt": "2026-07-23T13:19:12.731Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -9,34 +9,34 @@
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "MIRvA",
+      "bedrijf": "Van den Hoogen engineering",
       "status": "simulated",
-      "email": "info@mirva.nl",
-      "phone": "31332587699"
+      "email": "info@vandenhoogen.nl",
+      "phone": "31332055000"
     },
     {
-      "bedrijf": "Amstelland Kozijnen",
+      "bedrijf": "Groenewegen",
       "status": "simulated",
-      "email": "info@amstellandkozijnen.nl",
-      "phone": "31206405166"
+      "email": "info@groenewegendelft.nl",
+      "phone": "31152612150"
     },
     {
-      "bedrijf": "Schipper Kozijnen",
+      "bedrijf": "De Lamellengigant",
       "status": "simulated",
-      "email": "klantenservice@schipperkozijnen.nl",
-      "phone": "31857921200"
+      "email": "info@delamellengigant.nl",
+      "phone": "31703631123"
     },
     {
-      "bedrijf": "Bruens Electrotechniek",
+      "bedrijf": "Woningtextielhuis",
       "status": "simulated",
-      "email": "info@bruens-electrotechniek.nl",
-      "phone": "31206326824"
+      "email": "og-c@h.webp",
+      "phone": null
     },
     {
-      "bedrijf": "Knook Deuren en Kozijnen",
+      "bedrijf": "Kiwatt",
       "status": "simulated",
-      "email": "info@knookmetaal.nl",
-      "phone": "31628263742"
+      "email": "info@kiwatt.nl",
+      "phone": null
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
