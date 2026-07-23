@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-23T17:07:30.779Z",
+  "updatedAt": "2026-07-23T17:44:26.276Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-07-23T17:07:29.206Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-07-23T17:07:30.457Z",
+      "lastRun": "2026-07-23T17:44:25.930Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-07-23T17:07:30.594Z",
+      "lastRun": "2026-07-23T17:44:26.276Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-07-23T14:56:00.996Z",
+      "lastRun": "2026-07-23T17:44:25.327Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 20,
@@ -82,7 +82,7 @@
       "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-07-23T06:39:18.472Z",
+      "lastRun": "2026-07-23T17:44:25.342Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-07-23T17:07:30.594Z",
+    "updatedAt": "2026-07-23T17:44:26.276Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -134,8 +134,8 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-07-23T17:07:30.457Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-07-23T17:44:25.930Z"
       },
       {
         "id": "auto-verify",
@@ -155,7 +155,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 152ms",
+        "detail": "OK 151ms",
         "lastRun": "2026-07-23T17:07:29.206Z"
       },
       {
@@ -212,28 +212,28 @@
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
         "detail": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
-        "lastRun": "2026-07-23T14:01:19.777Z"
+        "lastRun": "2026-07-23T17:07:30.779Z"
       },
       {
         "id": "verkoop-bewijs",
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-07-23T14:56:00.996Z"
+        "lastRun": "2026-07-23T17:44:25.327Z"
       },
       {
         "id": "outbound-auto",
         "naam": "Outbound auto",
         "status": "ok",
-        "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-07-23T14:01:19.737Z"
+        "detail": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+        "lastRun": "2026-07-23T17:07:30.660Z"
       },
       {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-07-23T06:39:18.472Z"
+        "lastRun": "2026-07-23T17:44:25.342Z"
       },
       {
         "id": "seo",
