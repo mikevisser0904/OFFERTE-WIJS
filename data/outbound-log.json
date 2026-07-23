@@ -2666,6 +2666,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-23T09:24:43.901Z",
+      "bedrijf": "Atelier-AW",
+      "url": "https://www.atelieraw.nl",
+      "host": "atelieraw.nl",
+      "email": "aw@atelieraw.nl",
+      "phone": "31618732101",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T09:24:43.901Z",
+      "bedrijf": "Bectro",
+      "url": "https://www.bectro.nl",
+      "host": "bectro.nl",
+      "email": "info@bectro.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T09:24:43.901Z",
+      "bedrijf": "Delektro",
+      "url": "https://www.delektro.nl",
+      "host": "delektro.nl",
+      "email": "info@delektro.nl",
+      "phone": "31827190372",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T09:24:43.901Z",
+      "bedrijf": "Houtindustrie Amersfoort",
+      "url": "https://houtindustrie-amersfoort.nl",
+      "host": "houtindustrie-amersfoort.nl",
+      "email": "info@houtindustrie-amersfoort.nl",
+      "phone": "31334612241",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T09:24:43.901Z",
+      "bedrijf": "i-Kozijn",
+      "url": "https://www.i-kozijn.nl",
+      "host": "i-kozijn.nl",
+      "email": "info@i-kozijn.nl",
+      "phone": "31332850793",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
