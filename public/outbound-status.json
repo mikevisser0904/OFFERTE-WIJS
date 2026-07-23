@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T17:07:30.658Z",
+  "updatedAt": "2026-07-23T20:49:08.571Z",
   "agent": "outbound-auto",
   "live": true,
   "gepland": 5,
@@ -9,34 +9,34 @@
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "Mesut Timmerfabriek",
+      "bedrijf": "Woordes Bouw- & Timmerwerken",
       "status": "simulated",
-      "email": "info@mesuttimmerfabriek.nl",
+      "email": "info@woordesbouw.nl",
       "phone": null
     },
     {
-      "bedrijf": "STB",
+      "bedrijf": "ZENS Maatwerk",
       "status": "simulated",
-      "email": "info@stb.eu",
-      "phone": "31487776258"
+      "email": "info@zensmaatwerk.nl",
+      "phone": null
     },
     {
-      "bedrijf": "Ventana Zonwering",
+      "bedrijf": "Rojas Zonwering & Interieur",
       "status": "simulated",
-      "email": "info@ventana.nl",
-      "phone": "31306006560"
+      "email": "og-c@h.webp",
+      "phone": null
     },
     {
-      "bedrijf": "De Schrijn",
+      "bedrijf": "CoolAir Nederland",
       "status": "simulated",
-      "email": "info@deschrijn.nl",
-      "phone": "31343562829"
+      "email": "info@coolairnederland.nl",
+      "phone": "31299405296"
     },
     {
-      "bedrijf": "Timmerfabriek Verhagen",
+      "bedrijf": "Koel-My",
       "status": "simulated",
-      "email": "info@timmerfabriekverhagen.nl",
-      "phone": "31846899000"
+      "email": "info@koelmy.nl",
+      "phone": null
     }
   ],
   "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",

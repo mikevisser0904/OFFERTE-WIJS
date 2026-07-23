@@ -3106,6 +3106,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-23T20:49:08.571Z",
+      "bedrijf": "Woordes Bouw- & Timmerwerken",
+      "url": "https://www.woordesbouw.nl",
+      "host": "woordesbouw.nl",
+      "email": "info@woordesbouw.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T20:49:08.571Z",
+      "bedrijf": "ZENS Maatwerk",
+      "url": "https://zensmaatwerk.nl",
+      "host": "zensmaatwerk.nl",
+      "email": "info@zensmaatwerk.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T20:49:08.571Z",
+      "bedrijf": "Rojas Zonwering & Interieur",
+      "url": "https://www.rojas-colorsathome.nl",
+      "host": "rojas-colorsathome.nl",
+      "email": "og-c@h.webp",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T20:49:08.571Z",
+      "bedrijf": "CoolAir Nederland",
+      "url": "https://www.coolairnederland.nl",
+      "host": "coolairnederland.nl",
+      "email": "info@coolairnederland.nl",
+      "phone": "31299405296",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-23T20:49:08.571Z",
+      "bedrijf": "Koel-My",
+      "url": "https://koelmy.nl",
+      "host": "koelmy.nl",
+      "email": "info@koelmy.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
