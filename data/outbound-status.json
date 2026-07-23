@@ -1,44 +1,13 @@
 {
-  "updatedAt": "2026-07-23T13:19:12.731Z",
+  "updatedAt": "2026-07-23T14:01:19.735Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 5,
-  "verwerkt": 5,
+  "gepland": 0,
+  "verwerkt": 0,
   "verzonden": 0,
-  "gesimuleerd": 5,
+  "gesimuleerd": 0,
   "mislukt": 0,
-  "items": [
-    {
-      "bedrijf": "Van den Hoogen engineering",
-      "status": "simulated",
-      "email": "info@vandenhoogen.nl",
-      "phone": "31332055000"
-    },
-    {
-      "bedrijf": "Groenewegen",
-      "status": "simulated",
-      "email": "info@groenewegendelft.nl",
-      "phone": "31152612150"
-    },
-    {
-      "bedrijf": "De Lamellengigant",
-      "status": "simulated",
-      "email": "info@delamellengigant.nl",
-      "phone": "31703631123"
-    },
-    {
-      "bedrijf": "Woningtextielhuis",
-      "status": "simulated",
-      "email": "og-c@h.webp",
-      "phone": null
-    },
-    {
-      "bedrijf": "Kiwatt",
-      "status": "simulated",
-      "email": "info@kiwatt.nl",
-      "phone": null
-    }
-  ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+  "items": [],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }

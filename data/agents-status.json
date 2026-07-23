@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-07-23T13:19:13.053Z",
+  "updatedAt": "2026-07-23T14:01:19.776Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-07-23T13:19:11.586Z",
@@ -46,15 +46,15 @@
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
     },
     "outbound-auto": {
-      "lastRun": "2026-07-23T13:19:12.733Z",
+      "lastRun": "2026-07-23T14:01:19.737Z",
       "ok": true,
       "live": true,
       "verzonden": 0,
-      "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+      "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
       "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-07-23T13:19:13.053Z",
+      "lastRun": "2026-07-23T14:01:19.777Z",
       "ok": true,
       "totaalScore": 75,
       "agentPrompt": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
