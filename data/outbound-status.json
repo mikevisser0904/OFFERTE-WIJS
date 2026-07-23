@@ -1,13 +1,44 @@
 {
-  "updatedAt": "2026-07-23T14:01:19.735Z",
+  "updatedAt": "2026-07-23T17:07:30.658Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 5,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Mesut Timmerfabriek",
+      "status": "simulated",
+      "email": "info@mesuttimmerfabriek.nl",
+      "phone": null
+    },
+    {
+      "bedrijf": "STB",
+      "status": "simulated",
+      "email": "info@stb.eu",
+      "phone": "31487776258"
+    },
+    {
+      "bedrijf": "Ventana Zonwering",
+      "status": "simulated",
+      "email": "info@ventana.nl",
+      "phone": "31306006560"
+    },
+    {
+      "bedrijf": "De Schrijn",
+      "status": "simulated",
+      "email": "info@deschrijn.nl",
+      "phone": "31343562829"
+    },
+    {
+      "bedrijf": "Timmerfabriek Verhagen",
+      "status": "simulated",
+      "email": "info@timmerfabriekverhagen.nl",
+      "phone": "31846899000"
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
