@@ -3216,6 +3216,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-24T01:23:13.940Z",
+      "bedrijf": "Mazurel Installatietechniek",
+      "url": "https://www.mazurel.nl",
+      "host": "mazurel.nl",
+      "email": "office@mazurel.com",
+      "phone": "31299421024",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T01:23:13.940Z",
+      "bedrijf": "Ramenfabriek op 't Hoog",
+      "url": "https://www.opthoog.nl/contact/vestigingen/purmerend",
+      "host": "opthoog.nl",
+      "email": "ramenfabriek@opthoog.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T01:23:13.940Z",
+      "bedrijf": "Decosier",
+      "url": "https://www.decosier.nl",
+      "host": "decosier.nl",
+      "email": "info@decosier.nl",
+      "phone": "31180462371",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T01:23:13.940Z",
+      "bedrijf": "De Gier",
+      "url": "https://degierwonen.nl",
+      "host": "degierwonen.nl",
+      "email": "info@degierwonen.nl",
+      "phone": "31104141404",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T01:23:13.940Z",
+      "bedrijf": "Harmony Gordijnen",
+      "url": "https://harmonygordijnen.nl",
+      "host": "harmonygordijnen.nl",
+      "email": "info@harmonygordijnen.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
