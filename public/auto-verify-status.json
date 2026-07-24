@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-24T10:39:28.742Z",
+  "updatedAt": "2026-07-24T14:26:19.161Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
-    "leakVerified": 29,
-    "leakFailed": 0,
+    "leakVerified": 27,
+    "leakFailed": 2,
     "consentChecked": 16,
-    "consentProofOk": 16
+    "consentProofOk": 15
   },
   "leakRows": [
     {
@@ -30,7 +30,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -38,7 +38,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -101,9 +101,9 @@
       "url": "https://chargecars.nl/",
       "bedrijf": "ChargeCars",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.ejvandermeer.nl/",
@@ -213,9 +213,9 @@
       "url": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://nuoveni.nl",
@@ -282,7 +282,7 @@
     {
       "siteUrl": "https://chargecars.nl",
       "bedrijf": "ChargeCars",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -366,6 +366,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 16 consent OK · 0 failed recheck"
+  "grokPrompt": "auto-verify: 27 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "27 verified · 15 consent OK · 2 failed recheck"
 }

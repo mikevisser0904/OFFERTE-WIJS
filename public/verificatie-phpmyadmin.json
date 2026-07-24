@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-07-24T10:38:39.696Z",
+  "verifiedAt": "2026-07-24T14:25:37.644Z",
   "totaal": 27,
-  "loginBereikbaar": 27,
-  "uniekeLoginUrls": 15,
-  "bevestigd": 13,
+  "loginBereikbaar": 25,
+  "uniekeLoginUrls": 14,
+  "bevestigd": 11,
   "hosting_redirect": 14,
   "false_positive": 0,
-  "onbekend": 0,
+  "onbekend": 2,
   "redirect_anders": 0,
   "results": [
     {
@@ -192,14 +192,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://chargecars.nl/phpMyAdmin/",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
-      "http": 200,
-      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -384,14 +380,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://chargecars.nl/phpMyAdmin/",
       "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (chargecars.nl)",
-      "http": 200,
-      "finalUrl": "https://chargecars.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Nuoveni",

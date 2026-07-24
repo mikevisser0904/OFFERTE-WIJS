@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-24T10:38:49.152Z",
+  "updatedAt": "2026-07-24T14:25:45.766Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 27
+    "hoog": 26
   },
   "resultaten": [
     {
@@ -239,17 +239,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://chargecars.nl/phpMyAdmin/",
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "klantUrl": "https://chargecars.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://www.ejvandermeer.nl/phpmyadmin/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
@@ -303,6 +292,15 @@
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
       "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
       "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://chargecars.nl/phpMyAdmin/",
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "klantUrl": "https://chargecars.nl/",
+      "http": 404,
+      "niveau": "geen",
+      "reden": "Geen phpMyAdmin (site/404)"
     }
   ]
 }
