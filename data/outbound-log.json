@@ -3326,6 +3326,116 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-07-24T06:17:10.226Z",
+      "bedrijf": "Tulay",
+      "url": "https://tulay.nl",
+      "host": "tulay.nl",
+      "email": "info@tulay.nl",
+      "phone": "31102420088",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T06:17:10.226Z",
+      "bedrijf": "Merwede tapijten",
+      "url": "https://www.merwede-tapijten.nl",
+      "host": "merwede-tapijten.nl",
+      "email": "og-c@h.webp",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T06:17:10.226Z",
+      "bedrijf": "Arena Gordijnenland",
+      "url": "https://arenagordijnenland.nl",
+      "host": "arenagordijnenland.nl",
+      "email": "arenagordijnenland@live.nl",
+      "phone": "31984774797",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T06:17:10.226Z",
+      "bedrijf": "De Kroon Zonwering",
+      "url": "https://www.dekroonzonwering.nl",
+      "host": "dekroonzonwering.nl",
+      "email": "contact@dekroonzonwering.nl",
+      "phone": "31302440149",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
+    },
+    {
+      "at": "2026-07-24T06:17:10.226Z",
+      "bedrijf": "Loodgietersbedrijf Utrecht",
+      "url": "https://loodgietersbedrijfutrecht.nl",
+      "host": "loodgietersbedrijfutrecht.nl",
+      "email": "info@loodgietersbedrijfutrecht.nl",
+      "phone": "31673562002",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
