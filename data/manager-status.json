@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T07:08:45.722Z",
+  "updatedAt": "2026-07-24T10:04:30.215Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -24,42 +24,42 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-07-24T06:37:49.063Z"
+      "lastRun": "2026-07-24T10:04:29.878Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
       "detail": "29 verified · 16 consent OK · 0 failed recheck",
-      "lastRun": "2026-07-24T03:59:46.990Z"
+      "lastRun": "2026-07-24T07:18:47.929Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 29 lekken",
-      "lastRun": "2026-07-24T06:44:49.111Z"
+      "lastRun": "2026-07-24T10:04:29.095Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 176ms",
-      "lastRun": "2026-07-24T06:17:08.790Z"
+      "detail": "OK 160ms",
+      "lastRun": "2026-07-24T10:04:29.044Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-07-24T06:17:09.443Z"
+      "lastRun": "2026-07-24T10:04:29.478Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-07-24T06:17:09.475Z"
+      "lastRun": "2026-07-24T10:04:29.509Z"
     },
     {
       "id": "lead-hunter",
@@ -101,21 +101,21 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 20 bewijs · 0 contacten deze week",
-      "lastRun": "2026-07-24T06:17:10.546Z"
+      "lastRun": "2026-07-24T09:22:14.224Z"
     },
     {
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-07-24T03:59:46.723Z"
+      "lastRun": "2026-07-24T07:18:47.387Z"
     },
     {
       "id": "outbound-auto",
       "naam": "Outbound auto",
       "status": "ok",
       "detail": "Outbound LIVE: 0 verzonden · 5 verwerkt",
-      "lastRun": "2026-07-24T06:17:10.228Z"
+      "lastRun": "2026-07-24T09:22:13.864Z"
     },
     {
       "id": "outreach",
