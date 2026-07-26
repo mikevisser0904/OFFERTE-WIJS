@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T07:19:49.518Z",
+  "updatedAt": "2026-07-26T10:23:19.755Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -78,7 +78,7 @@
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
