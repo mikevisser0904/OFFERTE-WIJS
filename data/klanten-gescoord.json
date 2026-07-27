@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T06:06:23.289Z",
+  "generatedAt": "2026-07-27T06:30:24.042Z",
   "totaal": 185,
   "metTelefoon": 98,
   "leakMatches": 16,
@@ -1792,6 +1792,24 @@
       "actie": "bel-nu"
     },
     {
+      "bedrijf": "BOS Groep Techniek",
+      "plaats": "Houten",
+      "url": "https://www.bosgroep.com",
+      "telefoon": "+31 30 740 0444",
+      "email": null,
+      "categorie": "dakdekker",
+      "prioriteit": "scan-eerst",
+      "score": 62,
+      "redenen": [
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31307400444?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "Verzijl De Woonprofessionals",
       "plaats": "Nieuw-Lekkerland",
       "url": "https://verzijlbv.nl",
@@ -2260,24 +2278,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Kilim Tapijt & Vinyl",
-      "plaats": "Amsterdam",
-      "url": "https://www.kilim-tapijt-vinyl.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Protectsun",
       "plaats": "Amsterdam",
       "url": "https://www.protectsun.nl",
@@ -2728,6 +2728,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
+      "plaats": "Leidschendam",
+      "url": "https://www.fonteinelektrotechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Lameko zonwering",
       "plaats": "Leidschendam",
       "url": "https://www.lameko.nl",
@@ -2792,6 +2810,24 @@
       "score": 52,
       "redenen": [
         "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "De Klussenier",
+      "plaats": "Rotterdam",
+      "url": "https://wimdejong.klussenier.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: kozijnen"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3272,25 +3308,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "BOS Groep Techniek",
-      "plaats": "Houten",
-      "url": "https://www.bosgroep.com",
-      "telefoon": "+31 30 740 0444",
-      "email": null,
-      "categorie": "dakdekker",
-      "prioriteit": "scan-eerst",
-      "score": 27,
-      "redenen": [
-        "telefoon bekend",
-        "site reageert slecht"
-      ],
-      "aanbod": "Google Start €299",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31307400444?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Quick Paint",
       "plaats": "Rotterdam",
       "url": "https://www.quickpaint.nl",
@@ -3329,6 +3346,25 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Kilim Tapijt & Vinyl",
+      "plaats": "Amsterdam",
+      "url": "https://www.kilim-tapijt-vinyl.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Ehi Stolle",
       "plaats": "Bunschoten-Spakenburg",
       "url": "https://www.ehi-stolle.nl",
@@ -3351,44 +3387,6 @@
       "bedrijf": "Algemene Houthandel & Timmerfabriek van der Meer",
       "plaats": "Delft",
       "url": "http://www.meerhouthandel.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: kozijnen",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
-      "plaats": "Leidschendam",
-      "url": "https://www.fonteinelektrotechniek.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: elektricien",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "De Klussenier",
-      "plaats": "Rotterdam",
-      "url": "https://wimdejong.klussenier.nl",
       "telefoon": null,
       "email": null,
       "categorie": "kozijnen",
