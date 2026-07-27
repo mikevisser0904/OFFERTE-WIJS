@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T08:07:54.683Z",
+  "updatedAt": "2026-07-27T11:59:45.880Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -13,14 +13,6 @@
       "url": "https://vogelaarschilder.nl/",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -42,9 +34,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.boselektrotechniek.nl/",
-      "bedrijf": "Bos Elektrotechniek",
-      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -66,17 +58,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://firmavanrijn.nl/",
-      "bedrijf": "Firma Fred van Rijn",
-      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://www.boselektrotechniek.nl/",
+      "bedrijf": "Bos Elektrotechniek",
+      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -94,22 +78,38 @@
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
+      "proofOk": false,
+      "status": "verified"
+    },
+    {
+      "url": "https://firmavanrijn.nl/",
+      "bedrijf": "Firma Fred van Rijn",
+      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
     {
-      "url": "https://chargecars.nl/",
-      "bedrijf": "ChargeCars",
-      "evidence": "https://chargecars.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.ejvandermeer.nl/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
       "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.voordeelgordijnen.nl/",
+      "bedrijf": "Voordeelgordijnen",
+      "evidence": "https://www.voordeelgordijnen.nl/.env",
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -122,12 +122,12 @@
       "status": "verified"
     },
     {
-      "url": "https://www.voordeelgordijnen.nl/",
-      "bedrijf": "Voordeelgordijnen",
-      "evidence": "https://www.voordeelgordijnen.nl/.env",
+      "url": "https://chargecars.nl/",
+      "bedrijf": "ChargeCars",
+      "evidence": "https://chargecars.nl/phpMyAdmin/",
       "dbOk": false,
-      "proofOk": true,
-      "status": "verified"
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.amer-hout.nl",
