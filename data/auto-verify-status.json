@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-28T03:59:49.747Z",
+  "updatedAt": "2026-07-28T07:25:10.074Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
-    "leakVerified": 25,
-    "leakFailed": 4,
+    "leakVerified": 27,
+    "leakFailed": 2,
     "consentChecked": 16,
-    "consentProofOk": 14
+    "consentProofOk": 15
   },
   "leakRows": [
     {
@@ -30,7 +30,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -61,9 +61,9 @@
       "url": "https://www.boselektrotechniek.nl/",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.textilia-dordrecht.nl/",
@@ -93,7 +93,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
@@ -197,9 +197,9 @@
       "url": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.ejvandermeer.nl",
@@ -264,7 +264,7 @@
     {
       "siteUrl": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -366,6 +366,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 25 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "25 verified · 14 consent OK · 4 failed recheck"
+  "grokPrompt": "auto-verify: 27 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "27 verified · 15 consent OK · 2 failed recheck"
 }

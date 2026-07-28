@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-07-28T03:57:26.050Z",
+  "updatedAt": "2026-07-28T07:24:16.747Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
     {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
@@ -17,6 +27,16 @@
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
       "loginUrl": "https://nuoveni.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -127,6 +147,16 @@
   ],
   "alleLoginUrls": [
     {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
@@ -141,6 +171,16 @@
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
       "loginUrl": "https://nuoveni.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",

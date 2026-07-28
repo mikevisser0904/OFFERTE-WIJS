@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-07-28T03:57:26.050Z",
+  "verifiedAt": "2026-07-28T07:24:16.747Z",
   "totaal": 27,
-  "loginBereikbaar": 22,
-  "uniekeLoginUrls": 12,
-  "bevestigd": 8,
+  "loginBereikbaar": 25,
+  "uniekeLoginUrls": 14,
+  "bevestigd": 11,
   "hosting_redirect": 14,
   "false_positive": 0,
-  "onbekend": 5,
+  "onbekend": 2,
   "redirect_anders": 0,
   "results": [
     {
@@ -112,10 +112,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Textilia",
@@ -172,10 +176,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -340,10 +348,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
