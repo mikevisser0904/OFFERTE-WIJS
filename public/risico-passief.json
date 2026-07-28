@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-28T11:02:05.527Z",
+  "updatedAt": "2026-07-28T15:05:49.983Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 26
+    "hoog": 25
   },
   "resultaten": [
     {
@@ -195,17 +195,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Het Interieur",
-      "plaats": "Amsterdam",
-      "klantUrl": "https://hetinterieur.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Firma Fred van Rijn",
       "plaats": "'s-Gravenhage",
@@ -301,6 +290,14 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
+    },
+    {
+      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
