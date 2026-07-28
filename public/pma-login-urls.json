@@ -1,17 +1,7 @@
 {
-  "updatedAt": "2026-07-27T21:47:20.784Z",
+  "updatedAt": "2026-07-28T03:57:26.050Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
-    {
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
-      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
     {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
@@ -136,16 +126,6 @@
     }
   ],
   "alleLoginUrls": [
-    {
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
-      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
     {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
