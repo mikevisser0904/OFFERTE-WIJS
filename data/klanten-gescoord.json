@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T05:52:47.258Z",
+  "generatedAt": "2026-07-30T05:41:35.465Z",
   "totaal": 185,
   "metTelefoon": 98,
   "leakMatches": 16,
@@ -122,26 +122,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31182375823?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "url": "https://chargecars.nl",
-      "telefoon": "+31 85 130 6433",
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 100,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "sterke niche: elektricien",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31851306433?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
@@ -352,6 +332,27 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "url": "https://chargecars.nl",
+      "telefoon": "+31 85 130 6433",
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 84,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "sterke niche: elektricien",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31851306433?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
@@ -1229,25 +1230,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Eradus Zonwering",
-      "plaats": "Delft",
-      "url": "https://www.eraduszonwering.nl",
-      "telefoon": "+31 15 213 5028",
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 74,
-      "redenen": [
-        "sterke niche: zonwering",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31152135028?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Installatiebedrijf Keyzer",
       "plaats": "Den Hoorn",
       "url": "https://www.keyzerbv.nl",
@@ -1571,25 +1553,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Louvenda Home",
-      "plaats": "Utrecht",
-      "url": "https://louvendahome.nl",
-      "telefoon": "+31 6 28471915",
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 74,
-      "redenen": [
-        "sterke niche: zonwering",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31628471915?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Eyelux Zonwering",
       "plaats": "Voorschoten",
       "url": "https://www.eyelux.nl",
@@ -1805,7 +1768,7 @@
       ],
       "aanbod": "Website Veilig €299 — urgent",
       "siteOk": false,
-      "heeftHttps": true,
+      "heeftHttps": false,
       "whatsappUrl": null,
       "actie": "bel-nu"
     },
@@ -2746,16 +2709,16 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
-      "plaats": "Leidschendam",
-      "url": "https://www.fonteinelektrotechniek.nl",
+      "bedrijf": "Decor Gordijn",
+      "plaats": "Leiden",
+      "url": "https://www.decorgordijn.nl",
       "telefoon": null,
       "email": null,
-      "categorie": "elektricien",
+      "categorie": "zonwering",
       "prioriteit": "scan-eerst",
       "score": 52,
       "redenen": [
-        "sterke niche: elektricien"
+        "sterke niche: zonwering"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -2900,24 +2863,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Loodgietersbedrijf Utrecht",
-      "plaats": "Utrecht",
-      "url": "https://loodgietersbedrijfutrecht.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: loodgieter"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3208,6 +3153,26 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Eradus Zonwering",
+      "plaats": "Delft",
+      "url": "https://www.eraduszonwering.nl",
+      "telefoon": "+31 15 213 5028",
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 39,
+      "redenen": [
+        "sterke niche: zonwering",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31152135028?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Mastr Interieurspecialisten",
       "plaats": "Delft",
       "url": "https://mastrinterieurspecialisten.nl",
@@ -3265,6 +3230,26 @@
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": "https://wa.me/31252621650?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Louvenda Home",
+      "plaats": "Utrecht",
+      "url": "https://louvendahome.nl",
+      "telefoon": "+31 6 28471915",
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 39,
+      "redenen": [
+        "sterke niche: zonwering",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31628471915?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "scan-eerst"
     },
     {
@@ -3383,21 +3368,21 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Decor Gordijn",
-      "plaats": "Leiden",
-      "url": "https://www.decorgordijn.nl",
+      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
+      "plaats": "Leidschendam",
+      "url": "https://www.fonteinelektrotechniek.nl",
       "telefoon": null,
       "email": null,
-      "categorie": "zonwering",
+      "categorie": "elektricien",
       "prioriteit": "scan-eerst",
       "score": 17,
       "redenen": [
-        "sterke niche: zonwering",
+        "sterke niche: elektricien",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": false,
-      "heeftHttps": true,
+      "heeftHttps": false,
       "whatsappUrl": null,
       "actie": "scan-eerst"
     },
@@ -3431,6 +3416,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: elektricien",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Loodgietersbedrijf Utrecht",
+      "plaats": "Utrecht",
+      "url": "https://loodgietersbedrijfutrecht.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: loodgieter",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
