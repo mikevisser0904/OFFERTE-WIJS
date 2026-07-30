@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T10:51:24.517Z",
+  "updatedAt": "2026-07-30T14:55:46.550Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -37,16 +37,6 @@
       "plaats": "Moordrecht",
       "klantUrl": "https://rioolservice-pvanadrichem.nl/",
       "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.tafelboom.nl/",
-      "loginUrl": "https://tafelboom.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -181,16 +171,6 @@
       "plaats": "Moordrecht",
       "klantUrl": "https://rioolservice-pvanadrichem.nl/",
       "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.tafelboom.nl/",
-      "loginUrl": "https://tafelboom.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T10:52:27.689Z",
+  "updatedAt": "2026-07-30T14:56:34.646Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -22,7 +22,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -30,14 +30,14 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
       "url": "https://www.tafelboom.nl/",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -229,7 +229,7 @@
       "url": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
