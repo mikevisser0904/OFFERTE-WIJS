@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T04:08:06.693Z",
+  "updatedAt": "2026-07-31T07:36:09.794Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -37,7 +37,7 @@
       "url": "https://www.tafelboom.nl/",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -229,7 +229,7 @@
       "url": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
