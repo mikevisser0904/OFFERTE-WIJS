@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T07:36:09.794Z",
+  "updatedAt": "2026-07-31T11:14:45.112Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -37,7 +37,7 @@
       "url": "https://www.tafelboom.nl/",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
@@ -93,7 +93,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -229,7 +229,7 @@
       "url": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
