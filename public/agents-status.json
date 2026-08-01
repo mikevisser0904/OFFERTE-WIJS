@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-08-01T23:08:49.524Z",
+  "updatedAt": "2026-08-01T23:26:12.210Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-08-01T20:38:34.202Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-08-01T21:37:13.245Z",
+      "lastRun": "2026-08-01T23:26:12.210Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
