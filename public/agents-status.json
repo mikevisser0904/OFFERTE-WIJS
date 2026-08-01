@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-08-01T12:50:05.924Z",
+  "updatedAt": "2026-08-01T13:50:53.609Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-08-01T12:50:04.647Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-08-01T12:50:05.549Z",
+      "lastRun": "2026-08-01T13:50:53.365Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-08-01T12:50:05.745Z",
+      "lastRun": "2026-08-01T13:50:53.609Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-08-01T12:50:05.745Z",
+    "updatedAt": "2026-08-01T13:50:53.609Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -135,7 +135,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-08-01T12:50:05.549Z"
+        "lastRun": "2026-08-01T13:50:53.365Z"
       },
       {
         "id": "auto-verify",
@@ -155,7 +155,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 152ms",
+        "detail": "OK 253ms",
         "lastRun": "2026-08-01T12:50:04.647Z"
       },
       {
@@ -211,8 +211,8 @@
         "id": "verkoop-effectiviteit",
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
-        "detail": "Verkoop-effectiviteit 75% · 18 bewijs · 0 contacten deze week",
-        "lastRun": "2026-08-01T09:47:16.362Z"
+        "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
+        "lastRun": "2026-08-01T12:50:05.924Z"
       },
       {
         "id": "verkoop-bewijs",
@@ -226,7 +226,7 @@
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-08-01T09:47:16.321Z"
+        "lastRun": "2026-08-01T12:50:05.862Z"
       },
       {
         "id": "outreach",
