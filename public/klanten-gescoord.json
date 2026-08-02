@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T05:54:46.591Z",
+  "generatedAt": "2026-08-02T05:58:11.709Z",
   "totaal": 185,
   "metTelefoon": 98,
   "leakMatches": 16,
@@ -3194,22 +3194,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
-      "plaats": "Leidschendam",
-      "url": "https://www.jkuijper.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Kuyt Schilders B.V. Schilderwerk",
       "plaats": "Wassenaar",
       "url": "https://www.kuytschilders.nl",
@@ -3433,6 +3417,24 @@
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
+      "plaats": "Leidschendam",
+      "url": "https://www.jkuijper.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 5,
+      "redenen": [
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": null,
