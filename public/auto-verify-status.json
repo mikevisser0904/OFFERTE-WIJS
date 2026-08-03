@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:03:19.450Z",
+  "updatedAt": "2026-08-03T15:33:13.502Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -149,7 +149,7 @@
       "url": "https://hetinterieur.nl",
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
