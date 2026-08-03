@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-08-03T08:03:57.507Z",
+  "verifiedAt": "2026-08-03T12:02:14.976Z",
   "totaal": 27,
   "loginBereikbaar": 25,
   "uniekeLoginUrls": 14,
@@ -9,22 +9,6 @@
   "onbekend": 2,
   "redirect_anders": 0,
   "results": [
-    {
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "klantUrl": "https://vogelaarschilder.nl/",
-      "geprobeerd": 6,
-      "besteProbe": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host hosting102.resellerdns.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
-    },
     {
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
@@ -58,20 +42,20 @@
       "verkoop": "voorzichtig"
     },
     {
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.tafelboom.nl/",
-      "geprobeerd": 5,
-      "besteProbe": "https://tafelboom.nl/phpMyAdmin/",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (tafelboom.nl)",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "klantUrl": "https://vogelaarschilder.nl/",
+      "geprobeerd": 6,
+      "besteProbe": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host hosting102.resellerdns.nl — hosting-default, niet per se unieke klant-DB",
       "http": 200,
-      "finalUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "finalUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "looksLikePma": true,
       "panelKind": "login",
       "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verkoop": "voorzichtig"
     },
     {
       "bedrijf": "Nuoveni",
@@ -122,6 +106,38 @@
       "verkoop": "sterk"
     },
     {
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.tafelboom.nl/",
+      "geprobeerd": 5,
+      "besteProbe": "https://tafelboom.nl/phpMyAdmin/",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (tafelboom.nl)",
+      "http": 200,
+      "finalUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
+    },
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "geprobeerd": 6,
+      "besteProbe": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host s230.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
+      "http": 200,
+      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "voorzichtig"
+    },
+    {
       "bedrijf": "Textilia",
       "plaats": "Dordrecht",
       "klantUrl": "https://www.textilia-dordrecht.nl/",
@@ -154,38 +170,6 @@
       "verkoop": "voorzichtig"
     },
     {
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://firmavanrijn.nl/",
-      "geprobeerd": 6,
-      "besteProbe": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s230.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "geprobeerd": 4,
-      "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
-    },
-    {
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
       "klantUrl": "https://www.ejvandermeer.nl/",
@@ -216,6 +200,22 @@
       "panelKind": "login",
       "panelConfidence": "high",
       "verkoop": "voorzichtig"
+    },
+    {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "geprobeerd": 4,
+      "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "ChargeCars",
