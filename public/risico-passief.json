@@ -1,14 +1,25 @@
 {
-  "updatedAt": "2026-08-03T21:47:59.188Z",
+  "updatedAt": "2026-08-04T03:55:26.400Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 24
+    "hoog": 26
   },
   "resultaten": [
     {
       "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
@@ -261,6 +272,17 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://web3.hostingcp.eu/phpMyAdmin/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
@@ -272,15 +294,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "http": 200,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
-    },
-    {
       "url": "https://chargecars.nl/phpMyAdmin/",
       "bedrijf": "ChargeCars",
       "plaats": "Nijkerk",
@@ -288,14 +301,6 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
-    },
-    {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
     }
   ]
 }
