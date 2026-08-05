@@ -3854,6 +3854,28 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-08-05T09:37:16.666Z",
+      "bedrijf": "Amer Houttechniek",
+      "url": "https://www.amer-hout.nl",
+      "host": "amer-hout.nl",
+      "email": "info@amer-hout.nl",
+      "phone": null,
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
