@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T18:11:35.728Z",
+  "updatedAt": "2026-08-05T21:56:39.330Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 29,
@@ -14,7 +14,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -117,7 +117,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
