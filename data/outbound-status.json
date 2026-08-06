@@ -1,13 +1,44 @@
 {
-  "updatedAt": "2026-08-06T01:17:14.610Z",
+  "updatedAt": "2026-08-06T06:20:19.960Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 5,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Loodgieterskwartier",
+      "status": "simulated",
+      "email": "info@loodgieterskwartier.nl",
+      "phone": "31852125588"
+    },
+    {
+      "bedrijf": "Timmerbedrijf Simon Frank & Zn.",
+      "status": "simulated",
+      "email": "websites@klaver.org",
+      "phone": null
+    },
+    {
+      "bedrijf": "Rinus van Stein",
+      "status": "simulated",
+      "email": "info@rinusvanstein.nl",
+      "phone": null
+    },
+    {
+      "bedrijf": "De Bovenkamer",
+      "status": "simulated",
+      "email": "info@bovenkamerutrecht.nl",
+      "phone": "31302072769"
+    },
+    {
+      "bedrijf": "A. Buitelaar Zonwering",
+      "status": "simulated",
+      "email": "buitelaarzonwering@casema.nl",
+      "phone": "31536685999"
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
