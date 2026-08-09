@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-08-08T21:05:54.674Z",
+  "verifiedAt": "2026-08-09T02:51:04.244Z",
   "totaal": 27,
-  "loginBereikbaar": 25,
-  "uniekeLoginUrls": 14,
-  "bevestigd": 11,
+  "loginBereikbaar": 24,
+  "uniekeLoginUrls": 13,
+  "bevestigd": 10,
   "hosting_redirect": 14,
   "false_positive": 0,
-  "onbekend": 2,
+  "onbekend": 3,
   "redirect_anders": 0,
   "results": [
     {
@@ -208,14 +208,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "ChargeCars",
