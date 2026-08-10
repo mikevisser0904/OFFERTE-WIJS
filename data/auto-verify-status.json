@@ -1,14 +1,22 @@
 {
-  "updatedAt": "2026-08-10T06:02:36.151Z",
+  "updatedAt": "2026-08-10T10:03:42.269Z",
   "agent": "auto-verify",
   "summary": {
-    "leakHits": 30,
-    "leakVerified": 28,
+    "leakHits": 31,
+    "leakVerified": 29,
     "leakFailed": 2,
     "consentChecked": 16,
     "consentProofOk": 15
   },
   "leakRows": [
+    {
+      "url": "https://klompelektrotechniek.nl/",
+      "bedrijf": "Klomp Elektrotechniek",
+      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
     {
       "url": "http://vogelaarschilder.nl/",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
@@ -18,17 +26,17 @@
       "status": "verified"
     },
     {
-      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://www.willemseelektrotechniek.nl/",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
     {
-      "url": "https://www.willemseelektrotechniek.nl/",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -50,6 +58,14 @@
       "status": "verified"
     },
     {
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
@@ -66,9 +82,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "url": "https://www.textilia-dordrecht.nl/",
+      "bedrijf": "Textilia",
+      "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -82,9 +98,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.textilia-dordrecht.nl/",
-      "bedrijf": "Textilia",
-      "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -118,14 +134,6 @@
       "bedrijf": "Voordeelgordijnen",
       "evidence": "https://www.voordeelgordijnen.nl/.env",
       "dbOk": false,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
@@ -374,6 +382,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 28 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "28 verified · 15 consent OK · 2 failed recheck"
+  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "29 verified · 15 consent OK · 2 failed recheck"
 }
