@@ -1,23 +1,16 @@
 {
-  "updatedAt": "2026-08-10T02:31:44.157Z",
+  "updatedAt": "2026-08-10T05:14:12.944Z",
   "agent": "optimizer",
   "applyMode": true,
   "metrics": {
     "pending": 0,
-    "leakCount": 29,
+    "leakCount": 30,
     "outreachCount": 15,
-    "leadsTotaal": 185,
-    "hitRate": 11.666666666666666,
-    "avgMs": 203
+    "leadsTotaal": 186,
+    "hitRate": 15.666666666666666,
+    "avgMs": 164
   },
   "uitgevoerd": [
-    {
-      "id": "refresh-outreach",
-      "titel": "Outreach verversen (lekken wachten)",
-      "fn": "refreshOutreach",
-      "status": "ok",
-      "result": true
-    },
     {
       "id": "sync-report-index",
       "titel": "Rapport-index syncen",
