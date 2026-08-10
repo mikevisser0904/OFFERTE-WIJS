@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T03:57:31.181Z",
+  "updatedAt": "2026-08-10T04:37:40.498Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2226,24 +2226,36 @@
       "bedrijf": "Timmerfabriek Verhagen",
       "plaats": "Leidschendam",
       "url": "http://www.timmerfabriekverhagen.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-10T03:57:31.181Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-10T03:57:31.181Z",
+      "scannedAt": "2026-08-10T04:37:27.168Z",
+      "reportId": "dc0d0401b54f",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-msmpahm5-1",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
       "url": "http://vogelaarschilder.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-10T03:57:31.181Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-10T03:57:31.181Z",
+      "scannedAt": "2026-08-10T04:37:27.202Z",
+      "reportId": "2558075cf0c6",
+      "risicoScore": 80,
+      "leakHit": true
     },
     {
       "id": "q-msmpahm5-2",
       "bedrijf": "ABO technisch beheer",
       "plaats": "Soest",
       "url": "https://abobeheerbv.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-10T03:57:31.181Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-10T03:57:31.181Z",
+      "scannedAt": "2026-08-10T04:37:27.203Z",
+      "reportId": "c0cdd75ea2e8",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }
