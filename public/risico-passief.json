@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-10T17:35:25.647Z",
+  "updatedAt": "2026-08-10T21:26:57.554Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 26
+    "hoog": 25
   },
   "resultaten": [
     {
@@ -206,17 +206,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
@@ -294,13 +283,21 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "http": 200,
+      "niveau": "onduidelijk",
+      "reden": "Geen bevestigd panel"
+    },
+    {
       "url": "https://chargecars.nl/phpMyAdmin/",
       "bedrijf": "ChargeCars",
       "plaats": "Nijkerk",
       "klantUrl": "https://chargecars.nl/",
-      "http": 404,
-      "niveau": "geen",
-      "reden": "Geen phpMyAdmin (site/404)"
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
