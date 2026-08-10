@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T02:58:54.535Z",
+  "updatedAt": "2026-08-10T06:01:58.333Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
@@ -7,6 +7,28 @@
     "hoog": 26
   },
   "resultaten": [
+    {
+      "url": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "klantUrl": "http://vogelaarschilder.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://hosting102.resellerdns.nl/phpmyadmin/index.php",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "klantUrl": "http://vogelaarschilder.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
     {
       "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Reinaerde Remake Meubel",
@@ -45,28 +67,6 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "klantUrl": "https://vogelaarschilder.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://hosting102.resellerdns.nl/phpmyadmin/index.php",
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "klantUrl": "https://vogelaarschilder.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
