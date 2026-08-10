@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-03T10:09:29.502Z",
+  "generatedAt": "2026-08-10T03:57:31.137Z",
   "bron": "osm",
-  "totaal": 185,
+  "totaal": 186,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 38
+      "count": 39
     },
     {
       "plaats": "Amersfoort",
@@ -144,15 +144,6 @@
       "telefoon": null,
       "email": null,
       "categorie": "installateur",
-      "prioriteit": "scan-eerst"
-    },
-    {
-      "bedrijf": "Timmeratelier Houtekiet",
-      "plaats": "'s-Gravenhage",
-      "url": "https://houtekiettimmeratelier.nl/contact",
-      "telefoon": null,
-      "email": null,
-      "categorie": "kozijnen",
       "prioriteit": "scan-eerst"
     },
     {
@@ -588,15 +579,6 @@
       "prioriteit": "scan-eerst"
     },
     {
-      "bedrijf": "De Lamellengigant",
-      "plaats": "Den Haag",
-      "url": "https://www.delamellengigant.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst"
-    },
-    {
       "bedrijf": "Smit Wonen in Sfeer",
       "plaats": "Den Haag",
       "url": "https://www.smit-interieur.nl",
@@ -957,9 +939,27 @@
       "prioriteit": "scan-eerst"
     },
     {
+      "bedrijf": "Timmerfabriek Verhagen",
+      "plaats": "Leidschendam",
+      "url": "http://www.timmerfabriekverhagen.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
       "url": "https://vogelaarschilder.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "url": "http://vogelaarschilder.nl",
       "telefoon": null,
       "email": null,
       "categorie": "schilder",
@@ -1431,6 +1431,15 @@
       "telefoon": "+31 10 419 4011",
       "email": null,
       "categorie": "schilder",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "ABO technisch beheer",
+      "plaats": "Soest",
+      "url": "https://abobeheerbv.nl",
+      "telefoon": "+3135 6013222",
+      "email": null,
+      "categorie": "installateur",
       "prioriteit": "scan-eerst"
     },
     {
