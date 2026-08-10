@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-03T08:36:43.943Z",
-  "totaalMetLek": 16,
+  "generatedAt": "2026-08-10T06:17:09.984Z",
+  "totaalMetLek": 17,
   "rijen": [
     {
       "bedrijf": "Amer Houttechniek",
@@ -53,7 +53,7 @@
     {
       "bedrijf": "Rioolservice P. van Adrichem",
       "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl/",
+      "url": "https://rioolservice-pvanadrichem.nl",
       "heeftLek": true,
       "dbType": "phpMyAdmin",
       "dbHost": "rioolservice-pvanadrichem.nl",
@@ -129,6 +129,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 100,
       "reportId": "1c2376857c87"
+    },
+    {
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "url": "https://klompelektrotechniek.nl",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "web3.hostingcp.eu",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "ec2d0042034c"
     },
     {
       "bedrijf": "Textilia",
@@ -223,7 +239,7 @@
       "panelUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
-      "risicoScore": 100,
+      "risicoScore": 40,
       "reportId": "fe9d43611024"
     },
     {
@@ -243,20 +259,20 @@
       "reportId": "d8987ac955c8"
     },
     {
-      "bedrijf": "Klomp Elektrotechniek",
-      "plaats": "Barneveld",
-      "url": "https://klompelektrotechniek.nl",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "url": "http://vogelaarschilder.nl",
       "heeftLek": true,
       "dbType": "phpMyAdmin",
-      "dbHost": "web3.hostingcp.eu",
+      "dbHost": "hosting102.resellerdns.nl",
       "dbName": null,
       "dbUser": null,
       "wachtwoordLek": false,
-      "panelUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "panelUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
-      "risicoScore": 100,
-      "reportId": "1d6892c0e33f"
+      "risicoScore": 80,
+      "reportId": "2558075cf0c6"
     }
   ]
 }

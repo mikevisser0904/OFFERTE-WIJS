@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-03T08:36:43.943Z",
+  "generatedAt": "2026-08-10T06:17:09.984Z",
   "agent": "klanten-lek",
   "gescand": 60,
-  "metLek": 16,
+  "metLek": 17,
   "disclaimer": "Passieve HTTP-checks alleen. Geen wachtwoorden opgeslagen. Gebruik voor Website Veilig €299 outreach met toestemming.",
   "klanten": [
     {
@@ -12,7 +12,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 33 457 0659",
       "score": 100,
-      "scannedAt": "2026-08-03T08:35:05.715Z",
+      "scannedAt": "2026-08-10T06:15:16.978Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -65,11 +65,11 @@
     {
       "bedrijf": "Rioolservice P. van Adrichem",
       "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-27T08:38:15.588Z",
+      "url": "https://rioolservice-pvanadrichem.nl",
+      "categorie": "loodgieter",
+      "telefoon": "+31 182 375823",
+      "score": 100,
+      "scannedAt": "2026-08-10T06:15:30.844Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -139,8 +139,7 @@
           "ernst": "critical",
           "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
         }
-      ],
-      "bron": "leak-hits"
+      ]
     },
     {
       "bedrijf": "ChargeCars",
@@ -229,7 +228,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 30 212 0173",
       "score": 100,
-      "scannedAt": "2026-08-03T08:35:27.983Z",
+      "scannedAt": "2026-08-10T06:15:47.900Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -308,7 +307,7 @@
       "categorie": "zonwering",
       "telefoon": null,
       "score": 97,
-      "scannedAt": "2026-08-03T08:35:27.372Z",
+      "scannedAt": "2026-08-10T06:15:36.777Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -365,7 +364,7 @@
       "categorie": "kozijnen",
       "telefoon": null,
       "score": 97,
-      "scannedAt": "2026-08-03T08:35:18.655Z",
+      "scannedAt": "2026-08-10T06:15:29.526Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -416,13 +415,81 @@
       ]
     },
     {
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "url": "https://klompelektrotechniek.nl",
+      "categorie": "elektricien",
+      "telefoon": null,
+      "score": 97,
+      "scannedAt": "2026-08-10T06:16:12.686Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 100,
+      "reportId": "ec2d0042034c",
+      "database": {
+        "samenvatting": "4 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
+            "host": "web3.hostingcp.eu"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
+        }
+      ]
+    },
+    {
       "bedrijf": "Textilia",
       "plaats": "Dordrecht",
       "url": "https://www.textilia-dordrecht.nl",
       "categorie": "zonwering",
       "telefoon": null,
       "score": 97,
-      "scannedAt": "2026-08-03T08:35:21.647Z",
+      "scannedAt": "2026-08-10T06:15:38.898Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -479,7 +546,7 @@
       "categorie": "zonwering",
       "telefoon": null,
       "score": 97,
-      "scannedAt": "2026-08-03T08:35:28.746Z",
+      "scannedAt": "2026-08-10T06:15:47.738Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -547,7 +614,7 @@
       "categorie": "elektricien",
       "telefoon": null,
       "score": 97,
-      "scannedAt": "2026-08-03T08:35:28.276Z",
+      "scannedAt": "2026-08-10T06:15:44.983Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -626,7 +693,7 @@
       "categorie": "kozijnen",
       "telefoon": null,
       "score": 97,
-      "scannedAt": "2026-08-03T08:35:41.814Z",
+      "scannedAt": "2026-08-10T06:15:56.009Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -683,7 +750,7 @@
       "categorie": "installateur",
       "telefoon": null,
       "score": 97,
-      "scannedAt": "2026-08-03T08:35:33.423Z",
+      "scannedAt": "2026-08-10T06:15:50.497Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 100,
@@ -745,139 +812,13 @@
       ]
     },
     {
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "url": "https://www.willemseelektrotechniek.nl",
-      "categorie": "elektricien",
-      "telefoon": null,
-      "score": 97,
-      "scannedAt": "2026-08-03T08:35:38.959Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "fe9d43611024",
-      "database": {
-        "samenvatting": "2 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
-            "host": "s250.webhostingserver.nl"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
-            "host": "s250.webhostingserver.nl"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin inlog open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin inlog open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
-        }
-      ]
-    },
-    {
-      "bedrijf": "Klomp Elektrotechniek",
-      "plaats": "Barneveld",
-      "url": "https://klompelektrotechniek.nl",
-      "categorie": null,
-      "telefoon": null,
-      "score": null,
-      "scannedAt": "2026-07-07T08:23:02.016Z",
-      "heeftLek": true,
-      "unreachable": false,
-      "risicoScore": 100,
-      "reportId": "1d6892c0e33f",
-      "database": {
-        "samenvatting": "5 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
-        "heeftLek": true,
-        "panels": [
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          },
-          {
-            "panel": "phpMyAdmin",
-            "url": "https://web3.hostingcp.eu/phpMyAdmin/",
-            "host": "web3.hostingcp.eu"
-          }
-        ],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": [
-        {
-          "titel": "phpMyAdmin inlog open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin inlog open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin inlog open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin inlog open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        },
-        {
-          "titel": "phpMyAdmin inlog open op internet",
-          "type": "database",
-          "ernst": "critical",
-          "url": "https://web3.hostingcp.eu/phpMyAdmin/"
-        }
-      ],
-      "bron": "leak-hits"
-    },
-    {
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
       "url": "https://www.ejvandermeer.nl",
       "categorie": "elektricien",
       "telefoon": "+31 10 592 8105",
       "score": 100,
-      "scannedAt": "2026-08-03T08:35:12.564Z",
+      "scannedAt": "2026-08-10T06:15:20.025Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 80,
@@ -923,11 +864,57 @@
       "categorie": "schilder",
       "telefoon": null,
       "score": 85,
-      "scannedAt": "2026-08-03T08:35:35.656Z",
+      "scannedAt": "2026-08-10T06:15:55.052Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 80,
       "reportId": "d8987ac955c8",
+      "database": {
+        "samenvatting": "2 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hosting102.resellerdns.nl/phpmyadmin/",
+            "host": "hosting102.resellerdns.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://hosting102.resellerdns.nl/phpmyadmin/index.php",
+            "host": "hosting102.resellerdns.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hosting102.resellerdns.nl/phpmyadmin/"
+        },
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://hosting102.resellerdns.nl/phpmyadmin/index.php"
+        }
+      ]
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "url": "http://vogelaarschilder.nl",
+      "categorie": "schilder",
+      "telefoon": null,
+      "score": 85,
+      "scannedAt": "2026-08-10T06:15:59.400Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 80,
+      "reportId": "2558075cf0c6",
       "database": {
         "samenvatting": "2 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
         "heeftLek": true,
@@ -969,7 +956,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 20 3638567",
       "score": 100,
-      "scannedAt": "2026-08-03T08:35:04.858Z",
+      "scannedAt": "2026-08-10T06:15:13.145Z",
       "heeftLek": true,
       "unreachable": false,
       "risicoScore": 40,
@@ -992,13 +979,59 @@
       ]
     },
     {
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "url": "https://www.willemseelektrotechniek.nl",
+      "categorie": "elektricien",
+      "telefoon": null,
+      "score": 97,
+      "scannedAt": "2026-08-10T06:15:57.246Z",
+      "heeftLek": true,
+      "unreachable": false,
+      "risicoScore": 40,
+      "reportId": "fe9d43611024",
+      "database": {
+        "samenvatting": "2 bevinding(en) — database of gegevens mogelijk bereikbaar via web.",
+        "heeftLek": true,
+        "panels": [
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+            "host": "s250.webhostingserver.nl"
+          },
+          {
+            "panel": "phpMyAdmin",
+            "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
+            "host": "s250.webhostingserver.nl"
+          }
+        ],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": [
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/"
+        },
+        {
+          "titel": "phpMyAdmin inlog open op internet",
+          "type": "database",
+          "ernst": "critical",
+          "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php"
+        }
+      ]
+    },
+    {
       "bedrijf": "Timmerbedrijf Simon Frank & Zn.",
       "plaats": "Amersfoort",
       "url": "http://timmerbedrijf-frank.nl",
       "categorie": "kozijnen",
       "telefoon": "+31 35 602 4987",
       "score": 100,
-      "scannedAt": "2026-08-03T08:35:00.417Z",
+      "scannedAt": "2026-08-10T06:15:11.417Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1020,7 +1053,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 180 531 995",
       "score": 100,
-      "scannedAt": "2026-08-03T08:35:03.296Z",
+      "scannedAt": "2026-08-10T06:15:14.943Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1042,7 +1075,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 299 641 522",
       "score": 100,
-      "scannedAt": "2026-08-03T08:35:07.350Z",
+      "scannedAt": "2026-08-10T06:15:17.816Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1064,7 +1097,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 70 750 36 81",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:50.911Z",
+      "scannedAt": "2026-08-10T06:16:12.904Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1086,7 +1119,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 33 456 08 05",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:38.639Z",
+      "scannedAt": "2026-08-10T06:15:59.639Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1108,7 +1141,7 @@
       "categorie": "installateur",
       "telefoon": "+31 85 060 0038",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:40.561Z",
+      "scannedAt": "2026-08-10T06:16:06.672Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1130,7 +1163,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 33 461 2241",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:43.963Z",
+      "scannedAt": "2026-08-10T06:16:02.260Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1152,7 +1185,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 33 285 0793",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:43.132Z",
+      "scannedAt": "2026-08-10T06:16:03.941Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1174,7 +1207,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 33 258 7699",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:46.159Z",
+      "scannedAt": "2026-08-10T06:16:06.391Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1196,7 +1229,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 20 441 81 95",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:47.179Z",
+      "scannedAt": "2026-08-10T06:16:09.565Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1218,7 +1251,7 @@
       "categorie": "installateur",
       "telefoon": "+31 299 709 009",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:46.073Z",
+      "scannedAt": "2026-08-10T06:16:12.836Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1240,7 +1273,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 299 648 131",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:49.255Z",
+      "scannedAt": "2026-08-10T06:16:11.684Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1262,7 +1295,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 75 687 1234",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:53.752Z",
+      "scannedAt": "2026-08-10T06:16:18.298Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1284,7 +1317,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 10 519 9399",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:02.446Z",
+      "scannedAt": "2026-08-10T06:16:25.649Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1306,7 +1339,7 @@
       "categorie": "loodgieter",
       "telefoon": "+31 10 322 0482",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:56.452Z",
+      "scannedAt": "2026-08-10T06:16:18.810Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1328,7 +1361,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 182 52 70 89",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:54.269Z",
+      "scannedAt": "2026-08-10T06:16:15.249Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1350,7 +1383,7 @@
       "categorie": "zonwering",
       "telefoon": null,
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:56.978Z",
+      "scannedAt": "2026-08-10T06:16:16.946Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1372,7 +1405,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 186 604 565",
       "score": 82,
-      "scannedAt": "2026-08-03T08:35:58.140Z",
+      "scannedAt": "2026-08-10T06:16:19.531Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1394,7 +1427,7 @@
       "categorie": "installateur",
       "telefoon": "+31 30 2445614",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:02.351Z",
+      "scannedAt": "2026-08-10T06:16:25.407Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1416,7 +1449,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 255 536060",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:02.002Z",
+      "scannedAt": "2026-08-10T06:16:23.583Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1438,7 +1471,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 71 792 00 07",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:01.441Z",
+      "scannedAt": "2026-08-10T06:16:22.823Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1460,7 +1493,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 343 56 28 29",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:03.521Z",
+      "scannedAt": "2026-08-10T06:16:25.758Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1482,29 +1515,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 6 5125 2361",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:05.082Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Zandschulp Zonwering",
-      "plaats": "Leusden",
-      "url": "https://zandschulpzonwering.nl/showrooms/zonwering-leusden",
-      "categorie": "zonwering",
-      "telefoon": "+31 33 303 0031",
-      "score": 82,
-      "scannedAt": "2026-08-03T08:36:04.462Z",
+      "scannedAt": "2026-08-10T06:16:25.172Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1526,7 +1537,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 30 743 0458",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:05.276Z",
+      "scannedAt": "2026-08-10T06:16:26.755Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1548,7 +1559,7 @@
       "categorie": "loodgieter",
       "telefoon": "+31 299 463 115",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:04.485Z",
+      "scannedAt": "2026-08-10T06:16:25.621Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1570,7 +1581,7 @@
       "categorie": "installateur",
       "telefoon": "+31 299 405 296",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:07.036Z",
+      "scannedAt": "2026-08-10T06:16:26.599Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1592,7 +1603,7 @@
       "categorie": "installateur",
       "telefoon": "+31 299 648 303",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:11.144Z",
+      "scannedAt": "2026-08-10T06:16:42.094Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1614,7 +1625,7 @@
       "categorie": "kozijnen",
       "telefoon": "+31 299 413 103",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:24.236Z",
+      "scannedAt": "2026-08-10T06:16:38.538Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1636,7 +1647,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 299 413 103",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:32.418Z",
+      "scannedAt": "2026-08-10T06:16:42.130Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1658,7 +1669,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 299 477 520",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:23.414Z",
+      "scannedAt": "2026-08-10T06:16:48.321Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1680,7 +1691,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 299 751 340",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:31.284Z",
+      "scannedAt": "2026-08-10T06:17:09.983Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1702,7 +1713,29 @@
       "categorie": "elektricien",
       "telefoon": "+31 299 396 923",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:25.460Z",
+      "scannedAt": "2026-08-10T06:16:52.068Z",
+      "heeftLek": false,
+      "unreachable": false,
+      "risicoScore": 0,
+      "reportId": null,
+      "database": {
+        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
+        "heeftLek": false,
+        "panels": [],
+        "credentials": null,
+        "sqlDump": null,
+        "apiExposure": []
+      },
+      "bevindingen": []
+    },
+    {
+      "bedrijf": "Katuin",
+      "plaats": "Purmerend",
+      "url": "https://www.loodgieterkatuin.nl",
+      "categorie": "loodgieter",
+      "telefoon": "+31 299 666 469",
+      "score": 82,
+      "scannedAt": "2026-08-10T06:16:43.450Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1724,7 +1757,7 @@
       "categorie": "installateur",
       "telefoon": "+31 299 414 990",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:26.480Z",
+      "scannedAt": "2026-08-10T06:16:43.877Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1746,7 +1779,7 @@
       "categorie": "elektricien",
       "telefoon": "+31 299 411 024",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:28.419Z",
+      "scannedAt": "2026-08-10T06:16:45.878Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1768,7 +1801,7 @@
       "categorie": "installateur",
       "telefoon": "+31 299 640 624",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:27.698Z",
+      "scannedAt": "2026-08-10T06:16:46.382Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1790,7 +1823,7 @@
       "categorie": "loodgieter",
       "telefoon": "+31 10 466 75 55",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:33.266Z",
+      "scannedAt": "2026-08-10T06:16:49.989Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1812,7 +1845,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 10 242 0088",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:32.462Z",
+      "scannedAt": "2026-08-10T06:16:51.979Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1834,7 +1867,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 30 244 7259",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:33.632Z",
+      "scannedAt": "2026-08-10T06:16:51.543Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1856,7 +1889,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 30 244 0149",
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:38.758Z",
+      "scannedAt": "2026-08-10T06:16:54.675Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1878,7 +1911,7 @@
       "categorie": "loodgieter",
       "telefoon": null,
       "score": 82,
-      "scannedAt": "2026-08-03T08:36:36.053Z",
+      "scannedAt": "2026-08-10T06:16:54.204Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1900,7 +1933,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 70 393 23 23",
       "score": 74,
-      "scannedAt": "2026-08-03T08:36:36.176Z",
+      "scannedAt": "2026-08-10T06:16:52.770Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
@@ -1922,51 +1955,7 @@
       "categorie": "zonwering",
       "telefoon": "+31 70 3642003",
       "score": 74,
-      "scannedAt": "2026-08-03T08:36:43.942Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Lambertus van den Broek",
-      "plaats": "Amstelveen",
-      "url": "https://www.lambertusvandenbroek.nl",
-      "categorie": "zonwering",
-      "telefoon": "+31206414392",
-      "score": 74,
-      "scannedAt": "2026-08-03T08:36:38.232Z",
-      "heeftLek": false,
-      "unreachable": false,
-      "risicoScore": 0,
-      "reportId": null,
-      "database": {
-        "samenvatting": "Geen database blootstelling gevonden (passieve check).",
-        "heeftLek": false,
-        "panels": [],
-        "credentials": null,
-        "sqlDump": null,
-        "apiExposure": []
-      },
-      "bevindingen": []
-    },
-    {
-      "bedrijf": "Ambiance Heko-Becewe",
-      "plaats": "Amsterdam",
-      "url": "https://www.ambiance-zonwering.nl/heko-becewe",
-      "categorie": "zonwering",
-      "telefoon": "+31 20 763 0400",
-      "score": 74,
-      "scannedAt": "2026-08-03T08:36:38.977Z",
+      "scannedAt": "2026-08-10T06:17:01.614Z",
       "heeftLek": false,
       "unreachable": false,
       "risicoScore": 0,
