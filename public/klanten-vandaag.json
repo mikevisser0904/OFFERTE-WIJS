@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T07:57:46.550Z",
+  "generatedAt": "2026-08-11T04:18:55.456Z",
   "instructie": "Werk deze lijst af vandaag: bel-nu eerst, dan whatsapp met telefoon, rest na VakScan.",
   "top": [
     {
@@ -141,26 +141,6 @@
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31851306433?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "Atelier Zuidinga",
-      "plaats": "Purmerend",
-      "url": "http://atelierzuidinga.nl",
-      "telefoon": "+31 299 641 522",
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 100,
-      "redenen": [
-        "sterke niche: zonwering",
-        "telefoon bekend",
-        "geen goede HTTPS"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31299641522?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
     },
     {
       "bedrijf": "Tafelboom",
@@ -482,6 +462,25 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31332850793?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "MIRvA",
+      "plaats": "Amersfoort",
+      "url": "https://mirva.nl",
+      "telefoon": "+31 33 258 7699",
+      "email": "info@mirva.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31332587699?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     }
   ]
