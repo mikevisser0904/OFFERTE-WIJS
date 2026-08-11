@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-08-10T21:26:45.110Z",
+  "verifiedAt": "2026-08-11T02:52:09.408Z",
   "totaal": 29,
-  "loginBereikbaar": 26,
-  "uniekeLoginUrls": 13,
-  "bevestigd": 10,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 14,
+  "bevestigd": 11,
   "hosting_redirect": 16,
   "false_positive": 0,
-  "onbekend": 3,
+  "onbekend": 2,
   "redirect_anders": 0,
   "results": [
     {
@@ -192,10 +192,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Het Interieur",

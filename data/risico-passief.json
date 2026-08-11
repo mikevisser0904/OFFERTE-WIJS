@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T21:26:57.554Z",
+  "updatedAt": "2026-08-11T02:52:19.452Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
@@ -206,10 +206,10 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Het Interieur",
-      "plaats": "Amsterdam",
-      "klantUrl": "https://hetinterieur.nl/",
+      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -217,7 +217,7 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
+      "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
       "klantUrl": "https://hetinterieur.nl/",
@@ -283,19 +283,19 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "http": 200,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
-    },
-    {
       "url": "https://chargecars.nl/phpMyAdmin/",
       "bedrijf": "ChargeCars",
       "plaats": "Nijkerk",
       "klantUrl": "https://chargecars.nl/",
+      "http": 404,
+      "niveau": "geen",
+      "reden": "Geen phpMyAdmin (site/404)"
+    },
+    {
+      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     }
