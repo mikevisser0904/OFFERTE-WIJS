@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-08-12T17:29:47.036Z",
+  "updatedAt": "2026-08-12T17:40:40.787Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-08-12T16:43:38.614Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-08-12T17:25:56.144Z",
+      "lastRun": "2026-08-12T17:40:40.780Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,20 +61,20 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-08-12T15:12:44.583Z",
+      "lastRun": "2026-08-12T17:40:40.622Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 18,
+      "metBewijs": 19,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
         "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
-        "Rioolservice P. van Adrichem · https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-08-12T14:08:01.049Z",
+      "lastRun": "2026-08-12T17:40:40.787Z",
       "ok": true,
       "leakVerified": 29,
       "consentProofOk": 15,
