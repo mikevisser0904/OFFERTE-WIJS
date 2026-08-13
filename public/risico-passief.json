@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T21:27:35.227Z",
+  "updatedAt": "2026-08-13T03:14:50.034Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 27,
@@ -298,9 +298,8 @@
       "bedrijf": "ChargeCars",
       "plaats": "Nijkerk",
       "klantUrl": "https://chargecars.nl/",
-      "http": 404,
-      "niveau": "geen",
-      "reden": "Geen phpMyAdmin (site/404)"
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
