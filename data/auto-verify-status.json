@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T14:03:44.103Z",
+  "updatedAt": "2026-08-14T17:38:33.846Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
@@ -101,7 +101,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
