@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T20:43:13.104Z",
+  "updatedAt": "2026-08-14T20:56:17.996Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -38,13 +38,13 @@
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 31 lekken",
-      "lastRun": "2026-08-14T20:19:39.527Z"
+      "lastRun": "2026-08-14T20:53:29.293Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 129ms",
+      "detail": "OK 138ms",
       "lastRun": "2026-08-14T20:19:39.462Z"
     },
     {
