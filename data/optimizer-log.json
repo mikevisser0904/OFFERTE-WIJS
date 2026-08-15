@@ -1,6 +1,24 @@
 {
   "entries": [
     {
+      "at": "2026-08-15T20:36:23.603Z",
+      "actie": "sanitize-leak-hits",
+      "titel": "Leak-hits sanitizen (actionable-only)",
+      "result": true
+    },
+    {
+      "at": "2026-08-15T20:36:23.460Z",
+      "actie": "consent-scrub",
+      "titel": "Toestemming opschonen (geen bulk/404)",
+      "result": true
+    },
+    {
+      "at": "2026-08-15T20:36:23.299Z",
+      "actie": "sync-report-index",
+      "titel": "Rapport-index syncen",
+      "result": true
+    },
+    {
       "at": "2026-08-15T18:46:03.558Z",
       "actie": "sanitize-leak-hits",
       "titel": "Leak-hits sanitizen (actionable-only)",
@@ -578,24 +596,6 @@
     },
     {
       "at": "2026-08-13T07:49:47.446Z",
-      "actie": "sync-report-index",
-      "titel": "Rapport-index syncen",
-      "result": true
-    },
-    {
-      "at": "2026-08-13T05:47:14.278Z",
-      "actie": "sanitize-leak-hits",
-      "titel": "Leak-hits sanitizen (actionable-only)",
-      "result": true
-    },
-    {
-      "at": "2026-08-13T05:47:14.143Z",
-      "actie": "consent-scrub",
-      "titel": "Toestemming opschonen (geen bulk/404)",
-      "result": true
-    },
-    {
-      "at": "2026-08-13T05:47:13.941Z",
       "actie": "sync-report-index",
       "titel": "Rapport-index syncen",
       "result": true
