@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T20:59:54.967Z",
+  "updatedAt": "2026-08-16T02:12:23.443Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
@@ -157,7 +157,7 @@
       "url": "https://firmavanrijn.nl",
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
