@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T05:23:09.315Z",
+  "updatedAt": "2026-08-17T09:25:04.677Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
@@ -18,9 +18,9 @@
       "status": "verified"
     },
     {
-      "url": "http://vogelaarschilder.nl/",
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -34,14 +34,6 @@
       "status": "verified"
     },
     {
-      "url": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
       "url": "https://vogelaarschilder.nl/",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
@@ -50,17 +42,17 @@
       "status": "verified"
     },
     {
-      "url": "https://nuoveni.nl/",
-      "bedrijf": "Nuoveni",
-      "evidence": "https://nuoveni.nl/phpmyadmin/",
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
     {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "url": "https://nuoveni.nl/",
+      "bedrijf": "Nuoveni",
+      "evidence": "https://nuoveni.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -98,14 +90,6 @@
       "status": "verified"
     },
     {
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
       "url": "https://hetinterieur.nl/",
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
@@ -134,6 +118,22 @@
       "bedrijf": "Voordeelgordijnen",
       "evidence": "https://www.voordeelgordijnen.nl/.env",
       "dbOk": false,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "http://vogelaarschilder.nl/",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
