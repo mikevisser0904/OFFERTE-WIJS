@@ -1,52 +1,52 @@
 {
   "versie": 1,
-  "updatedAt": "2026-08-17T03:25:27.972Z",
+  "updatedAt": "2026-08-17T04:29:29.300Z",
   "agents": {
     "health-monitor": {
-      "lastRun": "2026-08-17T00:30:17.996Z",
+      "lastRun": "2026-08-17T04:29:28.056Z",
       "ok": true,
       "healthy": true,
-      "avgResponseMs": 142,
+      "avgResponseMs": 158,
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-08-17T03:25:27.972Z",
+      "lastRun": "2026-08-17T04:29:28.099Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
       "drift": 0,
       "synced": 0,
-      "agentPrompt": "25 streams OK · queue 2 pending · 31 lekken",
+      "agentPrompt": "25 streams OK · queue 0 pending · 31 lekken",
       "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "maarten-sync": {
-      "lastRun": "2026-08-17T00:30:18.237Z",
+      "lastRun": "2026-08-17T04:29:28.476Z",
       "ok": true,
       "pending": 0,
       "agentPrompt": "maarten-sync OK, geen nieuwe pending"
     },
     "maarten-bouw": {
-      "lastRun": "2026-08-17T00:30:18.271Z",
+      "lastRun": "2026-08-17T04:29:28.511Z",
       "ok": true,
       "pending": 0,
       "eerstePending": null,
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-08-17T03:11:02.610Z",
+      "lastRun": "2026-08-17T04:29:28.816Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-08-17T03:11:03.080Z",
+      "lastRun": "2026-08-17T04:29:29.207Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
     },
     "outbound-auto": {
-      "lastRun": "2026-08-17T00:30:18.820Z",
+      "lastRun": "2026-08-17T04:29:29.270Z",
       "ok": true,
       "live": true,
       "verzonden": 0,
@@ -54,7 +54,7 @@
       "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
     },
     "verkoop-effectiviteit": {
-      "lastRun": "2026-08-17T00:30:18.855Z",
+      "lastRun": "2026-08-17T04:29:29.300Z",
       "ok": true,
       "totaalScore": 75,
       "agentPrompt": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-08-17T03:11:03.080Z",
+    "updatedAt": "2026-08-17T04:29:29.207Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -135,7 +135,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-08-17T03:11:02.610Z"
+        "lastRun": "2026-08-17T04:29:28.816Z"
       },
       {
         "id": "auto-verify",
@@ -149,34 +149,34 @@
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 31 lekken",
-        "lastRun": "2026-08-17T02:10:33.436Z"
+        "lastRun": "2026-08-17T04:29:28.099Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 236ms",
-        "lastRun": "2026-08-17T00:30:17.996Z"
+        "detail": "OK 158ms",
+        "lastRun": "2026-08-17T04:29:28.056Z"
       },
       {
         "id": "maarten-sync",
         "naam": "Maarten Sync",
         "status": "ok",
         "detail": "maarten-sync OK, geen nieuwe pending",
-        "lastRun": "2026-08-17T00:30:18.237Z"
+        "lastRun": "2026-08-17T04:29:28.476Z"
       },
       {
         "id": "maarten-bouw",
         "naam": "Maarten Bouw",
         "status": "ok",
         "detail": "0 pending",
-        "lastRun": "2026-08-17T00:30:18.271Z"
+        "lastRun": "2026-08-17T04:29:28.511Z"
       },
       {
         "id": "lead-hunter",
         "naam": "Lead Hunter",
         "status": "ok",
-        "detail": "187 leads · 2 queue",
+        "detail": "187 leads · 0 queue",
         "lastRun": "2026-08-10T07:57:46.671Z"
       },
       {
@@ -197,7 +197,7 @@
         "id": "vakscan-leaks",
         "naam": "VakScan Leaks",
         "status": "ok",
-        "detail": "31 lekken · 2 pending",
+        "detail": "31 lekken · 0 pending",
         "lastRun": null
       },
       {
