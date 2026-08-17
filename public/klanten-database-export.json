@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T06:17:09.984Z",
+  "generatedAt": "2026-08-17T05:44:02.369Z",
   "totaalMetLek": 17,
   "rijen": [
     {
@@ -53,7 +53,7 @@
     {
       "bedrijf": "Rioolservice P. van Adrichem",
       "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl",
+      "url": "https://rioolservice-pvanadrichem.nl/",
       "heeftLek": true,
       "dbType": "phpMyAdmin",
       "dbHost": "rioolservice-pvanadrichem.nl",
@@ -207,7 +207,7 @@
       "panelUrl": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
-      "risicoScore": 100,
+      "risicoScore": 80,
       "reportId": "2f229b8f5c49"
     },
     {
@@ -239,7 +239,7 @@
       "panelUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
-      "risicoScore": 40,
+      "risicoScore": 100,
       "reportId": "fe9d43611024"
     },
     {
@@ -261,7 +261,7 @@
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
-      "url": "http://vogelaarschilder.nl",
+      "url": "http://vogelaarschilder.nl/",
       "heeftLek": true,
       "dbType": "phpMyAdmin",
       "dbHost": "hosting102.resellerdns.nl",

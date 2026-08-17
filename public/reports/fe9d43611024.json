@@ -3,11 +3,13 @@
   "url": "https://www.willemseelektrotechniek.nl/",
   "bedrijf": "H. Willemse Elektrotechniek B.V.",
   "plaats": "Zandvoort",
-  "scannedAt": "2026-08-10T06:15:52.934Z",
-  "risicoScore": 40,
-  "niveau": "hoog",
-  "niveauLabel": "Hoog",
+  "scannedAt": "2026-08-17T05:40:57.519Z",
+  "risicoScore": 100,
+  "niveau": "kritiek",
+  "niveauLabel": "Kritiek",
   "klantBullets": [
+    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog."
   ],
   "findings": [
@@ -19,6 +21,30 @@
       "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
       "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "verified": true,
+      "panelConfidence": "high",
+      "panelKind": "login"
+    },
+    {
+      "id": "db-admin-_phpMyAdmin_",
+      "check": "database",
+      "severity": "critical",
+      "title": "phpMyAdmin inlog open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "verified": true,
+      "panelConfidence": "high",
+      "panelKind": "login"
+    },
+    {
+      "id": "db-admin-_phpmyadmin_index.php",
+      "check": "database",
+      "severity": "critical",
+      "title": "phpMyAdmin inlog open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
       "verified": true,
       "panelConfidence": "high",
       "panelKind": "login"
