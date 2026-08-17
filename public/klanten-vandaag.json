@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T03:48:05.645Z",
+  "generatedAt": "2026-08-17T03:50:14.131Z",
   "instructie": "Werk deze lijst af vandaag: bel-nu eerst, dan whatsapp met telefoon, rest na VakScan.",
   "top": [
     {
@@ -372,24 +372,6 @@
       "actie": "bel-nu"
     },
     {
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "url": "http://vogelaarschilder.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 85,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "bel-nu"
-    },
-    {
       "bedrijf": "SA Elektro Experts",
       "plaats": "'s-Gravenhage",
       "url": "https://saelektroexperts.nl",
@@ -482,6 +464,25 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31332850793?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "MIRvA",
+      "plaats": "Amersfoort",
+      "url": "https://mirva.nl",
+      "telefoon": "+31 33 258 7699",
+      "email": "info@mirva.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31332587699?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     }
   ]

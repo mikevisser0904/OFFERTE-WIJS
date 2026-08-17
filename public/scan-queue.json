@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T03:05:49.389Z",
+  "updatedAt": "2026-08-17T03:49:42.949Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2262,16 +2262,24 @@
       "bedrijf": "Multikozijn",
       "plaats": "Bunschoten-Spakenburg",
       "url": "https://www.multikozijn.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-17T03:05:49.389Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-17T03:05:49.389Z",
+      "scannedAt": "2026-08-17T03:49:25.165Z",
+      "reportId": "517111fdc547",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mswniyx9-1",
       "bedrijf": "Installatietechniek PBS",
       "plaats": "IJmuiden",
       "url": "https://installatietechniekpbs.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-17T03:05:49.389Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-17T03:05:49.389Z",
+      "scannedAt": "2026-08-17T03:49:25.202Z",
+      "reportId": "bed2a36cf745",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }
