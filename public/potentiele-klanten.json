@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-10T07:57:17.885Z",
+  "generatedAt": "2026-08-17T03:05:49.345Z",
   "bron": "osm",
   "totaal": 187,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 39
+      "count": 38
     },
     {
       "plaats": "Amersfoort",
-      "count": 13
+      "count": 14
     },
     {
       "plaats": "Amsterdam",
@@ -21,11 +21,11 @@
     },
     {
       "plaats": "Den Haag",
-      "count": 17
+      "count": 18
     },
     {
       "plaats": "Haarlem",
-      "count": 9
+      "count": 10
     }
   ],
   "leads": [
@@ -144,6 +144,15 @@
       "telefoon": null,
       "email": null,
       "categorie": "installateur",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Timmeratelier Houtekiet",
+      "plaats": "'s-Gravenhage",
+      "url": "https://houtekiettimmeratelier.nl/contact",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
       "prioriteit": "scan-eerst"
     },
     {
@@ -516,6 +525,15 @@
       "prioriteit": "scan-eerst"
     },
     {
+      "bedrijf": "Multikozijn",
+      "plaats": "Bunschoten-Spakenburg",
+      "url": "https://www.multikozijn.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "dakdekker",
+      "prioriteit": "scan-eerst"
+    },
+    {
       "bedrijf": "Van den Hoogen engineering",
       "plaats": "Bunschoten-Spakenburg",
       "url": "https://www.vandenhoogen.nl",
@@ -574,6 +592,15 @@
       "plaats": "Delft",
       "url": "https://mastrinterieurspecialisten.nl",
       "telefoon": "+31 15 887 7877",
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "De Lamellengigant",
+      "plaats": "Den Haag",
+      "url": "https://www.delamellengigant.nl",
+      "telefoon": null,
       "email": null,
       "categorie": "zonwering",
       "prioriteit": "scan-eerst"
@@ -822,6 +849,15 @@
       "prioriteit": "scan-eerst"
     },
     {
+      "bedrijf": "Installatietechniek PBS",
+      "plaats": "IJmuiden",
+      "url": "https://installatietechniekpbs.nl",
+      "telefoon": "+31 6 838 777 71",
+      "email": "installatietechniek.pbs@outlook.com",
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst"
+    },
+    {
       "bedrijf": "Wooncentrum Ubo Kok",
       "plaats": "IJmuiden",
       "url": "https://wooncentrumubokok.nl",
@@ -939,27 +975,9 @@
       "prioriteit": "scan-eerst"
     },
     {
-      "bedrijf": "Timmerfabriek Verhagen",
-      "plaats": "Leidschendam",
-      "url": "http://www.timmerfabriekverhagen.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst"
-    },
-    {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
       "url": "https://vogelaarschilder.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst"
-    },
-    {
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "url": "http://vogelaarschilder.nl",
       "telefoon": null,
       "email": null,
       "categorie": "schilder",
@@ -1434,15 +1452,6 @@
       "prioriteit": "scan-eerst"
     },
     {
-      "bedrijf": "ABO technisch beheer",
-      "plaats": "Soest",
-      "url": "https://abobeheerbv.nl",
-      "telefoon": "+3135 6013222",
-      "email": null,
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst"
-    },
-    {
       "bedrijf": "Luxury Home",
       "plaats": "Spijkenisse",
       "url": "https://luxuryhomeraamdecoratie.nl",
@@ -1701,15 +1710,6 @@
       "telefoon": null,
       "email": "info@aluku.nl",
       "categorie": "kozijnen",
-      "prioriteit": "scan-eerst"
-    },
-    {
-      "bedrijf": "De Lamellengigant",
-      "plaats": "Den Haag",
-      "url": "https://www.delamellengigant.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
       "prioriteit": "scan-eerst"
     }
   ]
