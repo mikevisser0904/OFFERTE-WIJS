@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T03:50:14.131Z",
+  "generatedAt": "2026-08-18T03:43:28.162Z",
   "totaal": 187,
   "metTelefoon": 99,
   "leakMatches": 16,
@@ -1514,25 +1514,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Plant services",
-      "plaats": "Rotterdam",
-      "url": "https://plantservices.nl",
-      "telefoon": "+31 10 434 2465",
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 74,
-      "redenen": [
-        "sterke niche: elektricien",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Luxury Home",
       "plaats": "Spijkenisse",
       "url": "https://luxuryhomeraamdecoratie.nl",
@@ -1917,24 +1898,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Quick Paint",
-      "plaats": "Rotterdam",
-      "url": "https://www.quickpaint.nl",
-      "telefoon": "+31 10 412 5484",
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 62,
-      "redenen": [
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31104125484?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Van Lochem Schildersbedrijven",
       "plaats": "Rotterdam",
       "url": "https://www.vanlochem.nl",
@@ -2082,6 +2045,24 @@
       "bedrijf": "Dreumel",
       "plaats": "'s-Gravenhage",
       "url": "https://www.dreumel.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: kozijnen"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "L-Groep totaalonderhoud",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.l-groep.nl",
       "telefoon": null,
       "email": null,
       "categorie": "kozijnen",
@@ -3321,6 +3302,26 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Plant services",
+      "plaats": "Rotterdam",
+      "url": "https://plantservices.nl",
+      "telefoon": "+31 10 434 2465",
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 39,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Installatiebureau Jonker BV",
       "plaats": "Wassenaar",
       "url": "https://www.jonkerbv.eu",
@@ -3360,22 +3361,22 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "L-Groep totaalonderhoud",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.l-groep.nl",
-      "telefoon": null,
+      "bedrijf": "Quick Paint",
+      "plaats": "Rotterdam",
+      "url": "https://www.quickpaint.nl",
+      "telefoon": "+31 10 412 5484",
       "email": null,
-      "categorie": "kozijnen",
+      "categorie": "schilder",
       "prioriteit": "scan-eerst",
-      "score": 17,
+      "score": 27,
       "redenen": [
-        "sterke niche: kozijnen",
+        "telefoon bekend",
         "site reageert slecht"
       ],
-      "aanbod": "Vakman Site €899",
+      "aanbod": "Google Start €299",
       "siteOk": false,
       "heeftHttps": false,
-      "whatsappUrl": null,
+      "whatsappUrl": "https://wa.me/31104125484?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "scan-eerst"
     },
     {
