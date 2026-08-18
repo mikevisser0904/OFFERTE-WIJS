@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T01:58:18.623Z",
+  "updatedAt": "2026-08-18T03:06:56.629Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,22 +23,22 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 4",
-      "lastRun": "2026-08-18T01:48:50.462Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 3",
+      "lastRun": "2026-08-18T03:06:56.259Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
       "detail": "29 verified · 15 consent OK · 2 failed recheck",
-      "lastRun": "2026-08-17T21:03:19.352Z"
+      "lastRun": "2026-08-18T02:07:04.751Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 31 lekken",
-      "lastRun": "2026-08-18T01:56:03.125Z"
+      "lastRun": "2026-08-18T02:07:04.745Z"
     },
     {
       "id": "health-monitor",
@@ -108,7 +108,7 @@
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-08-18T01:48:49.830Z"
+      "lastRun": "2026-08-18T02:07:04.195Z"
     },
     {
       "id": "outbound-auto",
