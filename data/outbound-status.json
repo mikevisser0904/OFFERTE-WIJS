@@ -1,13 +1,26 @@
 {
-  "updatedAt": "2026-08-19T08:21:09.387Z",
+  "updatedAt": "2026-08-19T12:18:51.504Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 2,
+  "verwerkt": 2,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 2,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Amer Houttechniek",
+      "status": "simulated",
+      "email": "info@amer-hout.nl",
+      "phone": null
+    },
+    {
+      "bedrijf": "ChargeCars",
+      "status": "simulated",
+      "email": "info@chargecars.nl",
+      "phone": null
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 2 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
