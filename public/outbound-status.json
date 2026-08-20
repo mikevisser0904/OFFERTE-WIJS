@@ -1,44 +1,13 @@
 {
-  "updatedAt": "2026-08-20T00:30:51.930Z",
+  "updatedAt": "2026-08-20T04:24:40.596Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 5,
-  "verwerkt": 5,
+  "gepland": 0,
+  "verwerkt": 0,
   "verzonden": 0,
-  "gesimuleerd": 5,
+  "gesimuleerd": 0,
   "mislukt": 0,
-  "items": [
-    {
-      "bedrijf": "van der Meer Elektrotechniek BV",
-      "status": "simulated",
-      "email": "info@ejvandermeer.nl",
-      "phone": "31631514170"
-    },
-    {
-      "bedrijf": "Dreumel",
-      "status": "simulated",
-      "email": "info@dreumel.nl",
-      "phone": "31703864484"
-    },
-    {
-      "bedrijf": "SA Elektro Experts",
-      "status": "simulated",
-      "email": "info@saelektroexperts.nl",
-      "phone": "31707503681"
-    },
-    {
-      "bedrijf": "Suntec zonwering",
-      "status": "simulated",
-      "email": "info@suntec-zonwering.nl",
-      "phone": "31715802342"
-    },
-    {
-      "bedrijf": "Decorette",
-      "status": "simulated",
-      "email": "geri@doubleweb.nl",
-      "phone": null
-    }
-  ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+  "items": [],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
