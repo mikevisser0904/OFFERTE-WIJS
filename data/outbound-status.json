@@ -1,13 +1,44 @@
 {
-  "updatedAt": "2026-08-20T08:22:20.687Z",
+  "updatedAt": "2026-08-20T12:20:39.860Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 5,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Atelier-AW",
+      "status": "simulated",
+      "email": "aw@atelieraw.nl",
+      "phone": "31618732101"
+    },
+    {
+      "bedrijf": "Bectro",
+      "status": "simulated",
+      "email": "info@bectro.nl",
+      "phone": null
+    },
+    {
+      "bedrijf": "Delektro",
+      "status": "simulated",
+      "email": "info@delektro.nl",
+      "phone": "31827190372"
+    },
+    {
+      "bedrijf": "Houtindustrie Amersfoort",
+      "status": "simulated",
+      "email": "info@houtindustrie-amersfoort.nl",
+      "phone": "31334612241"
+    },
+    {
+      "bedrijf": "i-Kozijn",
+      "status": "simulated",
+      "email": "info@i-kozijn.nl",
+      "phone": "31332850793"
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
