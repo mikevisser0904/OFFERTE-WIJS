@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T22:42:41.444Z",
+  "updatedAt": "2026-08-21T00:33:36.772Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -24,7 +24,7 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-08-20T22:42:41.137Z"
+      "lastRun": "2026-08-21T00:33:36.574Z"
     },
     {
       "id": "auto-verify",
@@ -38,28 +38,28 @@
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 31 lekken",
-      "lastRun": "2026-08-20T21:04:31.852Z"
+      "lastRun": "2026-08-21T00:33:35.740Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 153ms",
-      "lastRun": "2026-08-20T20:15:09.017Z"
+      "detail": "OK 135ms",
+      "lastRun": "2026-08-21T00:33:35.690Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-08-20T20:15:09.375Z"
+      "lastRun": "2026-08-21T00:33:36.204Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-08-20T20:15:09.409Z"
+      "lastRun": "2026-08-21T00:33:36.235Z"
     },
     {
       "id": "lead-hunter",
