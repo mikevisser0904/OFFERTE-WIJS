@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-08-21T13:24:57.619Z",
+  "updatedAt": "2026-08-21T13:26:48.829Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-08-21T12:20:29.134Z",
@@ -40,7 +40,7 @@
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-08-21T13:08:43.474Z",
+      "lastRun": "2026-08-21T13:26:48.828Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-08-21T13:08:43.474Z",
+    "updatedAt": "2026-08-21T13:26:48.828Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -149,13 +149,13 @@
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 31 lekken",
-        "lastRun": "2026-08-21T12:20:29.176Z"
+        "lastRun": "2026-08-21T13:24:57.619Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 184ms",
+        "detail": "OK 71ms",
         "lastRun": "2026-08-21T12:20:29.134Z"
       },
       {
