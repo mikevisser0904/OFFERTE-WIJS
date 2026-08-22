@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T03:50:31.589Z",
+  "generatedAt": "2026-08-22T03:41:00.109Z",
   "totaal": 187,
   "metTelefoon": 99,
   "leakMatches": 16,
@@ -1645,24 +1645,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Van Olst Schilders",
-      "plaats": "Amersfoort",
-      "url": "https://vanolstschilders.nl",
-      "telefoon": "+31 33 462 0478",
-      "email": "info@vanolstschilders.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 70,
-      "redenen": [
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31334620478?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Van Beek Schilders",
       "plaats": "Den Hoorn",
       "url": "http://vanbeek-schilders.nl",
@@ -2977,6 +2959,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Plomp installatietechniek",
+      "plaats": "Woerden",
+      "url": "https://www.plompinstallatietechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: loodgieter"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Ideaal Gordijnen Specialisten",
       "plaats": "Amsterdam",
       "url": "https://ideaalgordijin.com",
@@ -3253,6 +3253,25 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Van Olst Schilders",
+      "plaats": "Amersfoort",
+      "url": "https://vanolstschilders.nl",
+      "telefoon": "+31 33 462 0478",
+      "email": "info@vanolstschilders.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 35,
+      "redenen": [
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31334620478?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Schilder en Wandafwerkingsbedrijf Rene Lek",
       "plaats": "Purmerend",
       "url": "https://renelek.nl",
@@ -3446,25 +3465,6 @@
       "bedrijf": "Loodgietersbedrijf Robberts",
       "plaats": "Voorburg",
       "url": "https://installatiebedrijfrobberts.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: loodgieter",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Plomp installatietechniek",
-      "plaats": "Woerden",
-      "url": "https://www.plompinstallatietechniek.nl",
       "telefoon": null,
       "email": null,
       "categorie": "loodgieter",
