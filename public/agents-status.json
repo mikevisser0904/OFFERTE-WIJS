@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-08-22T20:08:56.881Z",
+  "updatedAt": "2026-08-22T20:36:50.979Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-08-22T20:08:55.498Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-08-22T20:08:56.350Z",
+      "lastRun": "2026-08-22T20:36:50.660Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-08-22T20:08:56.631Z",
+      "lastRun": "2026-08-22T20:36:50.979Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-08-22T20:08:56.631Z",
+    "updatedAt": "2026-08-22T20:36:50.979Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -135,7 +135,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-08-22T20:08:56.350Z"
+        "lastRun": "2026-08-22T20:36:50.660Z"
       },
       {
         "id": "auto-verify",
@@ -155,7 +155,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 188ms",
+        "detail": "OK 159ms",
         "lastRun": "2026-08-22T20:08:55.498Z"
       },
       {
@@ -212,7 +212,7 @@
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
         "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-        "lastRun": "2026-08-22T16:09:24.651Z"
+        "lastRun": "2026-08-22T20:08:56.881Z"
       },
       {
         "id": "verkoop-bewijs",
@@ -226,7 +226,7 @@
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-08-22T16:09:24.617Z"
+        "lastRun": "2026-08-22T20:08:56.811Z"
       },
       {
         "id": "outreach",
