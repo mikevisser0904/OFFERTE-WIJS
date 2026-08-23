@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T13:21:11.977Z",
+  "updatedAt": "2026-08-23T17:02:06.816Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
@@ -133,7 +133,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -158,7 +158,7 @@
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
