@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-23T17:02:06.816Z",
+  "updatedAt": "2026-08-23T20:59:57.013Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
     "leakVerified": 29,
     "leakFailed": 2,
     "consentChecked": 16,
-    "consentProofOk": 15
+    "consentProofOk": 14
   },
   "leakRows": [
     {
@@ -310,7 +310,7 @@
     {
       "siteUrl": "https://www.willemseelektrotechniek.nl",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -383,5 +383,5 @@
     }
   ],
   "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 15 consent OK · 2 failed recheck"
+  "agentPrompt": "29 verified · 14 consent OK · 2 failed recheck"
 }
