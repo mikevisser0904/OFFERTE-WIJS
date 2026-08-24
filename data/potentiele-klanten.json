@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-17T03:05:49.345Z",
+  "generatedAt": "2026-08-24T03:02:24.383Z",
   "bron": "osm",
-  "totaal": 187,
+  "totaal": 190,
   "perPlaats": [
     {
       "plaats": "Utrecht",
@@ -17,11 +17,11 @@
     },
     {
       "plaats": "Rotterdam",
-      "count": 65
+      "count": 67
     },
     {
       "plaats": "Den Haag",
-      "count": 18
+      "count": 19
     },
     {
       "plaats": "Haarlem",
@@ -150,6 +150,15 @@
       "bedrijf": "Timmeratelier Houtekiet",
       "plaats": "'s-Gravenhage",
       "url": "https://houtekiettimmeratelier.nl/contact",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "U-Kozijnen Showroom",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.u-kozijnen.nl",
       "telefoon": null,
       "email": null,
       "categorie": "kozijnen",
@@ -493,6 +502,15 @@
       "plaats": "Barneveld",
       "url": "https://klompelektrotechniek.nl",
       "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Beers",
+      "plaats": "Berkel en Rodenrijs",
+      "url": "https://www.beerselektro.nl",
+      "telefoon": "+31 10 4166488",
       "email": null,
       "categorie": "elektricien",
       "prioriteit": "scan-eerst"
@@ -1692,6 +1710,15 @@
       "telefoon": null,
       "email": null,
       "categorie": "elektricien",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "POS Installatietechniek B.V.",
+      "plaats": "Zevenhuizen",
+      "url": "https://posinstallatietechniek.nl",
+      "telefoon": "+31 180 201 006",
+      "email": "info@posinstallatietechniek.nl",
+      "categorie": "installateur",
       "prioriteit": "scan-eerst"
     },
     {
