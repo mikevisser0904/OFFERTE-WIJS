@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-23T20:59:17.843Z",
+  "updatedAt": "2026-08-24T02:12:39.577Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 26,
     "kritiek": 0,
-    "hoog": 24
+    "hoog": 25
   },
   "resultaten": [
     {
@@ -277,8 +277,10 @@
       "plaats": "Moordrecht",
       "klantUrl": "https://rioolservice-pvanadrichem.nl/",
       "http": 200,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
     },
     {
       "url": "https://chargecars.nl/phpMyAdmin/",
