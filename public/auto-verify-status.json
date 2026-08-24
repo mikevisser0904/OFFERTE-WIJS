@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T05:26:18.226Z",
+  "updatedAt": "2026-08-24T09:31:07.612Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
@@ -42,14 +42,6 @@
       "status": "verified"
     },
     {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
       "url": "https://nuoveni.nl/",
       "bedrijf": "Nuoveni",
       "evidence": "https://nuoveni.nl/phpmyadmin/",
@@ -61,6 +53,14 @@
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -98,6 +98,14 @@
       "status": "verified"
     },
     {
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://www.ejvandermeer.nl/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
@@ -125,14 +133,6 @@
       "url": "http://vogelaarschilder.nl/",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"

@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-24T05:25:29.509Z",
+  "updatedAt": "2026-08-24T09:30:21.204Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
-    "gecontroleerd": 26,
+    "gecontroleerd": 27,
     "kritiek": 0,
-    "hoog": 25
+    "hoog": 26
   },
   "resultaten": [
     {
@@ -20,6 +20,17 @@
     },
     {
       "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
@@ -67,17 +78,6 @@
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
       "klantUrl": "https://vogelaarschilder.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://tafelboom.nl/phpMyAdmin/",
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.tafelboom.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -144,6 +144,17 @@
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://tafelboom.nl/phpMyAdmin/",
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.tafelboom.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -228,6 +239,17 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://www.ejvandermeer.nl/phpmyadmin/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
@@ -265,17 +287,6 @@
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
       "klantUrl": "https://www.amer-hout.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",

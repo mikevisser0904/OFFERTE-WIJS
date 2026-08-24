@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-08-24T05:25:20.175Z",
+  "verifiedAt": "2026-08-24T09:30:12.000Z",
   "totaal": 29,
   "loginBereikbaar": 27,
   "uniekeLoginUrls": 14,
@@ -29,7 +29,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "geprobeerd": 5,
+      "geprobeerd": 6,
       "besteProbe": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "verdict": "hosting_redirect",
@@ -74,22 +74,6 @@
       "verkoop": "voorzichtig"
     },
     {
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.tafelboom.nl/",
-      "geprobeerd": 5,
-      "besteProbe": "https://tafelboom.nl/phpMyAdmin/",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (tafelboom.nl)",
-      "http": 200,
-      "finalUrl": "https://tafelboom.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
-    },
-    {
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
@@ -116,6 +100,22 @@
       "reden": "phpMyAdmin op eigen domein (www.bwstyling.nl)",
       "http": 200,
       "finalUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
+    },
+    {
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.tafelboom.nl/",
+      "geprobeerd": 5,
+      "besteProbe": "https://tafelboom.nl/phpMyAdmin/",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (tafelboom.nl)",
+      "http": 200,
+      "finalUrl": "https://tafelboom.nl/phpMyAdmin/",
       "looksLikePma": true,
       "panelKind": "login",
       "panelConfidence": "high",
@@ -186,6 +186,22 @@
       "verkoop": "voorzichtig"
     },
     {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "geprobeerd": 4,
+      "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
+    },
+    {
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
       "klantUrl": "https://www.ejvandermeer.nl/",
@@ -232,22 +248,6 @@
       "panelKind": "login",
       "panelConfidence": "high",
       "verkoop": "voorzichtig"
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "geprobeerd": 4,
-      "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
     },
     {
       "bedrijf": "ChargeCars",
