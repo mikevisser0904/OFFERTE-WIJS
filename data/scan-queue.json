@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T03:02:24.431Z",
+  "updatedAt": "2026-08-24T03:53:45.803Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2286,24 +2286,36 @@
       "bedrijf": "U-Kozijnen Showroom",
       "plaats": "'s-Gravenhage",
       "url": "https://www.u-kozijnen.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-24T03:02:24.430Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-24T03:02:24.430Z",
+      "scannedAt": "2026-08-24T03:53:32.711Z",
+      "reportId": "f7b9600519b8",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mt6nhjfy-1",
       "bedrijf": "Beers",
       "plaats": "Berkel en Rodenrijs",
       "url": "https://www.beerselektro.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-24T03:02:24.430Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-24T03:02:24.430Z",
+      "scannedAt": "2026-08-24T03:53:32.751Z",
+      "reportId": "0d49a1f17dd5",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mt6nhjfz-2",
       "bedrijf": "POS Installatietechniek B.V.",
       "plaats": "Zevenhuizen",
       "url": "https://posinstallatietechniek.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-24T03:02:24.431Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-24T03:02:24.431Z",
+      "scannedAt": "2026-08-24T03:53:32.753Z",
+      "reportId": "d97d0ffd10ff",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }
