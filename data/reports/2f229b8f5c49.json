@@ -3,11 +3,12 @@
   "url": "https://www.reinaerde.nl/zorg/remakemeubel",
   "bedrijf": "Reinaerde Remake Meubel",
   "plaats": "Utrecht",
-  "scannedAt": "2026-08-17T05:40:56.158Z",
-  "risicoScore": 80,
+  "scannedAt": "2026-08-24T05:44:15.017Z",
+  "risicoScore": 100,
   "niveau": "kritiek",
   "niveauLabel": "Kritiek",
   "klantBullets": [
+    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog."
   ],
@@ -32,6 +33,18 @@
       "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
       "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
+      "verified": true,
+      "panelConfidence": "high",
+      "panelKind": "login"
+    },
+    {
+      "id": "db-admin-_phpmyadmin_index.php",
+      "check": "database",
+      "severity": "critical",
+      "title": "phpMyAdmin inlog open op internet",
+      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+      "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
       "verified": true,
       "panelConfidence": "high",
       "panelKind": "login"
