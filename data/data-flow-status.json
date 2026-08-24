@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T03:29:35.527Z",
+  "updatedAt": "2026-08-24T04:33:23.104Z",
   "agent": "data-flow",
   "healthy": true,
   "fixApplied": true,
@@ -12,8 +12,8 @@
     "warnings": 0
   },
   "cross": {
-    "queuePending": 3,
-    "queueScanned": 190,
+    "queuePending": 0,
+    "queueScanned": 193,
     "leakHits": 31,
     "issues": []
   },
@@ -245,5 +245,5 @@
     }
   ],
   "grokPrompt": "data-flow OK — alle streams gesynchroniseerd",
-  "agentPrompt": "25 streams OK · queue 3 pending · 31 lekken"
+  "agentPrompt": "25 streams OK · queue 0 pending · 31 lekken"
 }
