@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T07:16:38.647Z",
+  "generatedAt": "2026-08-25T03:48:12.721Z",
   "totaal": 190,
   "metTelefoon": 101,
   "leakMatches": 16,
@@ -827,25 +827,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31299405296?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "D.S. Service",
-      "plaats": "Purmerend",
-      "url": "https://www.ds-service.nl",
-      "telefoon": "+31 299 648 303",
-      "email": "info@ds-service.nl",
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 82,
-      "redenen": [
-        "sterke niche: installateur",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31299648303?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -2639,24 +2620,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Vinkesteyn",
-      "plaats": "Haarlem",
-      "url": "https://www.vinkesteyn.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Woonbasis",
       "plaats": "Haarlem",
       "url": "https://www.woonbasis.nl",
@@ -3143,24 +3106,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Plomp installatietechniek",
-      "plaats": "Woerden",
-      "url": "https://www.plompinstallatietechniek.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: loodgieter"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Ideaal Gordijnen Specialisten",
       "plaats": "Amsterdam",
       "url": "https://ideaalgordijin.com",
@@ -3218,6 +3163,26 @@
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": "https://wa.me/31235289014?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "D.S. Service",
+      "plaats": "Purmerend",
+      "url": "https://www.ds-service.nl",
+      "telefoon": "+31 299 648 303",
+      "email": "info@ds-service.nl",
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 47,
+      "redenen": [
+        "sterke niche: installateur",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31299648303?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "scan-eerst"
     },
     {
@@ -3492,6 +3457,25 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Vinkesteyn",
+      "plaats": "Haarlem",
+      "url": "https://www.vinkesteyn.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Stoffenhuis Bestevaer",
       "plaats": "Rotterdam",
       "url": "http://www.stoffenhuisbestevaer.nl",
@@ -3521,6 +3505,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: elektricien",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Plomp installatietechniek",
+      "plaats": "Woerden",
+      "url": "https://www.plompinstallatietechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: loodgieter",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
