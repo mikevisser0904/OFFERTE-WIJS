@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T03:48:12.721Z",
+  "generatedAt": "2026-08-26T03:53:23.522Z",
   "instructie": "Werk deze lijst af vandaag: bel-nu eerst, dan whatsapp met telefoon, rest na VakScan.",
   "top": [
     {
@@ -240,25 +240,6 @@
       "actie": "bel-nu"
     },
     {
-      "bedrijf": "Textilia",
-      "plaats": "Dordrecht",
-      "url": "https://www.textilia-dordrecht.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 97,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "bel-nu"
-    },
-    {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "url": "https://www.bwstyling.nl",
@@ -483,6 +464,25 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31332587699?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "Schipper Kozijnen",
+      "plaats": "Amstelveen",
+      "url": "https://www.schipperkozijnen.nl/showrooms/amstelveen",
+      "telefoon": "+31 20 441 81 95",
+      "email": "amstelveen@schipperkozijnen.nl",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: kozijnen",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31204418195?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     }
   ]
