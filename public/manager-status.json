@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T10:10:50.546Z",
+  "updatedAt": "2026-08-31T13:40:55.832Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -24,7 +24,7 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-08-31T10:10:50.369Z"
+      "lastRun": "2026-08-31T13:40:55.437Z"
     },
     {
       "id": "auto-verify",
@@ -38,13 +38,13 @@
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 31 lekken",
-      "lastRun": "2026-08-31T10:10:49.683Z"
+      "lastRun": "2026-08-31T11:32:49.371Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 124ms",
+      "detail": "OK 190ms",
       "lastRun": "2026-08-31T10:10:49.628Z"
     },
     {
@@ -66,7 +66,7 @@
       "naam": "Lead Hunter",
       "status": "ok",
       "detail": "192 leads · 0 queue",
-      "lastRun": "2026-08-24T07:16:38.659Z"
+      "lastRun": "2026-08-31T13:18:56.619Z"
     },
     {
       "id": "vakscan-import",
@@ -80,7 +80,7 @@
       "naam": "Klanten-lek",
       "status": "ok",
       "detail": "17 echte lek(ken) — /leads/ database-export · outreach",
-      "lastRun": "2026-08-24T05:45:41.465Z"
+      "lastRun": "2026-08-31T11:32:49.222Z"
     },
     {
       "id": "vakscan-leaks",
@@ -101,28 +101,28 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-      "lastRun": "2026-08-31T01:55:57.725Z"
+      "lastRun": "2026-08-31T10:10:50.654Z"
     },
     {
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-08-31T06:11:02.209Z"
+      "lastRun": "2026-08-31T11:33:06.873Z"
     },
     {
       "id": "outbound-auto",
       "naam": "Outbound auto",
       "status": "ok",
       "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-      "lastRun": "2026-08-31T01:55:57.693Z"
+      "lastRun": "2026-08-31T10:10:50.619Z"
     },
     {
       "id": "outreach",
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-08-31T05:28:07.708Z"
+      "lastRun": "2026-08-31T11:33:06.884Z"
     },
     {
       "id": "seo",
