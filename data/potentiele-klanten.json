@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-24T07:16:09.556Z",
+  "generatedAt": "2026-08-31T08:08:48.082Z",
   "bron": "osm",
-  "totaal": 190,
+  "totaal": 192,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 38
+      "count": 39
     },
     {
       "plaats": "Amersfoort",
-      "count": 14
+      "count": 15
     },
     {
       "plaats": "Amsterdam",
@@ -171,6 +171,15 @@
       "telefoon": null,
       "email": null,
       "categorie": "installateur",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Bokkers Elektrotechniek",
+      "plaats": "Achterveld",
+      "url": "https://bokkers-elektrotechniek.nl",
+      "telefoon": "+31 342 70 0221",
+      "email": "info@bokkers-elektrotechniek.nl",
+      "categorie": "elektricien",
       "prioriteit": "scan-eerst"
     },
     {
@@ -852,6 +861,15 @@
       "bedrijf": "STB",
       "plaats": "Houten",
       "url": "https://stb.eu",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "TOP-Airconditioning",
+      "plaats": "Houten",
+      "url": "https://www.top-airconditioning.nl",
       "telefoon": null,
       "email": null,
       "categorie": "elektricien",
