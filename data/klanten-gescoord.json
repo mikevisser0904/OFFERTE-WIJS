@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-30T08:56:49.676Z",
-  "totaal": 190,
-  "metTelefoon": 101,
+  "generatedAt": "2026-08-31T09:22:23.176Z",
+  "totaal": 192,
+  "metTelefoon": 102,
   "leakMatches": 16,
   "leads": [
     {
@@ -390,6 +390,25 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31707503681?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "Bokkers Elektrotechniek",
+      "plaats": "Achterveld",
+      "url": "https://bokkers-elektrotechniek.nl",
+      "telefoon": "+31 342 70 0221",
+      "email": "info@bokkers-elektrotechniek.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31342700221?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -2750,6 +2769,24 @@
       "bedrijf": "STB",
       "plaats": "Houten",
       "url": "https://stb.eu",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "TOP-Airconditioning",
+      "plaats": "Houten",
+      "url": "https://www.top-airconditioning.nl",
       "telefoon": null,
       "email": null,
       "categorie": "elektricien",

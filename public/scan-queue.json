@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T08:08:48.129Z",
+  "updatedAt": "2026-08-31T09:21:56.104Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2322,16 +2322,24 @@
       "bedrijf": "Bokkers Elektrotechniek",
       "plaats": "Achterveld",
       "url": "https://bokkers-elektrotechniek.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-31T08:08:48.128Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-31T08:08:48.128Z",
+      "scannedAt": "2026-08-31T09:21:43.183Z",
+      "reportId": "426bad850a4a",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mtgyij29-1",
       "bedrijf": "TOP-Airconditioning",
       "plaats": "Houten",
       "url": "https://www.top-airconditioning.nl",
-      "status": "pending",
-      "toegevoegd": "2026-08-31T08:08:48.129Z"
+      "status": "klaar",
+      "toegevoegd": "2026-08-31T08:08:48.129Z",
+      "scannedAt": "2026-08-31T09:21:43.243Z",
+      "reportId": "9e523443c7b3",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }

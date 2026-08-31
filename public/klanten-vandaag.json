@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T08:56:49.676Z",
+  "generatedAt": "2026-08-31T09:22:23.176Z",
   "instructie": "Werk deze lijst af vandaag: bel-nu eerst, dan whatsapp met telefoon, rest na VakScan.",
   "top": [
     {
@@ -391,6 +391,25 @@
       "actie": "whatsapp"
     },
     {
+      "bedrijf": "Bokkers Elektrotechniek",
+      "plaats": "Achterveld",
+      "url": "https://bokkers-elektrotechniek.nl",
+      "telefoon": "+31 342 70 0221",
+      "email": "info@bokkers-elektrotechniek.nl",
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31342700221?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "Bectro",
       "plaats": "Amersfoort",
       "url": "https://www.bectro.nl",
@@ -464,25 +483,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31332850793?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "MIRvA",
-      "plaats": "Amersfoort",
-      "url": "https://mirva.nl",
-      "telefoon": "+31 33 258 7699",
-      "email": "info@mirva.nl",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 82,
-      "redenen": [
-        "sterke niche: elektricien",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31332587699?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     }
   ]
