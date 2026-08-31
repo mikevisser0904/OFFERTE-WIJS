@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-08-31T11:33:06.884Z",
+  "updatedAt": "2026-08-31T13:18:56.619Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-08-31T10:10:49.628Z",
@@ -102,11 +102,11 @@
       "grokPrompt": "agent outreach — 17 klanten met database-lek in klanten-lek-rapport"
     },
     "lead-hunter": {
-      "lastRun": "2026-08-24T07:16:38.659Z",
+      "lastRun": "2026-08-31T13:18:56.619Z",
       "ok": true,
-      "leadsTotaal": 190,
+      "leadsTotaal": 192,
       "queuePending": 0,
-      "agentPrompt": "Lead Hunter: 190 leads, 0 queue pending — npm run funnel voor outreach"
+      "agentPrompt": "Lead Hunter: 192 leads, 0 queue pending — npm run funnel voor outreach"
     }
   },
   "manager": {
