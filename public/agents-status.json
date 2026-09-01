@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-09-01T18:55:38.397Z",
+  "updatedAt": "2026-09-01T19:29:11.275Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-09-01T18:55:37.249Z",
@@ -40,7 +40,7 @@
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-09-01T18:55:38.304Z",
+      "lastRun": "2026-09-01T19:29:11.274Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-09-01T18:55:38.304Z",
+    "updatedAt": "2026-09-01T19:29:11.274Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -155,7 +155,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 292ms",
+        "detail": "OK 150ms",
         "lastRun": "2026-09-01T18:55:37.249Z"
       },
       {
@@ -212,7 +212,7 @@
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
         "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-        "lastRun": "2026-09-01T15:39:26.632Z"
+        "lastRun": "2026-09-01T18:55:38.397Z"
       },
       {
         "id": "verkoop-bewijs",
@@ -226,7 +226,7 @@
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-09-01T15:39:26.542Z"
+        "lastRun": "2026-09-01T18:55:38.366Z"
       },
       {
         "id": "outreach",
