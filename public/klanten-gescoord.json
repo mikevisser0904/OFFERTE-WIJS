@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T08:20:14.313Z",
+  "generatedAt": "2026-09-02T07:39:58.352Z",
   "totaal": 192,
   "metTelefoon": 102,
   "leakMatches": 16,
@@ -348,24 +348,6 @@
       "redenen": [
         "bevestigd database-lek (VakScan actionable)",
         "sterke niche: elektricien"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "plaats": "Leidschendam",
-      "url": "https://vogelaarschilder.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 85,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)"
       ],
       "aanbod": "Website Veilig €299 — urgent",
       "siteOk": true,
@@ -3215,6 +3197,25 @@
       "heeftHttps": true,
       "whatsappUrl": null,
       "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "url": "https://vogelaarschilder.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 50,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
     },
     {
       "bedrijf": "Ideaal Gordijnen Specialisten",
