@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-09-03T22:52:37.407Z",
+  "verifiedAt": "2026-09-04T05:10:57.064Z",
   "totaal": 29,
-  "loginBereikbaar": 26,
-  "uniekeLoginUrls": 13,
-  "bevestigd": 10,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 14,
+  "bevestigd": 11,
   "hosting_redirect": 16,
   "false_positive": 0,
-  "onbekend": 3,
+  "onbekend": 2,
   "redirect_anders": 0,
   "results": [
     {
@@ -176,10 +176,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
