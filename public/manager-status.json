@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T12:15:58.569Z",
+  "updatedAt": "2026-09-06T14:30:07.172Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,43 +23,43 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 4",
-      "lastRun": "2026-09-06T10:51:57.614Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 3",
+      "lastRun": "2026-09-06T14:30:06.832Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
-      "detail": "29 verified · 15 consent OK · 2 failed recheck",
-      "lastRun": "2026-09-06T05:06:52.663Z"
+      "detail": "29 verified · 14 consent OK · 2 failed recheck",
+      "lastRun": "2026-09-06T12:22:02.715Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 31 lekken",
-      "lastRun": "2026-09-06T11:09:44.964Z"
+      "lastRun": "2026-09-06T14:30:06.030Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 64ms",
-      "lastRun": "2026-09-06T08:10:26.217Z"
+      "detail": "OK 149ms",
+      "lastRun": "2026-09-06T14:30:05.857Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-09-06T08:10:26.657Z"
+      "lastRun": "2026-09-06T14:30:06.410Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-09-06T08:10:26.690Z"
+      "lastRun": "2026-09-06T14:30:06.446Z"
     },
     {
       "id": "lead-hunter",
@@ -108,7 +108,7 @@
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-09-06T10:51:56.899Z"
+      "lastRun": "2026-09-06T12:22:02.208Z"
     },
     {
       "id": "outbound-auto",
