@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T05:15:48.297Z",
+  "updatedAt": "2026-09-08T13:06:11.893Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
@@ -30,7 +30,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -86,7 +86,7 @@
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {

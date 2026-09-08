@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-09-08T13:00:12.512Z",
+  "updatedAt": "2026-09-08T13:06:11.894Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-09-08T08:23:06.540Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-09-08T11:32:07.651Z",
+      "lastRun": "2026-09-08T13:06:11.887Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-09-08T05:15:47.968Z",
+      "lastRun": "2026-09-08T13:06:11.702Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 19,
@@ -74,7 +74,7 @@
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-09-08T05:15:48.298Z",
+      "lastRun": "2026-09-08T13:06:11.894Z",
       "ok": true,
       "leakVerified": 29,
       "consentProofOk": 15,
