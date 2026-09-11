@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T15:22:11.872Z",
+  "updatedAt": "2026-09-11T16:25:34.777Z",
   "agent": "optimizer",
   "applyMode": true,
   "metrics": {
@@ -8,9 +8,16 @@
     "outreachCount": 15,
     "leadsTotaal": 192,
     "hitRate": 0,
-    "avgMs": 113
+    "avgMs": 351
   },
   "uitgevoerd": [
+    {
+      "id": "refresh-outreach",
+      "titel": "Outreach verversen (lekken wachten)",
+      "fn": "refreshOutreach",
+      "status": "ok",
+      "result": true
+    },
     {
       "id": "sync-report-index",
       "titel": "Rapport-index syncen",
