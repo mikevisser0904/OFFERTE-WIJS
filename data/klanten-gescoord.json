@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T07:42:42.323Z",
+  "generatedAt": "2026-09-13T08:01:48.010Z",
   "totaal": 192,
   "metTelefoon": 102,
   "leakMatches": 16,
@@ -2983,24 +2983,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "De Klussenier",
-      "plaats": "Rotterdam",
-      "url": "https://wimdejong.klussenier.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Installatiebedrijf Vis",
       "plaats": "Rotterdam",
       "url": "https://installatiebedrijfvis.nl",
@@ -3512,6 +3494,25 @@
       "bedrijf": "Algemene Houthandel & Timmerfabriek van der Meer",
       "plaats": "Delft",
       "url": "http://www.meerhouthandel.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "De Klussenier",
+      "plaats": "Rotterdam",
+      "url": "https://wimdejong.klussenier.nl",
       "telefoon": null,
       "email": null,
       "categorie": "kozijnen",
