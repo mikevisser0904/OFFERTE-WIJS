@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-07T12:16:02.358Z",
+  "generatedAt": "2026-09-14T07:41:40.428Z",
   "bron": "osm",
-  "totaal": 192,
+  "totaal": 193,
   "perPlaats": [
     {
       "plaats": "Utrecht",
@@ -9,23 +9,23 @@
     },
     {
       "plaats": "Amersfoort",
-      "count": 15
+      "count": 13
     },
     {
       "plaats": "Amsterdam",
-      "count": 42
+      "count": 43
     },
     {
       "plaats": "Rotterdam",
-      "count": 67
+      "count": 65
     },
     {
       "plaats": "Den Haag",
-      "count": 19
+      "count": 20
     },
     {
       "plaats": "Haarlem",
-      "count": 9
+      "count": 10
     }
   ],
   "leads": [
@@ -1755,6 +1755,15 @@
       "telefoon": null,
       "email": "info@aluku.nl",
       "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "url": "https://www.bosse-elektrotechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
       "prioriteit": "scan-eerst"
     }
   ]
