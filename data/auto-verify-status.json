@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-13T22:38:53.897Z",
+  "updatedAt": "2026-09-14T05:34:53.025Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 31,
-    "leakVerified": 29,
-    "leakFailed": 2,
+    "leakVerified": 27,
+    "leakFailed": 4,
     "consentChecked": 16,
-    "consentProofOk": 15
+    "consentProofOk": 14
   },
   "leakRows": [
     {
@@ -45,9 +45,9 @@
       "url": "https://www.tafelboom.nl/",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.boselektrotechniek.nl/",
@@ -93,7 +93,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -245,9 +245,9 @@
       "url": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.willemseelektrotechniek.nl",
@@ -316,7 +316,7 @@
     {
       "siteUrl": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -382,6 +382,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 15 consent OK · 2 failed recheck"
+  "grokPrompt": "auto-verify: 27 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "27 verified · 14 consent OK · 4 failed recheck"
 }
