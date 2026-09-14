@@ -1,18 +1,18 @@
 {
-  "updatedAt": "2026-09-14T05:34:53.025Z",
+  "updatedAt": "2026-09-14T15:17:47.640Z",
   "agent": "auto-verify",
   "summary": {
-    "leakHits": 31,
-    "leakVerified": 27,
-    "leakFailed": 4,
-    "consentChecked": 16,
-    "consentProofOk": 14
+    "leakHits": 32,
+    "leakVerified": 30,
+    "leakFailed": 2,
+    "consentChecked": 17,
+    "consentProofOk": 16
   },
   "leakRows": [
     {
-      "url": "https://klompelektrotechniek.nl/",
-      "bedrijf": "Klomp Elektrotechniek",
-      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "url": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -34,20 +34,12 @@
       "status": "verified"
     },
     {
-      "url": "https://nuoveni.nl/",
-      "bedrijf": "Nuoveni",
-      "evidence": "https://nuoveni.nl/phpmyadmin/",
+      "url": "https://klompelektrotechniek.nl/",
+      "bedrijf": "Klomp Elektrotechniek",
+      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
-    },
-    {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
     },
     {
       "url": "https://www.boselektrotechniek.nl/",
@@ -58,9 +50,25 @@
       "status": "verified"
     },
     {
+      "url": "https://nuoveni.nl/",
+      "bedrijf": "Nuoveni",
+      "evidence": "https://nuoveni.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -93,7 +101,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
@@ -245,16 +253,16 @@
       "url": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
       "evidence": "https://tafelboom.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.willemseelektrotechniek.nl",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     }
   ],
@@ -316,7 +324,7 @@
     {
       "siteUrl": "https://www.tafelboom.nl",
       "bedrijf": "Tafelboom",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -354,6 +362,12 @@
       "bedrijf": "Het Interieur",
       "passiveOk": true,
       "authOk": null
+    },
+    {
+      "siteUrl": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "passiveOk": true,
+      "authOk": null
     }
   ],
   "steps": [
@@ -382,6 +396,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 27 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "27 verified · 14 consent OK · 4 failed recheck"
+  "grokPrompt": "auto-verify: 30 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "30 verified · 16 consent OK · 2 failed recheck"
 }
