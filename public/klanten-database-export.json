@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-07T10:06:53.879Z",
-  "totaalMetLek": 17,
+  "generatedAt": "2026-09-14T10:32:35.675Z",
+  "totaalMetLek": 18,
   "rijen": [
     {
       "bedrijf": "Amer Houttechniek",
@@ -127,7 +127,7 @@
       "panelUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
-      "risicoScore": 100,
+      "risicoScore": 80,
       "reportId": "1c2376857c87"
     },
     {
@@ -241,6 +241,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 100,
       "reportId": "fe9d43611024"
+    },
+    {
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "url": "https://www.bosse-elektrotechniek.nl",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "www.bosse-elektrotechniek.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "b6e7c1d47e26"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",

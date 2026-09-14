@@ -3,28 +3,15 @@
   "url": "https://hetinterieur.nl/",
   "bedrijf": "Het Interieur",
   "plaats": "Amsterdam",
-  "scannedAt": "2026-09-07T10:04:59.690Z",
-  "risicoScore": 100,
+  "scannedAt": "2026-09-14T10:30:30.092Z",
+  "risicoScore": 80,
   "niveau": "kritiek",
   "niveauLabel": "Kritiek",
   "klantBullets": [
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog."
   ],
   "findings": [
-    {
-      "id": "db-admin-_phpmyadmin_",
-      "check": "database",
-      "severity": "critical",
-      "title": "phpMyAdmin inlog open op internet",
-      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "verified": true,
-      "panelConfidence": "high",
-      "panelKind": "login"
-    },
     {
       "id": "db-admin-_phpMyAdmin_",
       "check": "database",
