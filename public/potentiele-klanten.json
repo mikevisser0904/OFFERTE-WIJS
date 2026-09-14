@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T07:41:40.428Z",
+  "generatedAt": "2026-09-14T12:33:42.208Z",
   "bron": "osm",
   "totaal": 193,
   "perPlaats": [
@@ -9,23 +9,23 @@
     },
     {
       "plaats": "Amersfoort",
-      "count": 13
+      "count": 15
     },
     {
       "plaats": "Amsterdam",
-      "count": 43
+      "count": 42
     },
     {
       "plaats": "Rotterdam",
-      "count": 65
+      "count": 67
     },
     {
       "plaats": "Den Haag",
-      "count": 20
+      "count": 19
     },
     {
       "plaats": "Haarlem",
-      "count": 10
+      "count": 11
     }
   ],
   "leads": [
@@ -162,6 +162,15 @@
       "telefoon": null,
       "email": null,
       "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "url": "https://www.bosse-elektrotechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
       "prioriteit": "scan-eerst"
     },
     {
@@ -1755,15 +1764,6 @@
       "telefoon": null,
       "email": "info@aluku.nl",
       "categorie": "kozijnen",
-      "prioriteit": "scan-eerst"
-    },
-    {
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "url": "https://www.bosse-elektrotechniek.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "elektricien",
       "prioriteit": "scan-eerst"
     }
   ]

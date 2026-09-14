@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T08:36:04.614Z",
+  "generatedAt": "2026-09-14T12:34:27.266Z",
   "totaal": 193,
   "metTelefoon": 102,
   "leakMatches": 17,
@@ -204,6 +204,25 @@
       "actie": "bel-nu"
     },
     {
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "url": "https://www.bosse-elektrotechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
       "url": "https://hetinterieur.nl",
@@ -340,25 +359,6 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "url": "https://www.willemseelektrotechniek.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 97,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "url": "https://www.bosse-elektrotechniek.nl",
       "telefoon": null,
       "email": null,
       "categorie": "elektricien",
@@ -789,25 +789,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31651252361?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "Zandschulp Zonwering",
-      "plaats": "Leusden",
-      "url": "https://zandschulpzonwering.nl/showrooms/zonwering-leusden",
-      "telefoon": "+31 33 303 0031",
-      "email": "info@zandschulpzonwering.nl",
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 82,
-      "redenen": [
-        "sterke niche: zonwering",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31333030031?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -2048,6 +2029,24 @@
       "actie": "whatsapp"
     },
     {
+      "bedrijf": "Leen Meurs",
+      "plaats": "Zoetermeer",
+      "url": "https://www.schilderleenmeurs.nl",
+      "telefoon": "+31 6 54648418",
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 62,
+      "redenen": [
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31654648418?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "Blossom Paardencoaching",
       "plaats": "Amsterdam",
       "url": "https://www.blossompaardencoaching.nl",
@@ -2570,24 +2569,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "De Lamellengigant",
-      "plaats": "Den Haag",
-      "url": "https://www.delamellengigant.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Smit Wonen in Sfeer",
       "plaats": "Den Haag",
       "url": "https://www.smit-interieur.nl",
@@ -2688,6 +2669,24 @@
       "score": 52,
       "redenen": [
         "sterke niche: installateur"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: zonwering"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -2840,9 +2839,9 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Bekenkamp",
-      "plaats": "Laren",
-      "url": "https://woonspecialist.nl/winkels/bekenkamp-laren",
+      "bedrijf": "Decor Gordijn",
+      "plaats": "Leiden",
+      "url": "https://www.decorgordijn.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -2858,16 +2857,16 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Decor Gordijn",
-      "plaats": "Leiden",
-      "url": "https://www.decorgordijn.nl",
+      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
+      "plaats": "Leidschendam",
+      "url": "https://www.fonteinelektrotechniek.nl",
       "telefoon": null,
       "email": null,
-      "categorie": "zonwering",
+      "categorie": "elektricien",
       "prioriteit": "scan-eerst",
       "score": 52,
       "redenen": [
-        "sterke niche: zonwering"
+        "sterke niche: elektricien"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3056,24 +3055,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Hennink Installatietechniek",
-      "plaats": "Voorburg",
-      "url": "https://hennink.info",
-      "telefoon": null,
-      "email": null,
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "I.B. Kracht",
       "plaats": "Voorburg",
       "url": "https://www.kracht.nl",
@@ -3242,6 +3223,42 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Zandschulp Zonwering",
+      "plaats": "Leusden",
+      "url": "https://zandschulpzonwering.nl/showrooms/zonwering-leusden",
+      "telefoon": "+31 33 303 0031",
+      "email": "info@zandschulpzonwering.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 47,
+      "redenen": [
+        "sterke niche: zonwering",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31333030031?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Koek & Reinders",
+      "plaats": "'s-Gravenhage",
+      "url": "https://koekenreinders.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 40,
+      "redenen": [],
+      "aanbod": "Google Start €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Multikozijn",
       "plaats": "Bunschoten-Spakenburg",
       "url": "https://www.multikozijn.nl",
@@ -3401,25 +3418,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Leen Meurs",
-      "plaats": "Zoetermeer",
-      "url": "https://www.schilderleenmeurs.nl",
-      "telefoon": "+31 6 54648418",
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 27,
-      "redenen": [
-        "telefoon bekend",
-        "site reageert slecht"
-      ],
-      "aanbod": "Google Start €299",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31654648418?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Oranjegordijn",
       "plaats": "'s-Gravenhage",
       "url": "https://oranjegordijn.nl",
@@ -3496,9 +3494,9 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Woonbasis",
-      "plaats": "Haarlem",
-      "url": "https://www.woonbasis.nl",
+      "bedrijf": "De Lamellengigant",
+      "plaats": "Den Haag",
+      "url": "https://www.delamellengigant.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -3515,16 +3513,16 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
-      "plaats": "Leidschendam",
-      "url": "https://www.fonteinelektrotechniek.nl",
+      "bedrijf": "Bekenkamp",
+      "plaats": "Laren",
+      "url": "https://woonspecialist.nl/winkels/bekenkamp-laren",
       "telefoon": null,
       "email": null,
-      "categorie": "elektricien",
+      "categorie": "zonwering",
       "prioriteit": "scan-eerst",
       "score": 17,
       "redenen": [
-        "sterke niche: elektricien",
+        "sterke niche: zonwering",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
@@ -3572,18 +3570,19 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Koek & Reinders",
-      "plaats": "'s-Gravenhage",
-      "url": "https://koekenreinders.nl",
+      "bedrijf": "Hennink Installatietechniek",
+      "plaats": "Voorburg",
+      "url": "https://hennink.info",
       "telefoon": null,
       "email": null,
-      "categorie": "schilder",
+      "categorie": "installateur",
       "prioriteit": "scan-eerst",
-      "score": 5,
+      "score": 17,
       "redenen": [
+        "sterke niche: installateur",
         "site reageert slecht"
       ],
-      "aanbod": "Google Start €299",
+      "aanbod": "Vakman Site €899",
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": null,
