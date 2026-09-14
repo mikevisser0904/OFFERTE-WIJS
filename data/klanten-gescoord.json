@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-13T08:01:48.010Z",
-  "totaal": 192,
+  "generatedAt": "2026-09-14T08:36:04.614Z",
+  "totaal": 193,
   "metTelefoon": 102,
-  "leakMatches": 16,
+  "leakMatches": 17,
   "leads": [
     {
       "bedrijf": "Amer Houttechniek",
@@ -340,6 +340,25 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "url": "https://www.willemseelektrotechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 97,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "sterke niche: elektricien"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "url": "https://www.bosse-elektrotechniek.nl",
       "telefoon": null,
       "email": null,
       "categorie": "elektricien",
@@ -2029,24 +2048,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Leen Meurs",
-      "plaats": "Zoetermeer",
-      "url": "https://www.schilderleenmeurs.nl",
-      "telefoon": "+31 6 54648418",
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 62,
-      "redenen": [
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31654648418?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Blossom Paardencoaching",
       "plaats": "Amsterdam",
       "url": "https://www.blossompaardencoaching.nl",
@@ -2695,24 +2696,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Woonbasis",
-      "plaats": "Haarlem",
-      "url": "https://www.woonbasis.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Quadraat Bouw",
       "plaats": "Hilversum",
       "url": "https://www.quadraatbouw.nl",
@@ -2893,24 +2876,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
-      "plaats": "Leidschendam",
-      "url": "https://www.fonteinelektrotechniek.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Lameko zonwering",
       "plaats": "Leidschendam",
       "url": "https://www.lameko.nl",
@@ -2975,6 +2940,24 @@
       "score": 52,
       "redenen": [
         "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "De Klussenier",
+      "plaats": "Rotterdam",
+      "url": "https://wimdejong.klussenier.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: kozijnen"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3259,22 +3242,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Koek & Reinders",
-      "plaats": "'s-Gravenhage",
-      "url": "https://koekenreinders.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Multikozijn",
       "plaats": "Bunschoten-Spakenburg",
       "url": "https://www.multikozijn.nl",
@@ -3434,6 +3401,25 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Leen Meurs",
+      "plaats": "Zoetermeer",
+      "url": "https://www.schilderleenmeurs.nl",
+      "telefoon": "+31 6 54648418",
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 27,
+      "redenen": [
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31654648418?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Oranjegordijn",
       "plaats": "'s-Gravenhage",
       "url": "https://oranjegordijn.nl",
@@ -3510,16 +3496,35 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "De Klussenier",
-      "plaats": "Rotterdam",
-      "url": "https://wimdejong.klussenier.nl",
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
       "telefoon": null,
       "email": null,
-      "categorie": "kozijnen",
+      "categorie": "zonwering",
       "prioriteit": "scan-eerst",
       "score": 17,
       "redenen": [
-        "sterke niche: kozijnen",
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
+      "plaats": "Leidschendam",
+      "url": "https://www.fonteinelektrotechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: elektricien",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
@@ -3561,6 +3566,24 @@
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Koek & Reinders",
+      "plaats": "'s-Gravenhage",
+      "url": "https://koekenreinders.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 5,
+      "redenen": [
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": null,

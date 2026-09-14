@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T07:41:40.473Z",
+  "updatedAt": "2026-09-14T08:35:27.117Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2346,8 +2346,12 @@
       "bedrijf": "Bosse Elektrotechniek",
       "plaats": "Aalsmeer",
       "url": "https://www.bosse-elektrotechniek.nl",
-      "status": "pending",
-      "toegevoegd": "2026-09-14T07:41:40.473Z"
+      "status": "klaar",
+      "toegevoegd": "2026-09-14T07:41:40.473Z",
+      "scannedAt": "2026-09-14T08:34:56.909Z",
+      "reportId": "b6e7c1d47e26",
+      "risicoScore": 100,
+      "leakHit": true
     }
   ]
 }

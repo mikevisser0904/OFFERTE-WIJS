@@ -1,7 +1,72 @@
 {
-  "updatedAt": "2026-09-14T04:50:04.756Z",
+  "updatedAt": "2026-09-14T08:35:26.766Z",
   "rebuiltAt": "2026-07-07T08:27:44.766Z",
   "hits": [
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "reportId": "b6e7c1d47e26",
+      "scannedAt": "2026-09-14T08:34:56.909Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/pma/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/index.php",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        }
+      ],
+      "actionable": true
+    },
     {
       "url": "https://klompelektrotechniek.nl/",
       "bedrijf": "Klomp Elektrotechniek",
