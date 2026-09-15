@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-09-15T09:01:03.213Z",
+  "updatedAt": "2026-09-15T11:39:36.054Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-09-15T09:01:01.928Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-09-15T09:01:02.926Z",
+      "lastRun": "2026-09-15T11:39:35.748Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-09-15T09:01:03.109Z",
+      "lastRun": "2026-09-15T11:39:36.053Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-09-15T09:01:03.109Z",
+    "updatedAt": "2026-09-15T11:39:36.053Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -135,7 +135,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-09-15T09:01:02.926Z"
+        "lastRun": "2026-09-15T11:39:35.748Z"
       },
       {
         "id": "auto-verify",
@@ -212,7 +212,7 @@
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
         "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-        "lastRun": "2026-09-15T02:07:41.693Z"
+        "lastRun": "2026-09-15T09:01:03.213Z"
       },
       {
         "id": "verkoop-bewijs",
@@ -226,7 +226,7 @@
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-09-15T02:07:41.659Z"
+        "lastRun": "2026-09-15T09:01:03.177Z"
       },
       {
         "id": "outreach",
