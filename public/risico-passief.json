@@ -1,12 +1,45 @@
 {
-  "updatedAt": "2026-09-16T19:52:12.085Z",
+  "updatedAt": "2026-09-16T23:16:40.519Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 30,
     "kritiek": 0,
-    "hoog": 12
+    "hoog": 29
   },
   "resultaten": [
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/phpMyAdmin/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/index.php",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
     {
       "url": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
@@ -23,6 +56,28 @@
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
       "klantUrl": "https://vogelaarschilder.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -118,6 +173,94 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://tafelboom.nl/phpMyAdmin/",
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.tafelboom.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "klantUrl": "https://www.textilia-dordrecht.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "klantUrl": "https://www.textilia-dordrecht.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://www.ejvandermeer.nl/phpmyadmin/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
@@ -140,148 +283,57 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://www.bosse-elektrotechniek.nl/phpMyAdmin/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/index.php",
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://tafelboom.nl/phpMyAdmin/",
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.tafelboom.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Textilia",
-      "plaats": "Dordrecht",
-      "klantUrl": "https://www.textilia-dordrecht.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Textilia",
-      "plaats": "Dordrecht",
-      "klantUrl": "https://www.textilia-dordrecht.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://firmavanrijn.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://firmavanrijn.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Het Interieur",
-      "plaats": "Amsterdam",
-      "klantUrl": "https://hetinterieur.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Het Interieur",
-      "plaats": "Amsterdam",
-      "klantUrl": "https://hetinterieur.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
       "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
       "klantUrl": "https://www.amer-hout.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
     },
     {
       "url": "https://s205.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
       "klantUrl": "https://www.amer-hout.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
     },
     {
       "url": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
     },
     {
       "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "Reinaerde Remake Meubel",
       "plaats": "Utrecht",
       "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
     },
     {
       "url": "https://chargecars.nl/phpMyAdmin/",
       "bedrijf": "ChargeCars",
       "plaats": "Nijkerk",
       "klantUrl": "https://chargecars.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
+      "http": 404,
+      "niveau": "geen",
+      "reden": "Geen phpMyAdmin (site/404)"
     }
   ]
 }
