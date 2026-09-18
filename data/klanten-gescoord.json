@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T08:24:44.424Z",
+  "generatedAt": "2026-09-18T07:59:44.753Z",
   "totaal": 193,
   "metTelefoon": 102,
   "leakMatches": 17,
@@ -2912,24 +2912,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
-      "plaats": "Leidschendam",
-      "url": "https://www.fonteinelektrotechniek.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Lameko zonwering",
       "plaats": "Leidschendam",
       "url": "https://www.lameko.nl",
@@ -3538,6 +3520,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Fontein elektrotechniek & deuraandrijvingen",
+      "plaats": "Leidschendam",
+      "url": "https://www.fonteinelektrotechniek.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: elektricien",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
