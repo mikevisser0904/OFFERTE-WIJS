@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-18T13:10:41.804Z",
+  "updatedAt": "2026-09-18T19:13:29.371Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 30,
     "kritiek": 0,
-    "hoog": 28
+    "hoog": 29
   },
   "resultaten": [
     {
@@ -64,6 +64,17 @@
     },
     {
       "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "klantUrl": "https://www.willemseelektrotechniek.nl/",
@@ -323,14 +334,6 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
-    },
-    {
-      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
     }
   ]
 }
