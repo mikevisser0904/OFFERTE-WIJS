@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-09-20T19:06:35.351Z",
+  "verifiedAt": "2026-09-20T22:43:17.863Z",
   "totaal": 30,
-  "loginBereikbaar": 26,
-  "uniekeLoginUrls": 13,
-  "bevestigd": 10,
+  "loginBereikbaar": 28,
+  "uniekeLoginUrls": 15,
+  "bevestigd": 12,
   "hosting_redirect": 16,
   "false_positive": 0,
-  "onbekend": 4,
+  "onbekend": 2,
   "redirect_anders": 0,
   "results": [
     {
@@ -16,10 +16,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.bosse-elektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
@@ -188,10 +192,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",

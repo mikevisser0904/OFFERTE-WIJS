@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-09-20T19:08:54.984Z",
+  "updatedAt": "2026-09-20T22:44:14.263Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 32,
-    "leakVerified": 29,
-    "leakFailed": 3,
+    "leakVerified": 30,
+    "leakFailed": 2,
     "consentChecked": 17,
-    "consentProofOk": 15
+    "consentProofOk": 16
   },
   "leakRows": [
     {
       "url": "https://www.bosse-elektrotechniek.nl/",
       "bedrijf": "Bosse Elektrotechniek",
       "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://vogelaarschilder.nl/",
@@ -101,7 +101,7 @@
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
@@ -134,7 +134,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -366,7 +366,7 @@
     {
       "siteUrl": "https://www.bosse-elektrotechniek.nl/",
       "bedrijf": "Bosse Elektrotechniek",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     }
   ],
@@ -396,6 +396,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 15 consent OK · 3 failed recheck"
+  "grokPrompt": "auto-verify: 30 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "30 verified · 16 consent OK · 2 failed recheck"
 }
