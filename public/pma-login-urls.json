@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T13:14:36.006Z",
+  "updatedAt": "2026-09-20T19:06:35.351Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -7,16 +7,6 @@
       "plaats": "Maasdijk",
       "klantUrl": "https://www.boselektrotechniek.nl/",
       "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "loginUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -37,16 +27,6 @@
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
       "loginUrl": "https://nuoveni.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -167,16 +147,6 @@
       "http": 200
     },
     {
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "loginUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
@@ -191,16 +161,6 @@
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
       "loginUrl": "https://nuoveni.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "verkoop": "sterk",
-      "panelKind": "login",
-      "http": 200
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "klantUrl": "https://rioolservice-pvanadrichem.nl/",
-      "loginUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
