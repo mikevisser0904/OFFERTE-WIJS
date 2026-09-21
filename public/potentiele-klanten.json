@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-14T12:33:42.208Z",
+  "generatedAt": "2026-09-21T07:47:40.638Z",
   "bron": "osm",
-  "totaal": 193,
+  "totaal": 194,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 39
+      "count": 36
     },
     {
       "plaats": "Amersfoort",
-      "count": 15
+      "count": 16
     },
     {
       "plaats": "Amsterdam",
-      "count": 42
+      "count": 43
     },
     {
       "plaats": "Rotterdam",
@@ -25,7 +25,7 @@
     },
     {
       "plaats": "Haarlem",
-      "count": 11
+      "count": 10
     }
   ],
   "leads": [
@@ -1763,6 +1763,15 @@
       "url": "https://aluku.nl",
       "telefoon": null,
       "email": "info@aluku.nl",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "BamHout",
+      "plaats": "Leusden",
+      "url": "http://www.bamhout.nl",
+      "telefoon": "+31653398950",
+      "email": "Info@bamhout.nl",
       "categorie": "kozijnen",
       "prioriteit": "scan-eerst"
     }
