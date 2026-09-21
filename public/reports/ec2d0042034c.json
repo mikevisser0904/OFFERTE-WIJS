@@ -3,12 +3,11 @@
   "url": "https://klompelektrotechniek.nl/",
   "bedrijf": "Klomp Elektrotechniek",
   "plaats": "Barneveld",
-  "scannedAt": "2026-09-14T10:30:48.533Z",
+  "scannedAt": "2026-09-21T10:36:11.616Z",
   "risicoScore": 100,
   "niveau": "kritiek",
   "niveauLabel": "Kritiek",
   "klantBullets": [
-    "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
     "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
@@ -22,7 +21,7 @@
       "title": "phpMyAdmin inlog open op internet",
       "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
       "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "evidence": "https://klompelektrotechniek.nl/phpmyadmin/",
       "verified": true,
       "panelConfidence": "high",
       "panelKind": "login"
@@ -34,19 +33,7 @@
       "title": "phpMyAdmin inlog open op internet",
       "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
       "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
-      "verified": true,
-      "panelConfidence": "high",
-      "panelKind": "login"
-    },
-    {
-      "id": "db-admin-_phpmyadmin2_",
-      "check": "database",
-      "severity": "critical",
-      "title": "phpMyAdmin inlog open op internet",
-      "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-      "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "evidence": "https://klompelektrotechniek.nl/phpMyAdmin/",
       "verified": true,
       "panelConfidence": "high",
       "panelKind": "login"
@@ -58,7 +45,7 @@
       "title": "phpMyAdmin inlog open op internet",
       "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
       "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "evidence": "https://klompelektrotechniek.nl/pma/",
       "verified": true,
       "panelConfidence": "high",
       "panelKind": "login"
@@ -70,7 +57,7 @@
       "title": "phpMyAdmin inlog open op internet",
       "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
       "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "evidence": "https://klompelektrotechniek.nl/phpmyadmin/index.php",
       "verified": true,
       "panelConfidence": "high",
       "panelKind": "login"

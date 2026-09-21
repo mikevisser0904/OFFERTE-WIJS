@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T10:32:35.675Z",
+  "generatedAt": "2026-09-21T10:37:06.964Z",
   "totaalMetLek": 18,
   "rijen": [
     {
@@ -115,6 +115,22 @@
       "reportId": "86dde731b1e4"
     },
     {
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "url": "https://www.bosse-elektrotechniek.nl",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "www.bosse-elektrotechniek.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "b6e7c1d47e26"
+    },
+    {
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
       "url": "https://hetinterieur.nl",
@@ -127,7 +143,7 @@
       "panelUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
-      "risicoScore": 80,
+      "risicoScore": 100,
       "reportId": "1c2376857c87"
     },
     {
@@ -136,11 +152,11 @@
       "url": "https://klompelektrotechniek.nl",
       "heeftLek": true,
       "dbType": "phpMyAdmin",
-      "dbHost": "web3.hostingcp.eu",
+      "dbHost": "klompelektrotechniek.nl",
       "dbName": null,
       "dbUser": null,
       "wachtwoordLek": false,
-      "panelUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
+      "panelUrl": "https://klompelektrotechniek.nl/phpmyadmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
       "risicoScore": 100,
@@ -241,22 +257,6 @@
       "sqlTabelCount": 0,
       "risicoScore": 100,
       "reportId": "fe9d43611024"
-    },
-    {
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "url": "https://www.bosse-elektrotechniek.nl",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "www.bosse-elektrotechniek.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 100,
-      "reportId": "b6e7c1d47e26"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
