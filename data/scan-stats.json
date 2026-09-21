@@ -1,12 +1,22 @@
 {
   "versie": 1,
-  "lastBatchAt": "2026-09-14T08:35:27.118Z",
+  "lastBatchAt": "2026-09-21T08:36:22.961Z",
   "lastBatchMode": "leaks",
-  "totaalGescand": 216,
+  "totaalGescand": 217,
   "totaalLekken": 36,
-  "totaalSchoon": 180,
+  "totaalSchoon": 181,
   "totaalFout": 0,
   "batches": [
+    {
+      "at": "2026-09-21T08:36:22.961Z",
+      "mode": "leaks",
+      "processed": 1,
+      "leaks": 0,
+      "clean": 1,
+      "errors": 0,
+      "hitRate": 0,
+      "durationMs": 4453
+    },
     {
       "at": "2026-09-14T08:35:27.118Z",
       "mode": "leaks",
@@ -88,5 +98,5 @@
       "durationMs": 117979
     }
   ],
-  "hitRateLaatste": 100
+  "hitRateLaatste": 0
 }
