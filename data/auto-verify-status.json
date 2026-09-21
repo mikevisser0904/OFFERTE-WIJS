@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T05:30:30.658Z",
+  "updatedAt": "2026-09-21T15:21:51.430Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 32,
@@ -10,17 +10,9 @@
   },
   "leakRows": [
     {
-      "url": "https://www.bosse-elektrotechniek.nl/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://vogelaarschilder.nl/",
-      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "url": "https://klompelektrotechniek.nl/",
+      "bedrijf": "Klomp Elektrotechniek",
+      "evidence": "https://klompelektrotechniek.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -34,17 +26,9 @@
       "status": "verified"
     },
     {
-      "url": "https://klompelektrotechniek.nl/",
-      "bedrijf": "Klomp Elektrotechniek",
-      "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://www.boselektrotechniek.nl/",
-      "bedrijf": "Bos Elektrotechniek",
-      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "url": "https://vogelaarschilder.nl/",
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -58,11 +42,27 @@
       "status": "verified"
     },
     {
+      "url": "https://www.boselektrotechniek.nl/",
+      "bedrijf": "Bos Elektrotechniek",
+      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.textilia-dordrecht.nl/",
+      "bedrijf": "Textilia",
+      "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -74,9 +74,17 @@
       "status": "verified"
     },
     {
-      "url": "https://www.textilia-dordrecht.nl/",
-      "bedrijf": "Textilia",
-      "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -85,14 +93,6 @@
       "url": "https://firmavanrijn.nl/",
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://hetinterieur.nl/",
-      "bedrijf": "Het Interieur",
-      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T05:29:31.306Z",
+  "updatedAt": "2026-09-21T15:21:02.558Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -27,6 +27,16 @@
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
       "loginUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "klantUrl": "https://klompelektrotechniek.nl/",
+      "loginUrl": "https://klompelektrotechniek.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -117,7 +127,7 @@
     {
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
-      "klantUrl": "https://klompelektrotechniek.nl/",
+      "klantUrl": "https://klompelektrotechniek.nl",
       "loginUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
       "verdict": "hosting_redirect",
       "verkoop": "voorzichtig",
@@ -181,6 +191,16 @@
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
       "loginUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Klomp Elektrotechniek",
+      "plaats": "Barneveld",
+      "klantUrl": "https://klompelektrotechniek.nl/",
+      "loginUrl": "https://klompelektrotechniek.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -269,7 +289,7 @@
     {
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
-      "klantUrl": "https://klompelektrotechniek.nl/",
+      "klantUrl": "https://klompelektrotechniek.nl",
       "loginUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
       "verdict": "hosting_redirect",
       "verkoop": "voorzichtig",
