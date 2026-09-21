@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-21T07:47:40.638Z",
+  "generatedAt": "2026-09-21T12:41:33.953Z",
   "bron": "osm",
   "totaal": 194,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 36
+      "count": 39
     },
     {
       "plaats": "Amersfoort",
@@ -1038,6 +1038,15 @@
       "prioriteit": "scan-eerst"
     },
     {
+      "bedrijf": "BamHout",
+      "plaats": "Leusden",
+      "url": "http://www.bamhout.nl",
+      "telefoon": "+31653398950",
+      "email": "Info@bamhout.nl",
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
       "bedrijf": "Woordes Bouw- & Timmerwerken",
       "plaats": "Leusden",
       "url": "https://www.woordesbouw.nl",
@@ -1763,15 +1772,6 @@
       "url": "https://aluku.nl",
       "telefoon": null,
       "email": "info@aluku.nl",
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst"
-    },
-    {
-      "bedrijf": "BamHout",
-      "plaats": "Leusden",
-      "url": "http://www.bamhout.nl",
-      "telefoon": "+31653398950",
-      "email": "Info@bamhout.nl",
       "categorie": "kozijnen",
       "prioriteit": "scan-eerst"
     }
