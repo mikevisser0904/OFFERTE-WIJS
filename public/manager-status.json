@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T09:21:25.957Z",
+  "updatedAt": "2026-09-21T15:16:11.749Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -38,13 +38,13 @@
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 32 lekken",
-      "lastRun": "2026-09-21T09:21:25.118Z"
+      "lastRun": "2026-09-21T13:04:57.252Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 75ms",
+      "detail": "OK 159ms",
       "lastRun": "2026-09-21T09:21:25.069Z"
     },
     {
@@ -66,7 +66,7 @@
       "naam": "Lead Hunter",
       "status": "ok",
       "detail": "194 leads · 0 queue",
-      "lastRun": "2026-09-14T12:34:27.404Z"
+      "lastRun": "2026-09-21T12:42:06.877Z"
     },
     {
       "id": "vakscan-import",
@@ -80,7 +80,7 @@
       "naam": "Klanten-lek",
       "status": "ok",
       "detail": "18 echte lek(ken) — /leads/ database-export · outreach",
-      "lastRun": "2026-09-14T10:32:35.676Z"
+      "lastRun": "2026-09-21T10:37:06.965Z"
     },
     {
       "id": "vakscan-leaks",
@@ -101,28 +101,28 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-      "lastRun": "2026-09-21T01:59:04.823Z"
+      "lastRun": "2026-09-21T13:40:53.631Z"
     },
     {
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-09-21T05:30:30.421Z"
+      "lastRun": "2026-09-21T10:37:22.308Z"
     },
     {
       "id": "outbound-auto",
       "naam": "Outbound auto",
       "status": "ok",
       "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-      "lastRun": "2026-09-21T01:59:04.796Z"
+      "lastRun": "2026-09-21T13:40:53.594Z"
     },
     {
       "id": "outreach",
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-09-21T04:50:52.041Z"
+      "lastRun": "2026-09-21T10:37:22.322Z"
     },
     {
       "id": "seo",
