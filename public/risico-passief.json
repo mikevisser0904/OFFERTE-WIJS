@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T23:37:58.639Z",
+  "updatedAt": "2026-09-22T05:23:58.708Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 33,
@@ -42,6 +42,17 @@
     },
     {
       "url": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "klantUrl": "https://www.willemseelektrotechniek.nl/",
@@ -327,17 +338,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://web3.hostingcp.eu/phpMyAdmin/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
@@ -358,10 +358,10 @@
       "reden": "Geen phpMyAdmin (site/404)"
     },
     {
-      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     }
