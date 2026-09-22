@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-22T19:54:30.266Z",
+  "updatedAt": "2026-09-22T23:17:54.935Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 33,
     "kritiek": 0,
-    "hoog": 30
+    "hoog": 32
   },
   "resultaten": [
     {
@@ -261,6 +261,17 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "plaats": "Moordrecht",
@@ -327,6 +338,17 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://web3.hostingcp.eu/phpMyAdmin/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
@@ -345,22 +367,6 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
-    },
-    {
-      "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://firmavanrijn.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
     }
   ]
 }
