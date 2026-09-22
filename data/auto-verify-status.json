@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T13:42:20.676Z",
+  "updatedAt": "2026-09-22T19:55:16.423Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 32,
@@ -22,7 +22,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -94,7 +94,7 @@
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
