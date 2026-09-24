@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T20:08:53.935Z",
+  "updatedAt": "2026-09-24T23:28:01.250Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -107,8 +107,8 @@
     {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "loginUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "klantUrl": "https://www.willemseelektrotechniek.nl",
+      "loginUrl": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
       "verdict": "hosting_redirect",
       "verkoop": "voorzichtig",
       "panelKind": "login",
@@ -269,8 +269,8 @@
     {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "loginUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "klantUrl": "https://www.willemseelektrotechniek.nl",
+      "loginUrl": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
       "verdict": "hosting_redirect",
       "verkoop": "voorzichtig",
       "panelKind": "login",
