@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-27T05:47:03.330Z",
+  "updatedAt": "2026-09-27T14:19:49.925Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 32,
     "leakVerified": 30,
     "leakFailed": 2,
     "consentChecked": 17,
-    "consentProofOk": 16
+    "consentProofOk": 15
   },
   "leakRows": [
     {
@@ -134,7 +134,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -318,7 +318,7 @@
     {
       "siteUrl": "https://www.willemseelektrotechniek.nl",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -397,5 +397,5 @@
     }
   ],
   "grokPrompt": "auto-verify: 30 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "30 verified · 16 consent OK · 2 failed recheck"
+  "agentPrompt": "30 verified · 15 consent OK · 2 failed recheck"
 }
