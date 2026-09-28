@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T05:52:49.205Z",
+  "updatedAt": "2026-09-28T17:01:32.105Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -67,6 +67,16 @@
       "plaats": "Utrecht",
       "klantUrl": "https://www.tafelboom.nl/",
       "loginUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "klantUrl": "https://www.ejvandermeer.nl/",
+      "loginUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -221,6 +231,16 @@
       "plaats": "Utrecht",
       "klantUrl": "https://www.tafelboom.nl/",
       "loginUrl": "https://tafelboom.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "klantUrl": "https://www.ejvandermeer.nl/",
+      "loginUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
