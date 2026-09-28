@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:37:06.964Z",
+  "generatedAt": "2026-09-28T11:38:25.382Z",
   "totaalMetLek": 18,
   "rijen": [
     {
@@ -33,22 +33,6 @@
       "sqlTabelCount": 0,
       "risicoScore": 40,
       "reportId": "e362535e17f6"
-    },
-    {
-      "bedrijf": "van der Meer Elektrotechniek BV",
-      "plaats": "Maasland",
-      "url": "https://www.ejvandermeer.nl",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "www.ejvandermeer.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 80,
-      "reportId": "5424b2313def"
     },
     {
       "bedrijf": "Rioolservice P. van Adrichem",
@@ -257,6 +241,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 100,
       "reportId": "fe9d43611024"
+    },
+    {
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "plaats": "Maasland",
+      "url": "https://www.ejvandermeer.nl",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "www.ejvandermeer.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 80,
+      "reportId": "5424b2313def"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
