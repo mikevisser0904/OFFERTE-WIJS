@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T10:11:18.360Z",
+  "updatedAt": "2026-09-29T14:59:03.525Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -44,7 +44,7 @@
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 146ms",
+      "detail": "OK 154ms",
       "lastRun": "2026-09-29T10:11:17.513Z"
     },
     {
@@ -101,7 +101,7 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-      "lastRun": "2026-09-29T00:00:52.777Z"
+      "lastRun": "2026-09-29T13:47:18.180Z"
     },
     {
       "id": "verkoop-bewijs",
@@ -115,7 +115,7 @@
       "naam": "Outbound auto",
       "status": "ok",
       "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-      "lastRun": "2026-09-29T00:00:52.752Z"
+      "lastRun": "2026-09-29T13:47:18.145Z"
     },
     {
       "id": "outreach",
