@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T21:04:58.761Z",
+  "updatedAt": "2026-09-30T06:00:20.611Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 32,
@@ -70,7 +70,7 @@
       "bedrijf": "Textilia",
       "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -134,7 +134,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
