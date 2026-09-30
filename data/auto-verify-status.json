@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T06:00:20.611Z",
+  "updatedAt": "2026-09-30T15:19:07.819Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 32,
@@ -70,7 +70,7 @@
       "bedrijf": "Textilia",
       "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -262,7 +262,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     }
   ],
