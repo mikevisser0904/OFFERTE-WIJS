@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T08:51:14.169Z",
+  "updatedAt": "2026-10-01T10:31:06.915Z",
   "agent": "optimizer",
   "applyMode": true,
   "metrics": {
@@ -8,7 +8,7 @@
     "outreachCount": 15,
     "leadsTotaal": 194,
     "hitRate": 33.333333333333336,
-    "avgMs": 939
+    "avgMs": 68
   },
   "uitgevoerd": [
     {
@@ -35,13 +35,6 @@
   ],
   "aanbevelingen": [
     {
-      "id": "perf-pages",
-      "prioriteit": 5,
-      "type": "grok",
-      "titel": "Trage GitHub Pages",
-      "actie": "Gem. 939ms — images, static chunks, health checks verminderen"
-    },
-    {
       "id": "mike-actie",
       "prioriteit": 3,
       "type": "mike",
@@ -49,6 +42,6 @@
       "actie": "5 WhatsApps via /actie/ vandaag"
     }
   ],
-  "grokPrompt": "optimizer: Gem. 939ms — images, static chunks, health checks verminderen",
+  "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
   "pendingGrok": 2
 }
