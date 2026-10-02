@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-02T06:12:45.129Z",
+  "updatedAt": "2026-10-02T15:00:50.365Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 33,
     "kritiek": 0,
-    "hoog": 32
+    "hoog": 29
   },
   "resultaten": [
     {
@@ -96,17 +96,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "plaats": "Zandvoort",
-      "klantUrl": "https://www.willemseelektrotechniek.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "bedrijf": "Bos Elektrotechniek",
       "plaats": "Maasdijk",
@@ -185,17 +174,6 @@
     },
     {
       "url": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Textilia",
-      "plaats": "Dordrecht",
-      "klantUrl": "https://www.textilia-dordrecht.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
       "bedrijf": "Textilia",
       "plaats": "Dordrecht",
       "klantUrl": "https://www.textilia-dordrecht.nl/",
@@ -338,17 +316,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://web3.hostingcp.eu/phpMyAdmin/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
@@ -367,6 +334,30 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
+    },
+    {
+      "url": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "plaats": "Zandvoort",
+      "klantUrl": "https://www.willemseelektrotechniek.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "klantUrl": "https://www.textilia-dordrecht.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
