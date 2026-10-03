@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-03T19:25:47.127Z",
+  "verifiedAt": "2026-10-03T23:21:54.275Z",
   "totaal": 30,
-  "loginBereikbaar": 28,
-  "uniekeLoginUrls": 16,
-  "bevestigd": 13,
+  "loginBereikbaar": 26,
+  "uniekeLoginUrls": 15,
+  "bevestigd": 11,
   "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 2,
+  "onbekend": 4,
   "redirect_anders": 0,
   "results": [
     {
@@ -112,14 +112,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.bwstyling.nl/phpmyadmin/",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.bwstyling.nl)",
-      "http": 200,
-      "finalUrl": "https://www.bwstyling.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Textilia",
@@ -364,14 +360,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.bwstyling.nl/phpmyadmin/",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.bwstyling.nl)",
-      "http": 200,
-      "finalUrl": "https://www.bwstyling.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",

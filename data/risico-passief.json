@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-03T19:26:00.754Z",
+  "updatedAt": "2026-10-03T23:22:07.551Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 33,
     "kritiek": 0,
-    "hoog": 32
+    "hoog": 29
   },
   "resultaten": [
     {
@@ -144,39 +144,6 @@
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://www.bwstyling.nl/phpmyadmin/",
-      "bedrijf": "Burggraeve Woonstyling",
-      "plaats": "Haarlem",
-      "klantUrl": "https://www.bwstyling.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://www.bwstyling.nl/phpMyAdmin/",
-      "bedrijf": "Burggraeve Woonstyling",
-      "plaats": "Haarlem",
-      "klantUrl": "https://www.bwstyling.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://www.bwstyling.nl/phpmyadmin/index.php",
-      "bedrijf": "Burggraeve Woonstyling",
-      "plaats": "Haarlem",
-      "klantUrl": "https://www.bwstyling.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -367,6 +334,30 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
+    },
+    {
+      "url": "https://www.bwstyling.nl/phpmyadmin/",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.bwstyling.nl/phpMyAdmin/",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://www.bwstyling.nl/phpmyadmin/index.php",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
