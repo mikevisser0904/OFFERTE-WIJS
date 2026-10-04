@@ -1,8 +1,8 @@
 {
-  "verifiedAt": "2026-10-03T23:21:54.275Z",
+  "verifiedAt": "2026-10-04T06:23:47.488Z",
   "totaal": 30,
   "loginBereikbaar": 26,
-  "uniekeLoginUrls": 15,
+  "uniekeLoginUrls": 14,
   "bevestigd": 11,
   "hosting_redirect": 15,
   "false_positive": 0,
@@ -112,10 +112,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.bwstyling.nl/phpmyadmin/",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.bwstyling.nl)",
+      "http": 200,
+      "finalUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Textilia",
@@ -172,14 +176,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.bosse-elektrotechniek.nl)",
-      "http": 200,
-      "finalUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Firma Fred van Rijn",
@@ -204,14 +204,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Amer Houttechniek",
@@ -360,10 +356,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.bwstyling.nl/phpmyadmin/",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.bwstyling.nl)",
+      "http": 200,
+      "finalUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
