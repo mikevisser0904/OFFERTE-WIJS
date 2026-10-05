@@ -1,21 +1,16 @@
 {
-  "updatedAt": "2026-10-05T19:16:46.482Z",
+  "updatedAt": "2026-10-05T19:50:07.812Z",
   "agent": "manager",
-  "fase": "verkopen",
-  "faseLabel": "Vandaag geld — warm netwerk",
-  "prioriteit": 1,
-  "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
-  "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel.",
+  "fase": "site",
+  "faseLabel": "Site probleem",
+  "prioriteit": 0,
+  "grokPrompt": "URGENT: public/health.json unhealthy — fix OFFERTE-WIJS, build, push, health-check opnieuw",
+  "mikeActie": "Wacht tot site weer groen is vóór verkopen.",
   "acties": [
     {
-      "wie": "mike",
-      "actie": "5 WhatsApps vandaag",
-      "script": "/actie/"
-    },
-    {
-      "wie": "mike",
-      "actie": "Marktplaats + status-deel",
-      "script": "/listings/"
+      "wie": "grok",
+      "actie": "Fix site + push",
+      "script": "npm run build:pages"
     }
   ],
   "cards": [
@@ -23,8 +18,8 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-10-05T19:16:46.167Z"
+      "detail": "Grok-wachtrij 3 · laatste fixes 3",
+      "lastRun": "2026-10-05T19:50:07.292Z"
     },
     {
       "id": "auto-verify",
@@ -38,28 +33,28 @@
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 1 pending · 32 lekken",
-      "lastRun": "2026-10-05T17:27:04.757Z"
+      "lastRun": "2026-10-05T19:50:05.917Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
-      "status": "ok",
-      "detail": "OK 149ms",
-      "lastRun": "2026-10-05T10:55:19.771Z"
+      "status": "actie",
+      "detail": "site unhealthy",
+      "lastRun": "2026-10-05T19:50:05.776Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-10-05T10:55:20.116Z"
+      "lastRun": "2026-10-05T19:50:06.451Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-10-05T10:55:20.143Z"
+      "lastRun": "2026-10-05T19:50:06.526Z"
     },
     {
       "id": "lead-hunter",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T19:16:46.167Z",
+  "updatedAt": "2026-10-05T19:50:07.292Z",
   "agent": "optimizer",
   "applyMode": true,
   "metrics": {
@@ -8,7 +8,7 @@
     "outreachCount": 15,
     "leadsTotaal": 195,
     "hitRate": 33.333333333333336,
-    "avgMs": 149
+    "avgMs": 127
   },
   "uitgevoerd": [
     {
@@ -35,6 +35,14 @@
   ],
   "aanbevelingen": [
     {
+      "id": "fix-health",
+      "prioriteit": 0,
+      "type": "grok",
+      "titel": "Site unhealthy",
+      "actie": "Build fixen, health-check, push",
+      "script": "npm run build:pages"
+    },
+    {
       "id": "mike-actie",
       "prioriteit": 3,
       "type": "mike",
@@ -42,6 +50,6 @@
       "actie": "5 WhatsApps via /actie/ vandaag"
     }
   ],
-  "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-  "pendingGrok": 2
+  "grokPrompt": "optimizer: Build fixen, health-check, push",
+  "pendingGrok": 3
 }
