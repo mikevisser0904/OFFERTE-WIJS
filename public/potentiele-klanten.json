@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-05T08:26:09.466Z",
+  "generatedAt": "2026-10-05T14:23:01.415Z",
   "bron": "osm",
-  "totaal": 194,
+  "totaal": 195,
   "perPlaats": [
     {
       "plaats": "Utrecht",
@@ -13,7 +13,7 @@
     },
     {
       "plaats": "Amsterdam",
-      "count": 43
+      "count": 44
     },
     {
       "plaats": "Rotterdam",
@@ -1096,6 +1096,15 @@
       "plaats": "Maassluis",
       "url": "https://www.voorbergzonwering.nl",
       "telefoon": "+31 10 59 229 76",
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Gewoon Mooi",
+      "plaats": "Mijdrecht",
+      "url": "https://mijdrechtdorp.nl/winkel/gewoon-mooi",
+      "telefoon": null,
       "email": null,
       "categorie": "zonwering",
       "prioriteit": "scan-eerst"
