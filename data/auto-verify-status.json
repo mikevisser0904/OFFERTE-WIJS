@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T06:14:43.819Z",
+  "updatedAt": "2026-10-05T17:27:04.763Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 32,
@@ -26,17 +26,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.ejvandermeer.nl/",
-      "bedrijf": "van der Meer Elektrotechniek BV",
-      "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://www.willemseelektrotechniek.nl/",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://nuoveni.nl/",
+      "bedrijf": "Nuoveni",
+      "evidence": "https://nuoveni.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -45,14 +37,6 @@
       "url": "https://www.boselektrotechniek.nl/",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://nuoveni.nl/",
-      "bedrijf": "Nuoveni",
-      "evidence": "https://nuoveni.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -82,17 +66,17 @@
       "status": "verified"
     },
     {
-      "url": "https://hetinterieur.nl/",
-      "bedrijf": "Het Interieur",
-      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
     {
-      "url": "https://www.bosse-elektrotechniek.nl/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "url": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -114,6 +98,14 @@
       "status": "verified"
     },
     {
+      "url": "https://www.ejvandermeer.nl/",
+      "bedrijf": "van der Meer Elektrotechniek BV",
+      "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://www.amer-hout.nl/",
       "bedrijf": "Amer Houttechniek",
       "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/",
@@ -126,6 +118,14 @@
       "bedrijf": "Voordeelgordijnen",
       "evidence": "https://www.voordeelgordijnen.nl/.env",
       "dbOk": false,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.willemseelektrotechniek.nl/",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
