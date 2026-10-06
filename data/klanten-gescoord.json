@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T14:23:35.845Z",
+  "generatedAt": "2026-10-06T09:48:32.331Z",
   "totaal": 195,
   "metTelefoon": 103,
   "leakMatches": 17,
@@ -2156,24 +2156,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Bonarius Zuid-Holland",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.bonarius.com",
-      "telefoon": null,
-      "email": null,
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Dreumel",
       "plaats": "'s-Gravenhage",
       "url": "https://www.dreumel.nl",
@@ -2321,24 +2303,6 @@
       "bedrijf": "Designbekleding",
       "plaats": "Amersfoort",
       "url": "https://designbekleding.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Wonnink Zonwering",
-      "plaats": "Amersfoort",
-      "url": "https://www.wonnink.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -2706,24 +2670,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Woonbasis",
-      "plaats": "Haarlem",
-      "url": "https://www.woonbasis.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3509,9 +3455,47 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Bonarius Zuid-Holland",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.bonarius.com",
+      "telefoon": null,
+      "email": null,
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: installateur",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Oranjegordijn",
       "plaats": "'s-Gravenhage",
       "url": "https://oranjegordijn.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -3576,6 +3560,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
