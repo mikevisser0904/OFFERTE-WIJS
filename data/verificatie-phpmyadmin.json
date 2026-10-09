@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-09T15:35:23.225Z",
+  "verifiedAt": "2026-10-09T21:17:30.936Z",
   "totaal": 30,
-  "loginBereikbaar": 28,
-  "uniekeLoginUrls": 16,
+  "loginBereikbaar": 26,
+  "uniekeLoginUrls": 15,
   "bevestigd": 13,
-  "hosting_redirect": 15,
+  "hosting_redirect": 13,
   "false_positive": 0,
-  "onbekend": 2,
+  "onbekend": 4,
   "redirect_anders": 0,
   "results": [
     {
@@ -160,14 +160,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s230.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Rioolservice P. van Adrichem",
@@ -300,14 +296,10 @@
       "geprobeerd": 6,
       "besteProbe": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host s230.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Het Interieur",
