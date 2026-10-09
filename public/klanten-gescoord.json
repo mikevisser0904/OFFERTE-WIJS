@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T10:04:05.848Z",
+  "generatedAt": "2026-10-09T10:06:42.005Z",
   "totaal": 195,
   "metTelefoon": 103,
   "leakMatches": 17,
@@ -2714,24 +2714,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Woonbasis",
-      "plaats": "Haarlem",
-      "url": "https://www.woonbasis.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Quadraat Bouw",
       "plaats": "Hilversum",
       "url": "https://www.quadraatbouw.nl",
@@ -3576,6 +3558,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
