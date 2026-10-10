@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T10:06:42.005Z",
+  "generatedAt": "2026-10-10T09:27:46.647Z",
   "totaal": 195,
   "metTelefoon": 103,
   "leakMatches": 17,
@@ -1628,6 +1628,25 @@
       "actie": "whatsapp"
     },
     {
+      "bedrijf": "Plant services",
+      "plaats": "Rotterdam",
+      "url": "https://plantservices.nl",
+      "telefoon": "+31 10 434 2465",
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 74,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "Luxury Home",
       "plaats": "Spijkenisse",
       "url": "https://luxuryhomeraamdecoratie.nl",
@@ -2714,6 +2733,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Quadraat Bouw",
       "plaats": "Hilversum",
       "url": "https://www.quadraatbouw.nl",
@@ -2933,24 +2970,6 @@
       "bedrijf": "Timmerfabriek Verhagen",
       "plaats": "Leidschendam",
       "url": "https://www.timmerfabriekverhagen.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "ZENS Maatwerk",
-      "plaats": "Loosdrecht",
-      "url": "https://zensmaatwerk.nl",
       "telefoon": null,
       "email": null,
       "categorie": "kozijnen",
@@ -3432,26 +3451,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Plant services",
-      "plaats": "Rotterdam",
-      "url": "https://plantservices.nl",
-      "telefoon": "+31 10 434 2465",
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 39,
-      "redenen": [
-        "sterke niche: elektricien",
-        "telefoon bekend",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Installatiebureau Jonker BV",
       "plaats": "Wassenaar",
       "url": "https://www.jonkerbv.eu",
@@ -3567,16 +3566,16 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Woonbasis",
-      "plaats": "Haarlem",
-      "url": "https://www.woonbasis.nl",
+      "bedrijf": "ZENS Maatwerk",
+      "plaats": "Loosdrecht",
+      "url": "https://zensmaatwerk.nl",
       "telefoon": null,
       "email": null,
-      "categorie": "zonwering",
+      "categorie": "kozijnen",
       "prioriteit": "scan-eerst",
       "score": 17,
       "redenen": [
-        "sterke niche: zonwering",
+        "sterke niche: kozijnen",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
