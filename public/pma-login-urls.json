@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T21:17:30.936Z",
+  "updatedAt": "2026-10-10T06:24:41.612Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -89,6 +89,16 @@
       "plaats": "Amersfoort",
       "klantUrl": "https://www.amer-hout.nl/",
       "loginUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "loginUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "verdict": "hosting_redirect",
       "verkoop": "voorzichtig",
       "panelKind": "login",
@@ -241,6 +251,16 @@
       "plaats": "Amersfoort",
       "klantUrl": "https://www.amer-hout.nl/",
       "loginUrl": "https://s205.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "loginUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "verdict": "hosting_redirect",
       "verkoop": "voorzichtig",
       "panelKind": "login",
