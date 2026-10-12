@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-12T08:32:41.995Z",
+  "generatedAt": "2026-10-12T15:11:33.499Z",
   "bron": "osm",
-  "totaal": 195,
+  "totaal": 196,
   "perPlaats": [
     {
       "plaats": "Utrecht",
@@ -25,7 +25,7 @@
     },
     {
       "plaats": "Haarlem",
-      "count": 9
+      "count": 10
     }
   ],
   "leads": [
@@ -891,6 +891,15 @@
       "telefoon": "+31 30 2445614",
       "email": "info@vanbaarenit.nl",
       "categorie": "installateur",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Installatietechniek PBS",
+      "plaats": "IJmuiden",
+      "url": "https://installatietechniekpbs.nl",
+      "telefoon": "+31 6 838 777 71",
+      "email": "installatietechniek.pbs@outlook.com",
+      "categorie": "loodgieter",
       "prioriteit": "scan-eerst"
     },
     {

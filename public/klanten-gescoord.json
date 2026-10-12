@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-12T10:17:27.449Z",
-  "totaal": 195,
-  "metTelefoon": 103,
+  "generatedAt": "2026-10-12T15:12:12.231Z",
+  "totaal": 196,
+  "metTelefoon": 104,
   "leakMatches": 18,
   "leads": [
     {
@@ -713,6 +713,25 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31302445614?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "Installatietechniek PBS",
+      "plaats": "IJmuiden",
+      "url": "https://installatietechniekpbs.nl",
+      "telefoon": "+31 6 838 777 71",
+      "email": "installatietechniek.pbs@outlook.com",
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: loodgieter",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31683877771?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -1976,24 +1995,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Schreuder Glas- en Schilderwerken",
-      "plaats": "Noordwijk",
-      "url": "https://www.schreuderschilderwerken.nl",
-      "telefoon": "+31 71 541 75 62",
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 62,
-      "redenen": [
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31715417562?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Schildersbedrijf K. de Graaf",
       "plaats": "Purmerend",
       "url": "https://kevindegraaf.nl",
@@ -2166,24 +2167,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Dreumel",
-      "plaats": "'s-Gravenhage",
-      "url": "https://www.dreumel.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: kozijnen"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3110,6 +3093,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "De Pagter",
+      "plaats": "Voorburg",
+      "url": "https://depagter.info",
+      "telefoon": null,
+      "email": null,
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: installateur"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Hennink Installatietechniek",
       "plaats": "Voorburg",
       "url": "https://hennink.info",
@@ -3491,6 +3492,44 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Schreuder Glas- en Schilderwerken",
+      "plaats": "Noordwijk",
+      "url": "https://www.schreuderschilderwerken.nl",
+      "telefoon": "+31 71 541 75 62",
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 27,
+      "redenen": [
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31715417562?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Dreumel",
+      "plaats": "'s-Gravenhage",
+      "url": "https://www.dreumel.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Oranjegordijn",
       "plaats": "'s-Gravenhage",
       "url": "https://oranjegordijn.nl",
@@ -3596,25 +3635,6 @@
       "score": 17,
       "redenen": [
         "sterke niche: elektricien",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "De Pagter",
-      "plaats": "Voorburg",
-      "url": "https://depagter.info",
-      "telefoon": null,
-      "email": null,
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: installateur",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
