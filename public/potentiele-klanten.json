@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T14:23:01.415Z",
+  "generatedAt": "2026-10-12T08:32:41.995Z",
   "bron": "osm",
   "totaal": 195,
   "perPlaats": [
@@ -17,7 +17,7 @@
     },
     {
       "plaats": "Rotterdam",
-      "count": 67
+      "count": 68
     },
     {
       "plaats": "Den Haag",
@@ -25,7 +25,7 @@
     },
     {
       "plaats": "Haarlem",
-      "count": 10
+      "count": 9
     }
   ],
   "leads": [
@@ -894,15 +894,6 @@
       "prioriteit": "scan-eerst"
     },
     {
-      "bedrijf": "Installatietechniek PBS",
-      "plaats": "IJmuiden",
-      "url": "https://installatietechniekpbs.nl",
-      "telefoon": "+31 6 838 777 71",
-      "email": "installatietechniek.pbs@outlook.com",
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst"
-    },
-    {
       "bedrijf": "Wooncentrum Ubo Kok",
       "plaats": "IJmuiden",
       "url": "https://wooncentrumubokok.nl",
@@ -1620,6 +1611,15 @@
       "telefoon": "+31 30 212 0173",
       "email": "post@tafelboom.nl",
       "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "url": "https://justinroofs.nl",
+      "telefoon": "+31 10 414 3293",
+      "email": "info@justinroofs.nl",
+      "categorie": "dakdekker",
       "prioriteit": "scan-eerst"
     },
     {
