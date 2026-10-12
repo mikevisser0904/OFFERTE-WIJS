@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-12T06:32:47.542Z",
+  "updatedAt": "2026-10-12T18:15:26.159Z",
   "agent": "auto-verify",
   "summary": {
-    "leakHits": 32,
-    "leakVerified": 30,
+    "leakHits": 33,
+    "leakVerified": 31,
     "leakFailed": 2,
-    "consentChecked": 17,
-    "consentProofOk": 16
+    "consentChecked": 18,
+    "consentProofOk": 17
   },
   "leakRows": [
     {
@@ -15,6 +15,14 @@
       "evidence": "https://klompelektrotechniek.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.willemseelektrotechniek.nl/",
+      "bedrijf": "H. Willemse Elektrotechniek B.V.",
+      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -34,14 +42,6 @@
       "status": "verified"
     },
     {
-      "url": "https://www.boselektrotechniek.nl/",
-      "bedrijf": "Bos Elektrotechniek",
-      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
@@ -50,17 +50,17 @@
       "status": "verified"
     },
     {
-      "url": "https://www.textilia-dordrecht.nl/",
-      "bedrijf": "Textilia",
-      "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://www.boselektrotechniek.nl/",
+      "bedrijf": "Bos Elektrotechniek",
+      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
     {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "url": "https://www.textilia-dordrecht.nl/",
+      "bedrijf": "Textilia",
+      "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -77,6 +77,22 @@
       "url": "https://hetinterieur.nl/",
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://justinroofs.nl/",
+      "bedrijf": "Just-In Roofs",
+      "evidence": "https://justinroofs.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -122,19 +138,11 @@
       "status": "verified"
     },
     {
-      "url": "https://www.willemseelektrotechniek.nl/",
-      "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -368,6 +376,12 @@
       "bedrijf": "Bosse Elektrotechniek",
       "passiveOk": true,
       "authOk": null
+    },
+    {
+      "siteUrl": "https://justinroofs.nl/",
+      "bedrijf": "Just-In Roofs",
+      "passiveOk": true,
+      "authOk": null
     }
   ],
   "steps": [
@@ -396,6 +410,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 30 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "30 verified · 16 consent OK · 2 failed recheck"
+  "grokPrompt": "auto-verify: 31 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "31 verified · 17 consent OK · 2 failed recheck"
 }
