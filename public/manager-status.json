@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T06:21:13.993Z",
+  "updatedAt": "2026-10-12T11:23:58.479Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,43 +23,43 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 4",
-      "lastRun": "2026-10-12T05:50:47.389Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 3",
+      "lastRun": "2026-10-12T11:23:58.287Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
       "detail": "30 verified · 16 consent OK · 2 failed recheck",
-      "lastRun": "2026-10-12T00:01:46.400Z"
+      "lastRun": "2026-10-12T06:32:47.543Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
-      "detail": "25 streams OK · queue 0 pending · 32 lekken",
-      "lastRun": "2026-10-12T06:15:02.089Z"
+      "detail": "25 streams OK · queue 0 pending · 33 lekken",
+      "lastRun": "2026-10-12T11:23:57.626Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 151ms",
-      "lastRun": "2026-10-12T02:55:25.977Z"
+      "detail": "OK 110ms",
+      "lastRun": "2026-10-12T11:23:57.572Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-10-12T02:55:26.652Z"
+      "lastRun": "2026-10-12T11:23:57.902Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-10-12T02:55:26.683Z"
+      "lastRun": "2026-10-12T11:23:57.934Z"
     },
     {
       "id": "lead-hunter",
@@ -86,7 +86,7 @@
       "id": "vakscan-leaks",
       "naam": "VakScan Leaks",
       "status": "ok",
-      "detail": "32 lekken · 0 pending",
+      "detail": "33 lekken · 0 pending",
       "lastRun": null
     },
     {
@@ -108,7 +108,7 @@
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-10-12T05:50:46.941Z"
+      "lastRun": "2026-10-12T06:32:47.237Z"
     },
     {
       "id": "outbound-auto",
@@ -154,7 +154,7 @@
     }
   ],
   "snapshot": {
-    "leakCount": 32,
+    "leakCount": 33,
     "queuePending": 0,
     "outreachCount": 15,
     "leadsTotaal": 195,
