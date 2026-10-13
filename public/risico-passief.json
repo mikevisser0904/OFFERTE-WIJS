@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-13T19:34:14.714Z",
+  "updatedAt": "2026-10-13T23:54:30.665Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 36,
     "kritiek": 0,
-    "hoog": 32
+    "hoog": 34
   },
   "resultaten": [
     {
@@ -250,6 +250,39 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://justinroofs.nl/phpmyadmin/",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://justinroofs.nl/phpMyAdmin/",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://justinroofs.nl/phpmyadmin/index.php",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Firma Fred van Rijn",
       "plaats": "'s-Gravenhage",
@@ -338,17 +371,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://web3.hostingcp.eu/phpMyAdmin/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
@@ -369,26 +391,10 @@
       "reden": "Geen phpMyAdmin (site/404)"
     },
     {
-      "url": "https://justinroofs.nl/phpmyadmin/",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://justinroofs.nl/phpMyAdmin/",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://justinroofs.nl/phpmyadmin/index.php",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     }
