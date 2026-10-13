@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-13T12:12:08.116Z",
+  "updatedAt": "2026-10-13T19:34:14.714Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 36,
     "kritiek": 0,
-    "hoog": 35
+    "hoog": 32
   },
   "resultaten": [
     {
@@ -250,39 +250,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://justinroofs.nl/phpmyadmin/",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://justinroofs.nl/phpMyAdmin/",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://justinroofs.nl/phpmyadmin/index.php",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Firma Fred van Rijn",
       "plaats": "'s-Gravenhage",
@@ -400,6 +367,30 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
+    },
+    {
+      "url": "https://justinroofs.nl/phpmyadmin/",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://justinroofs.nl/phpMyAdmin/",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://justinroofs.nl/phpmyadmin/index.php",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
     }
   ]
 }
