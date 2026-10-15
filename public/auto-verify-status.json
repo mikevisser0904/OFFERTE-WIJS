@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-15T13:43:34.753Z",
+  "updatedAt": "2026-10-15T20:04:38.922Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
-    "leakVerified": 31,
-    "leakFailed": 2,
+    "leakVerified": 29,
+    "leakFailed": 4,
     "consentChecked": 18,
-    "consentProofOk": 17
+    "consentProofOk": 16
   },
   "leakRows": [
     {
@@ -37,9 +37,9 @@
       "url": "https://nuoveni.nl/",
       "bedrijf": "Nuoveni",
       "evidence": "https://nuoveni.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.bwstyling.nl/",
@@ -253,9 +253,9 @@
       "url": "https://nuoveni.nl",
       "bedrijf": "Nuoveni",
       "evidence": "https://nuoveni.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.tafelboom.nl",
@@ -338,7 +338,7 @@
     {
       "siteUrl": "https://nuoveni.nl",
       "bedrijf": "Nuoveni",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -410,6 +410,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 31 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "31 verified · 17 consent OK · 2 failed recheck"
+  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "29 verified · 16 consent OK · 4 failed recheck"
 }

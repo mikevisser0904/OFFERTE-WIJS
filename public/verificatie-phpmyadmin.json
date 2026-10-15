@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-15T13:42:41.482Z",
+  "verifiedAt": "2026-10-15T20:03:45.669Z",
   "totaal": 31,
-  "loginBereikbaar": 29,
-  "uniekeLoginUrls": 17,
-  "bevestigd": 14,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 16,
+  "bevestigd": 12,
   "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 2,
+  "onbekend": 4,
   "redirect_anders": 0,
   "results": [
     {
@@ -64,14 +64,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://nuoveni.nl/phpmyadmin/",
       "evidence": "https://nuoveni.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (nuoveni.nl)",
-      "http": 200,
-      "finalUrl": "https://nuoveni.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Burggraeve Woonstyling",
@@ -456,14 +452,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://nuoveni.nl/phpmyadmin/",
       "evidence": "https://nuoveni.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (nuoveni.nl)",
-      "http": 200,
-      "finalUrl": "https://nuoveni.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Tafelboom",
