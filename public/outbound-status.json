@@ -1,13 +1,44 @@
 {
-  "updatedAt": "2026-10-15T22:43:56.164Z",
+  "updatedAt": "2026-10-16T01:55:04.535Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 5,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "MIRvA",
+      "status": "simulated",
+      "email": "info@mirva.nl",
+      "phone": "31332587699"
+    },
+    {
+      "bedrijf": "Amstelland Kozijnen",
+      "status": "simulated",
+      "email": "info@amstellandkozijnen.nl",
+      "phone": "31206405166"
+    },
+    {
+      "bedrijf": "Schipper Kozijnen",
+      "status": "simulated",
+      "email": "klantenservice@schipperkozijnen.nl",
+      "phone": "31857921200"
+    },
+    {
+      "bedrijf": "Bruens Electrotechniek",
+      "status": "simulated",
+      "email": "info@bruens-electrotechniek.nl",
+      "phone": "31206326824"
+    },
+    {
+      "bedrijf": "Knook Deuren en Kozijnen",
+      "status": "simulated",
+      "email": "info@knookmetaal.nl",
+      "phone": "31628263742"
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
