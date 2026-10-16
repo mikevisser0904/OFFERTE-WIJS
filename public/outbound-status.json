@@ -1,44 +1,13 @@
 {
-  "updatedAt": "2026-10-16T19:05:41.683Z",
+  "updatedAt": "2026-10-16T22:16:43.446Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 5,
-  "verwerkt": 5,
+  "gepland": 0,
+  "verwerkt": 0,
   "verzonden": 0,
-  "gesimuleerd": 5,
+  "gesimuleerd": 0,
   "mislukt": 0,
-  "items": [
-    {
-      "bedrijf": "Mazurel Installatietechniek",
-      "status": "simulated",
-      "email": "office@mazurel.com",
-      "phone": "31299421024"
-    },
-    {
-      "bedrijf": "Ramenfabriek op 't Hoog",
-      "status": "simulated",
-      "email": "ramenfabriek@opthoog.nl",
-      "phone": null
-    },
-    {
-      "bedrijf": "Decosier",
-      "status": "simulated",
-      "email": "info@decosier.nl",
-      "phone": "31180462371"
-    },
-    {
-      "bedrijf": "De Gier",
-      "status": "simulated",
-      "email": "info@degierwonen.nl",
-      "phone": "31104141404"
-    },
-    {
-      "bedrijf": "Harmony Gordijnen",
-      "status": "simulated",
-      "email": "info@harmonygordijnen.nl",
-      "phone": null
-    }
-  ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
+  "items": [],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
