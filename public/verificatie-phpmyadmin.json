@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-17T12:25:49.864Z",
+  "verifiedAt": "2026-10-17T15:58:41.586Z",
   "totaal": 31,
-  "loginBereikbaar": 27,
-  "uniekeLoginUrls": 16,
-  "bevestigd": 12,
+  "loginBereikbaar": 26,
+  "uniekeLoginUrls": 15,
+  "bevestigd": 11,
   "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 4,
+  "onbekend": 5,
   "redirect_anders": 0,
   "results": [
     {
@@ -172,14 +172,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://justinroofs.nl/phpmyadmin/",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (justinroofs.nl)",
-      "http": 200,
-      "finalUrl": "https://justinroofs.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Firma Fred van Rijn",
