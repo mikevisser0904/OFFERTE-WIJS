@@ -1,13 +1,44 @@
 {
-  "updatedAt": "2026-10-16T22:16:43.446Z",
+  "updatedAt": "2026-10-17T01:49:34.379Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 5,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Tulay",
+      "status": "simulated",
+      "email": "info@tulay.nl",
+      "phone": "31102420088"
+    },
+    {
+      "bedrijf": "Merwede tapijten",
+      "status": "simulated",
+      "email": "og-c@h.webp",
+      "phone": null
+    },
+    {
+      "bedrijf": "Arena Gordijnenland",
+      "status": "simulated",
+      "email": "arenagordijnenland@live.nl",
+      "phone": "31984774797"
+    },
+    {
+      "bedrijf": "De Kroon Zonwering",
+      "status": "simulated",
+      "email": "contact@dekroonzonwering.nl",
+      "phone": "31302440149"
+    },
+    {
+      "bedrijf": "Loodgietersbedrijf Utrecht",
+      "status": "simulated",
+      "email": "info@loodgietersbedrijfutrecht.nl",
+      "phone": "31673562002"
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
