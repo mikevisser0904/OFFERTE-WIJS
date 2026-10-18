@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T22:41:44.576Z",
+  "updatedAt": "2026-10-18T05:09:07.767Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 36,
@@ -360,6 +360,15 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://chargecars.nl/phpMyAdmin/",
+      "bedrijf": "ChargeCars",
+      "plaats": "Nijkerk",
+      "klantUrl": "https://chargecars.nl/",
+      "http": 404,
+      "niveau": "geen",
+      "reden": "Geen phpMyAdmin (site/404)"
+    },
+    {
       "url": "https://nuoveni.nl/phpmyadmin/",
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
@@ -380,14 +389,6 @@
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://chargecars.nl/phpMyAdmin/",
-      "bedrijf": "ChargeCars",
-      "plaats": "Nijkerk",
-      "klantUrl": "https://chargecars.nl/",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     }
