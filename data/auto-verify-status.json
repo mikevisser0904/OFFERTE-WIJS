@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-18T22:39:02.633Z",
+  "updatedAt": "2026-10-19T05:21:19.603Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
     "leakVerified": 29,
     "leakFailed": 4,
     "consentChecked": 18,
-    "consentProofOk": 16
+    "consentProofOk": 15
   },
   "leakRows": [
     {
@@ -270,7 +270,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     }
   ],
@@ -380,7 +380,7 @@
     {
       "siteUrl": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     }
   ],
@@ -411,5 +411,5 @@
     }
   ],
   "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 16 consent OK · 4 failed recheck"
+  "agentPrompt": "29 verified · 15 consent OK · 4 failed recheck"
 }
