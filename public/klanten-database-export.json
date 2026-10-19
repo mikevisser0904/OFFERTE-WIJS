@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T12:59:21.803Z",
+  "generatedAt": "2026-10-19T10:41:06.507Z",
   "totaalMetLek": 19,
   "rijen": [
     {
@@ -243,22 +243,6 @@
       "reportId": "2f229b8f5c49"
     },
     {
-      "bedrijf": "Nuoveni",
-      "plaats": "Voorburg",
-      "url": "https://nuoveni.nl",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "nuoveni.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://nuoveni.nl/phpmyadmin/",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 100,
-      "reportId": "95bee736a13f"
-    },
-    {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "url": "https://www.willemseelektrotechniek.nl",
@@ -268,7 +252,7 @@
       "dbName": null,
       "dbUser": null,
       "wachtwoordLek": false,
-      "panelUrl": "https://s250.webhostingserver.nl/phpMyAdmin/",
+      "panelUrl": "https://s250.webhostingserver.nl/phpMyAdmin/index.php",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
       "risicoScore": 100,
@@ -289,6 +273,22 @@
       "sqlTabelCount": 0,
       "risicoScore": 80,
       "reportId": "d8987ac955c8"
+    },
+    {
+      "bedrijf": "Nuoveni",
+      "plaats": "Voorburg",
+      "url": "https://nuoveni.nl/",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "nuoveni.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://nuoveni.nl/phpmyadmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "95bee736a13f"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
