@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-19T21:18:04.541Z",
+  "updatedAt": "2026-10-20T05:18:40.925Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
-    "leakVerified": 27,
-    "leakFailed": 6,
+    "leakVerified": 29,
+    "leakFailed": 4,
     "consentChecked": 18,
-    "consentProofOk": 15
+    "consentProofOk": 16
   },
   "leakRows": [
     {
@@ -22,7 +22,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
@@ -85,9 +85,9 @@
       "url": "https://firmavanrijn.nl/",
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://justinroofs.nl/",
@@ -173,9 +173,9 @@
       "url": "https://firmavanrijn.nl",
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://hetinterieur.nl",
@@ -278,7 +278,7 @@
     {
       "siteUrl": "https://firmavanrijn.nl",
       "bedrijf": "Firma Fred van Rijn",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -410,6 +410,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 27 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "27 verified · 15 consent OK · 6 failed recheck"
+  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "29 verified · 16 consent OK · 4 failed recheck"
 }

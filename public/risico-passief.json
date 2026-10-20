@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-19T21:17:16.494Z",
+  "updatedAt": "2026-10-20T05:18:02.357Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 36,
     "kritiek": 0,
-    "hoog": 30
+    "hoog": 32
   },
   "resultaten": [
     {
@@ -217,6 +217,28 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Firma Fred van Rijn",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://firmavanrijn.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://justinroofs.nl/phpmyadmin/",
       "bedrijf": "Just-In Roofs",
       "plaats": "Vlaardingen",
@@ -345,22 +367,6 @@
       "http": 404,
       "niveau": "geen",
       "reden": "Geen phpMyAdmin (site/404)"
-    },
-    {
-      "url": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://firmavanrijn.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://s230.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Firma Fred van Rijn",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://firmavanrijn.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
     },
     {
       "url": "https://nuoveni.nl/phpmyadmin/",

@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-10-20T05:08:39.660Z",
+  "updatedAt": "2026-10-20T05:18:40.926Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-10-20T02:21:07.173Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-10-20T05:04:12.907Z",
+      "lastRun": "2026-10-20T05:18:40.919Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,10 +61,10 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-10-20T04:43:25.826Z",
+      "lastRun": "2026-10-20T05:18:40.803Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 18,
+      "metBewijs": 19,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
@@ -74,12 +74,12 @@
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-10-19T21:18:04.542Z",
+      "lastRun": "2026-10-20T05:18:40.926Z",
       "ok": true,
-      "leakVerified": 27,
-      "consentProofOk": 15,
-      "agentPrompt": "27 verified · 15 consent OK · 6 failed recheck",
-      "grokPrompt": "auto-verify: 27 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 29,
+      "consentProofOk": 16,
+      "agentPrompt": "29 verified · 16 consent OK · 4 failed recheck",
+      "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
       "lastRun": "2026-10-20T04:43:25.839Z",

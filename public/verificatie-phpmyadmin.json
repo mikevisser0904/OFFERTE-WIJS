@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-19T21:17:02.948Z",
+  "verifiedAt": "2026-10-20T05:17:51.345Z",
   "totaal": 31,
-  "loginBereikbaar": 25,
-  "uniekeLoginUrls": 15,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 16,
   "bevestigd": 12,
-  "hosting_redirect": 13,
+  "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 6,
+  "onbekend": 4,
   "redirect_anders": 0,
   "results": [
     {
@@ -160,10 +160,14 @@
       "geprobeerd": 6,
       "besteProbe": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host s230.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
+      "http": 200,
+      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "voorzichtig"
     },
     {
       "bedrijf": "Just-In Roofs",
@@ -308,10 +312,14 @@
       "geprobeerd": 6,
       "besteProbe": "https://s230.webhostingserver.nl/phpMyAdmin/",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host s230.webhostingserver.nl — hosting-default, niet per se unieke klant-DB",
+      "http": 200,
+      "finalUrl": "https://s230.webhostingserver.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "voorzichtig"
     },
     {
       "bedrijf": "Het Interieur",
