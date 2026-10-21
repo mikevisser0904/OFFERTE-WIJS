@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-21T14:20:54.230Z",
+  "updatedAt": "2026-10-21T20:34:51.816Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
-    "leakVerified": 16,
-    "leakFailed": 17,
+    "leakVerified": 14,
+    "leakFailed": 19,
     "consentChecked": 18,
-    "consentProofOk": 9
+    "consentProofOk": 8
   },
   "leakRows": [
     {
@@ -45,9 +45,9 @@
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.boselektrotechniek.nl/",
@@ -213,9 +213,9 @@
       "url": "https://www.bwstyling.nl",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://vogelaarschilder.nl",
@@ -356,7 +356,7 @@
     {
       "siteUrl": "https://www.bwstyling.nl",
       "bedrijf": "Burggraeve Woonstyling",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -410,6 +410,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 16 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "16 verified · 9 consent OK · 17 failed recheck"
+  "grokPrompt": "auto-verify: 14 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "14 verified · 8 consent OK · 19 failed recheck"
 }

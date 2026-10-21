@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-10-21T20:18:37.288Z",
+  "updatedAt": "2026-10-21T20:34:51.817Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-10-21T16:12:27.358Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-10-21T18:47:19.533Z",
+      "lastRun": "2026-10-21T20:34:51.809Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,11 +61,11 @@
       "grokPrompt": "test effectiviteit: score 73/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-10-21T18:35:24.736Z",
+      "lastRun": "2026-10-21T20:34:51.473Z",
       "ok": true,
-      "contactenVandaag": 9,
-      "metBewijs": 9,
-      "agentPrompt": "Verkoop-bewijs: 9 klanten met live bewijs — start Rioolservice P. van Adrichem (HTTP 200) · /dashboard/ + /agents/",
+      "contactenVandaag": 11,
+      "metBewijs": 11,
+      "agentPrompt": "Verkoop-bewijs: 11 klanten met live bewijs — start Rioolservice P. van Adrichem (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Rioolservice P. van Adrichem: controle https://rioolservice-pvanadrichem.nl/phpMyAdmin/ · rapport cb76ce138bc5. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Rioolservice P. van Adrichem · https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
@@ -74,12 +74,12 @@
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-10-21T14:20:54.230Z",
+      "lastRun": "2026-10-21T20:34:51.817Z",
       "ok": true,
-      "leakVerified": 16,
-      "consentProofOk": 9,
-      "agentPrompt": "16 verified · 9 consent OK · 17 failed recheck",
-      "grokPrompt": "auto-verify: 16 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 14,
+      "consentProofOk": 8,
+      "agentPrompt": "14 verified · 8 consent OK · 19 failed recheck",
+      "grokPrompt": "auto-verify: 14 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
       "lastRun": "2026-10-21T18:35:24.751Z",
