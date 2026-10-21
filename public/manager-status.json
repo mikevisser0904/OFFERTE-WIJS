@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T20:18:37.288Z",
+  "updatedAt": "2026-10-21T22:51:02.495Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,43 +23,43 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 4",
-      "lastRun": "2026-10-21T18:35:25.321Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 3",
+      "lastRun": "2026-10-21T22:51:02.318Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
-      "detail": "16 verified · 9 consent OK · 17 failed recheck",
-      "lastRun": "2026-10-21T14:20:54.230Z"
+      "detail": "14 verified · 8 consent OK · 19 failed recheck",
+      "lastRun": "2026-10-21T20:34:51.817Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 33 lekken",
-      "lastRun": "2026-10-21T18:47:19.533Z"
+      "lastRun": "2026-10-21T22:51:01.772Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 214ms",
-      "lastRun": "2026-10-21T16:12:27.358Z"
+      "detail": "OK 156ms",
+      "lastRun": "2026-10-21T22:51:01.732Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-10-21T16:12:27.758Z"
+      "lastRun": "2026-10-21T22:51:02.007Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-10-21T16:12:27.792Z"
+      "lastRun": "2026-10-21T22:51:02.036Z"
     },
     {
       "id": "lead-hunter",
@@ -107,8 +107,8 @@
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
-      "detail": "9 met live bewijs",
-      "lastRun": "2026-10-21T18:35:24.736Z"
+      "detail": "11 met live bewijs",
+      "lastRun": "2026-10-21T20:34:51.473Z"
     },
     {
       "id": "outbound-auto",
