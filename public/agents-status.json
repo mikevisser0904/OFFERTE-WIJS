@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-10-21T16:12:28.387Z",
+  "updatedAt": "2026-10-21T18:35:25.564Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-10-21T16:12:27.358Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-10-21T16:12:28.163Z",
+      "lastRun": "2026-10-21T18:35:25.321Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-10-21T16:12:28.277Z",
+      "lastRun": "2026-10-21T18:35:25.563Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -61,16 +61,16 @@
       "grokPrompt": "test effectiviteit: score 73/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-10-21T14:20:53.474Z",
+      "lastRun": "2026-10-21T18:35:24.736Z",
       "ok": true,
-      "contactenVandaag": 10,
-      "metBewijs": 10,
-      "agentPrompt": "Verkoop-bewijs: 10 klanten met live bewijs — start Rioolservice P. van Adrichem (HTTP 200) · /dashboard/ + /agents/",
+      "contactenVandaag": 9,
+      "metBewijs": 9,
+      "agentPrompt": "Verkoop-bewijs: 9 klanten met live bewijs — start Rioolservice P. van Adrichem (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Rioolservice P. van Adrichem: controle https://rioolservice-pvanadrichem.nl/phpMyAdmin/ · rapport cb76ce138bc5. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Rioolservice P. van Adrichem · https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
         "Kroon interieurbouw · https://www.kroon-interieurbouw.nl/phpmyadmin/",
-        "Decor Gordijn · https://www.decorgordijn.nl/phpmyadmin/"
+        "De Pagter · https://depagter.info/phpmyadmin/"
       ]
     },
     "auto-verify": {
@@ -82,15 +82,15 @@
       "grokPrompt": "auto-verify: 16 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-10-21T07:32:47.606Z",
+      "lastRun": "2026-10-21T18:35:24.751Z",
       "ok": true,
       "contactenVandaag": 15,
-      "lekkenEerst": 3,
-      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Firma Fred van Rijn (Live bewijs: phpMyAdmin HTTP 200)",
+      "lekkenEerst": 6,
+      "agentPrompt": "Outreach: 15 contacten klaar op /agents/ — begin met Rioolservice P. van Adrichem (Live bewijs: phpMyAdmin HTTP 200)",
       "top3": [
-        "Firma Fred van Rijn: Live bewijs: phpMyAdmin HTTP 200",
-        "Textilia: Live bewijs: phpMyAdmin HTTP 200",
-        "Bos Elektrotechniek: Live bewijs: phpMyAdmin HTTP 200"
+        "Rioolservice P. van Adrichem: Live bewijs: phpMyAdmin HTTP 200",
+        "Kroon interieurbouw: Live bewijs: phpMyAdmin HTTP 200",
+        "De Pagter: Live bewijs: phpMyAdmin HTTP 200"
       ]
     },
     "klanten-lek": {
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-10-21T16:12:28.277Z",
+    "updatedAt": "2026-10-21T18:35:25.563Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -134,8 +134,8 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-10-21T16:12:28.163Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-10-21T18:35:25.321Z"
       },
       {
         "id": "auto-verify",
@@ -155,7 +155,7 @@
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 170ms",
+        "detail": "OK 188ms",
         "lastRun": "2026-10-21T16:12:27.358Z"
       },
       {
@@ -211,29 +211,29 @@
         "id": "verkoop-effectiviteit",
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
-        "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-        "lastRun": "2026-10-21T12:44:44.464Z"
+        "detail": "Verkoop-effectiviteit 73% · 10 bewijs · 0 contacten deze week",
+        "lastRun": "2026-10-21T16:12:28.387Z"
       },
       {
         "id": "verkoop-bewijs",
         "naam": "Verkoop-bewijs",
         "status": "ok",
-        "detail": "10 met live bewijs",
-        "lastRun": "2026-10-21T14:20:53.474Z"
+        "detail": "9 met live bewijs",
+        "lastRun": "2026-10-21T18:35:24.736Z"
       },
       {
         "id": "outbound-auto",
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-10-21T12:44:44.429Z"
+        "lastRun": "2026-10-21T16:12:28.351Z"
       },
       {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-10-21T07:32:47.606Z"
+        "lastRun": "2026-10-21T18:35:24.751Z"
       },
       {
         "id": "seo",
