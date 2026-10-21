@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-10-21T23:32:22.745Z",
+  "updatedAt": "2026-10-21T23:50:44.694Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-10-21T22:51:01.732Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-10-21T23:28:53.936Z",
+      "lastRun": "2026-10-21T23:50:44.687Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,25 +61,25 @@
       "grokPrompt": "test effectiviteit: score 74/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-10-21T20:34:51.473Z",
+      "lastRun": "2026-10-21T23:50:44.337Z",
       "ok": true,
-      "contactenVandaag": 11,
-      "metBewijs": 11,
-      "agentPrompt": "Verkoop-bewijs: 11 klanten met live bewijs — start Rioolservice P. van Adrichem (HTTP 200) · /dashboard/ + /agents/",
-      "grokPrompt": "agent verkoop-bewijs — Rioolservice P. van Adrichem: controle https://rioolservice-pvanadrichem.nl/phpMyAdmin/ · rapport cb76ce138bc5. Mike belt met BEWIJS-blok, geen inbraak-claims.",
+      "contactenVandaag": 12,
+      "metBewijs": 12,
+      "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Bos Elektrotechniek (HTTP 200) · /dashboard/ + /agents/",
+      "grokPrompt": "agent verkoop-bewijs — Bos Elektrotechniek: controle https://www.boselektrotechniek.nl/phpMyAdmin/ · rapport e2b94249c285. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
+        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/",
         "Rioolservice P. van Adrichem · https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-        "Kroon interieurbouw · https://www.kroon-interieurbouw.nl/phpmyadmin/",
-        "De Pagter · https://depagter.info/phpmyadmin/"
+        "Kroon interieurbouw · https://www.kroon-interieurbouw.nl/phpmyadmin/"
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-10-21T20:34:51.817Z",
+      "lastRun": "2026-10-21T23:50:44.694Z",
       "ok": true,
-      "leakVerified": 14,
-      "consentProofOk": 8,
-      "agentPrompt": "14 verified · 8 consent OK · 19 failed recheck",
-      "grokPrompt": "auto-verify: 14 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 18,
+      "consentProofOk": 10,
+      "agentPrompt": "18 verified · 10 consent OK · 15 failed recheck",
+      "grokPrompt": "auto-verify: 18 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
       "lastRun": "2026-10-21T18:35:24.751Z",

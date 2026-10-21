@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-21T20:31:49.630Z",
+  "updatedAt": "2026-10-21T23:47:49.467Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 36,
     "kritiek": 0,
-    "hoog": 16
+    "hoog": 20
   },
   "resultaten": [
     {
@@ -56,6 +56,50 @@
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
       "klantUrl": "https://vogelaarschilder.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.bwstyling.nl/phpmyadmin/",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.bwstyling.nl/phpMyAdmin/",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.bwstyling.nl/phpmyadmin/index.php",
+      "bedrijf": "Burggraeve Woonstyling",
+      "plaats": "Haarlem",
+      "klantUrl": "https://www.bwstyling.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -221,38 +265,6 @@
       "bedrijf": "Textilia",
       "plaats": "Dordrecht",
       "klantUrl": "https://www.textilia-dordrecht.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://www.bwstyling.nl/phpmyadmin/",
-      "bedrijf": "Burggraeve Woonstyling",
-      "plaats": "Haarlem",
-      "klantUrl": "https://www.bwstyling.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://www.bwstyling.nl/phpMyAdmin/",
-      "bedrijf": "Burggraeve Woonstyling",
-      "plaats": "Haarlem",
-      "klantUrl": "https://www.bwstyling.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://www.bwstyling.nl/phpmyadmin/index.php",
-      "bedrijf": "Burggraeve Woonstyling",
-      "plaats": "Haarlem",
-      "klantUrl": "https://www.bwstyling.nl/",
-      "niveau": "fout",
-      "reden": "TypeError: fetch failed"
-    },
-    {
-      "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     },

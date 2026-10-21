@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-21T20:34:51.816Z",
+  "updatedAt": "2026-10-21T23:50:44.693Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
-    "leakVerified": 14,
-    "leakFailed": 19,
+    "leakVerified": 18,
+    "leakFailed": 15,
     "consentChecked": 18,
-    "consentProofOk": 8
+    "consentProofOk": 10
   },
   "leakRows": [
     {
@@ -45,17 +45,17 @@
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.boselektrotechniek.nl/",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.tafelboom.nl/",
@@ -213,9 +213,9 @@
       "url": "https://www.bwstyling.nl",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://vogelaarschilder.nl",
@@ -229,9 +229,9 @@
       "url": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.ejvandermeer.nl",
@@ -296,7 +296,7 @@
     {
       "siteUrl": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -356,7 +356,7 @@
     {
       "siteUrl": "https://www.bwstyling.nl",
       "bedrijf": "Burggraeve Woonstyling",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -410,6 +410,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 14 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "14 verified · 8 consent OK · 19 failed recheck"
+  "grokPrompt": "auto-verify: 18 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "18 verified · 10 consent OK · 15 failed recheck"
 }
