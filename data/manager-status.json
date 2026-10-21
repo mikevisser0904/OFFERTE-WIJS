@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T14:02:09.028Z",
+  "updatedAt": "2026-10-21T16:12:28.277Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -24,42 +24,42 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-10-21T13:44:01.611Z"
+      "lastRun": "2026-10-21T16:12:28.163Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
-      "detail": "29 verified · 16 consent OK · 4 failed recheck",
-      "lastRun": "2026-10-21T05:21:39.666Z"
+      "detail": "16 verified · 9 consent OK · 17 failed recheck",
+      "lastRun": "2026-10-21T14:20:54.230Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 33 lekken",
-      "lastRun": "2026-10-21T13:59:46.659Z"
+      "lastRun": "2026-10-21T16:12:27.412Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 188ms",
-      "lastRun": "2026-10-21T08:56:20.299Z"
+      "detail": "OK 170ms",
+      "lastRun": "2026-10-21T16:12:27.358Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-10-21T08:56:20.731Z"
+      "lastRun": "2026-10-21T16:12:27.758Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-10-21T08:56:20.765Z"
+      "lastRun": "2026-10-21T16:12:27.792Z"
     },
     {
       "id": "lead-hunter",
@@ -107,8 +107,8 @@
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
-      "detail": "12 met live bewijs",
-      "lastRun": "2026-10-21T07:32:47.595Z"
+      "detail": "10 met live bewijs",
+      "lastRun": "2026-10-21T14:20:53.474Z"
     },
     {
       "id": "outbound-auto",
