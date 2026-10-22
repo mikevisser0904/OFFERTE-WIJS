@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-21T23:50:44.693Z",
+  "updatedAt": "2026-10-22T05:23:32.900Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
-    "leakVerified": 18,
-    "leakFailed": 15,
+    "leakVerified": 29,
+    "leakFailed": 4,
     "consentChecked": 18,
-    "consentProofOk": 10
+    "consentProofOk": 16
   },
   "leakRows": [
     {
@@ -21,9 +21,9 @@
       "url": "https://www.willemseelektrotechniek.nl/",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://vogelaarschilder.nl/",
@@ -37,9 +37,9 @@
       "url": "https://www.textilia-dordrecht.nl/",
       "bedrijf": "Textilia",
       "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.bwstyling.nl/",
@@ -69,9 +69,9 @@
       "url": "https://hetinterieur.nl/",
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.bosse-elektrotechniek.nl/",
@@ -85,9 +85,9 @@
       "url": "https://firmavanrijn.nl/",
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://justinroofs.nl/",
@@ -117,9 +117,9 @@
       "url": "https://www.amer-hout.nl/",
       "bedrijf": "Amer Houttechniek",
       "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.voordeelgordijnen.nl/",
@@ -141,9 +141,9 @@
       "url": "https://www.reinaerde.nl/zorg/remakemeubel",
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "http://vogelaarschilder.nl/",
@@ -165,25 +165,25 @@
       "url": "https://www.amer-hout.nl",
       "bedrijf": "Amer Houttechniek",
       "evidence": "https://s205.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://firmavanrijn.nl",
       "bedrijf": "Firma Fred van Rijn",
       "evidence": "https://s230.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://hetinterieur.nl",
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.voordeelgordijnen.nl",
@@ -205,9 +205,9 @@
       "url": "https://www.textilia-dordrecht.nl",
       "bedrijf": "Textilia",
       "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.bwstyling.nl",
@@ -269,28 +269,28 @@
       "url": "https://www.willemseelektrotechniek.nl",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     }
   ],
   "consentResults": [
     {
       "siteUrl": "https://firmavanrijn.nl",
       "bedrijf": "Firma Fred van Rijn",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
       "siteUrl": "https://www.amer-hout.nl",
       "bedrijf": "Amer Houttechniek",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
       "siteUrl": "https://www.textilia-dordrecht.nl",
       "bedrijf": "Textilia",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -320,13 +320,13 @@
     {
       "siteUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
       "bedrijf": "Reinaerde Remake Meubel",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
       "siteUrl": "https://www.willemseelektrotechniek.nl",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -368,7 +368,7 @@
     {
       "siteUrl": "https://hetinterieur.nl",
       "bedrijf": "Het Interieur",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -395,7 +395,7 @@
     },
     {
       "id": "verify-pma",
-      "ok": false
+      "ok": true
     },
     {
       "id": "risico-passief",
@@ -410,6 +410,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 18 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "18 verified · 10 consent OK · 15 failed recheck"
+  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "29 verified · 16 consent OK · 4 failed recheck"
 }
