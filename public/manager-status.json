@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T23:32:22.745Z",
+  "updatedAt": "2026-10-22T02:09:26.390Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -24,42 +24,42 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-10-21T23:15:37.007Z"
+      "lastRun": "2026-10-22T02:09:26.091Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
-      "detail": "14 verified · 8 consent OK · 19 failed recheck",
-      "lastRun": "2026-10-21T20:34:51.817Z"
+      "detail": "18 verified · 10 consent OK · 15 failed recheck",
+      "lastRun": "2026-10-21T23:50:44.694Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 33 lekken",
-      "lastRun": "2026-10-21T23:28:53.936Z"
+      "lastRun": "2026-10-22T02:09:25.163Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 176ms",
-      "lastRun": "2026-10-21T22:51:01.732Z"
+      "detail": "OK 198ms",
+      "lastRun": "2026-10-22T02:09:25.111Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-10-21T22:51:02.007Z"
+      "lastRun": "2026-10-22T02:09:25.692Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-10-21T22:51:02.036Z"
+      "lastRun": "2026-10-22T02:09:25.724Z"
     },
     {
       "id": "lead-hunter",
@@ -107,8 +107,8 @@
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
-      "detail": "11 met live bewijs",
-      "lastRun": "2026-10-21T20:34:51.473Z"
+      "detail": "12 met live bewijs",
+      "lastRun": "2026-10-21T23:50:44.337Z"
     },
     {
       "id": "outbound-auto",
