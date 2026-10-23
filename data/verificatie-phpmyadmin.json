@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-10-23T13:50:49.112Z",
+  "verifiedAt": "2026-10-23T20:06:43.902Z",
   "totaal": 31,
-  "loginBereikbaar": 25,
-  "uniekeLoginUrls": 14,
-  "bevestigd": 10,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 16,
+  "bevestigd": 12,
   "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 6,
+  "onbekend": 4,
   "redirect_anders": 0,
   "results": [
     {
@@ -176,10 +176,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://justinroofs.nl/phpmyadmin/",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (justinroofs.nl)",
+      "http": 200,
+      "finalUrl": "https://justinroofs.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Rioolservice P. van Adrichem",
@@ -188,10 +192,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
+      "http": 200,
+      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
