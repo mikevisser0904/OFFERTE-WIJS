@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T08:16:43.256Z",
+  "generatedAt": "2026-10-24T07:54:37.668Z",
   "totaal": 196,
   "metTelefoon": 104,
   "leakMatches": 18,
@@ -3354,22 +3354,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Koek & Reinders",
-      "plaats": "'s-Gravenhage",
-      "url": "https://koekenreinders.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 40,
-      "redenen": [],
-      "aanbod": "Google Start €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Multikozijn",
       "plaats": "Bunschoten-Spakenburg",
       "url": "https://www.multikozijn.nl",
@@ -3405,6 +3389,22 @@
       "bedrijf": "Glas- en Schilderwerken van Muiden",
       "plaats": "Leiden",
       "url": "https://vanmuiden.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 40,
+      "redenen": [],
+      "aanbod": "Google Start €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
+      "plaats": "Leidschendam",
+      "url": "https://www.jkuijper.nl",
       "telefoon": null,
       "email": null,
       "categorie": "schilder",
@@ -3627,9 +3627,9 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "J. Kuijper schildersbedrijf en onderhoudsbedrijf",
-      "plaats": "Leidschendam",
-      "url": "https://www.jkuijper.nl",
+      "bedrijf": "Koek & Reinders",
+      "plaats": "'s-Gravenhage",
+      "url": "https://koekenreinders.nl",
       "telefoon": null,
       "email": null,
       "categorie": "schilder",
@@ -3640,7 +3640,7 @@
       ],
       "aanbod": "Google Start €299",
       "siteOk": false,
-      "heeftHttps": true,
+      "heeftHttps": false,
       "whatsappUrl": null,
       "actie": "scan-eerst"
     }
