@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T02:00:53.874Z",
+  "updatedAt": "2026-10-26T04:40:09.600Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,8 +23,8 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-10-26T02:00:53.748Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 4",
+      "lastRun": "2026-10-26T04:40:09.348Z"
     },
     {
       "id": "auto-verify",
@@ -44,7 +44,7 @@
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 129ms",
+      "detail": "OK 173ms",
       "lastRun": "2026-10-26T02:00:53.082Z"
     },
     {
@@ -101,28 +101,28 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-      "lastRun": "2026-10-25T22:08:09.602Z"
+      "lastRun": "2026-10-26T02:00:53.978Z"
     },
     {
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-10-25T22:51:22.473Z"
+      "lastRun": "2026-10-26T04:40:08.730Z"
     },
     {
       "id": "outbound-auto",
       "naam": "Outbound auto",
       "status": "ok",
       "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-      "lastRun": "2026-10-25T22:08:09.566Z"
+      "lastRun": "2026-10-26T02:00:53.946Z"
     },
     {
       "id": "outreach",
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-10-25T16:09:50.401Z"
+      "lastRun": "2026-10-26T04:40:08.744Z"
     },
     {
       "id": "seo",
