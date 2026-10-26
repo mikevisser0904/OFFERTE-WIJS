@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T05:09:31.754Z",
+  "updatedAt": "2026-10-26T09:25:55.773Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,49 +23,49 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 4",
-      "lastRun": "2026-10-26T04:40:09.348Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 3",
+      "lastRun": "2026-10-26T09:25:55.440Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
       "detail": "29 verified · 16 consent OK · 4 failed recheck",
-      "lastRun": "2026-10-25T22:51:22.858Z"
+      "lastRun": "2026-10-26T05:19:58.772Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 33 lekken",
-      "lastRun": "2026-10-26T02:00:53.134Z"
+      "lastRun": "2026-10-26T09:25:54.636Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 165ms",
-      "lastRun": "2026-10-26T02:00:53.082Z"
+      "detail": "OK 166ms",
+      "lastRun": "2026-10-26T09:25:54.581Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
-      "status": "ok",
+      "status": "actie",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-10-26T02:00:53.360Z"
+      "lastRun": "2026-10-26T09:25:55.049Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-10-26T02:00:53.399Z"
+      "lastRun": "2026-10-26T09:25:55.081Z"
     },
     {
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "status": "ok",
-      "detail": "196 leads · 0 queue",
+      "detail": "197 leads · 0 queue",
       "lastRun": "2026-10-19T12:44:54.311Z"
     },
     {
@@ -108,7 +108,7 @@
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-10-26T04:40:08.730Z"
+      "lastRun": "2026-10-26T05:19:58.407Z"
     },
     {
       "id": "outbound-auto",
@@ -157,7 +157,7 @@
     "leakCount": 33,
     "queuePending": 0,
     "outreachCount": 15,
-    "leadsTotaal": 196,
+    "leadsTotaal": 197,
     "pendingMaarten": 0
   }
 }
