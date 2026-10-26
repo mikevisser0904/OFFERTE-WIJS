@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-26T07:37:38.788Z",
+  "generatedAt": "2026-10-26T12:51:34.401Z",
   "bron": "osm",
-  "totaal": 197,
+  "totaal": 198,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 38
+      "count": 39
     },
     {
       "plaats": "Amersfoort",
@@ -1521,6 +1521,15 @@
       "telefoon": "+31 10 419 4011",
       "email": null,
       "categorie": "schilder",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "ABO technisch beheer",
+      "plaats": "Soest",
+      "url": "https://abobeheerbv.nl",
+      "telefoon": "+3135 6013222",
+      "email": null,
+      "categorie": "installateur",
       "prioriteit": "scan-eerst"
     },
     {
