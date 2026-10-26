@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T07:37:38.830Z",
+  "updatedAt": "2026-10-26T08:33:10.832Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2394,8 +2394,12 @@
       "bedrijf": "SOS Loodgieter",
       "plaats": "Amsterdam",
       "url": "https://sosloodgieter.nl",
-      "status": "pending",
-      "toegevoegd": "2026-10-26T07:37:38.830Z"
+      "status": "klaar",
+      "toegevoegd": "2026-10-26T07:37:38.830Z",
+      "scannedAt": "2026-10-26T08:33:04.129Z",
+      "reportId": "0f4a0a9777d5",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }

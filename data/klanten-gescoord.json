@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-25T08:08:31.857Z",
-  "totaal": 196,
-  "metTelefoon": 104,
+  "generatedAt": "2026-10-26T08:33:47.074Z",
+  "totaal": 197,
+  "metTelefoon": 105,
   "leakMatches": 18,
   "leads": [
     {
@@ -1230,6 +1230,25 @@
       "actie": "whatsapp"
     },
     {
+      "bedrijf": "SOS Loodgieter",
+      "plaats": "Amsterdam",
+      "url": "https://sosloodgieter.nl",
+      "telefoon": "+316 39396622",
+      "email": null,
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 74,
+      "redenen": [
+        "sterke niche: loodgieter",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31639396622?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "Onnink",
       "plaats": "Barendrecht",
       "url": "https://onnink-bv.nl",
@@ -2304,6 +2323,24 @@
       "bedrijf": "Designbekleding",
       "plaats": "Amersfoort",
       "url": "https://designbekleding.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -3499,25 +3536,6 @@
       "bedrijf": "Oranjegordijn",
       "plaats": "'s-Gravenhage",
       "url": "https://oranjegordijn.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: zonwering",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Wonnink Zonwering",
-      "plaats": "Amersfoort",
-      "url": "https://www.wonnink.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
