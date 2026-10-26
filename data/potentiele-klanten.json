@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-19T12:44:22.722Z",
+  "generatedAt": "2026-10-26T07:37:38.788Z",
   "bron": "osm",
-  "totaal": 196,
+  "totaal": 197,
   "perPlaats": [
     {
       "plaats": "Utrecht",
@@ -13,7 +13,7 @@
     },
     {
       "plaats": "Amsterdam",
-      "count": 44
+      "count": 45
     },
     {
       "plaats": "Rotterdam",
@@ -459,6 +459,15 @@
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "SOS Loodgieter",
+      "plaats": "Amsterdam",
+      "url": "https://sosloodgieter.nl",
+      "telefoon": "+316 39396622",
+      "email": null,
+      "categorie": "loodgieter",
       "prioriteit": "scan-eerst"
     },
     {
