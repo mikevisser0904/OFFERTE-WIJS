@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T12:52:08.543Z",
+  "generatedAt": "2026-10-27T08:40:42.785Z",
   "totaal": 198,
   "metTelefoon": 106,
   "leakMatches": 18,
@@ -2395,6 +2395,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Amstelland Kozijnen",
       "plaats": "Amstelveen",
       "url": "https://www.amstellandkozijnen.nl",
@@ -2729,24 +2747,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Vinkesteyn",
-      "plaats": "Haarlem",
-      "url": "https://www.vinkesteyn.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: installateur"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3569,25 +3569,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Wonnink Zonwering",
-      "plaats": "Amersfoort",
-      "url": "https://www.wonnink.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: zonwering",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Kilim Tapijt & Vinyl",
       "plaats": "Amsterdam",
       "url": "https://www.kilim-tapijt-vinyl.nl",
@@ -3636,6 +3617,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Vinkesteyn",
+      "plaats": "Haarlem",
+      "url": "https://www.vinkesteyn.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "installateur",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: installateur",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
