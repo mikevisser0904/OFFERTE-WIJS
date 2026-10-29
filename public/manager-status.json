@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T23:40:50.976Z",
+  "updatedAt": "2026-10-29T03:08:36.407Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -24,7 +24,7 @@
       "naam": "Optimizer",
       "status": "ok",
       "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-10-28T23:40:50.666Z"
+      "lastRun": "2026-10-29T03:08:36.155Z"
     },
     {
       "id": "auto-verify",
@@ -38,28 +38,28 @@
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 33 lekken",
-      "lastRun": "2026-10-28T23:40:49.870Z"
+      "lastRun": "2026-10-29T03:08:35.247Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 148ms",
-      "lastRun": "2026-10-28T23:40:49.818Z"
+      "detail": "OK 200ms",
+      "lastRun": "2026-10-29T03:08:35.199Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-10-28T23:40:50.243Z"
+      "lastRun": "2026-10-29T03:08:35.762Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-10-28T23:40:50.277Z"
+      "lastRun": "2026-10-29T03:08:35.793Z"
     },
     {
       "id": "lead-hunter",
@@ -101,7 +101,7 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 19 bewijs · 0 contacten deze week",
-      "lastRun": "2026-10-28T17:30:28.067Z"
+      "lastRun": "2026-10-28T23:40:51.354Z"
     },
     {
       "id": "verkoop-bewijs",
@@ -114,8 +114,8 @@
       "id": "outbound-auto",
       "naam": "Outbound auto",
       "status": "ok",
-      "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-      "lastRun": "2026-10-28T17:30:28.030Z"
+      "detail": "Outbound LIVE: 0 verzonden · 2 verwerkt",
+      "lastRun": "2026-10-28T23:40:51.055Z"
     },
     {
       "id": "outreach",
