@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-30T06:28:05.552Z",
+  "updatedAt": "2026-10-30T15:23:01.028Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
-    "leakVerified": 28,
-    "leakFailed": 5,
+    "leakVerified": 29,
+    "leakFailed": 4,
     "consentChecked": 18,
     "consentProofOk": 16
   },
@@ -30,7 +30,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -86,7 +86,7 @@
       "bedrijf": "Het Interieur",
       "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -101,7 +101,7 @@
       "url": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "dbOk": false,
+      "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
@@ -142,7 +142,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -190,8 +190,8 @@
       "bedrijf": "Voordeelgordijnen",
       "evidence": "https://www.voordeelgordijnen.nl/.env",
       "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://klompelektrotechniek.nl",
@@ -410,6 +410,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 28 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "28 verified · 16 consent OK · 5 failed recheck"
+  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "29 verified · 16 consent OK · 4 failed recheck"
 }
