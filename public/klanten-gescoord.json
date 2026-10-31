@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T09:38:59.098Z",
+  "generatedAt": "2026-10-31T09:19:13.031Z",
   "totaal": 198,
   "metTelefoon": 106,
   "leakMatches": 18,
@@ -371,7 +371,7 @@
       ],
       "aanbod": "Website Veilig €299 — urgent",
       "siteOk": false,
-      "heeftHttps": true,
+      "heeftHttps": false,
       "whatsappUrl": "https://wa.me/31182375823?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
@@ -1648,25 +1648,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Plant services",
-      "plaats": "Rotterdam",
-      "url": "https://plantservices.nl",
-      "telefoon": "+31 10 434 2465",
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 74,
-      "redenen": [
-        "sterke niche: elektricien",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "ABO technisch beheer",
       "plaats": "Soest",
       "url": "https://abobeheerbv.nl",
@@ -1869,24 +1850,6 @@
       "siteOk": true,
       "heeftHttps": false,
       "whatsappUrl": null,
-      "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "Mks schilderwerken",
-      "plaats": "Houten",
-      "url": "https://mksschilderwerken.nl",
-      "telefoon": "+31 6 38510146",
-      "email": "info@mksschilderwerken.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 70,
-      "redenen": [
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31638510146?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -3510,6 +3473,26 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Plant services",
+      "plaats": "Rotterdam",
+      "url": "https://plantservices.nl",
+      "telefoon": "+31 10 434 2465",
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 39,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Installatiebureau Jonker BV",
       "plaats": "Wassenaar",
       "url": "https://www.jonkerbv.eu",
@@ -3527,6 +3510,25 @@
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": "https://wa.me/31705111000?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Mks schilderwerken",
+      "plaats": "Houten",
+      "url": "https://mksschilderwerken.nl",
+      "telefoon": "+31 6 38510146",
+      "email": "info@mksschilderwerken.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 35,
+      "redenen": [
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31638510146?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "scan-eerst"
     },
     {
