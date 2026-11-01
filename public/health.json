@@ -1,92 +1,92 @@
 {
-  "checkedAt": "2026-11-01T15:24:26.138Z",
+  "checkedAt": "2026-11-01T17:18:58.288Z",
   "site": "https://mikevisser0904.github.io/OFFERTE-WIJS",
   "healthy": true,
-  "avgResponseMs": 208,
+  "avgResponseMs": 177,
   "checks": [
     {
       "name": "Homepage",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/",
       "ok": true,
       "status": 200,
-      "ms": 312
+      "ms": 208
     },
     {
       "name": "Geld Dashboard",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/dashboard/",
       "ok": true,
       "status": 200,
-      "ms": 270
+      "ms": 184
     },
     {
       "name": "Monitor",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/monitor/",
       "ok": true,
       "status": 200,
-      "ms": 281
+      "ms": 185
     },
     {
       "name": "VakScan",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/scan/",
       "ok": true,
       "status": 200,
-      "ms": 142
+      "ms": 170
     },
     {
       "name": "Agents",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/agents/",
       "ok": true,
       "status": 200,
-      "ms": 156
+      "ms": 183
     },
     {
       "name": "Groot plan",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/visie/",
       "ok": true,
       "status": 200,
-      "ms": 143
+      "ms": 173
     },
     {
       "name": "Bestellen",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/bestellen/",
       "ok": true,
       "status": 200,
-      "ms": 292
+      "ms": 174
     },
     {
       "name": "Ideeën",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/ideeen/",
       "ok": true,
       "status": 200,
-      "ms": 199
+      "ms": 174
     },
     {
       "name": "Diensten",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/diensten/",
       "ok": true,
       "status": 200,
-      "ms": 282
+      "ms": 169
     },
     {
       "name": "Demo",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/demo/",
       "ok": true,
       "status": 200,
-      "ms": 148
+      "ms": 168
     },
     {
       "name": "Sitemap",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/sitemap.xml",
       "ok": true,
       "status": 200,
-      "ms": 119
+      "ms": 167
     },
     {
       "name": "SEO Utrecht",
       "url": "https://mikevisser0904.github.io/OFFERTE-WIJS/land/website-vakman-utrecht/",
       "ok": true,
       "status": 200,
-      "ms": 148
+      "ms": 163
     }
   ],
   "seo": {
