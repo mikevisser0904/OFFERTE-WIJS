@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T09:04:21.252Z",
+  "updatedAt": "2026-11-02T10:35:38.515Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2406,16 +2406,24 @@
       "bedrijf": "Bakker Totaalglas",
       "plaats": "Dordrecht",
       "url": "https://www.speciaalglas.nl",
-      "status": "pending",
-      "toegevoegd": "2026-11-02T09:04:21.251Z"
+      "status": "klaar",
+      "toegevoegd": "2026-11-02T09:04:21.251Z",
+      "scannedAt": "2026-11-02T10:35:23.952Z",
+      "reportId": "8bb04f07aa70",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mvz18mwz-1",
       "bedrijf": "Renovlies Professionals",
       "plaats": "Nieuwerkerk aan den IJssel",
       "url": "https://renovliesprofessionals.nl",
-      "status": "pending",
-      "toegevoegd": "2026-11-02T09:04:21.251Z"
+      "status": "klaar",
+      "toegevoegd": "2026-11-02T09:04:21.251Z",
+      "scannedAt": "2026-11-02T10:35:23.983Z",
+      "reportId": "88ddd5a4faee",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }
