@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T06:51:12.581Z",
+  "updatedAt": "2026-11-02T18:51:54.952Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 36,
@@ -140,32 +140,10 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://www.bosse-elektrotechniek.nl/phpMyAdmin/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/index.php",
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
+      "url": "https://tafelboom.nl/phpMyAdmin/",
+      "bedrijf": "Tafelboom",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.tafelboom.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -195,10 +173,32 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://tafelboom.nl/phpMyAdmin/",
-      "bedrijf": "Tafelboom",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.tafelboom.nl/",
+      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/phpMyAdmin/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/index.php",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",

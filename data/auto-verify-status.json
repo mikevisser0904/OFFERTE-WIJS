@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T06:52:03.799Z",
+  "updatedAt": "2026-11-02T18:52:41.215Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
@@ -58,9 +58,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.bosse-elektrotechniek.nl/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -74,9 +74,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "url": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -270,7 +270,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     }
   ],
