@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-26T12:51:34.401Z",
+  "generatedAt": "2026-11-02T09:04:21.213Z",
   "bron": "osm",
-  "totaal": 198,
+  "totaal": 200,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 39
+      "count": 38
     },
     {
       "plaats": "Amersfoort",
-      "count": 17
+      "count": 18
     },
     {
       "plaats": "Amsterdam",
@@ -17,7 +17,7 @@
     },
     {
       "plaats": "Rotterdam",
-      "count": 68
+      "count": 70
     },
     {
       "plaats": "Den Haag",
@@ -705,6 +705,15 @@
       "prioriteit": "scan-eerst"
     },
     {
+      "bedrijf": "Bakker Totaalglas",
+      "plaats": "Dordrecht",
+      "url": "https://www.speciaalglas.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
       "bedrijf": "Drechtse Loodgieter",
       "plaats": "Dordrecht",
       "url": "https://drechtseloodgieter.nl",
@@ -1179,6 +1188,15 @@
       "telefoon": "+31 180 757 171",
       "email": null,
       "categorie": "elektricien",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Renovlies Professionals",
+      "plaats": "Nieuwerkerk aan den IJssel",
+      "url": "https://renovliesprofessionals.nl",
+      "telefoon": "+31 6 51468178",
+      "email": "info@renovliesprofessionals.nl",
+      "categorie": "schilder",
       "prioriteit": "scan-eerst"
     },
     {
