@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-03T02:41:20.760Z",
+  "updatedAt": "2026-11-03T12:23:24.207Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 36,
     "kritiek": 0,
-    "hoog": 29
+    "hoog": 31
   },
   "resultaten": [
     {
@@ -250,6 +250,39 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://justinroofs.nl/phpmyadmin/",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://justinroofs.nl/phpMyAdmin/",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://justinroofs.nl/phpmyadmin/index.php",
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://www.ejvandermeer.nl/phpmyadmin/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
@@ -305,17 +338,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://web3.hostingcp.eu/phpMyAdmin/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
@@ -325,33 +347,6 @@
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
       "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
       "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://justinroofs.nl/phpmyadmin/",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "http": 200,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
-    },
-    {
-      "url": "https://justinroofs.nl/phpMyAdmin/",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "http": 200,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
-    },
-    {
-      "url": "https://justinroofs.nl/phpmyadmin/index.php",
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "klantUrl": "https://justinroofs.nl/",
-      "http": 200,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
     },
     {
       "url": "https://chargecars.nl/phpMyAdmin/",
@@ -383,6 +378,14 @@
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     }

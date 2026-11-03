@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T02:41:03.981Z",
+  "updatedAt": "2026-11-03T12:23:09.627Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -27,6 +27,16 @@
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
       "loginUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "loginUrl": "https://justinroofs.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -181,6 +191,16 @@
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
       "loginUrl": "https://www.bwstyling.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "klantUrl": "https://justinroofs.nl/",
+      "loginUrl": "https://justinroofs.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
