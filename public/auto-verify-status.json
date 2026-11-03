@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T18:52:41.215Z",
+  "updatedAt": "2026-11-03T02:42:15.007Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
@@ -101,7 +101,7 @@
       "url": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -270,7 +270,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     }
   ],
