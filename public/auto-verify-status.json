@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T01:06:07.430Z",
+  "updatedAt": "2026-11-05T12:47:40.805Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 33,
@@ -30,7 +30,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -270,7 +270,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     }
   ],
