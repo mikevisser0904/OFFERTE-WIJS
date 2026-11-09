@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T09:15:20.237Z",
+  "updatedAt": "2026-11-09T10:56:47.831Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2430,16 +2430,24 @@
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
       "plaats": "'s-Gravenhage",
       "url": "https://rioolontstoppingsbedrijf-denhaag.nl",
-      "status": "pending",
-      "toegevoegd": "2026-11-09T09:15:20.237Z"
+      "status": "klaar",
+      "toegevoegd": "2026-11-09T09:15:20.237Z",
+      "scannedAt": "2026-11-09T10:56:31.061Z",
+      "reportId": "9ff57e9352a2",
+      "risicoScore": 100,
+      "leakHit": true
     },
     {
       "id": "q-mw91pq25-1",
       "bedrijf": "Dakdekkersbedrijf Lantang de Groot",
       "plaats": "Dordrecht",
       "url": "https://dakdekkersbedrijflantangdegroot.nl",
-      "status": "pending",
-      "toegevoegd": "2026-11-09T09:15:20.237Z"
+      "status": "klaar",
+      "toegevoegd": "2026-11-09T09:15:20.237Z",
+      "scannedAt": "2026-11-09T10:56:31.086Z",
+      "reportId": "80197bbfcee8",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }
