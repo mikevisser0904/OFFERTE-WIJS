@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T12:15:28.511Z",
+  "updatedAt": "2026-11-09T19:02:03.448Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -37,14 +37,14 @@
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
-      "detail": "25 streams OK · queue 0 pending · 34 lekken",
-      "lastRun": "2026-11-09T12:15:27.316Z"
+      "detail": "25 streams OK · queue 1 pending · 34 lekken",
+      "lastRun": "2026-11-09T18:58:25.756Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 139ms",
+      "detail": "OK 159ms",
       "lastRun": "2026-11-09T12:15:27.240Z"
     },
     {
@@ -65,8 +65,8 @@
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "status": "ok",
-      "detail": "202 leads · 0 queue",
-      "lastRun": "2026-11-02T15:31:46.777Z"
+      "detail": "202 leads · 1 queue",
+      "lastRun": "2026-11-09T16:02:10.120Z"
     },
     {
       "id": "vakscan-import",
@@ -79,14 +79,14 @@
       "id": "klanten-lek",
       "naam": "Klanten-lek",
       "status": "ok",
-      "detail": "19 echte lek(ken) — /leads/ database-export · outreach",
-      "lastRun": "2026-11-02T13:21:27.133Z"
+      "detail": "20 echte lek(ken) — /leads/ database-export · outreach",
+      "lastRun": "2026-11-09T13:46:25.233Z"
     },
     {
       "id": "vakscan-leaks",
       "naam": "VakScan Leaks",
       "status": "ok",
-      "detail": "34 lekken · 0 pending",
+      "detail": "34 lekken · 1 pending",
       "lastRun": null
     },
     {
@@ -101,28 +101,28 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 18 bewijs · 0 contacten deze week",
-      "lastRun": "2026-11-09T03:18:44.623Z"
+      "lastRun": "2026-11-09T17:12:54.661Z"
     },
     {
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-11-09T09:43:40.861Z"
+      "lastRun": "2026-11-09T13:46:45.003Z"
     },
     {
       "id": "outbound-auto",
       "naam": "Outbound auto",
       "status": "ok",
       "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-      "lastRun": "2026-11-09T03:18:44.590Z"
+      "lastRun": "2026-11-09T17:12:54.630Z"
     },
     {
       "id": "outreach",
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-11-09T09:43:40.876Z"
+      "lastRun": "2026-11-09T13:46:45.020Z"
     },
     {
       "id": "seo",
@@ -155,7 +155,7 @@
   ],
   "snapshot": {
     "leakCount": 34,
-    "queuePending": 0,
+    "queuePending": 1,
     "outreachCount": 15,
     "leadsTotaal": 202,
     "pendingMaarten": 0
