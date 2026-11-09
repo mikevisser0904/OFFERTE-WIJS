@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T09:15:20.195Z",
+  "generatedAt": "2026-11-09T16:01:42.257Z",
   "bron": "osm",
   "totaal": 202,
   "perPlaats": [
@@ -13,7 +13,7 @@
     },
     {
       "plaats": "Amsterdam",
-      "count": 44
+      "count": 46
     },
     {
       "plaats": "Rotterdam",
@@ -25,7 +25,7 @@
     },
     {
       "plaats": "Haarlem",
-      "count": 9
+      "count": 10
     }
   ],
   "leads": [
@@ -117,6 +117,15 @@
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl",
+      "telefoon": "+31 85 115 5862",
+      "email": null,
+      "categorie": "loodgieter",
       "prioriteit": "scan-eerst"
     },
     {
@@ -714,6 +723,15 @@
       "prioriteit": "scan-eerst"
     },
     {
+      "bedrijf": "Dakdekkersbedrijf Lantang de Groot",
+      "plaats": "Dordrecht",
+      "url": "https://dakdekkersbedrijflantangdegroot.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "dakdekker",
+      "prioriteit": "scan-eerst"
+    },
+    {
       "bedrijf": "Drechtse Loodgieter",
       "plaats": "Dordrecht",
       "url": "https://drechtseloodgieter.nl",
@@ -819,6 +837,15 @@
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "'T Spant",
+      "plaats": "Heemstede",
+      "url": "https://www.spant.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
       "prioriteit": "scan-eerst"
     },
     {
@@ -1542,15 +1569,6 @@
       "prioriteit": "scan-eerst"
     },
     {
-      "bedrijf": "ABO technisch beheer",
-      "plaats": "Soest",
-      "url": "https://abobeheerbv.nl",
-      "telefoon": "+3135 6013222",
-      "email": null,
-      "categorie": "installateur",
-      "prioriteit": "scan-eerst"
-    },
-    {
       "bedrijf": "Luxury Home",
       "plaats": "Spijkenisse",
       "url": "https://luxuryhomeraamdecoratie.nl",
@@ -1827,24 +1845,6 @@
       "telefoon": null,
       "email": "info@aluku.nl",
       "categorie": "kozijnen",
-      "prioriteit": "scan-eerst"
-    },
-    {
-      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "plaats": "'s-Gravenhage",
-      "url": "https://rioolontstoppingsbedrijf-denhaag.nl",
-      "telefoon": "+31 85 115 5862",
-      "email": null,
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst"
-    },
-    {
-      "bedrijf": "Dakdekkersbedrijf Lantang de Groot",
-      "plaats": "Dordrecht",
-      "url": "https://dakdekkersbedrijflantangdegroot.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "dakdekker",
       "prioriteit": "scan-eerst"
     }
   ]
