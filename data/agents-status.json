@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-08T23:51:29.852Z",
+  "updatedAt": "2026-11-09T01:42:58.375Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-08T23:15:01.784Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-11-08T23:15:02.886Z",
+      "lastRun": "2026-11-09T01:42:58.160Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-11-08T23:15:03.189Z",
+      "lastRun": "2026-11-09T01:42:58.375Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-11-08T20:49:33.792Z",
+      "lastRun": "2026-11-09T01:42:57.651Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 18,
@@ -82,7 +82,7 @@
       "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-11-08T16:39:28.247Z",
+      "lastRun": "2026-11-09T01:42:57.664Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-11-08T23:15:03.189Z",
+    "updatedAt": "2026-11-09T01:42:58.375Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -134,8 +134,8 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-11-08T23:15:02.886Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-11-09T01:42:58.160Z"
       },
       {
         "id": "auto-verify",
@@ -149,13 +149,13 @@
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 33 lekken",
-        "lastRun": "2026-11-08T23:15:01.896Z"
+        "lastRun": "2026-11-08T23:51:29.852Z"
       },
       {
         "id": "health-monitor",
         "naam": "Health Monitor",
         "status": "ok",
-        "detail": "OK 173ms",
+        "detail": "OK 172ms",
         "lastRun": "2026-11-08T23:15:01.784Z"
       },
       {
@@ -212,28 +212,28 @@
         "naam": "Verkoop-effectiviteit",
         "status": "ok",
         "detail": "Verkoop-effectiviteit 75% · 18 bewijs · 0 contacten deze week",
-        "lastRun": "2026-11-08T17:18:43.398Z"
+        "lastRun": "2026-11-08T23:15:03.277Z"
       },
       {
         "id": "verkoop-bewijs",
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-11-08T20:49:33.792Z"
+        "lastRun": "2026-11-09T01:42:57.651Z"
       },
       {
         "id": "outbound-auto",
         "naam": "Outbound auto",
         "status": "ok",
         "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-        "lastRun": "2026-11-08T17:18:43.365Z"
+        "lastRun": "2026-11-08T23:15:03.247Z"
       },
       {
         "id": "outreach",
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-11-08T16:39:28.247Z"
+        "lastRun": "2026-11-09T01:42:57.664Z"
       },
       {
         "id": "seo",
