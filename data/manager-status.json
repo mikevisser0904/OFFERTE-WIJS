@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T07:02:03.437Z",
+  "updatedAt": "2026-11-09T09:43:41.534Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,22 +23,22 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-11-09T03:18:44.210Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 4",
+      "lastRun": "2026-11-09T09:43:41.292Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
       "detail": "29 verified · 16 consent OK · 4 failed recheck",
-      "lastRun": "2026-11-08T20:49:34.359Z"
+      "lastRun": "2026-11-09T07:13:37.449Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 33 lekken",
-      "lastRun": "2026-11-09T06:58:10.481Z"
+      "lastRun": "2026-11-09T07:13:37.442Z"
     },
     {
       "id": "health-monitor",
@@ -65,7 +65,7 @@
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "status": "ok",
-      "detail": "200 leads · 0 queue",
+      "detail": "202 leads · 2 queue",
       "lastRun": "2026-11-02T15:31:46.777Z"
     },
     {
@@ -86,7 +86,7 @@
       "id": "vakscan-leaks",
       "naam": "VakScan Leaks",
       "status": "ok",
-      "detail": "33 lekken · 0 pending",
+      "detail": "33 lekken · 2 pending",
       "lastRun": null
     },
     {
@@ -108,7 +108,7 @@
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-11-09T01:42:57.651Z"
+      "lastRun": "2026-11-09T09:43:40.861Z"
     },
     {
       "id": "outbound-auto",
@@ -122,7 +122,7 @@
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-11-09T01:42:57.664Z"
+      "lastRun": "2026-11-09T09:43:40.876Z"
     },
     {
       "id": "seo",
@@ -155,9 +155,9 @@
   ],
   "snapshot": {
     "leakCount": 33,
-    "queuePending": 0,
+    "queuePending": 2,
     "outreachCount": 15,
-    "leadsTotaal": 200,
+    "leadsTotaal": 202,
     "pendingMaarten": 0
   }
 }
