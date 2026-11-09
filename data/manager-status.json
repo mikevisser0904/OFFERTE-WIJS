@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T09:43:41.534Z",
+  "updatedAt": "2026-11-09T12:15:28.511Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,8 +23,8 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 4",
-      "lastRun": "2026-11-09T09:43:41.292Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 3",
+      "lastRun": "2026-11-09T12:15:28.313Z"
     },
     {
       "id": "auto-verify",
@@ -37,35 +37,35 @@
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
-      "detail": "25 streams OK · queue 0 pending · 33 lekken",
-      "lastRun": "2026-11-09T07:13:37.442Z"
+      "detail": "25 streams OK · queue 0 pending · 34 lekken",
+      "lastRun": "2026-11-09T12:15:27.316Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 78ms",
-      "lastRun": "2026-11-09T03:18:43.356Z"
+      "detail": "OK 139ms",
+      "lastRun": "2026-11-09T12:15:27.240Z"
     },
     {
       "id": "maarten-sync",
       "naam": "Maarten Sync",
       "status": "ok",
       "detail": "maarten-sync OK, geen nieuwe pending",
-      "lastRun": "2026-11-09T03:18:43.822Z"
+      "lastRun": "2026-11-09T12:15:27.634Z"
     },
     {
       "id": "maarten-bouw",
       "naam": "Maarten Bouw",
       "status": "ok",
       "detail": "0 pending",
-      "lastRun": "2026-11-09T03:18:43.855Z"
+      "lastRun": "2026-11-09T12:15:27.777Z"
     },
     {
       "id": "lead-hunter",
       "naam": "Lead Hunter",
       "status": "ok",
-      "detail": "202 leads · 2 queue",
+      "detail": "202 leads · 0 queue",
       "lastRun": "2026-11-02T15:31:46.777Z"
     },
     {
@@ -86,7 +86,7 @@
       "id": "vakscan-leaks",
       "naam": "VakScan Leaks",
       "status": "ok",
-      "detail": "33 lekken · 2 pending",
+      "detail": "34 lekken · 0 pending",
       "lastRun": null
     },
     {
@@ -154,8 +154,8 @@
     }
   ],
   "snapshot": {
-    "leakCount": 33,
-    "queuePending": 2,
+    "leakCount": 34,
+    "queuePending": 0,
     "outreachCount": 15,
     "leadsTotaal": 202,
     "pendingMaarten": 0
