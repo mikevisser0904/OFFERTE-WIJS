@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-09T17:12:54.661Z",
+  "updatedAt": "2026-11-09T18:58:25.756Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-09T12:15:27.240Z",
@@ -10,13 +10,13 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-11-09T13:46:27.918Z",
+      "lastRun": "2026-11-09T18:58:25.756Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
       "drift": 0,
       "synced": 0,
-      "agentPrompt": "25 streams OK · queue 0 pending · 34 lekken",
+      "agentPrompt": "25 streams OK · queue 1 pending · 34 lekken",
       "grokPrompt": "data-flow OK — alle streams gesynchroniseerd"
     },
     "maarten-sync": {
