@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-02T15:31:15.181Z",
+  "generatedAt": "2026-11-09T09:15:20.195Z",
   "bron": "osm",
-  "totaal": 200,
+  "totaal": 202,
   "perPlaats": [
     {
       "plaats": "Utrecht",
-      "count": 39
+      "count": 38
     },
     {
       "plaats": "Amersfoort",
@@ -17,15 +17,15 @@
     },
     {
       "plaats": "Rotterdam",
-      "count": 68
+      "count": 71
     },
     {
       "plaats": "Den Haag",
-      "count": 16
+      "count": 20
     },
     {
       "plaats": "Haarlem",
-      "count": 10
+      "count": 9
     }
   ],
   "leads": [
@@ -1827,6 +1827,24 @@
       "telefoon": null,
       "email": "info@aluku.nl",
       "categorie": "kozijnen",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl",
+      "telefoon": "+31 85 115 5862",
+      "email": null,
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst"
+    },
+    {
+      "bedrijf": "Dakdekkersbedrijf Lantang de Groot",
+      "plaats": "Dordrecht",
+      "url": "https://dakdekkersbedrijflantangdegroot.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "dakdekker",
       "prioriteit": "scan-eerst"
     }
   ]
