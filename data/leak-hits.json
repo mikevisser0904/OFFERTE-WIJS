@@ -1,78 +1,13 @@
 {
-  "updatedAt": "2026-11-09T10:56:47.480Z",
+  "updatedAt": "2026-11-09T13:46:05.287Z",
   "rebuiltAt": "2026-07-07T08:27:44.766Z",
   "hits": [
-    {
-      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
-      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "plaats": "'s-Gravenhage",
-      "reportId": "9ff57e9352a2",
-      "scannedAt": "2026-11-09T10:56:31.061Z",
-      "risicoScore": 100,
-      "titles": [
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet"
-      ],
-      "findings": [
-        {
-          "id": "db-admin-_phpmyadmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpMyAdmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_pma_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/pma/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin_index.php",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/index.php",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        }
-      ],
-      "actionable": true
-    },
     {
       "url": "https://klompelektrotechniek.nl/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
       "reportId": "ec2d0042034c",
-      "scannedAt": "2026-11-02T13:20:11.750Z",
+      "scannedAt": "2026-11-09T13:45:33.941Z",
       "risicoScore": 100,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -133,89 +68,11 @@
       "actionable": true
     },
     {
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "reportId": "cb76ce138bc5",
-      "scannedAt": "2026-11-02T13:20:14.042Z",
-      "risicoScore": 100,
-      "titles": [
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet"
-      ],
-      "findings": [
-        {
-          "id": "db-admin-_phpmyadmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpMyAdmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin2_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_pma_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin_index.php",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        }
-      ],
-      "actionable": true
-    },
-    {
       "url": "https://www.willemseelektrotechniek.nl/",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "plaats": "Zandvoort",
       "reportId": "fe9d43611024",
-      "scannedAt": "2026-11-02T13:20:05.159Z",
+      "scannedAt": "2026-11-09T13:45:20.546Z",
       "risicoScore": 100,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -267,7 +124,7 @@
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "plaats": "Leidschendam",
       "reportId": "d8987ac955c8",
-      "scannedAt": "2026-11-02T13:20:05.922Z",
+      "scannedAt": "2026-11-09T13:45:20.788Z",
       "risicoScore": 80,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -302,89 +159,11 @@
       "actionable": true
     },
     {
-      "url": "https://www.boselektrotechniek.nl/",
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "reportId": "e2b94249c285",
-      "scannedAt": "2026-11-02T13:19:58.204Z",
-      "risicoScore": 100,
-      "titles": [
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet"
-      ],
-      "findings": [
-        {
-          "id": "db-admin-_phpmyadmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpMyAdmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin2_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_pma_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin_index.php",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        }
-      ],
-      "actionable": true
-    },
-    {
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "reportId": "49aba6bb1a63",
-      "scannedAt": "2026-11-02T13:19:56.197Z",
+      "scannedAt": "2026-11-09T13:45:14.535Z",
       "risicoScore": 100,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -445,11 +224,310 @@
       "actionable": true
     },
     {
+      "url": "https://www.boselektrotechniek.nl/",
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "reportId": "e2b94249c285",
+      "scannedAt": "2026-11-09T13:45:13.290Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        }
+      ],
+      "actionable": true
+    },
+    {
+      "url": "https://www.textilia-dordrecht.nl/",
+      "bedrijf": "Textilia",
+      "plaats": "Dordrecht",
+      "reportId": "2bf236f50a7b",
+      "scannedAt": "2026-11-09T13:45:11.711Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        }
+      ],
+      "actionable": true
+    },
+    {
+      "url": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "reportId": "1c2376857c87",
+      "scannedAt": "2026-11-09T13:45:04.478Z",
+      "risicoScore": 80,
+      "titles": [
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        }
+      ],
+      "actionable": true
+    },
+    {
+      "url": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "reportId": "b6e7c1d47e26",
+      "scannedAt": "2026-11-09T13:44:57.841Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/pma/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/index.php",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        }
+      ],
+      "actionable": true
+    },
+    {
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "reportId": "9ff57e9352a2",
+      "scannedAt": "2026-11-09T13:44:51.917Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/pma/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/index.php",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        }
+      ],
+      "actionable": true
+    },
+    {
       "url": "https://www.tafelboom.nl/",
       "bedrijf": "Tafelboom",
       "plaats": "Utrecht",
       "reportId": "216370c66063",
-      "scannedAt": "2026-11-02T13:19:40.915Z",
+      "scannedAt": "2026-11-09T13:44:48.604Z",
       "risicoScore": 100,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -523,180 +601,11 @@
       "actionable": true
     },
     {
-      "url": "https://www.textilia-dordrecht.nl/",
-      "bedrijf": "Textilia",
-      "plaats": "Dordrecht",
-      "reportId": "2bf236f50a7b",
-      "scannedAt": "2026-11-02T13:19:50.098Z",
-      "risicoScore": 100,
-      "titles": [
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet"
-      ],
-      "findings": [
-        {
-          "id": "db-admin-_phpmyadmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpMyAdmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin_index.php",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://s225.webhostingserver.nl/phpMyAdmin/index.php",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        }
-      ],
-      "actionable": true
-    },
-    {
-      "url": "https://www.bosse-elektrotechniek.nl/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "reportId": "b6e7c1d47e26",
-      "scannedAt": "2026-11-02T13:19:41.542Z",
-      "risicoScore": 100,
-      "titles": [
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet"
-      ],
-      "findings": [
-        {
-          "id": "db-admin-_phpmyadmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpMyAdmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.bosse-elektrotechniek.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_pma_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.bosse-elektrotechniek.nl/pma/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin_index.php",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/index.php",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        }
-      ],
-      "actionable": true
-    },
-    {
-      "url": "https://hetinterieur.nl/",
-      "bedrijf": "Het Interieur",
-      "plaats": "Amsterdam",
-      "reportId": "1c2376857c87",
-      "scannedAt": "2026-11-02T13:19:41.482Z",
-      "risicoScore": 100,
-      "titles": [
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet",
-        "phpMyAdmin inlog open op internet"
-      ],
-      "findings": [
-        {
-          "id": "db-admin-_phpmyadmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpMyAdmin_",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        },
-        {
-          "id": "db-admin-_phpmyadmin_index.php",
-          "check": "database",
-          "severity": "critical",
-          "title": "phpMyAdmin inlog open op internet",
-          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
-          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
-          "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
-          "verified": true,
-          "panelConfidence": "high",
-          "panelKind": "login"
-        }
-      ],
-      "actionable": true
-    },
-    {
       "url": "https://firmavanrijn.nl/",
       "bedrijf": "Firma Fred van Rijn",
       "plaats": "'s-Gravenhage",
       "reportId": "86dde731b1e4",
-      "scannedAt": "2026-11-02T13:19:35.460Z",
+      "scannedAt": "2026-11-09T13:44:49.634Z",
       "risicoScore": 100,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -748,7 +657,7 @@
       "bedrijf": "Just-In Roofs",
       "plaats": "Vlaardingen",
       "reportId": "257d3a034203",
-      "scannedAt": "2026-11-02T13:19:31.616Z",
+      "scannedAt": "2026-11-09T13:44:40.095Z",
       "risicoScore": 100,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -809,11 +718,89 @@
       "actionable": true
     },
     {
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "reportId": "cb76ce138bc5",
+      "scannedAt": "2026-11-09T13:44:38.070Z",
+      "risicoScore": 100,
+      "titles": [
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet",
+        "phpMyAdmin inlog open op internet"
+      ],
+      "findings": [
+        {
+          "id": "db-admin-_phpmyadmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpMyAdmin_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin2_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_pma_",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        },
+        {
+          "id": "db-admin-_phpmyadmin_index.php",
+          "check": "database",
+          "severity": "critical",
+          "title": "phpMyAdmin inlog open op internet",
+          "klant": "Database-beheer is vindbaar — data kan gestolen worden na misbruik van inlog.",
+          "intern": "VakScan verified: phpMyAdmin loginform (pma_username) (high)",
+          "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+          "verified": true,
+          "panelConfidence": "high",
+          "panelKind": "login"
+        }
+      ],
+      "actionable": true
+    },
+    {
       "url": "https://www.ejvandermeer.nl/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
       "reportId": "5424b2313def",
-      "scannedAt": "2026-11-02T13:19:25.862Z",
+      "scannedAt": "2026-11-09T13:44:33.276Z",
       "risicoScore": 80,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -852,7 +839,7 @@
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
       "reportId": "dd78e57b812d",
-      "scannedAt": "2026-11-02T13:19:22.308Z",
+      "scannedAt": "2026-11-09T13:44:29.790Z",
       "risicoScore": 100,
       "titles": [
         "phpMyAdmin inlog open op internet",
@@ -904,7 +891,7 @@
       "bedrijf": "Voordeelgordijnen",
       "plaats": "Amsterdam",
       "reportId": "e362535e17f6",
-      "scannedAt": "2026-11-02T13:19:22.035Z",
+      "scannedAt": "2026-11-09T13:44:29.090Z",
       "risicoScore": 40,
       "titles": [
         ".env mogelijk downloadbaar"

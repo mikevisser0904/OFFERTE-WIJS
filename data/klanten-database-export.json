@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T13:21:27.132Z",
-  "totaalMetLek": 19,
+  "generatedAt": "2026-11-09T13:46:25.231Z",
+  "totaalMetLek": 20,
   "rijen": [
     {
       "bedrijf": "Amer Houttechniek",
@@ -51,6 +51,22 @@
       "reportId": "5424b2313def"
     },
     {
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "plaats": "Moordrecht",
+      "url": "https://rioolservice-pvanadrichem.nl",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "rioolservice-pvanadrichem.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "cb76ce138bc5"
+    },
+    {
       "bedrijf": "ChargeCars",
       "plaats": "Nijkerk",
       "url": "https://chargecars.nl/",
@@ -99,6 +115,22 @@
       "reportId": "257d3a034203"
     },
     {
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl",
+      "heeftLek": true,
+      "dbType": "phpMyAdmin",
+      "dbHost": "rioolontstoppingsbedrijf-denhaag.nl",
+      "dbName": null,
+      "dbUser": null,
+      "wachtwoordLek": false,
+      "panelUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
+      "sqlTabellen": [],
+      "sqlTabelCount": 0,
+      "risicoScore": 100,
+      "reportId": "9ff57e9352a2"
+    },
+    {
       "bedrijf": "Firma Fred van Rijn",
       "plaats": "'s-Gravenhage",
       "url": "https://firmavanrijn.nl",
@@ -143,7 +175,7 @@
       "panelUrl": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "sqlTabellen": [],
       "sqlTabelCount": 0,
-      "risicoScore": 100,
+      "risicoScore": 80,
       "reportId": "1c2376857c87"
     },
     {
@@ -241,22 +273,6 @@
       "sqlTabelCount": 0,
       "risicoScore": 100,
       "reportId": "fe9d43611024"
-    },
-    {
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "plaats": "Moordrecht",
-      "url": "https://rioolservice-pvanadrichem.nl",
-      "heeftLek": true,
-      "dbType": "phpMyAdmin",
-      "dbHost": "rioolservice-pvanadrichem.nl",
-      "dbName": null,
-      "dbUser": null,
-      "wachtwoordLek": false,
-      "panelUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "sqlTabellen": [],
-      "sqlTabelCount": 0,
-      "risicoScore": 100,
-      "reportId": "cb76ce138bc5"
     },
     {
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",

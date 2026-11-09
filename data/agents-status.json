@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-09T12:15:28.599Z",
+  "updatedAt": "2026-11-09T13:46:45.020Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-09T12:15:27.240Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-11-09T12:15:27.316Z",
+      "lastRun": "2026-11-09T13:46:27.918Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-11-09T09:43:40.861Z",
+      "lastRun": "2026-11-09T13:46:45.003Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 18,
@@ -82,7 +82,7 @@
       "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-11-09T09:43:40.876Z",
+      "lastRun": "2026-11-09T13:46:45.020Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -94,12 +94,12 @@
       ]
     },
     "klanten-lek": {
-      "lastRun": "2026-11-02T13:21:27.133Z",
+      "lastRun": "2026-11-09T13:46:25.233Z",
       "ok": true,
       "gescand": 60,
-      "metLek": 19,
-      "agentPrompt": "19 echte lek(ken) — /leads/ database-export · outreach",
-      "grokPrompt": "agent outreach — 19 klanten met database-lek in klanten-lek-rapport"
+      "metLek": 20,
+      "agentPrompt": "20 echte lek(ken) — /leads/ database-export · outreach",
+      "grokPrompt": "agent outreach — 20 klanten met database-lek in klanten-lek-rapport"
     },
     "lead-hunter": {
       "lastRun": "2026-11-02T15:31:46.777Z",
