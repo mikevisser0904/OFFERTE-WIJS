@@ -1,26 +1,18 @@
 {
-  "updatedAt": "2026-11-09T07:13:37.448Z",
+  "updatedAt": "2026-11-09T19:10:09.291Z",
   "agent": "auto-verify",
   "summary": {
-    "leakHits": 33,
-    "leakVerified": 29,
-    "leakFailed": 4,
-    "consentChecked": 18,
-    "consentProofOk": 16
+    "leakHits": 34,
+    "leakVerified": 28,
+    "leakFailed": 6,
+    "consentChecked": 19,
+    "consentProofOk": 14
   },
   "leakRows": [
     {
       "url": "https://klompelektrotechniek.nl/",
       "bedrijf": "Klomp Elektrotechniek",
       "evidence": "https://klompelektrotechniek.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
-      "url": "https://rioolservice-pvanadrichem.nl/",
-      "bedrijf": "Rioolservice P. van Adrichem",
-      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -42,14 +34,6 @@
       "status": "verified"
     },
     {
-      "url": "https://www.boselektrotechniek.nl/",
-      "bedrijf": "Bos Elektrotechniek",
-      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
       "url": "https://www.bwstyling.nl/",
       "bedrijf": "Burggraeve Woonstyling",
       "evidence": "https://www.bwstyling.nl/phpmyadmin/",
@@ -58,9 +42,9 @@
       "status": "verified"
     },
     {
-      "url": "https://www.tafelboom.nl/",
-      "bedrijf": "Tafelboom",
-      "evidence": "https://tafelboom.nl/phpMyAdmin/",
+      "url": "https://www.boselektrotechniek.nl/",
+      "bedrijf": "Bos Elektrotechniek",
+      "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -74,6 +58,14 @@
       "status": "verified"
     },
     {
+      "url": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://www.bosse-elektrotechniek.nl/",
       "bedrijf": "Bosse Elektrotechniek",
       "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
@@ -82,9 +74,17 @@
       "status": "verified"
     },
     {
-      "url": "https://hetinterieur.nl/",
-      "bedrijf": "Het Interieur",
-      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
+    },
+    {
+      "url": "https://www.tafelboom.nl/",
+      "bedrijf": "Tafelboom",
+      "evidence": "https://tafelboom.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -101,6 +101,14 @@
       "url": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
+    },
+    {
+      "url": "https://rioolservice-pvanadrichem.nl/",
+      "bedrijf": "Rioolservice P. van Adrichem",
+      "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -142,7 +150,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -326,7 +334,7 @@
     {
       "siteUrl": "https://www.willemseelektrotechniek.nl",
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -380,7 +388,13 @@
     {
       "siteUrl": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
-      "passiveOk": true,
+      "passiveOk": false,
+      "authOk": null
+    },
+    {
+      "siteUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "passiveOk": false,
       "authOk": null
     }
   ],
@@ -410,6 +424,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 16 consent OK · 4 failed recheck"
+  "grokPrompt": "auto-verify: 28 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "28 verified · 14 consent OK · 6 failed recheck"
 }

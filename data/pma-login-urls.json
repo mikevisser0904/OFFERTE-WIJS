@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T07:12:36.927Z",
+  "updatedAt": "2026-11-09T19:09:01.428Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -47,6 +47,16 @@
       "plaats": "Barneveld",
       "klantUrl": "https://klompelektrotechniek.nl/",
       "loginUrl": "https://klompelektrotechniek.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "loginUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
@@ -211,6 +221,16 @@
       "plaats": "Barneveld",
       "klantUrl": "https://klompelektrotechniek.nl/",
       "loginUrl": "https://klompelektrotechniek.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "loginUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
       "verdict": "bevestigd",
       "verkoop": "sterk",
       "panelKind": "login",
