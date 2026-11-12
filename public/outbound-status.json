@@ -1,26 +1,44 @@
 {
-  "updatedAt": "2026-11-12T01:43:21.260Z",
+  "updatedAt": "2026-11-12T11:57:26.025Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 2,
-  "verwerkt": 2,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 2,
+  "gesimuleerd": 5,
   "mislukt": 0,
   "items": [
     {
-      "bedrijf": "Amer Houttechniek",
+      "bedrijf": "van der Meer Elektrotechniek BV",
       "status": "simulated",
-      "email": "info@amer-hout.nl",
-      "phone": null
+      "email": "info@ejvandermeer.nl",
+      "phone": "31631514170"
     },
     {
-      "bedrijf": "ChargeCars",
+      "bedrijf": "Dreumel",
       "status": "simulated",
-      "email": "info@chargecars.nl",
+      "email": "info@dreumel.nl",
+      "phone": "31703864484"
+    },
+    {
+      "bedrijf": "SA Elektro Experts",
+      "status": "simulated",
+      "email": "info@saelektroexperts.nl",
+      "phone": "31707503681"
+    },
+    {
+      "bedrijf": "Suntec zonwering",
+      "status": "simulated",
+      "email": "info@suntec-zonwering.nl",
+      "phone": "31715802342"
+    },
+    {
+      "bedrijf": "Decorette",
+      "status": "simulated",
+      "email": "geri@doubleweb.nl",
       "phone": null
     }
   ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 2 verwerkt",
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
