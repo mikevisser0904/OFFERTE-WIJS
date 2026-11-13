@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-12T17:07:24.176Z",
+  "updatedAt": "2026-11-13T01:31:20.049Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 34,
-    "leakVerified": 28,
-    "leakFailed": 6,
+    "leakVerified": 30,
+    "leakFailed": 4,
     "consentChecked": 19,
-    "consentProofOk": 15
+    "consentProofOk": 17
   },
   "leakRows": [
     {
@@ -77,9 +77,9 @@
       "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
       "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.tafelboom.nl/",
@@ -101,9 +101,9 @@
       "url": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://rioolservice-pvanadrichem.nl/",
@@ -388,13 +388,13 @@
     {
       "siteUrl": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
       "siteUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     }
   ],
@@ -424,6 +424,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 28 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "28 verified · 15 consent OK · 6 failed recheck"
+  "grokPrompt": "auto-verify: 30 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "30 verified · 17 consent OK · 4 failed recheck"
 }
