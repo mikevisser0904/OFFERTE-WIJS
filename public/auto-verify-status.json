@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T01:31:20.049Z",
+  "updatedAt": "2026-11-13T12:40:34.155Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 34,
@@ -150,7 +150,7 @@
       "bedrijf": "Reinaerde Remake Meubel",
       "evidence": "https://s246.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -278,7 +278,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     }
   ],
