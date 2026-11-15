@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T09:51:08.356Z",
+  "generatedAt": "2026-11-15T10:26:27.329Z",
   "totaal": 202,
   "metTelefoon": 107,
   "leakMatches": 19,
@@ -1648,25 +1648,6 @@
       "actie": "whatsapp"
     },
     {
-      "bedrijf": "Plant services",
-      "plaats": "Rotterdam",
-      "url": "https://plantservices.nl",
-      "telefoon": "+31 10 434 2465",
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 74,
-      "redenen": [
-        "sterke niche: elektricien",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
       "bedrijf": "Luxury Home",
       "plaats": "Spijkenisse",
       "url": "https://luxuryhomeraamdecoratie.nl",
@@ -1886,24 +1867,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31610267375?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "Renovlies Professionals",
-      "plaats": "Nieuwerkerk aan den IJssel",
-      "url": "https://renovliesprofessionals.nl",
-      "telefoon": "+31 6 51468178",
-      "email": "info@renovliesprofessionals.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 70,
-      "redenen": [
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31651468178?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -2413,6 +2376,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Amstelland Kozijnen",
       "plaats": "Amstelveen",
       "url": "https://www.amstellandkozijnen.nl",
@@ -2783,24 +2764,6 @@
       "score": 52,
       "redenen": [
         "sterke niche: installateur"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Woonbasis",
-      "plaats": "Haarlem",
-      "url": "https://www.woonbasis.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": true,
@@ -3581,6 +3544,26 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Plant services",
+      "plaats": "Rotterdam",
+      "url": "https://plantservices.nl",
+      "telefoon": "+31 10 434 2465",
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 39,
+      "redenen": [
+        "sterke niche: elektricien",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31104342465?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Installatiebureau Jonker BV",
       "plaats": "Wassenaar",
       "url": "https://www.jonkerbv.eu",
@@ -3598,6 +3581,25 @@
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": "https://wa.me/31705111000?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Renovlies Professionals",
+      "plaats": "Nieuwerkerk aan den IJssel",
+      "url": "https://renovliesprofessionals.nl",
+      "telefoon": "+31 6 51468178",
+      "email": "info@renovliesprofessionals.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 35,
+      "redenen": [
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Google Start €299",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31651468178?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "scan-eerst"
     },
     {
@@ -3623,25 +3625,6 @@
       "bedrijf": "Oranjegordijn",
       "plaats": "'s-Gravenhage",
       "url": "https://oranjegordijn.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: zonwering",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Wonnink Zonwering",
-      "plaats": "Amersfoort",
-      "url": "https://www.wonnink.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -3706,6 +3689,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: kozijnen",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
