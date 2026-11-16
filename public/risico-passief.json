@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-16T07:18:13.133Z",
+  "updatedAt": "2026-11-16T18:56:43.475Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
-    "gecontroleerd": 39,
+    "gecontroleerd": 42,
     "kritiek": 0,
-    "hoog": 35
+    "hoog": 38
   },
   "resultaten": [
     {
@@ -151,28 +151,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "bedrijf": "Het Interieur",
-      "plaats": "Amsterdam",
-      "klantUrl": "https://hetinterieur.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Het Interieur",
-      "plaats": "Amsterdam",
-      "klantUrl": "https://hetinterieur.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "bedrijf": "Bosse Elektrotechniek",
       "plaats": "Aalsmeer",
@@ -206,10 +184,10 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
-      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "url": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -217,21 +195,10 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/phpMyAdmin/",
-      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/index.php",
-      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "plaats": "'s-Gravenhage",
-      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "url": "https://s229.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Het Interieur",
+      "plaats": "Amsterdam",
+      "klantUrl": "https://hetinterieur.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -305,6 +272,39 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/phpMyAdmin/",
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/index.php",
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "klantUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "plaats": "Moordrecht",
@@ -331,6 +331,39 @@
       "bedrijf": "van der Meer Elektrotechniek BV",
       "plaats": "Maasland",
       "klantUrl": "https://www.ejvandermeer.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
+      "bedrijf": "Brands Dak Onderhoud",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://pannendekkers-amersfoort.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://pannendekkers-amersfoort.nl/phpMyAdmin/",
+      "bedrijf": "Brands Dak Onderhoud",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://pannendekkers-amersfoort.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://pannendekkers-amersfoort.nl/phpmyadmin/index.php",
+      "bedrijf": "Brands Dak Onderhoud",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://pannendekkers-amersfoort.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",

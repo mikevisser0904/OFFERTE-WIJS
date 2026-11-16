@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-16T18:48:04.603Z",
+  "updatedAt": "2026-11-16T18:57:35.569Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-16T12:09:55.556Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-11-16T18:44:48.859Z",
+      "lastRun": "2026-11-16T18:57:35.562Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,25 +61,25 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-11-16T13:32:02.899Z",
+      "lastRun": "2026-11-16T18:57:35.342Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 17,
+      "metBewijs": 18,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Firma Fred van Rijn (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Firma Fred van Rijn: controle https://s230.webhostingserver.nl/phpMyAdmin/ · rapport 86dde731b1e4. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
         "Firma Fred van Rijn · https://s230.webhostingserver.nl/phpMyAdmin/",
         "Textilia · https://s225.webhostingserver.nl/phpMyAdmin/",
-        "Rioolservice P. van Adrichem · https://rioolservice-pvanadrichem.nl/phpMyAdmin/"
+        "Bos Elektrotechniek · https://www.boselektrotechniek.nl/phpMyAdmin/"
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-11-16T07:19:14.798Z",
+      "lastRun": "2026-11-16T18:57:35.569Z",
       "ok": true,
-      "leakVerified": 30,
-      "consentProofOk": 17,
-      "agentPrompt": "30 verified · 17 consent OK · 4 failed recheck",
-      "grokPrompt": "auto-verify: 30 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 31,
+      "consentProofOk": 18,
+      "agentPrompt": "31 verified · 18 consent OK · 4 failed recheck",
+      "grokPrompt": "auto-verify: 31 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
       "lastRun": "2026-11-16T13:32:02.910Z",

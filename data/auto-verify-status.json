@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-16T07:19:14.797Z",
+  "updatedAt": "2026-11-16T18:57:35.568Z",
   "agent": "auto-verify",
   "summary": {
-    "leakHits": 34,
-    "leakVerified": 30,
+    "leakHits": 35,
+    "leakVerified": 31,
     "leakFailed": 4,
-    "consentChecked": 19,
-    "consentProofOk": 17
+    "consentChecked": 20,
+    "consentProofOk": 18
   },
   "leakRows": [
     {
@@ -58,14 +58,6 @@
       "status": "verified"
     },
     {
-      "url": "https://hetinterieur.nl/",
-      "bedrijf": "Het Interieur",
-      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
-    },
-    {
       "url": "https://www.bosse-elektrotechniek.nl/",
       "bedrijf": "Bosse Elektrotechniek",
       "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
@@ -74,9 +66,9 @@
       "status": "verified"
     },
     {
-      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
-      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
+      "url": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -106,6 +98,14 @@
       "status": "verified"
     },
     {
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
@@ -117,6 +117,14 @@
       "url": "https://www.ejvandermeer.nl/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
+    },
+    {
+      "url": "https://pannendekkers-amersfoort.nl/",
+      "bedrijf": "Brands Dak Onderhoud",
+      "evidence": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
@@ -278,7 +286,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     }
   ],
@@ -396,6 +404,12 @@
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
       "passiveOk": true,
       "authOk": null
+    },
+    {
+      "siteUrl": "https://pannendekkers-amersfoort.nl/",
+      "bedrijf": "Brands Dak Onderhoud",
+      "passiveOk": true,
+      "authOk": null
     }
   ],
   "steps": [
@@ -424,6 +438,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 30 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "30 verified · 17 consent OK · 4 failed recheck"
+  "grokPrompt": "auto-verify: 31 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "31 verified · 18 consent OK · 4 failed recheck"
 }
