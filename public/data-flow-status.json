@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T07:19:14.790Z",
+  "updatedAt": "2026-11-16T12:09:55.593Z",
   "agent": "data-flow",
   "healthy": true,
   "fixApplied": true,
@@ -13,8 +13,8 @@
   },
   "cross": {
     "queuePending": 0,
-    "queueScanned": 205,
-    "leakHits": 34,
+    "queueScanned": 208,
+    "leakHits": 35,
     "issues": []
   },
   "streams": [
@@ -223,7 +223,7 @@
       "drift": false,
       "synced": false,
       "issues": [],
-      "detail": "43 rapporten · 0 gekopieerd"
+      "detail": "44 rapporten · 0 gekopieerd"
     },
     {
       "id": "health",
@@ -245,5 +245,5 @@
     }
   ],
   "grokPrompt": "data-flow OK — alle streams gesynchroniseerd",
-  "agentPrompt": "25 streams OK · queue 0 pending · 34 lekken"
+  "agentPrompt": "25 streams OK · queue 0 pending · 35 lekken"
 }
