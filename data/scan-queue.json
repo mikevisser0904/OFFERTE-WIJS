@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T09:13:03.994Z",
+  "updatedAt": "2026-11-16T10:41:02.787Z",
   "items": [
     {
       "id": "q-mrabzuyg-0",
@@ -2466,24 +2466,36 @@
       "bedrijf": "Brands Dak Onderhoud",
       "plaats": "Amersfoort",
       "url": "https://pannendekkers-amersfoort.nl",
-      "status": "pending",
-      "toegevoegd": "2026-11-16T09:13:03.994Z"
+      "status": "klaar",
+      "toegevoegd": "2026-11-16T09:13:03.994Z",
+      "scannedAt": "2026-11-16T10:40:46.209Z",
+      "reportId": "ec974583b4e3",
+      "risicoScore": 100,
+      "leakHit": true
     },
     {
       "id": "q-mwj1prlm-1",
       "bedrijf": "Vossebelt",
       "plaats": "Houten",
       "url": "https://vossebelt.org",
-      "status": "pending",
-      "toegevoegd": "2026-11-16T09:13:03.994Z"
+      "status": "klaar",
+      "toegevoegd": "2026-11-16T09:13:03.994Z",
+      "scannedAt": "2026-11-16T10:40:46.229Z",
+      "reportId": "002de3605300",
+      "risicoScore": 0,
+      "leakHit": false
     },
     {
       "id": "q-mwj1prlm-2",
       "bedrijf": "Goossens Installaties",
       "plaats": "Nieuwegein",
       "url": "https://goossens-installaties.nl",
-      "status": "pending",
-      "toegevoegd": "2026-11-16T09:13:03.994Z"
+      "status": "klaar",
+      "toegevoegd": "2026-11-16T09:13:03.994Z",
+      "scannedAt": "2026-11-16T10:40:46.230Z",
+      "reportId": "de68c3239d57",
+      "risicoScore": 0,
+      "leakHit": false
     }
   ]
 }
