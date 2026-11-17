@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-17T03:12:37.292Z",
+  "updatedAt": "2026-11-17T04:27:56.879Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-16T23:53:50.480Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-11-16T23:53:51.273Z",
+      "lastRun": "2026-11-17T04:27:56.676Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
-      "safeDone": 3,
+      "safeDone": 4,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-11-17T03:03:48.133Z",
+      "lastRun": "2026-11-17T04:27:56.879Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-11-17T03:12:37.030Z",
+      "lastRun": "2026-11-17T04:27:56.128Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 18,
@@ -82,7 +82,7 @@
       "grokPrompt": "auto-verify: 31 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
-      "lastRun": "2026-11-16T13:32:02.910Z",
+      "lastRun": "2026-11-17T04:27:56.141Z",
       "ok": true,
       "contactenVandaag": 15,
       "lekkenEerst": 3,
@@ -90,7 +90,7 @@
       "top3": [
         "Firma Fred van Rijn: Live bewijs: phpMyAdmin HTTP 200",
         "Textilia: Live bewijs: phpMyAdmin HTTP 200",
-        "Rioolservice P. van Adrichem: Live bewijs: phpMyAdmin HTTP 200"
+        "Bos Elektrotechniek: Live bewijs: phpMyAdmin HTTP 200"
       ]
     },
     "klanten-lek": {
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-11-17T03:03:48.133Z",
+    "updatedAt": "2026-11-17T04:27:56.879Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -134,22 +134,22 @@
         "id": "optimizer",
         "naam": "Optimizer",
         "status": "ok",
-        "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-11-16T23:53:51.273Z"
+        "detail": "Grok-wachtrij 2 · laatste fixes 4",
+        "lastRun": "2026-11-17T04:27:56.676Z"
       },
       {
         "id": "auto-verify",
         "naam": "Auto-verify",
         "status": "ok",
         "detail": "31 verified · 18 consent OK · 4 failed recheck",
-        "lastRun": "2026-11-16T18:57:35.569Z"
+        "lastRun": "2026-11-17T03:12:37.292Z"
       },
       {
         "id": "data-flow",
         "naam": "Data-flow",
         "status": "ok",
         "detail": "25 streams OK · queue 0 pending · 35 lekken",
-        "lastRun": "2026-11-17T03:01:43.187Z"
+        "lastRun": "2026-11-17T03:12:37.284Z"
       },
       {
         "id": "health-monitor",
@@ -219,7 +219,7 @@
         "naam": "Verkoop-bewijs",
         "status": "ok",
         "detail": "12 met live bewijs",
-        "lastRun": "2026-11-16T18:57:35.342Z"
+        "lastRun": "2026-11-17T04:27:56.128Z"
       },
       {
         "id": "outbound-auto",
@@ -233,7 +233,7 @@
         "naam": "Outreach",
         "status": "ok",
         "detail": "15 contacten",
-        "lastRun": "2026-11-16T13:32:02.910Z"
+        "lastRun": "2026-11-17T04:27:56.141Z"
       },
       {
         "id": "seo",
