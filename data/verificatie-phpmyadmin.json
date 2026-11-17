@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-11-17T13:52:58.994Z",
+  "verifiedAt": "2026-11-17T23:41:56.549Z",
   "totaal": 33,
-  "loginBereikbaar": 29,
-  "uniekeLoginUrls": 18,
-  "bevestigd": 14,
+  "loginBereikbaar": 28,
+  "uniekeLoginUrls": 17,
+  "bevestigd": 13,
   "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 4,
+  "onbekend": 5,
   "redirect_anders": 0,
   "results": [
     {
@@ -240,14 +240,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
       "evidence": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (pannendekkers-amersfoort.nl)",
-      "http": 200,
-      "finalUrl": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Amer Houttechniek",
