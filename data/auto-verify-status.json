@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-17T23:43:15.227Z",
+  "updatedAt": "2026-11-18T07:59:40.075Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 35,
-    "leakVerified": 28,
-    "leakFailed": 7,
+    "leakVerified": 31,
+    "leakFailed": 4,
     "consentChecked": 20,
-    "consentProofOk": 16
+    "consentProofOk": 18
   },
   "leakRows": [
     {
@@ -93,17 +93,17 @@
       "url": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
       "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://rioolservice-pvanadrichem.nl/",
@@ -125,9 +125,9 @@
       "url": "https://pannendekkers-amersfoort.nl/",
       "bedrijf": "Brands Dak Onderhoud",
       "evidence": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
-      "dbOk": false,
-      "proofOk": false,
-      "status": "failed"
+      "dbOk": true,
+      "proofOk": true,
+      "status": "verified"
     },
     {
       "url": "https://www.amer-hout.nl/",
@@ -286,7 +286,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     }
   ],
@@ -396,7 +396,7 @@
     {
       "siteUrl": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     },
     {
@@ -408,7 +408,7 @@
     {
       "siteUrl": "https://pannendekkers-amersfoort.nl/",
       "bedrijf": "Brands Dak Onderhoud",
-      "passiveOk": false,
+      "passiveOk": true,
       "authOk": null
     }
   ],
@@ -438,6 +438,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 28 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "28 verified · 16 consent OK · 7 failed recheck"
+  "grokPrompt": "auto-verify: 31 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "31 verified · 18 consent OK · 4 failed recheck"
 }

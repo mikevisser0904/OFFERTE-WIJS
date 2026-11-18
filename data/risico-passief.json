@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-17T23:42:14.310Z",
+  "updatedAt": "2026-11-18T07:58:53.009Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 42,
     "kritiek": 0,
-    "hoog": 35
+    "hoog": 37
   },
   "resultaten": [
     {
@@ -338,6 +338,39 @@
       "titel": "phpMyAdmin"
     },
     {
+      "url": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
+      "bedrijf": "Brands Dak Onderhoud",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://pannendekkers-amersfoort.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://pannendekkers-amersfoort.nl/phpMyAdmin/",
+      "bedrijf": "Brands Dak Onderhoud",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://pannendekkers-amersfoort.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://pannendekkers-amersfoort.nl/phpmyadmin/index.php",
+      "bedrijf": "Brands Dak Onderhoud",
+      "plaats": "Amersfoort",
+      "klantUrl": "https://pannendekkers-amersfoort.nl/",
+      "http": 200,
+      "niveau": "hoog",
+      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
+      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
+      "titel": "phpMyAdmin"
+    },
+    {
       "url": "https://s205.webhostingserver.nl/phpMyAdmin/",
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
@@ -371,17 +404,6 @@
       "titel": "phpMyAdmin"
     },
     {
-      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
-      "bedrijf": "Reinaerde Remake Meubel",
-      "plaats": "Utrecht",
-      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
       "url": "https://web3.hostingcp.eu/phpMyAdmin/",
       "bedrijf": "Klomp Elektrotechniek",
       "plaats": "Barneveld",
@@ -391,33 +413,6 @@
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
       "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
       "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
-      "bedrijf": "Brands Dak Onderhoud",
-      "plaats": "Amersfoort",
-      "klantUrl": "https://pannendekkers-amersfoort.nl/",
-      "http": 403,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
-    },
-    {
-      "url": "https://pannendekkers-amersfoort.nl/phpMyAdmin/",
-      "bedrijf": "Brands Dak Onderhoud",
-      "plaats": "Amersfoort",
-      "klantUrl": "https://pannendekkers-amersfoort.nl/",
-      "http": 403,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
-    },
-    {
-      "url": "https://pannendekkers-amersfoort.nl/phpmyadmin/index.php",
-      "bedrijf": "Brands Dak Onderhoud",
-      "plaats": "Amersfoort",
-      "klantUrl": "https://pannendekkers-amersfoort.nl/",
-      "http": 403,
-      "niveau": "onduidelijk",
-      "reden": "Geen bevestigd panel"
     },
     {
       "url": "https://chargecars.nl/phpMyAdmin/",
@@ -449,6 +444,14 @@
       "bedrijf": "Nuoveni",
       "plaats": "Voorburg",
       "klantUrl": "https://nuoveni.nl/",
+      "niveau": "fout",
+      "reden": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://s246.webhostingserver.nl/phpMyAdmin/index.php",
+      "bedrijf": "Reinaerde Remake Meubel",
+      "plaats": "Utrecht",
+      "klantUrl": "https://www.reinaerde.nl/zorg/remakemeubel",
       "niveau": "fout",
       "reden": "TypeError: fetch failed"
     }
