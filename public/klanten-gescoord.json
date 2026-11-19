@@ -1,29 +1,9 @@
 {
-  "generatedAt": "2026-11-18T11:11:38.400Z",
+  "generatedAt": "2026-11-19T11:10:44.784Z",
   "totaal": 205,
   "metTelefoon": 109,
   "leakMatches": 20,
   "leads": [
-    {
-      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "plaats": "'s-Gravenhage",
-      "url": "https://rioolontstoppingsbedrijf-denhaag.nl",
-      "telefoon": "+31 85 115 5862",
-      "email": null,
-      "categorie": "loodgieter",
-      "prioriteit": "scan-eerst",
-      "score": 100,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "sterke niche: loodgieter",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31851155862?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "bel-nu"
-    },
     {
       "bedrijf": "Amer Houttechniek",
       "plaats": "Amersfoort",
@@ -42,25 +22,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31334570659?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "Brands Dak Onderhoud",
-      "plaats": "Amersfoort",
-      "url": "https://pannendekkers-amersfoort.nl",
-      "telefoon": "+31853033777",
-      "email": null,
-      "categorie": "dakdekker",
-      "prioriteit": "scan-eerst",
-      "score": 100,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31853033777?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
@@ -221,25 +182,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31302120173?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "bel-nu"
-    },
-    {
-      "bedrijf": "Just-In Roofs",
-      "plaats": "Vlaardingen",
-      "url": "https://justinroofs.nl",
-      "telefoon": "+31 10 414 3293",
-      "email": "info@justinroofs.nl",
-      "categorie": "dakdekker",
-      "prioriteit": "scan-eerst",
-      "score": 100,
-      "redenen": [
-        "bevestigd database-lek (VakScan actionable)",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31104143293?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
@@ -429,6 +371,27 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": null,
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
+      "plaats": "'s-Gravenhage",
+      "url": "https://rioolontstoppingsbedrijf-denhaag.nl",
+      "telefoon": "+31 85 115 5862",
+      "email": null,
+      "categorie": "loodgieter",
+      "prioriteit": "scan-eerst",
+      "score": 84,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "sterke niche: loodgieter",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31851155862?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "bel-nu"
     },
     {
@@ -964,6 +927,25 @@
       "actie": "whatsapp"
     },
     {
+      "bedrijf": "Denhil Zonwering en Buitenleven",
+      "plaats": "Purmerend",
+      "url": "https://denhil.nl/producten/zonwering-purmerend",
+      "telefoon": "+31 299 413 103",
+      "email": "info@denhil.nl",
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 82,
+      "redenen": [
+        "sterke niche: zonwering",
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31299413103?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "EBD Techniek",
       "plaats": "Purmerend",
       "url": "https://www.ebd-purmerend.nl",
@@ -980,25 +962,6 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31299477520?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "whatsapp"
-    },
-    {
-      "bedrijf": "Engberts Elektrotechniek",
-      "plaats": "Purmerend",
-      "url": "https://engberts.nu",
-      "telefoon": "+31 299 751 340",
-      "email": "info@engberts.nu",
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 82,
-      "redenen": [
-        "sterke niche: elektricien",
-        "telefoon bekend"
-      ],
-      "aanbod": "Website Veilig €299 — urgent",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": "https://wa.me/31299751340?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -1209,6 +1172,26 @@
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31180201006?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "Just-In Roofs",
+      "plaats": "Vlaardingen",
+      "url": "https://justinroofs.nl",
+      "telefoon": "+31 10 414 3293",
+      "email": "info@justinroofs.nl",
+      "categorie": "dakdekker",
+      "prioriteit": "scan-eerst",
+      "score": 80,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31104143293?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "bel-nu"
     },
     {
       "bedrijf": "A. Buitelaar Zonwering",
@@ -1781,6 +1764,44 @@
       "actie": "whatsapp"
     },
     {
+      "bedrijf": "Brands Dak Onderhoud",
+      "plaats": "Amersfoort",
+      "url": "https://pannendekkers-amersfoort.nl",
+      "telefoon": "+31853033777",
+      "email": null,
+      "categorie": "dakdekker",
+      "prioriteit": "scan-eerst",
+      "score": 72,
+      "redenen": [
+        "bevestigd database-lek (VakScan actionable)",
+        "telefoon bekend",
+        "site reageert slecht"
+      ],
+      "aanbod": "Website Veilig €299 — urgent",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": "https://wa.me/31853033777?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "bel-nu"
+    },
+    {
+      "bedrijf": "Achterberg Schilders & Onderhoud",
+      "plaats": "Amersfoort",
+      "url": "https://www.achterbergschilders.nl",
+      "telefoon": "+31 318 634101",
+      "email": "info@achterbergschilders.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 70,
+      "redenen": [
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31318634101?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "Pruis Schilderwerken",
       "plaats": "Amersfoort",
       "url": "https://pruisschilderwerken.nl",
@@ -1871,6 +1892,24 @@
       "actie": "whatsapp"
     },
     {
+      "bedrijf": "Renovlies Professionals",
+      "plaats": "Nieuwerkerk aan den IJssel",
+      "url": "https://renovliesprofessionals.nl",
+      "telefoon": "+31 6 51468178",
+      "email": "info@renovliesprofessionals.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 70,
+      "redenen": [
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31651468178?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
       "bedrijf": "Van der Nat Glas- en Schilderwerken",
       "plaats": "Noordwijk",
       "url": "https://vdnat.nl",
@@ -1904,6 +1943,24 @@
       "siteOk": true,
       "heeftHttps": true,
       "whatsappUrl": "https://wa.me/31299451299?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "actie": "whatsapp"
+    },
+    {
+      "bedrijf": "Schildersbedrijf van der Meer",
+      "plaats": "Purmerend",
+      "url": "https://meerschilder.nl",
+      "telefoon": "+31 6 51642971",
+      "email": "info@meerschilder.nl",
+      "categorie": "schilder",
+      "prioriteit": "scan-eerst",
+      "score": 70,
+      "redenen": [
+        "telefoon bekend"
+      ],
+      "aanbod": "Website Veilig €299",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": "https://wa.me/31651642971?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "whatsapp"
     },
     {
@@ -2359,24 +2416,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Wonnink Zonwering",
-      "plaats": "Amersfoort",
-      "url": "https://www.wonnink.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Amstelland Kozijnen",
       "plaats": "Amstelveen",
       "url": "https://www.amstellandkozijnen.nl",
@@ -2452,42 +2491,6 @@
       "bedrijf": "Gordijnenhuis Madina",
       "plaats": "Amsterdam",
       "url": "https://www.facebook.com/gordijnenhuis.madina",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Protectsun",
-      "plaats": "Amsterdam",
-      "url": "https://www.protectsun.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Vivante Bekenkamp",
-      "plaats": "Baarn",
-      "url": "https://www.vivante-bekenkamp.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -2755,6 +2758,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Woonbasis",
+      "plaats": "Haarlem",
+      "url": "https://www.woonbasis.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "'T Spant",
       "plaats": "Heemstede",
       "url": "https://www.spant.nl",
@@ -2794,42 +2815,6 @@
       "bedrijf": "Randstad Zonweringen",
       "plaats": "Hoofddorp",
       "url": "https://www.randstadzonweringen.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: zonwering"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Blygold",
-      "plaats": "Houten",
-      "url": "https://www.blygold.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "elektricien",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: elektricien"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "BVR Wooncomfort",
-      "plaats": "Houten",
-      "url": "https://www.bvrzonwering.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -3373,23 +3358,23 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Denhil Zonwering en Buitenleven",
+      "bedrijf": "Engberts Elektrotechniek",
       "plaats": "Purmerend",
-      "url": "https://denhil.nl/producten/zonwering-purmerend",
-      "telefoon": "+31 299 413 103",
-      "email": "info@denhil.nl",
-      "categorie": "zonwering",
+      "url": "https://engberts.nu",
+      "telefoon": "+31 299 751 340",
+      "email": "info@engberts.nu",
+      "categorie": "elektricien",
       "prioriteit": "scan-eerst",
       "score": 47,
       "redenen": [
-        "sterke niche: zonwering",
+        "sterke niche: elektricien",
         "telefoon bekend",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
       "siteOk": false,
       "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31299413103?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
+      "whatsappUrl": "https://wa.me/31299751340?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "scan-eerst"
     },
     {
@@ -3605,44 +3590,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Achterberg Schilders & Onderhoud",
-      "plaats": "Amersfoort",
-      "url": "https://www.achterbergschilders.nl",
-      "telefoon": "+31 318 634101",
-      "email": "info@achterbergschilders.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 35,
-      "redenen": [
-        "telefoon bekend",
-        "site reageert slecht"
-      ],
-      "aanbod": "Google Start €299",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31318634101?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Renovlies Professionals",
-      "plaats": "Nieuwerkerk aan den IJssel",
-      "url": "https://renovliesprofessionals.nl",
-      "telefoon": "+31 6 51468178",
-      "email": "info@renovliesprofessionals.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 35,
-      "redenen": [
-        "telefoon bekend",
-        "site reageert slecht"
-      ],
-      "aanbod": "Google Start €299",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31651468178?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Schilder en Wandafwerkingsbedrijf Rene Lek",
       "plaats": "Purmerend",
       "url": "https://renelek.nl",
@@ -3659,25 +3606,6 @@
       "siteOk": false,
       "heeftHttps": false,
       "whatsappUrl": "https://wa.me/31299649042?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
-      "actie": "scan-eerst"
-    },
-    {
-      "bedrijf": "Schildersbedrijf van der Meer",
-      "plaats": "Purmerend",
-      "url": "https://meerschilder.nl",
-      "telefoon": "+31 6 51642971",
-      "email": "info@meerschilder.nl",
-      "categorie": "schilder",
-      "prioriteit": "scan-eerst",
-      "score": 35,
-      "redenen": [
-        "telefoon bekend",
-        "site reageert slecht"
-      ],
-      "aanbod": "Google Start €299",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": "https://wa.me/31651642971?text=Hoi%2C%20Mike%20van%20DoekoeWijs.%20Gratis%20veiligheidscheck%20op%20uw%20site%20%E2%80%94%20kort%20puntje%20om%20te%20verbeteren.%2010%20min%20bellen%3F",
       "actie": "scan-eerst"
     },
     {
@@ -3700,9 +3628,66 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Kilim Tapijt & Vinyl",
       "plaats": "Amsterdam",
       "url": "https://www.kilim-tapijt-vinyl.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Protectsun",
+      "plaats": "Amsterdam",
+      "url": "https://www.protectsun.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "Vivante Bekenkamp",
+      "plaats": "Baarn",
+      "url": "https://www.vivante-bekenkamp.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
@@ -3757,9 +3742,28 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Woonbasis",
-      "plaats": "Haarlem",
-      "url": "https://www.woonbasis.nl",
+      "bedrijf": "Blygold",
+      "plaats": "Houten",
+      "url": "https://www.blygold.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "elektricien",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: elektricien",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "BVR Wooncomfort",
+      "plaats": "Houten",
+      "url": "https://www.bvrzonwering.nl",
       "telefoon": null,
       "email": null,
       "categorie": "zonwering",
