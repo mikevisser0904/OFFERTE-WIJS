@@ -1,5 +1,5 @@
 {
-  "verifiedAt": "2026-11-23T08:15:00.230Z",
+  "verifiedAt": "2026-11-23T20:34:32.116Z",
   "totaal": 33,
   "loginBereikbaar": 29,
   "uniekeLoginUrls": 18,
@@ -106,22 +106,6 @@
       "verkoop": "voorzichtig"
     },
     {
-      "bedrijf": "Bosse Elektrotechniek",
-      "plaats": "Aalsmeer",
-      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
-      "geprobeerd": 4,
-      "besteProbe": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.bosse-elektrotechniek.nl)",
-      "http": 200,
-      "finalUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
-    },
-    {
       "bedrijf": "Het Interieur",
       "plaats": "Amsterdam",
       "klantUrl": "https://hetinterieur.nl/",
@@ -136,6 +120,22 @@
       "panelKind": "login",
       "panelConfidence": "high",
       "verkoop": "voorzichtig"
+    },
+    {
+      "bedrijf": "Bosse Elektrotechniek",
+      "plaats": "Aalsmeer",
+      "klantUrl": "https://www.bosse-elektrotechniek.nl/",
+      "geprobeerd": 4,
+      "besteProbe": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.bosse-elektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Tafelboom",

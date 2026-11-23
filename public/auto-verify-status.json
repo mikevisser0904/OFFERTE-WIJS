@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T08:16:19.195Z",
+  "updatedAt": "2026-11-23T20:35:40.209Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 35,
@@ -58,17 +58,17 @@
       "status": "verified"
     },
     {
-      "url": "https://www.bosse-elektrotechniek.nl/",
-      "bedrijf": "Bosse Elektrotechniek",
-      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
+      "url": "https://hetinterieur.nl/",
+      "bedrijf": "Het Interieur",
+      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
     },
     {
-      "url": "https://hetinterieur.nl/",
-      "bedrijf": "Het Interieur",
-      "evidence": "https://s229.webhostingserver.nl/phpMyAdmin/",
+      "url": "https://www.bosse-elektrotechniek.nl/",
+      "bedrijf": "Bosse Elektrotechniek",
+      "evidence": "https://www.bosse-elektrotechniek.nl/phpmyadmin/",
       "dbOk": true,
       "proofOk": true,
       "status": "verified"
