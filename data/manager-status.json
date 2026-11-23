@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T04:22:18.519Z",
+  "updatedAt": "2026-11-23T14:31:16.232Z",
   "agent": "manager",
   "fase": "verkopen",
   "faseLabel": "Vandaag geld — warm netwerk",
@@ -23,28 +23,28 @@
       "id": "optimizer",
       "naam": "Optimizer",
       "status": "ok",
-      "detail": "Grok-wachtrij 2 · laatste fixes 3",
-      "lastRun": "2026-11-23T04:22:18.347Z"
+      "detail": "Grok-wachtrij 2 · laatste fixes 4",
+      "lastRun": "2026-11-23T14:31:15.938Z"
     },
     {
       "id": "auto-verify",
       "naam": "Auto-verify",
       "status": "ok",
       "detail": "31 verified · 18 consent OK · 4 failed recheck",
-      "lastRun": "2026-11-22T22:04:41.161Z"
+      "lastRun": "2026-11-23T08:16:19.196Z"
     },
     {
       "id": "data-flow",
       "naam": "Data-flow",
       "status": "ok",
       "detail": "25 streams OK · queue 0 pending · 35 lekken",
-      "lastRun": "2026-11-23T04:22:17.790Z"
+      "lastRun": "2026-11-23T08:16:19.190Z"
     },
     {
       "id": "health-monitor",
       "naam": "Health Monitor",
       "status": "ok",
-      "detail": "OK 139ms",
+      "detail": "OK 120ms",
       "lastRun": "2026-11-23T04:22:17.751Z"
     },
     {
@@ -101,28 +101,28 @@
       "naam": "Verkoop-effectiviteit",
       "status": "ok",
       "detail": "Verkoop-effectiviteit 75% · 18 bewijs · 0 contacten deze week",
-      "lastRun": "2026-11-22T21:22:46.903Z"
+      "lastRun": "2026-11-23T04:22:18.600Z"
     },
     {
       "id": "verkoop-bewijs",
       "naam": "Verkoop-bewijs",
       "status": "ok",
       "detail": "12 met live bewijs",
-      "lastRun": "2026-11-23T02:42:29.178Z"
+      "lastRun": "2026-11-23T14:31:15.363Z"
     },
     {
       "id": "outbound-auto",
       "naam": "Outbound auto",
       "status": "ok",
       "detail": "Outbound LIVE: 0 verzonden · 0 verwerkt",
-      "lastRun": "2026-11-22T21:22:46.868Z"
+      "lastRun": "2026-11-23T04:22:18.574Z"
     },
     {
       "id": "outreach",
       "naam": "Outreach",
       "status": "ok",
       "detail": "15 contacten",
-      "lastRun": "2026-11-23T02:42:29.188Z"
+      "lastRun": "2026-11-23T14:31:15.379Z"
     },
     {
       "id": "seo",
