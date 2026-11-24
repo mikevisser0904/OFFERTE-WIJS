@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T18:01:21.155Z",
+  "generatedAt": "2026-11-24T13:19:38.203Z",
   "totaal": 205,
   "metTelefoon": 109,
   "leakMatches": 20,
@@ -2414,6 +2414,24 @@
       "actie": "scan-eerst"
     },
     {
+      "bedrijf": "Wonnink Zonwering",
+      "plaats": "Amersfoort",
+      "url": "https://www.wonnink.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "zonwering",
+      "prioriteit": "scan-eerst",
+      "score": 52,
+      "redenen": [
+        "sterke niche: zonwering"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": true,
+      "heeftHttps": true,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
       "bedrijf": "Amstelland Kozijnen",
       "plaats": "Amstelveen",
       "url": "https://www.amstellandkozijnen.nl",
@@ -3116,24 +3134,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "De Klussenier",
-      "plaats": "Rotterdam",
-      "url": "https://wimdejong.klussenier.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "kozijnen",
-      "prioriteit": "scan-eerst",
-      "score": 52,
-      "redenen": [
-        "sterke niche: kozijnen"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": true,
-      "heeftHttps": true,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Installatiebedrijf Vis",
       "plaats": "Rotterdam",
       "url": "https://installatiebedrijfvis.nl",
@@ -3679,25 +3679,6 @@
       "actie": "scan-eerst"
     },
     {
-      "bedrijf": "Wonnink Zonwering",
-      "plaats": "Amersfoort",
-      "url": "https://www.wonnink.nl",
-      "telefoon": null,
-      "email": null,
-      "categorie": "zonwering",
-      "prioriteit": "scan-eerst",
-      "score": 17,
-      "redenen": [
-        "sterke niche: zonwering",
-        "site reageert slecht"
-      ],
-      "aanbod": "Vakman Site €899",
-      "siteOk": false,
-      "heeftHttps": false,
-      "whatsappUrl": null,
-      "actie": "scan-eerst"
-    },
-    {
       "bedrijf": "Kilim Tapijt & Vinyl",
       "plaats": "Amsterdam",
       "url": "https://www.kilim-tapijt-vinyl.nl",
@@ -3765,6 +3746,25 @@
       "score": 17,
       "redenen": [
         "sterke niche: zonwering",
+        "site reageert slecht"
+      ],
+      "aanbod": "Vakman Site €899",
+      "siteOk": false,
+      "heeftHttps": false,
+      "whatsappUrl": null,
+      "actie": "scan-eerst"
+    },
+    {
+      "bedrijf": "De Klussenier",
+      "plaats": "Rotterdam",
+      "url": "https://wimdejong.klussenier.nl",
+      "telefoon": null,
+      "email": null,
+      "categorie": "kozijnen",
+      "prioriteit": "scan-eerst",
+      "score": 17,
+      "redenen": [
+        "sterke niche: kozijnen",
         "site reageert slecht"
       ],
       "aanbod": "Vakman Site €899",
