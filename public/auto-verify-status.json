@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T20:35:40.209Z",
+  "updatedAt": "2026-11-24T05:01:46.326Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 35,
@@ -45,7 +45,7 @@
       "url": "https://www.boselektrotechniek.nl/",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -245,7 +245,7 @@
       "url": "https://www.boselektrotechniek.nl",
       "bedrijf": "Bos Elektrotechniek",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },

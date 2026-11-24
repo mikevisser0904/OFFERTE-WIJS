@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-23T20:34:48.862Z",
+  "updatedAt": "2026-11-24T05:01:02.467Z",
   "uitleg": "Passief alleen. Inlogscherm op internet = risico zichtbaar zonder jouw wachtwoord. Geen brute force.",
   "samenvatting": {
     "gecontroleerd": 42,
     "kritiek": 0,
-    "hoog": 38
+    "hoog": 37
   },
   "resultaten": [
     {
@@ -111,17 +111,6 @@
       "bedrijf": "Burggraeve Woonstyling",
       "plaats": "Haarlem",
       "klantUrl": "https://www.bwstyling.nl/",
-      "http": 200,
-      "niveau": "hoog",
-      "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
-      "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
-      "titel": "phpMyAdmin"
-    },
-    {
-      "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "bedrijf": "Bos Elektrotechniek",
-      "plaats": "Maasdijk",
-      "klantUrl": "https://www.boselektrotechniek.nl/",
       "http": 200,
       "niveau": "hoog",
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
@@ -424,6 +413,15 @@
       "reden": "Database-inlog staat open op internet — bots kunnen wachtwoorden proberen",
       "actie": "Website Veilig €299 — VPN/IP-beperking + sterke wachtwoorden",
       "titel": "phpMyAdmin"
+    },
+    {
+      "url": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "http": 200,
+      "niveau": "onduidelijk",
+      "reden": "Geen bevestigd panel"
     },
     {
       "url": "https://chargecars.nl/phpMyAdmin/",
