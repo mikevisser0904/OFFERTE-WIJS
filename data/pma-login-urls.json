@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-11-24T05:00:49.209Z",
+  "updatedAt": "2026-11-24T19:44:57.557Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
     {
       "bedrijf": "Bosse Elektrotechniek",
       "plaats": "Aalsmeer",
@@ -176,6 +186,16 @@
     }
   ],
   "alleLoginUrls": [
+    {
+      "bedrijf": "Bos Elektrotechniek",
+      "plaats": "Maasdijk",
+      "klantUrl": "https://www.boselektrotechniek.nl/",
+      "loginUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "verdict": "bevestigd",
+      "verkoop": "sterk",
+      "panelKind": "login",
+      "http": 200
+    },
     {
       "bedrijf": "Bosse Elektrotechniek",
       "plaats": "Aalsmeer",

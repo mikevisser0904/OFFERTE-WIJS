@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-11-24T05:00:49.209Z",
+  "verifiedAt": "2026-11-24T19:44:57.557Z",
   "totaal": 33,
-  "loginBereikbaar": 27,
-  "uniekeLoginUrls": 17,
-  "bevestigd": 12,
+  "loginBereikbaar": 29,
+  "uniekeLoginUrls": 18,
+  "bevestigd": 14,
   "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 6,
+  "onbekend": 4,
   "redirect_anders": 0,
   "results": [
     {
@@ -80,10 +80,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "Textilia",
@@ -436,10 +440,14 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.boselektrotechniek.nl/phpMyAdmin/",
       "evidence": "https://www.boselektrotechniek.nl/phpMyAdmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "bevestigd",
+      "reden": "phpMyAdmin op eigen domein (www.boselektrotechniek.nl)",
+      "http": 200,
+      "finalUrl": "https://www.boselektrotechniek.nl/phpMyAdmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "sterk"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
