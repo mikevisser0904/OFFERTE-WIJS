@@ -15448,6 +15448,28 @@
           "reason": "geen webhook URL"
         }
       ]
+    },
+    {
+      "at": "2026-11-25T17:50:34.180Z",
+      "bedrijf": "Firma Fred van Rijn",
+      "url": "https://firmavanrijn.nl",
+      "host": "firmavanrijn.nl",
+      "email": "info@firmavanrijn.nl",
+      "phone": "31703211400",
+      "status": "simulated",
+      "live": true,
+      "results": [
+        {
+          "ok": true,
+          "simulated": true,
+          "reason": "geen RESEND_API_KEY"
+        },
+        {
+          "ok": false,
+          "skipped": true,
+          "reason": "geen webhook URL"
+        }
+      ]
     }
   ]
 }
