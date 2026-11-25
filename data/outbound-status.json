@@ -1,20 +1,13 @@
 {
-  "updatedAt": "2026-11-25T17:50:34.180Z",
+  "updatedAt": "2026-11-25T23:50:43.641Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 1,
-  "verwerkt": 1,
+  "gepland": 0,
+  "verwerkt": 0,
   "verzonden": 0,
-  "gesimuleerd": 1,
+  "gesimuleerd": 0,
   "mislukt": 0,
-  "items": [
-    {
-      "bedrijf": "Firma Fred van Rijn",
-      "status": "simulated",
-      "email": "info@firmavanrijn.nl",
-      "phone": "31703211400"
-    }
-  ],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 1 verwerkt",
+  "items": [],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
