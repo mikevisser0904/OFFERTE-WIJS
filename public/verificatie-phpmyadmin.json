@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-11-25T03:46:28.700Z",
+  "verifiedAt": "2026-11-25T14:58:33.299Z",
   "totaal": 33,
-  "loginBereikbaar": 29,
-  "uniekeLoginUrls": 18,
-  "bevestigd": 14,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 17,
+  "bevestigd": 12,
   "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 4,
+  "onbekend": 6,
   "redirect_anders": 0,
   "results": [
     {
@@ -224,14 +224,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.ejvandermeer.nl/phpmyadmin/",
       "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.ejvandermeer.nl)",
-      "http": 200,
-      "finalUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Brands Dak Onderhoud",
@@ -456,14 +452,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://www.ejvandermeer.nl/phpmyadmin/",
       "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (www.ejvandermeer.nl)",
-      "http": 200,
-      "finalUrl": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "ChargeCars",

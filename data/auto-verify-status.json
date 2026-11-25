@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-25T03:47:26.745Z",
+  "updatedAt": "2026-11-25T14:59:28.784Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 35,
-    "leakVerified": 31,
-    "leakFailed": 4,
+    "leakVerified": 29,
+    "leakFailed": 6,
     "consentChecked": 20,
-    "consentProofOk": 18
+    "consentProofOk": 17
   },
   "leakRows": [
     {
@@ -22,7 +22,7 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": true,
+      "proofOk": false,
       "status": "verified"
     },
     {
@@ -117,9 +117,9 @@
       "url": "https://www.ejvandermeer.nl/",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://pannendekkers-amersfoort.nl/",
@@ -253,9 +253,9 @@
       "url": "https://www.ejvandermeer.nl",
       "bedrijf": "van der Meer Elektrotechniek BV",
       "evidence": "https://www.ejvandermeer.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://chargecars.nl",
@@ -318,7 +318,7 @@
     {
       "siteUrl": "https://www.ejvandermeer.nl",
       "bedrijf": "van der Meer Elektrotechniek BV",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -438,6 +438,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 31 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "31 verified · 18 consent OK · 4 failed recheck"
+  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "29 verified · 17 consent OK · 6 failed recheck"
 }
