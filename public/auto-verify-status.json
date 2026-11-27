@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-26T21:58:55.557Z",
+  "updatedAt": "2026-11-27T09:08:28.063Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 35,
-    "leakVerified": 29,
-    "leakFailed": 6,
+    "leakVerified": 26,
+    "leakFailed": 9,
     "consentChecked": 20,
-    "consentProofOk": 17
+    "consentProofOk": 16
   },
   "leakRows": [
     {
@@ -22,16 +22,16 @@
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
       "evidence": "https://s250.webhostingserver.nl/phpMyAdmin/",
       "dbOk": true,
-      "proofOk": false,
+      "proofOk": true,
       "status": "verified"
     },
     {
       "url": "https://vogelaarschilder.nl/",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.bwstyling.nl/",
@@ -165,9 +165,9 @@
       "url": "http://vogelaarschilder.nl/",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://chargecars.nl/",
@@ -237,9 +237,9 @@
       "url": "https://vogelaarschilder.nl",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.boselektrotechniek.nl",
@@ -366,7 +366,7 @@
     {
       "siteUrl": "https://vogelaarschilder.nl",
       "bedrijf": "Vogelaar timmerwerk schilderen behangen",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
@@ -438,6 +438,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 17 consent OK · 6 failed recheck"
+  "grokPrompt": "auto-verify: 26 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "26 verified · 16 consent OK · 9 failed recheck"
 }
