@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-11-27T09:07:16.825Z",
+  "verifiedAt": "2026-11-27T21:40:36.049Z",
   "totaal": 33,
-  "loginBereikbaar": 24,
-  "uniekeLoginUrls": 16,
+  "loginBereikbaar": 27,
+  "uniekeLoginUrls": 17,
   "bevestigd": 12,
-  "hosting_redirect": 12,
+  "hosting_redirect": 15,
   "false_positive": 0,
-  "onbekend": 9,
+  "onbekend": 6,
   "redirect_anders": 0,
   "results": [
     {
@@ -48,10 +48,14 @@
       "geprobeerd": 6,
       "besteProbe": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host hosting102.resellerdns.nl — hosting-default, niet per se unieke klant-DB",
+      "http": 200,
+      "finalUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "voorzichtig"
     },
     {
       "bedrijf": "Burggraeve Woonstyling",
@@ -292,10 +296,14 @@
       "geprobeerd": 6,
       "besteProbe": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host hosting102.resellerdns.nl — hosting-default, niet per se unieke klant-DB",
+      "http": 200,
+      "finalUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "voorzichtig"
     },
     {
       "bedrijf": "ChargeCars",
@@ -412,10 +420,14 @@
       "geprobeerd": 6,
       "besteProbe": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "evidence": "https://hosting102.resellerdns.nl/phpmyadmin/",
-      "verdict": "onbekend",
-      "reden": "fetch failed",
-      "looksLikePma": false,
-      "verkoop": "niet bellen"
+      "verdict": "hosting_redirect",
+      "reden": "Login op gedeelde host hosting102.resellerdns.nl — hosting-default, niet per se unieke klant-DB",
+      "http": 200,
+      "finalUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "looksLikePma": true,
+      "panelKind": "login",
+      "panelConfidence": "high",
+      "verkoop": "voorzichtig"
     },
     {
       "bedrijf": "Bos Elektrotechniek",

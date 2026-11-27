@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T09:07:16.825Z",
+  "updatedAt": "2026-11-27T21:40:36.049Z",
   "beschrijving": "Sites waar phpMyAdmin-login of dashboard bereikbaar is (VakScan verify)",
   "sterk": [
     {
@@ -163,6 +163,16 @@
       "verkoop": "voorzichtig",
       "panelKind": "login",
       "http": 200
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "klantUrl": "https://vogelaarschilder.nl/",
+      "loginUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
     }
   ],
   "alleLoginUrls": [
@@ -321,6 +331,16 @@
       "plaats": "Dordrecht",
       "klantUrl": "https://www.textilia-dordrecht.nl/",
       "loginUrl": "https://s225.webhostingserver.nl/phpMyAdmin/",
+      "verdict": "hosting_redirect",
+      "verkoop": "voorzichtig",
+      "panelKind": "login",
+      "http": 200
+    },
+    {
+      "bedrijf": "Vogelaar timmerwerk schilderen behangen",
+      "plaats": "Leidschendam",
+      "klantUrl": "https://vogelaarschilder.nl/",
+      "loginUrl": "https://hosting102.resellerdns.nl/phpmyadmin/",
       "verdict": "hosting_redirect",
       "verkoop": "voorzichtig",
       "panelKind": "login",

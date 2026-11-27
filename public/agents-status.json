@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-27T19:27:47.618Z",
+  "updatedAt": "2026-11-27T21:41:34.107Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-27T13:15:34.436Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-11-27T14:06:08.954Z",
+      "lastRun": "2026-11-27T21:41:34.100Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,10 +61,10 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-11-27T19:27:46.444Z",
+      "lastRun": "2026-11-27T21:41:33.966Z",
       "ok": true,
       "contactenVandaag": 12,
-      "metBewijs": 16,
+      "metBewijs": 17,
       "agentPrompt": "Verkoop-bewijs: 12 klanten met live bewijs — start Textilia (HTTP 200) · /dashboard/ + /agents/",
       "grokPrompt": "agent verkoop-bewijs — Textilia: controle https://s225.webhostingserver.nl/phpMyAdmin/ · rapport 2bf236f50a7b. Mike belt met BEWIJS-blok, geen inbraak-claims.",
       "top3": [
@@ -74,12 +74,12 @@
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-11-27T09:08:28.064Z",
+      "lastRun": "2026-11-27T21:41:34.107Z",
       "ok": true,
-      "leakVerified": 26,
-      "consentProofOk": 16,
-      "agentPrompt": "26 verified · 16 consent OK · 9 failed recheck",
-      "grokPrompt": "auto-verify: 26 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 29,
+      "consentProofOk": 17,
+      "agentPrompt": "29 verified · 17 consent OK · 6 failed recheck",
+      "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
       "lastRun": "2026-11-27T19:27:46.684Z",
