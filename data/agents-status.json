@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-28T00:11:02.355Z",
+  "updatedAt": "2026-11-28T02:39:38.776Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-27T23:47:45.238Z",
@@ -33,14 +33,14 @@
       "agentPrompt": "maarten-bouw: geen pending — focus verkopen (outreach agent)"
     },
     "optimizer": {
-      "lastRun": "2026-11-27T23:47:45.651Z",
+      "lastRun": "2026-11-28T02:39:38.264Z",
       "applyMode": true,
       "grokPrompt": "optimizer: metrics bijgewerkt — manager check",
       "safeDone": 3,
       "wachtrijPending": 2
     },
     "manager": {
-      "lastRun": "2026-11-28T00:11:02.355Z",
+      "lastRun": "2026-11-28T02:39:38.776Z",
       "fase": "verkopen",
       "grokPrompt": "Mike moet vandaag geld — /actie/ VandaagGeldPanel, geen VakScan",
       "mikeActie": "NU: /actie/ — 5 WhatsApps (warm netwerk). Teller 5/5 = dagdoel."
@@ -110,7 +110,7 @@
     }
   },
   "manager": {
-    "updatedAt": "2026-11-28T00:11:02.355Z",
+    "updatedAt": "2026-11-28T02:39:38.776Z",
     "agent": "manager",
     "fase": "verkopen",
     "faseLabel": "Vandaag geld — warm netwerk",
@@ -135,7 +135,7 @@
         "naam": "Optimizer",
         "status": "ok",
         "detail": "Grok-wachtrij 2 · laatste fixes 3",
-        "lastRun": "2026-11-27T23:47:45.651Z"
+        "lastRun": "2026-11-28T02:39:38.264Z"
       },
       {
         "id": "auto-verify",
