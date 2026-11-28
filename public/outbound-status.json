@@ -1,13 +1,44 @@
 {
-  "updatedAt": "2026-11-28T05:13:57.460Z",
+  "updatedAt": "2026-11-28T16:27:44.483Z",
   "agent": "outbound-auto",
   "live": true,
-  "gepland": 0,
-  "verwerkt": 0,
+  "gepland": 5,
+  "verwerkt": 5,
   "verzonden": 0,
-  "gesimuleerd": 0,
+  "gesimuleerd": 5,
   "mislukt": 0,
-  "items": [],
-  "agentPrompt": "Outbound LIVE: 0 verzonden · 0 verwerkt",
+  "items": [
+    {
+      "bedrijf": "Woordes Bouw- & Timmerwerken",
+      "status": "simulated",
+      "email": "info@woordesbouw.nl",
+      "phone": null
+    },
+    {
+      "bedrijf": "ZENS Maatwerk",
+      "status": "simulated",
+      "email": "info@zensmaatwerk.nl",
+      "phone": null
+    },
+    {
+      "bedrijf": "Rojas Zonwering & Interieur",
+      "status": "simulated",
+      "email": "og-c@h.webp",
+      "phone": null
+    },
+    {
+      "bedrijf": "CoolAir Nederland",
+      "status": "simulated",
+      "email": "info@coolairnederland.nl",
+      "phone": "31299405296"
+    },
+    {
+      "bedrijf": "Koel-My",
+      "status": "simulated",
+      "email": "info@koelmy.nl",
+      "phone": null
+    }
+  ],
+  "agentPrompt": "Outbound LIVE: 0 verzonden · 5 verwerkt",
   "grokPrompt": "outbound-auto: 0 mails/contacten — check reacties in monitor"
 }
