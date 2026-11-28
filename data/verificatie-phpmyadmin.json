@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-11-28T08:28:46.332Z",
+  "verifiedAt": "2026-11-28T17:13:48.067Z",
   "totaal": 33,
-  "loginBereikbaar": 27,
-  "uniekeLoginUrls": 17,
-  "bevestigd": 12,
-  "hosting_redirect": 15,
+  "loginBereikbaar": 21,
+  "uniekeLoginUrls": 11,
+  "bevestigd": 7,
+  "hosting_redirect": 14,
   "false_positive": 0,
-  "onbekend": 6,
+  "onbekend": 12,
   "redirect_anders": 0,
   "results": [
     {
@@ -16,14 +16,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://klompelektrotechniek.nl/phpmyadmin/",
       "evidence": "https://klompelektrotechniek.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (klompelektrotechniek.nl)",
-      "http": 200,
-      "finalUrl": "https://klompelektrotechniek.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "H. Willemse Elektrotechniek B.V.",
@@ -176,14 +172,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://justinroofs.nl/phpmyadmin/",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (justinroofs.nl)",
-      "http": 200,
-      "finalUrl": "https://justinroofs.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
@@ -192,14 +184,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
       "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolontstoppingsbedrijf-denhaag.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Rioolservice P. van Adrichem",
@@ -208,14 +196,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (rioolservice-pvanadrichem.nl)",
-      "http": 200,
-      "finalUrl": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "van der Meer Elektrotechniek BV",
@@ -236,14 +220,10 @@
       "geprobeerd": 4,
       "besteProbe": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
       "evidence": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
-      "verdict": "bevestigd",
-      "reden": "phpMyAdmin op eigen domein (pannendekkers-amersfoort.nl)",
-      "http": 200,
-      "finalUrl": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "sterk"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Amer Houttechniek",
@@ -372,14 +352,10 @@
       "geprobeerd": 5,
       "besteProbe": "https://web3.hostingcp.eu/phpMyAdmin/",
       "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
-      "verdict": "hosting_redirect",
-      "reden": "Login op gedeelde host web3.hostingcp.eu — hosting-default, niet per se unieke klant-DB",
-      "http": 200,
-      "finalUrl": "https://web3.hostingcp.eu/phpMyAdmin/",
-      "looksLikePma": true,
-      "panelKind": "login",
-      "panelConfidence": "high",
-      "verkoop": "voorzichtig"
+      "verdict": "onbekend",
+      "reden": "fetch failed",
+      "looksLikePma": false,
+      "verkoop": "niet bellen"
     },
     {
       "bedrijf": "Textilia",

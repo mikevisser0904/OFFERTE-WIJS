@@ -1,6 +1,6 @@
 {
   "versie": 1,
-  "updatedAt": "2026-11-28T17:06:46.388Z",
+  "updatedAt": "2026-11-28T17:14:36.649Z",
   "agents": {
     "health-monitor": {
       "lastRun": "2026-11-28T16:27:43.419Z",
@@ -10,7 +10,7 @@
       "agentPrompt": "health OK"
     },
     "data-flow": {
-      "lastRun": "2026-11-28T17:03:18.934Z",
+      "lastRun": "2026-11-28T17:14:36.641Z",
       "ok": true,
       "healthy": true,
       "streams": 25,
@@ -61,7 +61,7 @@
       "grokPrompt": "test effectiviteit: score 75/100 — Geen contacten in KPI — stuur 5 WhatsApps via /actie/ en log in /monitor/"
     },
     "verkoop-bewijs": {
-      "lastRun": "2026-11-28T12:56:14.107Z",
+      "lastRun": "2026-11-28T17:14:36.478Z",
       "ok": true,
       "contactenVandaag": 12,
       "metBewijs": 17,
@@ -74,12 +74,12 @@
       ]
     },
     "auto-verify": {
-      "lastRun": "2026-11-28T08:30:09.128Z",
+      "lastRun": "2026-11-28T17:14:36.649Z",
       "ok": true,
-      "leakVerified": 29,
-      "consentProofOk": 17,
-      "agentPrompt": "29 verified · 17 consent OK · 6 failed recheck",
-      "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
+      "leakVerified": 26,
+      "consentProofOk": 14,
+      "agentPrompt": "26 verified · 14 consent OK · 9 failed recheck",
+      "grokPrompt": "auto-verify: 26 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/"
     },
     "outreach": {
       "lastRun": "2026-11-28T12:56:14.122Z",

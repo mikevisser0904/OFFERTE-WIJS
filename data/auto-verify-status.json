@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-28T08:30:09.127Z",
+  "updatedAt": "2026-11-28T17:14:36.648Z",
   "agent": "auto-verify",
   "summary": {
     "leakHits": 35,
-    "leakVerified": 29,
-    "leakFailed": 6,
+    "leakVerified": 26,
+    "leakFailed": 9,
     "consentChecked": 20,
-    "consentProofOk": 17
+    "consentProofOk": 14
   },
   "leakRows": [
     {
       "url": "https://klompelektrotechniek.nl/",
       "bedrijf": "Klomp Elektrotechniek",
       "evidence": "https://klompelektrotechniek.nl/phpmyadmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -93,23 +93,23 @@
       "url": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
       "evidence": "https://justinroofs.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://rioolontstoppingsbedrijf-denhaag.nl/",
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
       "evidence": "https://rioolontstoppingsbedrijf-denhaag.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://rioolservice-pvanadrichem.nl/",
       "bedrijf": "Rioolservice P. van Adrichem",
       "evidence": "https://rioolservice-pvanadrichem.nl/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -125,9 +125,9 @@
       "url": "https://pannendekkers-amersfoort.nl/",
       "bedrijf": "Brands Dak Onderhoud",
       "evidence": "https://pannendekkers-amersfoort.nl/phpmyadmin/",
-      "dbOk": true,
-      "proofOk": true,
-      "status": "verified"
+      "dbOk": false,
+      "proofOk": false,
+      "status": "failed"
     },
     {
       "url": "https://www.amer-hout.nl/",
@@ -213,7 +213,7 @@
       "url": "https://klompelektrotechniek.nl",
       "bedrijf": "Klomp Elektrotechniek",
       "evidence": "https://web3.hostingcp.eu/phpMyAdmin/",
-      "dbOk": true,
+      "dbOk": false,
       "proofOk": true,
       "status": "verified"
     },
@@ -396,19 +396,19 @@
     {
       "siteUrl": "https://justinroofs.nl/",
       "bedrijf": "Just-In Roofs",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
       "siteUrl": "https://rioolontstoppingsbedrijf-denhaag.nl/",
       "bedrijf": "Riool Ontstoppen Den Haag Ontstoppingsbedrijf PROF",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     },
     {
       "siteUrl": "https://pannendekkers-amersfoort.nl/",
       "bedrijf": "Brands Dak Onderhoud",
-      "passiveOk": true,
+      "passiveOk": false,
       "authOk": null
     }
   ],
@@ -438,6 +438,6 @@
       "ok": true
     }
   ],
-  "grokPrompt": "auto-verify: 29 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
-  "agentPrompt": "29 verified · 17 consent OK · 6 failed recheck"
+  "grokPrompt": "auto-verify: 26 lek(ken) bevestigd — Mike belt met bewijs-URL op /dashboard/",
+  "agentPrompt": "26 verified · 14 consent OK · 9 failed recheck"
 }
